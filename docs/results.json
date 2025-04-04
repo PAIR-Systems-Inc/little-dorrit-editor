@@ -1,161 +1,501 @@
 [
   {
     "model_name": "GPT-4o",
-    "precision": 0.8954,
-    "recall": 0.9123,
-    "f1_score": 0.9037,
-    "date": "2025-03-20T15:30:45",
+    "precision": 0.23529411764705882,
+    "recall": 0.14814814814814814,
+    "f1_score": 0.1818181818181818,
+    "date": "2025-04-04T12:22:10.692447",
     "details": {
-      "precision": 0.8954,
-      "recall": 0.9123,
-      "f1_score": 0.9037,
+      "precision": 0.23529411764705882,
+      "recall": 0.14814814814814814,
+      "f1_score": 0.1818181818181818,
       "by_type": {
-        "insertion": {
-          "precision": 0.9100,
-          "recall": 0.9300,
-          "f1": 0.9199,
-          "count": 120
-        },
-        "deletion": {
-          "precision": 0.8700,
-          "recall": 0.9000,
-          "f1": 0.8847,
-          "count": 85
-        },
-        "replacement": {
-          "precision": 0.9200,
-          "recall": 0.9400,
-          "f1": 0.9299,
-          "count": 150
+        "capitalization": {
+          "precision": 0.3,
+          "recall": 0.3,
+          "f1": 0.3,
+          "count": 3
         },
         "punctuation": {
-          "precision": 0.9500,
-          "recall": 0.9800,
-          "f1": 0.9647,
-          "count": 75
-        },
-        "capitalization": {
-          "precision": 0.9700,
-          "recall": 0.9800,
-          "f1": 0.9749,
-          "count": 65
-        },
-        "reordering": {
-          "precision": 0.7500,
-          "recall": 0.7800,
-          "f1": 0.7647,
-          "count": 45
-        }
-      },
-      "correct_count": 456,
-      "total_ground_truth": 500,
-      "total_predicted": 509
-    }
-  },
-  {
-    "model_name": "Claude 3 Opus",
-    "precision": 0.8845,
-    "recall": 0.8967,
-    "f1_score": 0.8906,
-    "date": "2025-03-18T14:22:33",
-    "details": {
-      "precision": 0.8845,
-      "recall": 0.8967,
-      "f1_score": 0.8906,
-      "by_type": {
-        "insertion": {
-          "precision": 0.9000,
-          "recall": 0.9200,
-          "f1": 0.9099,
-          "count": 120
-        },
-        "deletion": {
-          "precision": 0.8600,
-          "recall": 0.8800,
-          "f1": 0.8699,
-          "count": 85
+          "precision": 0.27999999999999997,
+          "recall": 0.13999999999999999,
+          "f1": 0.18666666666666668,
+          "count": 20
         },
         "replacement": {
-          "precision": 0.9100,
-          "recall": 0.9250,
-          "f1": 0.9174,
-          "count": 150
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 4
         },
-        "punctuation": {
-          "precision": 0.9300,
-          "recall": 0.9700,
-          "f1": 0.9497,
-          "count": 75
-        },
-        "capitalization": {
-          "precision": 0.9500,
-          "recall": 0.9700,
-          "f1": 0.9599,
-          "count": 65
-        },
-        "reordering": {
-          "precision": 0.7300,
-          "recall": 0.7500,
-          "f1": 0.7399,
-          "count": 45
-        }
-      },
-      "correct_count": 448,
-      "total_ground_truth": 500,
-      "total_predicted": 507
-    }
-  },
-  {
-    "model_name": "Gemini 1.5 Pro",
-    "precision": 0.8725,
-    "recall": 0.8830,
-    "f1_score": 0.8777,
-    "date": "2025-03-15T09:45:12",
-    "details": {
-      "precision": 0.8725,
-      "recall": 0.8830,
-      "f1_score": 0.8777,
-      "by_type": {
         "insertion": {
-          "precision": 0.8900,
-          "recall": 0.9100,
-          "f1": 0.8999,
-          "count": 120
-        },
-        "deletion": {
-          "precision": 0.8500,
-          "recall": 0.8700,
-          "f1": 0.8599,
-          "count": 85
-        },
-        "replacement": {
-          "precision": 0.8950,
-          "recall": 0.9100,
-          "f1": 0.9024,
-          "count": 150
-        },
-        "punctuation": {
-          "precision": 0.9200,
-          "recall": 0.9500,
-          "f1": 0.9347,
-          "count": 75
-        },
-        "capitalization": {
-          "precision": 0.9400,
-          "recall": 0.9600,
-          "f1": 0.9499,
-          "count": 65
-        },
-        "reordering": {
-          "precision": 0.7100,
-          "recall": 0.7300,
-          "f1": 0.7199,
-          "count": 45
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
         }
       },
-      "correct_count": 441,
-      "total_ground_truth": 500,
-      "total_predicted": 505
+      "correct_count": 4,
+      "total_ground_truth": 27,
+      "total_predicted": 17,
+      "file_results": [
+        {
+          "model_name": "gpt-4o",
+          "precision": 0.45,
+          "recall": 0.18,
+          "f1_score": 0.2571428571428572,
+          "date": "2025-04-04T12:19:55.980395",
+          "details": {
+            "precision": 0.45,
+            "recall": 0.18,
+            "f1_score": 0.2571428571428572,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.45,
+                "recall": 0.225,
+                "f1": 0.3,
+                "count": 4
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 5,
+            "total_predicted": 2,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "1. Edit Type Accuracy: The predicted edit type is correctly identified as 'punctuation'. Both the ground truth and the predicted edit have the same type. \n2. Text Content Accuracy: The ground truth specifies a punctuation change by adding a comma to 'yonder to-day', resulting in 'yonder, to-day'. However, the predicted edit does not capture this core change. Instead, it addresses a different punctuation issue by changing 'sir,' to 'Sir,'. The core change required by the ground truth is the addition of a comma after 'yonder', which the prediction fails to include. Therefore, the predicted edit does not align with the intended core change of the ground truth, despite addressing the same line of text.\nGiven these points, the prediction does not correctly capture the intention of the ground truth.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly identifies the edit type as 'punctuation,' which matches the ground truth. For text content accuracy, both the ground truth and the prediction indicate a change from 'pockets and' to 'pockets, and.' This core change, which involves adding a comma after 'pockets,' is accurately captured by the prediction. The additional context like line numbers is explicitly ignored in this evaluation, making the predicted edit fully aligned with the intention of the ground truth.",
+                "is_correct_with_penalty": true,
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "yonder to-day",
+                  "corrected_text": "yonder, to-day",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "yonder to-day, sir,",
+                  "corrected_text": "yonder to-day, Sir,",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "pockets and",
+                  "corrected_text": "pockets, and",
+                  "line_number": 17,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "pockets and",
+                  "corrected_text": "pockets, and",
+                  "line_number": 18,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "gpt-4o",
+          "precision": 0.9,
+          "recall": 0.3,
+          "f1_score": 0.45000000000000007,
+          "date": "2025-04-04T12:20:22.959088",
+          "details": {
+            "precision": 0.9,
+            "recall": 0.3,
+            "f1_score": 0.45000000000000007,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 2
+              },
+              "capitalization": {
+                "precision": 0.9,
+                "recall": 0.9,
+                "f1": 0.9,
+                "count": 1
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 3,
+            "total_predicted": 1,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit is considered correct because it satisfies both the edit type and text content criteria. \n\n1. Edit Type Accuracy: Both the ground truth and the predicted edits are of the type 'capitalization,' which matches exactly. Therefore, this criterion is satisfied.\n\n2. Text Content Accuracy: The core change identified by the ground truth is the capitalization of the initial letter of the sentence from 'why did he dine' to 'Why did he dine.' The predicted edit captures this essential change by also correcting the lowercase 'w' to an uppercase 'W.' Although the predicted edit includes additional context ('to-day'), it successfully addresses the main capitalization change, which is the core focus of the ground truth correction. This aligns with the stipulation that additional context can be included as long as the essential edit is correctly captured.\n\nThus, the predicted edit accurately captures the intention of the ground truth edit in terms of both the type of edit and the core content change.",
+                "is_correct_with_penalty": true,
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "capitalization",
+                  "original_text": "why did he dine",
+                  "corrected_text": "Why did he dine",
+                  "line_number": 28,
+                  "page": "004.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "capitalization",
+                  "original_text": "why did he dine to-day",
+                  "corrected_text": "Why did he dine to-day",
+                  "line_number": 27,
+                  "page": "184",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "004"
+        },
+        {
+          "model_name": "gpt-4o",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-04T12:20:51.764735",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 2,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The predicted edit does not fully capture the intention of the ground truth edit. \n1. Edit Type Accuracy: The edit type 'capitalization' matches in both the ground truth and the predicted edit, satisfying the criterion for edit type. \n2. Text Content Accuracy: The ground truth specifies a correction from 'if he' to 'If he', indicating a capitalization of 'if' as part of a bigger phrase. The predicted edit only considers 'if' to 'If', failing to include the subsequent word 'he', which is crucial context present in the ground truth. By focusing only on 'if', the prediction misses the comprehensive context of the text change represented in the ground truth. \nTherefore, despite the matching type, the lack of complete textual context results in an incorrect interpretation according to the specified criteria.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              },
+              {
+                "is_correct": false,
+                "reasoning": "The predicted edit and the ground truth edit both have the same edit type, 'replacement', which matches the requirement for Edit Type Accuracy. However, the Text Content Accuracy criterion is not met because the ground truth's core change involves replacing 'said Clennam' with 'asked Clennam', capturing a specific change related to the character's manner of speech and the associated name. In contrast, the prediction involves only replacing the word 'said' with 'asked', omitting 'Clennam'. This indicates that the predicted edit fails to capture the full extent of the change intended by the ground truth. Consequently, despite the edit type matching, the content change is not correctly captured at a granular level, rendering the prediction incorrect as per the evaluation criteria.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "capitalization",
+                  "original_text": "if he",
+                  "corrected_text": "If he",
+                  "line_number": 36,
+                  "page": "005.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "capitalization",
+                  "original_text": "if",
+                  "corrected_text": "If",
+                  "line_number": 39,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "replacement",
+                  "original_text": "said Clennam",
+                  "corrected_text": "asked Clennam",
+                  "line_number": 39,
+                  "page": "005.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "replacement",
+                  "original_text": "said",
+                  "corrected_text": "asked",
+                  "line_number": 41,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "gpt-4o",
+          "precision": 0.38,
+          "recall": 0.2375,
+          "f1_score": 0.2923076923076923,
+          "date": "2025-04-04T12:21:20.737568",
+          "details": {
+            "precision": 0.38,
+            "recall": 0.2375,
+            "f1_score": 0.2923076923076923,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.475,
+                "recall": 0.2375,
+                "f1": 0.3166666666666667,
+                "count": 8
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 2,
+            "total_ground_truth": 8,
+            "total_predicted": 5,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit matches the ground truth's intention in terms of both edit type and text content. \n\n1. Edit Type Accuracy: The edit type 'punctuation' is the same in both the ground truth and the prediction. This indicates that the nature of the modification (adding or adjusting punctuation) was correctly identified.\n\n2. Text Content Accuracy: Both the ground truth and the prediction aim to change 'high road' to 'high-road'. The core change, which is the addition of a hyphen between 'high' and 'road', is accurately captured by the prediction. Although the line number differs, the instructions explicitly state to ignore line numbers in this evaluation. Aside from the page number difference, which is also not relevant per the current evaluation criteria, the essential edit is consistent in both cases. Hence, the predicted edit correctly represents the ground truth\u2019s intention.",
+                "is_correct_with_penalty": true,
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly identifies the edit type as 'punctuation', which matches the ground truth exactly, satisfying the first criterion. For text content accuracy, the core change from 'about and' to 'about, and' is identical in both the ground truth and predicted edit, meaning the essential punctuation change is accurately captured. Although the page numbers differ, the evaluation criteria explicitly ignore line numbers and focus solely on the nature of the edit, which has been flawlessly translated in terms of both edit type and text content. Therefore, the prediction is deemed correct.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "high road",
+                  "corrected_text": "high-road",
+                  "line_number": 1,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "high road",
+                  "corrected_text": "high-road",
+                  "line_number": 2,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "about and",
+                  "corrected_text": "about, and",
+                  "line_number": 13,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "about and",
+                  "corrected_text": "about, and",
+                  "line_number": 13,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "006"
+        },
+        {
+          "model_name": "gpt-4o",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-04T12:21:47.929567",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 1,
+            "total_predicted": 1,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The evaluation focuses on two criteria: Edit Type Accuracy and Text Content Accuracy. For Edit Type Accuracy, both the ground truth and predicted edits are of the 'punctuation' type, so they match in this category. However, for Text Content Accuracy, the essential change is the punctuation correction from a lack of punctuation to a period according to the ground truth ('Sun and Shadow' to 'Sun and Shadow.'). The predicted edit, however, shows a change from a comma to a period ('Sun and Shadow,' to 'Sun and Shadow.'), which introduces a discrepancy in the original text. This alteration represents an incorrect understanding of the core change signaled by the ground truth. Therefore, the predicted edit does not accurately reflect the ground truth's intention. Additionally, the page number difference ('003.png' vs '007.png') is irrelevant per the evaluation criteria, but it further signifies a potential mismatch in identifying the correction intent. Hence, the prediction is incorrect on the text content criterion.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "007.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow,",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "gpt-4o",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-04T12:22:10.692447",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 6,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The edit type in both the ground truth and the predicted edit is 'punctuation', which matches correctly, so the Edit Type Accuracy is satisfied. However, the Text Content Accuracy is not met. The ground truth correction specifies changing 'poplar trees' to 'poplar-trees,'. This includes both the addition of a hyphen and a comma. The predicted edit changes 'poplar trees' to 'poplar-trees', omitting the comma. Since the essential punctuation change involving the addition of a comma is not captured, the Text Content Accuracy criterion is not satisfied. Therefore, the predicted edit does not correctly capture the full intention of the ground truth edit.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees,",
+                  "line_number": 6,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees",
+                  "line_number": 5,
+                  "page": "137",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "008"
+        }
+      ]
     }
   }
 ]

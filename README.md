@@ -41,7 +41,7 @@ This project uses Python 3.13+ and [uv](https://github.com/astral-sh/uv) for dep
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/little-dorrit-editor.git
+git clone https://github.com/pairsys/little-dorrit-editor.git
 cd little-dorrit-editor
 
 # Create a virtual environment and install dependencies
@@ -52,7 +52,37 @@ uv pip install -e .
 
 ## Usage
 
-### Generating Predictions with N-Shot Learning
+### Complete Evaluation Workflow
+
+The benchmark includes scripts to automate the entire prediction, evaluation, and reporting workflow:
+
+1. **Generate Predictions**:
+   ```bash
+   # Generate predictions for all evaluation images using the gpt-4o model with 2-shot learning
+   ./scripts/run_prediction.sh gpt-4o 2
+   ```
+
+2. **Evaluate Predictions**:
+   ```bash
+   # Evaluate predictions and calculate metrics
+   ./scripts/run_evaluation.sh gpt-4o
+   ```
+
+3. **Generate Report**:
+   ```bash
+   # Display formatted evaluation results
+   ./scripts/report_evaluation.sh gpt-4o
+   ```
+
+4. **Update Leaderboard**:
+   ```bash
+   # Update results.json for the leaderboard website
+   python scripts/build_site_results.py
+   ```
+
+### Manual Prediction and Evaluation
+
+You can also run individual steps manually:
 
 ```bash
 # Zero-shot prediction
@@ -68,10 +98,10 @@ The `generate` command supports the following options:
 - `--sample-dataset`, `-d`: Path to the dataset containing examples (default: "data/hf/sample/little-dorrit-editor")
 - `--api-key`, `-k`: OpenAI API key (optional, defaults to environment variable)
 
-### Running the Evaluation
+### Running Individual Evaluations
 
 ```bash
-python scripts/evaluate.py --model-name "your_model_name" path/to/predicted.json path/to/ground_truth.json
+python scripts/evaluate.py evaluate --model-name "your_model_name" path/to/predicted.json path/to/ground_truth.json
 ```
 
 ### Preparing Datasets
@@ -121,7 +151,7 @@ The project contains two sets of data:
 
 ### Hugging Face Dataset
 
-The full Little Dorrit Editor dataset is available on Hugging Face: [huggingface.co/datasets/yourusername/little-dorrit-editor](https://huggingface.co/datasets/yourusername/little-dorrit-editor)
+The full Little Dorrit Editor dataset is available on Hugging Face: [huggingface.co/datasets/pairsys/little-dorrit-editor](https://huggingface.co/datasets/pairsys/little-dorrit-editor)
 
 ## License
 

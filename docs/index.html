@@ -324,12 +324,8 @@
     </footer>
 
     <script>
-        // Sample data for the leaderboard table
-        const leaderboardData = [
-            { rank: 1, model: "GPT-4o", f1Score: 0.9037, precision: 0.8954, recall: 0.9123, date: "2025-03-20" },
-            { rank: 2, model: "Claude 3 Opus", f1Score: 0.8906, precision: 0.8845, recall: 0.8967, date: "2025-03-18" },
-            { rank: 3, model: "Gemini 1.5 Pro", f1Score: 0.8777, precision: 0.8725, recall: 0.8830, date: "2025-03-15" }
-        ];
+        // Load data from results.json
+        let leaderboardData = [];
 
         // Create and configure the leaderboard table
         const leaderboardTable = new Tabulator("#leaderboard-table", {
@@ -396,177 +392,58 @@
             ]
         });
 
-        // Function to load JSON data from a file
-        async function loadModelData(modelName) {
+        // Function to load JSON data from results.json
+        async function loadResults() {
             try {
-                // In a real implementation, you would load data from actual JSON files
-                // For now, we'll use sample data based on the information provided
-
-                // This would be the actual fetch in a real implementation:
-                // const response = await fetch(`data/${modelName.toLowerCase().replace(' ', '_')}.json`);
-                // return await response.json();
-
-                // For this example, we'll use sample data based on the GPT-4o results shared
-                if (modelName === "GPT-4o") {
-                    return {
-                        model_name: "gpt-4o",
-                        precision: 0.5625,
-                        recall: 0.4285,
-                        f1_score: 0.4863,
-                        date: "2025-04-04T12:18:54.954681",
-                        details: {
-                            files: [
-                                {
-                                    file: "001",
-                                    precision: 1.0,
-                                    recall: 1.0,
-                                    f1_score: 1.0,
-                                    true_positives: 10,
-                                    false_positives: 0,
-                                    false_negatives: 0
-                                },
-                                {
-                                    file: "002",
-                                    precision: 0.8,
-                                    recall: 0.8,
-                                    f1_score: 0.8,
-                                    true_positives: 4,
-                                    false_positives: 1,
-                                    false_negatives: 1
-                                },
-                                {
-                                    file: "003",
-                                    precision: 0.45,
-                                    recall: 0.18,
-                                    f1_score: 0.2571,
-                                    true_positives: 1,
-                                    false_positives: 1,
-                                    false_negatives: 4
-                                },
-                                {
-                                    file: "004",
-                                    precision: 0.9,
-                                    recall: 0.3,
-                                    f1_score: 0.45,
-                                    true_positives: 1,
-                                    false_positives: 0,
-                                    false_negatives: 2
-                                },
-                                {
-                                    file: "005",
-                                    precision: 0.0,
-                                    recall: 0.0,
-                                    f1_score: 0.0,
-                                    true_positives: 0,
-                                    false_positives: 2,
-                                    false_negatives: 2
-                                },
-                                {
-                                    file: "006",
-                                    precision: 0.38,
-                                    recall: 0.2375,
-                                    f1_score: 0.2923,
-                                    true_positives: 2,
-                                    false_positives: 3,
-                                    false_negatives: 6
-                                },
-                                {
-                                    file: "007",
-                                    precision: 0.0,
-                                    recall: 0.0,
-                                    f1_score: 0.0,
-                                    true_positives: 0,
-                                    false_positives: 1,
-                                    false_negatives: 1
-                                },
-                                {
-                                    file: "008",
-                                    precision: 0.0,
-                                    recall: 0.0,
-                                    f1_score: 0.0,
-                                    true_positives: 0,
-                                    false_positives: 6,
-                                    false_negatives: 8
-                                }
-                            ],
-                            aggregate: {
-                                true_positives: 18,
-                                false_positives: 14,
-                                false_negatives: 24,
-                                total_edits: 42
-                            }
-                        }
-                    };
-                } else {
-                    // Default data for other models (simplified example)
-                    return {
-                        model_name: modelName,
-                        precision: 0.85,
-                        recall: 0.83,
-                        f1_score: 0.84,
-                        date: "2025-03-01T00:00:00.000000",
-                        details: {
-                            files: [
-                                {
-                                    file: "001",
-                                    precision: 0.9,
-                                    recall: 0.9,
-                                    f1_score: 0.9,
-                                    true_positives: 9,
-                                    false_positives: 1,
-                                    false_negatives: 1
-                                }
-                                // Additional files would be added here
-                            ],
-                            aggregate: {
-                                true_positives: 9,
-                                false_positives: 1,
-                                false_negatives: 1,
-                                total_edits: 11
-                            }
-                        }
-                    };
+                const response = await fetch('results.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
+                return await response.json();
             } catch (error) {
-                console.error(`Error loading data for ${modelName}:`, error);
-                return null;
+                console.error('Error loading results:', error);
+                return [];
             }
+        }
+        
+        // Function to find a model in the results data
+        function findModel(results, modelName) {
+            return results.find(model => model.model_name === modelName);
         }
 
         // Function to prepare data for the detailed model performance table
         async function prepareModelPerformanceData() {
-            const models = ["GPT-4o", "Claude 3 Opus", "Gemini 1.5 Pro"];
+            const results = await loadResults();
             const performanceData = [];
 
-            for (const model of models) {
-                const modelData = await loadModelData(model);
+            for (const modelData of results) {
                 if (!modelData) continue;
 
                 // Add model summary row
                 const modelRow = {
-                    id: model,
-                    model: model,
+                    id: modelData.model_name,
+                    model: modelData.model_name,
                     precision: modelData.precision,
                     recall: modelData.recall,
                     f1_score: modelData.f1_score,
-                    true_positives: modelData.details.aggregate.true_positives,
-                    false_positives: modelData.details.aggregate.false_positives,
-                    false_negatives: modelData.details.aggregate.false_negatives,
+                    true_positives: modelData.details.correct_count,
+                    false_positives: modelData.details.total_predicted - modelData.details.correct_count,
+                    false_negatives: modelData.details.total_ground_truth - modelData.details.correct_count,
                     _children: []
                 };
 
                 // Add file-specific rows as children
-                if (modelData.details.files) {
-                    for (const file of modelData.details.files) {
+                if (modelData.details.file_results) {
+                    for (const file of modelData.details.file_results) {
                         modelRow._children.push({
-                            id: `${model}-${file.file}`,
-                            model: `File ${file.file}`,
+                            id: `${modelData.model_name}-${file.file_id}`,
+                            model: `File ${file.file_id}`,
                             precision: file.precision,
                             recall: file.recall,
                             f1_score: file.f1_score,
-                            true_positives: file.true_positives,
-                            false_positives: file.false_positives,
-                            false_negatives: file.false_negatives
+                            true_positives: file.details.correct_count,
+                            false_positives: file.details.total_predicted - file.details.correct_count,
+                            false_negatives: file.details.total_ground_truth - file.details.correct_count
                         });
                     }
                 }
@@ -651,12 +528,64 @@
             return performanceTable;
         }
 
-        // Initialize the detailed model performance table
-        document.addEventListener("DOMContentLoaded", function() {
+        // Initialize everything
+        document.addEventListener("DOMContentLoaded", async function() {
+            // Load data from results.json
+            const results = await loadResults();
+            
+            // Format the data for the leaderboard table
+            if (results && results.length > 0) {
+                leaderboardData = results.map((model, index) => ({
+                    rank: index + 1,
+                    model: model.model_name,
+                    f1Score: model.f1_score,
+                    precision: model.precision,
+                    recall: model.recall,
+                    date: model.date ? model.date.split('T')[0] : 'Unknown'
+                }));
+                
+                // Update the leaderboard table with real data
+                leaderboardTable.setData(leaderboardData);
+                
+                // Update metrics
+                if (results.length > 0) {
+                    // Find best F1 score
+                    const bestF1 = Math.max(...results.map(model => model.f1_score));
+                    document.getElementById("best-f1-score").textContent = bestF1.toFixed(4);
+                    
+                    // Update model count
+                    document.querySelector('.metrics .metric-card:nth-child(3) .metric-value').textContent = results.length;
+                    
+                    // Update top model
+                    document.querySelector('.metrics .metric-card:nth-child(1) .metric-value').textContent = results[0].model_name;
+                    
+                    // Find most challenging edit type
+                    let mostChallengingType = null;
+                    let lowestF1 = 1.0;
+                    
+                    results.forEach(model => {
+                        const byType = model.details?.by_type || {};
+                        Object.entries(byType).forEach(([type, metrics]) => {
+                            if (metrics.f1 < lowestF1 && metrics.count > 0) {
+                                lowestF1 = metrics.f1;
+                                mostChallengingType = type;
+                            }
+                        });
+                    });
+                    
+                    if (mostChallengingType) {
+                        const displayType = mostChallengingType.charAt(0).toUpperCase() + mostChallengingType.slice(1);
+                        document.querySelector('.metrics .metric-card:nth-child(4) .metric-value').textContent = displayType;
+                    }
+                }
+            }
+            
+            // Create detailed performance table
             createModelPerformanceTable();
 
             // Update the last updated date
-            document.getElementById("last-updated").textContent = new Date().toISOString().split('T')[0];
+            const lastDate = results.length > 0 ? new Date(results[0].date) : new Date();
+            document.getElementById("last-updated").textContent = lastDate.toISOString().split('T')[0];
         });
     </script>
 </body>
