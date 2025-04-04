@@ -5,15 +5,37 @@
 MODEL_NAME=${1:-"gpt-4o"}  # Use the first parameter or default to gpt-4o
 BASE_OUTPUT_DIR=${2:-"predictions"}  # Use the second parameter or default to predictions
 
-# Set up directory structure
+# Set up directory structure using new format
 PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_NAME}"
+CONFIG_FILE="${PREDICTIONS_DIR}/config.json"
 RESULTS_DIR="${PREDICTIONS_DIR}/results"
+EVAL_RESULTS_DIR="${RESULTS_DIR}/eval"
 
-# Check if results directory exists
-if [ ! -d "$RESULTS_DIR" ]; then
-    echo "Error: Results directory not found: $RESULTS_DIR"
+# Check if the model directory exists
+if [ ! -d "$PREDICTIONS_DIR" ]; then
+    echo "Error: Model directory not found: $PREDICTIONS_DIR"
     echo "Usage: $0 [model_name] [output_dir]"
     echo "Example: $0 gpt-4o predictions"
+    exit 1
+fi
+
+# Read and display experiment configuration if available
+if [ -f "$CONFIG_FILE" ]; then
+    echo "Experiment configuration:"
+    cat "$CONFIG_FILE"
+    echo ""
+    
+    # Extract shot count for the report header
+    SHOTS=$(grep -o '"shots": [0-9]*' "$CONFIG_FILE" | awk '{print $2}')
+else
+    SHOTS="unknown"
+    echo "Warning: No configuration file found at $CONFIG_FILE"
+fi
+
+# Check if results directory exists
+if [ ! -d "$EVAL_RESULTS_DIR" ]; then
+    echo "Error: Results directory not found: $EVAL_RESULTS_DIR"
+    echo "Run './scripts/run_evaluation.sh ${MODEL_NAME}' first to generate evaluation results."
     exit 1
 fi
 
@@ -26,13 +48,13 @@ total_files=0
 
 # Summarize per-file results
 echo -e "\n===== Per-File Evaluation Results ====="
-echo "Model: $MODEL_NAME"
-echo "Results directory: $RESULTS_DIR"
+echo "Model: $MODEL_NAME (${SHOTS}-shot learning)"
+echo "Results directory: $EVAL_RESULTS_DIR"
 
 # Check if there are any result files
-result_files=$(ls -1 "$RESULTS_DIR"/*.json 2>/dev/null)
+result_files=$(ls -1 "$EVAL_RESULTS_DIR"/*.json 2>/dev/null)
 if [ -z "$result_files" ]; then
-    echo "No evaluation results found in $RESULTS_DIR."
+    echo "No evaluation results found in $EVAL_RESULTS_DIR."
     exit 1
 fi
 
@@ -112,7 +134,7 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 
 # Add a bit of space and show model name as a header
 echo -e "\n==================================================="
-echo "    Overall Evaluation Results for Model: $MODEL_NAME"
+echo "    Overall Evaluation Results for ${MODEL_NAME} (${SHOTS}-shot)"
 echo "==================================================="
 
 # Calculate aggregate precision, recall, F1
@@ -155,3 +177,4 @@ printf "  %-25s   %17s\n" "F1 Score" "$formatted_f1"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 echo -e "\nReport complete."
+echo "To update the leaderboard site with these results, run: python scripts/build_site_results.py"

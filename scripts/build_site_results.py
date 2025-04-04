@@ -43,11 +43,41 @@ def load_results_file(filepath: Path) -> Dict[str, Any]:
         return json.load(f)
 
 
-def collect_model_results(predictions_dir: Path) -> List[Dict[str, Any]]:
+def load_config_file(config_path: Path) -> Dict[str, Any]:
+    """Load a model's config file.
+    
+    Args:
+        config_path: Path to the config file
+    
+    Returns:
+        Config data or default config if file doesn't exist
+    """
+    default_config = {
+        "model_name": "unknown",
+        "shots": 2,
+        "temperature": 0.0,
+        "date": datetime.datetime.now().strftime("%Y-%m-%d"),
+        "notes": "Default configuration"
+    }
+    
+    if not config_path.exists():
+        print(f"Warning: Config file not found: {config_path}. Using default.")
+        return default_config
+    
+    try:
+        with open(config_path, "r") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Error loading config file {config_path}: {e}")
+        return default_config
+
+
+def collect_model_results(predictions_dir: Path, shot_filter: Optional[int] = None) -> List[Dict[str, Any]]:
     """Collect results for all models in the predictions directory.
     
     Args:
         predictions_dir: Path to the predictions directory
+        shot_filter: If provided, only include models with this shot count
     
     Returns:
         List of model results with per-file details
@@ -59,10 +89,21 @@ def collect_model_results(predictions_dir: Path) -> List[Dict[str, Any]]:
     
     for model_dir in model_dirs:
         model_name = model_dir.name
-        results_dir = model_dir / "results"
+        
+        # Load model configuration
+        config_path = model_dir / "config.json"
+        config = load_config_file(config_path)
+        
+        # Filter by shot count if requested
+        if shot_filter is not None and config.get("shots", 0) != shot_filter:
+            print(f"Skipping {model_name} with {config.get('shots')} shots (filter: {shot_filter})")
+            continue
+        
+        # Find all result files - use new directory structure
+        results_dir = model_dir / "results" / "eval"
         
         if not results_dir.exists() or not results_dir.is_dir():
-            print(f"Warning: No results directory found for model {model_name}")
+            print(f"Warning: No results directory found for model {model_name} at {results_dir}")
             continue
         
         # Find all result files
@@ -163,6 +204,8 @@ def collect_model_results(predictions_dir: Path) -> List[Dict[str, Any]]:
             "recall": recall,
             "f1_score": f1,
             "date": latest_date.isoformat() if latest_date else datetime.datetime.now().isoformat(),
+            "shots": config.get("shots", 2),  # Include shot count in the model result
+            "config": config,  # Include full configuration
             "details": {
                 "precision": precision,
                 "recall": recall,
@@ -188,10 +231,13 @@ def main():
     predictions_dir = project_root / "predictions"
     output_path = project_root / "docs" / "results.json"
     
-    print(f"Collecting results from {predictions_dir}")
+    # Default shot count for the leaderboard (2 as per requirements)
+    shot_filter = 2
+    
+    print(f"Collecting results from {predictions_dir} (shot filter: {shot_filter})")
     
     # Collect model results
-    model_results = collect_model_results(predictions_dir)
+    model_results = collect_model_results(predictions_dir, shot_filter=shot_filter)
     
     if not model_results:
         print("Warning: No model results found")
@@ -200,7 +246,7 @@ def main():
     print(f"Found {len(model_results)} models")
     for model in model_results:
         file_count = len(model["details"].get("file_results", []))
-        print(f"  {model['model_name']}: {file_count} files, F1: {model['f1_score']:.4f}")
+        print(f"  {model['model_name']}: {file_count} files, {model['shots']}-shot, F1: {model['f1_score']:.4f}")
     
     # Save to the output file
     with open(output_path, "w") as f:

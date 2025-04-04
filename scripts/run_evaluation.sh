@@ -1,29 +1,58 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor evaluation on existing predictions
 
+# Get command line arguments or use defaults
+MODEL_NAME=${1:-"gpt-4o"}  # Default model is gpt-4o
+
 # Set environment variables
 API_KEY="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"
-MODEL_NAME="gpt-4o"
 BASE_OUTPUT_DIR="predictions"
 
-# Get current date in YYYYMMDD format
-DATE_STAMP=$(date +"%Y%m%d")
-RUN_ID="01"  # Can be incremented for multiple runs on the same day
-
-# Set up directory structure
+# Set up directory structure using new format
 PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_NAME}"
-EVAL_PREDICTIONS_DIR="${PREDICTIONS_DIR}/eval"
+CONFIG_FILE="${PREDICTIONS_DIR}/config.json"
+PREDICTIONS_OUTPUT_DIR="${PREDICTIONS_DIR}/predictions"
+EVAL_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/eval"
 RESULTS_DIR="${PREDICTIONS_DIR}/results"
+EVAL_RESULTS_DIR="${RESULTS_DIR}/eval"
 
-# Ensure the results directory exists
-mkdir -p "$RESULTS_DIR"
+# Verify the model directory exists
+if [ ! -d "$PREDICTIONS_DIR" ]; then
+    echo "Error: Model directory not found: $PREDICTIONS_DIR"
+    echo "Run './scripts/run_prediction.sh ${MODEL_NAME}' first to generate predictions."
+    exit 1
+fi
+
+# Verify config file exists
+if [ ! -f "$CONFIG_FILE" ]; then
+    echo "Warning: Config file not found: $CONFIG_FILE"
+    echo "Creating a default config file with 2-shot learning..."
+    
+    # Create a default config.json file
+    cat > "$CONFIG_FILE" << EOL
+{
+  "model_name": "${MODEL_NAME}",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "$(date +"%Y-%m-%d")",
+  "notes": "Benchmark run with 2-shot learning (default)"
+}
+EOL
+    echo "Default configuration saved to $CONFIG_FILE"
+fi
+
+# Display experiment configuration
+echo "Experiment configuration:"
+cat "$CONFIG_FILE"
+echo ""
+
+# Ensure the results directories exist
+mkdir -p "$EVAL_RESULTS_DIR"
 
 # Evaluate predictions
 echo "Evaluating predictions..."
 
-# These arrays are no longer needed as reporting is handled by report_evaluation.sh
-
-# Process only evaluation data (since sample data is used for examples)
+# Process only evaluation data
 if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
     for json_file in data/eval/*.json; do
         # Extract the base filename without extension
@@ -39,7 +68,7 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
             # Extract filename part for results
             pred_filename=$(basename "$prediction_file")
             results_filename="${pred_filename/_prediction/_results}"
-            results_path="${RESULTS_DIR}/${results_filename}"
+            results_path="${EVAL_RESULTS_DIR}/${results_filename}"
             
             # Run evaluation with correct command structure
             python scripts/evaluate.py run \
@@ -48,9 +77,6 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
                 --output "$results_path" \
                 "$prediction_file" \
                 "$json_file"
-            
-            # We don't need to calculate metrics here anymore
-            # They will be calculated by the report script
         else
             echo "Warning: No prediction file found for $base_name"
         fi
@@ -61,4 +87,5 @@ fi
 echo -e "\nGenerating evaluation report..."
 bash scripts/report_evaluation.sh "$MODEL_NAME" "$BASE_OUTPUT_DIR"
 
-echo -e "\nEvaluation complete."
+echo -e "\nEvaluation complete. Results stored in $EVAL_RESULTS_DIR"
+echo "To update the leaderboard site, run: python scripts/build_site_results.py"
