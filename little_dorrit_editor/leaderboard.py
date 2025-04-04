@@ -20,9 +20,9 @@ def load_leaderboard(
         List of leaderboard entries
     """
     if leaderboard_path is None:
-        # Default to project's leaderboard directory
+        # Default to project's docs directory for GitHub Pages
         project_root = Path(__file__).parent.parent
-        leaderboard_path = project_root / "leaderboard" / "results.json"
+        leaderboard_path = project_root / "docs" / "results.json"
     
     if not leaderboard_path.exists():
         # Create empty leaderboard if it doesn't exist
@@ -45,9 +45,9 @@ def update_leaderboard(
         leaderboard_path: Path to results.json (defaults to project's leaderboard dir)
     """
     if leaderboard_path is None:
-        # Default to project's leaderboard directory
+        # Default to project's docs directory for GitHub Pages
         project_root = Path(__file__).parent.parent
-        leaderboard_path = project_root / "leaderboard" / "results.json"
+        leaderboard_path = project_root / "docs" / "results.json"
     
     # Load current leaderboard
     leaderboard = load_leaderboard(leaderboard_path)
@@ -220,7 +220,7 @@ def generate_html(leaderboard: List[Dict], output_path: Path) -> None:
     <footer>
         <p>
             For more information, visit the 
-            <a href="https://github.com/yourusername/little-dorrit-editor">Little Dorrit Editor repository</a>.
+            <a href="https://github.com/pairsys/little-dorrit-editor">Little Dorrit Editor repository</a>.
         </p>
     </footer>
 </body>

@@ -101,7 +101,7 @@ python scripts/convert_to_hf_dataset.py data/eval/ data/hf/eval/
 
 ### Leaderboard
 
-View the current leaderboard at [GitHub Pages site](https://yourusername.github.io/little-dorrit-editor/).
+View the current leaderboard at [GitHub Pages site](https://pairsys.github.io/little-dorrit-editor/).
 
 ## Dataset
 
