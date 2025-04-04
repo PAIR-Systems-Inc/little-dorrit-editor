@@ -1,0 +1,161 @@
+[
+  {
+    "model_name": "GPT-4o",
+    "precision": 0.8954,
+    "recall": 0.9123,
+    "f1_score": 0.9037,
+    "date": "2025-03-20T15:30:45",
+    "details": {
+      "precision": 0.8954,
+      "recall": 0.9123,
+      "f1_score": 0.9037,
+      "by_type": {
+        "insertion": {
+          "precision": 0.9100,
+          "recall": 0.9300,
+          "f1": 0.9199,
+          "count": 120
+        },
+        "deletion": {
+          "precision": 0.8700,
+          "recall": 0.9000,
+          "f1": 0.8847,
+          "count": 85
+        },
+        "replacement": {
+          "precision": 0.9200,
+          "recall": 0.9400,
+          "f1": 0.9299,
+          "count": 150
+        },
+        "punctuation": {
+          "precision": 0.9500,
+          "recall": 0.9800,
+          "f1": 0.9647,
+          "count": 75
+        },
+        "capitalization": {
+          "precision": 0.9700,
+          "recall": 0.9800,
+          "f1": 0.9749,
+          "count": 65
+        },
+        "reordering": {
+          "precision": 0.7500,
+          "recall": 0.7800,
+          "f1": 0.7647,
+          "count": 45
+        }
+      },
+      "correct_count": 456,
+      "total_ground_truth": 500,
+      "total_predicted": 509
+    }
+  },
+  {
+    "model_name": "Claude 3 Opus",
+    "precision": 0.8845,
+    "recall": 0.8967,
+    "f1_score": 0.8906,
+    "date": "2025-03-18T14:22:33",
+    "details": {
+      "precision": 0.8845,
+      "recall": 0.8967,
+      "f1_score": 0.8906,
+      "by_type": {
+        "insertion": {
+          "precision": 0.9000,
+          "recall": 0.9200,
+          "f1": 0.9099,
+          "count": 120
+        },
+        "deletion": {
+          "precision": 0.8600,
+          "recall": 0.8800,
+          "f1": 0.8699,
+          "count": 85
+        },
+        "replacement": {
+          "precision": 0.9100,
+          "recall": 0.9250,
+          "f1": 0.9174,
+          "count": 150
+        },
+        "punctuation": {
+          "precision": 0.9300,
+          "recall": 0.9700,
+          "f1": 0.9497,
+          "count": 75
+        },
+        "capitalization": {
+          "precision": 0.9500,
+          "recall": 0.9700,
+          "f1": 0.9599,
+          "count": 65
+        },
+        "reordering": {
+          "precision": 0.7300,
+          "recall": 0.7500,
+          "f1": 0.7399,
+          "count": 45
+        }
+      },
+      "correct_count": 448,
+      "total_ground_truth": 500,
+      "total_predicted": 507
+    }
+  },
+  {
+    "model_name": "Gemini 1.5 Pro",
+    "precision": 0.8725,
+    "recall": 0.8830,
+    "f1_score": 0.8777,
+    "date": "2025-03-15T09:45:12",
+    "details": {
+      "precision": 0.8725,
+      "recall": 0.8830,
+      "f1_score": 0.8777,
+      "by_type": {
+        "insertion": {
+          "precision": 0.8900,
+          "recall": 0.9100,
+          "f1": 0.8999,
+          "count": 120
+        },
+        "deletion": {
+          "precision": 0.8500,
+          "recall": 0.8700,
+          "f1": 0.8599,
+          "count": 85
+        },
+        "replacement": {
+          "precision": 0.8950,
+          "recall": 0.9100,
+          "f1": 0.9024,
+          "count": 150
+        },
+        "punctuation": {
+          "precision": 0.9200,
+          "recall": 0.9500,
+          "f1": 0.9347,
+          "count": 75
+        },
+        "capitalization": {
+          "precision": 0.9400,
+          "recall": 0.9600,
+          "f1": 0.9499,
+          "count": 65
+        },
+        "reordering": {
+          "precision": 0.7100,
+          "recall": 0.7300,
+          "f1": 0.7199,
+          "count": 45
+        }
+      },
+      "correct_count": 441,
+      "total_ground_truth": 500,
+      "total_predicted": 505
+    }
+  }
+]
