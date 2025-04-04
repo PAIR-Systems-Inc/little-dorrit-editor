@@ -8,6 +8,7 @@
     <!-- Tabulator CSS and JS from CDN -->
     <link href="https://unpkg.com/tabulator-tables@6.3.1/dist/css/tabulator.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.1/dist/js/tabulator.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
 
     <style>
         :root {
@@ -80,10 +81,11 @@
             max-width: 1100px;
             margin: 0 auto;
             padding: 20px;
+            scroll-behavior: smooth;
         }
 
         header {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             text-align: center;
             position: relative;
         }
@@ -241,6 +243,94 @@
             width: 30%;
         }
 
+        .example-image {
+            margin: 0 auto 20px;
+            text-align: center;
+            max-width: 360px;
+            display: block;
+        }
+
+        .example-image img {
+            width: 100%;
+            max-width: 360px;
+        }
+
+        .example-caption {
+            text-align: center;
+            margin-top: 8px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .code-window {
+            background-color: #282C34;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-family: 'Fira Code', monospace;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .code-header {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .code-header::before {
+            content: "Ground truth output";
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ccc;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        pre {
+            margin: 0;
+            overflow: auto;
+        }
+
+        code {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .toc {
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            padding: 15px 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+
+        .toc ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .metrics {
                 flex-direction: column;
@@ -264,7 +354,19 @@
         </div>
     </header>
 
-    <div class="content-wrapper">
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#about">About the Benchmark</a></li>
+            <li><a href="#metrics">Key Metrics</a></li>
+            <li><a href="#leaderboard">Performance Leaderboard</a></li>
+            <li><a href="#detailed">Detailed Model Performance</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+        </ul>
+    </div>
+
+    <div class="content-wrapper" id="about">
         <div class="description">
             <h2>About the Benchmark</h2>
             <div class="portrait-container">
@@ -285,10 +387,27 @@
                 These documents represent the kind of annotations an editor might make when reviewing a text for publication, providing
                 a realistic test of how well AI models can understand human editing practices.
             </p>
+
+            <h3>The Task</h3>
+            <p>
+                Models are instructed to identify all handwritten markups and corrections, including:
+            </p>
+            <ul class="task-types">
+                <li><strong>Insertions:</strong> Adding new text (marked with carets or other indicators)</li>
+                <li><strong>Deletions:</strong> Removing text (often shown with strikethroughs)</li>
+                <li><strong>Replacements:</strong> Substituting text with alternatives</li>
+                <li><strong>Punctuation:</strong> Modifying or adding punctuation marks</li>
+                <li><strong>Capitalization:</strong> Changing case (upper/lower)</li>
+                <li><strong>Reordering:</strong> Rearranging text sequence with arrows or numbers</li>
+            </ul>
+            <p>
+                This requires models to understand context, recognize handwritten annotations, and correctly interpret editorial intentions—skills
+                that combine visual understanding, textual comprehension, and domain knowledge of editing practices.
+            </p>
         </div>
     </div>
 
-    <div class="metrics">
+    <div class="metrics" id="metrics">
         <div class="metric-card">
             <div class="metric-title">Top Model</div>
             <div class="metric-value">GPT-4o</div>
@@ -307,11 +426,118 @@
         </div>
     </div>
 
-    <h2 class="section-title">Performance Leaderboard</h2>
+    <h2 class="section-title" id="leaderboard">Performance Leaderboard</h2>
     <div id="leaderboard-table"></div>
 
-    <h2 class="section-title">Detailed Model Performance</h2>
+    <h2 class="section-title" id="detailed">Detailed Model Performance</h2>
     <div id="model-performance-table"></div>
+
+    <h2 class="section-title" id="how-it-works">How It Works</h2>
+    <p>
+        Models are presented with scanned pages containing handwritten editorial marks and are asked to identify each edit,
+        its type, location, and the text before and after the edit. Below is an example from our benchmark:
+    </p>
+
+    <div class="example-container">
+        <div class="example-image">
+            <img src="/001.png" alt="Sample page from Little Dorrit with editorial marks" class="benchmark-example">
+            <div class="example-caption">Sample page from Little Dorrit with editorial marks.</div>
+        </div>
+
+        <div class="example-results">
+            <h4>Expected Output</h4>
+            <p>For the example above, models should identify all ten editorial corrections, producing output like:</p>
+            <div class="code-window">
+                <div class="code-header"></div>
+                <pre><code class="language-json">{
+    "image": "001.png",
+    "page_number": 5,
+    "source": "Little Dorrit",
+    "annotator": "pairsys",
+    "annotation_date": "2025-04-04",
+    "verified": true,
+    "edits": [
+        {
+            "type": "punctuation",
+            "original_text": "church bells",
+            "corrected_text": "church bells,",
+            "line_number": 2,
+            "page": "001.png"
+        },
+        {
+            "type": "punctuation",
+            "original_text": "wine bottles",
+            "corrected_text": "wine-bottles",
+            "line_number": 11,
+            "page": "001.png"
+        },
+        {
+            "type": "punctuation",
+            "original_text": "got through",
+            "corrected_text": "got, through",
+            "line_number": 14,
+            "page": "001.png"
+        },
+        {
+            "type": "punctuation",
+            "original_text": "iron bars fashioned",
+            "corrected_text": "iron bars, fashioned",
+            "line_number": 14,
+            "page": "001.png"
+        },
+        {
+            "type": "punctuation",
+            "original_text": "grating where",
+            "corrected_text": "grating, where",
+            "line_number": 17,
+            "page": "001.png"
+        },
+        {
+            "type": "punctuation",
+            "original_text": "outside and",
+            "corrected_text": "outside; and",
+            "line_number": 29,
+            "page": "001.png"
+        },
+        {
+            "type": "punctuation",
+            "original_text": "intact in",
+            "corrected_text": "intact, in",
+            "line_number": 30,
+            "page": "001.png"
+        },
+        {
+            "type": "capitalization",
+            "original_text": "indian ocean",
+            "corrected_text": "Indian Ocean",
+            "line_number": 31,
+            "page": "001.png"
+        },
+        {
+            "type": "punctuation",
+            "original_text": "was waiting to be fed looking",
+            "corrected_text": "was waiting to be fed; looking",
+            "line_number": 36,
+            "page": "001.png"
+        },
+        {
+            "type": "punctuation",
+            "original_text": "bars that",
+            "corrected_text": "bars, that",
+            "line_number": 36,
+            "page": "001.png"
+        }
+    ]
+}</code></pre>
+            </div>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/json.min.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+    </div>
 
     <p class="updated">Last updated: <span id="last-updated">2025-04-04</span></p>
 
