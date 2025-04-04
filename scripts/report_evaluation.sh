@@ -95,7 +95,7 @@ line=$(printf "%0.s━" $(seq 1 100))
 echo ""
 # Bold top line with no vertical lines
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-printf "  %-11s   %-9s   %-6s   %-8s   %-2s   %-2s   %-2s\n" "File Name" "Precision" "Recall" "F1 Score" "TP" "FP" "FN"
+printf "  %-11s   %9s   %6s   %8s   %2s   %2s   %2s\n" "File Name" "Precision" "Recall" "F1 Score" "TP" "FP" "FN"
 echo "─────────────────────────────────────────────────────────────────"
 
 # Print each row of the table
@@ -103,7 +103,7 @@ for i in "${!file_names[@]}"; do
     precision=$(printf "%.4f" "${precisions[$i]}")
     recall=$(printf "%.4f" "${recalls[$i]}")
     f1=$(printf "%.4f" "${f1s[$i]}")
-    printf "  %-11s   %-9s   %-6s   %-8s   %-2s   %-2s   %-2s\n" \
+    printf "  %-11s   %9s   %6s   %8s   %2s   %2s   %2s\n" \
         "${file_names[$i]}" "$precision" "$recall" "$f1" "${tps[$i]}" "${fps[$i]}" "${fns[$i]}"
 done
 
@@ -141,16 +141,17 @@ formatted_f1=$(printf "%.4f" $overall_f1)
 
 # Create a nice table for overall metrics
 echo ""
-echo "                   Aggregate Metrics"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-printf "  %-25s   %-17s\n" "True Positives" "$total_true_positives"
-printf "  %-25s   %-17s\n" "False Positives" "$total_false_positives"
-printf "  %-25s   %-17s\n" "False Negatives" "$total_false_negatives"
-printf "  %-25s   %-17s\n" "Total Edits" "$total_ground_truth"
+echo "                   Aggregate Metrics"
 echo "─────────────────────────────────────────────────────────────────"
-printf "  %-25s   %-17s\n" "Precision" "$formatted_precision"
-printf "  %-25s   %-17s\n" "Recall" "$formatted_recall"
-printf "  %-25s   %-17s\n" "F1 Score" "$formatted_f1"
+printf "  %-25s   %17s\n" "True Positives" "$total_true_positives"
+printf "  %-25s   %17s\n" "False Positives" "$total_false_positives"
+printf "  %-25s   %17s\n" "False Negatives" "$total_false_negatives"
+printf "  %-25s   %17s\n" "Total Edits" "$total_ground_truth"
+echo "─────────────────────────────────────────────────────────────────"
+printf "  %-25s   %17s\n" "Precision" "$formatted_precision"
+printf "  %-25s   %17s\n" "Recall" "$formatted_recall"
+printf "  %-25s   %17s\n" "F1 Score" "$formatted_f1"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 echo -e "\nReport complete."
