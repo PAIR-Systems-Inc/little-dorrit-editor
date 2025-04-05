@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
 
     <style>
+        /*
+        1. CSS Variables & Base Styles
+        2. Layout & Grid Utilities
+        3. Typography
+        4. Components
+        5. Media Queries
+        */
+
+        /* 1. CSS Variables & Base Styles */
         :root {
             --primary-color: #3a5a78;
             --secondary-color: #f5f5f5;
@@ -18,13 +27,186 @@
             --text-color: #333;
             --bg-color: #fff;
             --border-color: #ddd;
+            --muted-text: #666;
+            --footer-text: #7f8c8d;
+            --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 0 5px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 0 20px rgba(0, 0, 0, 0.15);
+            --code-bg: #282C34;
+            --container-width: 800px;
+            --medal-gold: #FFD700;
+            --medal-silver: #C0C0C0;
+            --medal-bronze: #CD7F32;
+            --score-good: #4CAF50;
+            --score-medium: #FFC107;
+            --score-low: #F44336;
         }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+        /* 2. Layout & Grid Utilities */
         .content-wrapper {
             display: flex;
             flex-direction: column;
         }
 
+        .metrics {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .file-summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .file-summary-chart {
+            width: 65%;
+            height: 300px;
+        }
+
+        .file-summary-stats {
+            width: 30%;
+        }
+
+        /* 3. Typography */
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+            font-size: 2.2em;
+            margin-bottom: 0.3em;
+        }
+
+        h2, h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: var(--muted-text);
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            max-width: var(--container-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .example-caption {
+            text-align: center;
+            margin-top: 8px;
+            font-style: italic;
+            color: var(--muted-text);
+        }
+
+        /* 4. Components */
+        /* Container utilities */
+        .centered-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fixed-width-container {
+            max-width: var(--container-width);
+        }
+
+        /* Header and footer */
+        header {
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: var(--footer-text);
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .updated {
+            text-align: right;
+            font-style: italic;
+            color: var(--footer-text);
+            font-size: 0.85em;
+            margin-top: 30px;
+        }
+
+        /* Cards and containers */
+        .description {
+            max-width: var(--container-width);
+            margin: 0 auto 40px;
+            text-align: left;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .metric-card {
+            flex: 1;
+            background-color: var(--secondary-color);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+
+        .toc {
+            max-width: var(--container-width);
+            margin: 0 auto 30px;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            padding: 15px 25px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .toc h2 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .toc ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .toc li {
+            margin-top: 8px;
+        }
+
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        /* Portrait styling */
         .portrait-container {
             text-align: center;
             margin: 0 auto 40px;
@@ -40,16 +222,151 @@
             overflow: hidden;
             position: relative;
             margin: 0 auto;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            box-shadow: var(--shadow-md);
         }
 
         .portrait {
             position: absolute;
-            width: 200px;     /* zoom level */
-            top: -10px;       /* tweak to center face vertically */
-            left: -10px;      /* tweak to center face horizontally */
+            width: 200px;
+            top: -10px;
+            left: -10px;
         }
 
+        /* Metric elements */
+        .metric-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+
+        .metric-model {
+            font-size: 0.85em;
+            color: var(--muted-text);
+            font-style: italic;
+            margin-top: 2px;
+        }
+
+        /* Medal indicators */
+        .medal {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 50%;
+            color: white;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .gold {
+            background-color: var(--medal-gold);
+            box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+
+        .silver {
+            background-color: var(--medal-silver);
+            box-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
+        }
+
+        .bronze {
+            background-color: var(--medal-bronze);
+            box-shadow: 0 0 5px rgba(205, 127, 50, 0.5);
+        }
+
+        /* Performance indicators */
+        .performance-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .perfect-score {
+            background-color: var(--score-good);
+        }
+
+        .good-score {
+            background-color: var(--score-medium);
+        }
+
+        .low-score {
+            background-color: var(--score-low);
+        }
+
+        /* Table styling */
+        .tabulator {
+            margin: 25px 0;
+            box-shadow: var(--shadow-lg);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* Image containers */
+        .example-image {
+            margin: 0 auto 0;
+            text-align: center;
+            max-width: 620px;
+            display: block;
+        }
+
+        .example-image img {
+            width: 100%;
+            max-width: 620px;
+        }
+
+        /* Code styling */
+        .code-window {
+            background-color: var(--code-bg);
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-family: 'Fira Code', monospace;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .code-header {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .code-header::before {
+            content: "Ground truth output";
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ccc;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        pre {
+            margin: 0;
+            overflow: auto;
+        }
+
+        code {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .post-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        /* 5. Media Queries */
         @media (min-width: 768px) {
             .content-wrapper {
                 flex-direction: row;
@@ -73,289 +390,6 @@
             }
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-            scroll-behavior: smooth;
-        }
-
-        header {
-            margin-bottom: 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        h1 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 15px;
-            font-size: 2.2em;
-            margin-bottom: 0.3em;
-        }
-
-        .subtitle {
-            font-style: italic;
-            color: #666;
-            font-size: 1.1em;
-            margin-bottom: 30px;
-        }
-
-        .description {
-            max-width: 800px;
-            margin: 0 auto 40px;
-            text-align: left;
-            padding: 20px;
-            background-color: var(--secondary-color);
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .description h2 {
-            color: var(--primary-color);
-            margin-top: 0;
-        }
-
-        h3 {
-            color: var(--primary-color);
-            margin-top: 0;
-        }
-
-        .tabulator {
-            margin: 25px 0;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .medal {
-            display: inline-block;
-            width: 22px;
-            height: 22px;
-            line-height: 22px;
-            text-align: center;
-            border-radius: 50%;
-            color: white;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        .gold {
-            background-color: #FFD700;
-            box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
-        }
-
-        .silver {
-            background-color: #C0C0C0;
-            box-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
-        }
-
-        .bronze {
-            background-color: #CD7F32;
-            box-shadow: 0 0 5px rgba(205, 127, 50, 0.5);
-        }
-
-        .metrics {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .metric-card {
-            flex: 1;
-            background-color: var(--secondary-color);
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .metric-title {
-            font-size: 1.1em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        .metric-value {
-            font-size: 2em;
-            font-weight: bold;
-            color: var(--accent-color);
-            margin-bottom: 5px;
-        }
-        
-        .metric-model {
-            font-size: 0.85em;
-            color: #666;
-            font-style: italic;
-            margin-top: 2px;
-        }
-
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #7f8c8d;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .updated {
-            text-align: right;
-            font-style: italic;
-            color: #7f8c8d;
-            font-size: 0.85em;
-            margin-top: 30px;
-        }
-
-        .section-title {
-            color: var(--primary-color);
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-        }
-
-        .performance-indicator {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin-right: 6px;
-        }
-
-        .perfect-score {
-            background-color: #4CAF50;
-        }
-
-        .good-score {
-            background-color: #FFC107;
-        }
-
-        .low-score {
-            background-color: #F44336;
-        }
-
-        .file-summary {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .file-summary-chart {
-            width: 65%;
-            height: 300px;
-        }
-
-        .file-summary-stats {
-            width: 30%;
-        }
-
-        .example-image {
-            margin: 0 auto 0px;
-            text-align: center;
-            max-width: 620px;
-            display: block;
-        }
-
-        .example-image img {
-            width: 100%;
-            max-width: 620px;
-        }
-
-        .example-caption {
-            text-align: center;
-            margin-top: 8px;
-            font-style: italic;
-            color: #666;
-        }
-
-        .code-window {
-            background-color: #282C34;
-            border-radius: 10px;
-            padding: 1rem;
-            margin: 2rem 0;
-            font-family: 'Fira Code', monospace;
-            position: relative;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .code-header {
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .code-header::before {
-            content: "Ground truth output";
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #ccc;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        pre {
-            margin: 0;
-            overflow: auto;
-        }
-
-        code {
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .post-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .subtitle {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .toc {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: var(--secondary-color);
-            border-radius: 5px;
-            padding: 15px 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .toc h2 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: var(--primary-color);
-            font-size: 1.2em;
-        }
-
-        .toc ul {
-            padding-left: 20px;
-            margin-bottom: 0;
-        }
-
-        .toc li {
-            margin-top: 8px;
-        }
-
-        .toc a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .toc a:hover {
-            text-decoration: underline;
-        }
-
         @media (max-width: 768px) {
             .metrics {
                 flex-direction: column;
@@ -365,7 +399,8 @@
                 flex-direction: column;
             }
 
-            .file-summary-chart, .file-summary-stats {
+            .file-summary-chart,
+            .file-summary-stats {
                 width: 100%;
             }
         }
@@ -374,8 +409,10 @@
 <body>
     <header>
         <h1>Little Dorrit Editor Benchmark</h1>
-        <div class="subtitle">
-            150 years after her quiet rebellion in the Marshalsea, Little Dorrit returns—with red pen in hand—to help evaluate the judgment of modern language models.
+        <div class="subtitle centered-container fixed-width-container">
+            More than 150 years after her quiet rebellion in the Marshalsea,
+            Little Dorrit returns—with red pen in hand—to help evaluate the
+            judgment of modern language models.
         </div>
     </header>
 
@@ -409,7 +446,7 @@
     <div id="model-performance-table"></div>
 
     <!-- Table of Contents -->
-    <div class="toc">
+    <div class="toc centered-container fixed-width-container">
         <h2>Further Contents</h2>
         <ul>
             <li><a href="#about">About the Benchmark</a></li>
@@ -423,7 +460,7 @@
         </ul>
     </div>
 
-    <div class="content-wrapper" id="about">
+    <div class="content-wrapper  centered-container fixed-width-container" id="about">
         <div class="description">
             <h2>About the Benchmark</h2>
             <div class="portrait-container">
@@ -447,7 +484,7 @@
         </div>
     </div>
 
-    <div class="post-content">
+    <div class="post-content centered-container fixed-width-container">
     <h2 class="section-title" id="how-it-works">How It Works</h2>
     <p>
         Models are presented with scanned pages containing handwritten editorial
@@ -500,7 +537,7 @@
     <div class="example-container">
         <h3 id="example-input">Example Input</h3>
 
-        <div class="example-image">
+        <div class="example-image centered-container">
             <img src="/001.png" alt="Sample page from Little Dorrit with editorial marks" class="benchmark-example">
             <div class="example-caption">Sample page from Little Dorrit with editorial marks.</div>
         </div>
@@ -845,23 +882,23 @@
                     const topModel = results[0];
                     document.getElementById("top-model").textContent = topModel.model_name;
                     document.getElementById("top-model-name").textContent = "Highest F1 Score";
-                    
+
                     // Find model with best F1 score
-                    const bestF1Index = results.reduce((maxIndex, model, currentIndex, arr) => 
+                    const bestF1Index = results.reduce((maxIndex, model, currentIndex, arr) =>
                         model.f1_score > arr[maxIndex].f1_score ? currentIndex : maxIndex, 0);
                     const bestF1Model = results[bestF1Index];
                     document.getElementById("best-f1-score").textContent = bestF1Model.f1_score.toFixed(4);
                     document.getElementById("best-f1-model").textContent = bestF1Model.model_name;
-                    
+
                     // Find model with best precision
-                    const bestPrecisionIndex = results.reduce((maxIndex, model, currentIndex, arr) => 
+                    const bestPrecisionIndex = results.reduce((maxIndex, model, currentIndex, arr) =>
                         model.precision > arr[maxIndex].precision ? currentIndex : maxIndex, 0);
                     const bestPrecisionModel = results[bestPrecisionIndex];
                     document.getElementById("best-precision").textContent = bestPrecisionModel.precision.toFixed(4);
                     document.getElementById("best-precision-model").textContent = bestPrecisionModel.model_name;
-                    
+
                     // Find model with best recall
-                    const bestRecallIndex = results.reduce((maxIndex, model, currentIndex, arr) => 
+                    const bestRecallIndex = results.reduce((maxIndex, model, currentIndex, arr) =>
                         model.recall > arr[maxIndex].recall ? currentIndex : maxIndex, 0);
                     const bestRecallModel = results[bestRecallIndex];
                     document.getElementById("best-recall").textContent = bestRecallModel.recall.toFixed(4);
