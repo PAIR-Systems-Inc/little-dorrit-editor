@@ -272,8 +272,8 @@ def evaluate(
     ground_truth_path: Path,
     prediction_path: Path,
     model_name: str = "unnamed_model",
-    api_key: Optional[str] = None,
-    llm_model: str = "gpt-4o",
+    api_key: Optional[str] = None,  # Kept for backward compatibility
+    llm_model: str = "gpt-4.5-preview",
 ) -> EvaluationResult:
     """Evaluate predictions against ground truth.
 
@@ -281,7 +281,7 @@ def evaluate(
         ground_truth_path: Path to ground truth JSON file
         prediction_path: Path to prediction JSON file
         model_name: Name of the model being evaluated
-        api_key: API key (optional, overrides configuration)
+        api_key: Kept for backward compatibility, ignored
         llm_model: Model ID to use for LLM judging
 
     Returns:

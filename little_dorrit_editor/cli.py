@@ -28,9 +28,6 @@ def run(
     model_name: str = typer.Option(
         "unnamed_model", "--model-name", "-m", help="Name/ID of the model being evaluated"
     ),
-    api_key: Optional[str] = typer.Option(
-        None, "--api-key", "-k", help="API key (overrides configuration)"
-    ),
     llm_model: str = typer.Option(
         "gpt-4.5-preview", "--llm-model", "-l", 
         help=f"LLM model ID to use for evaluation. Available models: {', '.join(list_models().keys())}"
@@ -100,9 +97,6 @@ def generate_predictions(
     model_name: Optional[str] = typer.Option(
         None, "--model-name", help="Alias for --model-id (for backward compatibility)"
     ),
-    api_key: Optional[str] = typer.Option(
-        None, "--api-key", "-k", help="API key (overrides configuration)"
-    ),
     shots: int = typer.Option(
         0, "--shots", "-s", help="Number of examples to use for few-shot prompting"
     ),
@@ -127,7 +121,7 @@ def generate_predictions(
         if model_name is not None:
             model_id = model_name
             console.print(f"[yellow]Warning:[/yellow] --model-name is deprecated. Please use --model-id instead.")
-        
+            
         # Validate paths
         if not image.exists():
             console.print(f"[red]Error:[/red] Image file not found: {image}")
@@ -181,13 +175,9 @@ def generate_predictions(
         
         model_config = get_model(model_id)
         
-        # Override API key if provided
-        if api_key is None:
-            api_key = model_config.api_key
-        
         # Initialize the client with the appropriate base URL and API key
         client = openai.Client(
-            api_key=api_key,
+            api_key=model_config.api_key,
             base_url=model_config.endpoint
         )
         

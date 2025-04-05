@@ -48,9 +48,27 @@ cd little-dorrit-editor
 uv venv
 source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
 uv pip install -e .
+
+# Set up environment variables for API keys
+export OPENAI_API_KEY="your_openai_api_key"
+export ANTHROPIC_API_KEY="your_anthropic_api_key"  # Optional
+export GOOGLE_API_KEY="your_google_api_key"        # Optional
 ```
 
 ## Usage
+
+### Model Configuration
+
+The project uses a TOML configuration file (`config/models.toml`) to manage LLM configurations:
+
+```bash
+# List available models
+config list
+```
+
+This will display all configured models with their IDs, names, and API types.
+
+The configuration supports various LLM providers (OpenAI, Anthropic, Google) through a consistent interface. To add a new model, simply update the TOML file with the appropriate configuration.
 
 ### Complete Evaluation Workflow
 
@@ -64,7 +82,7 @@ The benchmark includes scripts to automate the entire prediction, evaluation, an
 
 2. **Evaluate Predictions**:
    ```bash
-   # Evaluate predictions and calculate metrics
+   # Evaluate predictions and calculate metrics (using gpt-4.5-preview as judge)
    ./scripts/run_evaluation.sh gpt-4o
    ```
 
@@ -86,22 +104,25 @@ You can also run individual steps manually:
 
 ```bash
 # Zero-shot prediction
-python scripts/evaluate.py generate --model-name "gpt-4o" data/sample/001.png predictions/001_prediction.json
+python scripts/evaluate.py generate --model-id "gpt-4o" data/sample/001.png predictions/001_prediction.json
 
 # Few-shot prediction with examples
-python scripts/evaluate.py generate --shots 2 --model-name "gpt-4o" data/sample/001.png predictions/001_prediction.json
+python scripts/evaluate.py generate --shots 2 --model-id "gpt-4o" data/sample/001.png predictions/001_prediction.json
+
+# Using a different model (e.g., Claude)
+python scripts/evaluate.py generate --model-id "claude-3-7-sonnet-latest" data/sample/001.png predictions/001_prediction.json
 ```
 
 The `generate` command supports the following options:
-- `--model-name`, `-m`: Model to use for predictions (default: "gpt-4o")
+- `--model-id`, `-m`: Model ID from config to use for predictions (default: "gpt-4o")
 - `--shots`, `-s`: Number of examples to use for few-shot prompting (default: 0)
 - `--sample-dataset`, `-d`: Path to the dataset containing examples (default: "data/hf/sample/little-dorrit-editor")
-- `--api-key`, `-k`: OpenAI API key (optional, defaults to environment variable)
+- `--model-name`: Alias for --model-id (for backward compatibility)
 
 ### Running Individual Evaluations
 
 ```bash
-python scripts/evaluate.py evaluate --model-name "your_model_name" path/to/predicted.json path/to/ground_truth.json
+python scripts/evaluate.py run --model-name "your_model_id" --llm-model "gpt-4.5-preview" path/to/predicted.json path/to/ground_truth.json
 ```
 
 ### Preparing Datasets
