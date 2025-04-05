@@ -26,33 +26,29 @@ def test_match_edits_exact_match():
     """Test matching when predictions exactly match ground truth."""
     # Create sample annotations
     ground_truth = EditAnnotation.model_validate({
+        "image": "test.png",
         "page_number": 1,
         "source": "Little Dorrit",
         "edits": [
             {
-                "edit_type": "insertion",
-                "location": {
-                    "start_idx": 10,
-                    "end_idx": 10,
-                    "text": ""
-                },
-                "edited_text": "test"
+                "type": "insertion",
+                "original_text": "",
+                "corrected_text": "test",
+                "line_number": 10
             }
         ]
     })
     
     prediction = EditAnnotation.model_validate({
+        "image": "test.png",
         "page_number": 1,
         "source": "Little Dorrit",
         "edits": [
             {
-                "edit_type": "insertion",
-                "location": {
-                    "start_idx": 10,
-                    "end_idx": 10,
-                    "text": ""
-                },
-                "edited_text": "test"
+                "type": "insertion",
+                "original_text": "",
+                "corrected_text": "test",
+                "line_number": 10
             }
         ]
     })
@@ -68,41 +64,38 @@ def test_match_edits_exact_match():
     assert len(false_negatives) == 0
     
     gt_edit, pred_edit = true_positives[0]
-    assert gt_edit["edit_type"] == "insertion"
-    assert gt_edit["location"]["start_idx"] == 10
-    assert pred_edit["edited_text"] == "test"
+    assert gt_edit["type"] == "insertion"
+    assert gt_edit["line_number"] == 10
+    assert pred_edit["corrected_text"] == "test"
 
 
 def test_match_edits_no_match():
     """Test matching when predictions don't match ground truth at all."""
     # Create sample annotations
     ground_truth = EditAnnotation.model_validate({
+        "image": "test.png",
         "page_number": 1,
         "source": "Little Dorrit",
         "edits": [
             {
-                "edit_type": "insertion",
-                "location": {
-                    "start_idx": 10,
-                    "end_idx": 10,
-                    "text": ""
-                },
-                "edited_text": "test"
+                "type": "insertion",
+                "original_text": "",
+                "corrected_text": "test",
+                "line_number": 10
             }
         ]
     })
     
     prediction = EditAnnotation.model_validate({
+        "image": "test.png",
         "page_number": 1,
         "source": "Little Dorrit",
         "edits": [
             {
-                "edit_type": "deletion",  # Different edit type
-                "location": {
-                    "start_idx": 50,  # Different location
-                    "end_idx": 55,
-                    "text": "wrong"
-                }
+                "type": "deletion",  # Different edit type
+                "original_text": "wrong",
+                "corrected_text": "",
+                "line_number": 50  # Different line number
             }
         ]
     })
@@ -117,58 +110,49 @@ def test_match_edits_no_match():
     assert len(false_positives) == 1
     assert len(false_negatives) == 1
     
-    assert false_positives[0]["edit_type"] == "deletion"
-    assert false_negatives[0]["edit_type"] == "insertion"
+    assert false_positives[0]["type"] == "deletion"
+    assert false_negatives[0]["type"] == "insertion"
 
 
 def test_match_edits_partial_match():
     """Test matching when some predictions match ground truth but not all."""
     # Create sample annotations
     ground_truth = EditAnnotation.model_validate({
+        "image": "test.png",
         "page_number": 1,
         "source": "Little Dorrit",
         "edits": [
             {
-                "edit_type": "insertion",
-                "location": {
-                    "start_idx": 10,
-                    "end_idx": 10,
-                    "text": ""
-                },
-                "edited_text": "test1"
+                "type": "insertion",
+                "original_text": "",
+                "corrected_text": "test1",
+                "line_number": 10
             },
             {
-                "edit_type": "deletion",
-                "location": {
-                    "start_idx": 20,
-                    "end_idx": 25,
-                    "text": "test2"
-                }
+                "type": "deletion",
+                "original_text": "test2",
+                "corrected_text": "",
+                "line_number": 20
             }
         ]
     })
     
     prediction = EditAnnotation.model_validate({
+        "image": "test.png",
         "page_number": 1,
         "source": "Little Dorrit",
         "edits": [
             {
-                "edit_type": "insertion",
-                "location": {
-                    "start_idx": 10,
-                    "end_idx": 10,
-                    "text": ""
-                },
-                "edited_text": "test1"
+                "type": "insertion",
+                "original_text": "",
+                "corrected_text": "test1",
+                "line_number": 10
             },
             {
-                "edit_type": "replacement",  # Different from ground truth
-                "location": {
-                    "start_idx": 30,
-                    "end_idx": 35,
-                    "text": "test3"
-                },
-                "edited_text": "test4"
+                "type": "replacement",  # Different from ground truth
+                "original_text": "test3",
+                "corrected_text": "test4",
+                "line_number": 30
             }
         ]
     })
@@ -184,23 +168,23 @@ def test_match_edits_partial_match():
     assert len(false_negatives) == 1
     
     gt_edit, pred_edit = true_positives[0]
-    assert gt_edit["edit_type"] == "insertion"
-    assert pred_edit["edited_text"] == "test1"
+    assert gt_edit["type"] == "insertion"
+    assert pred_edit["corrected_text"] == "test1"
     
-    assert false_positives[0]["edit_type"] == "replacement"
-    assert false_negatives[0]["edit_type"] == "deletion"
+    assert false_positives[0]["type"] == "replacement"
+    assert false_negatives[0]["type"] == "deletion"
 
 
 def test_calculate_metrics_perfect():
     """Test metric calculation with perfect predictions."""
     # Create sample data
     true_positives = [
-        ({"edit_type": "insertion"}, {"edit_type": "insertion"}),
-        ({"edit_type": "deletion"}, {"edit_type": "deletion"})
+        ({"type": "insertion"}, {"type": "insertion"}),
+        ({"type": "deletion"}, {"type": "deletion"})
     ]
     false_positives = []
     false_negatives = []
-    judgments = [{"is_correct": True}, {"is_correct": True}]
+    judgments = [{"is_correct": True, "score": 1.0}, {"is_correct": True, "score": 1.0}]
     
     # Calculate metrics
     metrics = calculate_metrics(
@@ -221,7 +205,7 @@ def test_calculate_metrics_zero():
     # Create sample data with empty results
     true_positives = []
     false_positives = []
-    false_negatives = [{"edit_type": "insertion"}]
+    false_negatives = [{"type": "insertion"}]
     judgments = []
     
     # Calculate metrics
@@ -242,13 +226,13 @@ def test_calculate_metrics_mixed():
     """Test metric calculation with mixed results."""
     # Create sample data
     true_positives = [
-        ({"edit_type": "insertion"}, {"edit_type": "insertion"}),
-        ({"edit_type": "deletion"}, {"edit_type": "deletion"}),
-        ({"edit_type": "replacement"}, {"edit_type": "replacement"})
+        ({"type": "insertion"}, {"type": "insertion"}),
+        ({"type": "deletion"}, {"type": "deletion"}),
+        ({"type": "replacement"}, {"type": "replacement"})
     ]
-    false_positives = [{"edit_type": "punctuation"}]
-    false_negatives = [{"edit_type": "capitalization"}]
-    judgments = [{"is_correct": True}, {"is_correct": False}, {"is_correct": True}]
+    false_positives = [{"type": "punctuation"}]
+    false_negatives = [{"type": "capitalization"}]
+    judgments = [{"is_correct": True, "score": 1.0}, {"is_correct": False, "score": 0.0}, {"is_correct": True, "score": 1.0}]
     
     # Calculate metrics
     metrics = calculate_metrics(
@@ -267,8 +251,17 @@ def test_calculate_metrics_mixed():
 
 
 @patch("openai.Client")
-def test_llm_judge(mock_client):
+@patch("little_dorrit_editor.evaluate.get_model")
+def test_llm_judge(mock_get_model, mock_client):
     """Test the LLM judge evaluation."""
+    # Mock the model config
+    mock_model_config = MagicMock()
+    mock_model_config.api_key = "test_key"
+    mock_model_config.endpoint = "https://api.test.com"
+    mock_model_config.model_name = "test_model"
+    mock_model_config.logical_name = "Test Model"
+    mock_get_model.return_value = mock_model_config
+    
     # Mock the OpenAI client
     mock_completion = MagicMock()
     mock_choice = MagicMock()
@@ -283,27 +276,21 @@ def test_llm_judge(mock_client):
     mock_client.return_value = mock_client_instance
     
     # Create the judge
-    judge = LLMJudge(api_key="test_key", model="test_model")
+    judge = LLMJudge(model_id="test_model")
     
     # Test evaluation
     ground_truth_edit = {
-        "edit_type": "insertion",
-        "location": {
-            "start_idx": 10,
-            "end_idx": 10,
-            "text": ""
-        },
-        "edited_text": "test"
+        "type": "insertion",
+        "original_text": "",
+        "corrected_text": "test",
+        "line_number": 10
     }
     
     predicted_edit = {
-        "edit_type": "insertion",
-        "location": {
-            "start_idx": 10,
-            "end_idx": 10,
-            "text": ""
-        },
-        "edited_text": "test"
+        "type": "insertion",
+        "original_text": "",
+        "corrected_text": "test",
+        "line_number": 10
     }
     
     result = judge.evaluate_edit(ground_truth_edit, predicted_edit)
@@ -311,7 +298,7 @@ def test_llm_judge(mock_client):
     # Check that the client was called with the right arguments
     mock_client_instance.chat.completions.create.assert_called_once()
     call_args = mock_client_instance.chat.completions.create.call_args[1]
-    assert call_args["model"] == "test_model"
+    assert call_args["model"] == "test_model"  # Should use model_name from config
     assert len(call_args["messages"]) == 2
     assert call_args["response_format"] == {"type": "json_object"}
     

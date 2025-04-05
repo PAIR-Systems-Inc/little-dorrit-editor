@@ -10,34 +10,29 @@ from rich.table import Table
 
 from little_dorrit_editor.config import get_model, ModelConfig
 from little_dorrit_editor.types import EditAnnotation, EvaluationResult
+from little_dorrit_editor.utils import extract_json_from_llm_response
 
 
 class LLMJudge:
     """Judge that uses an LLM API to evaluate the correctness of predicted edits."""
 
-    def __init__(
-        self, model_id: str = "gpt-4o", api_key: Optional[str] = None
-    ) -> None:
+    def __init__(self, model_id: str = "gpt-4o") -> None:
         """Initialize the LLM judge.
 
         Args:
             model_id: Model identifier from configuration
-            api_key: API key (optional, overrides configuration)
         """
         # Get model configuration
         model_config = get_model(model_id)
-        
-        # Allow API key override
-        if api_key is None:
-            api_key = model_config.api_key
-            
+
         # Initialize the OpenAI client with the appropriate base URL and API key
-        self.client = openai.Client(
-            api_key=api_key,
-            base_url=model_config.endpoint
-        )
+        client_params = {"api_key": model_config.api_key}
+        if model_config.endpoint:
+            client_params["base_url"] = model_config.endpoint
+        self.client = openai.Client(**client_params)
         self.model = model_config.model_name
-            
+        self.model_name = model_config.logical_name
+
         self.console = Console()
 
     def _create_prompt(
@@ -66,7 +61,7 @@ PREDICTED EDIT:
 
 Evaluate if the predicted edit correctly captures the intention of the ground truth edit. IGNORE LINE NUMBERS COMPLETELY for this evaluation. Focus only on:
 
-1. Edit Type Accuracy: 
+1. Edit Type Accuracy:
    - The edit type must match exactly (e.g., "punctuation", "capitalization", "insertion", etc.)
    - If types differ, the prediction is incorrect
 
@@ -97,9 +92,9 @@ Respond with a JSON object containing:
             A dict with evaluation results
         """
         prompt = self._create_prompt(ground_truth_edit, predicted_edit)
-        
+
         self.console.print("[dim]Evaluating edit...[/dim]", end="")
-        
+
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[
@@ -108,10 +103,10 @@ Respond with a JSON object containing:
             ],
             response_format={"type": "json_object"},
         )
-        
+
         self.console.print(" [green]Done[/green]")
-        
-        result = json.loads(response.choices[0].message.content)
+
+        result = extract_json_from_llm_response(response.choices[0].message.content)
         return result
 
 
@@ -129,7 +124,7 @@ def match_edits(
     """
     # Convert to dict for easier comparison
     gt_edits = [edit.model_dump() for edit in ground_truth.edits]
-    
+
     # Filter out any predicted edits without line numbers
     filtered_pred_edits = []
     skipped_count = 0
@@ -139,17 +134,17 @@ def match_edits(
             filtered_pred_edits.append(edit_dict)
         else:
             skipped_count += 1
-    
+
     # Log a warning if any edits were skipped
     if skipped_count > 0:
         console = Console()
         console.print(f"[yellow]Warning: Skipped {skipped_count} predicted edit(s) with missing line numbers[/yellow]")
-    
+
     # This is a simplified matching algorithm
     true_positives = []
     false_positives = list(filtered_pred_edits)
     false_negatives = []
-    
+
     for gt_edit in gt_edits:
         matched = False
         for i, pred_edit in enumerate(false_positives):
@@ -159,7 +154,7 @@ def match_edits(
                 and abs(gt_edit["line_number"] - pred_edit["line_number"]) <= 3
                 # Simple text overlap check
                 and (
-                    gt_edit["original_text"] in pred_edit["original_text"] 
+                    gt_edit["original_text"] in pred_edit["original_text"]
                     or pred_edit["original_text"] in gt_edit["original_text"]
                     or gt_edit["corrected_text"] in pred_edit["corrected_text"]
                     or pred_edit["corrected_text"] in gt_edit["corrected_text"]
@@ -169,10 +164,10 @@ def match_edits(
                 false_positives.pop(i)
                 matched = True
                 break
-        
+
         if not matched:
             false_negatives.append(gt_edit)
-    
+
     return true_positives, false_positives, false_negatives
 
 
@@ -195,10 +190,10 @@ def calculate_metrics(
     """
     # Sum scores from judgments (using penalty-adjusted scores)
     total_score = sum(j["score"] for j in judgments)
-    
+
     # Count judgments with score >= 0.5 as "correct" for binary metrics
     correct_count = sum(1 for j in judgments if j.get("is_correct_with_penalty", j["is_correct"]))
-    
+
     # Calculate metrics
     if total_score == 0:
         precision = 0.0
@@ -209,7 +204,7 @@ def calculate_metrics(
         precision = total_score / (len(judgments) + len(false_positives))
         recall = total_score / (len(judgments) + len(false_negatives))
         f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
-    
+
     # Per-edit-type metrics
     edit_types = set()
     for tp in true_positives:
@@ -218,7 +213,7 @@ def calculate_metrics(
         edit_types.add(fp["type"].lower())
     for fn in false_negatives:
         edit_types.add(fn["type"].lower())
-    
+
     type_metrics = {}
     for edit_type in edit_types:
         # Get judgments and true positives for this type
@@ -229,13 +224,13 @@ def calculate_metrics(
         ]
         type_fps = [fp for fp in false_positives if fp["type"].lower() == edit_type]
         type_fns = [fn for fn in false_negatives if fn["type"].lower() == edit_type]
-        
+
         # Calculate total score for this type (using penalty-adjusted scores)
         type_total_score = sum(j["score"] for j, _ in type_judgment_pairs)
-        
+
         # Count for binary metrics (judged correct after penalties)
         type_correct = sum(1 for j, _ in type_judgment_pairs if j.get("is_correct_with_penalty", j["is_correct"]))
-        
+
         if type_total_score == 0:
             type_precision = 0.0
             type_recall = 0.0
@@ -249,14 +244,14 @@ def calculate_metrics(
                 if (type_precision + type_recall) > 0
                 else 0.0
             )
-        
+
         type_metrics[edit_type] = {
             "precision": type_precision,
             "recall": type_recall,
             "f1": type_f1,
             "count": len(type_judgment_pairs) + len(type_fns),
         }
-    
+
     return {
         "precision": precision,
         "recall": recall,
@@ -272,7 +267,6 @@ def evaluate(
     ground_truth_path: Path,
     prediction_path: Path,
     model_name: str = "unnamed_model",
-    api_key: Optional[str] = None,  # Kept for backward compatibility
     llm_model: str = "gpt-4.5-preview",
 ) -> EvaluationResult:
     """Evaluate predictions against ground truth.
@@ -281,47 +275,46 @@ def evaluate(
         ground_truth_path: Path to ground truth JSON file
         prediction_path: Path to prediction JSON file
         model_name: Name of the model being evaluated
-        api_key: Kept for backward compatibility, ignored
         llm_model: Model ID to use for LLM judging
 
     Returns:
         Evaluation results
     """
     console = Console()
-    
+
     # Load annotations
     console.print(f"Loading ground truth from [bold]{ground_truth_path}[/bold]")
     with open(ground_truth_path, "r") as f:
         ground_truth = EditAnnotation.model_validate(json.load(f))
-    
+
     console.print(f"Loading predictions from [bold]{prediction_path}[/bold]")
     with open(prediction_path, "r") as f:
         prediction = EditAnnotation.model_validate(json.load(f))
-    
+
     # Match edits
     console.print("Matching predicted edits to ground truth...")
     true_positives, false_positives, false_negatives = match_edits(
         ground_truth, prediction
     )
-    
+
     # Initialize LLM judge
-    judge = LLMJudge(model_id=llm_model, api_key=api_key)
-    
+    judge = LLMJudge(model_id=llm_model)
+
     # Evaluate matching edits
     console.print(f"Found {len(true_positives)} potential matches to evaluate")
     judgments = []
-    
+
     for gt_edit, pred_edit in true_positives:
         # Get the basic correctness judgment (ignoring line numbers)
         judgment = judge.evaluate_edit(gt_edit, pred_edit)
-        
+
         # Calculate line number penalty: 0.1 * distance^2
         # Default to a large difference if line numbers are missing (shouldn't happen with filtering)
         gt_line = gt_edit.get("line_number", 0)
         pred_line = pred_edit.get("line_number", 1000)  # Use a large default to ensure penalty if missing
         line_diff = abs(gt_line - pred_line)
         line_penalty = min(1.0, 0.1 * (line_diff ** 2))  # Cap at 1.0
-        
+
         # Apply penalty only if the edit is otherwise correct
         if judgment["is_correct"]:
             # Calculate score after penalty
@@ -332,27 +325,27 @@ def evaluate(
             # If content doesn't match, keep score at 0
             score = 0.0
             judgment["is_correct_with_penalty"] = False
-            
+
         # Add score and penalty information
         judgment["score"] = score
         judgment["line_number_penalty"] = line_penalty
         judgment["line_diff"] = line_diff
-            
+
         judgments.append(judgment)
-    
+
     # Calculate metrics
     console.print("Calculating evaluation metrics...")
     metrics = calculate_metrics(
         true_positives, false_positives, false_negatives, judgments
     )
-    
+
     # Add useful reference data to metrics for detailed analysis
     metrics["judgments"] = judgments
     metrics["true_positives"] = [(gt, pred) for gt, pred in true_positives]
-    
+
     # Create evaluation result
     from datetime import datetime
-    
+
     result = EvaluationResult(
         model_name=model_name,
         precision=metrics["precision"],
@@ -361,7 +354,7 @@ def evaluate(
         date=datetime.now().isoformat(),
         details=metrics,
     )
-    
+
     return result
 
 
@@ -372,12 +365,12 @@ def display_results(result: EvaluationResult) -> None:
         result: Evaluation results
     """
     console = Console()
-    
+
     # Main metrics table
     table = Table(title=f"Evaluation Results for {result.model_name}")
     table.add_column("Metric", style="cyan")
     table.add_column("Value", style="green")
-    
+
     table.add_row("Precision", f"{result.precision:.4f}")
     table.add_row("Recall", f"{result.recall:.4f}")
     table.add_row("F1 Score", f"{result.f1_score:.4f}")
@@ -385,9 +378,9 @@ def display_results(result: EvaluationResult) -> None:
         "Correct / Total",
         f"{result.details['correct_count']} / {result.details['total_ground_truth']}",
     )
-    
+
     console.print(table)
-    
+
     # Per-type metrics table
     type_table = Table(title="Results by Edit Type")
     type_table.add_column("Edit Type", style="cyan")
@@ -395,7 +388,7 @@ def display_results(result: EvaluationResult) -> None:
     type_table.add_column("Recall", style="green")
     type_table.add_column("F1 Score", style="green")
     type_table.add_column("Count", style="dim")
-    
+
     for edit_type, metrics in result.details["by_type"].items():
         type_table.add_row(
             edit_type,
@@ -404,9 +397,9 @@ def display_results(result: EvaluationResult) -> None:
             f"{metrics['f1']:.4f}",
             str(metrics['count']),
         )
-    
+
     console.print(type_table)
-    
+
     # Show details about line number penalties
     if "judgments" in result.details and result.details["judgments"]:
         console.print("\n[bold cyan]Line Number Penalties:[/bold cyan]")
@@ -415,17 +408,17 @@ def display_results(result: EvaluationResult) -> None:
         console.print("- 2 lines off: -0.4 points")
         console.print("- 3 lines off: -0.9 points")
         console.print("- >3 lines off: -1.0 (full penalty)")
-        
+
         # Get penalties and diffs
         penalties = [j.get("line_number_penalty", 0.0) for j in result.details["judgments"]]
         line_diffs = [j.get("line_diff", 0) for j in result.details["judgments"]]
         non_zero_diffs = [diff for diff in line_diffs if diff > 0]
-        
+
         # Calculate stats
         if penalties:
             total_penalty = sum(penalties)
             avg_penalty = total_penalty / len(penalties)
-            
+
             console.print("\n[bold cyan]Line Difference Statistics:[/bold cyan]")
             console.print(f"Total evaluated edits: {len(penalties)}")
             console.print(f"Edits with line differences: {len(non_zero_diffs)}")
@@ -433,7 +426,7 @@ def display_results(result: EvaluationResult) -> None:
                 console.print(f"Average line difference: {sum(non_zero_diffs) / len(non_zero_diffs):.2f}")
             console.print(f"Total line number penalty: {total_penalty:.2f}")
             console.print(f"Average penalty per edit: {avg_penalty:.2f}")
-            
+
             # Show penalties by match
             console.print("\n[bold cyan]Penalties by Match:[/bold cyan]")
             for i, j in enumerate(result.details["judgments"]):
