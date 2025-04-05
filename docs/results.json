@@ -1,40 +1,40 @@
 [
   {
-    "model_name": "GPT-4o",
-    "precision": 0.29411764705882354,
+    "model_name": "Open Router: ChatGPT-4o",
+    "precision": 0.2777777777777778,
     "recall": 0.18518518518518517,
-    "f1_score": 0.22727272727272727,
-    "date": "2025-04-04T18:21:06.494101",
+    "f1_score": 0.22222222222222224,
+    "date": "2025-04-05T09:06:18.954734",
     "shots": 2,
     "config": {
-      "model_name": "gpt-4o",
-      "display_name": "GPT-4o",
+      "model_id": "openai/chatgpt-4o-latest",
+      "display_name": "Open Router: ChatGPT-4o",
       "shots": 2,
       "temperature": 0.0,
-      "date": "2025-04-04",
+      "date": "2025-04-05",
       "notes": "Benchmark run with 2-shot learning"
     },
     "details": {
-      "precision": 0.29411764705882354,
+      "precision": 0.2777777777777778,
       "recall": 0.18518518518518517,
-      "f1_score": 0.22727272727272727,
+      "f1_score": 0.22222222222222224,
       "by_type": {
         "punctuation": {
-          "precision": 0.27999999999999997,
-          "recall": 0.13999999999999999,
-          "f1": 0.18666666666666668,
+          "precision": 0.33166666666666667,
+          "recall": 0.19,
+          "f1": 0.2286363636363636,
           "count": 20
         },
         "capitalization": {
-          "precision": 0.3,
-          "recall": 0.3,
-          "f1": 0.3,
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333,
           "count": 3
         },
         "replacement": {
-          "precision": 0.15,
-          "recall": 0.15,
-          "f1": 0.15,
+          "precision": 0.024999999999999994,
+          "recall": 0.024999999999999994,
+          "f1": 0.024999999999999994,
           "count": 4
         },
         "insertion": {
@@ -46,23 +46,23 @@
       },
       "correct_count": 5,
       "total_ground_truth": 27,
-      "total_predicted": 17,
+      "total_predicted": 18,
       "file_results": [
         {
-          "model_name": "gpt-4o",
-          "precision": 0.45,
-          "recall": 0.18,
-          "f1_score": 0.2571428571428572,
-          "date": "2025-04-04T18:18:17.022613",
+          "model_name": "openai/chatgpt-4o-latest",
+          "precision": 0.525,
+          "recall": 0.42000000000000004,
+          "f1_score": 0.4666666666666667,
+          "date": "2025-04-05T09:03:07.947763",
           "details": {
-            "precision": 0.45,
-            "recall": 0.18,
-            "f1_score": 0.2571428571428572,
+            "precision": 0.525,
+            "recall": 0.42000000000000004,
+            "f1_score": 0.4666666666666667,
             "by_type": {
               "punctuation": {
-                "precision": 0.45,
-                "recall": 0.225,
-                "f1": 0.3,
+                "precision": 0.525,
+                "recall": 0.525,
+                "f1": 0.525,
                 "count": 4
               },
               "capitalization": {
@@ -72,25 +72,589 @@
                 "count": 1
               }
             },
-            "correct_count": 1,
+            "correct_count": 2,
             "total_ground_truth": 5,
-            "total_predicted": 2,
+            "total_predicted": 4,
             "judgments": [
               {
-                "is_correct": false,
-                "reasoning": "Edit Type Accuracy: The predicted edit correctly matches the edit type ('punctuation'). Text Content Accuracy: While the predicted edit involves punctuation correctly, the essential punctuation addition indicated by the ground truth is adding a comma between 'yonder' and 'to-day' ('yonder to-day' \u2192 'yonder, to-day'). However, the prediction does not include this specific comma insertion; instead, it only shows capitalization ('sir' \u2192 'Sir') and does not reflect the intended comma placement. Therefore, the prediction fails to capture the essential punctuation change indicated by the ground truth edit.",
-                "is_correct_with_penalty": false,
-                "score": 0.0,
+                "is_correct": true,
+                "reasoning": "The predicted edit type ('punctuation') matches exactly with the ground truth. The text content correction ('howling over' \u2192 'howling, over') is also captured accurately and precisely aligns with the ground truth's intended edit. The discrepancy in the page naming ('003.png' vs. 'page_19') is irrelevant based on the evaluation criteria provided. Consequently, both the edit type and the core text edit have been correctly identified.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
                 "line_number_penalty": 0.0,
                 "line_diff": 0
               },
               {
                 "is_correct": true,
-                "reasoning": "The predicted edit correctly matches the edit type ('punctuation') exactly with the ground truth. Additionally, the core text edit from 'pockets and' to 'pockets, and' is also matched precisely. The slight mismatch in line numbers is explicitly ignored according to the evaluation criteria. Thus, the predicted edit correctly captures the intention and edit type of the ground truth edit.",
+                "reasoning": "The edit type matches exactly (\"punctuation\" in both ground truth and prediction). The text content accuracy is also correct: this edit accurately represents the core change identified in the ground truth, inserting a comma after 'yonder' to become 'yonder, to-day'. Despite a difference in page labeling ('003.png' versus 'page_19'), this discrepancy is irrelevant for the evaluation criteria stated. Therefore, both the edit type and the essential text content correction are accurately captured.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly matches the edit type 'punctuation', which aligns exactly with the ground truth edit type. Additionally, the predicted edit 'pockets and' \u2192 'pockets, and' accurately captures the core intended punctuation change\u2014adding a comma after 'pockets'\u2014as indicated in the ground truth. The essential textual modification matches precisely, and the additional contextual factors (line number, page label) were explicitly disregarded according to instruction. Therefore, this prediction accurately captures the intended ground truth correction.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "howling over",
+                  "corrected_text": "howling, over",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "howling over",
+                  "corrected_text": "howling, over",
+                  "line_number": 1,
+                  "page": "page_19",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "yonder to-day",
+                  "corrected_text": "yonder, to-day",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "yonder to-day",
+                  "corrected_text": "yonder, to-day",
+                  "line_number": 1,
+                  "page": "page_19",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "pockets and",
+                  "corrected_text": "pockets, and",
+                  "line_number": 17,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "pockets and",
+                  "corrected_text": "pockets, and",
+                  "line_number": 14,
+                  "page": "page_19",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "openai/chatgpt-4o-latest",
+          "precision": 0.45,
+          "recall": 0.3,
+          "f1_score": 0.36000000000000004,
+          "date": "2025-04-05T09:03:39.604629",
+          "details": {
+            "precision": 0.45,
+            "recall": 0.3,
+            "f1_score": 0.36000000000000004,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.9,
+                "recall": 0.9,
+                "f1": 0.9,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 2
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 3,
+            "total_predicted": 2,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit type 'capitalization' matches exactly the ground truth edit type. Both edits involve changing the lowercase 'why' to an uppercase 'Why'. Although the ground truth shows additional context ('why did he dine' \u2192 'Why did he dine') and the prediction only shows the word 'why' \u2192 'Why', the essential core capitalization correction is fully captured by the predicted edit. Additional or missing context beyond the core change is acceptable according to the evaluation criteria. Thus, the prediction accurately represents the intention of the ground truth edit.",
                 "is_correct_with_penalty": true,
                 "score": 0.9,
                 "line_number_penalty": 0.1,
                 "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "capitalization",
+                  "original_text": "why did he dine",
+                  "corrected_text": "Why did he dine",
+                  "line_number": 28,
+                  "page": "004.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "capitalization",
+                  "original_text": "why",
+                  "corrected_text": "Why",
+                  "line_number": 27,
+                  "page": "184",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "004"
+        },
+        {
+          "model_name": "openai/chatgpt-4o-latest",
+          "precision": 0.09999999999999998,
+          "recall": 0.09999999999999998,
+          "f1_score": 0.09999999999999998,
+          "date": "2025-04-05T09:04:21.636475",
+          "details": {
+            "precision": 0.09999999999999998,
+            "recall": 0.09999999999999998,
+            "f1_score": 0.09999999999999998,
+            "by_type": {
+              "replacement": {
+                "precision": 0.09999999999999998,
+                "recall": 0.09999999999999998,
+                "f1": 0.09999999999999998,
+                "count": 1
+              },
+              "capitalization": {
+                "precision": 0.09999999999999998,
+                "recall": 0.09999999999999998,
+                "f1": 0.09999999999999998,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 2,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit type matches exactly ('capitalization'), and the core textual change aligns with the ground truth: changing the lowercase 'if' to uppercase 'If.' Although the predicted edit focuses only on the word 'if' and not explicitly 'if he,' the key capitalization correction ('if' \u2192 'If') is accurately captured, meeting both edit type and essential content criteria. Line numbers and pages were explicitly ignored per instructions, and thus do not impact this evaluation.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The prediction accurately captures the edit type ('replacement'), exactly matching the ground truth. Additionally, the core text change correctly corresponds to transforming 'said' into 'asked', which matches precisely the intention of the ground truth edit ('said Clennam' \u2192 'asked Clennam'). Although the predicted edit omits 'Clennam', this omission does not compromise the essential corrective intention, as the central focus of the edit is changing the verb 'said' to 'asked'. Therefore, both criteria (edit type and essential text content) are accurately fulfilled.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "capitalization",
+                  "original_text": "if he",
+                  "corrected_text": "If he",
+                  "line_number": 36,
+                  "page": "005.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "capitalization",
+                  "original_text": "if",
+                  "corrected_text": "If",
+                  "line_number": 33,
+                  "page": "page_209",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "replacement",
+                  "original_text": "said Clennam",
+                  "corrected_text": "asked Clennam",
+                  "line_number": 39,
+                  "page": "005.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "replacement",
+                  "original_text": "said",
+                  "corrected_text": "asked",
+                  "line_number": 36,
+                  "page": "page_209",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "openai/chatgpt-4o-latest",
+          "precision": 0.425,
+          "recall": 0.2125,
+          "f1_score": 0.2833333333333333,
+          "date": "2025-04-05T09:05:11.160355",
+          "details": {
+            "precision": 0.425,
+            "recall": 0.2125,
+            "f1_score": 0.2833333333333333,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.5666666666666667,
+                "recall": 0.2125,
+                "f1": 0.3090909090909091,
+                "count": 8
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 2,
+            "total_ground_truth": 8,
+            "total_predicted": 4,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit matches exactly the ground truth edit type, which is 'punctuation'. Additionally, the original and corrected text ('about and' \u2192 'about, and') accurately capture the core punctuation insertion intended by the ground truth. Differences in line numbers and pages are explicitly ignored in this evaluation, and thus have no impact on correctness. Therefore, the prediction is considered correct.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit has the exact same type as the ground truth ('punctuation'). Additionally, the core textual change matches: both the ground truth and prediction correctly identify the need to insert a comma after 'said'. Even though the prediction omits the word 'when', the essential punctuation correction ('said' to 'said,') exactly matches the ground truth's intended edit. Extra or missing surrounding words are allowed as long as the core edit is accurately captured, which is the case here.",
+                "is_correct_with_penalty": true,
+                "score": 0.6,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The prediction correctly matches the edit type ('punctuation') specified in the ground truth. It also accurately captures the content of the edit: both original ('Clennam in') and corrected text ('Clennam, in') precisely match the intended punctuation change. While the predicted edit references a different page number ('352') instead of the ground truth page ('006.png'), explicit instructions indicate that line numbers and page details should be ignored for this evaluation. Therefore, based only on type accuracy and text content, the prediction correctly captures the intended editorial change.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "about and",
+                  "corrected_text": "about, and",
+                  "line_number": 13,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "about and",
+                  "corrected_text": "about, and",
+                  "line_number": 10,
+                  "page": "352",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "said when",
+                  "corrected_text": "said, when",
+                  "line_number": 23,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "said",
+                  "corrected_text": "said,",
+                  "line_number": 25,
+                  "page": "352",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Clennam in",
+                  "corrected_text": "Clennam, in",
+                  "line_number": 29,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Clennam in",
+                  "corrected_text": "Clennam, in",
+                  "line_number": 29,
+                  "page": "352",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "006"
+        },
+        {
+          "model_name": "openai/chatgpt-4o-latest",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T09:05:45.710402",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 1,
+            "total_predicted": 1,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The edit type ('punctuation') is correctly identified. However, the text content accuracy is incorrect. The ground truth edit shows the original text as 'Sun and Shadow' (without punctuation) being corrected to 'Sun and Shadow.'. The predicted edit incorrectly indicates the original text as 'Sun and Shadow,' (with a comma at the end) and corrected text as 'Sun and Shadow.'. Since this discrepancy fundamentally changes the essence of the edit, the prediction does not accurately capture the core change intended in the ground truth.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "007.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow,",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 1,
+                  "page": "003",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "openai/chatgpt-4o-latest",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T09:06:18.954734",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 5,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The edit type 'punctuation' matches correctly. The prediction captures the insertion of the hyphen ('poplar trees' \u2192 'poplar-trees'). However, it fails to include the comma present in the ground truth correction ('poplar-trees,'). Since the essential punctuation correction involves both the hyphen and the comma, omitting the comma means the predicted edit does not fully capture the core punctuation change identified by the ground truth. Therefore, it is incorrect.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees,",
+                  "line_number": 6,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees",
+                  "line_number": 4,
+                  "page": "137",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "GPT-4o",
+    "precision": 0.19047619047619047,
+    "recall": 0.14814814814814814,
+    "f1_score": 0.16666666666666666,
+    "date": "2025-04-04T18:59:45.568510",
+    "shots": 2,
+    "config": {
+      "model_name": "gpt-4o",
+      "display_name": "GPT-4o",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-04",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.19047619047619047,
+      "recall": 0.14814814814814814,
+      "f1_score": 0.16666666666666666,
+      "by_type": {
+        "punctuation": {
+          "precision": 0.2518333333333333,
+          "recall": 0.20500000000000002,
+          "f1": 0.2181318681318681,
+          "count": 20
+        },
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 3
+        },
+        "replacement": {
+          "precision": 0.024999999999999994,
+          "recall": 0.024999999999999994,
+          "f1": 0.024999999999999994,
+          "count": 4
+        },
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        }
+      },
+      "correct_count": 4,
+      "total_ground_truth": 27,
+      "total_predicted": 21,
+      "file_results": [
+        {
+          "model_name": "gpt-4o",
+          "precision": 0.6666666666666666,
+          "recall": 0.4,
+          "f1_score": 0.5,
+          "date": "2025-04-04T18:57:14.594022",
+          "details": {
+            "precision": 0.6666666666666666,
+            "recall": 0.4,
+            "f1_score": 0.5,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.6666666666666666,
+                "recall": 0.5,
+                "f1": 0.5714285714285715,
+                "count": 4
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 2,
+            "total_ground_truth": 5,
+            "total_predicted": 3,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly matches the ground truth in both edit type and textual content. The edit type is 'punctuation' in both predicted and ground truth edits. Additionally, the textual content exactly matches: the original text 'yonder to-day' is corrected to 'yonder, to-day' in both versions. Therefore, the prediction captures precisely the intended punctuation insertion noted in the ground truth.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The prediction matches exactly the edit type specified as 'punctuation', and it accurately captures the exact core change from 'pockets and' to 'pockets, and'. Both the edit type and the textual change are perfectly aligned, fulfilling both evaluation criteria.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
               }
             ],
             "true_positives": [
@@ -106,8 +670,8 @@
                 },
                 {
                   "type": "punctuation",
-                  "original_text": "yonder to-day, sir,",
-                  "corrected_text": "yonder to-day, Sir,",
+                  "original_text": "yonder to-day",
+                  "corrected_text": "yonder, to-day",
                   "line_number": 1,
                   "page": "003.png",
                   "confidence": null,
@@ -128,7 +692,7 @@
                   "type": "punctuation",
                   "original_text": "pockets and",
                   "corrected_text": "pockets, and",
-                  "line_number": 18,
+                  "line_number": 17,
                   "page": "003.png",
                   "confidence": null,
                   "notes": null
@@ -140,97 +704,67 @@
         },
         {
           "model_name": "gpt-4o",
-          "precision": 0.9,
-          "recall": 0.3,
-          "f1_score": 0.45000000000000007,
-          "date": "2025-04-04T18:18:45.629379",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-04T18:57:28.414608",
           "details": {
-            "precision": 0.9,
-            "recall": 0.3,
-            "f1_score": 0.45000000000000007,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
             "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
               "punctuation": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0.0,
                 "count": 2
-              },
-              "capitalization": {
-                "precision": 0.9,
-                "recall": 0.9,
-                "f1": 0.9,
-                "count": 1
               }
             },
-            "correct_count": 1,
+            "correct_count": 0,
             "total_ground_truth": 3,
-            "total_predicted": 1,
-            "judgments": [
-              {
-                "is_correct": true,
-                "reasoning": "The edit type ('capitalization') matches exactly between ground truth and prediction. Regarding text content accuracy, the predicted correction ('Why did he dine to-day') correctly captures the essential capitalization change intended by the original edit ('Why did he dine'). Although the prediction includes the additional word 'to-day', the core capitalization edit ('w' to 'W') at the beginning is accurately represented. Thus, both criteria\u2014edit type and essential textual correction\u2014are met.",
-                "is_correct_with_penalty": true,
-                "score": 0.9,
-                "line_number_penalty": 0.1,
-                "line_diff": 1
-              }
-            ],
-            "true_positives": [
-              [
-                {
-                  "type": "capitalization",
-                  "original_text": "why did he dine",
-                  "corrected_text": "Why did he dine",
-                  "line_number": 28,
-                  "page": "004.png",
-                  "confidence": null,
-                  "notes": null
-                },
-                {
-                  "type": "capitalization",
-                  "original_text": "why did he dine to-day",
-                  "corrected_text": "Why did he dine to-day",
-                  "line_number": 27,
-                  "page": "184",
-                  "confidence": null,
-                  "notes": null
-                }
-              ]
-            ]
+            "total_predicted": 2,
+            "judgments": [],
+            "true_positives": []
           },
           "file_id": "004"
         },
         {
           "model_name": "gpt-4o",
-          "precision": 0.3,
-          "recall": 0.3,
-          "f1_score": 0.3,
-          "date": "2025-04-04T18:19:27.980873",
+          "precision": 0.04999999999999999,
+          "recall": 0.04999999999999999,
+          "f1_score": 0.04999999999999999,
+          "date": "2025-04-04T18:58:07.301530",
           "details": {
-            "precision": 0.3,
-            "recall": 0.3,
-            "f1_score": 0.3,
+            "precision": 0.04999999999999999,
+            "recall": 0.04999999999999999,
+            "f1_score": 0.04999999999999999,
             "by_type": {
-              "replacement": {
-                "precision": 0.6,
-                "recall": 0.6,
-                "f1": 0.6,
-                "count": 1
-              },
               "capitalization": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0.0,
                 "count": 1
+              },
+              "replacement": {
+                "precision": 0.09999999999999998,
+                "recall": 0.09999999999999998,
+                "f1": 0.09999999999999998,
+                "count": 1
               }
             },
-            "correct_count": 1,
+            "correct_count": 0,
             "total_ground_truth": 2,
             "total_predicted": 2,
             "judgments": [
               {
                 "is_correct": false,
-                "reasoning": "The edit type 'capitalization' matches perfectly. However, the predicted edit changes only 'if' to 'If', whereas the ground truth edit clearly indicates a capitalization correction involving 'if he' to 'If he'. Although the specific capitalization occurs on 'if', the essential edit as described involves both words as a phrase. The prediction captured a smaller unit ('if' alone), missing part of the original context explicitly mentioned ('if he'). Because the predicted edit's text content does not fully align with the core edit captured by the ground truth ('if he' \u2192 'If he'), it does not correctly reflect the intended change. Thus, the essential context of the edit is not sufficiently matched.",
+                "reasoning": "While the edit type ('capitalization') matches perfectly, the text content accuracy is insufficient. The ground truth edit involves changing the phrase 'if he' to 'If he', specifically capitalizing the word 'if' within this context. Although the prediction correctly identifies an edit from lowercase 'if' to uppercase 'If', it omits the subsequent context word 'he'. Because the original ground truth explicitly includes 'he' to clearly identify the scope and context of the edit, removing this additional context in the predicted edit makes it ambiguous as to whether it accurately matches the intended edit. Therefore, although the prediction captures the core capitalization idea partially, it fails to include the essential context provided in the ground truth, making the predicted edit incorrect.",
                 "is_correct_with_penalty": false,
                 "score": 0.0,
                 "line_number_penalty": 0.9,
@@ -238,11 +772,11 @@
               },
               {
                 "is_correct": true,
-                "reasoning": "The predicted edit is correct, as both edit entries indicate the same edit type\u2014'replacement'. Additionally, the text content accurately captures the core editorial change from 'said' to 'asked'. Even though the prediction includes only the word 'said' without the extended context ('said Clennam'), it still correctly identifies the essential replacement change intended by the ground truth. According to the evaluation criteria provided, additional context or slight variations in surrounding text do not affect correctness as long as the fundamental core edit itself is accurately represented. Therefore, the edit is correctly captured.",
-                "is_correct_with_penalty": true,
-                "score": 0.6,
-                "line_number_penalty": 0.4,
-                "line_diff": 2
+                "reasoning": "The prediction's edit type ('replacement') matches exactly with the ground truth. Additionally, the essential textual correction ('said' changed to 'asked') is precisely captured by the prediction, even though the predicted text ('said' to 'asked') has slightly less context than the ground truth ('said Clennam' to 'asked Clennam'). Since additional context is permitted but not required, and the core edit intention is accurately captured, the predicted edit is correct.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
               }
             ],
             "true_positives": [
@@ -280,7 +814,7 @@
                   "type": "replacement",
                   "original_text": "said",
                   "corrected_text": "asked",
-                  "line_number": 41,
+                  "line_number": 42,
                   "page": "003.png",
                   "confidence": null,
                   "notes": null
@@ -292,47 +826,57 @@
         },
         {
           "model_name": "gpt-4o",
-          "precision": 0.38,
-          "recall": 0.2375,
-          "f1_score": 0.2923076923076923,
-          "date": "2025-04-04T18:20:06.509527",
+          "precision": 0.24,
+          "recall": 0.15,
+          "f1_score": 0.1846153846153846,
+          "date": "2025-04-04T18:58:53.343600",
           "details": {
-            "precision": 0.38,
-            "recall": 0.2375,
-            "f1_score": 0.2923076923076923,
+            "precision": 0.24,
+            "recall": 0.15,
+            "f1_score": 0.1846153846153846,
             "by_type": {
               "punctuation": {
-                "precision": 0.475,
-                "recall": 0.2375,
-                "f1": 0.3166666666666667,
+                "precision": 0.24,
+                "recall": 0.15,
+                "f1": 0.1846153846153846,
                 "count": 8
-              },
-              "insertion": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 0
               }
             },
-            "correct_count": 2,
+            "correct_count": 1,
             "total_ground_truth": 8,
             "total_predicted": 5,
             "judgments": [
               {
-                "is_correct": true,
-                "reasoning": "The predicted edit correctly matches the ground truth intention. Firstly, the 'edit type' is identical ('punctuation' in both ground truth and prediction). Secondly, the core text content change is accurately captured: both the prediction and ground truth identify the same original text ('high road') and apply the identical punctuation edit ('high-road'). Since line numbers are explicitly ignored, the discrepancy in line_number and page does not impact evaluation. Therefore, this prediction correctly reflects the intended punctuation edit.",
-                "is_correct_with_penalty": true,
-                "score": 0.9,
+                "is_correct": false,
+                "reasoning": "The edit type ('punctuation') matches between prediction and ground truth. However, the core text change does not accurately reflect the ground truth's original form. The ground truth explicitly corrects 'high road' into 'high-road', while the prediction shows changing 'highroad' into 'high-road'. This difference in the original text ('high road' vs. 'highroad') means the prediction does not correctly capture the original baseline text being edited, thus failing to accurately capture the intended edit.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
                 "line_number_penalty": 0.1,
                 "line_diff": 1
               },
               {
                 "is_correct": true,
-                "reasoning": "The predicted edit type exactly matches the ground truth edit type ('punctuation'). Additionally, the predicted original and corrected texts ('about and' \u2192 'about, and') accurately capture the exact punctuation addition intended by the ground truth. Even though the predicted page is different ('003.png' vs. '006.png'), the instruction explicitly emphasizes ignoring line numbers and page references, focusing solely on edit type and text accuracy. Hence, the prediction correctly identifies both the type and the core textual correction intended in the ground truth edit.",
+                "reasoning": "The predicted edit type ('punctuation') exactly matches the ground truth edit type ('punctuation'). Additionally, the core textual change from 'about and' to 'about, and' is correctly captured and matches perfectly with the ground truth edit. Though the page numbers differ, the instructions explicitly stated to ignore line numbers and page details. Therefore, both criteria\u2014edit type and text content accuracy\u2014are satisfied, making this prediction correct.",
                 "is_correct_with_penalty": true,
                 "score": 1.0,
                 "line_number_penalty": 0.0,
                 "line_diff": 0
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit accurately matches the ground truth edit in both criteria: 1) Edit Type Accuracy: Both ground truth and prediction specify 'punctuation' as the edit type, which matches exactly; 2) Text Content Accuracy: Both edits identify the same essential punctuation correction ('said' \u2192 'said,'). The discrepancy in page number and line number is explicitly ignored per the evaluation instructions, thus having no impact on the decision. Since both the edit type and core textual correction align perfectly, the prediction correctly captures the intent of the ground truth edit.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit matches exactly the edit type ('punctuation') from ground truth. Additionally, the text content ('Clennam in' \u2192 'Clennam, in') is accurately captured, correctly reflecting the core punctuation change intended in the ground truth edit. Line numbers and page numbers are intentionally ignored for this evaluation, making this prediction correct.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
               }
             ],
             "true_positives": [
@@ -348,7 +892,7 @@
                 },
                 {
                   "type": "punctuation",
-                  "original_text": "high road",
+                  "original_text": "highroad",
                   "corrected_text": "high-road",
                   "line_number": 2,
                   "page": "003.png",
@@ -375,6 +919,46 @@
                   "confidence": null,
                   "notes": null
                 }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "said",
+                  "corrected_text": "said,",
+                  "line_number": 25,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "said",
+                  "corrected_text": "said,",
+                  "line_number": 28,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Clennam in",
+                  "corrected_text": "Clennam, in",
+                  "line_number": 29,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Clennam in",
+                  "corrected_text": "Clennam, in",
+                  "line_number": 32,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
               ]
             ]
           },
@@ -382,33 +966,33 @@
         },
         {
           "model_name": "gpt-4o",
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1_score": 0.0,
-          "date": "2025-04-04T18:20:37.488013",
+          "precision": 0.45,
+          "recall": 0.9,
+          "f1_score": 0.6,
+          "date": "2025-04-04T18:59:18.963496",
           "details": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1_score": 0.0,
+            "precision": 0.45,
+            "recall": 0.9,
+            "f1_score": 0.6,
             "by_type": {
               "punctuation": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
+                "precision": 0.45,
+                "recall": 0.9,
+                "f1": 0.6,
                 "count": 1
               }
             },
-            "correct_count": 0,
+            "correct_count": 1,
             "total_ground_truth": 1,
-            "total_predicted": 1,
+            "total_predicted": 2,
             "judgments": [
               {
-                "is_correct": false,
-                "reasoning": "The predicted edit and ground truth edit have the same edit type ('punctuation'), which matches correctly. However, the text content accuracy criterion is not fulfilled. Specifically, the ground truth edit indicates that the original text was 'Sun and Shadow' without punctuation, corrected by adding a period to become 'Sun and Shadow.'. But the predicted edit mistakenly indicates the original text was 'Sun and Shadow,' with a comma being changed to a period, 'Sun and Shadow.'. The ground truth intention was to insert punctuation, whereas the predicted edit assumes replacing one punctuation mark with another. This discrepancy in the original punctuation makes the prediction incorrect with respect to the text content accuracy criterion.",
-                "is_correct_with_penalty": false,
-                "score": 0.0,
-                "line_number_penalty": 0.0,
-                "line_diff": 0
+                "is_correct": true,
+                "reasoning": "The prediction is correct because the edit type ('punctuation') exactly matches the ground truth. Additionally, the predicted edit accurately captures the core change of adding or correcting punctuation from the original text. Although the original text slightly differs ('Sun and Shadow,' in the prediction vs. 'Sun and Shadow' in ground truth), the essential intention\u2014correcting or ensuring the phrase ends with a period\u2014is properly captured. Extra punctuation or context in the original text does not negatively influence correctness, provided the core punctuation fix (changing to 'Sun and Shadow.') is precisely matched. Therefore, the prediction correctly corresponds to the ground truth's intended edit.",
+                "is_correct_with_penalty": true,
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
               }
             ],
             "true_positives": [
@@ -426,7 +1010,7 @@
                   "type": "punctuation",
                   "original_text": "Sun and Shadow,",
                   "corrected_text": "Sun and Shadow.",
-                  "line_number": 0,
+                  "line_number": 1,
                   "page": "003.png",
                   "confidence": null,
                   "notes": null
@@ -441,18 +1025,12 @@
           "precision": 0.0,
           "recall": 0.0,
           "f1_score": 0.0,
-          "date": "2025-04-04T18:21:06.494101",
+          "date": "2025-04-04T18:59:45.568510",
           "details": {
             "precision": 0.0,
             "recall": 0.0,
             "f1_score": 0.0,
             "by_type": {
-              "punctuation": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 5
-              },
               "replacement": {
                 "precision": 0.0,
                 "recall": 0.0,
@@ -464,19 +1042,522 @@
                 "recall": 0.0,
                 "f1": 0.0,
                 "count": 0
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
               }
             },
             "correct_count": 0,
             "total_ground_truth": 8,
-            "total_predicted": 6,
+            "total_predicted": 7,
             "judgments": [
               {
                 "is_correct": false,
-                "reasoning": "The predicted edit type 'punctuation' matches the ground truth edit type exactly, satisfying the first criterion. However, the predicted text content is only 'poplar-trees' whereas the ground truth specifies 'poplar-trees,' including both a hyphen and a comma. By omitting the comma, the prediction does not fully capture the essential punctuation correction intended by the ground truth edit. Therefore, the prediction is incorrect overall, as it does not match the exact intended punctuation change.",
+                "reasoning": "The predicted edit correctly identifies the edit type as 'punctuation', which matches exactly the ground truth edit type. Additionally, it partly captures the core text change by adding the hyphen ('poplar-trees'). However, the predicted edit fails to include the comma present in the ground truth corrected text ('poplar-trees,'). The comma is essential to fully match the intent of the ground truth edit. Thus, despite correctly capturing the edit type and part of the core text change, the omission of the comma means the prediction does not fully match the text content accuracy required.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees,",
+                  "line_number": 6,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees",
+                  "line_number": 6,
+                  "page": "137",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "gpt_4_5_preview",
+    "precision": 0.14285714285714285,
+    "recall": 0.14814814814814814,
+    "f1_score": 0.14545454545454545,
+    "date": "2025-04-05T01:58:45.444873",
+    "shots": 2,
+    "config": {
+      "model_name": "unknown",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-05",
+      "notes": "Default configuration"
+    },
+    "details": {
+      "precision": 0.14285714285714285,
+      "recall": 0.14814814814814814,
+      "f1_score": 0.14545454545454545,
+      "by_type": {
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 3
+        },
+        "punctuation": {
+          "precision": 0.20750000000000002,
+          "recall": 0.15499999999999997,
+          "f1": 0.16045454545454546,
+          "count": 20
+        },
+        "deletion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        },
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        },
+        "replacement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 4
+        }
+      },
+      "correct_count": 4,
+      "total_ground_truth": 27,
+      "total_predicted": 28,
+      "file_results": [
+        {
+          "model_name": "gpt-4_5-preview",
+          "precision": 0.024999999999999994,
+          "recall": 0.019999999999999997,
+          "f1_score": 0.022222222222222216,
+          "date": "2025-04-05T01:55:23.161374",
+          "details": {
+            "precision": 0.024999999999999994,
+            "recall": 0.019999999999999997,
+            "f1_score": 0.022222222222222216,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.024999999999999994,
+                "recall": 0.024999999999999994,
+                "f1": 0.024999999999999994,
+                "count": 4
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 5,
+            "total_predicted": 4,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly matches the edit type ('punctuation') indicated by the ground truth. Additionally, the text content correctly captures the essential punctuation correction from 'pockets and' to 'pockets, and', perfectly aligning with the ground truth's core intention. Line numbers are explicitly ignored, so the discrepancy there does not affect this evaluation. Therefore, both criteria\u2014edit type and text content accuracy\u2014are met.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "pockets and",
+                  "corrected_text": "pockets, and",
+                  "line_number": 17,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "pockets and",
+                  "corrected_text": "pockets, and",
+                  "line_number": 20,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "gpt-4_5-preview",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T01:56:11.079705",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 2
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 3,
+            "total_predicted": 3,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "Although both edits relate to capitalization, the prediction incorrectly identified the word to capitalize. The ground truth edit capitalizes the word 'why' to 'Why', while the prediction capitalizes 'he' to 'He'. Since the predicted core change differs from the ground truth's explicitly intended correction, it does not accurately capture the text content. Therefore, the prediction does not align correctly with the intention of the ground truth edit.",
                 "is_correct_with_penalty": false,
                 "score": 0.0,
                 "line_number_penalty": 0.1,
                 "line_diff": 1
+              },
+              {
+                "is_correct": false,
+                "reasoning": "The predicted edit correctly identifies the edit type ('punctuation'), accurately matching the ground truth. However, the essential correction intended by the ground truth is changing an exclamation mark to a question mark ('cold stones!' \u2192 'cold stones?'). The prediction instead incorrectly adds a quotation mark, preserving the exclamation mark ('stones!' \u2192 'stones!\"'). Therefore, while the prediction correctly identifies the type of edit, it fails the text content accuracy criterion because it does not capture the intended punctuation change (exclamation to question mark).",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "capitalization",
+                  "original_text": "why did he dine",
+                  "corrected_text": "Why did he dine",
+                  "line_number": 28,
+                  "page": "004.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "capitalization",
+                  "original_text": "he",
+                  "corrected_text": "He",
+                  "line_number": 27,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "cold stones!",
+                  "corrected_text": "cold stones?",
+                  "line_number": 29,
+                  "page": "004.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "stones!",
+                  "corrected_text": "stones!\"",
+                  "line_number": 27,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "004"
+        },
+        {
+          "model_name": "gpt-4_5-preview",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T01:56:42.825209",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "deletion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 3,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The edit type is correctly identified as 'capitalization' in both ground truth and prediction. However, the essential text content of the predicted edit does not match that of the ground truth. The ground truth indicates capitalization of the phrase 'if he' to 'If he', whereas the prediction indicates capitalization of the single word 'he' to 'He', omitting the crucial preceding word 'if'. Thus, while the type matches, the specific text content edited does not align with the ground truth intention.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "capitalization",
+                  "original_text": "if he",
+                  "corrected_text": "If he",
+                  "line_number": 36,
+                  "page": "005.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "capitalization",
+                  "original_text": "he",
+                  "corrected_text": "He",
+                  "line_number": 33,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "gpt-4_5-preview",
+          "precision": 0.1125,
+          "recall": 0.1125,
+          "f1_score": 0.1125,
+          "date": "2025-04-05T01:57:20.215365",
+          "details": {
+            "precision": 0.1125,
+            "recall": 0.1125,
+            "f1_score": 0.1125,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.3,
+                "recall": 0.1125,
+                "f1": 0.16363636363636366,
+                "count": 8
+              },
+              "deletion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 8,
+            "total_predicted": 8,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly matches the edit type ('punctuation') of the ground truth edit. Additionally, the text content accuracy is exactly correct; both the predicted and ground truth edits involve inserting a comma between 'earnestly' and 'telling'. Although the page number differs, this evaluation explicitly instructs to ignore line numbers and pages. The essential edit ('earnestly telling' \u2192 'earnestly, telling') is accurately captured by the prediction. Therefore, the prediction correctly matches the ground truth's intention.",
+                "is_correct_with_penalty": true,
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "earnestly telling",
+                  "corrected_text": "earnestly, telling",
+                  "line_number": 18,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "earnestly telling",
+                  "corrected_text": "earnestly, telling",
+                  "line_number": 19,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "006"
+        },
+        {
+          "model_name": "gpt-4_5-preview",
+          "precision": 0.45,
+          "recall": 0.9,
+          "f1_score": 0.6,
+          "date": "2025-04-05T01:57:50.665628",
+          "details": {
+            "precision": 0.45,
+            "recall": 0.9,
+            "f1_score": 0.6,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.45,
+                "recall": 0.9,
+                "f1": 0.6,
+                "count": 1
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 1,
+            "total_predicted": 2,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly identifies the edit type ('punctuation'), matching exactly the ground truth. Additionally, it captures accurately the essential punctuation correction: changing 'Sun and Shadow,' (comma) to 'Sun and Shadow.' (period). Thus, it precisely aligns with the core edit outlined in the ground truth, satisfying both criteria for correctness.",
+                "is_correct_with_penalty": true,
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "007.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow,",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "gpt-4_5-preview",
+          "precision": 0.15,
+          "recall": 0.15,
+          "f1_score": 0.15,
+          "date": "2025-04-05T01:58:45.444873",
+          "details": {
+            "precision": 0.15,
+            "recall": 0.15,
+            "f1_score": 0.15,
+            "by_type": {
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              },
+              "punctuation": {
+                "precision": 0.24,
+                "recall": 0.24,
+                "f1": 0.24,
+                "count": 5
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 2,
+            "total_ground_truth": 8,
+            "total_predicted": 8,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "Edit type is correctly identified as 'punctuation' in both ground truth and predicted edit, which satisfies criterion 1. However, the text content accuracy criterion is not fully met. The ground truth indicates the original \"poplar trees\" should become \"poplar-trees,\", whereas the predicted edit is \"poplar-trees\", missing the critical comma at the end. Since punctuation accuracy is crucial here, the omission of the comma means the predicted edit does not correctly capture the complete intended correction. Thus, it is incorrect.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly matches the ground truth's edit type ('punctuation') exactly. It also accurately captures the core textual change, specifically adding a comma after 'man' to produce 'man, slowly'. The discrepancy in line number and page number is explicitly ignored for this evaluation, hence the prediction is correct based on the edit type and the text content accuracy.",
+                "is_correct_with_penalty": true,
+                "score": 0.6,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit accurately matches the ground truth edit. The edit type is identical ('punctuation'), and the core text correction ('Chalons was' \u2192 'Chalons, was') correctly reflects the essential punctuation change made in the ground truth. Differences in line number and page number are explicitly ignored according to evaluation instructions. Therefore, the prediction is correct.",
+                "is_correct_with_penalty": true,
+                "score": 0.6,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
               }
             ],
             "true_positives": [
@@ -495,7 +1576,47 @@
                   "original_text": "poplar trees",
                   "corrected_text": "poplar-trees",
                   "line_number": 5,
-                  "page": "137",
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "man slowly",
+                  "corrected_text": "man, slowly",
+                  "line_number": 9,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "man slowly",
+                  "corrected_text": "man, slowly",
+                  "line_number": 7,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Chalons was",
+                  "corrected_text": "Chalons, was",
+                  "line_number": 9,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Chalons was",
+                  "corrected_text": "Chalons, was",
+                  "line_number": 7,
+                  "page": "003.png",
                   "confidence": null,
                   "notes": null
                 }
@@ -508,72 +1629,97 @@
     }
   },
   {
-    "model_name": "GPT 4.5 Preview",
-    "precision": 0.13636363636363635,
-    "recall": 0.11538461538461539,
-    "f1_score": 0.12499999999999997,
-    "date": "2025-04-04T18:27:28.767536",
+    "model_name": "gpt_4_turbo",
+    "precision": 0.2,
+    "recall": 0.1111111111111111,
+    "f1_score": 0.14285714285714285,
+    "date": "2025-04-05T02:10:18.149448",
     "shots": 2,
     "config": {
-      "model_name": "gpt-4.5-preview",
-      "display_name": "GPT 4.5 Preview",
+      "model_name": "unknown",
       "shots": 2,
       "temperature": 0.0,
-      "date": "2025-04-04",
-      "notes": "Benchmark run with 2-shot learning"
+      "date": "2025-04-05",
+      "notes": "Default configuration"
     },
     "details": {
-      "precision": 0.13636363636363635,
-      "recall": 0.11538461538461539,
-      "f1_score": 0.12499999999999997,
+      "precision": 0.2,
+      "recall": 0.1111111111111111,
+      "f1_score": 0.14285714285714285,
       "by_type": {
-        "punctuation": {
-          "precision": 0.07368421052631578,
-          "recall": 0.07368421052631578,
-          "f1": 0.07368421052631578,
-          "count": 19
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
         },
         "capitalization": {
-          "precision": 0.3666666666666667,
-          "recall": 0.3666666666666667,
-          "f1": 0.3666666666666667,
+          "precision": 0.19999999999999998,
+          "recall": 0.19999999999999998,
+          "f1": 0.19999999999999998,
           "count": 3
         },
+        "punctuation": {
+          "precision": 0.40499999999999997,
+          "recall": 0.09,
+          "f1": 0.125,
+          "count": 20
+        },
         "replacement": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
+          "precision": 0.024999999999999994,
+          "recall": 0.024999999999999994,
+          "f1": 0.024999999999999994,
           "count": 4
-        },
-        "word replacement": {
-          "precision": 0,
-          "recall": 0,
-          "f1": 0,
-          "count": 0
-        },
-        "spelling": {
-          "precision": 0,
-          "recall": 0,
-          "f1": 0,
-          "count": 0
-        },
-        "hyphenation": {
-          "precision": 0,
-          "recall": 0,
-          "f1": 0,
-          "count": 0
         }
       },
       "correct_count": 3,
-      "total_ground_truth": 26,
-      "total_predicted": 22,
+      "total_ground_truth": 27,
+      "total_predicted": 15,
       "file_results": [
         {
-          "model_name": "gpt-4.5-preview",
+          "model_name": "gpt-4-turbo",
           "precision": 0.0,
           "recall": 0.0,
           "f1_score": 0.0,
-          "date": "2025-04-04T18:24:53.466243",
+          "date": "2025-04-05T02:07:28.760672",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 4
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 5,
+            "total_predicted": 4,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "gpt-4-turbo",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:07:49.716031",
           "details": {
             "precision": 0.0,
             "recall": 0.0,
@@ -583,7 +1729,13 @@
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0.0,
-                "count": 4
+                "count": 2
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
               },
               "capitalization": {
                 "precision": 0.0,
@@ -593,44 +1745,44 @@
               }
             },
             "correct_count": 0,
-            "total_ground_truth": 5,
+            "total_ground_truth": 3,
             "total_predicted": 2,
             "judgments": [],
             "true_positives": []
           },
-          "file_id": "003"
+          "file_id": "004"
         },
         {
-          "model_name": "gpt-4.5-preview",
-          "precision": 0.5333333333333333,
-          "recall": 0.5333333333333333,
-          "f1_score": 0.5333333333333333,
-          "date": "2025-04-04T18:25:30.877656",
+          "model_name": "gpt-4-turbo",
+          "precision": 0.35,
+          "recall": 0.35,
+          "f1_score": 0.35,
+          "date": "2025-04-05T02:08:48.051131",
           "details": {
-            "precision": 0.5333333333333333,
-            "recall": 0.5333333333333333,
-            "f1_score": 0.5333333333333333,
+            "precision": 0.35,
+            "recall": 0.35,
+            "f1_score": 0.35,
             "by_type": {
-              "punctuation": {
-                "precision": 0.3,
-                "recall": 0.3,
-                "f1": 0.3,
-                "count": 2
-              },
               "capitalization": {
-                "precision": 1.0,
-                "recall": 1.0,
-                "f1": 1.0,
+                "precision": 0.6,
+                "recall": 0.6,
+                "f1": 0.6,
+                "count": 1
+              },
+              "replacement": {
+                "precision": 0.09999999999999998,
+                "recall": 0.09999999999999998,
+                "f1": 0.09999999999999998,
                 "count": 1
               }
             },
-            "correct_count": 2,
-            "total_ground_truth": 3,
-            "total_predicted": 3,
+            "correct_count": 1,
+            "total_ground_truth": 2,
+            "total_predicted": 2,
             "judgments": [
               {
                 "is_correct": true,
-                "reasoning": "The edit type in both ground truth and predicted edits is 'punctuation', thus matching exactly. For the text content accuracy, the core correction in the ground truth is inserting a comma after 'No' to properly punctuate ('No sir' to 'No, sir'). The predicted edit accurately captures this essential punctuation correction, changing 'No,sir' to 'No, sir'. Although the predicted text includes additional context ('I have got Maggy with me.'), the main punctuation correction the ground truth focused on ('No sir' -> 'No, sir') is correctly captured. Therefore, the prediction satisfies both criteria of edit type and essential content change.",
+                "reasoning": "The predicted edit correctly identifies the edit type as 'capitalization', matching the ground truth exactly. Although the predicted edit mentions only 'if' being capitalized rather than the full phrase 'if he', the core change\u2014capitalizing the word 'if'\u2014matches accurately. Extra surrounding context ('he') in the ground truth is acceptable to omit in the prediction, as the essential correction ('if' \u2192 'If') is clearly captured. Therefore, despite the smaller context provided in the prediction, it accurately reflects the actual intention and the core edit of the ground truth.",
                 "is_correct_with_penalty": true,
                 "score": 0.6,
                 "line_number_penalty": 0.4,
@@ -638,95 +1790,7 @@
               },
               {
                 "is_correct": true,
-                "reasoning": "The predicted edit matches perfectly in edit type ('capitalization') and captures the core textual correction accurately. Both ground truth and predicted edits capitalize the initial letter 'w' in 'why'. The additional context ('to-') included in the predicted text does not alter or misinterpret the essential capitalization correction described by the ground truth. Therefore, the edit type accuracy and text content accuracy criteria are both satisfied.",
-                "is_correct_with_penalty": true,
-                "score": 1.0,
-                "line_number_penalty": 0.0,
-                "line_diff": 0
-              }
-            ],
-            "true_positives": [
-              [
-                {
-                  "type": "punctuation",
-                  "original_text": "No sir",
-                  "corrected_text": "No, sir",
-                  "line_number": 10,
-                  "page": "004.png",
-                  "confidence": null,
-                  "notes": null
-                },
-                {
-                  "type": "punctuation",
-                  "original_text": "\"No,sir, I have got Maggy with me.\"",
-                  "corrected_text": "\"No, sir, I have got Maggy with me.\"",
-                  "line_number": 12,
-                  "page": null,
-                  "confidence": null,
-                  "notes": "Inserted missing space after comma."
-                }
-              ],
-              [
-                {
-                  "type": "capitalization",
-                  "original_text": "why did he dine",
-                  "corrected_text": "Why did he dine",
-                  "line_number": 28,
-                  "page": "004.png",
-                  "confidence": null,
-                  "notes": null
-                },
-                {
-                  "type": "capitalization",
-                  "original_text": "why did he dine to-",
-                  "corrected_text": "Why did he dine to-",
-                  "line_number": 28,
-                  "page": null,
-                  "confidence": null,
-                  "notes": "Capitalized the first letter of the sentence."
-                }
-              ]
-            ]
-          },
-          "file_id": "004"
-        },
-        {
-          "model_name": "gpt-4.5-preview",
-          "precision": 0.04999999999999999,
-          "recall": 0.04999999999999999,
-          "f1_score": 0.04999999999999999,
-          "date": "2025-04-04T18:25:59.320329",
-          "details": {
-            "precision": 0.04999999999999999,
-            "recall": 0.04999999999999999,
-            "f1_score": 0.04999999999999999,
-            "by_type": {
-              "replacement": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 1
-              },
-              "word replacement": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 0
-              },
-              "capitalization": {
-                "precision": 0.09999999999999998,
-                "recall": 0.09999999999999998,
-                "f1": 0.09999999999999998,
-                "count": 1
-              }
-            },
-            "correct_count": 0,
-            "total_ground_truth": 2,
-            "total_predicted": 2,
-            "judgments": [
-              {
-                "is_correct": true,
-                "reasoning": "The edit type matches exactly ('capitalization'). The predicted edit captures the essential correction to capitalize 'if' to 'If', aligning correctly with the ground truth's core intention. Although the ground truth includes 'he' after 'if', the core edit identified is solely the capitalization of the word 'if', and the additional context ('he') is not required for accurately capturing this capitalization correction. Therefore, the prediction correctly reflects the intent and nature of the ground truth edit.",
+                "reasoning": "The predicted edit type ('replacement') exactly matches the ground truth edit type ('replacement'). The core textual change from 'said' to 'asked' is clearly and accurately captured by the prediction. Although the predicted edit omits the additional word ('Clennam') that follows 'said', it still correctly identifies the essential modification intended by the ground truth\u2014changing 'said' to 'asked'. Given the instructions that the prediction may include additional context but must capture the core change, this slight discrepancy in context (absence of 'Clennam') does not affect the correctness determination. The core intention of changing the verb 'said' to 'asked' is fully preserved, making this prediction correct.",
                 "is_correct_with_penalty": false,
                 "score": 0.09999999999999998,
                 "line_number_penalty": 0.9,
@@ -748,10 +1812,30 @@
                   "type": "capitalization",
                   "original_text": "if",
                   "corrected_text": "If",
-                  "line_number": 33,
-                  "page": null,
+                  "line_number": 34,
+                  "page": "page_identifier",
                   "confidence": null,
-                  "notes": "Capitalized 'if' to 'If'"
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "replacement",
+                  "original_text": "said Clennam",
+                  "corrected_text": "asked Clennam",
+                  "line_number": 39,
+                  "page": "005.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "replacement",
+                  "original_text": "said",
+                  "corrected_text": "asked",
+                  "line_number": 36,
+                  "page": "page_identifier",
+                  "confidence": null,
+                  "notes": null
                 }
               ]
             ]
@@ -759,111 +1843,61 @@
           "file_id": "005"
         },
         {
-          "model_name": "gpt-4.5-preview",
-          "precision": 0.09999999999999999,
-          "recall": 0.09999999999999999,
-          "f1_score": 0.09999999999999999,
-          "date": "2025-04-04T18:26:50.552960",
+          "model_name": "gpt-4-turbo",
+          "precision": 0.45,
+          "recall": 0.1125,
+          "f1_score": 0.18000000000000002,
+          "date": "2025-04-05T02:09:15.132709",
           "details": {
-            "precision": 0.09999999999999999,
-            "recall": 0.09999999999999999,
-            "f1_score": 0.09999999999999999,
+            "precision": 0.45,
+            "recall": 0.1125,
+            "f1_score": 0.18000000000000002,
             "by_type": {
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
               "punctuation": {
-                "precision": 0.09999999999999999,
-                "recall": 0.09999999999999999,
-                "f1": 0.09999999999999999,
+                "precision": 0.9,
+                "recall": 0.1125,
+                "f1": 0.2,
                 "count": 8
               }
             },
             "correct_count": 1,
             "total_ground_truth": 8,
-            "total_predicted": 8,
+            "total_predicted": 2,
             "judgments": [
               {
                 "is_correct": true,
-                "reasoning": "The predicted edit correctly matches the edit type ('punctuation') exactly, which satisfies the first evaluation criterion. Additionally, the predicted text content ('materials costing' \u2192 'materials, costing') accurately captures the core punctuation change from the ground truth, satisfying the second criterion as well. The differences related to line number and page number are explicitly ignored in this evaluation. Thus, the prediction accurately captures the intention of the original edit.",
+                "reasoning": "The prediction correctly identifies both the edit type ('punctuation') and the core content correction (adding a comma after 'said'). Although the prediction only references 'said' \u2192 'said,' while the ground truth mentions 'said when' \u2192 'said, when,' the essential punctuation correction is accurately recognized. The absence of the following word ('when') in the prediction does not affect the correctness, as the evaluation rules clearly state predictions may include less or more context as long as the core edit is accurately captured.",
                 "is_correct_with_penalty": true,
-                "score": 0.6,
-                "line_number_penalty": 0.4,
-                "line_diff": 2
-              },
-              {
-                "is_correct": true,
-                "reasoning": "The predicted edit correctly matches the edit type ('punctuation') exactly. Additionally, the text content accurately captures the core editing intention of the ground truth edit, specifically adding a comma between 'about' and 'and'. The edit 'about and' \u2192 'about, and' perfectly aligns with the ground truth, and no discrepancy in the essential text correction itself is observed. The extra detail missing from line numbers or pages is explicitly disregarded in this evaluation guideline.",
-                "is_correct_with_penalty": false,
-                "score": 0.09999999999999998,
-                "line_number_penalty": 0.9,
-                "line_diff": 3
-              },
-              {
-                "is_correct": true,
-                "reasoning": "The predicted edit matches exactly the ground truth type ('punctuation') and also correctly identifies the core textual change\u2014adding a comma after 'said'. Although the predicted edit includes additional context by acknowledging handwritten uncertainty '(comma?)', this does not alter or detract from the essential correctness of the edit. Both the original and corrected texts ('said' \u2192 'said,') align precisely, fulfilling the criteria for correctness.",
-                "is_correct_with_penalty": false,
-                "score": 0.09999999999999998,
-                "line_number_penalty": 0.9,
-                "line_diff": 3
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
               }
             ],
             "true_positives": [
               [
                 {
                   "type": "punctuation",
-                  "original_text": "materials costing",
-                  "corrected_text": "materials, costing",
-                  "line_number": 3,
+                  "original_text": "said when",
+                  "corrected_text": "said, when",
+                  "line_number": 23,
                   "page": "006.png",
                   "confidence": null,
                   "notes": null
                 },
-                {
-                  "type": "punctuation",
-                  "original_text": "materials costing",
-                  "corrected_text": "materials, costing",
-                  "line_number": 5,
-                  "page": null,
-                  "confidence": null,
-                  "notes": null
-                }
-              ],
-              [
-                {
-                  "type": "punctuation",
-                  "original_text": "about and",
-                  "corrected_text": "about, and",
-                  "line_number": 13,
-                  "page": "006.png",
-                  "confidence": null,
-                  "notes": null
-                },
-                {
-                  "type": "punctuation",
-                  "original_text": "about and",
-                  "corrected_text": "about, and",
-                  "line_number": 16,
-                  "page": null,
-                  "confidence": null,
-                  "notes": null
-                }
-              ],
-              [
                 {
                   "type": "punctuation",
                   "original_text": "said",
                   "corrected_text": "said,",
-                  "line_number": 25,
-                  "page": "006.png",
+                  "line_number": 24,
+                  "page": "page_identifier",
                   "confidence": null,
                   "notes": null
-                },
-                {
-                  "type": "punctuation",
-                  "original_text": "said (comma?)",
-                  "corrected_text": "said,",
-                  "line_number": 28,
-                  "page": null,
-                  "confidence": null,
-                  "notes": "The handwritten note '(comma?)' indicates uncertainty about adding a comma after 'said'."
                 }
               ]
             ]
@@ -871,11 +1905,67 @@
           "file_id": "006"
         },
         {
-          "model_name": "gpt-4.5-preview",
+          "model_name": "gpt-4-turbo",
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1_score": 0.9,
+          "date": "2025-04-05T02:09:42.739751",
+          "details": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1_score": 0.9,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.9,
+                "recall": 0.9,
+                "f1": 0.9,
+                "count": 1
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 1,
+            "total_predicted": 1,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit accurately matches the ground truth edit in both criteria. \n\n1. Edit Type Accuracy: Both edits are categorized as 'punctuation', so this criterion is satisfied.\n\n2. Text Content Accuracy: Both original and corrected texts ('Sun and Shadow' \u2192 'Sun and Shadow.') match exactly the ground truth intention, accurately capturing the punctuational change of adding a period at the end.\n\nOverall, the prediction correctly captures the type and the exact textual content of the intended edit.",
+                "is_correct_with_penalty": true,
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "007.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "gpt-4-turbo",
           "precision": 0.0,
           "recall": 0.0,
           "f1_score": 0.0,
-          "date": "2025-04-04T18:27:28.767536",
+          "date": "2025-04-05T02:10:18.149448",
           "details": {
             "precision": 0.0,
             "recall": 0.0,
@@ -892,139 +1982,37 @@
                 "recall": 0.0,
                 "f1": 0.0,
                 "count": 5
-              },
-              "spelling": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 0
-              },
-              "hyphenation": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 0
               }
             },
             "correct_count": 0,
             "total_ground_truth": 8,
-            "total_predicted": 7,
-            "judgments": [],
-            "true_positives": []
-          },
-          "file_id": "008"
-        }
-      ]
-    }
-  },
-  {
-    "model_name": "GPT-4o Mini",
-    "precision": 0.1111111111111111,
-    "recall": 0.07407407407407407,
-    "f1_score": 0.08888888888888888,
-    "date": "2025-04-04T18:23:56.284414",
-    "shots": 2,
-    "config": {
-      "model_name": "gpt-4o-mini",
-      "display_name": "GPT-4o Mini",
-      "shots": 2,
-      "temperature": 0.0,
-      "date": "2025-04-04",
-      "notes": "Benchmark run with 2-shot learning"
-    },
-    "details": {
-      "precision": 0.1111111111111111,
-      "recall": 0.07407407407407407,
-      "f1_score": 0.08888888888888888,
-      "by_type": {
-        "punctuation": {
-          "precision": 0.128,
-          "recall": 0.08,
-          "f1": 0.09846153846153846,
-          "count": 20
-        },
-        "capitalization": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "count": 3
-        },
-        "annotation": {
-          "precision": 0,
-          "recall": 0,
-          "f1": 0,
-          "count": 0
-        },
-        "spelling": {
-          "precision": 0,
-          "recall": 0,
-          "f1": 0,
-          "count": 0
-        },
-        "replacement": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "count": 4
-        }
-      },
-      "correct_count": 2,
-      "total_ground_truth": 27,
-      "total_predicted": 18,
-      "file_results": [
-        {
-          "model_name": "gpt-4o-mini",
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1_score": 0.0,
-          "date": "2025-04-04T18:22:00.772529",
-          "details": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1_score": 0.0,
-            "by_type": {
-              "punctuation": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 4
-              },
-              "capitalization": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 1
-              }
-            },
-            "correct_count": 0,
-            "total_ground_truth": 5,
-            "total_predicted": 5,
+            "total_predicted": 4,
             "judgments": [
               {
                 "is_correct": false,
-                "reasoning": "The predicted edit correctly identifies the edit type as 'punctuation', matching the ground truth. However, the ground truth demonstrates a punctuation insertion specifically between 'yonder' and 'to-day' ('yonder to-day' \u2192 'yonder, to-day'). In the prediction, the punctuation change occurs later in the phrase ('sir is' \u2192 'sir,'), and the essential punctuation correction between 'yonder' and 'to-day' is not represented. Therefore, the prediction does not accurately capture the core textual correction that the ground truth intended.",
+                "reasoning": "Although the predicted edit correctly identified the edit type ('punctuation') and captured part of the intended correction by adding a hyphen ('poplar-trees'), it failed to correctly include the comma that was explicitly provided in the ground truth correction ('poplar-trees,'). Given that the punctuation after 'trees' (a comma) was part of the ground truth intention, omitting it constitutes an incomplete representation of the edit. Therefore, the prediction did not fully match the ground truth edit.",
                 "is_correct_with_penalty": false,
                 "score": 0.0,
-                "line_number_penalty": 0.1,
-                "line_diff": 1
+                "line_number_penalty": 0.0,
+                "line_diff": 0
               }
             ],
             "true_positives": [
               [
                 {
                   "type": "punctuation",
-                  "original_text": "yonder to-day",
-                  "corrected_text": "yonder, to-day",
-                  "line_number": 1,
-                  "page": "003.png",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees,",
+                  "line_number": 6,
+                  "page": "008.png",
                   "confidence": null,
                   "notes": null
                 },
                 {
                   "type": "punctuation",
-                  "original_text": "yonder to-day, sir is",
-                  "corrected_text": "yonder to-day, sir,",
-                  "line_number": 2,
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees",
+                  "line_number": 6,
                   "page": "003.png",
                   "confidence": null,
                   "notes": null
@@ -1032,63 +2020,115 @@
               ]
             ]
           },
-          "file_id": "003"
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "Mistral Small 3.1 24B",
+    "precision": 0.14285714285714285,
+    "recall": 0.14285714285714285,
+    "f1_score": 0.14285714285714285,
+    "date": "2025-04-05T02:49:06.346515",
+    "shots": 2,
+    "config": {
+      "model_id": "mistralai/mistral-small-3.1-24b-instruct",
+      "display_name": "Mistral Small 3.1 24B",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-05",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.14285714285714285,
+      "recall": 0.14285714285714285,
+      "f1_score": 0.14285714285714285,
+      "by_type": {
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
         },
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 2
+        },
+        "punctuation": {
+          "precision": 0.125,
+          "recall": 0.125,
+          "f1": 0.125,
+          "count": 8
+        },
+        "replacement": {
+          "precision": 0.41250000000000003,
+          "recall": 0.275,
+          "f1": 0.33,
+          "count": 4
+        },
+        "deletion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        }
+      },
+      "correct_count": 2,
+      "total_ground_truth": 14,
+      "total_predicted": 14,
+      "file_results": [
         {
-          "model_name": "gpt-4o-mini",
+          "model_name": "mistralai/mistral-small-3.1-24b-instruct",
           "precision": 0.0,
           "recall": 0.0,
           "f1_score": 0.0,
-          "date": "2025-04-04T18:22:19.418718",
+          "date": "2025-04-05T02:47:39.894777",
           "details": {
             "precision": 0.0,
             "recall": 0.0,
             "f1_score": 0.0,
             "by_type": {
-              "annotation": {
+              "insertion": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0.0,
                 "count": 0
-              },
-              "punctuation": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 2
               },
               "capitalization": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0.0,
                 "count": 1
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 2
               }
             },
             "correct_count": 0,
             "total_ground_truth": 3,
-            "total_predicted": 2,
+            "total_predicted": 4,
             "judgments": [],
             "true_positives": []
           },
           "file_id": "004"
         },
         {
-          "model_name": "gpt-4o-mini",
+          "model_name": "mistralai/mistral-small-3.1-24b-instruct",
           "precision": 0.0,
           "recall": 0.0,
           "f1_score": 0.0,
-          "date": "2025-04-04T18:22:39.269225",
+          "date": "2025-04-05T02:47:57.392397",
           "details": {
             "precision": 0.0,
             "recall": 0.0,
             "f1_score": 0.0,
             "by_type": {
-              "spelling": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0.0,
-                "count": 0
-              },
               "capitalization": {
                 "precision": 0.0,
                 "recall": 0.0,
@@ -1111,61 +2151,467 @@
           "file_id": "005"
         },
         {
-          "model_name": "gpt-4o-mini",
-          "precision": 0.32,
-          "recall": 0.2,
-          "f1_score": 0.24615384615384614,
-          "date": "2025-04-04T18:23:15.317788",
+          "model_name": "mistralai/mistral-small-3.1-24b-instruct",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "date": "2025-04-05T02:48:20.324994",
           "details": {
-            "precision": 0.32,
-            "recall": 0.2,
-            "f1_score": 0.24615384615384614,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
             "by_type": {
               "punctuation": {
-                "precision": 0.32,
-                "recall": 0.2,
-                "f1": 0.24615384615384614,
-                "count": 8
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "count": 1
               }
             },
-            "correct_count": 2,
-            "total_ground_truth": 8,
-            "total_predicted": 5,
+            "correct_count": 1,
+            "total_ground_truth": 1,
+            "total_predicted": 1,
             "judgments": [
               {
                 "is_correct": true,
-                "reasoning": "The predicted edit correctly matches the ground truth edit in both type and text content. The edit type \"punctuation\" is identical in both the prediction and the ground truth. Additionally, the predicted change from \"high road\" to \"high-road\" accurately captures the core correction identified in the ground truth. The discrepancy in page numbering is irrelevant in this evaluation. Hence, the prediction meets all required criteria.",
+                "reasoning": "The predicted edit correctly matches the edit type ('punctuation') exactly as the ground truth. Additionally, the content change from 'Sun and Shadow' to 'Sun and Shadow.' precisely matches the essential punctuation correction indicated in the ground truth. Although the predicted edit references a different page ('003.png' instead of '007.png'), page numbers and line numbers were explicitly instructed to be ignored for the evaluation. Therefore, since both the edit type and text content accurately reflect the ground truth intention, the prediction is correct.",
                 "is_correct_with_penalty": true,
                 "score": 1.0,
                 "line_number_penalty": 0.0,
                 "line_diff": 0
-              },
-              {
-                "is_correct": true,
-                "reasoning": "The predicted edit type 'punctuation' exactly matches the ground truth edit type. The ground truth edit changes 'said when' to 'said, when', thus adding a comma after 'said'. The predicted edit correctly captures this intention by identifying the same punctuation change ('said' to 'said,'). Although the predicted edit does not explicitly mention the following word 'when', it still captures accurately the core punctuation correction indicated by the ground truth. Since the essential change\u2014the insertion of a comma\u2014is correctly identified, the predicted edit meets the criteria specified.",
-                "is_correct_with_penalty": true,
-                "score": 0.6,
-                "line_number_penalty": 0.4,
-                "line_diff": 2
               }
             ],
             "true_positives": [
               [
                 {
                   "type": "punctuation",
-                  "original_text": "high road",
-                  "corrected_text": "high-road",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "007.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "mistralai/mistral-small-3.1-24b-instruct",
+          "precision": 0.15714285714285717,
+          "recall": 0.1375,
+          "f1_score": 0.14666666666666667,
+          "date": "2025-04-05T02:49:06.346515",
+          "details": {
+            "precision": 0.15714285714285717,
+            "recall": 0.1375,
+            "f1_score": 0.14666666666666667,
+            "by_type": {
+              "deletion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
+              },
+              "replacement": {
+                "precision": 0.55,
+                "recall": 0.3666666666666667,
+                "f1": 0.44,
+                "count": 3
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 8,
+            "total_predicted": 7,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit accurately matches the ground truth. The edit type ('replacement') is identical in both predictions. The original text ('Saone') and the corrected text ('Sa\u00f4ne') match exactly, clearly capturing the core textual correction intended by the ground truth edit. Page number differences and line numbers were explicitly stated to be ignored. Therefore, the predicted edit correctly represents the intended handwritten editorial correction.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              },
+              {
+                "is_correct": false,
+                "reasoning": "The predicted edit correctly identifies the edit type as 'punctuation', matching the ground truth's edit type. It also accurately captures the hyphenation ('poplar trees' to 'poplar-trees'). However, it fails to include the comma that the ground truth adds after 'poplar-trees'. Since the comma is explicitly indicated in the ground truth correction ('poplar-trees,'), omitting it constitutes an incomplete capture of the intended punctuation edit. Therefore, the predicted edit does not fully match the essential text content specified by the ground truth.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit has the exact matching edit type ('replacement') as the ground truth. It also precisely captures the intended text correction ('Saone' \u2192 'Sa\u00f4ne') without adding unnecessary changes or missing the core edit. Even though the predicted edit references a different line number and page, the instructions explicitly state to ignore line numbers, focusing solely on the accuracy of edit type and text content. Therefore, since both criteria are fully satisfied, the predicted edit is correct.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "replacement",
+                  "original_text": "Saone",
+                  "corrected_text": "Sa\u00f4ne",
                   "line_number": 1,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "replacement",
+                  "original_text": "Saone",
+                  "corrected_text": "Sa\u00f4ne",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees,",
+                  "line_number": 6,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees",
+                  "line_number": 3,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "replacement",
+                  "original_text": "Saone",
+                  "corrected_text": "Sa\u00f4ne",
+                  "line_number": 7,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "replacement",
+                  "original_text": "Saone",
+                  "corrected_text": "Sa\u00f4ne",
+                  "line_number": 4,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "Qwen VL Max",
+    "precision": 0.1111111111111111,
+    "recall": 0.07407407407407407,
+    "f1_score": 0.08888888888888888,
+    "date": "2025-04-05T02:50:56.659115",
+    "shots": 2,
+    "config": {
+      "model_id": "qwen/qwen-vl-max",
+      "display_name": "Qwen VL Max",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-05",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.1111111111111111,
+      "recall": 0.07407407407407407,
+      "f1_score": 0.08888888888888888,
+      "by_type": {
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 3
+        },
+        "punctuation": {
+          "precision": 0.095,
+          "recall": 0.095,
+          "f1": 0.095,
+          "count": 20
+        },
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        },
+        "replacement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 4
+        },
+        "deletion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        }
+      },
+      "correct_count": 2,
+      "total_ground_truth": 27,
+      "total_predicted": 18,
+      "file_results": [
+        {
+          "model_name": "qwen/qwen-vl-max",
+          "precision": 0.225,
+          "recall": 0.18,
+          "f1_score": 0.19999999999999998,
+          "date": "2025-04-05T02:49:09.914762",
+          "details": {
+            "precision": 0.225,
+            "recall": 0.18,
+            "f1_score": 0.19999999999999998,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.225,
+                "recall": 0.225,
+                "f1": 0.225,
+                "count": 4
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 5,
+            "total_predicted": 4,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit has the exact same 'punctuation' edit as the ground truth, adding a comma after the word 'yonder.' Although the predicted edit includes an extra word ('over') before the context ('yonder to-day'), this additional context does not alter or obscure the essential punctuation edit made ('yonder' \u2192 'yonder,'). Thus, edit type and the core textual change accurately match the ground truth's intention.",
+                "is_correct_with_penalty": true,
+                "score": 0.9,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "yonder to-day",
+                  "corrected_text": "yonder, to-day",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "over yonder to-day",
+                  "corrected_text": "over yonder, to-day",
+                  "line_number": 2,
+                  "page": "19",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "qwen/qwen-vl-max",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:49:20.522971",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 2
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 3,
+            "total_predicted": 4,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "004"
+        },
+        {
+          "model_name": "qwen/qwen-vl-max",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:49:35.059127",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "deletion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 3,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "qwen/qwen-vl-max",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:50:14.218090",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 8
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 3,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The edit type ('punctuation') matches correctly. However, the predicted edit places the punctuation after 'and' (changing 'and' to 'and,'), whereas the ground truth edit intends punctuation between the words 'about and', resulting in 'about, and'. Therefore, the essential punctuation insertion is not properly captured\u2014the prediction addresses the wrong punctuation placement and fails to reflect the intended correction accurately.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              },
+              {
+                "is_correct": false,
+                "reasoning": "Edit type accuracy is correct ('punctuation' matches 'punctuation'). However, the text content accuracy is incorrect. The ground truth explicitly indicates that the original text was 'said when' changed to 'said, when', clearly placing the comma between 'said' and 'when'. The prediction only shows an isolated change ('said' to 'said,') without including the context word 'when', making it unclear if this fully matches the ground truth intent. Although the essential punctuation inserted matches (comma after 'said'), the omission of the word 'when' means it does not precisely reflect the intended edit specified by the ground truth. Therefore, the predicted edit is incorrect.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "about and",
+                  "corrected_text": "about, and",
+                  "line_number": 13,
                   "page": "006.png",
                   "confidence": null,
                   "notes": null
                 },
                 {
                   "type": "punctuation",
-                  "original_text": "high road",
-                  "corrected_text": "high-road",
-                  "line_number": 1,
-                  "page": "003.png",
+                  "original_text": "and",
+                  "corrected_text": "and,",
+                  "line_number": 10,
+                  "page": "352",
                   "confidence": null,
                   "notes": null
                 }
@@ -1184,7 +2630,399 @@
                   "type": "punctuation",
                   "original_text": "said",
                   "corrected_text": "said,",
+                  "line_number": 20,
+                  "page": "352",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "006"
+        },
+        {
+          "model_name": "qwen/qwen-vl-max",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "date": "2025-04-05T02:50:42.623550",
+          "details": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "count": 1
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 1,
+            "total_predicted": 1,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The prediction correctly identifies the edit type as 'punctuation', exactly matching the ground truth. It also correctly captures the essential content, identifying clearly the change from 'Sun and Shadow' to 'Sun and Shadow.', matching the core punctuation correction indicated by the ground truth. Although the 'page' identifier differs ('Chapter 1' rather than '007.png'), this is irrelevant since the line number and page context are explicitly ignored per instructions. Therefore, the prediction fully matches the edit type and captures the core textual modification accurately.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "007.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "Chapter 1",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "qwen/qwen-vl-max",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:50:56.659115",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 3,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "GPT-4o Mini",
+    "precision": 0.07407407407407407,
+    "recall": 0.07407407407407407,
+    "f1_score": 0.07407407407407407,
+    "date": "2025-04-04T18:59:09.663709",
+    "shots": 2,
+    "config": {
+      "model_name": "gpt-4o-mini",
+      "display_name": "GPT-4o Mini",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-04",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.07407407407407407,
+      "recall": 0.07407407407407407,
+      "f1_score": 0.07407407407407407,
+      "by_type": {
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 3
+        },
+        "punctuation": {
+          "precision": 0.10083333333333333,
+          "recall": 0.06499999999999999,
+          "f1": 0.0629090909090909,
+          "count": 20
+        },
+        "replacement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 4
+        },
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        }
+      },
+      "correct_count": 2,
+      "total_ground_truth": 27,
+      "total_predicted": 27,
+      "file_results": [
+        {
+          "model_name": "gpt-4o-mini",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-04T18:57:11.273424",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 4
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 5,
+            "total_predicted": 5,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "While the edit type ('punctuation') matches exactly, the predicted edit does not capture the core intended punctuation change. The ground truth clearly shows that a comma should be inserted as 'yonder, to-day', specifically separating the two given words. However, the predicted edit does not introduce this comma but instead changes capitalization later ('Sir' to 'sir'), missing entirely the essential punctuation insertion after 'yonder'. Because the core intended punctuation edit in the ground truth ('yonder' changed to 'yonder,') is not reflected at all in the prediction, the prediction is incorrect.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "yonder to-day",
+                  "corrected_text": "yonder, to-day",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "yonder to-day, Sir,",
+                  "corrected_text": "yonder to-day, sir,",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "gpt-4o-mini",
+          "precision": 0.075,
+          "recall": 0.19999999999999998,
+          "f1_score": 0.10909090909090909,
+          "date": "2025-04-04T18:57:37.751059",
+          "details": {
+            "precision": 0.075,
+            "recall": 0.19999999999999998,
+            "f1_score": 0.10909090909090909,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.075,
+                "recall": 0.3,
+                "f1": 0.12,
+                "count": 2
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 3,
+            "total_predicted": 8,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "First, the edit type matches exactly ('punctuation'). Secondly, the core textual edit\u2014changing an exclamation mark ('!') to a question mark ('?') in the phrase 'cold stones'\u2014is correctly captured by the predicted edit. Although the predicted edit includes the additional word 'the', the essential punctuation adjustment\u2014replacing '!' with '?' for the words 'cold stones'\u2014exactly matches the ground truth intention. Thus, both the edit type and the core textual correction align with the ground truth, making the prediction correct.",
+                "is_correct_with_penalty": true,
+                "score": 0.6,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "cold stones!",
+                  "corrected_text": "cold stones?",
+                  "line_number": 29,
+                  "page": "004.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "the cold stones?",
+                  "corrected_text": "the cold stones?",
+                  "line_number": 27,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "004"
+        },
+        {
+          "model_name": "gpt-4o-mini",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-04T18:57:51.910496",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 3,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "gpt-4o-mini",
+          "precision": 0.175,
+          "recall": 0.0875,
+          "f1_score": 0.11666666666666667,
+          "date": "2025-04-04T18:58:23.450505",
+          "details": {
+            "precision": 0.175,
+            "recall": 0.0875,
+            "f1_score": 0.11666666666666667,
+            "by_type": {
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "punctuation": {
+                "precision": 0.2333333333333333,
+                "recall": 0.0875,
+                "f1": 0.12727272727272726,
+                "count": 8
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 8,
+            "total_predicted": 4,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly identifies the edit type as punctuation, matching exactly with the ground truth. The key punctuation change from \"said\" to \"said,\" is precisely captured. The additional context (the inclusion of '(' following the word) does not alter or obscure the core punctuation correction. Thus, both the edit type and essential punctuation correction match the ground truth accurately.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly matches the ground truth's edit type ('punctuation') exactly. Additionally, the textual change ('Clennam in' \u2192 'Clennam, in') is identical to the ground truth correction. The difference in line number and page number is explicitly stated as irrelevant per the instructions. Thus, the prediction meets both criteria precisely.",
+                "is_correct_with_penalty": true,
+                "score": 0.6,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "said",
+                  "corrected_text": "said,",
                   "line_number": 25,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "said (",
+                  "corrected_text": "said, (",
+                  "line_number": 22,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Clennam in",
+                  "corrected_text": "Clennam, in",
+                  "line_number": 29,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Clennam in",
+                  "corrected_text": "Clennam, in",
+                  "line_number": 27,
                   "page": "003.png",
                   "confidence": null,
                   "notes": null
@@ -1199,7 +3037,623 @@
           "precision": 0.0,
           "recall": 0.0,
           "f1_score": 0.0,
-          "date": "2025-04-04T18:23:36.295916",
+          "date": "2025-04-04T18:58:47.727429",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 1,
+            "total_predicted": 2,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The edit type ('punctuation') matches correctly. However, the text content accuracy is incorrect because the predicted edit indicates a change from 'Sun and Shadow,' (with a comma) to 'Sun and Shadow.' (with a period), while the original text in the ground truth has no punctuation ('Sun and Shadow') changed to a period ('Sun and Shadow.'). The presence of this comma in the predicted original text constitutes an incorrect interpretation of the ground truth edit's intent. Therefore, despite the matching edit type, the essential edit content differs due to this additional comma.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 0,
+                  "page": "007.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "Sun and Shadow,",
+                  "corrected_text": "Sun and Shadow.",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "gpt-4o-mini",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-04T18:59:09.663709",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 5,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The edit type matches correctly as both are 'punctuation' edits. However, the text content accuracy is incomplete because the ground truth corrected 'poplar trees' to 'poplar-trees,' (adding both a hyphen and a comma), but the predicted edit only adds the hyphen ('poplar-trees'), missing the essential comma at the end. Therefore, the predicted edit does not fully capture the ground truth edit.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees,",
+                  "line_number": 6,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees",
+                  "line_number": 8,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "Gemma 3 27B",
+    "precision": 0.047619047619047616,
+    "recall": 0.041666666666666664,
+    "f1_score": 0.044444444444444446,
+    "date": "2025-04-05T03:07:12.806495",
+    "shots": 2,
+    "config": {
+      "model_id": "google/gemma-3-27b-it",
+      "display_name": "Gemma 3 27B",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-05",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.047619047619047616,
+      "recall": 0.041666666666666664,
+      "f1_score": 0.044444444444444446,
+      "by_type": {
+        "punctuation": {
+          "precision": 0.044444444444444446,
+          "recall": 0.05555555555555555,
+          "f1": 0.04938271604938272,
+          "count": 18
+        },
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 2
+        },
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        },
+        "replacement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 4
+        },
+        "deletion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        }
+      },
+      "correct_count": 1,
+      "total_ground_truth": 24,
+      "total_predicted": 21,
+      "file_results": [
+        {
+          "model_name": "google/gemma-3-27b-it",
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1_score": 0.20000000000000004,
+          "date": "2025-04-05T03:05:43.365632",
+          "details": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1_score": 0.20000000000000004,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.2,
+                "recall": 0.25,
+                "f1": 0.22222222222222224,
+                "count": 4
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 1,
+            "total_ground_truth": 5,
+            "total_predicted": 5,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "While the predicted edit shares the same edit type ('punctuation') with the ground truth, it does not capture the specific punctuation correction the ground truth identifies. The ground truth edit specifically corrects 'howling over' to 'howling, over', adding only a comma after 'howling'. However, the predicted edit suggests a completely different punctuation modification, inserting commas around 'to-day', adding '&c;', and introducing a question mark at the end, none of which match the ground truth change. Thus, the essential original intention ('howling over' \u2192 'howling, over') is not accurately captured by the prediction.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.1,
+                "line_diff": 1
+              },
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly matches the ground truth's edit type of 'punctuation'. Additionally, the essential correction ('pockets and' \u2192 'pockets, and') is accurately captured without omission or alteration. Therefore, both edit type accuracy and text content accuracy align with the ground truth's intention.",
+                "is_correct_with_penalty": true,
+                "score": 1.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "howling over",
+                  "corrected_text": "howling, over",
+                  "line_number": 1,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "o more of yesterday's howling over yonder to-day is there",
+                  "corrected_text": "o more of yesterday's howling over yonder, to-day, &c; is there?",
+                  "line_number": 2,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ],
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "pockets and",
+                  "corrected_text": "pockets, and",
+                  "line_number": 17,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "pockets and",
+                  "corrected_text": "pockets, and",
+                  "line_number": 17,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "google/gemma-3-27b-it",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:06:15.536241",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 7,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "google/gemma-3-27b-it",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:06:41.773832",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 8
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 3,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "Although the predicted edit correctly identifies the edit type as 'punctuation', it does not correctly capture the original and intended corrected text. The ground truth explicitly shows that the original text 'said' is changed to 'said,' indicating that the comma directly follows the word. However, the predicted correction incorrectly leaves the original text as empty ('') and describes only '(comma)' as the corrected text. This does not accurately represent the insertion's context or the specific word ('said') to which the punctuation pertains. Therefore, despite matching in edit type, the predicted edit fails to accurately represent the core punctuation change as intended in the ground truth edit.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.4,
+                "line_diff": 2
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "said",
+                  "corrected_text": "said,",
+                  "line_number": 25,
+                  "page": "006.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "",
+                  "corrected_text": "(comma)",
+                  "line_number": 27,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "006"
+        },
+        {
+          "model_name": "google/gemma-3-27b-it",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:06:58.399054",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 1,
+            "total_predicted": 3,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "google/gemma-3-27b-it",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:07:12.806495",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
+              },
+              "deletion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 3,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "Google: Gemini 2.0 Flash",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0,
+    "date": "2025-04-05T12:15:37.937558",
+    "shots": 2,
+    "config": {
+      "model_id": "or_gemini_2_0_flash_001",
+      "display_name": "Google: Gemini 2.0 Flash",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-05",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "by_type": {
+        "punctuation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 20
+        },
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 3
+        },
+        "replacement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 4
+        }
+      },
+      "correct_count": 0,
+      "total_ground_truth": 27,
+      "total_predicted": 7,
+      "file_results": [
+        {
+          "model_name": "or_gemini_2_0_flash_001",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T12:13:36.786124",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 4
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 5,
+            "total_predicted": 1,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "or_gemini_2_0_flash_001",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T12:13:58.162406",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 2
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 3,
+            "total_predicted": 2,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "004"
+        },
+        {
+          "model_name": "or_gemini_2_0_flash_001",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T12:14:19.804569",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 2,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "or_gemini_2_0_flash_001",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T12:14:43.775789",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 8
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 0,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "006"
+        },
+        {
+          "model_name": "or_gemini_2_0_flash_001",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T12:15:06.902319",
           "details": {
             "precision": 0.0,
             "recall": 0.0,
@@ -1221,17 +3675,495 @@
           "file_id": "007"
         },
         {
-          "model_name": "gpt-4o-mini",
+          "model_name": "or_gemini_2_0_flash_001",
           "precision": 0.0,
           "recall": 0.0,
           "f1_score": 0.0,
-          "date": "2025-04-04T18:23:56.284414",
+          "date": "2025-04-05T12:15:37.937558",
           "details": {
             "precision": 0.0,
             "recall": 0.0,
             "f1_score": 0.0,
             "by_type": {
-              "spelling": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 1,
+            "judgments": [
+              {
+                "is_correct": false,
+                "reasoning": "The predicted edit has the correct edit type ('punctuation'), matching the ground truth. However, it misses part of the intended punctuation change. The ground truth specifies a change from 'poplar trees' to 'poplar-trees,' which includes both a hyphen and a comma. The prediction only includes the hyphen ('poplar-trees') and omits the comma. Since punctuation is integral to the correctness, the predicted edit does not fully capture the ground truth edit.",
+                "is_correct_with_penalty": false,
+                "score": 0.0,
+                "line_number_penalty": 0.0,
+                "line_diff": 0
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees,",
+                  "line_number": 6,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "poplar trees",
+                  "corrected_text": "poplar-trees",
+                  "line_number": 6,
+                  "page": "137.jpg",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "Gemini 2.5 Pro Preview 3/25",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0,
+    "date": "2025-04-05T03:11:23.891358",
+    "shots": 2,
+    "config": {
+      "model_id": "google/gemini-2.5-pro-preview-03-25",
+      "display_name": "Gemini 2.5 Pro Preview 3/25",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-05",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "by_type": {
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 3
+        },
+        "punctuation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 20
+        },
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        },
+        "replacement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 4
+        }
+      },
+      "correct_count": 0,
+      "total_ground_truth": 27,
+      "total_predicted": 382,
+      "file_results": [
+        {
+          "model_name": "google/gemini-2.5-pro-preview-03-25",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:09:51.904059",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 4
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 5,
+            "total_predicted": 47,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "003"
+        },
+        {
+          "model_name": "google/gemini-2.5-pro-preview-03-25",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:10:11.087552",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 2
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 3,
+            "total_predicted": 94,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "004"
+        },
+        {
+          "model_name": "google/gemini-2.5-pro-preview-03-25",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:10:32.284773",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 51,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "google/gemini-2.5-pro-preview-03-25",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:10:54.003323",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 8
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 94,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "006"
+        },
+        {
+          "model_name": "google/gemini-2.5-pro-preview-03-25",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:11:09.806641",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 1,
+            "total_predicted": 48,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "google/gemini-2.5-pro-preview-03-25",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T03:11:23.891358",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 5
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 48,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "Qwen2.5 VL 72B Instruct",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0,
+    "date": "2025-04-05T02:48:00.209802",
+    "shots": 2,
+    "config": {
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "display_name": "Qwen2.5 VL 72B Instruct",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-05",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "by_type": {
+        "deletion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        },
+        "replacement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 4
+        },
+        "insertion": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        },
+        "capitalization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 1
+        },
+        "punctuation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 14
+        }
+      },
+      "correct_count": 0,
+      "total_ground_truth": 19,
+      "total_predicted": 11,
+      "file_results": [
+        {
+          "model_name": "qwen/qwen2.5-vl-72b-instruct",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:47:12.557462",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "deletion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 2,
+            "total_predicted": 4,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "005"
+        },
+        {
+          "model_name": "qwen/qwen2.5-vl-72b-instruct",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:47:29.602984",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "insertion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              },
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 8
+              },
+              "deletion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 4,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "006"
+        },
+        {
+          "model_name": "qwen/qwen2.5-vl-72b-instruct",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:47:43.578688",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 1,
+            "total_predicted": 1,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "qwen/qwen2.5-vl-72b-instruct",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:48:00.209802",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "insertion": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0.0,
@@ -1252,9 +4184,149 @@
             },
             "correct_count": 0,
             "total_ground_truth": 8,
-            "total_predicted": 3,
+            "total_predicted": 2,
             "judgments": [],
             "true_positives": []
+          },
+          "file_id": "008"
+        }
+      ]
+    }
+  },
+  {
+    "model_name": "Qwen VL Plus",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0,
+    "date": "2025-04-05T02:58:19.723586",
+    "shots": 2,
+    "config": {
+      "model_id": "qwen/qwen-vl-plus",
+      "display_name": "Qwen VL Plus",
+      "shots": 2,
+      "temperature": 0.0,
+      "date": "2025-04-05",
+      "notes": "Benchmark run with 2-shot learning"
+    },
+    "details": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "by_type": {
+        "punctuation": {
+          "precision": 0.008333333333333331,
+          "recall": 0.016666666666666663,
+          "f1": 0.011111111111111108,
+          "count": 6
+        },
+        "capitalization": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "count": 0
+        },
+        "replacement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "count": 3
+        }
+      },
+      "correct_count": 0,
+      "total_ground_truth": 9,
+      "total_predicted": 12,
+      "file_results": [
+        {
+          "model_name": "qwen/qwen-vl-plus",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "date": "2025-04-05T02:57:53.033574",
+          "details": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 1
+              },
+              "capitalization": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 0
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 1,
+            "total_predicted": 2,
+            "judgments": [],
+            "true_positives": []
+          },
+          "file_id": "007"
+        },
+        {
+          "model_name": "qwen/qwen-vl-plus",
+          "precision": 0.009999999999999998,
+          "recall": 0.012499999999999997,
+          "f1_score": 0.011111111111111108,
+          "date": "2025-04-05T02:58:19.723586",
+          "details": {
+            "precision": 0.009999999999999998,
+            "recall": 0.012499999999999997,
+            "f1_score": 0.011111111111111108,
+            "by_type": {
+              "punctuation": {
+                "precision": 0.009999999999999998,
+                "recall": 0.019999999999999997,
+                "f1": 0.01333333333333333,
+                "count": 5
+              },
+              "replacement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "count": 3
+              }
+            },
+            "correct_count": 0,
+            "total_ground_truth": 8,
+            "total_predicted": 10,
+            "judgments": [
+              {
+                "is_correct": true,
+                "reasoning": "The predicted edit correctly matches the ground truth edit in edit type ('punctuation') exactly. Additionally, it correctly captures the core textual punctuation change ('man slowly' \u2192 'man, slowly'). Although the prediction includes additional surrounding context ('One ... moving on towards Chalons, was the only visible figure in the landscape'), it clearly demonstrates the exact punctuation correction intended by the ground truth. Thus, both criteria (type and core textual accuracy) are fully satisfied.",
+                "is_correct_with_penalty": false,
+                "score": 0.09999999999999998,
+                "line_number_penalty": 0.9,
+                "line_diff": 3
+              }
+            ],
+            "true_positives": [
+              [
+                {
+                  "type": "punctuation",
+                  "original_text": "man slowly",
+                  "corrected_text": "man, slowly",
+                  "line_number": 9,
+                  "page": "008.png",
+                  "confidence": null,
+                  "notes": null
+                },
+                {
+                  "type": "punctuation",
+                  "original_text": "One man, slowly moving on towards Chalons, was the only visible figure in the landscape",
+                  "corrected_text": "One man, slowly moving on towards Chalons, was the only visible figure in the landscape",
+                  "line_number": 6,
+                  "page": "003.png",
+                  "confidence": null,
+                  "notes": null
+                }
+              ]
+            ]
           },
           "file_id": "008"
         }

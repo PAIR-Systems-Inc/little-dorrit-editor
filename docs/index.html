@@ -659,10 +659,19 @@
             headerSort: true,
             initialSort: [{ column: "rank", dir: "asc" }],
             columns: [
-                { title: "Rank", field: "rank", sorter: "number", width: 80, headerSort: false },
+                {
+                    title: "Rank",
+                    field: "rank",
+                    sorter: "number",
+                    width: 50,
+                    headerSort: false,
+                    headerHozAlign: "center",
+                    hozAlign: "center",
+                },
                 {
                     title: "Model",
                     field: "model",
+                    widthGrow: 3,
                     formatter: function(cell) {
                         const value = cell.getValue();
                         const row = cell.getRow().getData();
@@ -690,19 +699,23 @@
                     }
                 },
                 {
-                    title: "F1 Score",
+                    title: "F1",
                     field: "f1Score",
                     sorter: "number",
-                    hozAlign: "center",
+                    headerHozAlign: "right",
+                    hozAlign: "right",
+                    width: 80,
                     formatter: function(cell) {
                         return cell.getValue().toFixed(4);
                     }
                 },
                 {
-                    title: "Precision",
+                    title: "Prec.",
                     field: "precision",
                     sorter: "number",
-                    hozAlign: "center",
+                    headerHozAlign: "right",
+                    hozAlign: "right",
+                    width: 80,
                     formatter: function(cell) {
                         return cell.getValue().toFixed(4);
                     }
@@ -711,12 +724,21 @@
                     title: "Recall",
                     field: "recall",
                     sorter: "number",
-                    hozAlign: "center",
+                    headerHozAlign: "right",
+                    hozAlign: "right",
+                    width: 80,
                     formatter: function(cell) {
                         return cell.getValue().toFixed(4);
                     }
                 },
-                { title: "Date", field: "date", sorter: "date", hozAlign: "center" }
+                {
+                    title: "Date",
+                    field: "date",
+                    sorter: "date",
+                    headerHozAlign: "center",
+                    hozAlign: "center",
+                    width: 100
+                }
             ]
         });
 
@@ -796,13 +818,15 @@
                     {
                         title: "Model / File",
                         field: "model",
-                        width: 200,
+                        widthGrow: 3,
                         resizable: true
                     },
                     {
-                        title: "F1 Score",
+                        title: "F1",
                         field: "f1_score",
-                        hozAlign: "center",
+                        width: 100,
+                        headerHozAlign: "right",
+                        hozAlign: "right",
                         formatter: function(cell) {
                             const value = cell.getValue();
                             const formattedValue = value.toFixed(4);
@@ -822,7 +846,9 @@
                     {
                         title: "Precision",
                         field: "precision",
-                        hozAlign: "center",
+                        width: 100,
+                        headerHozAlign: "right",
+                        hozAlign: "right",
                         formatter: function(cell) {
                             return cell.getValue().toFixed(4);
                         }
@@ -830,25 +856,33 @@
                     {
                         title: "Recall",
                         field: "recall",
-                        hozAlign: "center",
+                        width: 100,
+                        headerHozAlign: "right",
+                        hozAlign: "right",
                         formatter: function(cell) {
                             return cell.getValue().toFixed(4);
                         }
                     },
                     {
-                        title: "True Positives",
+                        title: "TP",
                         field: "true_positives",
-                        hozAlign: "center"
+                        width: 55,
+                        headerHozAlign: "right",
+                        hozAlign: "right",
                     },
                     {
-                        title: "False Positives",
+                        title: "FP",
                         field: "false_positives",
-                        hozAlign: "center"
+                        width: 55,
+                        headerHozAlign: "right",
+                        hozAlign: "right",
                     },
                     {
-                        title: "False Negatives",
+                        title: "FN",
                         field: "false_negatives",
-                        hozAlign: "center"
+                        width: 55,
+                        headerHozAlign: "right",
+                        hozAlign: "right",
                     }
                 ]
             });
