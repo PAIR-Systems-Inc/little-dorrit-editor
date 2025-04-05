@@ -374,19 +374,19 @@
     <div class="metrics" id="metrics">
         <div class="metric-card">
             <div class="metric-title">Top Model</div>
-            <div class="metric-value">GPT-4o</div>
+            <div class="metric-value" id="top-model">Loading...</div>
         </div>
         <div class="metric-card">
             <div class="metric-title">Best F1 Score</div>
-            <div class="metric-value" id="best-f1-score">0.904</div>
+            <div class="metric-value" id="best-f1-score">Loading...</div>
         </div>
         <div class="metric-card">
-            <div class="metric-title">Models Evaluated</div>
-            <div class="metric-value">3</div>
+            <div class="metric-title">Best Precision</div>
+            <div class="metric-value" id="best-precision">Loading...</div>
         </div>
         <div class="metric-card">
-            <div class="metric-title">Most Challenging Edit</div>
-            <div class="metric-value">Reordering</div>
+            <div class="metric-title">Best Recall</div>
+            <div class="metric-value" id="best-recall">Loading...</div>
         </div>
     </div>
 
@@ -827,36 +827,22 @@
                 // Update the leaderboard table with real data
                 leaderboardTable.setData(leaderboardData);
 
-                // Update metrics
+                // Update metrics dynamically
                 if (results.length > 0) {
+                    // Find top model (first in sorted results)
+                    document.getElementById("top-model").textContent = results[0].model_name;
+                    
                     // Find best F1 score
                     const bestF1 = Math.max(...results.map(model => model.f1_score));
                     document.getElementById("best-f1-score").textContent = bestF1.toFixed(4);
-
-                    // Update model count
-                    document.querySelector('.metrics .metric-card:nth-child(3) .metric-value').textContent = results.length;
-
-                    // Update top model
-                    document.querySelector('.metrics .metric-card:nth-child(1) .metric-value').textContent = results[0].model_name;
-
-                    // Find most challenging edit type
-                    let mostChallengingType = null;
-                    let lowestF1 = 1.0;
-
-                    results.forEach(model => {
-                        const byType = model.details?.by_type || {};
-                        Object.entries(byType).forEach(([type, metrics]) => {
-                            if (metrics.f1 < lowestF1 && metrics.count > 0) {
-                                lowestF1 = metrics.f1;
-                                mostChallengingType = type;
-                            }
-                        });
-                    });
-
-                    if (mostChallengingType) {
-                        const displayType = mostChallengingType.charAt(0).toUpperCase() + mostChallengingType.slice(1);
-                        document.querySelector('.metrics .metric-card:nth-child(4) .metric-value').textContent = displayType;
-                    }
+                    
+                    // Find best precision
+                    const bestPrecision = Math.max(...results.map(model => model.precision));
+                    document.getElementById("best-precision").textContent = bestPrecision.toFixed(4);
+                    
+                    // Find best recall
+                    const bestRecall = Math.max(...results.map(model => model.recall));
+                    document.getElementById("best-recall").textContent = bestRecall.toFixed(4);
                 }
             }
 
