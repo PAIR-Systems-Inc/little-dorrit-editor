@@ -1,16 +1,18 @@
 #!/bin/bash
 # Script to report Little Dorrit Editor evaluation results without running evaluations
 #
-# Usage: ./report_evaluation.sh [model_name] [output_dir]
-#   model_name: Name of the model to report (default: gpt-4o)
+# Usage: ./report_evaluation.sh [model_id] [output_dir]
+#   model_id: ID of the model to report (default: gpt-4o)
 #   output_dir: Base output directory (default: predictions)
+#
+# Available model IDs can be viewed with: config list
 
 # Default values
-MODEL_NAME=${1:-"gpt-4o"}  # Use the first parameter or default to gpt-4o
+MODEL_ID=${1:-"gpt-4o"}  # Use the first parameter or default to gpt-4o
 BASE_OUTPUT_DIR=${2:-"predictions"}  # Use the second parameter or default to predictions
 
 # Set up directory structure using new format
-PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_NAME}"
+PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_ID}"
 CONFIG_FILE="${PREDICTIONS_DIR}/config.json"
 RESULTS_DIR="${PREDICTIONS_DIR}/results"
 EVAL_RESULTS_DIR="${RESULTS_DIR}/eval"
@@ -18,7 +20,7 @@ EVAL_RESULTS_DIR="${RESULTS_DIR}/eval"
 # Check if the model directory exists
 if [ ! -d "$PREDICTIONS_DIR" ]; then
     echo "Error: Model directory not found: $PREDICTIONS_DIR"
-    echo "Usage: $0 [model_name] [output_dir]"
+    echo "Usage: $0 [model_id] [output_dir]"
     echo "Example: $0 gpt-4o predictions"
     exit 1
 fi
@@ -33,20 +35,32 @@ if [ -f "$CONFIG_FILE" ]; then
     SHOTS=$(grep -o '"shots": [0-9]*' "$CONFIG_FILE" | awk '{print $2}')
     DISPLAY_NAME=$(grep -o '"display_name": "[^"]*"' "$CONFIG_FILE" 2>/dev/null | awk -F '"' '{print $4}')
     
-    # If no display name in config, use model name
+    # If no display name in config, try to get logical name from config module
     if [[ -z "${DISPLAY_NAME}" ]]; then
-        DISPLAY_NAME="${MODEL_NAME}"
+        # Try to get logical name from config
+        LOGICAL_NAME=$(python -c "from little_dorrit_editor.config import get_model; print(get_model('${MODEL_ID}').logical_name)" 2>/dev/null)
+        if [[ $? -eq 0 && -n "${LOGICAL_NAME}" ]]; then
+            DISPLAY_NAME="${LOGICAL_NAME}"
+        else
+            DISPLAY_NAME="${MODEL_ID}"
+        fi
     fi
 else
     SHOTS="unknown"
-    DISPLAY_NAME="${MODEL_NAME}"
+    # Try to get logical name from config module even if config file doesn't exist
+    LOGICAL_NAME=$(python -c "from little_dorrit_editor.config import get_model; print(get_model('${MODEL_ID}').logical_name)" 2>/dev/null)
+    if [[ $? -eq 0 && -n "${LOGICAL_NAME}" ]]; then
+        DISPLAY_NAME="${LOGICAL_NAME}"
+    else
+        DISPLAY_NAME="${MODEL_ID}"
+    fi
     echo "Warning: No configuration file found at $CONFIG_FILE"
 fi
 
 # Check if results directory exists
 if [ ! -d "$EVAL_RESULTS_DIR" ]; then
     echo "Error: Results directory not found: $EVAL_RESULTS_DIR"
-    echo "Run './scripts/run_evaluation.sh ${MODEL_NAME}' first to generate evaluation results."
+    echo "Run './scripts/run_evaluation.sh ${MODEL_ID}' first to generate evaluation results."
     exit 1
 fi
 

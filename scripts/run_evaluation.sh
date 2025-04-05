@@ -1,14 +1,16 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor evaluation on existing predictions
 #
-# Usage: ./run_evaluation.sh [model_name] [display_name] [judge_model]
-#   model_name: Name of the model (default: gpt-4o)
+# Usage: ./run_evaluation.sh [model_id] [display_name] [judge_model_id]
+#   model_id: ID of the model (default: gpt-4o)
 #   display_name: Custom display name for the leaderboard (only used if creating new config)
-#   judge_model: OPTIONAL - Model to use for evaluation judging (default: gpt-4.5-preview)
+#   judge_model_id: OPTIONAL - Model ID to use for evaluation judging (default: gpt-4.5-preview)
 #                WARNING: Changing this is NOT recommended as it affects benchmark consistency
+#
+# Available model IDs can be viewed with: config list
 
 # Get command line arguments or use defaults
-MODEL_NAME=${1:-"gpt-4o"}  # Default model is gpt-4o
+MODEL_ID=${1:-"gpt-4o"}    # Default model is gpt-4o
 DISPLAY_NAME=${2:-""}      # Optional display name (only used if creating new config)
 CUSTOM_JUDGE_MODEL=${3:-""}  # Optional judge model override
 
@@ -37,7 +39,7 @@ API_KEY="sk-proj-R49vzEXoNZKAnxnBJUsnGksRJMp0ziQNd-xdZ8RHJlU_HFuRjiRJuvYF7UXn4-C
 BASE_OUTPUT_DIR="predictions"
 
 # Set up directory structure using new format
-PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_NAME}"
+PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_ID}"
 CONFIG_FILE="${PREDICTIONS_DIR}/config.json"
 PREDICTIONS_OUTPUT_DIR="${PREDICTIONS_DIR}/predictions"
 EVAL_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/eval"
@@ -47,7 +49,7 @@ EVAL_RESULTS_DIR="${RESULTS_DIR}/eval"
 # Verify the model directory exists
 if [ ! -d "$PREDICTIONS_DIR" ]; then
     echo "Error: Model directory not found: $PREDICTIONS_DIR"
-    echo "Run './scripts/run_prediction.sh ${MODEL_NAME}' first to generate predictions."
+    echo "Run './scripts/run_prediction.sh ${MODEL_ID}' first to generate predictions."
     exit 1
 fi
 
@@ -56,16 +58,21 @@ if [ ! -f "$CONFIG_FILE" ]; then
     echo "Warning: Config file not found: $CONFIG_FILE"
     echo "Creating a default config file with 2-shot learning..."
     
-    # Use provided display name or default to model name when creating new config
-    # Only used if no config file exists yet
+    # Get the model's logical name if no display name is provided
     if [[ -z "${DISPLAY_NAME}" ]]; then
-        DISPLAY_NAME="${MODEL_NAME}"
+        # Try to get logical name from config
+        LOGICAL_NAME=$(python -c "from little_dorrit_editor.config import get_model; print(get_model('${MODEL_ID}').logical_name)" 2>/dev/null)
+        if [[ $? -eq 0 && -n "${LOGICAL_NAME}" ]]; then
+            DISPLAY_NAME="${LOGICAL_NAME}"
+        else
+            DISPLAY_NAME="${MODEL_ID}"
+        fi
     fi
 
     # Create a default config.json file
     cat > "$CONFIG_FILE" << EOL
 {
-  "model_name": "${MODEL_NAME}",
+  "model_id": "${MODEL_ID}",
   "display_name": "${DISPLAY_NAME}",
   "shots": 2,
   "temperature": 0.0,
@@ -109,7 +116,7 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
             
             # Run evaluation with correct command structure and fixed judge model
             python scripts/evaluate.py run \
-                --model-name "$MODEL_NAME" \
+                --model-name "$MODEL_ID" \
                 --api-key "$API_KEY" \
                 --llm-model "$LLM_JUDGE_MODEL" \
                 --output "$results_path" \
@@ -123,7 +130,7 @@ fi
 
 # Use the report script to show detailed results
 echo -e "\nGenerating evaluation report..."
-bash scripts/report_evaluation.sh "$MODEL_NAME" "$BASE_OUTPUT_DIR"
+bash scripts/report_evaluation.sh "$MODEL_ID" "$BASE_OUTPUT_DIR"
 
 echo -e "\nEvaluation complete. Results stored in $EVAL_RESULTS_DIR"
 echo "To update the leaderboard site, run: python scripts/build_site_results.py"

@@ -1,13 +1,15 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor prediction generation
 #
-# Usage: ./run_prediction.sh [model_name] [shots] [display_name]
-#   model_name: Name of the model (default: gpt-4o)
+# Usage: ./run_prediction.sh [model_id] [shots] [display_name]
+#   model_id: ID of the model from config (default: gpt-4o)
 #   shots: Number of shots to use (default: 2)
 #   display_name: Custom display name for the leaderboard (optional)
+#
+# Available model IDs can be viewed with: config list
 
 # Get command line arguments or use defaults
-MODEL_NAME=${1:-"gpt-4o"}  # Default model is gpt-4o
+MODEL_ID=${1:-"gpt-4o"}  # Default model is gpt-4o
 SHOTS=${2:-2}              # Default to 2-shot learning
 DISPLAY_NAME=${3:-""}      # Optional display name
 
@@ -22,7 +24,7 @@ DATE_STAMP=$(date +"%Y%m%d")
 RUN_ID="01"  # Can be incremented for multiple runs on the same day
 
 # Create organized output directory structure
-PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_NAME}"
+PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_ID}"
 PREDICTIONS_OUTPUT_DIR="${PREDICTIONS_DIR}/predictions"
 EVAL_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/eval"
 SAMPLE_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/sample"
@@ -35,14 +37,20 @@ mkdir -p "$SAMPLE_PREDICTIONS_DIR"
 # Create a config.json file for the experiment
 echo "Creating experiment configuration..."
 
-# Use provided display name or default to model name
+# Get the model's logical name if no display name is provided
 if [[ -z "${DISPLAY_NAME}" ]]; then
-    DISPLAY_NAME="${MODEL_NAME}"
+    # Try to get logical name from config
+    LOGICAL_NAME=$(python -c "from little_dorrit_editor.config import get_model; print(get_model('${MODEL_ID}').logical_name)" 2>/dev/null)
+    if [[ $? -eq 0 && -n "${LOGICAL_NAME}" ]]; then
+        DISPLAY_NAME="${LOGICAL_NAME}"
+    else
+        DISPLAY_NAME="${MODEL_ID}"
+    fi
 fi
 
 cat > "$CONFIG_FILE" << EOL
 {
-  "model_name": "${MODEL_NAME}",
+  "model_id": "${MODEL_ID}",
   "display_name": "${DISPLAY_NAME}",
   "shots": ${SHOTS},
   "temperature": ${TEMPERATURE},
@@ -70,7 +78,7 @@ if [ -d "data/sample" ] && [ "$(ls -A data/sample/*.png 2>/dev/null)" ]; then
         
         # Generate predictions using n-shot learning
         python scripts/evaluate.py generate \
-            --model-name "$MODEL_NAME" \
+            --model-id "$MODEL_ID" \
             --api-key "$API_KEY" \
             --shots "$SHOTS" \
             --sample-dataset "$SAMPLE_DATASET" \
@@ -93,7 +101,7 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.png 2>/dev/null)" ]; then
         
         # Generate predictions using n-shot learning
         python scripts/evaluate.py generate \
-            --model-name "$MODEL_NAME" \
+            --model-id "$MODEL_ID" \
             --api-key "$API_KEY" \
             --shots "$SHOTS" \
             --sample-dataset "$SAMPLE_DATASET" \
@@ -107,4 +115,4 @@ else
 fi
 
 echo "All predictions generated successfully."
-echo "Run './scripts/run_evaluation.sh ${MODEL_NAME}' to evaluate the predictions."
+echo "Run './scripts/run_evaluation.sh ${MODEL_ID}' to evaluate the predictions."

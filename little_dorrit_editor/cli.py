@@ -8,10 +8,12 @@ from rich.console import Console
 
 from little_dorrit_editor.convert import create_hf_dataset
 from little_dorrit_editor.evaluate import display_results, evaluate
+from little_dorrit_editor.config import list_models
 
 # Create Typer apps
 evaluate_app = typer.Typer()
 convert_app = typer.Typer()
+config_app = typer.Typer()
 console = Console()
 
 
@@ -24,13 +26,14 @@ def run(
         ..., help="Path to the ground truth edits JSON file"
     ),
     model_name: str = typer.Option(
-        "unnamed_model", "--model-name", "-m", help="Name of the model being evaluated"
+        "unnamed_model", "--model-name", "-m", help="Name/ID of the model being evaluated"
     ),
     api_key: Optional[str] = typer.Option(
-        None, "--api-key", "-k", help="OpenAI API key (defaults to env var)"
+        None, "--api-key", "-k", help="API key (overrides configuration)"
     ),
     llm_model: str = typer.Option(
-        "gpt-4o", "--llm-model", "-l", help="LLM model to use for evaluation"
+        "gpt-4.5-preview", "--llm-model", "-l", 
+        help=f"LLM model ID to use for evaluation. Available models: {', '.join(list_models().keys())}"
     ),
     output: Optional[Path] = typer.Option(
         None, "--output", "-o", help="Path to save evaluation results as JSON"
@@ -90,11 +93,15 @@ def generate_predictions(
     output: Path = typer.Argument(
         ..., help="Path to save the predicted edits JSON"
     ),
-    model_name: str = typer.Option(
-        "gpt-4o", "--model-name", "-m", help="Name of the model to use for predictions"
+    model_id: str = typer.Option(
+        "gpt-4o", "--model-id", "-m", 
+        help=f"Model ID to use for predictions. Available models: {', '.join(list_models().keys())}"
+    ),
+    model_name: Optional[str] = typer.Option(
+        None, "--model-name", help="Alias for --model-id (for backward compatibility)"
     ),
     api_key: Optional[str] = typer.Option(
-        None, "--api-key", "-k", help="OpenAI API key (defaults to env var)"
+        None, "--api-key", "-k", help="API key (overrides configuration)"
     ),
     shots: int = typer.Option(
         0, "--shots", "-s", help="Number of examples to use for few-shot prompting"
@@ -115,6 +122,11 @@ def generate_predictions(
         )
         import openai
         import json
+        
+        # Allow for backward compatibility with --model-name
+        if model_name is not None:
+            model_id = model_name
+            console.print(f"[yellow]Warning:[/yellow] --model-name is deprecated. Please use --model-id instead.")
         
         # Validate paths
         if not image.exists():
@@ -164,13 +176,25 @@ def generate_predictions(
             console.print("Creating zero-shot prompt...")
             messages = create_zero_shot_prompt(str(image))
         
-        # Initialize the client
-        client = openai.Client(api_key=api_key)
+        # Get model configuration
+        from little_dorrit_editor.config import get_model
+        
+        model_config = get_model(model_id)
+        
+        # Override API key if provided
+        if api_key is None:
+            api_key = model_config.api_key
+        
+        # Initialize the client with the appropriate base URL and API key
+        client = openai.Client(
+            api_key=api_key,
+            base_url=model_config.endpoint
+        )
         
         # Call the model
-        console.print(f"Calling {model_name} to generate predictions...")
+        console.print(f"Calling {model_config.logical_name} to generate predictions...")
         response = client.chat.completions.create(
-            model=model_name,
+            model=model_config.model_name,
             messages=messages,
             temperature=0.1,
             response_format={"type": "json_object"},
@@ -187,7 +211,7 @@ def generate_predictions(
             "page_number": 1,  # Default, should be extracted from filename ideally
             "source": "Little Dorrit",
             "edits": predictions["edits"],
-            "annotator": model_name,
+            "annotator": model_config.logical_name,
             "annotation_date": datetime.now().isoformat(),
             "verified": False
         }
@@ -202,6 +226,35 @@ def generate_predictions(
     except Exception as e:
         console.print(f"[red]Error:[/red] {str(e)}")
         raise typer.Exit(code=1)
+
+
+@config_app.command("list")
+def list_available_models() -> None:
+    """List all available models in the configuration."""
+    from little_dorrit_editor.config import list_models, get_model
+    from rich.table import Table
+    
+    models = list_models()
+    
+    if not models:
+        console.print("[yellow]No models found in configuration.[/yellow]")
+        return
+    
+    table = Table(title="Available Models")
+    table.add_column("ID", style="cyan")
+    table.add_column("Name", style="green")
+    table.add_column("Model", style="blue")
+    table.add_column("API", style="magenta")
+    
+    for model_id, model_name in models.items():
+        model_config = get_model(model_id)
+        api_type = "OpenAI" if "openai" in model_config.endpoint else (
+            "Anthropic" if "anthropic" in model_config.endpoint else 
+            "Google" if "generativelanguage" in model_config.endpoint else "Other"
+        )
+        table.add_row(model_id, model_name, model_config.model_name, api_type)
+    
+    console.print(table)
 
 
 @convert_app.command()

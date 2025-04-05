@@ -8,6 +8,7 @@ import openai
 from rich.console import Console
 from rich.table import Table
 
+from little_dorrit_editor.config import get_model, ModelConfig
 from little_dorrit_editor.types import EditAnnotation, EvaluationResult
 
 
@@ -15,16 +16,28 @@ class LLMJudge:
     """Judge that uses an LLM API to evaluate the correctness of predicted edits."""
 
     def __init__(
-        self, api_key: Optional[str] = None, model: str = "gpt-4o"
+        self, model_id: str = "gpt-4o", api_key: Optional[str] = None
     ) -> None:
         """Initialize the LLM judge.
 
         Args:
-            api_key: OpenAI API key (optional, defaults to env var)
-            model: Model name to use for evaluation
+            model_id: Model identifier from configuration
+            api_key: API key (optional, overrides configuration)
         """
-        self.client = openai.Client(api_key=api_key)
-        self.model = model
+        # Get model configuration
+        model_config = get_model(model_id)
+        
+        # Allow API key override
+        if api_key is None:
+            api_key = model_config.api_key
+            
+        # Initialize the OpenAI client with the appropriate base URL and API key
+        self.client = openai.Client(
+            api_key=api_key,
+            base_url=model_config.endpoint
+        )
+        self.model = model_config.model_name
+            
         self.console = Console()
 
     def _create_prompt(
@@ -268,8 +281,8 @@ def evaluate(
         ground_truth_path: Path to ground truth JSON file
         prediction_path: Path to prediction JSON file
         model_name: Name of the model being evaluated
-        api_key: OpenAI API key (optional, defaults to env var)
-        llm_model: Model to use for LLM judging
+        api_key: API key (optional, overrides configuration)
+        llm_model: Model ID to use for LLM judging
 
     Returns:
         Evaluation results
@@ -292,7 +305,7 @@ def evaluate(
     )
     
     # Initialize LLM judge
-    judge = LLMJudge(api_key=api_key, model=llm_model)
+    judge = LLMJudge(model_id=llm_model, api_key=api_key)
     
     # Evaluate matching edits
     console.print(f"Found {len(true_positives)} potential matches to evaluate")
