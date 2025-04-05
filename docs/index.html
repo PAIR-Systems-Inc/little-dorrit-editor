@@ -186,6 +186,14 @@
             font-size: 2em;
             font-weight: bold;
             color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+        
+        .metric-model {
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+            margin-top: 2px;
         }
 
         footer {
@@ -375,18 +383,22 @@
         <div class="metric-card">
             <div class="metric-title">Top Model</div>
             <div class="metric-value" id="top-model">Loading...</div>
+            <div class="metric-model" id="top-model-name">-</div>
         </div>
         <div class="metric-card">
             <div class="metric-title">Best F1 Score</div>
             <div class="metric-value" id="best-f1-score">Loading...</div>
+            <div class="metric-model" id="best-f1-model">-</div>
         </div>
         <div class="metric-card">
             <div class="metric-title">Best Precision</div>
             <div class="metric-value" id="best-precision">Loading...</div>
+            <div class="metric-model" id="best-precision-model">-</div>
         </div>
         <div class="metric-card">
             <div class="metric-title">Best Recall</div>
             <div class="metric-value" id="best-recall">Loading...</div>
+            <div class="metric-model" id="best-recall-model">-</div>
         </div>
     </div>
 
@@ -829,20 +841,31 @@
 
                 // Update metrics dynamically
                 if (results.length > 0) {
-                    // Find top model (first in sorted results)
-                    document.getElementById("top-model").textContent = results[0].model_name;
+                    // Find top model (first in sorted results by F1 score)
+                    const topModel = results[0];
+                    document.getElementById("top-model").textContent = topModel.model_name;
+                    document.getElementById("top-model-name").textContent = "Highest F1 Score";
                     
-                    // Find best F1 score
-                    const bestF1 = Math.max(...results.map(model => model.f1_score));
-                    document.getElementById("best-f1-score").textContent = bestF1.toFixed(4);
+                    // Find model with best F1 score
+                    const bestF1Index = results.reduce((maxIndex, model, currentIndex, arr) => 
+                        model.f1_score > arr[maxIndex].f1_score ? currentIndex : maxIndex, 0);
+                    const bestF1Model = results[bestF1Index];
+                    document.getElementById("best-f1-score").textContent = bestF1Model.f1_score.toFixed(4);
+                    document.getElementById("best-f1-model").textContent = bestF1Model.model_name;
                     
-                    // Find best precision
-                    const bestPrecision = Math.max(...results.map(model => model.precision));
-                    document.getElementById("best-precision").textContent = bestPrecision.toFixed(4);
+                    // Find model with best precision
+                    const bestPrecisionIndex = results.reduce((maxIndex, model, currentIndex, arr) => 
+                        model.precision > arr[maxIndex].precision ? currentIndex : maxIndex, 0);
+                    const bestPrecisionModel = results[bestPrecisionIndex];
+                    document.getElementById("best-precision").textContent = bestPrecisionModel.precision.toFixed(4);
+                    document.getElementById("best-precision-model").textContent = bestPrecisionModel.model_name;
                     
-                    // Find best recall
-                    const bestRecall = Math.max(...results.map(model => model.recall));
-                    document.getElementById("best-recall").textContent = bestRecall.toFixed(4);
+                    // Find model with best recall
+                    const bestRecallIndex = results.reduce((maxIndex, model, currentIndex, arr) => 
+                        model.recall > arr[maxIndex].recall ? currentIndex : maxIndex, 0);
+                    const bestRecallModel = results[bestRecallIndex];
+                    document.getElementById("best-recall").textContent = bestRecallModel.recall.toFixed(4);
+                    document.getElementById("best-recall-model").textContent = bestRecallModel.model_name;
                 }
             }
 
