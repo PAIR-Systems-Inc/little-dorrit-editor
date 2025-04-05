@@ -63,3 +63,7 @@ predictions/
 
 # Exclude any prediction files (typically generated during testing)
 *_prediction.json
+
+# Exclude local configuration files with API keys
+config/*.local.toml
+config/local*.toml

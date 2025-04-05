@@ -59,7 +59,7 @@ export GOOGLE_API_KEY="your_google_api_key"        # Optional
 
 ### Model Configuration
 
-The project uses a TOML configuration file (`config/models.toml`) to manage LLM configurations:
+The project uses TOML configuration files to manage LLM configurations:
 
 ```bash
 # List available models
@@ -68,7 +68,60 @@ config list
 
 This will display all configured models with their IDs, names, and API types.
 
-The configuration supports various LLM providers (OpenAI, Anthropic, Google) through a consistent interface. To add a new model, simply update the TOML file with the appropriate configuration.
+#### Configuration Files
+
+The system uses the following configuration files:
+
+1. **Main configuration**: `config/models.toml`
+   - Contains standard model configurations
+   - Uses environment variables for API keys (e.g., `${OPENAI_API_KEY}`)
+   - Checked into version control
+
+2. **Local configuration**: `config/models.local.toml` and `config/local*.toml`
+   - For local development with direct API keys
+   - Not checked into version control (ignored by .gitignore)
+   - Takes precedence over main configuration
+
+#### Using Direct API Keys (Safely)
+
+To use direct API keys without risk of committing them:
+
+1. Create a local configuration file:
+   ```bash
+   # Create a local configuration file (already git-ignored)
+   touch config/models.local.toml
+   ```
+
+2. Two methods for adding API keys:
+
+   **Method 1: Create entirely new models**
+   ```toml
+   [local-gpt-4o]
+   endpoint = "https://api.openai.com/v1"
+   model_name = "gpt-4o"
+   api_key = "sk-your-actual-api-key-here"  # Direct API key
+   logical_name = "Local GPT-4o"
+   ```
+
+   **Method 2: Override just the API key for existing models**
+   ```toml
+   [local:gpt-4o]
+   api_key = "sk-your-actual-api-key-here"  # Only the API key changes
+   
+   [local:claude-3-7-sonnet-latest]
+   api_key = "sk-ant-your-api-key-here"  # Inherits everything else
+   ```
+
+3. Use either the original model ID (for overrides) or your local model ID:
+   ```bash
+   # For method 1 (new models with local- prefix)
+   ./scripts/run_prediction.sh local-gpt-4o 2
+   
+   # For method 2 (overrides using local:), use the original model ID
+   ./scripts/run_prediction.sh gpt-4o 2
+   ```
+
+The configuration supports various LLM providers (OpenAI, Anthropic, Google) through a consistent interface.
 
 ### Complete Evaluation Workflow
 
