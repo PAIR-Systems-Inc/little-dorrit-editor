@@ -70,12 +70,12 @@ if [ -d "data/sample" ] && [ "$(ls -A data/sample/*.png 2>/dev/null)" ]; then
     for img_file in data/sample/*.png; do
         # Extract the base filename without extension
         base_name=$(basename "$img_file" .png)
-        
+
         # Define the output prediction file
         prediction_file="${SAMPLE_PREDICTIONS_DIR}/${base_name}_${RUN_ID}_${DATE_STAMP}_prediction.json"
-        
+
         echo "Processing $img_file -> $prediction_file"
-        
+
         # Generate predictions using n-shot learning
         python scripts/evaluate.py generate \
             --model-id "$MODEL_ID" \
@@ -92,12 +92,12 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.png 2>/dev/null)" ]; then
     for img_file in data/eval/*.png; do
         # Extract the base filename without extension
         base_name=$(basename "$img_file" .png)
-        
+
         # Define the output prediction file
         prediction_file="${EVAL_PREDICTIONS_DIR}/${base_name}_${RUN_ID}_${DATE_STAMP}_prediction.json"
-        
+
         echo "Processing $img_file -> $prediction_file"
-        
+
         # Generate predictions using n-shot learning
         python scripts/evaluate.py generate \
             --model-id "$MODEL_ID" \
