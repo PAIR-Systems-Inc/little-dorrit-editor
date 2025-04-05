@@ -116,11 +116,25 @@ def match_edits(
     """
     # Convert to dict for easier comparison
     gt_edits = [edit.model_dump() for edit in ground_truth.edits]
-    pred_edits = [edit.model_dump() for edit in prediction.edits]
+    
+    # Filter out any predicted edits without line numbers
+    filtered_pred_edits = []
+    skipped_count = 0
+    for edit in prediction.edits:
+        edit_dict = edit.model_dump()
+        if edit_dict.get("line_number") is not None:
+            filtered_pred_edits.append(edit_dict)
+        else:
+            skipped_count += 1
+    
+    # Log a warning if any edits were skipped
+    if skipped_count > 0:
+        console = Console()
+        console.print(f"[yellow]Warning: Skipped {skipped_count} predicted edit(s) with missing line numbers[/yellow]")
     
     # This is a simplified matching algorithm
     true_positives = []
-    false_positives = list(pred_edits)
+    false_positives = list(filtered_pred_edits)
     false_negatives = []
     
     for gt_edit in gt_edits:
@@ -289,7 +303,10 @@ def evaluate(
         judgment = judge.evaluate_edit(gt_edit, pred_edit)
         
         # Calculate line number penalty: 0.1 * distance^2
-        line_diff = abs(gt_edit["line_number"] - pred_edit["line_number"])
+        # Default to a large difference if line numbers are missing (shouldn't happen with filtering)
+        gt_line = gt_edit.get("line_number", 0)
+        pred_line = pred_edit.get("line_number", 1000)  # Use a large default to ensure penalty if missing
+        line_diff = abs(gt_line - pred_line)
         line_penalty = min(1.0, 0.1 * (line_diff ** 2))  # Cap at 1.0
         
         # Apply penalty only if the edit is otherwise correct

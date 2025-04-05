@@ -6,6 +6,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 from pydantic import TypeAdapter
+from rich.console import Console
 
 from little_dorrit_editor.evaluate import (
     LLMJudge,
@@ -13,6 +14,12 @@ from little_dorrit_editor.evaluate import (
     match_edits,
 )
 from little_dorrit_editor.types import EditAnnotation
+
+# Patch rich.console.Console to avoid output during tests
+@pytest.fixture(autouse=True)
+def mock_console():
+    with patch("rich.console.Console.print") as mock_print:
+        yield mock_print
 
 
 def test_match_edits_exact_match():
@@ -311,3 +318,55 @@ def test_llm_judge(mock_client):
     # Check the result
     assert result["is_correct"] is True
     assert result["reasoning"] == "The prediction matches the ground truth"
+
+
+def test_match_edits_missing_line_number():
+    """Test matching when some predictions are missing line numbers."""
+    # Create sample annotations with updated schema
+    ground_truth = EditAnnotation(
+        image="test.png",
+        page_number=1,
+        source="Little Dorrit",
+        edits=[
+            {
+                "type": "insertion",
+                "original_text": "original",
+                "corrected_text": "corrected",
+                "line_number": 10
+            }
+        ]
+    )
+    
+    # Create a prediction with one edit missing a line number
+    prediction = EditAnnotation(
+        image="test.png",
+        page_number=1,
+        source="Little Dorrit",
+        edits=[
+            {
+                "type": "insertion",
+                "original_text": "original",
+                "corrected_text": "corrected",
+                "line_number": 10
+            },
+            {
+                "type": "deletion",
+                "original_text": "to be deleted",
+                "corrected_text": "",
+                # line_number deliberately omitted
+            }
+        ]
+    )
+    
+    # Match edits
+    true_positives, false_positives, false_negatives = match_edits(
+        ground_truth, prediction
+    )
+    
+    # Check results - should only match the edit with line number
+    assert len(true_positives) == 1
+    assert len(false_positives) == 0
+    assert len(false_negatives) == 0
+    
+    # The missing line number edit should be filtered out completely
+    assert all("line_number" in edit for edit in false_positives)

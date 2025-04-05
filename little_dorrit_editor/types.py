@@ -22,7 +22,7 @@ class EditOperation(BaseModel):
     type: str = Field(..., description="Type of edit operation")
     original_text: str = Field(..., description="The original text")
     corrected_text: str = Field(..., description="The corrected text")
-    line_number: int = Field(..., description="Line number in the page (0 for titles, 1+ for body text)")
+    line_number: Optional[int] = Field(None, description="Line number in the page (0 for titles, 1+ for body text)")
     page: Optional[str] = Field(None, description="Page identifier (e.g., filename)")
     confidence: Optional[float] = Field(None, description="Model's confidence score")
     notes: Optional[str] = Field(None, description="Additional notes about the edit")
