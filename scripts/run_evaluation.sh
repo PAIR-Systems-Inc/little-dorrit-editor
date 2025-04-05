@@ -35,7 +35,7 @@ if [[ -n "$CUSTOM_JUDGE_MODEL" ]]; then
 fi
 
 # Set environment variables
-API_KEY="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"
+# No API key needed here - the config module will use the relevant environment variable
 BASE_OUTPUT_DIR="predictions"
 
 # Set up directory structure using new format
@@ -117,7 +117,6 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
             # Run evaluation with correct command structure and fixed judge model
             python scripts/evaluate.py run \
                 --model-name "$MODEL_ID" \
-                --api-key "$API_KEY" \
                 --llm-model "$LLM_JUDGE_MODEL" \
                 --output "$results_path" \
                 "$prediction_file" \

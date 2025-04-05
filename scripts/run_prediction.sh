@@ -14,7 +14,7 @@ SHOTS=${2:-2}              # Default to 2-shot learning
 DISPLAY_NAME=${3:-""}      # Optional display name
 
 # Set environment variables
-API_KEY="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"
+# No API key needed here - the config module will use the relevant environment variable
 BASE_OUTPUT_DIR="predictions"
 SAMPLE_DATASET="data/hf/sample/little-dorrit-editor"  # Path to sample dataset for examples
 TEMPERATURE=0.0
@@ -79,7 +79,6 @@ if [ -d "data/sample" ] && [ "$(ls -A data/sample/*.png 2>/dev/null)" ]; then
         # Generate predictions using n-shot learning
         python scripts/evaluate.py generate \
             --model-id "$MODEL_ID" \
-            --api-key "$API_KEY" \
             --shots "$SHOTS" \
             --sample-dataset "$SAMPLE_DATASET" \
             "$img_file" \
@@ -102,7 +101,6 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.png 2>/dev/null)" ]; then
         # Generate predictions using n-shot learning
         python scripts/evaluate.py generate \
             --model-id "$MODEL_ID" \
-            --api-key "$API_KEY" \
             --shots "$SHOTS" \
             --sample-dataset "$SAMPLE_DATASET" \
             "$img_file" \
