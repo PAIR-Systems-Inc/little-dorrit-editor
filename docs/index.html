@@ -120,6 +120,11 @@
             margin-top: 0;
         }
 
+        h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
         .tabulator {
             margin: 25px 0;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -244,15 +249,15 @@
         }
 
         .example-image {
-            margin: 0 auto 20px;
+            margin: 0 auto 0px;
             text-align: center;
-            max-width: 360px;
+            max-width: 620px;
             display: block;
         }
 
         .example-image img {
             width: 100%;
-            max-width: 360px;
+            max-width: 620px;
         }
 
         .example-caption {
@@ -298,7 +303,19 @@
             line-height: 1.5;
         }
 
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .subtitle {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .toc {
+            max-width: 800px;
+            margin: 0 auto;
             background-color: var(--secondary-color);
             border-radius: 5px;
             padding: 15px 25px;
@@ -319,7 +336,7 @@
         }
 
         .toc li {
-            margin-bottom: 8px;
+            margin-top: 8px;
         }
 
         .toc a {
@@ -354,59 +371,6 @@
         </div>
     </header>
 
-    <!-- Table of Contents -->
-    <div class="toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#about">About the Benchmark</a></li>
-            <li><a href="#metrics">Key Metrics</a></li>
-            <li><a href="#leaderboard">Performance Leaderboard</a></li>
-            <li><a href="#detailed">Detailed Model Performance</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-        </ul>
-    </div>
-
-    <div class="content-wrapper" id="about">
-        <div class="description">
-            <h2>About the Benchmark</h2>
-            <div class="portrait-container">
-                <div class="portrait-crop">
-                  <img src="/dorrit.png" alt="Portrait of Little Dorrit" class="portrait" title="Little Dorrit, from Charles Dickens' novel">
-                </div>
-            </div>
-            <p>
-                This benchmark evaluates the ability of multimodal language models to interpret handwritten editorial corrections in printed text.
-                Using annotated scans from Charles Dickens' "Little Dorrit," we challenge models to accurately capture human editing intentions.
-            </p>
-            <p>
-                Models are assessed on their ability to detect and interpret various types of editorial marks including insertions, deletions,
-                replacements, punctuation changes, capitalization corrections, and text reordering.
-            </p>
-            <p>
-                The benchmark consists of several document pages containing Dickens' original manuscript with editorial marks and corrections.
-                These documents represent the kind of annotations an editor might make when reviewing a text for publication, providing
-                a realistic test of how well AI models can understand human editing practices.
-            </p>
-
-            <h3>The Task</h3>
-            <p>
-                Models are instructed to identify all handwritten markups and corrections, including:
-            </p>
-            <ul class="task-types">
-                <li><strong>Insertions:</strong> Adding new text (marked with carets or other indicators)</li>
-                <li><strong>Deletions:</strong> Removing text (often shown with strikethroughs)</li>
-                <li><strong>Replacements:</strong> Substituting text with alternatives</li>
-                <li><strong>Punctuation:</strong> Modifying or adding punctuation marks</li>
-                <li><strong>Capitalization:</strong> Changing case (upper/lower)</li>
-                <li><strong>Reordering:</strong> Rearranging text sequence with arrows or numbers</li>
-            </ul>
-            <p>
-                This requires models to understand context, recognize handwritten annotations, and correctly interpret editorial intentions—skills
-                that combine visual understanding, textual comprehension, and domain knowledge of editing practices.
-            </p>
-        </div>
-    </div>
-
     <div class="metrics" id="metrics">
         <div class="metric-card">
             <div class="metric-title">Top Model</div>
@@ -432,20 +396,105 @@
     <h2 class="section-title" id="detailed">Detailed Model Performance</h2>
     <div id="model-performance-table"></div>
 
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h2>Further Contents</h2>
+        <ul>
+            <li><a href="#about">About the Benchmark</a></li>
+            <li><a href="#how-it-works">How It Works</a>
+                <ul>
+                    <li><a href="#the-task">The Task</a></li>
+                    <li><a href="#example-input">Example Input</a></li>
+                    <li><a href="#expected-output">Expected Output</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-wrapper" id="about">
+        <div class="description">
+            <h2>About the Benchmark</h2>
+            <div class="portrait-container">
+                <div class="portrait-crop">
+                  <img src="/dorrit.png" alt="Portrait of Little Dorrit" class="portrait" title="Little Dorrit, from Charles Dickens' novel">
+                </div>
+            </div>
+            <p>
+                This benchmark evaluates the ability of multimodal language models to interpret handwritten editorial corrections in printed text.
+                Using annotated scans from Charles Dickens' "Little Dorrit," we challenge models to accurately capture human editing intentions.
+            </p>
+            <p>
+                Models are assessed on their ability to detect and interpret various types of editorial marks including insertions, deletions,
+                replacements, punctuation changes, capitalization corrections, and text reordering.
+            </p>
+            <p>
+                The benchmark consists of several document pages containing Dickens' original manuscript with editorial marks and corrections.
+                These documents represent the kind of annotations an editor might make when reviewing a text for publication, providing
+                a realistic test of how well AI models can understand human editing practices.
+            </p>
+        </div>
+    </div>
+
+    <div class="post-content">
     <h2 class="section-title" id="how-it-works">How It Works</h2>
     <p>
-        Models are presented with scanned pages containing handwritten editorial marks and are asked to identify each edit,
-        its type, location, and the text before and after the edit. Below is an example from our benchmark:
+        Models are presented with scanned pages containing handwritten editorial
+        marks and are asked to identify each edit, its type, location, and the
+        text before and after the edit.
+    </p>
+
+    <h3 id="the-task">The Task</h3>
+
+    <p>
+      Each page in the benchmark consists of printed text overlaid with
+      handwritten editorial annotations. Models are tasked with detecting and
+      interpreting all such editorial corrections and outputting them in
+      structured <code>JSON</code> format.
+    </p>
+
+    <p>
+      For each correction, the model must identify:
+    </p>
+
+    <ul class="task-details">
+      <li><strong>Type of edit:</strong> One of <code>insertion</code>, <code>deletion</code>, <code>replacement</code>, <code>punctuation</code>, <code>capitalization</code>, or <code>reordering</code></li>
+      <li><strong>Original text:</strong> The text as it appeared before the edit</li>
+      <li><strong>Corrected text:</strong> The intended version after applying the edit</li>
+      <li><strong>Line number:</strong> The line on which the edit occurs. Use <strong>line 0</strong> for titles or headings, and start counting full lines of body text from <strong>line 1</strong></li>
+      <li><strong>Page:</strong> A known identifier for the image (e.g., <code>"001.png"</code>), provided alongside the input and not extracted by the model</li>
+    </ul>
+
+    <p>
+      Models should infer the intent behind handwritten annotations using both
+      visual and textual cues. Common markup conventions include:
+    </p>
+
+    <ul class="task-markers">
+      <li><strong>Insertions:</strong> Indicated by caret marks (<code>^</code>) or added words between lines</li>
+      <li><strong>Deletions:</strong> Shown using strikethroughs or crossed-out text</li>
+      <li><strong>Replacements:</strong> Circled, underlined, or bracketed text with substitutions nearby</li>
+      <li><strong>Punctuation edits:</strong> Handwritten punctuation added, removed, or modified</li>
+      <li><strong>Capitalization:</strong> Case changes marked explicitly or via notation</li>
+      <li><strong>Reordering:</strong> Text rearranged using arrows, numbering, or caret repositions</li>
+    </ul>
+
+    <p>
+      This task combines fine-grained visual recognition with natural language
+      understanding and domain knowledge of editorial conventions. The goal is
+      not just OCR or layout detection, but true interpretation of handwritten
+      edits in context.
     </p>
 
     <div class="example-container">
+        <h3 id="example-input">Example Input</h3>
+
         <div class="example-image">
             <img src="/001.png" alt="Sample page from Little Dorrit with editorial marks" class="benchmark-example">
             <div class="example-caption">Sample page from Little Dorrit with editorial marks.</div>
         </div>
 
         <div class="example-results">
-            <h4>Expected Output</h4>
+            <h3 id="expected-output">Expected Output</h3>
             <p>For the example above, models should identify all ten editorial corrections, producing output like:</p>
             <div class="code-window">
                 <div class="code-header"></div>
@@ -540,6 +589,7 @@
     </div>
 
     <p class="updated">Last updated: <span id="last-updated">2025-04-04</span></p>
+    </div>
 
     <footer>
         <p>
@@ -583,7 +633,7 @@
 
                         const shots = row.shots || 2;
                         const modelWithShots = `${value} (${shots}-shot)`;
-                        
+
                         if (medalClass) {
                             return `<span class="medal ${medalClass}">${medalText}</span>${modelWithShots}`;
                         }
@@ -634,7 +684,7 @@
                 return [];
             }
         }
-        
+
         // Function to find a model in the results data
         function findModel(results, modelName) {
             return results.find(model => model.model_name === modelName);
@@ -761,7 +811,7 @@
         document.addEventListener("DOMContentLoaded", async function() {
             // Load data from results.json
             const results = await loadResults();
-            
+
             // Format the data for the leaderboard table
             if (results && results.length > 0) {
                 leaderboardData = results.map((model, index) => ({
@@ -773,26 +823,26 @@
                     recall: model.recall,
                     date: model.date ? model.date.split('T')[0] : 'Unknown'
                 }));
-                
+
                 // Update the leaderboard table with real data
                 leaderboardTable.setData(leaderboardData);
-                
+
                 // Update metrics
                 if (results.length > 0) {
                     // Find best F1 score
                     const bestF1 = Math.max(...results.map(model => model.f1_score));
                     document.getElementById("best-f1-score").textContent = bestF1.toFixed(4);
-                    
+
                     // Update model count
                     document.querySelector('.metrics .metric-card:nth-child(3) .metric-value').textContent = results.length;
-                    
+
                     // Update top model
                     document.querySelector('.metrics .metric-card:nth-child(1) .metric-value').textContent = results[0].model_name;
-                    
+
                     // Find most challenging edit type
                     let mostChallengingType = null;
                     let lowestF1 = 1.0;
-                    
+
                     results.forEach(model => {
                         const byType = model.details?.by_type || {};
                         Object.entries(byType).forEach(([type, metrics]) => {
@@ -802,14 +852,14 @@
                             }
                         });
                     });
-                    
+
                     if (mostChallengingType) {
                         const displayType = mostChallengingType.charAt(0).toUpperCase() + mostChallengingType.slice(1);
                         document.querySelector('.metrics .metric-card:nth-child(4) .metric-value').textContent = displayType;
                     }
                 }
             }
-            
+
             // Create detailed performance table
             createModelPerformanceTable();
 
