@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+  workflow_dispatch:  # This enables manual triggering
 
 jobs:
   deploy:
