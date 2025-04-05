@@ -67,3 +67,6 @@ predictions/
 # Exclude local configuration files with API keys
 config/*.local.toml
 config/local*.toml
+
+# Exclude environment variable scripts
+scripts/set_env_variables.sh
