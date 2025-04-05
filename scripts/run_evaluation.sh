@@ -1,8 +1,36 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor evaluation on existing predictions
+#
+# Usage: ./run_evaluation.sh [model_name] [display_name] [judge_model]
+#   model_name: Name of the model (default: gpt-4o)
+#   display_name: Custom display name for the leaderboard (only used if creating new config)
+#   judge_model: OPTIONAL - Model to use for evaluation judging (default: gpt-4.5-preview)
+#                WARNING: Changing this is NOT recommended as it affects benchmark consistency
 
 # Get command line arguments or use defaults
 MODEL_NAME=${1:-"gpt-4o"}  # Default model is gpt-4o
+DISPLAY_NAME=${2:-""}      # Optional display name (only used if creating new config)
+CUSTOM_JUDGE_MODEL=${3:-""}  # Optional judge model override
+
+# Use fixed judge model for consistent evaluation
+LLM_JUDGE_MODEL="gpt-4.5-preview"  
+
+# Show warning if custom judge model is provided
+if [[ -n "$CUSTOM_JUDGE_MODEL" ]]; then
+    echo "⚠️ WARNING: Overriding the default judge model is NOT recommended ⚠️"
+    echo "It affects benchmark consistency and makes results incomparable with others."
+    echo "Default judge: $LLM_JUDGE_MODEL"
+    echo "Custom judge: $CUSTOM_JUDGE_MODEL"
+    echo ""
+    read -p "Are you sure you want to continue? (y/N): " confirm
+    if [[ "$confirm" == [yY] || "$confirm" == [yY][eE][sS] ]]; then
+        LLM_JUDGE_MODEL="$CUSTOM_JUDGE_MODEL"
+        echo "Using custom judge model: $LLM_JUDGE_MODEL"
+    else
+        echo "Using default judge model: $LLM_JUDGE_MODEL"
+    fi
+    echo ""
+fi
 
 # Set environment variables
 API_KEY="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"
@@ -28,10 +56,17 @@ if [ ! -f "$CONFIG_FILE" ]; then
     echo "Warning: Config file not found: $CONFIG_FILE"
     echo "Creating a default config file with 2-shot learning..."
     
+    # Use provided display name or default to model name when creating new config
+    # Only used if no config file exists yet
+    if [[ -z "${DISPLAY_NAME}" ]]; then
+        DISPLAY_NAME="${MODEL_NAME}"
+    fi
+
     # Create a default config.json file
     cat > "$CONFIG_FILE" << EOL
 {
   "model_name": "${MODEL_NAME}",
+  "display_name": "${DISPLAY_NAME}",
   "shots": 2,
   "temperature": 0.0,
   "date": "$(date +"%Y-%m-%d")",
@@ -44,6 +79,8 @@ fi
 # Display experiment configuration
 echo "Experiment configuration:"
 cat "$CONFIG_FILE"
+echo ""
+echo "Using judge model: $LLM_JUDGE_MODEL"
 echo ""
 
 # Ensure the results directories exist
@@ -70,10 +107,11 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
             results_filename="${pred_filename/_prediction/_results}"
             results_path="${EVAL_RESULTS_DIR}/${results_filename}"
             
-            # Run evaluation with correct command structure
+            # Run evaluation with correct command structure and fixed judge model
             python scripts/evaluate.py run \
                 --model-name "$MODEL_NAME" \
                 --api-key "$API_KEY" \
+                --llm-model "$LLM_JUDGE_MODEL" \
                 --output "$results_path" \
                 "$prediction_file" \
                 "$json_file"

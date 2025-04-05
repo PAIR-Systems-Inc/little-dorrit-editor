@@ -145,14 +145,19 @@ def collect_model_results(predictions_dir: Path, shot_filter: Optional[int] = No
             print(f"Warning: No valid result files found for model {model_name}")
             continue
         
-        # Format model name for display (capitalize words, preserve known acronyms)
-        display_name = model_name
-        if re.match(r"^[a-z0-9-]+$", model_name):  # Only transform lowercase names
+        # Check if display_name is provided in config
+        display_name = config.get("display_name", model_name)
+        
+        # If no display_name in config, format model name nicely
+        if display_name == model_name and re.match(r"^[a-z0-9-]+$", model_name):
             # Special case for GPT models
             if model_name.startswith("gpt"):
                 parts = model_name.split("-")
                 if len(parts) > 1:
-                    display_name = parts[0].upper() + "-" + "".join(parts[1:])
+                    # Preserve all hyphens in the name
+                    display_name = parts[0].upper()  # "GPT"
+                    for i in range(1, len(parts)):
+                        display_name += f"-{parts[i]}"  # Keep hyphens between components
             else:
                 # Capitalize first letter of each word
                 display_name = " ".join(word.capitalize() for word in model_name.replace("-", " ").split())

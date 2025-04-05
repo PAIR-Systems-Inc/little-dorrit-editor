@@ -1,5 +1,9 @@
 #!/bin/bash
 # Script to report Little Dorrit Editor evaluation results without running evaluations
+#
+# Usage: ./report_evaluation.sh [model_name] [output_dir]
+#   model_name: Name of the model to report (default: gpt-4o)
+#   output_dir: Base output directory (default: predictions)
 
 # Default values
 MODEL_NAME=${1:-"gpt-4o"}  # Use the first parameter or default to gpt-4o
@@ -25,10 +29,17 @@ if [ -f "$CONFIG_FILE" ]; then
     cat "$CONFIG_FILE"
     echo ""
     
-    # Extract shot count for the report header
+    # Extract shot count and display name for the report header
     SHOTS=$(grep -o '"shots": [0-9]*' "$CONFIG_FILE" | awk '{print $2}')
+    DISPLAY_NAME=$(grep -o '"display_name": "[^"]*"' "$CONFIG_FILE" 2>/dev/null | awk -F '"' '{print $4}')
+    
+    # If no display name in config, use model name
+    if [[ -z "${DISPLAY_NAME}" ]]; then
+        DISPLAY_NAME="${MODEL_NAME}"
+    fi
 else
     SHOTS="unknown"
+    DISPLAY_NAME="${MODEL_NAME}"
     echo "Warning: No configuration file found at $CONFIG_FILE"
 fi
 
@@ -48,7 +59,7 @@ total_files=0
 
 # Summarize per-file results
 echo -e "\n===== Per-File Evaluation Results ====="
-echo "Model: $MODEL_NAME (${SHOTS}-shot learning)"
+echo "Model: $DISPLAY_NAME (${SHOTS}-shot learning)"
 echo "Results directory: $EVAL_RESULTS_DIR"
 
 # Check if there are any result files
@@ -132,9 +143,9 @@ done
 # Print the table footer - bold bottom line
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-# Add a bit of space and show model name as a header
+# Add a bit of space and show model display name as a header
 echo -e "\n==================================================="
-echo "    Overall Evaluation Results for ${MODEL_NAME} (${SHOTS}-shot)"
+echo "    Overall Evaluation Results for ${DISPLAY_NAME} (${SHOTS}-shot)"
 echo "==================================================="
 
 # Calculate aggregate precision, recall, F1

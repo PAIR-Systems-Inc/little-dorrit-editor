@@ -1,9 +1,15 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor prediction generation
+#
+# Usage: ./run_prediction.sh [model_name] [shots] [display_name]
+#   model_name: Name of the model (default: gpt-4o)
+#   shots: Number of shots to use (default: 2)
+#   display_name: Custom display name for the leaderboard (optional)
 
 # Get command line arguments or use defaults
 MODEL_NAME=${1:-"gpt-4o"}  # Default model is gpt-4o
 SHOTS=${2:-2}              # Default to 2-shot learning
+DISPLAY_NAME=${3:-""}      # Optional display name
 
 # Set environment variables
 API_KEY="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"
@@ -28,9 +34,16 @@ mkdir -p "$SAMPLE_PREDICTIONS_DIR"
 
 # Create a config.json file for the experiment
 echo "Creating experiment configuration..."
+
+# Use provided display name or default to model name
+if [[ -z "${DISPLAY_NAME}" ]]; then
+    DISPLAY_NAME="${MODEL_NAME}"
+fi
+
 cat > "$CONFIG_FILE" << EOL
 {
   "model_name": "${MODEL_NAME}",
+  "display_name": "${DISPLAY_NAME}",
   "shots": ${SHOTS},
   "temperature": ${TEMPERATURE},
   "date": "$(date +"%Y-%m-%d")",
