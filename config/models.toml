@@ -72,11 +72,35 @@ model_name = "meta-llama/llama-4-scout"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Llama 4 Scout"
 
+["or_gpt_4o_mini"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "openai/gpt-4o-mini"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "GPT-4o-mini"
+
+["or_gpt_4_turbo"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "openai/gpt-4-turbo"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "GPT-4o"
+
+["or_gpt_4o_2024_11_20"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "openai/gpt-4o-2024-11-20"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "GPT-4o (2024-11-20)"
+
 ["or_chatgpt_4o_latest"]
 endpoint = "https://openrouter.ai/api/v1"
 model_name = "openai/chatgpt-4o-latest"
 api_key = "${OPEN_ROUTER_API_KEY}"
-logical_name = "GPT-4o (OpenRouter)"
+logical_name = "ChatGPT-4o"
+
+["or_gpt_4_5_preview"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "openai/gpt-4.5-preview"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "GPT-4.5 Preview"
 
 ["or_gemini_2_0_flash_001"]
 endpoint = "https://openrouter.ai/api/v1"
