@@ -90,6 +90,11 @@ def collect_model_results(predictions_dir: Path, shot_filter: Optional[int] = No
     for model_dir in model_dirs:
         model_name = model_dir.name
         
+        # Check for .noinclude file - standard marker to exclude from leaderboard
+        if (model_dir / ".noinclude").exists():
+            print(f"Skipping {model_name}: found .noinclude marker")
+            continue
+        
         # Load model configuration
         config_path = model_dir / "config.json"
         config = load_config_file(config_path)

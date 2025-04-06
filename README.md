@@ -207,6 +207,18 @@ python scripts/convert_to_hf_dataset.py data/eval/ data/hf/eval/
 
 View the current leaderboard at [GitHub Pages site](https://pairsys.github.io/little-dorrit-editor/).
 
+#### Excluding Models from Leaderboard
+
+To exclude a model from the leaderboard (e.g., for experimental runs or models still in development):
+
+1. Create an empty `.noinclude` file in the model's prediction directory:
+   ```bash
+   # Example: Exclude the 'experimental-model' from the leaderboard
+   touch predictions/experimental-model/.noinclude
+   ```
+
+2. The model will be automatically skipped when running `build_site_results.py` to update the leaderboard.
+
 ## Dataset
 
 ### Data Organization
