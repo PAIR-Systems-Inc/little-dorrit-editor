@@ -14,10 +14,18 @@ from little_dorrit_editor.config import list_models, get_model
 from little_dorrit_editor.utils import extract_json_from_llm_response
 
 # Create Typer apps
+app = typer.Typer()
+
 evaluate_app = typer.Typer()
 predict_app = typer.Typer()
 convert_app = typer.Typer()
 config_app = typer.Typer()
+
+app.add_typer(predict_app, name="predict")
+app.add_typer(evaluate_app, name="evaluate")
+app.add_typer(convert_app, name="convert")
+app.add_typer(config_app, name="config")
+
 console = Console()
 
 
@@ -201,3 +209,7 @@ def run(
     except Exception as e:
         console.print(f"[red]Error:[/red] {str(e)}")
         raise typer.Exit(code=1)
+
+
+if __name__ == "__main__":
+    app()
