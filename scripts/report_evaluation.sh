@@ -202,4 +202,4 @@ printf "  %-25s   %17s\n" "F1 Score" "$formatted_f1"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 echo -e "\nReport complete."
-echo "To update the leaderboard site with these results, run: python scripts/build_site_results.py"
+echo "To update the leaderboard site with these results, run: uv run python scripts/build_site_results.py"

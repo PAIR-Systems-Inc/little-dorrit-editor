@@ -133,4 +133,3 @@ echo -e "\nGenerating evaluation report..."
 bash scripts/report_evaluation.sh "$MODEL_ID" "$BASE_OUTPUT_DIR"
 
 echo -e "\nEvaluation complete. Results stored in $EVAL_RESULTS_DIR"
-echo "To update the leaderboard site, run: python scripts/build_site_results.py"
