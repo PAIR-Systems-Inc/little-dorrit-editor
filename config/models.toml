@@ -60,11 +60,23 @@ model_name = "meta-llama/llama-3.2-90b-vision-instruct"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Llama 3.2 90B Vision Instruct"
 
+["or_llama_4_maverick"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "meta-llama/llama-4-maverick"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Llama 4 Maverick"
+
+["or_llama_4_scout"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "meta-llama/llama-4-scout"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Llama 4 Scout"
+
 ["or_chatgpt_4o_latest"]
 endpoint = "https://openrouter.ai/api/v1"
 model_name = "openai/chatgpt-4o-latest"
 api_key = "${OPEN_ROUTER_API_KEY}"
-logical_name = "Open Router: ChatGPT-4o"
+logical_name = "GPT-4o (OpenRouter)"
 
 ["or_gemini_2_0_flash_001"]
 endpoint = "https://openrouter.ai/api/v1"
