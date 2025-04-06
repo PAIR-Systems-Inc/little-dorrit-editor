@@ -96,17 +96,18 @@ function get_highest_run_id() {
     echo $highest
 }
 
-# Get the highest run ID used today across all models
-HIGHEST_RUN=$(get_highest_run_id)
-NEXT_RUN=$((HIGHEST_RUN + 1))
-RUN_ID=$(printf "%02d" $NEXT_RUN)
-echo "Using run ID: $RUN_ID (based on existing runs found for today across all models)"
-
 # Process each model in sequence
 for MODEL_ID in "${MODELS[@]}"; do
     echo "=========================================================="
     echo "Processing model: $MODEL_ID (${#MODELS[@]} total models in queue)"
     echo "=========================================================="
+    
+    # Calculate a fresh run ID before each model's processing
+    # This allows multiple runs of the same model in a single command
+    HIGHEST_RUN=$(get_highest_run_id)
+    NEXT_RUN=$((HIGHEST_RUN + 1))
+    RUN_ID=$(printf "%02d" $NEXT_RUN)
+    echo "Using run ID: $RUN_ID (based on existing runs found across all models)"
     
     # Create organized output directory structure for this model
     PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_ID}"
