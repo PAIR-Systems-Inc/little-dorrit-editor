@@ -118,11 +118,19 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
         # Extract the base filename without extension
         base_name=$(basename "$json_file" .json)
         
-        # Find the most recent prediction file for this base name
-        prediction_file=$(ls -t "${EVAL_PREDICTIONS_DIR}/${base_name}_"*"_prediction.json" 2>/dev/null | head -n 1)
+        # Find ALL prediction files for this base name
+        prediction_files=("${EVAL_PREDICTIONS_DIR}/${base_name}_"*"_prediction.json")
         
-        # Check if prediction file exists
-        if [ -n "$prediction_file" ] && [ -f "$prediction_file" ]; then
+        # Check if any prediction files exist
+        if [ ${#prediction_files[@]} -eq 0 ] || [ ! -f "${prediction_files[0]}" ]; then
+            echo "Warning: No prediction files found for $base_name"
+            continue
+        fi
+        
+        echo "Found ${#prediction_files[@]} prediction file(s) for $base_name"
+        
+        # Process each prediction file
+        for prediction_file in "${prediction_files[@]}"; do
             echo "Evaluating $prediction_file against $json_file"
             
             # Extract filename part for results
@@ -148,9 +156,7 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
                 echo "  Skipping evaluation: Results already exist at $results_path"
                 echo "  Use --force to re-evaluate if needed"
             fi
-        else
-            echo "Warning: No prediction file found for $base_name"
-        fi
+        done
     done
 fi
 
