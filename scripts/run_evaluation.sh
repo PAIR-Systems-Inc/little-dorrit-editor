@@ -115,7 +115,8 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
             results_path="${EVAL_RESULTS_DIR}/${results_filename}"
             
             # Run evaluation with correct command structure and fixed judge model
-            python scripts/evaluate.py run \
+            # Directly call the CLI module
+            uv run python -m little_dorrit_editor.cli evaluate run \
                 --model-name "$MODEL_ID" \
                 --llm-model "$LLM_JUDGE_MODEL" \
                 --output "$results_path" \

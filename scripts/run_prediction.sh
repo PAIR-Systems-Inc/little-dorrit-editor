@@ -76,8 +76,9 @@ if [ -d "data/sample" ] && [ "$(ls -A data/sample/*.png 2>/dev/null)" ]; then
 
         echo "Processing $img_file -> $prediction_file"
 
-        # Generate predictions using n-shot learning
-        python scripts/predict.py run \
+        # Generate predictions using n-shot learning with uv
+        # Directly call the CLI module
+        uv run python -m little_dorrit_editor.cli predict run \
             --model-id "$MODEL_ID" \
             --shots "$SHOTS" \
             --sample-dataset "$SAMPLE_DATASET" \
@@ -98,8 +99,9 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.png 2>/dev/null)" ]; then
 
         echo "Processing $img_file -> $prediction_file"
 
-        # Generate predictions using n-shot learning
-        python scripts/predict.py run \
+        # Generate predictions using n-shot learning with uv
+        # Directly call the CLI module
+        uv run python -m little_dorrit_editor.cli predict run \
             --model-id "$MODEL_ID" \
             --shots "$SHOTS" \
             --sample-dataset "$SAMPLE_DATASET" \
