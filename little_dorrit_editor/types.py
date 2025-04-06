@@ -44,6 +44,12 @@ class EditAnnotation(BaseModel):
     verified: Optional[bool] = Field(
         None, description="Whether the annotation has been verified"
     )
+    error: Optional[str] = Field(
+        None, description="Error message if prediction generation failed"
+    )
+    raw_response: Optional[str] = Field(
+        None, description="Raw model response excerpt for debugging (if error occurred)"
+    )
 
 
 class EvaluationResult(BaseModel):

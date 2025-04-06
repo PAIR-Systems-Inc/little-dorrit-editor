@@ -102,25 +102,43 @@ def generate_predictions(
     
     console.print("[dim]Raw response received, extracting JSON...[/dim]")
     
-    # Parse the response
-    predictions = extract_json_from_llm_response(response.choices[0].message.content)
+    # Parse the response with graceful error handling
+    try:
+        predictions = extract_json_from_llm_response(response.choices[0].message.content)
+        edits = predictions.get("edits", [])
+        error_message = None
+    except json.JSONDecodeError as e:
+        console.print(f"[red]Error:[/red] Could not parse JSON from model response: {str(e)}")
+        console.print("[yellow]Creating empty prediction with error information[/yellow]")
+        edits = []
+        error_message = f"Failed to parse model output as JSON: {str(e)[:200]}..."
     
     # Create the full prediction with metadata
     full_prediction = {
         "image": image_path.name,
         "page_number": 1,  # Default, should be extracted from filename ideally
         "source": "Little Dorrit",
-        "edits": predictions["edits"],
+        "edits": edits,
         "annotator": model_config.logical_name,
         "annotation_date": datetime.now().isoformat(),
         "verified": False
     }
+    
+    # Add error information if parsing failed
+    if error_message:
+        full_prediction["error"] = error_message
+        full_prediction["raw_response"] = response.choices[0].message.content[:1000]  # First 1000 chars for diagnosis
     
     # Save the predictions
     with open(output_path, "w") as f:
         json.dump(full_prediction, f, indent=2)
     
     console.print(f"[green]Predictions saved to {output_path}[/green]")
-    console.print(f"Found {len(predictions['edits'])} edits.")
+    
+    # Show different messages based on success/failure
+    if error_message:
+        console.print(f"[yellow]Warning: No edits found due to JSON parsing error[/yellow]")
+    else:
+        console.print(f"Found {len(edits)} edits.")
     
     return full_prediction
