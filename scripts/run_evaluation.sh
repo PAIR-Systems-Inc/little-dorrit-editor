@@ -1,18 +1,34 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor evaluation on existing predictions
 #
-# Usage: ./run_evaluation.sh [model_id] [display_name] [judge_model_id]
+# Usage: ./run_evaluation.sh [model_id] [display_name] [judge_model_id] [--force]
 #   model_id: ID of the model (default: gpt-4o)
 #   display_name: Custom display name for the leaderboard (only used if creating new config)
 #   judge_model_id: OPTIONAL - Model ID to use for evaluation judging (default: gpt-4.5-preview)
 #                WARNING: Changing this is NOT recommended as it affects benchmark consistency
+#   --force: OPTIONAL - Force re-evaluation even if results already exist
 #
 # Available model IDs can be viewed with: config list
+
+# Check for --force flag anywhere in the arguments
+FORCE_EVAL=false
+for arg in "$@"; do
+    if [ "$arg" == "--force" ]; then
+        FORCE_EVAL=true
+        break
+    fi
+done
 
 # Get command line arguments or use defaults
 MODEL_ID=${1:-"gpt-4o"}    # Default model is gpt-4o
 DISPLAY_NAME=${2:-""}      # Optional display name (only used if creating new config)
 CUSTOM_JUDGE_MODEL=${3:-""}  # Optional judge model override
+
+# Remove --force from model ID if it was the first argument
+if [ "$MODEL_ID" == "--force" ]; then
+    MODEL_ID="gpt-4o"
+    FORCE_EVAL=true
+fi
 
 # Use fixed judge model for consistent evaluation
 LLM_JUDGE_MODEL="gpt-4.5-preview"  
@@ -114,14 +130,24 @@ if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
             results_filename="${pred_filename/_prediction/_results}"
             results_path="${EVAL_RESULTS_DIR}/${results_filename}"
             
-            # Run evaluation with correct command structure and fixed judge model
-            # Directly call the CLI module
-            uv run python -m little_dorrit_editor.cli evaluate run \
-                --model-name "$MODEL_ID" \
-                --llm-model "$LLM_JUDGE_MODEL" \
-                --output "$results_path" \
-                "$prediction_file" \
-                "$json_file"
+            # Check if results already exist and whether to force re-evaluation
+            if [ ! -f "$results_path" ] || [ "$FORCE_EVAL" = true ]; then
+                if [ -f "$results_path" ] && [ "$FORCE_EVAL" = true ]; then
+                    echo "  Force flag set: Re-evaluating existing results..."
+                fi
+                
+                # Run evaluation with correct command structure and fixed judge model
+                # Directly call the CLI module
+                uv run python -m little_dorrit_editor.cli evaluate run \
+                    --model-name "$MODEL_ID" \
+                    --llm-model "$LLM_JUDGE_MODEL" \
+                    --output "$results_path" \
+                    "$prediction_file" \
+                    "$json_file"
+            else
+                echo "  Skipping evaluation: Results already exist at $results_path"
+                echo "  Use --force to re-evaluate if needed"
+            fi
         else
             echo "Warning: No prediction file found for $base_name"
         fi
@@ -133,3 +159,6 @@ echo -e "\nGenerating evaluation report..."
 bash scripts/report_evaluation.sh "$MODEL_ID" "$BASE_OUTPUT_DIR"
 
 echo -e "\nEvaluation complete. Results stored in $EVAL_RESULTS_DIR"
+if [ "$FORCE_EVAL" = true ]; then
+    echo "Force flag was set: Re-evaluated all existing results"
+fi
