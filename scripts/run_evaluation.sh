@@ -1,51 +1,72 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor evaluation on existing predictions
 #
-# Usage: ./run_evaluation.sh [model_id] [display_name] [judge_model_id] [--force]
-#   model_id: ID of the model (default: gpt-4o)
-#   display_name: Custom display name for the leaderboard (only used if creating new config)
-#   judge_model_id: OPTIONAL - Model ID to use for evaluation judging (default: gpt-4.5-preview)
+# Usage: ./run_evaluation.sh [model_id1] [model_id2] ... [--display-name "Name"] [--judge-model MODEL] [--force]
+#   model_id: One or more IDs of models to evaluate (default: gpt-4o if none provided)
+#   --display-name "Name": Custom display name for the leaderboard (only used if creating new config)
+#   --judge-model MODEL: Model ID to use for evaluation judging (default: gpt-4.5-preview)
 #                WARNING: Changing this is NOT recommended as it affects benchmark consistency
-#   --force: OPTIONAL - Force re-evaluation even if results already exist
+#   --force: Force re-evaluation even if results already exist
+#
+# Examples:
+#   ./run_evaluation.sh or_gpt_4o_latest                    # Evaluate a single model
+#   ./run_evaluation.sh or_gpt_4o_latest or_llama_4_scout   # Evaluate multiple models
+#   ./run_evaluation.sh or_gpt_4o_latest --force            # Force re-evaluation
 #
 # Available model IDs can be viewed with: config list
 
-# Check for --force flag anywhere in the arguments
+# Default values
+DEFAULT_MODEL="gpt-4o"
+DISPLAY_NAME=""
+LLM_JUDGE_MODEL="gpt-4.5-preview"
 FORCE_EVAL=false
-for arg in "$@"; do
-    if [ "$arg" == "--force" ]; then
-        FORCE_EVAL=true
-        break
-    fi
+MODELS=()
+
+# Parse command line arguments
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --display-name)
+      DISPLAY_NAME="$2"
+      shift 2
+      ;;
+    --judge-model)
+      LLM_JUDGE_MODEL="$2"
+      shift 2
+      ;;
+    --force)
+      FORCE_EVAL=true
+      shift
+      ;;
+    --*)
+      echo "Unknown option: $1"
+      exit 1
+      ;;
+    *)
+      # Assume anything else is a model ID
+      MODELS+=("$1")
+      shift
+      ;;
+  esac
 done
 
-# Get command line arguments or use defaults
-MODEL_ID=${1:-"gpt-4o"}    # Default model is gpt-4o
-DISPLAY_NAME=${2:-""}      # Optional display name (only used if creating new config)
-CUSTOM_JUDGE_MODEL=${3:-""}  # Optional judge model override
-
-# Remove --force from model ID if it was the first argument
-if [ "$MODEL_ID" == "--force" ]; then
-    MODEL_ID="gpt-4o"
-    FORCE_EVAL=true
+# If no models specified, use default
+if [ ${#MODELS[@]} -eq 0 ]; then
+  MODELS=("$DEFAULT_MODEL")
 fi
 
-# Use fixed judge model for consistent evaluation
-LLM_JUDGE_MODEL="gpt-4.5-preview"  
-
-# Show warning if custom judge model is provided
-if [[ -n "$CUSTOM_JUDGE_MODEL" ]]; then
+# Show warning if custom judge model provided and it's not the default
+if [[ "$LLM_JUDGE_MODEL" != "gpt-4.5-preview" ]]; then
     echo "⚠️ WARNING: Overriding the default judge model is NOT recommended ⚠️"
     echo "It affects benchmark consistency and makes results incomparable with others."
-    echo "Default judge: $LLM_JUDGE_MODEL"
-    echo "Custom judge: $CUSTOM_JUDGE_MODEL"
+    echo "Default judge: gpt-4.5-preview"
+    echo "Custom judge: $LLM_JUDGE_MODEL"
     echo ""
     read -p "Are you sure you want to continue? (y/N): " confirm
-    if [[ "$confirm" == [yY] || "$confirm" == [yY][eE][sS] ]]; then
-        LLM_JUDGE_MODEL="$CUSTOM_JUDGE_MODEL"
-        echo "Using custom judge model: $LLM_JUDGE_MODEL"
-    else
+    if [[ "$confirm" != [yY] && "$confirm" != [yY][eE][sS] ]]; then
+        LLM_JUDGE_MODEL="gpt-4.5-preview"
         echo "Using default judge model: $LLM_JUDGE_MODEL"
+    else
+        echo "Using custom judge model: $LLM_JUDGE_MODEL"
     fi
     echo ""
 fi
@@ -54,117 +75,132 @@ fi
 # No API key needed here - the config module will use the relevant environment variable
 BASE_OUTPUT_DIR="predictions"
 
-# Set up directory structure using new format
-PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_ID}"
-CONFIG_FILE="${PREDICTIONS_DIR}/config.json"
-PREDICTIONS_OUTPUT_DIR="${PREDICTIONS_DIR}/predictions"
-EVAL_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/eval"
-RESULTS_DIR="${PREDICTIONS_DIR}/results"
-EVAL_RESULTS_DIR="${RESULTS_DIR}/eval"
-
-# Verify the model directory exists
-if [ ! -d "$PREDICTIONS_DIR" ]; then
-    echo "Error: Model directory not found: $PREDICTIONS_DIR"
-    echo "Run './scripts/run_prediction.sh ${MODEL_ID}' first to generate predictions."
-    exit 1
-fi
-
-# Verify config file exists
-if [ ! -f "$CONFIG_FILE" ]; then
-    echo "Warning: Config file not found: $CONFIG_FILE"
-    echo "Creating a default config file with 2-shot learning..."
+# Process each model in sequence
+for MODEL_ID in "${MODELS[@]}"; do
+    echo "=========================================================="
+    echo "Processing model: $MODEL_ID (${#MODELS[@]} total models in queue)"
+    echo "=========================================================="
     
-    # Get the model's logical name if no display name is provided
-    if [[ -z "${DISPLAY_NAME}" ]]; then
-        # Try to get logical name from config
-        LOGICAL_NAME=$(python -c "from little_dorrit_editor.config import get_model; print(get_model('${MODEL_ID}').logical_name)" 2>/dev/null)
-        if [[ $? -eq 0 && -n "${LOGICAL_NAME}" ]]; then
-            DISPLAY_NAME="${LOGICAL_NAME}"
-        else
-            DISPLAY_NAME="${MODEL_ID}"
-        fi
+    # Set up directory structure for this model
+    PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_ID}"
+    CONFIG_FILE="${PREDICTIONS_DIR}/config.json"
+    PREDICTIONS_OUTPUT_DIR="${PREDICTIONS_DIR}/predictions"
+    EVAL_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/eval"
+    RESULTS_DIR="${PREDICTIONS_DIR}/results"
+    EVAL_RESULTS_DIR="${RESULTS_DIR}/eval"
+    
+    # Verify the model directory exists
+    if [ ! -d "$PREDICTIONS_DIR" ]; then
+        echo "Error: Model directory not found: $PREDICTIONS_DIR"
+        echo "Run './scripts/run_prediction.sh ${MODEL_ID}' first to generate predictions."
+        echo "Skipping to next model (if any)..."
+        continue
     fi
-
-    # Create a default config.json file
-    cat > "$CONFIG_FILE" << EOL
+    
+    # Verify config file exists
+    if [ ! -f "$CONFIG_FILE" ]; then
+        echo "Warning: Config file not found: $CONFIG_FILE"
+        echo "Creating a default config file with 2-shot learning..."
+        
+        # Get the model's logical name if no display name is provided
+        CURRENT_DISPLAY_NAME="$DISPLAY_NAME"
+        if [[ -z "${CURRENT_DISPLAY_NAME}" ]]; then
+            # Use our standalone script to get the logical name
+            LOGICAL_NAME=$(uv run python scripts/get_model_name.py "${MODEL_ID}" "config/models.toml")
+            if [[ $? -eq 0 && -n "${LOGICAL_NAME}" ]]; then
+                CURRENT_DISPLAY_NAME="${LOGICAL_NAME}"
+            else
+                CURRENT_DISPLAY_NAME="${MODEL_ID}"
+            fi
+        fi
+    
+        # Create a default config.json file
+        cat > "$CONFIG_FILE" << EOL
 {
   "model_id": "${MODEL_ID}",
-  "display_name": "${DISPLAY_NAME}",
+  "display_name": "${CURRENT_DISPLAY_NAME}",
   "shots": 2,
   "temperature": 0.0,
   "date": "$(date +"%Y-%m-%d")",
   "notes": "Benchmark run with 2-shot learning (default)"
 }
 EOL
-    echo "Default configuration saved to $CONFIG_FILE"
-fi
-
-# Display experiment configuration
-echo "Experiment configuration:"
-cat "$CONFIG_FILE"
-echo ""
-echo "Using judge model: $LLM_JUDGE_MODEL"
-echo ""
-
-# Ensure the results directories exist
-mkdir -p "$EVAL_RESULTS_DIR"
-
-# Evaluate predictions
-echo "Evaluating predictions..."
-
-# Process only evaluation data
-if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
-    for json_file in data/eval/*.json; do
-        # Extract the base filename without extension
-        base_name=$(basename "$json_file" .json)
-        
-        # Find ALL prediction files for this base name
-        prediction_files=("${EVAL_PREDICTIONS_DIR}/${base_name}_"*"_prediction.json")
-        
-        # Check if any prediction files exist
-        if [ ${#prediction_files[@]} -eq 0 ] || [ ! -f "${prediction_files[0]}" ]; then
-            echo "Warning: No prediction files found for $base_name"
-            continue
-        fi
-        
-        echo "Found ${#prediction_files[@]} prediction file(s) for $base_name"
-        
-        # Process each prediction file
-        for prediction_file in "${prediction_files[@]}"; do
-            echo "Evaluating $prediction_file against $json_file"
+        echo "Default configuration saved to $CONFIG_FILE"
+    fi
+    
+    # Display experiment configuration
+    echo "Experiment configuration:"
+    cat "$CONFIG_FILE"
+    echo ""
+    echo "Using judge model: $LLM_JUDGE_MODEL"
+    echo ""
+    
+    # Ensure the results directories exist
+    mkdir -p "$EVAL_RESULTS_DIR"
+    
+    # Evaluate predictions
+    echo "Evaluating predictions for model $MODEL_ID..."
+    
+    # Process only evaluation data
+    if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
+        for json_file in data/eval/*.json; do
+            # Extract the base filename without extension
+            base_name=$(basename "$json_file" .json)
             
-            # Extract filename part for results
-            pred_filename=$(basename "$prediction_file")
-            results_filename="${pred_filename/_prediction/_results}"
-            results_path="${EVAL_RESULTS_DIR}/${results_filename}"
+            # Find ALL prediction files for this base name
+            prediction_files=("${EVAL_PREDICTIONS_DIR}/${base_name}_"*"_prediction.json")
             
-            # Check if results already exist and whether to force re-evaluation
-            if [ ! -f "$results_path" ] || [ "$FORCE_EVAL" = true ]; then
-                if [ -f "$results_path" ] && [ "$FORCE_EVAL" = true ]; then
-                    echo "  Force flag set: Re-evaluating existing results..."
-                fi
-                
-                # Run evaluation with correct command structure and fixed judge model
-                # Directly call the CLI module
-                uv run python -m little_dorrit_editor.cli evaluate run \
-                    --model-name "$MODEL_ID" \
-                    --llm-model "$LLM_JUDGE_MODEL" \
-                    --output "$results_path" \
-                    "$prediction_file" \
-                    "$json_file"
-            else
-                echo "  Skipping evaluation: Results already exist at $results_path"
-                echo "  Use --force to re-evaluate if needed"
+            # Check if any prediction files exist
+            if [ ${#prediction_files[@]} -eq 0 ] || [ ! -f "${prediction_files[0]}" ]; then
+                echo "Warning: No prediction files found for $base_name"
+                continue
             fi
+            
+            echo "Found ${#prediction_files[@]} prediction file(s) for $base_name"
+            
+            # Process each prediction file
+            for prediction_file in "${prediction_files[@]}"; do
+                echo "Evaluating $prediction_file against $json_file"
+                
+                # Extract filename part for results
+                pred_filename=$(basename "$prediction_file")
+                results_filename="${pred_filename/_prediction/_results}"
+                results_path="${EVAL_RESULTS_DIR}/${results_filename}"
+                
+                # Check if results already exist and whether to force re-evaluation
+                if [ ! -f "$results_path" ] || [ "$FORCE_EVAL" = true ]; then
+                    if [ -f "$results_path" ] && [ "$FORCE_EVAL" = true ]; then
+                        echo "  Force flag set: Re-evaluating existing results..."
+                    fi
+                    
+                    # Run evaluation with correct command structure and fixed judge model
+                    # Directly call the CLI module
+                    uv run python -m little_dorrit_editor.cli evaluate run \
+                        --model-name "$MODEL_ID" \
+                        --llm-model "$LLM_JUDGE_MODEL" \
+                        --output "$results_path" \
+                        "$prediction_file" \
+                        "$json_file"
+                else
+                    echo "  Skipping evaluation: Results already exist at $results_path"
+                    echo "  Use --force to re-evaluate if needed"
+                fi
+            done
         done
-    done
-fi
+    else
+        echo "No evaluation files found in data/eval. Please ensure evaluation data is available."
+    fi
+    
+    # Use the report script to show detailed results for this model
+    echo -e "\nGenerating evaluation report for $MODEL_ID..."
+    bash scripts/report_evaluation.sh "$MODEL_ID" "$BASE_OUTPUT_DIR"
+    
+    echo -e "\nEvaluation complete for $MODEL_ID. Results stored in $EVAL_RESULTS_DIR"
+    echo "Finished processing model: $MODEL_ID"
+done
 
-# Use the report script to show detailed results
-echo -e "\nGenerating evaluation report..."
-bash scripts/report_evaluation.sh "$MODEL_ID" "$BASE_OUTPUT_DIR"
-
-echo -e "\nEvaluation complete. Results stored in $EVAL_RESULTS_DIR"
+echo "=========================================================="
+echo "All evaluations completed for ${#MODELS[@]} models."
 if [ "$FORCE_EVAL" = true ]; then
     echo "Force flag was set: Re-evaluated all existing results"
 fi
