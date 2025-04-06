@@ -123,8 +123,9 @@ for MODEL_ID in "${MODELS[@]}"; do
     # Get the model's logical name if no display name is provided
     CURRENT_DISPLAY_NAME="$DISPLAY_NAME"
     if [[ -z "${CURRENT_DISPLAY_NAME}" ]]; then
-        # Try to get logical name from config
-        LOGICAL_NAME=$(python -c "from little_dorrit_editor.config import get_model; print(get_model('${MODEL_ID}').logical_name)" 2>/dev/null)
+        # Use our standalone script to get the logical name from config
+        # This avoids capturing any warning messages that might be printed by the config module
+        LOGICAL_NAME=$(uv run python scripts/get_model_name.py "${MODEL_ID}" "config/models.toml")
         if [[ $? -eq 0 && -n "${LOGICAL_NAME}" ]]; then
             CURRENT_DISPLAY_NAME="${LOGICAL_NAME}"
         else
