@@ -9,11 +9,13 @@ from rich.console import Console
 
 from little_dorrit_editor.convert import create_hf_dataset
 from little_dorrit_editor.evaluate import display_results, evaluate
+from little_dorrit_editor.predict import generate_predictions
 from little_dorrit_editor.config import list_models, get_model
 from little_dorrit_editor.utils import extract_json_from_llm_response
 
 # Create Typer apps
 evaluate_app = typer.Typer()
+predict_app = typer.Typer()
 convert_app = typer.Typer()
 config_app = typer.Typer()
 console = Console()
@@ -87,8 +89,8 @@ def run(
         raise typer.Exit(code=1)
 
 
-@evaluate_app.command("generate")
-def generate_predictions(
+@predict_app.command()
+def run(
     image: Path = typer.Argument(
         ..., help="Path to the image file to analyze"
     ),
@@ -114,112 +116,20 @@ def generate_predictions(
 ) -> None:
     """Generate predictions using an LLM model with optional few-shot examples."""
     try:
-        from little_dorrit_editor.prompt import (
-            create_few_shot_prompt,
-            create_zero_shot_prompt,
-            load_examples
-        )
-        import openai
-        import json
-
         # Allow for backward compatibility with --model-name
         if model_name is not None:
             model_id = model_name
             console.print(f"[yellow]Warning:[/yellow] --model-name is deprecated. Please use --model-id instead.")
 
-        # Validate paths
-        if not image.exists():
-            console.print(f"[red]Error:[/red] Image file not found: {image}")
-            raise typer.Exit(code=1)
-
-        if shots > 0:
-            # Check if sample dataset exists
-            if not sample_dataset.exists():
-                console.print(
-                    f"[yellow]Warning:[/yellow] Sample dataset not found: {sample_dataset}. "
-                    f"Please run scripts/prepare_datasets.py first."
-                )
-                console.print("Falling back to zero-shot prompting.")
-                examples = []
-            else:
-                # Safety check: Ensure the dataset path is from sample data
-                if 'eval' in str(sample_dataset).lower():
-                    console.print(
-                        f"[red]CRITICAL SAFETY ERROR:[/red] Attempted to use evaluation data for examples: {sample_dataset}"
-                    )
-                    console.print("This is not allowed to prevent data leakage. Use sample data only.")
-                    raise typer.Exit(code=1)
-
-                # Load examples for few-shot prompting
-                console.print(f"Loading {shots} examples from {sample_dataset}...")
-                try:
-                    examples = load_examples(sample_dataset, num_examples=shots)
-                    console.print(f"Loaded {len(examples)} examples for few-shot prompting.")
-                except Exception as e:
-                    if "CRITICAL SAFETY ERROR" in str(e):
-                        console.print(f"[red]Error:[/red] {str(e)}")
-                        raise typer.Exit(code=1)
-                    console.print(f"[yellow]Warning:[/yellow] Failed to load examples: {str(e)}")
-                    console.print("Falling back to zero-shot prompting.")
-                    examples = []
-
-            # Create prompt with examples
-            if examples:
-                console.print(f"Creating {len(examples)}-shot prompt...")
-                messages = create_few_shot_prompt(str(image), examples)
-            else:
-                console.print("Creating zero-shot prompt...")
-                messages = create_zero_shot_prompt(str(image))
-        else:
-            # Zero-shot prompting
-            console.print("Creating zero-shot prompt...")
-            messages = create_zero_shot_prompt(str(image))
-
-        # Get model configuration
-        from little_dorrit_editor.config import get_model
-
-        model_config = get_model(model_id)
-
-        # Initialize the client with the appropriate base URL and API key
-        client = openai.Client(
-            api_key=model_config.api_key,
-            base_url=model_config.endpoint
+        # Generate predictions
+        generate_predictions(
+            image_path=image,
+            output_path=output,
+            model_id=model_id,
+            shots=shots,
+            sample_dataset_path=sample_dataset,
+            console=console
         )
-
-        # Call the model
-        console.print(f"Calling {model_config.logical_name} to generate predictions...")
-        response = client.chat.completions.create(
-            model=model_config.model_name,
-            messages=messages,
-            temperature=0.1,
-            response_format={"type": "json_object"},
-        )
-
-        # For debugging
-        console.print("[dim]Raw response received, extracting JSON...[/dim]")
-
-        # Parse the response with handling for code blocks
-        predictions = extract_json_from_llm_response(response.choices[0].message.content)
-
-        # Create the full prediction with metadata
-        from datetime import datetime
-
-        full_prediction = {
-            "image": image.name,
-            "page_number": 1,  # Default, should be extracted from filename ideally
-            "source": "Little Dorrit",
-            "edits": predictions["edits"],
-            "annotator": model_config.logical_name,
-            "annotation_date": datetime.now().isoformat(),
-            "verified": False
-        }
-
-        # Save the predictions
-        with open(output, "w") as f:
-            json.dump(full_prediction, f, indent=2)
-
-        console.print(f"[green]Predictions saved to {output}[/green]")
-        console.print(f"Found {len(predictions['edits'])} edits.")
 
     except Exception as e:
         console.print(f"[red]Error:[/red] {str(e)}")
