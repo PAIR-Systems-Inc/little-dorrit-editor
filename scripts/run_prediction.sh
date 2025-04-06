@@ -21,7 +21,6 @@ TEMPERATURE=0.0
 
 # Get current date in YYYYMMDD format
 DATE_STAMP=$(date +"%Y%m%d")
-RUN_ID="01"  # Can be incremented for multiple runs on the same day
 
 # Create organized output directory structure
 PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_ID}"
@@ -33,6 +32,36 @@ CONFIG_FILE="${PREDICTIONS_DIR}/config.json"
 # Ensure the output directories exist
 mkdir -p "$EVAL_PREDICTIONS_DIR"
 mkdir -p "$SAMPLE_PREDICTIONS_DIR"
+
+# Automatically determine run ID by checking existing prediction files
+# Look in both sample and eval directories for today's files
+HIGHEST_RUN=0
+for dir in "$SAMPLE_PREDICTIONS_DIR" "$EVAL_PREDICTIONS_DIR"; do
+    if [ -d "$dir" ]; then
+        # Find any prediction files with today's date
+        existing_files=$(find "$dir" -type f -name "*_${DATE_STAMP}_prediction.json" 2>/dev/null)
+        
+        # Extract run numbers from filenames and find highest
+        for file in $existing_files; do
+            # Extract the run ID portion from filename (format: name_XX_date_prediction.json)
+            filename=$(basename "$file")
+            # Extract the run number using parameter expansion
+            run_part=$(echo "$filename" | grep -o -E '_[0-9]+_' | head -1 | tr -d '_')
+            
+            if [[ "$run_part" =~ ^[0-9]+$ ]]; then
+                run_num=$((10#$run_part)) # Force decimal interpretation
+                if [ $run_num -gt $HIGHEST_RUN ]; then
+                    HIGHEST_RUN=$run_num
+                fi
+            fi
+        done
+    fi
+done
+
+# Set new run ID (increment highest found, or use 1 if none found)
+NEXT_RUN=$((HIGHEST_RUN + 1))
+RUN_ID=$(printf "%02d" $NEXT_RUN)
+echo "Using run ID: $RUN_ID (based on existing runs found for today)"
 
 # Create a config.json file for the experiment
 echo "Creating experiment configuration..."
