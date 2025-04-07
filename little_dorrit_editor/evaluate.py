@@ -317,7 +317,6 @@ def evaluate(
     
     # Keep a copy of the original true positives list
     remaining_true_positives = list(true_positives)
-    original_true_positives_count = len(true_positives)
     
     # Keep track of indices for the edit_matches
     valid_match_index = 0
