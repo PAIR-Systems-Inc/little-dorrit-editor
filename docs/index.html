@@ -657,7 +657,7 @@
             data: leaderboardData,
             layout: "fitColumns",
             headerSort: true,
-            initialSort: [{ column: "rank", dir: "asc" }],
+            initialSort: [{ column: "f1Score", dir: "desc" }], // Sort by F1 score descending
             columns: [
                 {
                     title: "Rank",
@@ -770,7 +770,8 @@
         
         // Process model results and compute metrics
         function processModelResults(data) {
-            return data.map(model => {
+            // First, process each model to calculate metrics
+            const processedModels = data.map(model => {
                 const fileResults = model.file_results || [];
                 
                 // Collect all edit matches from all files
@@ -843,6 +844,9 @@
                     }
                 };
             });
+            
+            // Then sort by F1 score
+            return processedModels.sort((a, b) => (b.f1_score || 0) - (a.f1_score || 0));
         }
 
         // Function to find a model in the results data
@@ -942,7 +946,8 @@
                 performanceData.push(modelRow);
             }
 
-            return performanceData;
+            // Sort by F1 score
+            return performanceData.sort((a, b) => (b.f1_score || 0) - (a.f1_score || 0));
         }
 
         // Function to create and configure the model performance table
@@ -955,6 +960,7 @@
                 dataTree: true,
                 dataTreeStartExpanded: false,
                 dataTreeChildIndent: 20,
+                initialSort: [{ column: "f1_score", dir: "desc" }], // Sort by F1 score descending
                 columns: [
                     {
                         title: "Model / File",
@@ -1035,11 +1041,12 @@
         document.addEventListener("DOMContentLoaded", async function() {
             // Load data from results.json
             const results = await loadResults();
+            // Note: results are already sorted by F1 score in processModelResults
 
             // Format the data for the leaderboard table
             if (results && results.length > 0) {
                 leaderboardData = results.map((model, index) => ({
-                    rank: index + 1,
+                    rank: index + 1, // Assign rank based on sorted order
                     model: model.model_name,
                     shots: model.shots || 2,
                     f1Score: model.f1_score,
