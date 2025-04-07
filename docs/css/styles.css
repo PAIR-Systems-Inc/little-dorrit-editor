@@ -290,6 +290,21 @@ footer {
     background-color: var(--score-low);
 }
 
+/* Bootstrap loading indicator */
+.loading-indicator {
+    position: relative;
+    color: var(--muted-text);
+    font-style: italic;
+    font-size: 0.9em;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
 /* Table styling */
 .tabulator {
     margin: 25px 0;
@@ -390,4 +405,45 @@ code {
     .file-summary-stats {
         width: 100%;
     }
+}
+
+/* 6. Badges */
+
+.badges-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.badge-technical {
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+}
+
+.badge-github {
+    background: linear-gradient(to right, #4b5563, #1f2937);
+}
+
+.badge svg {
+    width: 20px;
+    height: 20px;
 }

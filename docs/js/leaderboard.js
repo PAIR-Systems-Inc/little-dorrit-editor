@@ -6,6 +6,7 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
     data: leaderboardData,
     layout: "fitColumns",
     headerSort: true,
+    index: "modelId", // Use model ID as the primary key
     initialSort: [{ column: "f1Score", dir: "desc" }], // Sort by F1 score descending
     columns: [
         {
@@ -59,6 +60,20 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
             }
         },
         {
+            title: "95% CI",
+            field: "confidenceInterval",
+            headerHozAlign: "right",
+            hozAlign: "right",
+            width: 100,
+            formatter: function(cell) {
+                const value = cell.getValue();
+                if (value === "calculating...") {
+                    return "<span class='loading-indicator'>calculating...</span>";
+                }
+                return value || "pending...";
+            }
+        },
+        {
             title: "Prec.",
             field: "precision",
             sorter: "number",
@@ -108,7 +123,7 @@ async function loadResults() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const rawData = await response.json();
-        
+
         // Process the raw data to calculate metrics
         return processModelResults(rawData);
     } catch (error) {
@@ -122,7 +137,7 @@ function processModelResults(data) {
     // First, process each model to calculate metrics
     const processedModels = data.map(model => {
         const fileResults = model.file_results || [];
-        
+
         // Collect all edit matches from all files
         const allEditMatches = [];
         fileResults.forEach(fileResult => {
@@ -135,7 +150,7 @@ function processModelResults(data) {
                 allEditMatches.push(...details.edit_matches);
             }
         });
-        
+
         // If no edit matches, return original model with placeholder metrics
         if (allEditMatches.length === 0) {
             return {
@@ -152,12 +167,12 @@ function processModelResults(data) {
                 }
             };
         }
-        
+
         // Calculate overall metrics
         let totalTp = 0;
         let totalFp = 0;
         let totalFn = 0;
-        
+
         // Process each edit match
         allEditMatches.forEach(edit => {
             // Add TP/FP/FN values to totals
@@ -165,17 +180,17 @@ function processModelResults(data) {
             totalFp += edit.fp || 0;
             totalFn += edit.fn || 0;
         });
-        
+
         // Calculate global metrics
         const precision = totalTp / (totalTp + totalFp) || 0;
         const recall = totalTp / (totalTp + totalFn) || 0;
         const f1_score = fBetaScore(precision, recall, 1);
-        
+
         // Count "correct" edits (tp >= 0.5)
         const correctCount = allEditMatches.filter(edit => (edit.tp || 0) >= 0.5).length;
         const totalGT = allEditMatches.filter(edit => edit.expected_edit_num !== undefined && edit.expected_edit_num !== null).length;
         const totalPred = allEditMatches.filter(edit => edit.observed_edit_num !== undefined && edit.observed_edit_num !== null).length;
-        
+
         // Return processed model with computed metrics
         return {
             ...model,
@@ -193,7 +208,7 @@ function processModelResults(data) {
             }
         };
     });
-    
+
     // Then sort by F1 score
     return processedModels.sort((a, b) => (b.f1_score || 0) - (a.f1_score || 0));
 }
@@ -201,6 +216,143 @@ function processModelResults(data) {
 // Function to find a model in the results data
 function findModel(results, modelName) {
     return results.find(model => model.model_name === modelName);
+}
+
+// Bootstrap confidence interval calculation
+function groupByFileId(fileResults) {
+    const groups = {};
+    fileResults.forEach(result => {
+        const fileId = result.file_id || result.id || "unknown";
+        if (!groups[fileId]) {
+            groups[fileId] = [];
+        }
+        groups[fileId].push(result);
+    });
+    return groups;
+}
+
+function sampleWithReplacement(array, size) {
+    const result = [];
+    for (let i = 0; i < size; i++) {
+        const randomIndex = Math.floor(Math.random() * array.length);
+        result.push(array[randomIndex]);
+    }
+    return result;
+}
+
+function getEditMatches(fileResult) {
+    const details = fileResult.details;
+    if (Array.isArray(details)) {
+        return details;
+    } else if (details && details.edit_matches) {
+        return details.edit_matches;
+    }
+    return [];
+}
+
+// Compute a single bootstrap replicate
+function computeOneBootstrapReplicate(model) {
+    // Group file results by file_id
+    const fileGroups = groupByFileId(model.file_results || []);
+
+    // If no file groups, return null
+    if (Object.keys(fileGroups).length === 0) {
+        return null;
+    }
+
+    // Sample files with replacement
+    const sampledFiles = sampleWithReplacement(Object.keys(fileGroups), Object.keys(fileGroups).length);
+
+    // For each sampled file, randomly select one run if multiple exist
+    let totalTp = 0, totalFp = 0, totalFn = 0;
+
+    sampledFiles.forEach(fileId => {
+        const runs = fileGroups[fileId];
+        const selectedRun = runs[Math.floor(Math.random() * runs.length)];
+
+        // Extract edit matches from the selected run
+        const editMatches = getEditMatches(selectedRun);
+
+        // Accumulate TP, FP, FN counts
+        editMatches.forEach(edit => {
+            totalTp += edit.tp || 0;
+            totalFp += edit.fp || 0;
+            totalFn += edit.fn || 0;
+        });
+    });
+
+    // Calculate metrics only once using the aggregated counts
+    const precision = totalTp / (totalTp + totalFp) || 0;
+    const recall = totalTp / (totalTp + totalFn) || 0;
+    const f1_score = fBetaScore(precision, recall, 1);
+
+    return { precision, recall, f1_score };
+}
+
+// Calculate confidence intervals through bootstrap
+async function calculateModelConfidenceIntervals(model, chunkSize = 10) {
+    if (!model || !model.file_results || model.file_results.length === 0) {
+        model.confidenceInterval = "N/A";
+        return;
+    }
+
+    const totalReplicates = 1000;
+    const bootstrapResults = [];
+    model.confidenceInterval = "calculating...";
+
+    for (let i = 0; i < totalReplicates; i += chunkSize) {
+        // Allow UI to update between chunks
+        await new Promise(resolve => setTimeout(resolve, 0));
+
+        // Process a chunk of bootstrap replicates
+        const chunkResults = [];
+        for (let j = 0; j < chunkSize && i + j < totalReplicates; j++) {
+            const result = computeOneBootstrapReplicate(model);
+            if (result) {
+                chunkResults.push(result);
+            }
+        }
+
+        bootstrapResults.push(...chunkResults);
+
+        // Update UI with partial results
+        updateConfidenceIntervals(model, bootstrapResults);
+    }
+}
+
+// Update confidence intervals in the UI
+function updateConfidenceIntervals(model, bootstrapResults) {
+    if (bootstrapResults.length > 0) {
+        // Sort results for percentile calculation
+        const sortedF1Scores = bootstrapResults.map(r => r.f1_score).sort((a, b) => a - b);
+
+        // Calculate percentiles for 95% CI
+        const lowerIdx = Math.floor(0.025 * sortedF1Scores.length);
+        const upperIdx = Math.floor(0.975 * sortedF1Scores.length);
+
+        const lowerBound = sortedF1Scores[lowerIdx];
+        const upperBound = sortedF1Scores[upperIdx];
+
+        // Format as +/-
+        const pointEstimate = model.f1_score;
+        const lowerDiff = (pointEstimate - lowerBound).toFixed(3);
+        const upperDiff = (upperBound - pointEstimate).toFixed(3);
+
+        model.confidenceInterval = `+${upperDiff}/-${lowerDiff}`;
+
+        // Update the matching row in leaderboardData
+        const modelId = model.model_id || model.model_name;
+        const matchingRow = leaderboardData.find(row => row.modelId === modelId);
+        if (matchingRow) {
+            matchingRow.confidenceInterval = model.confidenceInterval;
+
+            // Update just the cell for this model row
+            leaderboardTable.updateData([{
+                modelId: modelId,
+                confidenceInterval: model.confidenceInterval
+            }]);
+        }
+    }
 }
 
 // Function to prepare data for the detailed model performance table
@@ -213,7 +365,7 @@ async function prepareModelPerformanceData() {
 
         // Get metrics from processed data
         const details = modelData.details || {};
-        
+
         // Add model summary row
         const modelRow = {
             id: modelData.model_name,
@@ -221,6 +373,7 @@ async function prepareModelPerformanceData() {
             precision: modelData.precision || 0,
             recall: modelData.recall || 0,
             f1_score: modelData.f1_score || 0,
+            confidenceInterval: "pending...",
             true_positives: details.correct_count || 0,
             false_positives: (details.total_predicted || 0) - (details.correct_count || 0),
             false_negatives: (details.total_ground_truth || 0) - (details.correct_count || 0),
@@ -231,22 +384,22 @@ async function prepareModelPerformanceData() {
         const fileResults = details.file_results || modelData.file_results || [];
         for (const file of fileResults) {
             if (!file) continue;
-            
+
             // Process each file's metrics - they might need to be computed
-            let filePrecision = 0; 
+            let filePrecision = 0;
             let fileRecall = 0;
             let fileF1 = 0;
             let fileTp = 0;
             let fileFp = 0;
             let fileFn = 0;
-            
+
             // Get metrics from the file if they exist
             if (file.precision !== undefined && file.recall !== undefined) {
                 filePrecision = file.precision;
                 fileRecall = file.recall;
                 fileF1 = file.f1_score || fBetaScore(filePrecision, fileRecall);
             }
-            
+
             // Get counts from file details
             const fileDetails = file.details || {};
             if (fileDetails.correct_count !== undefined) {
@@ -258,26 +411,26 @@ async function prepareModelPerformanceData() {
                 let totalTp = 0;
                 let totalFp = 0;
                 let totalFn = 0;
-                
+
                 fileDetails.forEach(edit => {
                     totalTp += edit.tp || 0;
                     totalFp += edit.fp || 0;
                     totalFn += edit.fn || 0;
                 });
-                
+
                 filePrecision = totalTp / (totalTp + totalFp) || 0;
                 fileRecall = totalTp / (totalTp + totalFn) || 0;
                 fileF1 = fBetaScore(filePrecision, fileRecall);
-                
+
                 // Count "correct" edits (tp >= 0.5)
                 fileTp = fileDetails.filter(edit => (edit.tp || 0) >= 0.5).length;
                 const totalGT = fileDetails.filter(edit => edit.expected_edit_num !== undefined && edit.expected_edit_num !== null).length;
                 const totalPred = fileDetails.filter(edit => edit.observed_edit_num !== undefined && edit.observed_edit_num !== null).length;
-                
+
                 fileFp = totalPred - fileTp;
                 fileFn = totalGT - fileTp;
             }
-            
+
             // Add file row
             const fileId = file.file_id || file.id || "unknown";
             modelRow._children.push({
@@ -396,16 +549,27 @@ document.addEventListener("DOMContentLoaded", async function() {
     if (results && results.length > 0) {
         leaderboardData = results.map((model, index) => ({
             rank: index + 1, // Assign rank based on sorted order
+            modelId: model.model_id || model.model_name, // Use model_id as primary key
             model: model.model_name,
             shots: model.shots || 2,
             f1Score: model.f1_score,
+            confidenceInterval: "pending...",
             precision: model.precision,
             recall: model.recall,
-            date: model.date ? model.date.split('T')[0] : 'Unknown'
+            date: model.date ? model.date.split('T')[0] : 'Unknown',
+            // Store the original model data for bootstrap calculations
+            originalModel: model
         }));
 
         // Update the leaderboard table with real data
         leaderboardTable.setData(leaderboardData);
+
+        // Start calculating confidence intervals
+        setTimeout(() => {
+            leaderboardData.forEach(row => {
+                calculateModelConfidenceIntervals(row.originalModel);
+            });
+        }, 1000); // Slight delay to let the table render first
 
         // Update metrics dynamically
         if (results.length > 0) {
