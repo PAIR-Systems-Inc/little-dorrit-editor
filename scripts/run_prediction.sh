@@ -1,15 +1,19 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor prediction generation
 #
-# Usage: ./run_prediction.sh [model_id1] [model_id2] ... [--shots N] [--display-name "Name"]
+# Usage: ./run_prediction.sh [model_id1] [model_id2] ... [options]
 #   model_id: One or more IDs of models from config (default: gpt-4o if none provided)
+#
+# Options:
 #   --shots N: Number of shots to use (default: 2)
 #   --display-name "Name": Custom display name for the leaderboard (optional)
+#   --refresh-datasets: Force rebuild of the sample and evaluation datasets
 #
 # Examples:
 #   ./run_prediction.sh or_gpt_4o_latest                 # Run with a single model
 #   ./run_prediction.sh or_gpt_4o_latest or_llama_4_scout # Run with multiple models
 #   ./run_prediction.sh or_gpt_4o_latest --shots 3       # Run with 3-shot learning
+#   ./run_prediction.sh or_gpt_4o_latest --refresh-datasets # Force dataset rebuild
 #
 # Available model IDs can be viewed with: config list
 
@@ -18,6 +22,7 @@ DEFAULT_MODEL="gpt-4o"
 SHOTS=2
 DISPLAY_NAME=""
 MODELS=()
+REFRESH_DATASETS=false
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -29,6 +34,10 @@ while [[ $# -gt 0 ]]; do
     --display-name)
       DISPLAY_NAME="$2"
       shift 2
+      ;;
+    --refresh-datasets)
+      REFRESH_DATASETS=true
+      shift
       ;;
     --*)
       echo "Unknown option: $1"
@@ -56,38 +65,44 @@ TEMPERATURE=0.0
 # Get current date in YYYYMMDD format
 DATE_STAMP=$(date +"%Y%m%d")
 
-# Prepare the datasets if needed (do this once before running all models)
-echo "Preparing datasets..."
-python scripts/prepare_datasets.py --clean
+# Only prepare datasets if they don't exist or if --refresh-datasets flag is provided
+if [ ! -d "data/hf/sample" ] || [ ! -d "data/hf/eval" ] || [ "$REFRESH_DATASETS" = "true" ]; then
+    if [ "$REFRESH_DATASETS" = "true" ]; then
+        echo "Preparing datasets (--refresh-datasets flag provided)..."
+    else
+        echo "Preparing datasets (missing directories)..."
+    fi
+    python scripts/prepare_datasets.py --clean
+else
+    echo "Using existing datasets (use --refresh-datasets to force rebuilding)"
+fi
 
-# Function to get highest run ID across all models
-function get_highest_run_id() {
+# Function to get highest run ID for a specific file within the current model
+function get_highest_run_id_for_file() {
+    local file_id="$1"
+    local model_dir="$2"
     local highest=0
     
-    # Look through all model directories for today's files
-    for model_dir in "${BASE_OUTPUT_DIR}"/*; do
-        if [ -d "$model_dir" ]; then
-            local sample_dir="${model_dir}/predictions/sample"
-            local eval_dir="${model_dir}/predictions/eval"
+    # Only look in the current model directory
+    local sample_dir="${model_dir}/predictions/sample"
+    local eval_dir="${model_dir}/predictions/eval"
+    
+    for dir in "$sample_dir" "$eval_dir"; do
+        if [ -d "$dir" ]; then
+            # Find any prediction files with today's date and the specific file_id for this model
+            local existing_files=$(find "$dir" -type f -name "${file_id}_*_${DATE_STAMP}_prediction.json" 2>/dev/null)
             
-            for dir in "$sample_dir" "$eval_dir"; do
-                if [ -d "$dir" ]; then
-                    # Find any prediction files with today's date
-                    local existing_files=$(find "$dir" -type f -name "*_${DATE_STAMP}_prediction.json" 2>/dev/null)
-                    
-                    # Extract run numbers from filenames and find highest
-                    for file in $existing_files; do
-                        # Extract the run ID part from filename (format: name_XX_date_prediction.json)
-                        local filename=$(basename "$file")
-                        local run_part=$(echo "$filename" | grep -o -E '_[0-9]+_' | head -1 | tr -d '_')
-                        
-                        if [[ "$run_part" =~ ^[0-9]+$ ]]; then
-                            local run_num=$((10#$run_part)) # Force decimal interpretation
-                            if [ $run_num -gt $highest ]; then
-                                highest=$run_num
-                            fi
-                        fi
-                    done
+            # Extract run numbers from filenames and find highest
+            for file in $existing_files; do
+                # Extract the run ID part from filename (format: name_XX_date_prediction.json)
+                local filename=$(basename "$file")
+                local run_part=$(echo "$filename" | grep -o -E '_[0-9]+_' | head -1 | tr -d '_')
+                
+                if [[ "$run_part" =~ ^[0-9]+$ ]]; then
+                    local run_num=$((10#$run_part)) # Force decimal interpretation
+                    if [ $run_num -gt $highest ]; then
+                        highest=$run_num
+                    fi
                 fi
             done
         fi
@@ -102,12 +117,8 @@ for MODEL_ID in "${MODELS[@]}"; do
     echo "Processing model: $MODEL_ID (${#MODELS[@]} total models in queue)"
     echo "=========================================================="
     
-    # Calculate a fresh run ID before each model's processing
-    # This allows multiple runs of the same model in a single command
-    HIGHEST_RUN=$(get_highest_run_id)
-    NEXT_RUN=$((HIGHEST_RUN + 1))
-    RUN_ID=$(printf "%02d" $NEXT_RUN)
-    echo "Using run ID: $RUN_ID (based on existing runs found across all models)"
+    # No need for a global run ID anymore - each file will get its own run ID
+    echo "Using file-specific run IDs for this model"
     
     # Create organized output directory structure for this model
     PREDICTIONS_DIR="${BASE_OUTPUT_DIR}/${MODEL_ID}"
@@ -153,11 +164,16 @@ EOL
         for img_file in data/sample/*.png; do
             # Extract the base filename without extension
             base_name=$(basename "$img_file" .png)
+            
+            # Get the highest run ID for this specific file within this model
+            HIGHEST_RUN=$(get_highest_run_id_for_file "$base_name" "${PREDICTIONS_DIR}")
+            NEXT_RUN=$((HIGHEST_RUN + 1))
+            FILE_RUN_ID=$(printf "%02d" $NEXT_RUN)
     
             # Define the output prediction file
-            prediction_file="${SAMPLE_PREDICTIONS_DIR}/${base_name}_${RUN_ID}_${DATE_STAMP}_prediction.json"
+            prediction_file="${SAMPLE_PREDICTIONS_DIR}/${base_name}_${FILE_RUN_ID}_${DATE_STAMP}_prediction.json"
     
-            echo "Processing $img_file -> $prediction_file"
+            echo "Processing $img_file -> $prediction_file (Run ID: ${FILE_RUN_ID})"
     
             # Generate predictions using n-shot learning with uv
             # Directly call the CLI module
@@ -176,11 +192,16 @@ EOL
         for img_file in data/eval/*.png; do
             # Extract the base filename without extension
             base_name=$(basename "$img_file" .png)
+            
+            # Get the highest run ID for this specific file within this model
+            HIGHEST_RUN=$(get_highest_run_id_for_file "$base_name" "${PREDICTIONS_DIR}")
+            NEXT_RUN=$((HIGHEST_RUN + 1))
+            FILE_RUN_ID=$(printf "%02d" $NEXT_RUN)
     
             # Define the output prediction file
-            prediction_file="${EVAL_PREDICTIONS_DIR}/${base_name}_${RUN_ID}_${DATE_STAMP}_prediction.json"
+            prediction_file="${EVAL_PREDICTIONS_DIR}/${base_name}_${FILE_RUN_ID}_${DATE_STAMP}_prediction.json"
     
-            echo "Processing $img_file -> $prediction_file"
+            echo "Processing $img_file -> $prediction_file (Run ID: ${FILE_RUN_ID})"
     
             # Generate predictions using n-shot learning with uv
             # Directly call the CLI module
