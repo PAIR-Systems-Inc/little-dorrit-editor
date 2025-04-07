@@ -1,15 +1,16 @@
 """Evaluation logic for the Little Dorrit Editor benchmark."""
 
 import json
+from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import openai
 from rich.console import Console
 from rich.table import Table
 
 from little_dorrit_editor.config import get_model, ModelConfig
-from little_dorrit_editor.types import EditAnnotation, EvaluationResult
+from little_dorrit_editor.types import EditAnnotation, EditMatch, EditType, EvaluationResult 
 from little_dorrit_editor.utils import extract_json_from_llm_response
 
 
@@ -302,57 +303,96 @@ def evaluate(
 
     # Evaluate matching edits
     console.print(f"Found {len(true_positives)} potential matches to evaluate")
-    judgments = []
-
-    for gt_edit, pred_edit in true_positives:
+    
+    # Prepare the list of EditMatch objects for the result
+    edit_matches: List[EditMatch] = []
+    
+    # Process true positives (matched edits)
+    for i, (gt_edit, pred_edit) in enumerate(true_positives):
         # Get the basic correctness judgment (ignoring line numbers)
         judgment = judge.evaluate_edit(gt_edit, pred_edit)
 
         # Calculate line number penalty: 0.1 * distance^2
-        # Default to a large difference if line numbers are missing (shouldn't happen with filtering)
         gt_line = gt_edit.get("line_number", 0)
         pred_line = pred_edit.get("line_number", 1000)  # Use a large default to ensure penalty if missing
         line_diff = abs(gt_line - pred_line)
         line_penalty = min(1.0, 0.1 * (line_diff ** 2))  # Cap at 1.0
 
         # Apply penalty only if the edit is otherwise correct
-        if judgment["is_correct"]:
+        is_correct = judgment.get("is_correct", False)
+        if is_correct:
             # Calculate score after penalty
             score = max(0.0, 1.0 - line_penalty)
             # A judgment is "correct" if score >= 0.5 after applying penalty
-            judgment["is_correct_with_penalty"] = score >= 0.5
+            is_correct_with_penalty = score >= 0.5
         else:
             # If content doesn't match, keep score at 0
             score = 0.0
-            judgment["is_correct_with_penalty"] = False
-
-        # Add score and penalty information
-        judgment["score"] = score
-        judgment["line_number_penalty"] = line_penalty
-        judgment["line_diff"] = line_diff
-
-        judgments.append(judgment)
-
-    # Calculate metrics
-    console.print("Calculating evaluation metrics...")
-    metrics = calculate_metrics(
-        true_positives, false_positives, false_negatives, judgments
-    )
-
-    # Add useful reference data to metrics for detailed analysis
-    metrics["judgments"] = judgments
-    metrics["true_positives"] = [(gt, pred) for gt, pred in true_positives]
-
-    # Create evaluation result
-    from datetime import datetime
-
+            is_correct_with_penalty = False
+        
+        # Create an EditMatch for this matched pair with appropriate tp/fp/fn values
+        # For matched pairs, tp = score, fp = (1 - score)/2, fn = (1 - score)/2 to maintain tp+fp+fn=1
+        edit_match = EditMatch(
+            observed_edit_num=i,                                # Index in prediction
+            expected_edit_num=i,                                # Index in ground truth
+            tp=score,                                           # True positive score
+            fp=(1.0 - score) / 2,                               # False positive portion
+            fn=(1.0 - score) / 2,                               # False negative portion
+            type=EditType(pred_edit.get("type", "unknown")),    # Edit type from prediction
+            original_text=pred_edit.get("original_text", ""),   # Text from prediction
+            corrected_text=pred_edit.get("corrected_text", ""), # Text from prediction
+            observed_line_number=pred_line,                     # Line number from prediction
+            line_diff=line_diff,                                # Difference in line numbers
+            line_number_penalty=line_penalty,                   # Penalty applied
+            judgement=judgment.get("reasoning", "")             # Reasoning from judge
+        )
+        edit_matches.append(edit_match)
+    
+    # Process false positives (predicted edits that don't match any ground truth)
+    for i, fp_edit in enumerate(false_positives):
+        # These are pure false positives (fp=1, tp=fn=0)
+        edit_match = EditMatch(
+            observed_edit_num=len(true_positives) + i,          # Index in prediction (after TPs)
+            expected_edit_num=None,                             # No matching ground truth
+            tp=0.0,                                             # No true positive component
+            fp=1.0,                                             # Pure false positive
+            fn=0.0,                                             # No false negative component
+            type=EditType(fp_edit.get("type", "unknown")),      # Edit type from prediction
+            original_text=fp_edit.get("original_text", ""),     # Text from prediction
+            corrected_text=fp_edit.get("corrected_text", ""),   # Text from prediction
+            observed_line_number=fp_edit.get("line_number"),    # Line number from prediction
+            line_diff=None,                                     # No line difference (no match)
+            line_number_penalty=0.0,                            # No penalty (no match)
+            judgement="False positive: no matching ground truth edit found"
+        )
+        edit_matches.append(edit_match)
+    
+    # Process false negatives (ground truth edits that weren't found in the prediction)
+    for i, fn_edit in enumerate(false_negatives):
+        # These are pure false negatives (fn=1, tp=fp=0)
+        edit_match = EditMatch(
+            observed_edit_num=None,                             # No matching prediction
+            expected_edit_num=len(true_positives) + i,          # Index in ground truth (after TPs)
+            tp=0.0,                                             # No true positive component
+            fp=0.0,                                             # No false positive component 
+            fn=1.0,                                             # Pure false negative
+            type=EditType(fn_edit.get("type", "unknown")),      # Edit type from ground truth
+            original_text=fn_edit.get("original_text", ""),     # Text from ground truth
+            corrected_text=fn_edit.get("corrected_text", ""),   # Text from ground truth
+            observed_line_number=None,                          # No line number (no match)
+            line_diff=None,                                     # No line difference (no match)
+            line_number_penalty=0.0,                            # No penalty (no match)
+            judgement="False negative: ground truth edit not found in prediction"
+        )
+        edit_matches.append(edit_match)
+    
+    # Create evaluation result in the new format
     result = EvaluationResult(
         model_name=model_name,
-        precision=metrics["precision"],
-        recall=metrics["recall"],
-        f1_score=metrics["f1_score"],
         date=datetime.now().isoformat(),
-        details=metrics,
+        annotator=prediction.annotator or model_name,  # Use the annotator from prediction if available
+        annotation_date=prediction.annotation_date,    # Use the annotation date from prediction
+        details=edit_matches
     )
 
     return result
@@ -366,20 +406,49 @@ def display_results(result: EvaluationResult) -> None:
     """
     console = Console()
 
+    # Calculate summary metrics from detailed results
+    total_tp = sum(edit.tp for edit in result.details)
+    total_fp = sum(edit.fp for edit in result.details)
+    total_fn = sum(edit.fn for edit in result.details)
+    
+    # Calculate precision, recall, F1
+    precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0.0
+    recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0.0
+    f1_score = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+    
+    # Count "correct" edits (tp >= 0.5)
+    correct_count = sum(1 for edit in result.details if edit.tp >= 0.5)
+    expected_count = sum(1 for edit in result.details if edit.expected_edit_num is not None)
+
     # Main metrics table
     table = Table(title=f"Evaluation Results for {result.model_name}")
     table.add_column("Metric", style="cyan")
     table.add_column("Value", style="green")
 
-    table.add_row("Precision", f"{result.precision:.4f}")
-    table.add_row("Recall", f"{result.recall:.4f}")
-    table.add_row("F1 Score", f"{result.f1_score:.4f}")
-    table.add_row(
-        "Correct / Total",
-        f"{result.details['correct_count']} / {result.details['total_ground_truth']}",
-    )
+    table.add_row("Precision", f"{precision:.4f}")
+    table.add_row("Recall", f"{recall:.4f}")
+    table.add_row("F1 Score", f"{f1_score:.4f}")
+    table.add_row("Correct / Total", f"{correct_count} / {expected_count}")
 
     console.print(table)
+
+    # Calculate metrics by edit type
+    metrics_by_type = {}
+    for edit in result.details:
+        if edit.type:
+            edit_type = str(edit.type)
+            if edit_type not in metrics_by_type:
+                metrics_by_type[edit_type] = {
+                    "tp": 0.0, "fp": 0.0, "fn": 0.0, "count": 0
+                }
+            
+            metrics_by_type[edit_type]["tp"] += edit.tp
+            metrics_by_type[edit_type]["fp"] += edit.fp
+            metrics_by_type[edit_type]["fn"] += edit.fn
+            
+            # Count as part of this type if it's a match or false negative
+            if edit.expected_edit_num is not None:
+                metrics_by_type[edit_type]["count"] += 1
 
     # Per-type metrics table
     type_table = Table(title="Results by Edit Type")
@@ -389,19 +458,24 @@ def display_results(result: EvaluationResult) -> None:
     type_table.add_column("F1 Score", style="green")
     type_table.add_column("Count", style="dim")
 
-    for edit_type, metrics in result.details["by_type"].items():
+    for edit_type, metrics in metrics_by_type.items():
+        type_precision = metrics["tp"] / (metrics["tp"] + metrics["fp"]) if (metrics["tp"] + metrics["fp"]) > 0 else 0.0
+        type_recall = metrics["tp"] / (metrics["tp"] + metrics["fn"]) if (metrics["tp"] + metrics["fn"]) > 0 else 0.0
+        type_f1 = 2 * type_precision * type_recall / (type_precision + type_recall) if (type_precision + type_recall) > 0 else 0.0
+        
         type_table.add_row(
             edit_type,
-            f"{metrics['precision']:.4f}",
-            f"{metrics['recall']:.4f}",
-            f"{metrics['f1']:.4f}",
-            str(metrics['count']),
+            f"{type_precision:.4f}",
+            f"{type_recall:.4f}",
+            f"{type_f1:.4f}",
+            str(metrics["count"]),
         )
 
     console.print(type_table)
 
     # Show details about line number penalties
-    if "judgments" in result.details and result.details["judgments"]:
+    edits_with_penalties = [edit for edit in result.details if edit.line_number_penalty > 0]
+    if edits_with_penalties:
         console.print("\n[bold cyan]Line Number Penalties:[/bold cyan]")
         console.print("Edits with line number differences incur penalties based on the formula: 0.1 * distance^2")
         console.print("- 1 line off: -0.1 points")
@@ -410,14 +484,14 @@ def display_results(result: EvaluationResult) -> None:
         console.print("- >3 lines off: -1.0 (full penalty)")
 
         # Get penalties and diffs
-        penalties = [j.get("line_number_penalty", 0.0) for j in result.details["judgments"]]
-        line_diffs = [j.get("line_diff", 0) for j in result.details["judgments"]]
+        penalties = [edit.line_number_penalty for edit in result.details if edit.line_number_penalty is not None]
+        line_diffs = [edit.line_diff for edit in result.details if edit.line_diff is not None]
         non_zero_diffs = [diff for diff in line_diffs if diff > 0]
 
         # Calculate stats
         if penalties:
             total_penalty = sum(penalties)
-            avg_penalty = total_penalty / len(penalties)
+            avg_penalty = total_penalty / len(penalties) if penalties else 0.0
 
             console.print("\n[bold cyan]Line Difference Statistics:[/bold cyan]")
             console.print(f"Total evaluated edits: {len(penalties)}")
@@ -429,10 +503,10 @@ def display_results(result: EvaluationResult) -> None:
 
             # Show penalties by match
             console.print("\n[bold cyan]Penalties by Match:[/bold cyan]")
-            for i, j in enumerate(result.details["judgments"]):
-                if j["line_number_penalty"] > 0:
-                    content_match = j["is_correct"]
-                    final_match = j.get("is_correct_with_penalty", j["is_correct"])
-                    console.print(f"{i+1}. Line diff: {j['line_diff']}, Penalty: {j['line_number_penalty']:.2f}, " +
+            for i, edit in enumerate(edits_with_penalties):
+                if edit.line_number_penalty > 0:
+                    content_match = edit.tp > 0
+                    final_match = edit.tp >= 0.5
+                    console.print(f"{i+1}. Line diff: {edit.line_diff}, Penalty: {edit.line_number_penalty:.2f}, " +
                                   f"Content match: {'✓' if content_match else '✗'}, " +
                                   f"Final match: {'✓' if final_match else '✗'}")

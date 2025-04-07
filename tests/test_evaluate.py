@@ -12,8 +12,9 @@ from little_dorrit_editor.evaluate import (
     LLMJudge,
     calculate_metrics,
     match_edits,
+    evaluate,
 )
-from little_dorrit_editor.types import EditAnnotation
+from little_dorrit_editor.types import EditAnnotation, EditMatch, EditType, EvaluationResult
 
 # Patch rich.console.Console to avoid output during tests
 @pytest.fixture(autouse=True)
@@ -357,3 +358,126 @@ def test_match_edits_missing_line_number():
     
     # The missing line number edit should be filtered out completely
     assert all("line_number" in edit for edit in false_positives)
+
+
+@patch("little_dorrit_editor.evaluate.LLMJudge")
+@patch("little_dorrit_editor.evaluate.match_edits")
+@patch("little_dorrit_editor.evaluate.open")
+def test_evaluate_new_format(mock_open, mock_match_edits, mock_llm_judge):
+    """Test the evaluate function with the new result format."""
+    # Mock file handling
+    mock_gt_file = MagicMock()
+    mock_pred_file = MagicMock()
+    mock_open.side_effect = lambda path, mode: mock_gt_file if "ground_truth" in str(path) else mock_pred_file
+    
+    # Mock the loaded JSON data
+    mock_gt_file.__enter__.return_value.read.return_value = json.dumps({
+        "image": "test.png",
+        "page_number": 1,
+        "source": "Little Dorrit",
+        "edits": [{
+            "type": "insertion",
+            "original_text": "",
+            "corrected_text": "test",
+            "line_number": 10
+        }]
+    })
+    
+    mock_pred_file.__enter__.return_value.read.return_value = json.dumps({
+        "image": "test.png",
+        "page_number": 1,
+        "source": "Little Dorrit",
+        "annotator": "Test Model",
+        "annotation_date": "2025-01-01T00:00:00Z",
+        "edits": [{
+            "type": "insertion",
+            "original_text": "",
+            "corrected_text": "test",
+            "line_number": 10
+        }]
+    })
+    
+    # Mock the match_edits function
+    gt_edit = {
+        "type": "insertion",
+        "original_text": "",
+        "corrected_text": "test",
+        "line_number": 10
+    }
+    
+    pred_edit = {
+        "type": "insertion",
+        "original_text": "",
+        "corrected_text": "test",
+        "line_number": 10
+    }
+    
+    # Return true positive, false positive, and false negative edit lists
+    mock_match_edits.return_value = (
+        [(gt_edit, pred_edit)],  # true positives
+        [{                        # false positives
+            "type": "deletion",
+            "original_text": "wrong",
+            "corrected_text": "",
+            "line_number": 20
+        }],
+        [{                        # false negatives
+            "type": "capitalization",
+            "original_text": "Error",
+            "corrected_text": "error",
+            "line_number": 30
+        }]
+    )
+    
+    # Mock LLM judge
+    mock_judge_instance = MagicMock()
+    mock_judge_instance.evaluate_edit.return_value = {
+        "is_correct": True,
+        "reasoning": "The prediction matches the ground truth"
+    }
+    mock_llm_judge.return_value = mock_judge_instance
+    
+    # Run the evaluate function
+    result = evaluate(
+        Path("ground_truth.json"),
+        Path("prediction.json"),
+        model_name="test_model"
+    )
+    
+    # Check the result structure
+    assert isinstance(result, EvaluationResult)
+    assert result.model_name == "test_model"
+    assert result.annotator == "Test Model"
+    assert result.annotation_date == "2025-01-01T00:00:00Z"
+    
+    # Check that details is a list of EditMatch objects
+    assert isinstance(result.details, list)
+    assert len(result.details) == 3  # 1 TP + 1 FP + 1 FN
+    
+    # Check the true positive edit
+    tp_edit = result.details[0]
+    assert isinstance(tp_edit, EditMatch)
+    assert tp_edit.observed_edit_num == 0
+    assert tp_edit.expected_edit_num == 0
+    assert tp_edit.tp == 1.0  # Perfect match
+    assert tp_edit.fp == 0.0
+    assert tp_edit.fn == 0.0
+    assert tp_edit.type == EditType.INSERTION
+    
+    # Check the false positive edit
+    fp_edit = result.details[1]
+    assert fp_edit.observed_edit_num is not None
+    assert fp_edit.expected_edit_num is None  # No matching ground truth
+    assert fp_edit.tp == 0.0
+    assert fp_edit.fp == 1.0
+    assert fp_edit.fn == 0.0
+    assert fp_edit.type == EditType.DELETION
+    
+    # Check the false negative edit
+    fn_edit = result.details[2]
+    assert fn_edit.observed_edit_num is None  # No matching prediction
+    assert fn_edit.expected_edit_num is not None
+    assert fn_edit.tp == 0.0
+    assert fn_edit.fp == 0.0
+    assert fn_edit.fn == 1.0
+    assert fn_edit.type == EditType.CAPITALIZATION
