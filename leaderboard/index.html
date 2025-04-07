@@ -207,19 +207,19 @@
     <div class="metrics">
         <div class="metric-card">
             <div class="metric-title">Top Model</div>
-            <div class="metric-value">GPT-4o</div>
+            <div class="metric-value">Loading...</div>
         </div>
         <div class="metric-card">
             <div class="metric-title">Best F1 Score</div>
-            <div class="metric-value">0.904</div>
+            <div class="metric-value">Loading...</div>
         </div>
         <div class="metric-card">
             <div class="metric-title">Models Evaluated</div>
-            <div class="metric-value">3</div>
+            <div class="metric-value">Loading...</div>
         </div>
         <div class="metric-card">
             <div class="metric-title">Most Challenging Edit</div>
-            <div class="metric-value">Reordering</div>
+            <div class="metric-value">Loading...</div>
         </div>
     </div>
     
@@ -235,34 +235,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td><span class="medal gold">1</span>GPT-4o</td>
-                <td>0.9037</td>
-                <td>0.8954</td>
-                <td>0.9123</td>
-                <td>2025-03-20</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td><span class="medal silver">2</span>Claude 3 Opus</td>
-                <td>0.8906</td>
-                <td>0.8845</td>
-                <td>0.8967</td>
-                <td>2025-03-18</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td><span class="medal bronze">3</span>Gemini 1.5 Pro</td>
-                <td>0.8777</td>
-                <td>0.8725</td>
-                <td>0.8830</td>
-                <td>2025-03-15</td>
-            </tr>
+            <!-- Table content will be populated by JavaScript -->
         </tbody>
     </table>
     
-    <p class="updated">Last updated: 2025-04-04</p>
+    <p class="updated" id="updated-date">Last updated: Loading...</p>
     
     <footer>
         <p>
@@ -271,5 +248,234 @@
             The dataset is available on <a href="https://huggingface.co/datasets/yourusername/little-dorrit-editor">Hugging Face</a>.
         </p>
     </footer>
+
+    <script>
+        // Calculate F-beta score (F1 when beta=1)
+        function fBetaScore(precision, recall, beta = 1) {
+            if (precision === 0 && recall === 0) return 0;
+
+            const betaSquared = beta * beta;
+            return (1 + betaSquared) * (precision * recall) /
+                   (betaSquared * precision + recall);
+        }
+
+        // Process model results and compute metrics
+        function processModelResults(data) {
+            const processedModels = [];
+            let mostChallengingEdit = { type: "Unknown", f1: 1.0 };
+            const editTypeStats = {};
+
+            // Process each model's results
+            data.forEach(model => {
+                const fileResults = model.file_results || [];
+                
+                // Collect all edit matches from all files
+                const allEditMatches = [];
+                fileResults.forEach(fileResult => {
+                    // Handle both the new format (details is a list of EditMatch objects)
+                    // and the older format (details.edit_matches)
+                    const details = fileResult.details;
+                    if (Array.isArray(details)) {
+                        allEditMatches.push(...details);
+                    } else if (details && details.edit_matches) {
+                        allEditMatches.push(...details.edit_matches);
+                    }
+                });
+
+                if (allEditMatches.length === 0) {
+                    return; // Skip models with no edit matches
+                }
+
+                // Calculate overall metrics
+                let totalTp = 0;
+                let totalFp = 0;
+                let totalFn = 0;
+                
+                // Calculate metrics by edit type
+                const editTypes = {};
+                
+                // Process each edit match
+                allEditMatches.forEach(edit => {
+                    // Add TP/FP/FN values to totals
+                    totalTp += edit.tp || 0;
+                    totalFp += edit.fp || 0;
+                    totalFn += edit.fn || 0;
+                    
+                    // Process by edit type
+                    let editType = edit.type;
+                    if (editType) {
+                        // Handle different formats of edit type
+                        if (typeof editType !== 'string' && editType.__root__) {
+                            editType = editType.__root__;
+                        }
+                        
+                        if (!editTypes[editType]) {
+                            editTypes[editType] = { tp: 0, fp: 0, fn: 0, count: 0 };
+                        }
+                        
+                        editTypes[editType].tp += edit.tp || 0;
+                        editTypes[editType].fp += edit.fp || 0;
+                        editTypes[editType].fn += edit.fn || 0;
+                        
+                        // Count if it's a match or false negative (expected_edit_num is set)
+                        if (edit.expected_edit_num !== undefined && edit.expected_edit_num !== null) {
+                            editTypes[editType].count += 1;
+                        }
+                        
+                        // Update global edit type stats for "most challenging" calculation
+                        if (!editTypeStats[editType]) {
+                            editTypeStats[editType] = { 
+                                totalTp: 0, totalFp: 0, totalFn: 0, 
+                                count: 0, models: 0 
+                            };
+                        }
+                        editTypeStats[editType].totalTp += edit.tp || 0;
+                        editTypeStats[editType].totalFp += edit.fp || 0;
+                        editTypeStats[editType].totalFn += edit.fn || 0;
+                        editTypeStats[editType].count += 1;
+                    }
+                });
+                
+                // Calculate the overall precision, recall, and F1
+                const precision = totalTp / (totalTp + totalFp) || 0;
+                const recall = totalTp / (totalTp + totalFn) || 0;
+                const f1 = fBetaScore(precision, recall, 1);
+                
+                // Calculate per-type metrics
+                for (const [type, metrics] of Object.entries(editTypes)) {
+                    const typePrecision = metrics.tp / (metrics.tp + metrics.fp) || 0;
+                    const typeRecall = metrics.tp / (metrics.tp + metrics.fn) || 0;
+                    const typeF1 = fBetaScore(typePrecision, typeRecall, 1);
+                    
+                    editTypes[type] = {
+                        ...metrics,
+                        precision: typePrecision,
+                        recall: typeRecall,
+                        f1: typeF1
+                    };
+                }
+                
+                // Record the processed model with computed metrics
+                processedModels.push({
+                    name: model.model_name,
+                    precision: precision,
+                    recall: recall,
+                    f1: f1,
+                    date: model.date,
+                    shots: model.shots || 2,
+                    editTypes: editTypes
+                });
+                
+                // Update edit type stats
+                for (const [type, metrics] of Object.entries(editTypes)) {
+                    editTypeStats[type].models += 1;
+                }
+            });
+            
+            // Sort models by F1 score (descending)
+            processedModels.sort((a, b) => b.f1 - a.f1);
+            
+            // Find most challenging edit type (lowest average F1 across models)
+            for (const [type, stats] of Object.entries(editTypeStats)) {
+                // Only consider edit types that appear in multiple models
+                if (stats.models >= 2 && stats.count >= 5) {  
+                    const typePrecision = stats.totalTp / (stats.totalTp + stats.totalFp) || 0;
+                    const typeRecall = stats.totalTp / (stats.totalTp + stats.totalFn) || 0;
+                    const typeF1 = fBetaScore(typePrecision, typeRecall, 1);
+                    
+                    if (typeF1 < mostChallengingEdit.f1) {
+                        mostChallengingEdit = { type: type, f1: typeF1 };
+                    }
+                }
+            }
+            
+            return {
+                models: processedModels,
+                mostChallengingEdit: mostChallengingEdit.type,
+                totalModels: processedModels.length
+            };
+        }
+
+        // Update the UI with the computed data
+        function updateUI(results) {
+            // Update metrics cards
+            if (results.models.length > 0) {
+                document.querySelector('.metrics .metric-card:nth-child(1) .metric-value').textContent = 
+                    results.models[0].name;
+                
+                document.querySelector('.metrics .metric-card:nth-child(2) .metric-value').textContent = 
+                    results.models[0].f1.toFixed(3);
+            }
+            
+            document.querySelector('.metrics .metric-card:nth-child(3) .metric-value').textContent = 
+                results.totalModels;
+            
+            document.querySelector('.metrics .metric-card:nth-child(4) .metric-value').textContent = 
+                results.mostChallengingEdit;
+            
+            // Clear and update the table
+            const tableBody = document.querySelector('tbody');
+            tableBody.innerHTML = '';
+            
+            results.models.forEach((model, index) => {
+                const row = document.createElement('tr');
+                
+                // Add medal for top 3
+                let medalClass = '';
+                if (index === 0) medalClass = 'gold';
+                else if (index === 1) medalClass = 'silver';
+                else if (index === 2) medalClass = 'bronze';
+                
+                const medalSpan = medalClass ? 
+                    `<span class="medal ${medalClass}">${index + 1}</span>` : '';
+                
+                // Format date
+                let displayDate = model.date;
+                try {
+                    const date = new Date(model.date);
+                    if (!isNaN(date)) {
+                        displayDate = date.toISOString().split('T')[0];
+                    }
+                } catch (e) {
+                    console.error('Error parsing date:', e);
+                }
+                
+                // Create row HTML
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${medalSpan}${model.name}</td>
+                    <td>${model.f1.toFixed(4)}</td>
+                    <td>${model.precision.toFixed(4)}</td>
+                    <td>${model.recall.toFixed(4)}</td>
+                    <td>${displayDate}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+            
+            // Update the "last updated" text
+            const now = new Date();
+            document.getElementById('updated-date').textContent = 
+                `Last updated: ${now.toISOString().split('T')[0]}`;
+        }
+
+        // Fetch and process the results
+        window.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('../docs/results.json');
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch results: ${response.status} ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                const results = processModelResults(data);
+                updateUI(results);
+            } catch (error) {
+                console.error('Error loading results:', error);
+                document.getElementById('updated-date').textContent = 
+                    `Error loading results: ${error.message}`;
+            }
+        });
+    </script>
 </body>
 </html>
