@@ -1,0 +1,190 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sun, one",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sun one",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blazing sun upon",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "blazing sun upon a",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fierce August day",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "fierce August day was",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "no greater rarity",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "no greater rarity in",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "southern France",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "southern France then",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "than at any",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "than at any other",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "time, before",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "time, before or",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "since.",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "since. Everything",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "in Marseilles",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "in Marseilles, and",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about Marseilles",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "about Marseilles, had",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stared at",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "stared at the",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fervid sky",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "fervid sky, and",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "been stared",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "been stared at",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "in return",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "in return, until",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a staring",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "a staring habit",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "had become",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "had become univer-",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sal there.",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "sal there. Strangers",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "were stared",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "were stared out",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "of countenance",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "of countenance by",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "staring white",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "staring white",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Llama 3.2 90B Vision Instruct",
+  "annotation_date": "2025-04-06T01:35:59.179462",
+  "verified": false
+}

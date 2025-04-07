@@ -1,0 +1,87 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "wine-bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 11,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "got through",
+      "corrected_text": "got through",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "grating where",
+      "corrected_text": "grating where",
+      "line_number": 17,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Indian Ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "intact in",
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "was waiting to be fed looking",
+      "corrected_text": "was waiting to be fed; looking",
+      "line_number": 36,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "he might see",
+      "corrected_text": "he might see",
+      "line_number": 37,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "through the bars that",
+      "corrected_text": "through the bars that",
+      "line_number": 37,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "were not so nobly",
+      "corrected_text": "were not so nobly",
+      "line_number": 38,
+      "page": "5"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-05T20:16:55.953887",
+  "verified": false
+}

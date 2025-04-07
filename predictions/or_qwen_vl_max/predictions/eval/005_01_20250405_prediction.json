@@ -1,0 +1,31 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "if he",
+      "corrected_text": "if he car",
+      "line_number": 40,
+      "page": "209"
+    },
+    {
+      "type": "deletion",
+      "original_text": "if he car",
+      "corrected_text": "if he",
+      "line_number": 40,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said Clennam.",
+      "corrected_text": "asked Clennam.",
+      "line_number": 41,
+      "page": "209"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-05T02:46:12.026375",
+  "verified": false
+}

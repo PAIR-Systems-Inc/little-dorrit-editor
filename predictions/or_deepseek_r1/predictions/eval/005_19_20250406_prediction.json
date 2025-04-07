@@ -1,0 +1,59 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "chapter three",
+      "corrected_text": "CHAPTER THREE",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sunset,and",
+      "corrected_text": "sunset, and",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "captain's log",
+      "corrected_text": "Captain's Log",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty three",
+      "corrected_text": "twenty-three",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sea creatures",
+      "corrected_text": "sea-creatures",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "theyre",
+      "corrected_text": "they're",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sailers",
+      "corrected_text": "sailors",
+      "line_number": 12,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-06T09:39:03.832099",
+  "verified": false
+}

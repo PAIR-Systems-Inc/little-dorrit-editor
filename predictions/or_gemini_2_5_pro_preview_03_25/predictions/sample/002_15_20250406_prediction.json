@@ -1,0 +1,424 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 2,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 11,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 12,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 13,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 14,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 15,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 16,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 17,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 18,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 19,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 20,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 21,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 22,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 23,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 24,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 25,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 26,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 27,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 28,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 29,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 30,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 31,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 32,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 33,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 34,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 35,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 36,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 37,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 38,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 39,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 40,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 41,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 42,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 43,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 44,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 45,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 46,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sundial",
+      "line_number": 47,
+      "notes": "Global change indicated at top of page",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-06T02:01:53.689979",
+  "verified": false
+}

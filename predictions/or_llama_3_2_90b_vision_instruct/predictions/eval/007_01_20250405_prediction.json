@@ -1,0 +1,11 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Llama 3.2 90B Vision Instruct",
+  "annotation_date": "2025-04-05T20:06:53.021669",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"sun, one\",\n      \"line_number\": 2,\n      \"notes\": null,\n      \"original_text\": \"sun ...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"sun, one\",\n      \"line_number\": 2,\n      \"notes\": null,\n      \"original_text\": \"sun one\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"sun upon\",\n      \"line_number\": 3,\n      \"notes\": null,\n      \"original_text\": \"sun upon\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"sun, than\",\n      \"line_number\": 4,\n      \"notes\": null,\n      \"original_text\": \"sun than\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"sun, and\",\n      \"line_number\": 5,\n      \"notes\": null,\n      \"original_text\": \"sun and\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"sun, at\",\n      \"line_number\": 6,\n      \"notes\": null,\n      \"original_text\": \"sun at\",\n      \"pa"
+}

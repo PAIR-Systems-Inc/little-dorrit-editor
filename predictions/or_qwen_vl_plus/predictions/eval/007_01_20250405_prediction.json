@@ -1,0 +1,28 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "SUN AND SHADOW",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Period here?",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "Period here",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen VL Plus",
+  "annotation_date": "2025-04-05T02:56:16.851844",
+  "verified": false
+}

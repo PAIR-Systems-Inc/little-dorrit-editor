@@ -1,0 +1,87 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "bells and",
+      "corrected_text": "bells, and",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bottles",
+      "corrected_text": "bottles.",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "got through",
+      "corrected_text": "got, through",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars fashioned",
+      "corrected_text": "bars, fashioned",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating where",
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside and",
+      "corrected_text": "outside, and",
+      "line_number": 29,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "intact in",
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "indian",
+      "corrected_text": "Indian",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "ocean",
+      "corrected_text": "Ocean",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fed looking",
+      "corrected_text": "fed; looking",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-06T01:09:30.141391",
+  "verified": false
+}

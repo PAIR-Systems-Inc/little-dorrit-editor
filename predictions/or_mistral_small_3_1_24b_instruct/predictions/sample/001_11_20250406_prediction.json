@@ -1,0 +1,109 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hum of tongues or barking of dogs, with",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "hum of tongues or barking of dogs with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, a fact",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Marseilles a fact",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wine-bottles",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "wine bottles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "got, through",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "got through",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "iron bars, fashioned",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "iron bars fashioned",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "grating, where",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "grating where",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "outside; and",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "outside and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "intact, in",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "intact in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Indian Ocean",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "indian ocean",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "was waiting to be fed; looking",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "was waiting to be fed looking",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bars, that",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "bars that",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-06T00:51:52.194222",
+  "verified": false
+}

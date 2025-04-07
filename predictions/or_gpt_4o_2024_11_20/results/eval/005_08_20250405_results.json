@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gpt_4o_2024_11_20",
+  "date": "2025-04-07T00:51:14.286895",
+  "annotator": "GPT-4o (2024-11-20)",
+  "annotation_date": "2025-04-05T23:04:25.821278",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 38,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit correctly matches the ground truth's edit type as 'capitalization.' Both the predicted and ground truth edits involve changing lowercase 'if' to uppercase 'If.' Even though the ground truth includes an additional word 'he,' the core essential edit\u2014capitalizing 'if'\u2014is correctly identified. Extra context (the additional word 'he') in the original text of the ground truth does not affect the correctness, as the prediction correctly captures the intended capitalization edit."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 40,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit correctly matches the edit type ('replacement') of the ground truth. It accurately captures the core textual change of the ground truth edit from 'said' to 'asked'. Although the ground truth specifically includes additional context ('Clennam'), the essential edit intended is clearly changing 'said' to 'asked'. Including or excluding surrounding words ('Clennam') does not affect the correctness, as per instructions. Thus, the prediction successfully matches both conditions: exact edit type and accurately capturing the core textual revision intended."
+    }
+  ]
+}

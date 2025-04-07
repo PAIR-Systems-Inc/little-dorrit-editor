@@ -1,0 +1,514 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, who",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "face who",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-06T02:18:32.697578",
+  "verified": false
+}

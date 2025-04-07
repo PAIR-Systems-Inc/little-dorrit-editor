@@ -1,0 +1,8 @@
+{
+  "model_id": "google/gemma-3-27b-it",
+  "display_name": "Gemma 3 27B",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-05",
+  "notes": "Benchmark run with 2-shot learning"
+}

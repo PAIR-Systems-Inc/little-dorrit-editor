@@ -1,0 +1,8 @@
+{
+  "model_id": "or_mistral_small_3_1_24b_instruct",
+  "display_name": "Mistral Small 3.1 24B",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-06",
+  "notes": "Benchmark run with 2-shot learning"
+}

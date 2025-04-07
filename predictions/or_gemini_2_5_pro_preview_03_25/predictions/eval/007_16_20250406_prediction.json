@@ -1,0 +1,28 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "like a flaming",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "like flaming",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "gems, Saint",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "gems. Saint",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-06T02:21:50.111364",
+  "verified": false
+}

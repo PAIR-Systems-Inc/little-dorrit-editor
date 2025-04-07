@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "cap",
+      "corrected_text": "capped",
+      "line_number": 7,
+      "page": "page 1"
+    },
+    {
+      "type": "insertion",
+      "original_text": "mask",
+      "corrected_text": "masks",
+      "line_number": 7,
+      "page": "page 1"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "say",
+      "corrected_text": "say",
+      "line_number": 16,
+      "page": "page 1"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-06T00:18:29.192305",
+  "verified": false
+}

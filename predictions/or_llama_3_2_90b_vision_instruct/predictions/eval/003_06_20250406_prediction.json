@@ -1,0 +1,163 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "I have heard none.",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "I have heard none",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "they howl to be heard.",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "they howl to be heard",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Never happy otherwise.",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "Never happy otherwise",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Do you mean the Marseilles people?",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Do you mean the Marseilles people",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "As to Marseilles, we know what Marseilles is.",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "As to Marseilles, we know what Marseilles is",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "It couldn't exist without allonging and marshonging to something or other\u2014victory or death, or blazes, or something.",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "It couldn't exist without allonging and marshonging to something or other\u2014victory or death, or blazes, or something",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "The speaker, with a whimsical good humour upon him all the time, looked over the parapet-wall with the greatest disparagement of Marseilles; and taking up a determined position by putting his hands in his pockets, and rattling his money at it, apostrophised it with a short laugh.",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "The speaker, with a whimsical good humour upon him all the time, looked over the parapet-wall with the greatest disparagement of Marseilles; and taking up a determined position by putting his hands in his pockets, and rattling his money at it, apostrophised it with a short laugh",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Allong and marshong, indeed.",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "Allong and marshong, indeed",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I think, to let other people allong and marshong about their lawful business, instead of shutting 'em up in quarantine!",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "I think, to let other people allong and marshong about their lawful business, instead of shutting 'em up in quarantine",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Tiresome enough,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Tiresome enough",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said the other.",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "said the other",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "But we shall be out to-day.",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "But we shall be out to-day",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Out to-day!",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "Out to-day",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "repeated the first.",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "repeated the first",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "It's almost an aggravation of the enormity, that we shall be out to-day.",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "It's almost an aggravation of the enormity, that we shall be out to-day",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Out!",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "Out",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "What have we ever been in for?",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "What have we ever been in for",
+      "page": "001.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Llama 3.2 90B Vision Instruct",
+  "annotation_date": "2025-04-06T00:40:09.781762",
+  "verified": false
+}

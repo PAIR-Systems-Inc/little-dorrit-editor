@@ -1,0 +1,22 @@
+{
+  "model_name": "or_mistral_small_3_1_24b_instruct",
+  "date": "2025-04-07T01:31:23.807920",
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-05T02:45:35.517836",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly matches the ground truth edit in both criteria. First, the edit type is correctly identified as 'punctuation' in both cases. Second, the text content accuracy is precisely matched; both the original and corrected texts ('Sun and Shadow' \u2192 'Sun and Shadow.') are identical, clearly capturing the core punctuation correction indicated by the ground truth. Although the predicted page reference ('003.png') differs from the ground truth ('007.png'), the instructions specifically state to ignore line numbers (and implicitly page references) in this evaluation. Therefore, this prediction meets both edit type and text content accuracy requirements."
+    }
+  ]
+}

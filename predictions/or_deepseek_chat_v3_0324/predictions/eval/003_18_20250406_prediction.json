@@ -1,0 +1,59 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sun rose",
+      "corrected_text": "sun, rose",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english",
+      "corrected_text": "English",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "big",
+      "corrected_text": "large",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ship however",
+      "corrected_text": "ship, however",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "very",
+      "corrected_text": "",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "quite",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "deck and",
+      "corrected_text": "deck, and",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-06T09:15:42.042190",
+  "verified": false
+}

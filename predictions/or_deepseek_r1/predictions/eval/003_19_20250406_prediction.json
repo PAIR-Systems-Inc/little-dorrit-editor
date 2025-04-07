@@ -1,0 +1,45 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "the adventures of sherlock holmes",
+      "corrected_text": "The Adventures of Sherlock Holmes",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "door way",
+      "corrected_text": "door-way",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mr",
+      "corrected_text": "Mr.",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "well known",
+      "corrected_text": "well-known",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "end",
+      "corrected_text": "end,",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-06T09:29:50.621110",
+  "verified": false
+}

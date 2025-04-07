@@ -1,0 +1,22 @@
+{
+  "model_name": "or_qwen_vl_max",
+  "date": "2025-04-07T01:55:17.227944",
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-06T00:50:36.591792",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The edit type 'punctuation' in the prediction exactly matches the ground truth edit type. Additionally, the fundamental text correction matches precisely, as both the ground truth and the prediction involve adding a period '.' to 'Sun and Shadow'. Although the page label differs ('007.png' vs. 'Chapter I'), this evaluation explicitly focuses only on edit type accuracy and text content accuracy, completely ignoring line numbers and other metadata discrepancies. Thus, the predicted edit correctly captures the core intention of the ground truth edit."
+    }
+  ]
+}

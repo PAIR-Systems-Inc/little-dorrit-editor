@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter 1",
+      "corrected_text": "Chapter 1.",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview (OpenRouter)",
+  "annotation_date": "2025-04-05T22:33:26.145066",
+  "verified": false
+}

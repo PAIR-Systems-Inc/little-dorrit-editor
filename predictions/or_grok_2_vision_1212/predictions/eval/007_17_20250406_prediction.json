@@ -1,0 +1,24 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "Sun and Shadow, ",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "Marseilles",
+      "line_number": 2,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 2 Vision 1212",
+  "annotation_date": "2025-04-06T09:08:54.998952",
+  "verified": false
+}

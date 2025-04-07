@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gpt_4o_2024_11_20",
+  "date": "2025-04-07T00:52:03.726102",
+  "annotator": "GPT-4o (2024-11-20)",
+  "annotation_date": "2025-04-05T23:34:33.914579",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the edit type ('capitalization') exactly. It accurately captures the core textual change intended by the ground truth edit, capitalizing the word 'if' to 'If'. Although the ground truth includes the phrase 'if he' and the prediction only explicitly mentions the word 'if', the essential core correction\u2014capitalizing 'if'\u2014is correctly captured. Additional contextual words before or after are not required as per the evaluation criteria. Therefore, both edit type and text content accurately reflect the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 38,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit type 'replacement' exactly matches the ground truth type. The predicted correction changes 'said' to 'asked', reflecting the exact edit intended by the ground truth edit ('said Clennam' \u2192 'asked Clennam'). Although the predicted version omits 'Clennam', it directly captures the essential edit 'said' \u2192 'asked'. The instructions explicitly state that the prediction may include additional context or slightly differ in scope, as long as the core textual alteration is correctly identified. Therefore, ignoring the difference in included context and completely disregarding line numbers as instructed, the prediction correctly captures the core intended textual change."
+    }
+  ]
+}

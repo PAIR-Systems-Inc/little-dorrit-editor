@@ -1,0 +1,8 @@
+{
+  "model_id": "or_phi_4_multimodal_instruct",
+  "display_name": "Phi 4 Multimodal Instruct",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-06",
+  "notes": "Benchmark run with 2-shot learning"
+}

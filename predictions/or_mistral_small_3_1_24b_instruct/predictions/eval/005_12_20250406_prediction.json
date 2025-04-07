@@ -1,0 +1,46 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "said Clennam.",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "said Clennam",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "true to a certain extent.",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "true to a certain extent",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "he must follow where it leads him.",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "he must follow where it leads him",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked Clennam.",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "said Clennam",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-06T01:20:20.146465",
+  "verified": false
+}

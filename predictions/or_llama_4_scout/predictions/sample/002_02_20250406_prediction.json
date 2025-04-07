@@ -1,0 +1,38 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "white",
+      "corrected_text": "white,",
+      "line_number": 7,
+      "page": "page 6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating (seamed",
+      "corrected_text": "grating (seamed",
+      "line_number": 10,
+      "page": "page 6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Marseilles Harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 16,
+      "page": "page 6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace-gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 21,
+      "page": "page 6"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-06T00:17:39.758941",
+  "verified": false
+}

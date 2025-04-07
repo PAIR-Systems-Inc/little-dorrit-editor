@@ -1,0 +1,73 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "over yonder,",
+      "corrected_text": "over yonder",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day, Sir,",
+      "corrected_text": "to-day, sir,",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "is none.",
+      "corrected_text": "is none.",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "happy other",
+      "corrected_text": "happy otherwise.",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Marseilles,",
+      "corrected_text": "Marseilles.",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and marshong",
+      "corrected_text": "and marshong,",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day!",
+      "corrected_text": "to-day.",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day!",
+      "corrected_text": "to-day.",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "in for?",
+      "corrected_text": "in for?",
+      "line_number": 27,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini",
+  "annotation_date": "2025-04-05T23:17:40.163311",
+  "verified": false
+}

@@ -1,0 +1,80 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "wine-bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 7,
+      "page": "page 3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wine bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 7,
+      "page": "page 3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "got",
+      "corrected_text": "got through",
+      "line_number": 10,
+      "page": "page 3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "through",
+      "corrected_text": "got through",
+      "line_number": 10,
+      "page": "page 3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "fashioned",
+      "corrected_text": "fashioned,",
+      "line_number": 11,
+      "page": "page 3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bar",
+      "corrected_text": "bars",
+      "line_number": 16,
+      "page": "page 3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Indian $\\circ$cean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 19,
+      "page": "page 3"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "indian ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 19,
+      "page": "page 3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "that he",
+      "line_number": 25,
+      "page": "page 3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "looking",
+      "corrected_text": "looking sideways",
+      "line_number": 27,
+      "page": "page 3"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-06T00:17:14.722826",
+  "verified": false
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt_4_5_preview",
+  "date": "2025-04-06T23:56:06.631909",
+  "annotator": "GPT-4.5 Preview",
+  "annotation_date": "2025-04-05T01:26:29.245297",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow,",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit type matches exactly ('punctuation'). The core textual correction identified by the ground truth ('Sun and Shadow' to 'Sun and Shadow.') is accurately captured by the prediction. Although the prediction includes a comma after 'Shadow' ('Sun and Shadow,'), the crucial punctuation correction intention (adding a period) is correctly identified. Differences in contextual punctuation before applying the edit do not affect the correctness, as the important intention\u2014changing or adding punctuation at the end\u2014is preserved."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter 1",
+      "corrected_text": "Chapter 1.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

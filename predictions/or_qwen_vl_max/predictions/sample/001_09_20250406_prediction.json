@@ -1,0 +1,80 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "church bells",
+      "corrected_text": "church bells,",
+      "line_number": 2,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wine bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 11,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "got through",
+      "corrected_text": "got, through",
+      "line_number": 14,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "iron bars fashioned",
+      "corrected_text": "iron bars, fashioned",
+      "line_number": 14,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating where",
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "intact in",
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "page": "001"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "indian ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "was waiting to be fed looking",
+      "corrected_text": "was waiting to be fed; looking",
+      "line_number": 36,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "page": "001"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-06T00:44:15.656750",
+  "verified": false
+}

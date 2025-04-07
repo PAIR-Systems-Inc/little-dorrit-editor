@@ -1,0 +1,45 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "autumn",
+      "corrected_text": "Autumn",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Saone.",
+      "corrected_text": "Sa\u00f4ne.",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "hyphen",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "soddened",
+      "corrected_text": "sodden",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "darkness,",
+      "corrected_text": "darkness;",
+      "line_number": 20,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini",
+  "annotation_date": "2025-04-05T22:52:38.177563",
+  "verified": false
+}

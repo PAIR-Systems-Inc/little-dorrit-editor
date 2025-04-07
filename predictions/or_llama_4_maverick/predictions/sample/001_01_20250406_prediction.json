@@ -1,0 +1,80 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "wine-bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 10,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "got through",
+      "corrected_text": "got through",
+      "line_number": 12,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bars fashioned",
+      "corrected_text": "bars fashioned",
+      "line_number": 12,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "grating where",
+      "corrected_text": "grating where",
+      "line_number": 14,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "indian ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 27,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "intact in",
+      "corrected_text": "intact; in",
+      "line_number": 27,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "was waiting to be fed",
+      "corrected_text": "was waiting to be fed",
+      "line_number": 32,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "looking",
+      "corrected_text": "looking",
+      "line_number": 32,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bars that",
+      "corrected_text": "bars that",
+      "line_number": 33,
+      "page": "Chapter 1, page 5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "not so",
+      "corrected_text": "not so",
+      "line_number": 37,
+      "page": "Chapter 1, page 5"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-06T00:14:07.050936",
+  "verified": false
+}

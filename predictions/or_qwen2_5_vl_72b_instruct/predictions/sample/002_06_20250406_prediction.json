@@ -1,0 +1,11 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-06T00:30:03.800946",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: ...: line 1 column 1 (char 0)...",
+  "raw_response": ""
+}

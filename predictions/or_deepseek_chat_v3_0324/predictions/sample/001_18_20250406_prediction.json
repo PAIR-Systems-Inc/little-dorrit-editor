@@ -1,0 +1,66 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "paris",
+      "corrected_text": "Paris",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "streets and",
+      "corrected_text": "streets, and",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "big",
+      "corrected_text": "large",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "windows which",
+      "corrected_text": "windows, which",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "very",
+      "corrected_text": "",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english",
+      "corrected_text": "English",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "room and",
+      "corrected_text": "room, and",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "rather",
+      "line_number": 17,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-06T09:14:00.589594",
+  "verified": false
+}

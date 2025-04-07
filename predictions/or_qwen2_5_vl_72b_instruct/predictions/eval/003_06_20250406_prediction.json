@@ -1,0 +1,11 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-06T00:30:45.198387",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: There are no visible handwritten editorial corrections on this printed text page. Therefore, no JSON output is necessary....: line 1 column 1 (char 0)...",
+  "raw_response": "There are no visible handwritten editorial corrections on this printed text page. Therefore, no JSON output is necessary."
+}

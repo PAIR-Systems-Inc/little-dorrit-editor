@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "why did he dine",
+      "corrected_text": "why did he dine",
+      "line_number": 25,
+      "page": "184"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "examination mark",
+      "line_number": 25,
+      "page": "184"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-06T00:45:33.250394",
+  "verified": false
+}

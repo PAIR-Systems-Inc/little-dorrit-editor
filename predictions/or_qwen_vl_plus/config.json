@@ -1,0 +1,8 @@
+{
+  "model_id": "or_qwen_vl_plus",
+  "display_name": "Qwen VL Plus",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-06",
+  "notes": "Benchmark run with 2-shot learning"
+}

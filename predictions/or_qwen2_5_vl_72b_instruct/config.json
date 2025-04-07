@@ -1,0 +1,8 @@
+{
+  "model_id": "or_qwen2_5_vl_72b_instruct",
+  "display_name": "Qwen2.5 VL 72B Instruct",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-06",
+  "notes": "Benchmark run with 2-shot learning"
+}

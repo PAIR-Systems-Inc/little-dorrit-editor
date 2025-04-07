@@ -1,0 +1,66 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Marseilles lay burning in the sun, one day.",
+      "corrected_text": "Marseilles lay burning in the sun, one day.",
+      "line_number": 1,
+      "notes": null,
+      "page": "001.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "A blazing sun upon a fierce August day was no greater rarity in southern France then,",
+      "corrected_text": "A blazing sun upon a fierce August day was no greater rarity in southern France then,",
+      "line_number": 2,
+      "notes": null,
+      "page": "001.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Everything in Marseilles, and about Marseilles, had stared at the fiery sky,",
+      "corrected_text": "Everything in Marseilles, and about Marseilles, had stared at the fiery sky,",
+      "line_number": 3,
+      "notes": null,
+      "page": "001.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and been stared at in return, until a staring habit had become universal there.",
+      "corrected_text": "and been stared at in return, until a staring habit had become universal there.",
+      "line_number": 4,
+      "notes": null,
+      "page": "001.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Strangers were stared out of counter-",
+      "corrected_text": "Strangers were stared out of counter-",
+      "line_number": 5,
+      "notes": null,
+      "page": "001.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "counter-stance by staring white-",
+      "corrected_text": "counter-stance by staring white-",
+      "line_number": 5,
+      "notes": null,
+      "page": "001.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white-",
+      "corrected_text": "white-",
+      "line_number": 5,
+      "notes": null,
+      "page": "001.png"
+    }
+  ],
+  "annotator": "Phi 4 Multimodal Instruct",
+  "annotation_date": "2025-04-06T01:34:55.211318",
+  "verified": false
+}

@@ -1,0 +1,100 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "stream, like a sullied looking-glass in a gloomy place, reflected the clouds heavily",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "stream, like a sullied looking-glass in a gloomy place, reflected the clouds heavily",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the low banks leaned over here and there, as if they were half curious, and half afraid, to see their darkening pictures in the water",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "the low banks leaned over here and there, as if they were half curious, and half afraid, to see their darkening pictures in the water",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the flat expanse of country about Chalons lay a long heavy streak, occasionally made a little ragged by a row of poplar-trees against the wrathful sunset",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "the flat expanse of country about Chalons lay a long heavy streak, occasionally made a little ragged by a row of poplar-trees against the wrathful sunset",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "On the banks of the river Saone it was wet, depressing, solitary; and the night deepened fast",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "On the banks of the river Saone it was wet, depressing, solitary; and the night deepened fast",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "One man, slowly moving on towards Chalons, was the only visible figure in the landscape",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "One man, slowly moving on towards Chalons, was the only visible figure in the landscape",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Cain might have looked as lonely and avoided",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Cain might have looked as lonely and avoided",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with an old sheepskin knapsack at his back, and a rough, unbarred stick cut out of some wood in his hand; miry, footsore, his shoes and gaiters trodden out, his hair and beard untrimmed; the cloak he carried over his shoulder, and the clothes he wore, sodden with wet; limping along in pain and difficulty; he looked as if the clouds were hurrying from him, as if the wail of the wind and the shuddering of the grass were directed against him, as if the low mysterious splashing of the water were murmured at him, as if the fitful autumn night were disturbed by him",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "with an old sheepskin knapsack at his back, and a rough, unbarred stick cut out of some wood in his hand; miry, footsore, his shoes and gaiters trodden out, his hair and beard untrimmed; the cloak he carried over his shoulder, and the clothes he wore, sodden with wet; limping along in pain and difficulty; he looked as if the clouds were hurrying from him, as if the wail of the wind and the shuddering of the grass were directed against him, as if the low mysterious splashing of the water were murmured at him, as if the fitful autumn night were disturbed by him",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "He glanced here, and he glanced there, sullenly but shrinkingly; and sometimes stopped and turned about, and looked all round him",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "He glanced here, and he glanced there, sullenly but shrinkingly; and sometimes stopped and turned about, and looked all round him",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Then he limped on again, toiling and muttering",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Then he limped on again, toiling and muttering",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "To the devil with this plain that has no end! To the devil with these stones that cut like knives! To the devil with this dismal darkness, wrapping itself about one with a chill! I hate you!",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "To the devil with this plain that has no end! To the devil with these stones that cut like knives! To the devil with this dismal darkness, wrapping itself about one with a chill! I hate you!",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen VL Plus",
+  "annotation_date": "2025-04-05T02:56:53.922709",
+  "verified": false
+}

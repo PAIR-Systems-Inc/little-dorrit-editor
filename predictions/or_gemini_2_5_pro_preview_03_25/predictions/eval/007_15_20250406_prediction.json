@@ -1,0 +1,91 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "prison-keeper",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "prison keeper",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "galleries; internal",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "galleries internal",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Now, there",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "Now there",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bolts; and",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "bolts and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "grating:",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "grating",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bars;",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "bars",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mud-bespattered",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "mud bespattered",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "court-yard",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "court yard",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stone;",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "stone",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-06T02:09:22.287838",
+  "verified": false
+}

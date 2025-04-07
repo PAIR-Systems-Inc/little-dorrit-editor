@@ -1,0 +1,37 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hotel,",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "hotel",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "people,",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "people",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cab,",
+      "line_number": 49,
+      "notes": null,
+      "original_text": "cab",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-06T02:19:11.369253",
+  "verified": false
+}

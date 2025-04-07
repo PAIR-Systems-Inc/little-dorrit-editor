@@ -1,0 +1,37 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Why did he dine to-",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "Why did he dine to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Question mark",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "Question mark",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Cap",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "Cap",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-06T01:19:33.738007",
+  "verified": false
+}

@@ -1,0 +1,22 @@
+{
+  "model_name": "or_gpt_4o_mini",
+  "date": "2025-04-07T01:01:49.938929",
+  "annotator": "GPT-4o-mini",
+  "annotation_date": "2025-04-05T23:21:47.361103",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow,",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The edit type ('punctuation') matches exactly between the ground truth and prediction. The core intended modification ('Sun and Shadow' \u2192 'Sun and Shadow.') is accurately captured by the predicted edit, even though the predicted original text includes a comma that was not present in the ground truth original text. The essential edit\u2014adding or correcting punctuation to result in a period\u2014is correctly recognized and matches the ground truth's intention. Thus, both edit type and essential text correction align fully."
+    }
+  ]
+}

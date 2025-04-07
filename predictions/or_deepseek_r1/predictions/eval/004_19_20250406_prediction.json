@@ -1,0 +1,38 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sun light",
+      "corrected_text": "sun-light",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english channel",
+      "corrected_text": "English Channel",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "however when",
+      "corrected_text": "however, when",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "however",
+      "corrected_text": "However",
+      "line_number": 12,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-06T09:33:13.148476",
+  "verified": false
+}

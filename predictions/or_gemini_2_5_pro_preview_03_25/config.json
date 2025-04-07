@@ -1,0 +1,8 @@
+{
+  "model_id": "or_gemini_2_5_pro_preview_03_25",
+  "display_name": "Gemini 2.5 Pro Preview 3/25",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-06",
+  "notes": "Benchmark run with 2-shot learning"
+}

@@ -1,0 +1,532 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sun-blinds",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sun blinds",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blinds, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "blinds and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "windows, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "windows and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "doors, were",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "doors were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "closed, against",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "closed against",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heat, of",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "heat of",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "noon; the",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "noon the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town, where",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "town where",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "streets, were",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "streets were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shadow, was",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "shadow was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "white, hot",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "white hot",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "glare; a",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "glare a",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blinding, oppression",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "blinding oppression",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "air, and",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "air and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sky, and",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "sky and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, oppressed",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "sea oppressed",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town, too",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "town too",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "oppressed, under",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "oppressed under",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blaze; Gallantly",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "blaze Gallantly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "struggling, against",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "struggling against",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it, the",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "it the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bells, from",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "bells from",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "church-towers",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "church towers",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "towers, attended",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "towers attended",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "services, were",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "services were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "jingle, jingle",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "jingle jingle",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "jingle, through",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "jingle through",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "air, and",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "air and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "made, the",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "made the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stiller, by",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "stiller by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "contrast; A",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "contrast A",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mule-cart",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "mule cart",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cart, maybe",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "cart maybe",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "rattled, on",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "rattled on",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stones; Some",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "stones Some",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "eating-house",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "eating house",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "house, keeper",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "house keeper",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "doorway, mumbled",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "doorway mumbled",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "drowsily, in",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "drowsily in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, of",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "shade of",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "awning; or",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "awning or",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fountain, nearby",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "fountain nearby",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tinkled, as",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "tinkled as",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "water, dripped",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "water dripped",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "basin; All",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "basin All",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sounds, were",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "sounds were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "oppressed, by",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "oppressed by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heat, that",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "heat that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shimmered, everywhere",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "shimmered everywhere",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blaze; Nothing",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "blaze Nothing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stirred, in",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "stirred in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "streets; save",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "streets save",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lizards, darting",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "lizards darting",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "walls; save",
+      "line_number": 48,
+      "notes": null,
+      "original_text": "walls save",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "flies, settling",
+      "line_number": 49,
+      "notes": null,
+      "original_text": "flies settling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mules; save",
+      "line_number": 50,
+      "notes": null,
+      "original_text": "mules save",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dogs, finding",
+      "line_number": 51,
+      "notes": null,
+      "original_text": "dogs finding",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, as",
+      "line_number": 52,
+      "notes": null,
+      "original_text": "shade as",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-06T02:23:29.156283",
+  "verified": false
+}

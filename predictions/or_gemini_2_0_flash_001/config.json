@@ -1,0 +1,8 @@
+{
+  "model_id": "or_gemini_2_0_flash_001",
+  "display_name": "Google: Gemini 2.0 Flash",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-05",
+  "notes": "Benchmark run with 2-shot learning"
+}

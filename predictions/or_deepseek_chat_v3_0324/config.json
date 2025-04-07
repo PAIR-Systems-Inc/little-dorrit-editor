@@ -1,0 +1,8 @@
+{
+  "model_id": "or_deepseek_chat_v3_0324",
+  "display_name": "DeepSeek V3 0324",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-06",
+  "notes": "Benchmark run with 2-shot learning"
+}

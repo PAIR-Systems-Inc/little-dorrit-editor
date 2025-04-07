@@ -1,0 +1,24 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "high-road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-05T22:58:01.314179",
+  "verified": false
+}

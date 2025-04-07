@@ -1,0 +1,31 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "sulled",
+      "corrected_text": "veiled",
+      "line_number": 2,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplat trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "page_137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "soddenwith",
+      "corrected_text": "sodden with",
+      "line_number": 12,
+      "page": "page_137"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-06T00:27:13.830590",
+  "verified": false
+}

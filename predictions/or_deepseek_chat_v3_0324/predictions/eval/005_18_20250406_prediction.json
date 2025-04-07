@@ -1,0 +1,11 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-06T09:16:47.591721",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: It appears you're asking me to identify handwritten editorial corrections in printed text, but you haven't provided the actual text or image to analyze. Wit...",
+  "raw_response": "It appears you're asking me to identify handwritten editorial corrections in printed text, but you haven't provided the actual text or image to analyze. Without seeing the content, I cannot accurately identify corrections.\n\nTo properly complete this task, I would need:\n1. The printed text (either as text or an image)\n2. Any handwritten markups visible on the page\n3. The page identifier/reference\n\nCould you please provide:\n- The text content (or an image of the page)\n- Any visible handwritten corrections\n- The page number or identifier?\n\nWith this information, I can then:\n1. Analyze the original printed text\n2. Identify all handwritten corrections\n3. Categorize each correction by type\n4. Provide the structured JSON output you requested\n\nThe output will follow exactly the format you specified, with separate entries for each individual correction."
+}

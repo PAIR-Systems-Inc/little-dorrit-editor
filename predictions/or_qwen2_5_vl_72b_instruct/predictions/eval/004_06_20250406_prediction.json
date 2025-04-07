@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Why",
+      "corrected_text": "why",
+      "line_number": 28,
+      "page": "184"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "cap",
+      "line_number": 28,
+      "page": "184"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "question mark",
+      "line_number": 28,
+      "page": "184"
+    }
+  ],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-06T00:31:14.224527",
+  "verified": false
+}

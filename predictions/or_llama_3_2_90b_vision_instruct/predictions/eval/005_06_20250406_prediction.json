@@ -1,0 +1,28 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "cap",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "cap",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "asked",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Llama 3.2 90B Vision Instruct",
+  "annotation_date": "2025-04-06T00:51:56.757917",
+  "verified": false
+}

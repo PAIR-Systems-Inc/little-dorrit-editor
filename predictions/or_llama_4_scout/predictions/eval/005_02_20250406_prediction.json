@@ -1,0 +1,31 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "that you ever turned",
+      "corrected_text": "that you ever turned",
+      "line_number": 7,
+      "page": "page 209"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "your thoughts that way, Mr. Doyce.",
+      "corrected_text": "your thoughts that way, Mr. Doyce.",
+      "line_number": 8,
+      "page": "page 209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "asked",
+      "corrected_text": "asked",
+      "line_number": 9,
+      "page": "page 209"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-06T00:18:53.396182",
+  "verified": false
+}

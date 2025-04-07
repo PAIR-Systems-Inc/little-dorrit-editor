@@ -1,0 +1,11 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen VL Plus",
+  "annotation_date": "2025-04-06T00:43:03.144148",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"burning in the sun\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_te...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"burning in the sun\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_text\": \"burning in the sun\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"A blazing sun upon a fierce August day was no greater rarity in southern France then, than at any other time, before or since.\",\n      \"line_number\": 2,\n      \"notes\": null,\n      \"original_text\": \"A blazing sun upon a fierce August day was no greater rarity in southern France then, than at any other time, before or since.\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"burning in the sun\",\n      \"line_number\": 3,\n      \"notes\": null,\n      \"original_text\": \"burning in the sun\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"burning in the sun\",\n      \""
+}

@@ -1,0 +1,92 @@
+{
+  "model_name": "or_chatgpt_4o_latest",
+  "date": "2025-04-07T00:09:56.117375",
+  "annotator": "ChatGPT-4o",
+  "annotation_date": "2025-04-05T23:10:01.436660",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "howling over yonder to-day, Sir",
+      "corrected_text": "howling, over yonder to-day, sir",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly matches the edit type in both cases as 'punctuation'. The core textual correction, introducing a comma after 'howling', is accurately captured. Although the prediction includes additional surrounding context ('yonder to-day, Sir') and slightly differs in capitalization in another part ('Sir' vs. 'sir'), these additional elements are beyond the essential change identified by the ground truth edit ('howling over' \u2192 'howling, over'). Since the core intention\u2014to insert a comma after 'howling'\u2014is correctly identified and implemented in the prediction, and since extra context provided by the prediction is acceptable, this predicted edit is considered correct according to the evaluation criteria provided."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit precisely matches the ground truth edit in both criteria. Firstly, the edit type ('capitalization') is identical between the ground truth and the prediction, satisfying the edit type accuracy criterion. Secondly, the text content change demonstrated by converting 'Sir' to 'sir' is accurately captured by the predicted edit, thus satisfying the text content accuracy criterion. The discrepancy in the page identifier ('003.png' vs. 'page_19') is not relevant to the criteria specified and does not affect the correctness of capturing the intended edit."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "pockets and rattling",
+      "corrected_text": "pockets, and rattling",
+      "observed_line_number": 13,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

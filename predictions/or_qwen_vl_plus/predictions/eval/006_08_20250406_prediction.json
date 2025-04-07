@@ -1,0 +1,11 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen VL Plus",
+  "annotation_date": "2025-04-06T00:42:27.028626",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"high-road\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_text\": \"hig...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"high-road\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_text\": \"high road\",\n      \"page\": \"003.png\",\n      \"type\": \"capitalization\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"far straiter and narrower than the broad high-road paved with vain professions and vain repetitions, motes from other men's eyes and liberal delivery of others to the judgment \u2014 all cheap materials costing absolutely nothing.\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_text\": \"far straiter and narrower than the broad high-road paved with vain professions and vain repetitions, motes from other men's eyes and liberal delivery of others to the judgment \u2014 all cheap materials costing absolutely nothing.\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"No. It was not a selfish fear or hesitation that rendered him uneasy, but"
+}

@@ -1,0 +1,100 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Dantes,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Dantes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, who",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "Dantes who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "Dantes and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, with",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Dantes with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, though",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Dantes though",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, as",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Dantes as",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, that",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Dantes that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, when",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "Dantes when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, after",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "Dantes after",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes, before",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Dantes before",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-06T09:20:39.225748",
+  "verified": false
+}

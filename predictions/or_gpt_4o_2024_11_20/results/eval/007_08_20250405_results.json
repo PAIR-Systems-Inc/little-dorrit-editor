@@ -1,0 +1,22 @@
+{
+  "model_name": "or_gpt_4o_2024_11_20",
+  "date": "2025-04-07T00:54:58.993404",
+  "annotator": "GPT-4o (2024-11-20)",
+  "annotation_date": "2025-04-05T23:06:19.009644",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow,",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit's type 'punctuation' exactly matches the ground truth edit type. Regarding text content accuracy, the essential punctuation edit is identical ('Sun and Shadow' changed to 'Sun and Shadow.'). The only additional detail provided in the predicted edit ('Sun and Shadow,') indicates the original punctuation differently from the ground truth (comma versus missing punctuation). However, the core intended correction that the punctuation should become a period is correctly captured. As per instructions, inclusion of additional context or slight difference in original punctuation does not negatively affect correctness so long as the primary intended edit (changing or adding correct punctuation) is precisely captured. Thus, the predicted edit meets the stated criteria for correctness."
+    }
+  ]
+}

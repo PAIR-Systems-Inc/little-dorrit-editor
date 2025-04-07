@@ -1,0 +1,11 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Phi 4 Multimodal Instruct",
+  "annotation_date": "2025-04-06T01:28:00.606731",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Fellow Travellers\",\n      \"line_number\": 3,\n      \"notes\": null,\n      \"original_tex...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Fellow Travellers\",\n      \"line_number\": 3,\n      \"notes\": null,\n      \"original_text\": \"Fellow Travellers\",\n      \"page\": \"19\",\n      \"type\": \"capitalization\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"N\",\n      \"line_number\": 4,\n      \"notes\": null,\n      \"original_text\": \"N\",\n      \"page\": \"19\",\n      \"type\": \"capitalization\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"I have heard none.\",\n      \"line_number\": 5,\n      \"notes\": null,\n      \"original_text\": \"I have heard none.\",\n      \"page\": \"19\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Then you may be sure there is none.\",\n      \"line_number\": 6,\n      \"notes\": null,\n      \"original_text\": \"Then you may be sure there is none.\",\n      \"page\": \"19\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Most people do, I suppose.\",\n   "
+}

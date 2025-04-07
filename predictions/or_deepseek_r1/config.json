@@ -1,0 +1,8 @@
+{
+  "model_id": "or_deepseek_r1",
+  "display_name": "DeepSeek R1",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-06",
+  "notes": "Benchmark run with 2-shot learning"
+}

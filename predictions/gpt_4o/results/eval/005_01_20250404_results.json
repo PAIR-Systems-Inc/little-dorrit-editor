@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt_4o",
+  "date": "2025-04-07T00:02:24.950582",
+  "annotator": "gpt-4o",
+  "annotation_date": "2025-04-04T18:53:53.839427",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 39,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "The predicted edit correctly identifies the edit type as 'capitalization', matching exactly with the ground truth's edit type. Although the predicted edit ('if' \u2192 'If') shows less context than the ground truth ('if he' \u2192 'If he'), it accurately captures the essential capitalization change from lowercase 'if' to uppercase 'If'. Since additional context around the edit is considered optional, and the core edit itself matches completely in both type and content, the predicted edit is therefore considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 42,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "The predicted edit type 'replacement' matches exactly with the ground truth edit type. The core text change 'said' to 'asked' is correctly captured by the predicted edit, despite the prediction including less context (only 'said' rather than 'said Clennam'). Since the essential edit itself ('said' \u2192 'asked') is accurately identified, and additional context or line numbers are irrelevant to this particular assessment, the predicted edit correctly captures the ground truth's intended change."
+    }
+  ]
+}
