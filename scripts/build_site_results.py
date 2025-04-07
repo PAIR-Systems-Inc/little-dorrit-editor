@@ -2,9 +2,10 @@
 """
 Build results.json for the website based on predictions directory structure.
 
-This script collects individual result files from prediction directories
-and builds a comprehensive JSON structure with per-file results for display
-on the leaderboard site.
+This script collects raw data from individual result files in prediction directories
+and consolidates them into a single JSON file for client-side processing and display
+on the leaderboard site. No metrics are calculated server-side - all metric calculation
+is deferred to the JavaScript client.
 """
 
 import json
@@ -13,6 +14,8 @@ from pathlib import Path
 import glob
 import re
 from typing import Dict, List, Any, Optional
+
+from little_dorrit_editor.types import EditMatch, EvaluationResult
 
 
 def extract_file_id(filename: str) -> str:
@@ -31,16 +34,32 @@ def extract_file_id(filename: str) -> str:
 
 
 def load_results_file(filepath: Path) -> Dict[str, Any]:
-    """Load a single results file.
+    """Load a single results file without calculating any metrics.
     
     Args:
         filepath: Path to the results file
     
     Returns:
-        JSON data from the file
+        Raw JSON data from the file
     """
     with open(filepath, "r") as f:
-        return json.load(f)
+        data = json.load(f)
+    
+    # If this is the new format with details as a list of EditMatch objects,
+    # ensure all objects are dictionaries (not Pydantic models)
+    if isinstance(data.get("details", {}), list):
+        # Convert edit match objects to dictionaries if they're not already
+        edit_matches = []
+        for match in data["details"]:
+            if isinstance(match, dict):
+                edit_matches.append(match)
+            else:
+                edit_matches.append(match.dict())
+        
+        # Update the details field with the dictionary versions
+        data["details"] = edit_matches
+    
+    return data
 
 
 def load_config_file(config_path: Path) -> Dict[str, Any]:
@@ -73,14 +92,14 @@ def load_config_file(config_path: Path) -> Dict[str, Any]:
 
 
 def collect_model_results(predictions_dir: Path, shot_filter: Optional[int] = None) -> List[Dict[str, Any]]:
-    """Collect results for all models in the predictions directory.
+    """Collect results for all models in the predictions directory without calculating metrics.
     
     Args:
         predictions_dir: Path to the predictions directory
         shot_filter: If provided, only include models with this shot count
     
     Returns:
-        List of model results with per-file details
+        List of model results with raw data for client-side processing
     """
     all_model_results = []
     
@@ -167,71 +186,38 @@ def collect_model_results(predictions_dir: Path, shot_filter: Optional[int] = No
                 # Capitalize first letter of each word
                 display_name = " ".join(word.capitalize() for word in model_name.replace("-", " ").split())
         
-        # Calculate aggregate metrics
-        total_gt = sum(fr.get("details", {}).get("total_ground_truth", 0) for fr in file_results)
-        total_pred = sum(fr.get("details", {}).get("total_predicted", 0) for fr in file_results)
-        total_correct = sum(fr.get("details", {}).get("correct_count", 0) for fr in file_results)
+        # Check if we have annotator information from the result files
+        annotator = None
+        annotation_date = None
         
-        # Calculate precision, recall, F1
-        precision = total_correct / total_pred if total_pred > 0 else 0
-        recall = total_correct / total_gt if total_gt > 0 else 0
-        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
-        
-        # Collect edit types from all files
-        edit_types = {}
+        # Try to get annotator info from first file with that field
         for fr in file_results:
-            by_type = fr.get("details", {}).get("by_type", {})
-            for edit_type, metrics in by_type.items():
-                if edit_type not in edit_types:
-                    edit_types[edit_type] = {
-                        "precision": 0,
-                        "recall": 0,
-                        "f1": 0,
-                        "count": 0
-                    }
-                
-                # Update counts
-                edit_types[edit_type]["count"] += metrics.get("count", 0)
-                
-                # Weight metrics by count
-                count = metrics.get("count", 0)
-                if count > 0:
-                    edit_types[edit_type]["precision"] += metrics.get("precision", 0) * count
-                    edit_types[edit_type]["recall"] += metrics.get("recall", 0) * count
-                    edit_types[edit_type]["f1"] += metrics.get("f1", 0) * count
+            if fr.get("annotator"):
+                annotator = fr.get("annotator")
+                break
         
-        # Calculate averages for each edit type
-        for edit_type, metrics in edit_types.items():
-            if metrics["count"] > 0:
-                metrics["precision"] /= metrics["count"]
-                metrics["recall"] /= metrics["count"]
-                metrics["f1"] /= metrics["count"]
+        # Try to get annotation date from first file with that field
+        for fr in file_results:
+            if fr.get("annotation_date"):
+                annotation_date = fr.get("annotation_date")
+                break
         
-        # Create the model result entry
+        # Create the model result entry - without calculating any metrics
         model_result = {
             "model_name": display_name,
-            "precision": precision,
-            "recall": recall,
-            "f1_score": f1,
+            "model_id": model_name,  # Include original model ID
             "date": latest_date.isoformat() if latest_date else datetime.datetime.now().isoformat(),
-            "shots": config.get("shots", 2),  # Include shot count in the model result
+            "shots": config.get("shots", 2),  # Include shot count
             "config": config,  # Include full configuration
-            "details": {
-                "precision": precision,
-                "recall": recall,
-                "f1_score": f1,
-                "by_type": edit_types,
-                "correct_count": total_correct,
-                "total_ground_truth": total_gt,
-                "total_predicted": total_pred,
-                "file_results": file_results
-            }
+            "annotator": annotator,  # Include annotator if available
+            "annotation_date": annotation_date,  # Include annotation date if available
+            "file_results": file_results  # Include all raw file results for client-side processing
         }
         
         all_model_results.append(model_result)
     
-    # Sort by F1 score descending
-    all_model_results.sort(key=lambda x: x["f1_score"], reverse=True)
+    # Sort alphabetically by model name instead of by metrics
+    all_model_results.sort(key=lambda x: x["model_name"])
     return all_model_results
 
 
@@ -246,7 +232,7 @@ def main():
     
     print(f"Collecting results from {predictions_dir} (shot filter: {shot_filter})")
     
-    # Collect model results
+    # Collect raw model results without calculating metrics
     model_results = collect_model_results(predictions_dir, shot_filter=shot_filter)
     
     if not model_results:
@@ -255,8 +241,8 @@ def main():
     
     print(f"Found {len(model_results)} models")
     for model in model_results:
-        file_count = len(model["details"].get("file_results", []))
-        print(f"  {model['model_name']}: {file_count} files, {model['shots']}-shot, F1: {model['f1_score']:.4f}")
+        file_count = len(model["file_results"])
+        print(f"  {model['model_name']}: {file_count} files, {model['shots']}-shot")
     
     # Save to the output file
     with open(output_path, "w") as f:
