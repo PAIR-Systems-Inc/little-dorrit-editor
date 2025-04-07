@@ -310,6 +310,9 @@ def evaluate(
     # We need to track ground truth edits that have alternate matches
     gt_edits_in_true_positives = {}
     
+    # Store judgments to avoid duplicate LLM calls
+    judgments = {}
+    
     # First, count how many times each ground truth edit appears in true_positives
     for gt_edit, _ in true_positives:
         gt_edit_id = id(gt_edit)
@@ -326,8 +329,15 @@ def evaluate(
     while i < len(remaining_true_positives):
         gt_edit, pred_edit = remaining_true_positives[i]
         
+        # Create a key to uniquely identify this gt_edit/pred_edit pair
+        pair_key = (id(gt_edit), id(pred_edit))
+        
         # Get the basic correctness judgment (ignoring line numbers)
-        judgment = judge.evaluate_edit(gt_edit, pred_edit)
+        # Only make the LLM call once and store the result
+        if pair_key not in judgments:
+            judgments[pair_key] = judge.evaluate_edit(gt_edit, pred_edit)
+        
+        judgment = judgments[pair_key]
         is_correct = judgment.get("is_correct", False)
         
         if not is_correct:
@@ -357,8 +367,9 @@ def evaluate(
         line_diff = abs(gt_line - pred_line)
         line_penalty = min(1.0, 0.1 * (line_diff ** 2))  # Cap at 1.0
         
-        # Get the judgment (we already know is_correct is True here)
-        judgment = judge.evaluate_edit(gt_edit, pred_edit)
+        # Retrieve the judgment we already made (avoiding duplicate LLM call)
+        pair_key = (id(gt_edit), id(pred_edit))
+        judgment = judgments[pair_key]
         reasoning = judgment.get("reasoning", "")
         
         # Calculate score after penalty
