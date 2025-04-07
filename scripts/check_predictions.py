@@ -8,7 +8,54 @@ This script analyzes the predictions directory structure and reports on:
 3. Missing evaluations for prediction files
 4. Inconsistencies in run counts across questions
 
-It highlights any anomalies or uneven distributions in the data.
+It highlights any anomalies or uneven distributions in the data and can suggest
+commands to fix these issues.
+
+Features:
+---------
+- Detects missing questions or uneven run counts across questions
+- Identifies missing evaluations for existing prediction files
+- Suggests commands to balance the dataset
+- Supports two checking modes: standard and strict
+
+Checking Modes:
+--------------
+1. Standard Mode (default): Checks for internal consistency only
+   - A model is considered "OK" if all its questions have the same number of runs
+   - The specific number of runs doesn't matter (could be 1, 2, or more)
+   - Suggested fixes aim to make all questions have the same number of runs
+     (using the most common run count in that model as the target)
+
+2. Strict Mode (--strict): Requires exactly the target number of runs
+   - A model is only considered "OK" if all questions have the target number of runs
+   - The target is specified with --target-runs (default: 3)
+   - Suggested fixes aim to make all questions have exactly the target number of runs
+
+Command-line Options:
+--------------------
+--predict-dir PATH    Path to predictions directory (default: ./predictions)
+--target-runs N       Target number of runs per question (default: 3)
+--suggest-fixes       Suggest commands to fix dataset balance (default: True)
+--no-suggest-fixes    Don't suggest commands to fix dataset balance
+--strict              Use strict checking that requires the exact target number of runs
+
+Example Usage:
+-------------
+# Standard analysis (internal consistency only)
+python scripts/check_predictions.py
+
+# Strict analysis requiring exactly 3 runs per question
+python scripts/check_predictions.py --strict
+
+# Specify a different target number of runs
+python scripts/check_predictions.py --strict --target-runs 2
+
+# Don't suggest fixes
+python scripts/check_predictions.py --no-suggest-fixes
+
+The suggested fix commands will use the new --question-ids parameter in
+run_prediction.sh and run_evaluation.sh to only process the specific questions
+that need more runs or evaluations.
 """
 
 import os
@@ -111,8 +158,16 @@ def analyze_predictions(predictions_dir: Path) -> List[ModelStats]:
     return model_stats
 
 
-def find_anomalies(stats: ModelStats) -> Tuple[bool, Set[str], Dict[str, int]]:
-    """Find anomalies in the question runs data."""
+def find_anomalies(stats: ModelStats, target_runs: int = None) -> Tuple[bool, Set[str], Dict[str, int]]:
+    """Find anomalies in the question runs data.
+    
+    Args:
+        stats: Model statistics
+        target_runs: Optional target number of runs to check against
+        
+    Returns:
+        Tuple of (has_anomalies, missing_questions, run_counts)
+    """
     has_anomalies = False
     
     # Check for missing questions (assuming consecutive question IDs)
@@ -130,14 +185,29 @@ def find_anomalies(stats: ModelStats) -> Tuple[bool, Set[str], Dict[str, int]]:
     # Check for uneven run counts
     run_counts = {q: len(runs) for q, runs in stats.question_runs.items()}
     count_values = set(run_counts.values())
+    
+    # First check internal consistency (all questions have same count)
     if len(count_values) > 1:
         has_anomalies = True
+    
+    # If target_runs is provided, also check if any questions have fewer runs than target
+    if target_runs is not None:
+        for count in count_values:
+            if count < target_runs:
+                has_anomalies = True
+                break
         
     return has_anomalies, missing_questions, run_counts
 
 
-def print_report(model_stats: List[ModelStats], console: Console) -> None:
-    """Print a formatted report of the analysis."""
+def print_report(model_stats: List[ModelStats], console: Console, target_runs: int = None) -> None:
+    """Print a formatted report of the analysis.
+    
+    Args:
+        model_stats: List of model statistics
+        console: Rich console for output
+        target_runs: Optional target number of runs to check against
+    """
     if not model_stats:
         console.print("[yellow]No prediction data found![/yellow]")
         return
@@ -156,7 +226,7 @@ def print_report(model_stats: List[ModelStats], console: Console) -> None:
     detailed_tables = []
     
     for stats in model_stats:
-        has_anomalies, missing_questions, run_counts = find_anomalies(stats)
+        has_anomalies, missing_questions, run_counts = find_anomalies(stats, target_runs)
         
         # Determine status
         status = "[green]OK[/green]"
@@ -237,11 +307,189 @@ def print_report(model_stats: List[ModelStats], console: Console) -> None:
         console.print("[bold green]All models have consistent data and evaluations![/bold green]")
 
 
+def find_model_unbalanced_questions(stats: ModelStats, target_runs: int = 3, strict: bool = False) -> Dict[str, int]:
+    """Find questions that need more runs to reach the target number.
+    
+    Args:
+        stats: Model statistics
+        target_runs: Target number of runs per question
+        strict: Whether to use strict checking that requires the exact target number
+        
+    Returns:
+        Dict mapping question IDs to number of additional runs needed
+    """
+    needs_more_runs = {}
+    
+    # Skip models without data
+    if not stats.question_runs:
+        return needs_more_runs
+    
+    # Find the most common run count across all questions
+    run_counts = {q: len(runs) for q, runs in stats.question_runs.items()}
+    count_values = list(run_counts.values())
+    
+    # If empty, nothing to do
+    if not count_values:
+        return needs_more_runs
+    
+    # Determine target count
+    if strict:
+        # In strict mode, use the specified target
+        target_count = target_runs
+    else:
+        # In non-strict mode, use the most common count within this model
+        most_common_count = max(set(count_values), key=count_values.count)
+        target_count = most_common_count
+    
+    # Check each question
+    for question_id, runs in stats.question_runs.items():
+        current_runs = len(runs)
+        if current_runs < target_count:
+            needs_more_runs[question_id] = target_count - current_runs
+    
+    return needs_more_runs
+
+
+def generate_prediction_commands(model_stats: List[ModelStats], target_runs: int = 3, strict: bool = False) -> Dict[str, List[str]]:
+    """Generate commands to balance prediction runs.
+    
+    Args:
+        model_stats: List of model statistics
+        target_runs: Target number of runs per question
+        strict: Whether to use strict checking that requires the exact target number
+        
+    Returns:
+        Dict mapping model IDs to lists of commands to run
+    """
+    commands = defaultdict(list)
+    
+    for stats in model_stats:
+        # Find questions needing more runs
+        needed_runs = find_model_unbalanced_questions(stats, target_runs, strict)
+        
+        if needed_runs:
+            # Generate question_ids parameter
+            question_ids = ",".join(needed_runs.keys())
+            
+            # Create command
+            command = f"./scripts/run_prediction.sh {stats.model_id} --question-ids \"{question_ids}\""
+            commands[stats.model_id].append(command)
+            
+    return dict(commands)
+
+
+def generate_evaluation_commands(model_stats: List[ModelStats]) -> Dict[str, List[str]]:
+    """Generate commands to run missing evaluations.
+    
+    Args:
+        model_stats: List of model statistics
+        
+    Returns:
+        Dict mapping model IDs to lists of commands to run
+    """
+    commands = defaultdict(list)
+    
+    for stats in model_stats:
+        # If there are missing evaluations, run evaluation for this model
+        if stats.missing_evaluations:
+            # Group missing evaluations by question ID
+            missing_by_question = defaultdict(list)
+            for question_id, run_id in stats.missing_evaluations:
+                missing_by_question[question_id].append(run_id)
+            
+            # Generate question_ids parameter
+            question_ids = ",".join(missing_by_question.keys())
+            
+            # Create command
+            command = f"./scripts/run_evaluation.sh {stats.model_id} --question-ids \"{question_ids}\" --force"
+            commands[stats.model_id].append(command)
+            
+    return dict(commands)
+
+
+def print_fix_suggestions(model_stats: List[ModelStats], console: Console, target_runs: int = 3, strict: bool = False):
+    """Print suggestions to fix dataset balance.
+    
+    Args:
+        model_stats: List of model statistics
+        console: Rich console for output
+        target_runs: Target number of runs per question
+        strict: Whether to use strict checking that requires the exact target number
+    """
+    # Generate commands
+    prediction_commands = generate_prediction_commands(model_stats, target_runs, strict)
+    evaluation_commands = generate_evaluation_commands(model_stats)
+    
+    console.print()
+    console.print("[bold cyan]Suggested commands to fix dataset balance:[/bold cyan]")
+    console.print()
+    
+    # Add prediction commands
+    if prediction_commands:
+        console.print("[bold green]Commands to add missing prediction runs:[/bold green]")
+        for model_id, commands in prediction_commands.items():
+            console.print(f"[yellow]Model: {model_id}[/yellow]")
+            for cmd in commands:
+                console.print(f"{cmd}")
+            console.print()
+    else:
+        console.print("[green]No missing prediction runs found[/green]")
+        console.print()
+    
+    # Add evaluation commands
+    if evaluation_commands:
+        console.print("[bold green]Commands to run missing evaluations:[/bold green]")
+        for model_id, commands in evaluation_commands.items():
+            console.print(f"[yellow]Model: {model_id}[/yellow]")
+            for cmd in commands:
+                console.print(f"{cmd}")
+            console.print()
+    else:
+        console.print("[green]No missing evaluations found[/green]")
+        console.print()
+
+
 def main():
     """Main function."""
+    # Parse command line arguments
+    import argparse
+    parser = argparse.ArgumentParser(description="Check prediction directory balance")
+    parser.add_argument(
+        "--predict-dir",
+        type=Path,
+        default=None,
+        help="Path to predictions directory (default: ./predictions)"
+    )
+    parser.add_argument(
+        "--target-runs",
+        type=int,
+        default=3,
+        help="Target number of runs per question (default: 3)"
+    )
+    parser.add_argument(
+        "--suggest-fixes",
+        action="store_true",
+        default=True,
+        help="Suggest commands to fix dataset balance (default: True)"
+    )
+    parser.add_argument(
+        "--no-suggest-fixes",
+        action="store_false",
+        dest="suggest_fixes",
+        help="Don't suggest commands to fix dataset balance"
+    )
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        default=False,
+        help="Use strict checking that requires the exact target number of runs (default: False)"
+    )
+    
+    args = parser.parse_args()
+    
     # Get predictions directory
     project_root = Path(__file__).parent.parent
-    predictions_dir = project_root / "predictions"
+    predictions_dir = args.predict_dir or (project_root / "predictions")
     
     if not predictions_dir.exists():
         print(f"Error: Predictions directory not found at {predictions_dir}")
@@ -256,7 +504,16 @@ def main():
     
     # Print report
     console.print()
-    print_report(model_stats, console)
+    if args.strict:
+        console.print(f"[yellow]Using strict checking mode (target: {args.target_runs} runs per question)[/yellow]")
+        print_report(model_stats, console, args.target_runs)
+    else:
+        console.print("[green]Using standard checking mode (internal consistency only)[/green]")
+        print_report(model_stats, console)
+    
+    # Print fix suggestions if requested
+    if args.suggest_fixes:
+        print_fix_suggestions(model_stats, console, args.target_runs, args.strict)
 
 
 if __name__ == "__main__":

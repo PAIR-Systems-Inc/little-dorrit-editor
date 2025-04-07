@@ -1,6 +1,16 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor prediction generation
 #
+# This script runs prediction generation for the Little Dorrit Editor benchmark
+# using specified models. It handles processing of evaluation and sample data,
+# configuration management, and file/directory organization.
+#
+# Key Features:
+# - Supports multiple models in a single command
+# - File-specific run IDs for better organization
+# - Question ID filtering for targeted prediction runs
+# - Conditional dataset preparation
+#
 # Usage: ./run_prediction.sh [model_id1] [model_id2] ... [options]
 #   model_id: One or more IDs of models from config (default: gpt-4o if none provided)
 #
@@ -8,12 +18,23 @@
 #   --shots N: Number of shots to use (default: 2)
 #   --display-name "Name": Custom display name for the leaderboard (optional)
 #   --refresh-datasets: Force rebuild of the sample and evaluation datasets
+#   --question-ids "id1,id2,...": Only process specific question IDs (comma-separated, no spaces)
+#
+# File Naming:
+#   Prediction files are named as: {question_id}_{run_id}_{date}_prediction.json
+#   - question_id: ID of the question (e.g., "003")
+#   - run_id: Sequential ID for each run, starting from 01 for each file/model pair
+#   - date: Generation date in YYYYMMDD format
 #
 # Examples:
 #   ./run_prediction.sh or_gpt_4o_latest                 # Run with a single model
 #   ./run_prediction.sh or_gpt_4o_latest or_llama_4_scout # Run with multiple models
 #   ./run_prediction.sh or_gpt_4o_latest --shots 3       # Run with 3-shot learning
 #   ./run_prediction.sh or_gpt_4o_latest --refresh-datasets # Force dataset rebuild
+#   ./run_prediction.sh or_gpt_4o_latest --question-ids "003,005" # Only process questions 003 and 005
+#
+# Note: The --question-ids flag is particularly useful when balancing your dataset
+# based on the output from check_predictions.py script.
 #
 # Available model IDs can be viewed with: config list
 
@@ -23,6 +44,7 @@ SHOTS=2
 DISPLAY_NAME=""
 MODELS=()
 REFRESH_DATASETS=false
+QUESTION_IDS=""
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -38,6 +60,10 @@ while [[ $# -gt 0 ]]; do
     --refresh-datasets)
       REFRESH_DATASETS=true
       shift
+      ;;
+    --question-ids)
+      QUESTION_IDS="$2"
+      shift 2
       ;;
     --*)
       echo "Unknown option: $1"
@@ -189,9 +215,39 @@ EOL
     # Process the evaluation files
     if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.png 2>/dev/null)" ]; then
         echo "Generating predictions for evaluation files..."
+        
+        # Filter files if specific question IDs are requested
+        FILTER_QUESTIONS=false
+        declare -a QUESTION_ID_ARRAY
+        if [ -n "$QUESTION_IDS" ]; then
+            FILTER_QUESTIONS=true
+            # Convert comma-separated list to array
+            IFS=',' read -ra QUESTION_ID_ARRAY <<< "$QUESTION_IDS"
+            echo "Filtering to only process question IDs: ${QUESTION_IDS}"
+        fi
+        
         for img_file in data/eval/*.png; do
             # Extract the base filename without extension
             base_name=$(basename "$img_file" .png)
+            
+            # Skip if specific questions requested and this one is not included
+            if [ "$FILTER_QUESTIONS" = true ]; then
+                # Extract question ID from filename (first part before underscore or entire name if no underscore)
+                QUESTION_ID="${base_name%%_*}"
+                # Check if it's in the requested questions
+                FOUND=false
+                for qid in "${QUESTION_ID_ARRAY[@]}"; do
+                    if [ "$QUESTION_ID" = "$qid" ]; then
+                        FOUND=true
+                        break
+                    fi
+                done
+                
+                if [ "$FOUND" = false ]; then
+                    echo "Skipping $img_file (not in requested question IDs)"
+                    continue
+                fi
+            fi
             
             # Get the highest run ID for this specific file within this model
             HIGHEST_RUN=$(get_highest_run_id_for_file "$base_name" "${PREDICTIONS_DIR}")

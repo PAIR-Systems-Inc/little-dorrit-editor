@@ -1,17 +1,38 @@
 #!/bin/bash
 # Script to run Little Dorrit Editor evaluation on existing predictions
 #
-# Usage: ./run_evaluation.sh [model_id1] [model_id2] ... [--display-name "Name"] [--judge-model MODEL] [--force]
+# This script processes prediction files to generate evaluation results using a judge model.
+# It matches ground truth data against prediction files, and handles file organization
+# and configuration management.
+#
+# Key Features:
+# - Evaluates multiple models in a single command
+# - Filters by question ID for targeted evaluations
+# - Maintains a consistent judge model for benchmark integrity
+# - Skips already evaluated files unless --force is specified
+#
+# Usage: ./run_evaluation.sh [model_id1] [model_id2] ... [options]
 #   model_id: One or more IDs of models to evaluate (default: gpt-4o if none provided)
+#
+# Options:
 #   --display-name "Name": Custom display name for the leaderboard (only used if creating new config)
 #   --judge-model MODEL: Model ID to use for evaluation judging (default: gpt-4.5-preview)
 #                WARNING: Changing this is NOT recommended as it affects benchmark consistency
 #   --force: Force re-evaluation even if results already exist
+#   --question-ids "id1,id2,...": Only process specific question IDs (comma-separated, no spaces)
+#
+# File Naming:
+#   For each prediction file {question_id}_{run_id}_{date}_prediction.json, 
+#   this script creates a corresponding {question_id}_{run_id}_{date}_results.json file
 #
 # Examples:
 #   ./run_evaluation.sh or_gpt_4o_latest                    # Evaluate a single model
 #   ./run_evaluation.sh or_gpt_4o_latest or_llama_4_scout   # Evaluate multiple models
 #   ./run_evaluation.sh or_gpt_4o_latest --force            # Force re-evaluation
+#   ./run_evaluation.sh or_gpt_4o_latest --question-ids "003,005" # Only evaluate questions 003 and 005
+#
+# Note: The --question-ids flag is particularly useful for addressing missing evaluations
+# identified by the check_predictions.py script.
 #
 # Available model IDs can be viewed with: config list
 
@@ -21,6 +42,7 @@ DISPLAY_NAME=""
 LLM_JUDGE_MODEL="gpt-4.5-preview"
 FORCE_EVAL=false
 MODELS=()
+QUESTION_IDS=""
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -36,6 +58,10 @@ while [[ $# -gt 0 ]]; do
     --force)
       FORCE_EVAL=true
       shift
+      ;;
+    --question-ids)
+      QUESTION_IDS="$2"
+      shift 2
       ;;
     --*)
       echo "Unknown option: $1"
@@ -143,9 +169,38 @@ EOL
     
     # Process only evaluation data
     if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.json 2>/dev/null)" ]; then
+        # Filter files if specific question IDs are requested
+        FILTER_QUESTIONS=false
+        declare -a QUESTION_ID_ARRAY
+        if [ -n "$QUESTION_IDS" ]; then
+            FILTER_QUESTIONS=true
+            # Convert comma-separated list to array
+            IFS=',' read -ra QUESTION_ID_ARRAY <<< "$QUESTION_IDS"
+            echo "Filtering to only process question IDs: ${QUESTION_IDS}"
+        fi
+        
         for json_file in data/eval/*.json; do
             # Extract the base filename without extension
             base_name=$(basename "$json_file" .json)
+            
+            # Skip if specific questions requested and this one is not included
+            if [ "$FILTER_QUESTIONS" = true ]; then
+                # Extract question ID from filename (first part before underscore or entire name if no underscore)
+                QUESTION_ID="${base_name%%_*}"
+                # Check if it's in the requested questions
+                FOUND=false
+                for qid in "${QUESTION_ID_ARRAY[@]}"; do
+                    if [ "$QUESTION_ID" = "$qid" ]; then
+                        FOUND=true
+                        break
+                    fi
+                done
+                
+                if [ "$FOUND" = false ]; then
+                    echo "Skipping $json_file (not in requested question IDs)"
+                    continue
+                fi
+            fi
             
             # Find ALL prediction files for this base name
             prediction_files=("${EVAL_PREDICTIONS_DIR}/${base_name}_"*"_prediction.json")
