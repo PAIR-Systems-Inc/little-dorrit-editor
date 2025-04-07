@@ -742,18 +742,107 @@
             ]
         });
 
-        // Function to load JSON data from results.json
+        // Calculate F-beta score (F1 when beta=1)
+        function fBetaScore(precision, recall, beta = 1) {
+            if (precision === 0 && recall === 0) return 0;
+
+            const betaSquared = beta * beta;
+            return (1 + betaSquared) * (precision * recall) /
+                   (betaSquared * precision + recall);
+        }
+
+        // Function to load JSON data from results.json and process it
         async function loadResults() {
             try {
                 const response = await fetch('results.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                return await response.json();
+                const rawData = await response.json();
+                
+                // Process the raw data to calculate metrics
+                return processModelResults(rawData);
             } catch (error) {
                 console.error('Error loading results:', error);
                 return [];
             }
+        }
+        
+        // Process model results and compute metrics
+        function processModelResults(data) {
+            return data.map(model => {
+                const fileResults = model.file_results || [];
+                
+                // Collect all edit matches from all files
+                const allEditMatches = [];
+                fileResults.forEach(fileResult => {
+                    // Handle both the new format (details is a list of EditMatch objects)
+                    // and the older format (details.edit_matches)
+                    const details = fileResult.details;
+                    if (Array.isArray(details)) {
+                        allEditMatches.push(...details);
+                    } else if (details && details.edit_matches) {
+                        allEditMatches.push(...details.edit_matches);
+                    }
+                });
+                
+                // If no edit matches, return original model with placeholder metrics
+                if (allEditMatches.length === 0) {
+                    return {
+                        ...model,
+                        precision: 0,
+                        recall: 0,
+                        f1_score: 0,
+                        details: {
+                            ...(model.details || {}),
+                            correct_count: 0,
+                            total_predicted: 0,
+                            total_ground_truth: 0,
+                            file_results: fileResults
+                        }
+                    };
+                }
+                
+                // Calculate overall metrics
+                let totalTp = 0;
+                let totalFp = 0;
+                let totalFn = 0;
+                
+                // Process each edit match
+                allEditMatches.forEach(edit => {
+                    // Add TP/FP/FN values to totals
+                    totalTp += edit.tp || 0;
+                    totalFp += edit.fp || 0;
+                    totalFn += edit.fn || 0;
+                });
+                
+                // Calculate global metrics
+                const precision = totalTp / (totalTp + totalFp) || 0;
+                const recall = totalTp / (totalTp + totalFn) || 0;
+                const f1_score = fBetaScore(precision, recall, 1);
+                
+                // Count "correct" edits (tp >= 0.5)
+                const correctCount = allEditMatches.filter(edit => (edit.tp || 0) >= 0.5).length;
+                const totalGT = allEditMatches.filter(edit => edit.expected_edit_num !== undefined && edit.expected_edit_num !== null).length;
+                const totalPred = allEditMatches.filter(edit => edit.observed_edit_num !== undefined && edit.observed_edit_num !== null).length;
+                
+                // Return processed model with computed metrics
+                return {
+                    ...model,
+                    precision,
+                    recall,
+                    f1_score,
+                    details: {
+                        precision,
+                        recall,
+                        f1_score,
+                        correct_count: correctCount,
+                        total_ground_truth: totalGT,
+                        total_predicted: totalPred,
+                        file_results: fileResults
+                    }
+                };
+            });
         }
 
         // Function to find a model in the results data
@@ -769,33 +858,85 @@
             for (const modelData of results) {
                 if (!modelData) continue;
 
+                // Get metrics from processed data
+                const details = modelData.details || {};
+                
                 // Add model summary row
                 const modelRow = {
                     id: modelData.model_name,
                     model: modelData.model_name,
-                    precision: modelData.precision,
-                    recall: modelData.recall,
-                    f1_score: modelData.f1_score,
-                    true_positives: modelData.details.correct_count,
-                    false_positives: modelData.details.total_predicted - modelData.details.correct_count,
-                    false_negatives: modelData.details.total_ground_truth - modelData.details.correct_count,
+                    precision: modelData.precision || 0,
+                    recall: modelData.recall || 0,
+                    f1_score: modelData.f1_score || 0,
+                    true_positives: details.correct_count || 0,
+                    false_positives: (details.total_predicted || 0) - (details.correct_count || 0),
+                    false_negatives: (details.total_ground_truth || 0) - (details.correct_count || 0),
                     _children: []
                 };
 
                 // Add file-specific rows as children
-                if (modelData.details.file_results) {
-                    for (const file of modelData.details.file_results) {
-                        modelRow._children.push({
-                            id: `${modelData.model_name}-${file.file_id}`,
-                            model: `File ${file.file_id}`,
-                            precision: file.precision,
-                            recall: file.recall,
-                            f1_score: file.f1_score,
-                            true_positives: file.details.correct_count,
-                            false_positives: file.details.total_predicted - file.details.correct_count,
-                            false_negatives: file.details.total_ground_truth - file.details.correct_count
-                        });
+                const fileResults = details.file_results || modelData.file_results || [];
+                for (const file of fileResults) {
+                    if (!file) continue;
+                    
+                    // Process each file's metrics - they might need to be computed
+                    let filePrecision = 0; 
+                    let fileRecall = 0;
+                    let fileF1 = 0;
+                    let fileTp = 0;
+                    let fileFp = 0;
+                    let fileFn = 0;
+                    
+                    // Get metrics from the file if they exist
+                    if (file.precision !== undefined && file.recall !== undefined) {
+                        filePrecision = file.precision;
+                        fileRecall = file.recall;
+                        fileF1 = file.f1_score || fBetaScore(filePrecision, fileRecall);
                     }
+                    
+                    // Get counts from file details
+                    const fileDetails = file.details || {};
+                    if (fileDetails.correct_count !== undefined) {
+                        fileTp = fileDetails.correct_count;
+                        fileFp = (fileDetails.total_predicted || 0) - fileTp;
+                        fileFn = (fileDetails.total_ground_truth || 0) - fileTp;
+                    } else if (Array.isArray(fileDetails)) {
+                        // New format - calculate from edit matches
+                        let totalTp = 0;
+                        let totalFp = 0;
+                        let totalFn = 0;
+                        
+                        fileDetails.forEach(edit => {
+                            totalTp += edit.tp || 0;
+                            totalFp += edit.fp || 0;
+                            totalFn += edit.fn || 0;
+                        });
+                        
+                        filePrecision = totalTp / (totalTp + totalFp) || 0;
+                        fileRecall = totalTp / (totalTp + totalFn) || 0;
+                        fileF1 = fBetaScore(filePrecision, fileRecall);
+                        
+                        // Count "correct" edits (tp >= 0.5)
+                        fileTp = fileDetails.filter(edit => (edit.tp || 0) >= 0.5).length;
+                        const totalGT = fileDetails.filter(edit => edit.expected_edit_num !== undefined && edit.expected_edit_num !== null).length;
+                        const totalPred = fileDetails.filter(edit => edit.observed_edit_num !== undefined && edit.observed_edit_num !== null).length;
+                        
+                        fileFp = totalPred - fileTp;
+                        fileFn = totalGT - fileTp;
+                    }
+                    
+                    // Add file row
+                    const fileId = file.file_id || file.id || "unknown";
+                    modelRow._children.push({
+                        id: `${modelData.model_name}-${fileId}`,
+                        model: `File ${fileId}`,
+                        precision: filePrecision,
+                        recall: fileRecall,
+                        f1_score: fileF1,
+                        true_positives: fileTp,
+                        false_positives: fileFp,
+                        false_negatives: fileFn
+                    });
                 }
 
                 performanceData.push(modelRow);
