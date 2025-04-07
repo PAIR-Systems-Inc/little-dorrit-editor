@@ -284,11 +284,11 @@ def evaluate(
     # Helper function to calculate line number penalty
     def get_penalty(gt_line, pred_line):
         """Calculate line number penalty based on distance between lines.
-        
+
         Args:
             gt_line: Ground truth line number
             pred_line: Predicted line number
-            
+
         Returns:
             Float penalty value between 0.0 and 1.0
         """
@@ -323,89 +323,87 @@ def evaluate(
 
     # We need to track ground truth edits that have alternate matches
     gt_edits_in_true_positives = {}
-    
+
     # Store judgments to avoid duplicate LLM calls
     judgments = {}
-    
+
     # First, count how many times each ground truth edit appears in true_positives
     for gt_edit, _ in true_positives:
         gt_edit_id = id(gt_edit)
         gt_edits_in_true_positives[gt_edit_id] = gt_edits_in_true_positives.get(gt_edit_id, 0) + 1
-    
+
     # Keep a copy of the original true positives list
     remaining_true_positives = list(true_positives)
-    
+
     # Keep track of indices for the edit_matches
     valid_match_index = 0
-    
+
     # First pass: Process true positives, removing invalid matches
     i = 0
     while i < len(remaining_true_positives):
         gt_edit, pred_edit = remaining_true_positives[i]
-        
+
         # Get line numbers for penalty calculation
         gt_line = gt_edit.get("line_number", 0)
         pred_line = pred_edit.get("line_number", 1000)  # Use a large default to ensure penalty if missing
-        
+
         # Create a key to uniquely identify this gt_edit/pred_edit pair
         pair_key = (id(gt_edit), id(pred_edit))
-        
+
         # Get the basic correctness judgment (ignoring line numbers)
         # Only make the LLM call once and store the result
         if pair_key not in judgments:
             judgments[pair_key] = judge.evaluate_edit(gt_edit, pred_edit)
-        
+
         judgment = judgments[pair_key]
-        
+
         # Calculate line number penalty
         line_penalty = get_penalty(gt_line, pred_line)
-        
+
         # Store line diff and penalty in the judgment for reuse
         line_diff = abs(gt_line - pred_line)
         judgment["line_diff"] = line_diff
         judgment["line_penalty"] = line_penalty
-        
+
         # Combined condition: content must match AND line penalty must not be complete (1.0)
         is_correct = judgment.get("is_correct", False) and not line_penalty >= 1.0
-        
+
         if not is_correct:
             # Move pred_edit to false_positives list
             false_positives.append(pred_edit)
-            
+
             # Decrement the count for this ground truth edit
             gt_edit_id = id(gt_edit)
             gt_edits_in_true_positives[gt_edit_id] -= 1
-            
+
             # If this ground truth edit has no other matches, add it to false_negatives
             if gt_edits_in_true_positives[gt_edit_id] == 0:
                 false_negatives.append(gt_edit)
-            
+
             # Remove this pair from the remaining_true_positives and continue to next item
             remaining_true_positives.pop(i)
             continue
-        
+
         # Move to next item
         i += 1
-    
+
     # Second pass: Process the valid matches
     for i, (gt_edit, pred_edit) in enumerate(remaining_true_positives):
         # Get line number for display
         pred_line = pred_edit.get("line_number", 0)
-        
+
         # Retrieve the judgment and pre-calculated penalty info
         pair_key = (id(gt_edit), id(pred_edit))
         judgment = judgments[pair_key]
         reasoning = judgment.get("reasoning", "")
-        
+
         # Get the line diff and penalty we stored in the first pass
         line_diff = judgment.get("line_diff", 0)
         line_penalty = judgment.get("line_penalty", 0.0)
-        
+
         # Calculate score after penalty
         score = max(0.0, 1.0 - line_penalty)
-        # A judgment is "correct" if score >= 0.5 after applying penalty
-        is_correct_with_penalty = score >= 0.5
-        
+
         # Create an EditMatch for this matched pair with appropriate tp/fp/fn values
         # For matched pairs, tp = score, fp = (1 - score)/2, fn = (1 - score)/2 to maintain tp+fp+fn=1
         edit_match = EditMatch(
@@ -424,7 +422,7 @@ def evaluate(
         )
         edit_matches.append(edit_match)
         valid_match_index += 1
-        
+
     # We've now updated true_positives, false_positives, and false_negatives
     # Replace the original true_positives list
     true_positives = remaining_true_positives
