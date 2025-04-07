@@ -281,6 +281,20 @@ def evaluate(
     Returns:
         Evaluation results
     """
+    # Helper function to calculate line number penalty
+    def get_penalty(gt_line, pred_line):
+        """Calculate line number penalty based on distance between lines.
+        
+        Args:
+            gt_line: Ground truth line number
+            pred_line: Predicted line number
+            
+        Returns:
+            Float penalty value between 0.0 and 1.0
+        """
+        line_diff = abs(gt_line - pred_line)
+        # Penalty formula: 0.1 * distance^2, capped at 1.0
+        return min(1.0, 0.1 * (line_diff ** 2))
     console = Console()
 
     # Load annotations
@@ -329,6 +343,10 @@ def evaluate(
     while i < len(remaining_true_positives):
         gt_edit, pred_edit = remaining_true_positives[i]
         
+        # Get line numbers for penalty calculation
+        gt_line = gt_edit.get("line_number", 0)
+        pred_line = pred_edit.get("line_number", 1000)  # Use a large default to ensure penalty if missing
+        
         # Create a key to uniquely identify this gt_edit/pred_edit pair
         pair_key = (id(gt_edit), id(pred_edit))
         
@@ -338,7 +356,17 @@ def evaluate(
             judgments[pair_key] = judge.evaluate_edit(gt_edit, pred_edit)
         
         judgment = judgments[pair_key]
-        is_correct = judgment.get("is_correct", False)
+        
+        # Calculate line number penalty
+        line_penalty = get_penalty(gt_line, pred_line)
+        
+        # Store line diff and penalty in the judgment for reuse
+        line_diff = abs(gt_line - pred_line)
+        judgment["line_diff"] = line_diff
+        judgment["line_penalty"] = line_penalty
+        
+        # Combined condition: content must match AND line penalty must not be complete (1.0)
+        is_correct = judgment.get("is_correct", False) and not line_penalty >= 1.0
         
         if not is_correct:
             # Move pred_edit to false_positives list
@@ -361,16 +389,17 @@ def evaluate(
     
     # Second pass: Process the valid matches
     for i, (gt_edit, pred_edit) in enumerate(remaining_true_positives):
-        # Calculate line number penalty: 0.1 * distance^2
-        gt_line = gt_edit.get("line_number", 0)
-        pred_line = pred_edit.get("line_number", 1000)  # Use a large default to ensure penalty if missing
-        line_diff = abs(gt_line - pred_line)
-        line_penalty = min(1.0, 0.1 * (line_diff ** 2))  # Cap at 1.0
+        # Get line number for display
+        pred_line = pred_edit.get("line_number", 0)
         
-        # Retrieve the judgment we already made (avoiding duplicate LLM call)
+        # Retrieve the judgment and pre-calculated penalty info
         pair_key = (id(gt_edit), id(pred_edit))
         judgment = judgments[pair_key]
         reasoning = judgment.get("reasoning", "")
+        
+        # Get the line diff and penalty we stored in the first pass
+        line_diff = judgment.get("line_diff", 0)
+        line_penalty = judgment.get("line_penalty", 0.0)
         
         # Calculate score after penalty
         score = max(0.0, 1.0 - line_penalty)
