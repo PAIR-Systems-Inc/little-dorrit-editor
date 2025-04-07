@@ -10,7 +10,7 @@ from rich.console import Console
 from rich.table import Table
 
 from little_dorrit_editor.config import get_model, ModelConfig
-from little_dorrit_editor.types import EditAnnotation, EditMatch, EditType, EvaluationResult 
+from little_dorrit_editor.types import EditAnnotation, EditMatch, EditType, EvaluationResult
 from little_dorrit_editor.utils import extract_json_from_llm_response
 
 
@@ -303,38 +303,75 @@ def evaluate(
 
     # Evaluate matching edits
     console.print(f"Found {len(true_positives)} potential matches to evaluate")
-    
+
     # Prepare the list of EditMatch objects for the result
     edit_matches: List[EditMatch] = []
+
+    # We need to track ground truth edits that have alternate matches
+    gt_edits_in_true_positives = {}
     
-    # Process true positives (matched edits)
-    for i, (gt_edit, pred_edit) in enumerate(true_positives):
+    # First, count how many times each ground truth edit appears in true_positives
+    for gt_edit, _ in true_positives:
+        gt_edit_id = id(gt_edit)
+        gt_edits_in_true_positives[gt_edit_id] = gt_edits_in_true_positives.get(gt_edit_id, 0) + 1
+    
+    # Keep a copy of the original true positives list
+    remaining_true_positives = list(true_positives)
+    original_true_positives_count = len(true_positives)
+    
+    # Keep track of indices for the edit_matches
+    valid_match_index = 0
+    
+    # First pass: Process true positives, removing invalid matches
+    i = 0
+    while i < len(remaining_true_positives):
+        gt_edit, pred_edit = remaining_true_positives[i]
+        
         # Get the basic correctness judgment (ignoring line numbers)
         judgment = judge.evaluate_edit(gt_edit, pred_edit)
-
+        is_correct = judgment.get("is_correct", False)
+        
+        if not is_correct:
+            # Move pred_edit to false_positives list
+            false_positives.append(pred_edit)
+            
+            # Decrement the count for this ground truth edit
+            gt_edit_id = id(gt_edit)
+            gt_edits_in_true_positives[gt_edit_id] -= 1
+            
+            # If this ground truth edit has no other matches, add it to false_negatives
+            if gt_edits_in_true_positives[gt_edit_id] == 0:
+                false_negatives.append(gt_edit)
+            
+            # Remove this pair from the remaining_true_positives and continue to next item
+            remaining_true_positives.pop(i)
+            continue
+        
+        # Move to next item
+        i += 1
+    
+    # Second pass: Process the valid matches
+    for i, (gt_edit, pred_edit) in enumerate(remaining_true_positives):
         # Calculate line number penalty: 0.1 * distance^2
         gt_line = gt_edit.get("line_number", 0)
         pred_line = pred_edit.get("line_number", 1000)  # Use a large default to ensure penalty if missing
         line_diff = abs(gt_line - pred_line)
         line_penalty = min(1.0, 0.1 * (line_diff ** 2))  # Cap at 1.0
-
-        # Apply penalty only if the edit is otherwise correct
-        is_correct = judgment.get("is_correct", False)
-        if is_correct:
-            # Calculate score after penalty
-            score = max(0.0, 1.0 - line_penalty)
-            # A judgment is "correct" if score >= 0.5 after applying penalty
-            is_correct_with_penalty = score >= 0.5
-        else:
-            # If content doesn't match, keep score at 0
-            score = 0.0
-            is_correct_with_penalty = False
+        
+        # Get the judgment (we already know is_correct is True here)
+        judgment = judge.evaluate_edit(gt_edit, pred_edit)
+        reasoning = judgment.get("reasoning", "")
+        
+        # Calculate score after penalty
+        score = max(0.0, 1.0 - line_penalty)
+        # A judgment is "correct" if score >= 0.5 after applying penalty
+        is_correct_with_penalty = score >= 0.5
         
         # Create an EditMatch for this matched pair with appropriate tp/fp/fn values
         # For matched pairs, tp = score, fp = (1 - score)/2, fn = (1 - score)/2 to maintain tp+fp+fn=1
         edit_match = EditMatch(
-            observed_edit_num=i,                                # Index in prediction
-            expected_edit_num=i,                                # Index in ground truth
+            observed_edit_num=valid_match_index,                # Index in valid predictions
+            expected_edit_num=valid_match_index,                # Index in matched ground truth
             tp=score,                                           # True positive score
             fp=(1.0 - score) / 2,                               # False positive portion
             fn=(1.0 - score) / 2,                               # False negative portion
@@ -344,15 +381,20 @@ def evaluate(
             observed_line_number=pred_line,                     # Line number from prediction
             line_diff=line_diff,                                # Difference in line numbers
             line_number_penalty=line_penalty,                   # Penalty applied
-            judgement=judgment.get("reasoning", "")             # Reasoning from judge
+            judgement=reasoning                                 # Reasoning from judge
         )
         edit_matches.append(edit_match)
-    
+        valid_match_index += 1
+        
+    # We've now updated true_positives, false_positives, and false_negatives
+    # Replace the original true_positives list
+    true_positives = remaining_true_positives
+
     # Process false positives (predicted edits that don't match any ground truth)
     for i, fp_edit in enumerate(false_positives):
         # These are pure false positives (fp=1, tp=fn=0)
         edit_match = EditMatch(
-            observed_edit_num=len(true_positives) + i,          # Index in prediction (after TPs)
+            observed_edit_num=valid_match_index + i,            # Index in predictions after valid matches
             expected_edit_num=None,                             # No matching ground truth
             tp=0.0,                                             # No true positive component
             fp=1.0,                                             # Pure false positive
@@ -366,15 +408,15 @@ def evaluate(
             judgement="False positive: no matching ground truth edit found"
         )
         edit_matches.append(edit_match)
-    
+
     # Process false negatives (ground truth edits that weren't found in the prediction)
     for i, fn_edit in enumerate(false_negatives):
         # These are pure false negatives (fn=1, tp=fp=0)
         edit_match = EditMatch(
             observed_edit_num=None,                             # No matching prediction
-            expected_edit_num=len(true_positives) + i,          # Index in ground truth (after TPs)
+            expected_edit_num=valid_match_index + i,            # Index in ground truth after valid matches
             tp=0.0,                                             # No true positive component
-            fp=0.0,                                             # No false positive component 
+            fp=0.0,                                             # No false positive component
             fn=1.0,                                             # Pure false negative
             type=EditType(fn_edit.get("type", "unknown")),      # Edit type from ground truth
             original_text=fn_edit.get("original_text", ""),     # Text from ground truth
@@ -385,7 +427,7 @@ def evaluate(
             judgement="False negative: ground truth edit not found in prediction"
         )
         edit_matches.append(edit_match)
-    
+
     # Create evaluation result in the new format
     result = EvaluationResult(
         model_name=model_name,
@@ -410,12 +452,12 @@ def display_results(result: EvaluationResult) -> None:
     total_tp = sum(edit.tp for edit in result.details)
     total_fp = sum(edit.fp for edit in result.details)
     total_fn = sum(edit.fn for edit in result.details)
-    
+
     # Calculate precision, recall, F1
     precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0.0
     recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0.0
     f1_score = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
-    
+
     # Count "correct" edits (tp >= 0.5)
     correct_count = sum(1 for edit in result.details if edit.tp >= 0.5)
     expected_count = sum(1 for edit in result.details if edit.expected_edit_num is not None)
@@ -441,11 +483,11 @@ def display_results(result: EvaluationResult) -> None:
                 metrics_by_type[edit_type] = {
                     "tp": 0.0, "fp": 0.0, "fn": 0.0, "count": 0
                 }
-            
+
             metrics_by_type[edit_type]["tp"] += edit.tp
             metrics_by_type[edit_type]["fp"] += edit.fp
             metrics_by_type[edit_type]["fn"] += edit.fn
-            
+
             # Count as part of this type if it's a match or false negative
             if edit.expected_edit_num is not None:
                 metrics_by_type[edit_type]["count"] += 1
@@ -462,7 +504,7 @@ def display_results(result: EvaluationResult) -> None:
         type_precision = metrics["tp"] / (metrics["tp"] + metrics["fp"]) if (metrics["tp"] + metrics["fp"]) > 0 else 0.0
         type_recall = metrics["tp"] / (metrics["tp"] + metrics["fn"]) if (metrics["tp"] + metrics["fn"]) > 0 else 0.0
         type_f1 = 2 * type_precision * type_recall / (type_precision + type_recall) if (type_precision + type_recall) > 0 else 0.0
-        
+
         type_table.add_row(
             edit_type,
             f"{type_precision:.4f}",
