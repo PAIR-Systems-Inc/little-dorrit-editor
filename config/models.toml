@@ -138,7 +138,7 @@ logical_name = "DeepSeek R1"
 
 # Grok Family ########
 
-[grok_2_vision_1212]
+[or_grok_2_vision_1212]
 endpoint = "https://openrouter.ai/api/v1"
 model_name = "x-ai/grok-2-vision-1212"
 api_key = "${OPEN_ROUTER_API_KEY}"
