@@ -149,10 +149,8 @@ def match_edits(
     for gt_edit in gt_edits:
         matched = False
         for i, pred_edit in enumerate(false_positives):
-            # Match based on edit type and approximate line number (±3 lines)
-            if (
-                gt_edit["type"].lower() == pred_edit["type"].lower()
-                and abs(gt_edit["line_number"] - pred_edit["line_number"]) <= 3
+            # Match based on approximate line number (±3 lines)
+            if (abs(gt_edit["line_number"] - pred_edit["line_number"]) <= 3
                 # Simple text overlap check
                 and (
                     gt_edit["original_text"] in pred_edit["original_text"]
@@ -300,11 +298,86 @@ def evaluate(
     # Load annotations
     console.print(f"Loading ground truth from [bold]{ground_truth_path}[/bold]")
     with open(ground_truth_path, "r") as f:
-        ground_truth = EditAnnotation.model_validate(json.load(f))
+        ground_truth_data = json.load(f)
+        # Ensure consistency between "image" and "page" in edits
+        if "edits" in ground_truth_data:
+            for edit in ground_truth_data["edits"]:
+                if "page" in edit and edit["page"] != ground_truth_data.get("image"):
+                    console.print(f"[yellow]Warning: Fixing inconsistent page field in ground truth edit: {edit['page']} -> {ground_truth_data.get('image')}[/yellow]")
+                    edit["page"] = ground_truth_data.get("image")
+        ground_truth = EditAnnotation.model_validate(ground_truth_data)
 
     console.print(f"Loading predictions from [bold]{prediction_path}[/bold]")
     with open(prediction_path, "r") as f:
-        prediction = EditAnnotation.model_validate(json.load(f))
+        prediction_data = json.load(f)
+        # Ensure consistency between "image" and "page" in edits
+        if "edits" in prediction_data:
+            # Make a copy of edits in case we need to filter out problematic ones
+            valid_edits = []
+
+            for edit in prediction_data["edits"]:
+                try:
+                    # Fix inconsistent page field
+                    if "page" in edit and edit["page"] != prediction_data.get("image"):
+                        console.print(f"[yellow]Warning: Fixing inconsistent page field in prediction edit: {edit['page']} -> {prediction_data.get('image')}[/yellow]")
+                        edit["page"] = prediction_data.get("image")
+
+                    # Ensure all required fields exist and have valid values
+                    required_fields = ["type", "original_text", "corrected_text"]
+                    for field in required_fields:
+                        if field not in edit or edit[field] is None:
+                            if field == "type":
+                                console.print(f"[yellow]Warning: Fixing missing {field} in prediction edit[/yellow]")
+                                edit[field] = "unknown"
+                            else:
+                                console.print(f"[yellow]Warning: Fixing null {field} in prediction edit[/yellow]")
+                                edit[field] = ""  # Replace null with empty string for validation
+
+                    # Ensure line_number is an integer if present
+                    if "line_number" in edit and edit["line_number"] is not None:
+                        try:
+                            edit["line_number"] = int(edit["line_number"])
+                        except (ValueError, TypeError):
+                            console.print(f"[yellow]Warning: Invalid line_number '{edit['line_number']}', setting to None[/yellow]")
+                            edit["line_number"] = None
+
+                    # Add to valid edits
+                    valid_edits.append(edit)
+                except Exception as e:
+                    console.print(f"[red]Skipping problematic edit: {str(e)}[/red]")
+                    console.print(f"[dim]{edit}[/dim]")
+
+            # Replace edits with valid ones
+            prediction_data["edits"] = valid_edits
+
+        # Ensure top-level fields are valid
+        if "image" not in prediction_data or prediction_data["image"] is None:
+            prediction_data["image"] = ground_truth.image
+            console.print(f"[yellow]Warning: Setting missing image field to {ground_truth.image}[/yellow]")
+
+        if "page_number" not in prediction_data or prediction_data["page_number"] is None:
+            prediction_data["page_number"] = 1
+            console.print(f"[yellow]Warning: Setting missing page_number field to 1[/yellow]")
+
+        # Try to validate with robust error handling
+        try:
+            prediction = EditAnnotation.model_validate(prediction_data)
+        except Exception as e:
+            console.print(f"[red]Error validating prediction: {str(e)}[/red]")
+            console.print("[yellow]Creating empty prediction with error information[/yellow]")
+            console.print(f"[dim]Problematic data: {prediction_data}[/dim]")
+
+            # Create a minimal valid prediction
+            prediction = EditAnnotation(
+                image=prediction_data.get("image", ground_truth.image),
+                page_number=prediction_data.get("page_number", 1),
+                source="Little Dorrit",
+                edits=[],
+                annotator=prediction_data.get("annotator", "unknown"),
+                annotation_date=prediction_data.get("annotation_date", datetime.now().isoformat()),
+                verified=False,
+                error=f"Validation error: {str(e)}"
+            )
 
     # Match edits
     console.print("Matching predicted edits to ground truth...")

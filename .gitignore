@@ -26,6 +26,7 @@ wheels/
 env/
 venv/
 ENV/
+list/
 .python-version
 
 # Testing
@@ -57,12 +58,6 @@ hf_dataset/
 data/hf/
 data/hf_sample/
 data/hf_eval/
-
-# Exclude predictions directory
-predictions/
-
-# Exclude any prediction files (typically generated during testing)
-*_prediction.json
 
 # Exclude local configuration files with API keys
 config/*.local.toml
