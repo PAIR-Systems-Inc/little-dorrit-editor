@@ -67,11 +67,40 @@
     </div>
 
     <h2 class="section-title" id="leaderboard">Performance Leaderboard</h2>
-    <p>
-        All models listed below were tested through <a href="https://openrouter.ai/">OpenRouter</a>,
-        a unified interface for LLMs.
-    </p>
     <div id="leaderboard-table"></div>
+    <p>
+        Most models listed above were tested through <a href="https://openrouter.ai/">OpenRouter</a>,
+        a unified interface for LLMs. The GPT models were also tested on the api.openai.com
+        endpoint, so the OpenRouter versions are suffixed with "OR".
+    </p>
+    <p>
+        The notes below are not comprehensive, but document some of our observations
+        during testing.
+        <ol>
+            <li>
+                Claude Sonnet 3.7 fails due to the image size:
+                <tt>messages.0.content.1.image.source.base64: image exceeds
+                    5 MB maximum: 7586472 bytes > 5242880 bytes
+                </tt>
+            </li>
+            <li>
+                Grok 2 Vision 1212 and OpenAI o1-pro continuously fail with
+                errors in response indicating that a valid JSON was not returned.
+                <tt>
+                    Error: 'NoneType' object is not subscriptable
+                </tt>
+            </li>
+            <li>
+                Phi 4 Multimodal Instruct and Qwen VL Plus repeatedly returned
+                unparseable JSON:
+                <tt>
+                    Error: Could not parse JSON from model response: Could not
+                    extract valid JSON from response: ...
+                </tt>
+            </li>
+
+        </ol>
+    </p>
 
     <h2 class="section-title" id="detailed">Detailed Model Performance</h2>
     <div id="model-performance-table"></div>
