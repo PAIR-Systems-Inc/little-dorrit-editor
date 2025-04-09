@@ -446,11 +446,39 @@ async function prepareModelPerformanceData() {
                 fileFn = totalFn;
             }
 
-            // Add file row
+            // Add file row with its own children for runs
             const fileId = file.file_id || file.id || "unknown";
-            modelRow._children.push({
-                id: `${modelData.model_name}-${fileId}`,
-                model: `File ${fileId}`,
+            const runId = file.run_id || "1";
+            const runDate = file.date || "Unknown";
+            
+            // Format the date for display
+            const formattedDate = runDate.includes("T") 
+                ? new Date(runDate).toLocaleString() 
+                : runDate;
+                
+            // Check if we already have this file in the children
+            let fileRow = modelRow._children.find(child => child.id === `${modelData.model_name}-${fileId}`);
+            
+            if (!fileRow) {
+                // Create a new file row if it doesn't exist
+                fileRow = {
+                    id: `${modelData.model_name}-${fileId}`,
+                    model: `File ${fileId}`,
+                    precision: filePrecision,
+                    recall: fileRecall,
+                    f1_score: fileF1,
+                    true_positives: fileTp,
+                    false_positives: fileFp,
+                    false_negatives: fileFn,
+                    _children: []  // This will contain individual runs
+                };
+                modelRow._children.push(fileRow);
+            }
+            
+            // Add the current run as a child of the file row
+            fileRow._children.push({
+                id: `${modelData.model_name}-${fileId}-${runId}-${runDate}`,
+                model: `Run ${formattedDate}`,
                 precision: filePrecision,
                 recall: fileRecall,
                 f1_score: fileF1,
@@ -458,6 +486,32 @@ async function prepareModelPerformanceData() {
                 false_positives: fileFp,
                 false_negatives: fileFn
             });
+            
+            // Update file row metrics by summing all runs
+            if (fileRow._children.length > 1) {
+                // Sum up TP, FP, FN across all runs
+                let totalFileTp = 0, totalFileFp = 0, totalFileFn = 0;
+                
+                fileRow._children.forEach(run => {
+                    totalFileTp += run.true_positives || 0;
+                    totalFileFp += run.false_positives || 0;
+                    totalFileFn += run.false_negatives || 0;
+                });
+                
+                // Recalculate metrics based on sums
+                const filePrecision = totalFileTp / (totalFileTp + totalFileFp) || 0;
+                const fileRecall = totalFileTp / (totalFileTp + totalFileFn) || 0;
+                const fileF1 = fBetaScore(filePrecision, fileRecall);
+                
+                // Update file row with aggregated metrics
+                fileRow.precision = filePrecision;
+                fileRow.recall = fileRecall;
+                fileRow.f1_score = fileF1;
+                fileRow.true_positives = totalFileTp;
+                fileRow.false_positives = totalFileFp;
+                fileRow.false_negatives = totalFileFn;
+                fileRow.model = `File ${fileId} (${fileRow._children.length} runs)`;
+            }
         }
 
         performanceData.push(modelRow);
@@ -476,13 +530,14 @@ async function createModelPerformanceTable() {
         layout: "fitColumns",
         dataTree: true,
         dataTreeStartExpanded: false,
-        dataTreeChildIndent: 20,
+        dataTreeChildIndent: 15,
+        dataTreeBranchElement: "<span class='tabulator-data-tree-branch'></span>",
         initialSort: [{ column: "f1_score", dir: "desc" }], // Sort by F1 score descending
         columns: [
             {
-                title: "Model / File",
+                title: "Model / File / Run",
                 field: "model",
-                widthGrow: 3,
+                widthGrow: 4,
                 resizable: true
             },
             {
