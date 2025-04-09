@@ -1,0 +1,307 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "down, a",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "down a",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "red, hot",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "red hot",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sky, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "sky and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lighthouse, high",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "lighthouse high",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "rock, began",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "rock began",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "light, and",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "light and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boats, and",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "boats and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison, with",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "prison with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "windows, showed",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "windows showed",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "black, and",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "black and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Then, the",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "Then the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "city, and",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "city and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hills, began",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "hills began",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twinkle, here",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "twinkle here",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "there, with",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "there with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lights; and",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "lights and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sky, and",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "sky and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, grew",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "shore grew",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "darker, and",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "darker and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "darker.",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "darker",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Then, the",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "Then the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heavily-shaded",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "heavily shaded",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "in, and",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "in and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "table.",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "table",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Then, the",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "Then the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "closed, and",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "closed and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "drawn, and",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "drawn and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "room, seemed",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "room seemed",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "world.",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "world",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lighted, the",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "lighted the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it.",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "it",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T00:35:04.507520",
+  "verified": false
+}

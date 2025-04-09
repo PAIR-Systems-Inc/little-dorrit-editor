@@ -1,0 +1,45 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "grating (seamed all over the back with ugly scratches newly healed)",
+      "corrected_text": "grating, (seamed all over the back with ugly scratches newly healed)",
+      "line_number": 10,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "would have been unusually white but for the prison grime.",
+      "corrected_text": "would have been unusually white, but for the prison grime.",
+      "line_number": 11,
+      "page": "001"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "terrace-gardens",
+      "line_number": 46,
+      "page": "001"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "marseilles harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 46,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Civita Vecchia, So away to \u2014 hey!",
+      "corrected_text": "Civita Vecchia, So away to \u2014 hey!",
+      "line_number": 46,
+      "page": "001"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T19:54:57.160863",
+  "verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "crash.",
+      "corrected_text": "crash,",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "horse rattled",
+      "corrected_text": "horse, rattled",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "cafe",
+      "corrected_text": "caf\u00e9",
+      "line_number": 56,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T00:33:26.844133",
+  "verified": false
+}

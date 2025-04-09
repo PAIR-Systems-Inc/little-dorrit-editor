@@ -1,0 +1,82 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "much accustomed",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "much accus-",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a lock-maker;",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "a lock-maker",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "years more.",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "years more",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Germany, and",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "Germany and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "felt, and",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "felt and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Stillstalk-",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "Stillstalk",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "whom he",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "whom",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "loftier.",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "loftier",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T19:19:28.568576",
+  "verified": false
+}

@@ -1,0 +1,38 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "said",
+      "corrected_text": "",
+      "line_number": 30,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "asked",
+      "line_number": 30,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "I",
+      "line_number": 29,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "can",
+      "line_number": 29,
+      "page": "209"
+    }
+  ],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-07T23:56:39.336786",
+  "verified": false
+}

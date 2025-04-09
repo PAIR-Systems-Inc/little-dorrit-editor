@@ -1,0 +1,55 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sunlight, and",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "sunlight and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "doorway, where",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "doorway where",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "well-built",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "well built",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "English Channel",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "english channel",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "smiled, and",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "smiled and",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:27:21.139274",
+  "verified": false
+}

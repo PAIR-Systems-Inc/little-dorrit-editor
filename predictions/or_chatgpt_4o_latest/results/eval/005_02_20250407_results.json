@@ -1,0 +1,36 @@
+{
+  "model_name": "or_chatgpt_4o_latest",
+  "date": "2025-04-08T23:32:44.172915",
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T22:12:01.481859",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 35,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted type 'capitalization' exactly matches the ground truth edit type. Regarding the text content accuracy, the prediction correctly identifies the capitalization change from 'if' to 'If'. The ground truth indicates the original text as 'if he' changing to 'If he', whereas the prediction isolates the essential edited word 'if' changing to 'If'. This captures precisely the core intended change. Additional context words included or omitted by prediction are acceptable as per the instructions, as long as the core edit ('if' to 'If') is accurately captured. Thus, the prediction is correct and aligns accurately with the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 38,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit correctly identifies the edit type as 'replacement', matching exactly with the ground truth. It specifically captures the core textual edit from 'said' to 'asked', exactly as per the ground truth intention ('said Clennam' \u2192 'asked Clennam'). The difference in included context ('said' versus 'said Clennam') does not affect accuracy, as the evaluation instructions explicitly allow for differences in additional context. Therefore, the prediction accurately captures both the type and the essential text correction of the intended edit."
+    }
+  ]
+}

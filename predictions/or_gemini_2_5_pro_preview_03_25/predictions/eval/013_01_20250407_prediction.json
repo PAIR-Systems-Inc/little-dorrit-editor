@@ -1,0 +1,469 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "August,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "August",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "thirty-five",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "thirty five",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sun",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "water,",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "water",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blinds,",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "blinds",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "awnings,",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "awnings",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dust,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "dust",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dirt,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "dirt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soap,",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "soap",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "oil,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "oil",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fat,",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "fat",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "offal,",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "offal",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "streets,",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "streets",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "houses,",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "houses",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "doors,",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "windows,",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "windows",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shutters,",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "shutters",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "churches,",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "churches",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bells,",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "bells",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "barns,",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "barns",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dung-hills",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "dung hills",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dung-hills,",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "dung-hills",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prisons,",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "prisons",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prisoners,",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "prisoners",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "palaces,",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "palaces",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "riches,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "riches",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poverty,",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "poverty",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "pools,",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "pools",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fountains,",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "fountains",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "people,",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "people",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beasts,",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "beasts",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "flies,",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "flies",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dogs,",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "dogs",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "men,",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "men",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "women,",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "women",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "children,",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "children",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "inside,",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "inside",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "outside,",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "outside",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "water,",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "water",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "land,",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "land",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "everything,",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "everything",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun,",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "sun",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade,",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "shade",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "high,",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "high",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "low,",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "low",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "air,",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "air",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "water,",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "water",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sky,",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "sky",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earth,",
+      "line_number": 48,
+      "notes": null,
+      "original_text": "earth",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-07T21:14:32.381644",
+  "verified": false
+}

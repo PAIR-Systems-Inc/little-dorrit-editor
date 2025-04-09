@@ -1,0 +1,37 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne-hyphen",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Sa\u00f4ne hyphen",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "slowly moving",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "slowlymoving",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with wet;",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "with wet",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-08T11:48:37.545994",
+  "verified": false
+}

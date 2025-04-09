@@ -1,0 +1,31 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "poplar-trees",
+      "corrected_text": "poplar trees",
+      "line_number": 10,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons,was",
+      "corrected_text": "Chalons was",
+      "line_number": 14,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "footsores,",
+      "corrected_text": "footsores",
+      "line_number": 18,
+      "page": "137"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-08T06:06:44.887354",
+  "verified": false
+}

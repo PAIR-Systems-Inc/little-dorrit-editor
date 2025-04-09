@@ -1,0 +1,50 @@
+{
+  "model_name": "or_gpt_4o_mini",
+  "date": "2025-04-08T23:47:18.953164",
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T21:47:04.719963",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 34,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The edit type matches exactly ('capitalization') for both the ground truth and predicted edit. Regarding text content accuracy, the ground truth corrected 'if he' to 'If he', while the predicted corrected only 'if' to 'If'. The essential modification\u2014the capitalization of 'if' to 'If'\u2014is fully and correctly captured by the prediction. The additional word 'he' provided in the ground truth does not affect the core change, because the capitalization edit itself is correctly identified and implemented in the prediction. Therefore, the prediction faithfully represents the intent of the ground truth correction and is considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "observed_line_number": 38,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "replacement",
+      "original_text": "said Clennam",
+      "corrected_text": "asked Clennam",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

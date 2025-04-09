@@ -1,0 +1,24 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "papa",
+      "corrected_text": "Papa",
+      "line_number": 9,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "he",
+      "corrected_text": "He",
+      "line_number": 16,
+      "page": "368"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T20:05:45.847380",
+  "verified": false
+}

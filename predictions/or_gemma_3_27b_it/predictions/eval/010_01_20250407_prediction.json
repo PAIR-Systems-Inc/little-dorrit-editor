@@ -1,0 +1,64 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "ter on his arm",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "ter on his",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hers, and",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "hers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with a",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "with",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "for his peace",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "for hispeace",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "they are",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "theyare",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "much longer",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "muchlong",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T19:21:45.450133",
+  "verified": false
+}

@@ -1,0 +1,109 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "highroad",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "about and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "association, did",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "association did",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "uneasy on",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "uneasy",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "for what,",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "for what",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam!\u2014Tattycoram!",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "Clennam Tattycoram!",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam,",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "Clennam",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "five-and-twenty,",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "five and twenty",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "girl's",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "girls",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T19:01:31.734494",
+  "verified": false
+}

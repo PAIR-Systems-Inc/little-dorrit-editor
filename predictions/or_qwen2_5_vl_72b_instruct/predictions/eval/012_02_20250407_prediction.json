@@ -1,0 +1,59 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 2,
+      "page": "373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "to",
+      "line_number": 3,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "familiar with them",
+      "corrected_text": "familiar with them;",
+      "line_number": 8,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at the hour when we were personally sequestered from it",
+      "corrected_text": "existence at the hour when we were personally sequestered from it;",
+      "line_number": 10,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when we were brought to a stand-still",
+      "corrected_text": "motionless when we were brought to a stand-still;",
+      "line_number": 11,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by any larger standard than the shrunken one of our own uniform and contracted existence",
+      "corrected_text": "view by any larger standard than the shrunken one of our own uniform and contracted existence;",
+      "line_number": 12,
+      "page": "373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 17,
+      "page": "373"
+    }
+  ],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-08T00:01:53.290022",
+  "verified": false
+}

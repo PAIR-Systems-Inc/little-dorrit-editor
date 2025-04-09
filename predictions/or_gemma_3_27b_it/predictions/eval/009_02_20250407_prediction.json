@@ -1,0 +1,64 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart so",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "heart.",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mr.",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "indeed",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cAnd",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "and",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cOh!",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "\u201cOh",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T20:40:49.962176",
+  "verified": false
+}

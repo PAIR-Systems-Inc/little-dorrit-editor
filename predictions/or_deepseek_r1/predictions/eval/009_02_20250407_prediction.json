@@ -1,0 +1,45 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sun light",
+      "corrected_text": "sun-light",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dark,blue",
+      "corrected_text": "dark blue",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "captain smith",
+      "corrected_text": "Captain Smith",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sea;and",
+      "corrected_text": "sea, and",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "broken--",
+      "corrected_text": "broken\u2014",
+      "line_number": 30,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:35:16.533888",
+  "verified": false
+}

@@ -1,0 +1,22 @@
+{
+  "model_name": "or_llama_3_2_90b_vision_instruct",
+  "date": "2025-04-08T23:37:23.468613",
+  "annotator": "Llama 3.2 90B Vision Instruct",
+  "annotation_date": "2025-04-08T12:50:52.549802",
+  "details": [
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 0,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

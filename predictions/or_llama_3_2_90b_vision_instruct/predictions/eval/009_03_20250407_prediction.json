@@ -1,0 +1,11 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Llama 3.2 90B Vision Instruct",
+  "annotation_date": "2025-04-08T13:08:21.549614",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"I could never have been afraid of trusting you\",\n      \"line_number\": 1,\n      \"note...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"I could never have been afraid of trusting you\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_text\": \"I could never have been afraid of trusting you\",\n      \"page\": \"003.png\",\n      \"type\": \"italicize\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"heart, so much to its pain and trouble\",\n      \"line_number\": 6,\n      \"notes\": null,\n      \"original_text\": \"heart so much to its pain and trouble\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"in his own eyes, as to any similar hope or prospect\",\n      \"line_number\": 7,\n      \"notes\": null,\n      \"original_text\": \"in his own eyes as to any similar hope or prospect\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"He put the roses in his breast and they walked on for a little while\",\n      \"line_num"
+}

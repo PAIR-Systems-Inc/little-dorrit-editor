@@ -1,0 +1,52 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XI.",
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Let Loose ,",
+      "corrected_text": "Let Loose.",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Sa\u00f4ne. The",
+      "corrected_text": "Sa\u00f4ne. the",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sodden with wet;",
+      "corrected_text": "soddened with wet;",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "the wa-",
+      "corrected_text": "the hyphen",
+      "line_number": 13,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o Mini",
+  "annotation_date": "2025-04-07T19:43:45.052827",
+  "verified": false
+}

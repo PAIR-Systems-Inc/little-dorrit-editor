@@ -1,0 +1,11 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T22:07:55.041528",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"type\": \"deletion\",\n      \"original_text\": \"bedx\",\n      \"corrected_text\": \"bed\",\n      \"line_number\": 1,\n      \"page\": \"452\"\n   ...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"type\": \"deletion\",\n      \"original_text\": \"bedx\",\n      \"corrected_text\": \"bed\",\n      \"line_number\": 1,\n      \"page\": \"452\"\n    },\n    {\n      \"type\": \"replacement\",\n      \"original_text\": \"excited\",\n      \"corrected_text\": \"excited\",\n      \"line_number\": 3,\n      \"page\": \"452\"\n    },\n    {\n      \"type\": \"replacement\",\n      \"original_text\": \"another\",\n      \"corrected_text\": \"another\",\n      \"line_number\": 4,\n      \"page\": \"452\"\n    },\n    {\n      \"type\": \"replacement\",\n      \"original_text\": \"hearty\",\n      \"corrected_text\": \"hearty\",\n      \"line_number\": 5,\n      \"page\": \"452\"\n    },\n    {\n      \"type\": \"replacement\",\n      \"original_text\": \"Clennam\",\n      \"corrected_text\": \"Clennam\",\n      \"line_number\": 6,\n      \"page\": \"452\"\n    },\n    {\n      \"type\": \"replacement\",\n      \"original_text\": \"Clennam\",\n      \"corrected_text\": \"Clennam\",\n      \"line_number\": 7,\n      \"page\": \"452\"\n    },\n    {\n      \"type\": \"replacement\",\n      \"original_text\": \"Clennam\""
+}

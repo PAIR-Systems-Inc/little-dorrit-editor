@@ -1,0 +1,80 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "occasional jangling of discordant church bells",
+      "corrected_text": "occasional jangling of discordant church bells,",
+      "line_number": 2,
+      "page": "page_5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "wine-bottles",
+      "corrected_text": "all wine-bottles",
+      "line_number": 10,
+      "page": "page_5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "got through",
+      "corrected_text": "got, through",
+      "line_number": 13,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars fashioned",
+      "corrected_text": "bars, fashioned",
+      "line_number": 13,
+      "page": "page_5"
+    },
+    {
+      "type": "insertion",
+      "original_text": "grating",
+      "corrected_text": "grating, where",
+      "line_number": 16,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 28,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "intact in",
+      "corrected_text": "intact, in",
+      "line_number": 29,
+      "page": "page_5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "indian ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 30,
+      "page": "page_5"
+    },
+    {
+      "type": "insertion",
+      "original_text": "was waiting to be fed",
+      "corrected_text": "was waiting to be fed, looking",
+      "line_number": 35,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 35,
+      "page": "page_5"
+    }
+  ],
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T19:50:44.815709",
+  "verified": false
+}

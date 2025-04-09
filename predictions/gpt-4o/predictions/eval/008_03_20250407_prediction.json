@@ -1,0 +1,52 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Saone.",
+      "corrected_text": "Saone,",
+      "line_number": 3,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 8,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 9,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Saone",
+      "corrected_text": "Saone,",
+      "line_number": 10,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 13,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden with",
+      "corrected_text": "soddened with",
+      "line_number": 18,
+      "page": "137"
+    }
+  ],
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-08T08:34:45.009038",
+  "verified": false
+}

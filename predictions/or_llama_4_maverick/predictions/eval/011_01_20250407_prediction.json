@@ -1,0 +1,38 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "in our fancy whatever",
+      "corrected_text": "in our fancy, whatever",
+      "line_number": 10,
+      "page": "page_372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Thank you",
+      "corrected_text": "thank you",
+      "line_number": 16,
+      "page": "page_372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "and",
+      "line_number": 22,
+      "page": "page_372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 31,
+      "page": "page_372"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T19:41:50.675897",
+  "verified": false
+}

@@ -1,0 +1,45 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "highroad",
+      "corrected_text": "high-road",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "association",
+      "corrected_text": "association,",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "behalf",
+      "corrected_text": "behalf,",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "supper",
+      "corrected_text": "supper,",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam",
+      "corrected_text": "Clennam,",
+      "line_number": 20,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T22:48:23.168169",
+  "verified": false
+}

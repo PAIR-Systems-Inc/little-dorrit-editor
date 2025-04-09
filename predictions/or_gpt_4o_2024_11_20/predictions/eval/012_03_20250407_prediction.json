@@ -1,0 +1,59 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 2,
+      "page": "373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "each",
+      "corrected_text": "to each",
+      "line_number": 6,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them",
+      "corrected_text": "them;",
+      "line_number": 12,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence",
+      "corrected_text": "existence;",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it",
+      "corrected_text": "it;",
+      "line_number": 19,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view",
+      "corrected_text": "view;",
+      "line_number": 21,
+      "page": "373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "lord",
+      "corrected_text": "liege lord",
+      "line_number": 30,
+      "page": "373"
+    }
+  ],
+  "annotator": "GPT-4o (2024-11-20 OR)",
+  "annotation_date": "2025-04-08T08:51:54.964677",
+  "verified": false
+}

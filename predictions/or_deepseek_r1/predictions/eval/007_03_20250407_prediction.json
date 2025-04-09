@@ -1,0 +1,31 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sun light",
+      "corrected_text": "sun-light",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "atlantic ocean",
+      "corrected_text": "Atlantic Ocean",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "however he",
+      "corrected_text": "however, he",
+      "line_number": 22,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T20:33:23.257439",
+  "verified": false
+}

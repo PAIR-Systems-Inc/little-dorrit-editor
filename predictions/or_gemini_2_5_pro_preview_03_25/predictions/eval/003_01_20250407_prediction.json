@@ -1,0 +1,433 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "and, in",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "and in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-07T20:59:06.337294",
+  "verified": false
+}

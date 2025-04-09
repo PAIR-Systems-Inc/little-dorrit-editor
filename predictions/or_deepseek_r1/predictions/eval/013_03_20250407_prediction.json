@@ -1,0 +1,59 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "gatsby",
+      "corrected_text": "Gatsby",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shes",
+      "corrected_text": "she's",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty first",
+      "corrected_text": "twenty-first",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "DArcy",
+      "corrected_text": "Darcy",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tree and",
+      "corrected_text": "tree, and",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english",
+      "corrected_text": "English",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "sun-set",
+      "corrected_text": "sunset",
+      "line_number": 7,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T20:47:04.906609",
+  "verified": false
+}

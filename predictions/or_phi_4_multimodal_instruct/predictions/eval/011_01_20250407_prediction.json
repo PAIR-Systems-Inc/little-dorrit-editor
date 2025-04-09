@@ -1,0 +1,91 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "church bells,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "church bells",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wine-bottles",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "wine bottles",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "got, through",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "got through",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "iron bars, fashioned",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "iron bars fashioned",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "grating where",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "outside and",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "intact in",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "indian ocean",
+      "page": "002.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "bars that",
+      "page": "002.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Phi 4 Multimodal Instruct",
+  "annotation_date": "2025-04-07T19:59:15.131655",
+  "verified": false
+}

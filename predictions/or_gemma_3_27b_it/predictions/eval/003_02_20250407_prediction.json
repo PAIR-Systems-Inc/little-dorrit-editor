@@ -1,0 +1,64 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "over yonder to-day, sir, is there?",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "over yonder to-day sir is there",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles people?",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Marseilles people",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "or something.",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "or something",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mar-seilles",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "laugh.",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "laugh",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "for?",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "for",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T20:37:34.445115",
+  "verified": false
+}

@@ -1,0 +1,59 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sun rose",
+      "corrected_text": "sun, rose",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mediterranean",
+      "corrected_text": "Mediterranean",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "blue water",
+      "corrected_text": "azure sea",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "deck and",
+      "corrected_text": "deck, and",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "very",
+      "corrected_text": "",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "Santa Maria",
+      "corrected_text": "<i>Santa Maria</i>",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the port",
+      "corrected_text": "the busy port",
+      "line_number": 22,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-08T00:38:57.971571",
+  "verified": false
+}

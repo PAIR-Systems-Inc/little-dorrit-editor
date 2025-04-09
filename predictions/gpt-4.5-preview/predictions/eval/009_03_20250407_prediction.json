@@ -1,0 +1,45 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "first",
+      "corrected_text": "",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "totally up into his face, with some",
+      "corrected_text": "totally up into his face, indeed, with some",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "thanked him from her heart",
+      "corrected_text": "thanked him with her heart",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "That's well! I hoped so;",
+      "corrected_text": "That's well! I hoped so;",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview",
+  "annotation_date": "2025-04-08T11:34:35.408086",
+  "verified": false
+}

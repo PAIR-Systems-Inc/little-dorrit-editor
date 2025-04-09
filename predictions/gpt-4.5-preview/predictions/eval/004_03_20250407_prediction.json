@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stones!",
+      "corrected_text": "stones!\"",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview",
+  "annotation_date": "2025-04-08T11:25:58.998990",
+  "verified": false
+}

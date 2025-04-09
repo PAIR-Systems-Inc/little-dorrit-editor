@@ -1,0 +1,17 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "italicize",
+      "original_text": "they are to be married",
+      "corrected_text": "they are to be married",
+      "line_number": 25,
+      "page": "368"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T22:05:35.623530",
+  "verified": false
+}

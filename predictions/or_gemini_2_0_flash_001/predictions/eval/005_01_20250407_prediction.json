@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "line_number": 77,
+      "page": "309"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "asked",
+      "corrected_text": "Asked",
+      "line_number": 79,
+      "page": "309"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-07T22:21:06.506358",
+  "verified": false
+}

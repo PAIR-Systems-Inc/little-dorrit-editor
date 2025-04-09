@@ -1,0 +1,395 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sea and",
+      "corrected_text": "sea, and",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore and",
+      "corrected_text": "shore, and",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "light-house",
+      "corrected_text": "light-house,",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hills",
+      "corrected_text": "hills,",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "harbour-quays",
+      "corrected_text": "harbour-quays,",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ships, how",
+      "corrected_text": "ships; how",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "town and",
+      "corrected_text": "town, and",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "below and",
+      "corrected_text": "below, and",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the streets",
+      "corrected_text": "the noisy streets",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "squares, how",
+      "corrected_text": "squares; how",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the light",
+      "corrected_text": "the lightest light",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the dark",
+      "corrected_text": "the darkest dark",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "air, and",
+      "corrected_text": "air; and",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the country",
+      "corrected_text": "the distant country",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "country all",
+      "corrected_text": "country were all",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "together, in",
+      "corrected_text": "together; in",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "varying",
+      "corrected_text": "Varying",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Varying restless",
+      "corrected_text": "Varying, restless",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "restless dreaming",
+      "corrected_text": "restless, dreaming",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dreaming rather",
+      "corrected_text": "dreaming, rather",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Reality,",
+      "corrected_text": "Reality.",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time",
+      "corrected_text": "time,",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "his in",
+      "corrected_text": "his competence in",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "profession, the",
+      "corrected_text": "profession; the",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the departure",
+      "corrected_text": "the first departure",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "voyage, the",
+      "corrected_text": "voyage; the",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the arrival",
+      "corrected_text": "the first arrival",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "port, the",
+      "corrected_text": "port; the",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the sight",
+      "corrected_text": "the first sight",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore, the",
+      "corrected_text": "shore; the",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the day",
+      "corrected_text": "the first day",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "East, the",
+      "corrected_text": "East; the",
+      "line_number": 29,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "home, the",
+      "corrected_text": "home; the",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the promotion",
+      "corrected_text": "the first promotion",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "promotion, the",
+      "corrected_text": "promotion; the",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "command, the",
+      "corrected_text": "command; the",
+      "line_number": 33,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "first service",
+      "corrected_text": "first active service",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "service, the",
+      "corrected_text": "service; the",
+      "line_number": 35,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "first attack",
+      "corrected_text": "first hostile attack",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "attack, the",
+      "corrected_text": "attack; the",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "he flew",
+      "corrected_text": "he ever flew",
+      "line_number": 38,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "flew the flag",
+      "corrected_text": "flew the English flag",
+      "line_number": 39,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "flag, the",
+      "corrected_text": "flag; the",
+      "line_number": 39,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "he headed",
+      "corrected_text": "he ever headed",
+      "line_number": 40,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "headed the of",
+      "corrected_text": "headed the defence of",
+      "line_number": 41,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "post, and",
+      "corrected_text": "post; and",
+      "line_number": 42,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "his wound",
+      "corrected_text": "his first wound",
+      "line_number": 43,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wound, what",
+      "corrected_text": "wound. What",
+      "line_number": 44,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "a of",
+      "corrected_text": "a crowding of",
+      "line_number": 45,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "memories, what",
+      "corrected_text": "memories! What",
+      "line_number": 46,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "life had",
+      "corrected_text": "life he had",
+      "line_number": 47,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "led, what",
+      "corrected_text": "led! What",
+      "line_number": 48,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "captures escapes",
+      "corrected_text": "captures, escapes",
+      "line_number": 49,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "escapes and",
+      "corrected_text": "escapes, and",
+      "line_number": 49,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "preservations.",
+      "corrected_text": "preservations!",
+      "line_number": 50,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T00:39:50.569302",
+  "verified": false
+}

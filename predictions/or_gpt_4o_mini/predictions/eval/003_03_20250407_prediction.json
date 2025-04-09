@@ -1,0 +1,66 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "to-day",
+      "corrected_text": "to-day,",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "to-day.",
+      "corrected_text": "to-day!",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "to-day.",
+      "corrected_text": "to-day!",
+      "line_number": 39,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Marseilles,",
+      "corrected_text": "Marseilles.",
+      "line_number": 41,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "allong",
+      "corrected_text": "along",
+      "line_number": 45,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "marshong",
+      "corrected_text": "marshong.",
+      "line_number": 45,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "to-day.",
+      "corrected_text": "to-day!",
+      "line_number": 49,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "to-day.",
+      "corrected_text": "to-day!",
+      "line_number": 51,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-08T06:31:18.703268",
+  "verified": false
+}

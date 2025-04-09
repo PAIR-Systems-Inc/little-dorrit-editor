@@ -1,0 +1,45 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "red blue",
+      "corrected_text": "red, blue",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "nile river",
+      "corrected_text": "Nile River",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "well known",
+      "corrected_text": "well-known",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "andso",
+      "corrected_text": "and so",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mr. smith",
+      "corrected_text": "Mr. Smith",
+      "line_number": 30,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:04:06.381063",
+  "verified": false
+}

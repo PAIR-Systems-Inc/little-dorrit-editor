@@ -1,0 +1,361 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "the sun, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "the sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the sea, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "the sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the city, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "the city and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the country, rose",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "the country rose",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, on",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Marseilles on",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "day, lay",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "day lay",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "glare, and",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "glare and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heat, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "heat and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "noise, and",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "noise and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dirt, and",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "dirt and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stench, and",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "stench and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sickness, and",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "sickness and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "faintness, were",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "faintness were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, in",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "Marseilles in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "summer, is",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "summer is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stewed, and",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "stewed and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fried, and",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "fried and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "baked, and",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "baked and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "broiled, and",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "broiled and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "simmered, and",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "simmered and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "steamed, and",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "steamed and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "served up.",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "served up",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-baked",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "sun baked",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-cracked",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "sun cracked",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-blistered",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "sun blistered",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dried",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "sun dried",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-scorched",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "sun scorched",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-smitten",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "sun smitten",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-fevered",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "sun fevered",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-struck",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "sun struck",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-blinds",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "sun blinds",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-shades",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "sun shades",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-umbrellas",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "sun umbrellas",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-hats",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "sun hats",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-bonnets",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "sun bonnets",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-caps",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "sun caps",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-helmets",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "sun helmets",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-strokes",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "sun strokes",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T11:18:51.420969",
+  "verified": false
+}

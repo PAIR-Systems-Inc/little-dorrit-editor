@@ -1,0 +1,45 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sun light",
+      "corrected_text": "sun-light",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "captain who",
+      "corrected_text": "captain, who",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english channel",
+      "corrected_text": "English Channel",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "well known",
+      "corrected_text": "well-known",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and then",
+      "corrected_text": "and, then",
+      "line_number": 30,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:20:23.716864",
+  "verified": false
+}

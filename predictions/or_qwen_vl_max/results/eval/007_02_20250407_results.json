@@ -1,0 +1,22 @@
+{
+  "model_name": "or_qwen_vl_max",
+  "date": "2025-04-08T23:20:00.290372",
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T22:04:16.824744",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth exactly in both specified criteria. Firstly, the edit type is exactly the same ('punctuation'). Secondly, the text content accurately captures the core change from 'Sun and Shadow' to 'Sun and Shadow.' by adding the period at the end, precisely matching the intention in the ground truth. Therefore, the prediction is fully correct."
+    }
+  ]
+}

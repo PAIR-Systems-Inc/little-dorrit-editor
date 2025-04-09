@@ -1,0 +1,52 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sail boat",
+      "corrected_text": "sail-boat",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english channel",
+      "corrected_text": "English Channel",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and then",
+      "corrected_text": "and, then",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "tomatoe",
+      "corrected_text": "tomato",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "captain smith",
+      "corrected_text": "Captain Smith",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "fastly",
+      "corrected_text": "quickly",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:11:21.463767",
+  "verified": false
+}

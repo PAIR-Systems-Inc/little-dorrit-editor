@@ -1,0 +1,55 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Mr. Casby\u2019s.",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Mr. Casby\u2019s",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "breakfast-room.",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "breakfast room.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "at any time,",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "at any time",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "considerably",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "considerable",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Do",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "do",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T19:24:05.437412",
+  "verified": false
+}

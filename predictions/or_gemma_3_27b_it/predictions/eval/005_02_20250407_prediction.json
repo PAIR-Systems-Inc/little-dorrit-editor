@@ -1,0 +1,73 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "much accustomed",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "much accus-",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "in his discovery,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "in his discovery",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lock-maker; which",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "lock-maker, which",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "years more.",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "years more",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cumlocution Office",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "cumlocution Office",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stillstalk-",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "stillstalk",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "whom he",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "whom",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T20:38:30.869051",
+  "verified": false
+}

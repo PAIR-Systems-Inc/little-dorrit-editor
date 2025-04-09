@@ -1,0 +1,37 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "said Clennam.",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "said Clennam",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "true to a certain extent.",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "true to a certain extent",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T22:47:59.708432",
+  "verified": false
+}

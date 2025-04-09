@@ -1,0 +1,87 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "italicize",
+      "original_text": "OF",
+      "corrected_text": "OF",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ONE CHAPTER",
+      "corrected_text": "ONE, CHAPTER",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "1",
+      "corrected_text": "1.",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "MARSEILLES THE",
+      "corrected_text": "MARSEILLES\u2014THE",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "spoke and",
+      "corrected_text": "spoke, and",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white but",
+      "corrected_text": "white, but",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating where",
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "marseilles harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia so",
+      "corrected_text": "Vecchia. So",
+      "line_number": 46,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:09:44.512640",
+  "verified": false
+}

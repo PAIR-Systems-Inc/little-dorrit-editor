@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 5,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "boiling-over",
+      "corrected_text": "that boiling-over",
+      "line_number": 11,
+      "page": "page_451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "*him*",
+      "line_number": 26,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I authorise you",
+      "corrected_text": "I authorise you now",
+      "line_number": 35,
+      "page": "page_451"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T20:35:31.196537",
+  "verified": false
+}

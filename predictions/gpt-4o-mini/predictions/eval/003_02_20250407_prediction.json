@@ -1,0 +1,66 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "yonder to-day, Sir,",
+      "corrected_text": "yonder to-day, sir,",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to be heard.",
+      "corrected_text": "to be heard.",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "happy other-wise.",
+      "corrected_text": "happy otherwise.",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "insurrectionary tune into",
+      "corrected_text": "insurrectionary tune into",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "something or other \u2014",
+      "corrected_text": "something or other\u2014",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "business, instead of shutting 'em in quarantine!",
+      "corrected_text": "business instead of shutting 'em in quarantine!",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day.",
+      "corrected_text": "to-day.",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day! What have we ever been in for?",
+      "corrected_text": "to-day! What have we ever been in for?",
+      "line_number": 24,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o Mini",
+  "annotation_date": "2025-04-07T21:33:12.387968",
+  "verified": false
+}

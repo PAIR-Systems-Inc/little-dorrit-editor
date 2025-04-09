@@ -1,0 +1,38 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "hers",
+      "corrected_text": "her",
+      "line_number": 17,
+      "page": "368.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "hers",
+      "corrected_text": "her",
+      "line_number": 18,
+      "page": "368.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "peace",
+      "corrected_text": "peace,",
+      "line_number": 26,
+      "page": "368.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "At this, he thought directly,",
+      "corrected_text": "At this he thought, directly,",
+      "line_number": 32,
+      "page": "368.png"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T19:41:28.100026",
+  "verified": false
+}

@@ -1,0 +1,22 @@
+{
+  "model_name": "or_mistral_small_3_1_24b_instruct",
+  "date": "2025-04-08T22:18:41.870591",
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T19:01:55.424907",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit type accuracy: The edit types match exactly ('punctuation' in both cases). Text content accuracy: The predicted edit correctly captures the essential change stated by the ground truth\u2014adding a period after 'Sun and Shadow'. Since both criteria are met perfectly, the predicted edit is correct."
+    }
+  ]
+}

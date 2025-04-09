@@ -1,0 +1,55 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sun-light",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "sunlight",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "English",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "english",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Coast",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "coast",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bread, and",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "bread and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wine-barrels",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "winebarrels",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:07:20.621208",
+  "verified": false
+}

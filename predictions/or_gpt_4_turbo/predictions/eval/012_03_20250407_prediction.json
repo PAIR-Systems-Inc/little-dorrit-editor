@@ -1,0 +1,45 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "city",
+      "corrected_text": "city (CCQ)",
+      "line_number": 6,
+      "page": "Chapter XXIX"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "lucrative",
+      "line_number": 10,
+      "page": "Chapter XXIX"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence",
+      "corrected_text": "existence;",
+      "line_number": 16,
+      "page": "Chapter XXIX"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence",
+      "corrected_text": "existence;",
+      "line_number": 18,
+      "page": "Chapter XXIX"
+    },
+    {
+      "type": "replacement",
+      "original_text": "liege",
+      "corrected_text": "liege lord",
+      "line_number": 24,
+      "page": "Chapter XXIX"
+    }
+  ],
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-08T06:19:54.337922",
+  "verified": false
+}

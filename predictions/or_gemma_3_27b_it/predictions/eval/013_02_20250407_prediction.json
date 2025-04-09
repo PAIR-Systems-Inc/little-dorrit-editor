@@ -1,0 +1,37 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts.",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "driest of snorts",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cItalicize",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "Italicize",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Italics at",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "Italics",
+      "page": "003.png",
+      "type": "italicize"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T20:42:48.866477",
+  "verified": false
+}

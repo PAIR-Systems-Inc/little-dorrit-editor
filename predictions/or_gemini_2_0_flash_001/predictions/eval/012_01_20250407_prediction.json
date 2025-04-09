@@ -1,0 +1,46 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "city",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "fity",
+      "page": "373.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to",
+      "line_number": 3,
+      "notes": null,
+      "original_text": null,
+      "page": "373.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existed at",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "existedat",
+      "page": "373.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "legel",
+      "page": "373.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-07T22:23:27.920945",
+  "verified": false
+}

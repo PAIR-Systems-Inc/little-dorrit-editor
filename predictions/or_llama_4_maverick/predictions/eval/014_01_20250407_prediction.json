@@ -1,0 +1,115 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "details",
+      "corrected_text": "details,",
+      "line_number": 5,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Rugg",
+      "corrected_text": "Rugg'",
+      "line_number": 7,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "back",
+      "corrected_text": "back,",
+      "line_number": 7,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam",
+      "corrected_text": "Clennam,",
+      "line_number": 9,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time",
+      "corrected_text": "time,",
+      "line_number": 12,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him",
+      "corrected_text": "him,",
+      "line_number": 19,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sight",
+      "corrected_text": "sight,",
+      "line_number": 21,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "check",
+      "corrected_text": "check,",
+      "line_number": 21,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "skirt",
+      "corrected_text": "skirt,",
+      "line_number": 24,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "starched",
+      "corrected_text": "starched,",
+      "line_number": 25,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "visit",
+      "corrected_text": "visit,",
+      "line_number": 26,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Finching",
+      "corrected_text": "Finching,",
+      "line_number": 27,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "head",
+      "corrected_text": "head,",
+      "line_number": 35,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam",
+      "corrected_text": "Clennam,",
+      "line_number": 37,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it",
+      "corrected_text": "it,",
+      "line_number": 41,
+      "page": "page_452"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T19:43:03.041090",
+  "verified": false
+}

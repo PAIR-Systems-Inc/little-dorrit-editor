@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "my child",
+      "corrected_text": "my child,",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "why did he dine",
+      "corrected_text": "why did he dine to",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "the cold stones",
+      "corrected_text": "the cold stones?",
+      "line_number": 27,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-08T06:32:11.972436",
+  "verified": false
+}

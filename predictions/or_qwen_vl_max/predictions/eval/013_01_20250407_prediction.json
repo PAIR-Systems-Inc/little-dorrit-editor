@@ -1,0 +1,31 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "driest of snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 4,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence",
+      "corrected_text": "benevolence",
+      "line_number": 18,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorize",
+      "line_number": 22,
+      "page": "451"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T20:00:46.027126",
+  "verified": false
+}

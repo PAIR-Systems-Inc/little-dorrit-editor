@@ -1,0 +1,52 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "that",
+      "corrected_text": "",
+      "line_number": 7,
+      "page": "372"
+    },
+    {
+      "type": "deletion",
+      "original_text": "whatever",
+      "corrected_text": "",
+      "line_number": 7,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "\"Thank you,\"",
+      "line_number": 11,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore and",
+      "corrected_text": "shore, and",
+      "line_number": 20,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "within-doors",
+      "line_number": 22,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that once",
+      "corrected_text": "than",
+      "line_number": 27,
+      "page": "372"
+    }
+  ],
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T23:13:53.490568",
+  "verified": false
+}

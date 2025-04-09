@@ -1,0 +1,52 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "rose or two from hers",
+      "corrected_text": "rose or two from her",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on her matters",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment, with",
+      "corrected_text": "moment; with",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that papa had abandoned",
+      "corrected_text": "that Papa had abandoned",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they are to be married.",
+      "corrected_text": "They are to be married.",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "confidence, if",
+      "corrected_text": "confidence; if",
+      "line_number": 23,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T20:26:39.856370",
+  "verified": false
+}

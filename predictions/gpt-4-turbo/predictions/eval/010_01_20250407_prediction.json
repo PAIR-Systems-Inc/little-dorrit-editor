@@ -1,0 +1,24 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "hers",
+      "corrected_text": "cap",
+      "line_number": 12,
+      "page": "page_identifier"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they are to be married.",
+      "corrected_text": "They are to be married.",
+      "line_number": 27,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "GPT-4 Turbo",
+  "annotation_date": "2025-04-07T21:15:57.705769",
+  "verified": false
+}

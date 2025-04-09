@@ -1,0 +1,11 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Phi 4 Multimodal Instruct",
+  "annotation_date": "2025-04-07T19:51:22.144137",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"church bells,\",\n      \"line_number\": 2,\n      \"notes\": null,\n      \"original_text\": ...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"church bells,\",\n      \"line_number\": 2,\n      \"notes\": null,\n      \"original_text\": \"church bells\",\n      \"page\": \"001.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"wine-bottles\",\n      \"line_number\": 11,\n      \"notes\": null,\n      \"original_text\": \"wine bottles\",\n      \"page\": \"001.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"got, through\",\n      \"line_number\": 14,\n      \"notes\": null,\n      \"original_text\": \"got through\",\n      \"page\": \"001.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"iron bars, fashioned\",\n      \"line_number\": 17,\n      \"notes\": null,\n      \"original_text\": \"iron bars fashioned\",\n      \"page\": \"001.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"grating, where\",\n      \"line_number\": 29,\n    "
+}

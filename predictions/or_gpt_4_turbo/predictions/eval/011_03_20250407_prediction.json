@@ -1,0 +1,45 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "that in",
+      "corrected_text": "that, in",
+      "line_number": 8,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Thank you",
+      "corrected_text": "Thank you,",
+      "line_number": 16,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "within-doors",
+      "corrected_text": "within doors",
+      "line_number": 23,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "within-doors",
+      "corrected_text": "within doors",
+      "line_number": 25,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that once",
+      "corrected_text": "that once were",
+      "line_number": 31,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-08T06:18:55.972801",
+  "verified": false
+}

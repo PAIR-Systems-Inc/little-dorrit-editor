@@ -1,0 +1,100 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "south-east",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "south east",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "south-west",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "south west",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mediterranean",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "mediterranean",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, which",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "sea which",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-08T00:21:01.786024",
+  "verified": false
+}

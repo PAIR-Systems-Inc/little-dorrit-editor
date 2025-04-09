@@ -1,0 +1,52 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "in paris",
+      "corrected_text": "in Paris",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "cell,which",
+      "corrected_text": "cell, which",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "postoffice",
+      "corrected_text": "post-office",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shes",
+      "corrected_text": "she's",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english channel",
+      "corrected_text": "English Channel",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "captain nemo",
+      "corrected_text": "Captain Nemo",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:44:07.602217",
+  "verified": false
+}

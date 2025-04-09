@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "cap",
+      "corrected_text": "CAP",
+      "line_number": 58,
+      "page": "184.jpg"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "cold stones",
+      "corrected_text": "cold stones?",
+      "line_number": 60,
+      "page": "184.jpg"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-07T23:00:31.667409",
+  "verified": false
+}

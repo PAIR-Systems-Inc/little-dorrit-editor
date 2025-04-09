@@ -1,0 +1,85 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "jangling",
+      "corrected_text": "rattling",
+      "line_number": 2,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "wine-bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 11,
+      "notes": "The edit is to remove a hyphen that was present.",
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "got through",
+      "corrected_text": "go through",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bars fashioned",
+      "corrected_text": "bars fashioned",
+      "line_number": 14,
+      "notes": "The edit is to add a comma after 'bars'.",
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "grating where",
+      "corrected_text": "grating where",
+      "line_number": 17,
+      "notes": "The edit is to add a comma after 'grating'.",
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Indian Ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "notes": "The edit is to capitalize 'Ocean'.",
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "intact in",
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "was waiting to be fed looking",
+      "corrected_text": "was waiting to be fed; looking",
+      "line_number": 36,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "notes": "The edit is to add a comma after 'bars'.",
+      "page": "5"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T19:37:59.628369",
+  "verified": false
+}

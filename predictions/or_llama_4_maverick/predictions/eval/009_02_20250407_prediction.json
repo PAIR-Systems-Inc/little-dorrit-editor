@@ -1,0 +1,31 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "I blame you?",
+      "corrected_text": "I blame you? No!",
+      "line_number": 29,
+      "page": "page_369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "I hoped",
+      "corrected_text": "I hoped so",
+      "line_number": 35,
+      "page": "page_369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "indeed",
+      "corrected_text": "indeed",
+      "line_number": 28,
+      "page": "page_369"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T20:34:02.013570",
+  "verified": false
+}

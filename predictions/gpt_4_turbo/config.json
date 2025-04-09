@@ -1,8 +1,0 @@
-{
-  "model_id": "gpt-4-turbo",
-  "display_name": "GPT-4 Turbo",
-  "shots": 2,
-  "temperature": 0.0,
-  "date": "2025-04-05",
-  "notes": "Benchmark run with 2-shot learning"
-}

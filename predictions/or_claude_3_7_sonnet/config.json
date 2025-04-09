@@ -1,0 +1,8 @@
+{
+  "model_id": "or_claude_3_7_sonnet",
+  "display_name": "Claude 3.7 Sonnet",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-08",
+  "notes": "Benchmark run with 2-shot learning"
+}

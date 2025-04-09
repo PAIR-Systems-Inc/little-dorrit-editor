@@ -1,0 +1,28 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "indeed,",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "indeed",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 29,
+      "notes": null,
+      "original_text": null,
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-08T08:02:10.620280",
+  "verified": false
+}

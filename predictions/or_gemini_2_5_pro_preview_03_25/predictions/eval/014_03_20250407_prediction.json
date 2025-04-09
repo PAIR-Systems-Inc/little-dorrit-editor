@@ -1,0 +1,181 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "down, a",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "down a",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, the",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "shore the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "air, the",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "air the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hills, the",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "hills the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "buildings, the",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "buildings the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lights, the",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "lights the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "life, the",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "life the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "crowd, and",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "crowd and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stir, were",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "stir were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "together\u2014blurred",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "together blurred",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "together, indistinctly",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "together indistinctly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "air, which",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "air which",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "high, began",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "high began",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "yet up;",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "yet up",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soft, shimmering",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "soft shimmering",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "churches, summoning",
+      "line_number": 52,
+      "notes": null,
+      "original_text": "churches summoning",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "congregations, made",
+      "line_number": 54,
+      "notes": null,
+      "original_text": "congregations made",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T21:05:31.391356",
+  "verified": false
+}

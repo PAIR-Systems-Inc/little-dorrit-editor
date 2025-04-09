@@ -1,0 +1,92 @@
+{
+  "model_name": "or_gpt_4o_mini",
+  "date": "2025-04-08T23:44:46.738082",
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T21:46:13.551162",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "the cold stones",
+      "corrected_text": "the cold stones?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly captures the ground truth edit intention. First, edit type accuracy is exact: both the predicted edit and the ground truth edit specify \"punctuation\" as the type. Second, regarding text content accuracy, the essential punctuation change \"cold stones!\" \u2192 \"cold stones?\" is precisely matched. The predicted edit includes additional context (\"the cold stones\" rather than just \"cold stones\"), but as per given evaluation criteria, adding extra context is acceptable and does not impact correctness. Thus, both criteria (edit type and core content) are satisfied."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "my child",
+      "corrected_text": "my child.",
+      "observed_line_number": 36,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "csp",
+      "corrected_text": "CSP",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "why did he dine",
+      "corrected_text": "why did he dine to",
+      "observed_line_number": 29,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "why did he dine",
+      "corrected_text": "Why did he dine",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

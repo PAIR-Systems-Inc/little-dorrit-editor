@@ -1,0 +1,46 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "over yonder to-day, sir; is there?",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "o more of yesterday's howling over yonder to-day, sir, is there?",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "along and marshong",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "along and marshong",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "out to-day.",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "out to-day",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-08T11:45:48.021799",
+  "verified": false
+}

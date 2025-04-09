@@ -1,0 +1,31 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "howling over yonder to-day",
+      "corrected_text": "howling, over yonder to-day",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sir",
+      "corrected_text": "Sir",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 20,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview",
+  "annotation_date": "2025-04-08T11:24:43.426613",
+  "verified": false
+}

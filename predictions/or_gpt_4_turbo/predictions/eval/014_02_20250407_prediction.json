@@ -1,0 +1,66 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bedroom",
+      "corrected_text": "bedroom,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "quickly",
+      "corrected_text": "quickly,",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sight",
+      "corrected_text": "sight,",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "me",
+      "corrected_text": "me,",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "mind",
+      "corrected_text": "mind,",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "apology",
+      "corrected_text": "apology,",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Arthur",
+      "corrected_text": "Arthur,",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "view",
+      "corrected_text": "view,",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-07T23:53:22.654194",
+  "verified": false
+}

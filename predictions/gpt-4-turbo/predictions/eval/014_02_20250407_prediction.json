@@ -1,0 +1,80 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bedroom",
+      "corrected_text": "bedroom,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sight as this and",
+      "corrected_text": "sight as this, and",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "a",
+      "corrected_text": "",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "making me",
+      "corrected_text": "making me,",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "apology",
+      "corrected_text": "apology,",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "excuse it when",
+      "corrected_text": "excuse it, when",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur",
+      "corrected_text": "Arthur,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "though unquestionably distant still",
+      "corrected_text": "though unquestionably distant, still",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and if I did I suppose it would depend considerably on the nature of the view but",
+      "corrected_text": "and if I did, I suppose it would depend considerably on the nature of the view, but",
+      "line_number": 28,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4 Turbo",
+  "annotation_date": "2025-04-08T00:22:57.607840",
+  "verified": false
+}

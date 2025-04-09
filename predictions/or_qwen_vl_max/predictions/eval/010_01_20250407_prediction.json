@@ -1,0 +1,31 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Civita Vecchia. So",
+      "corrected_text": "Civita Vecchia. So",
+      "line_number": 46,
+      "page": "368"
+    },
+    {
+      "type": "insertion",
+      "original_text": "At this, he thought directly,",
+      "corrected_text": "At this, he thought directly,",
+      "line_number": 47,
+      "page": "368"
+    },
+    {
+      "type": "replacement",
+      "original_text": "they are to be married.",
+      "corrected_text": "they are to be married.",
+      "line_number": 47,
+      "page": "368"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T19:59:20.186382",
+  "verified": false
+}

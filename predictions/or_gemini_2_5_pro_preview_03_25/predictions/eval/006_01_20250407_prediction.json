@@ -1,0 +1,241 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Blandois M.",
+      "corrected_text": "Blandois, M.",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Cavalletto John Baptist",
+      "corrected_text": "Cavalletto, John Baptist,",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chivery John",
+      "corrected_text": "Chivery, John,",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam Arthur",
+      "corrected_text": "Clennam, Arthur,",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam Mrs.",
+      "corrected_text": "Clennam, Mrs.,",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Doyce Daniel",
+      "corrected_text": "Doyce, Daniel,",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dorrit Amy (Little Dorrit)",
+      "corrected_text": "Dorrit, Amy (Little Dorrit),",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dorrit Edward (Tip)",
+      "corrected_text": "Dorrit, Edward (Tip),",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dorrit Fanny",
+      "corrected_text": "Dorrit, Fanny,",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dorrit Frederick",
+      "corrected_text": "Dorrit, Frederick,",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dorrit William",
+      "corrected_text": "Dorrit, William,",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Finching Flora",
+      "corrected_text": "Finching, Flora,",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Flintwinch Affery",
+      "corrected_text": "Flintwinch, Affery,",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Flintwinch Jeremiah",
+      "corrected_text": "Flintwinch, Jeremiah,",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "General Mrs.",
+      "corrected_text": "General, Mrs.,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Gowan Henry",
+      "corrected_text": "Gowan, Henry,",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Gowan Mrs.",
+      "corrected_text": "Gowan, Mrs.,",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Maggy",
+      "corrected_text": "Maggy,",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Meagles Mr.",
+      "corrected_text": "Meagles, Mr.,",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Meagles Mrs.",
+      "corrected_text": "Meagles, Mrs.,",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Meagles Minnie (Pet)",
+      "corrected_text": "Meagles, Minnie (Pet),",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Merdel Mr.",
+      "corrected_text": "Merdel, Mr.,",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Nandy John Edward",
+      "corrected_text": "Nandy, John Edward,",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Pancks",
+      "corrected_text": "Pancks,",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Plornish Mr.",
+      "corrected_text": "Plornish, Mr.,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Plornish Mrs.",
+      "corrected_text": "Plornish, Mrs.,",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Rugg Mr.",
+      "corrected_text": "Rugg, Mr.,",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Rugg Anastasia",
+      "corrected_text": "Rugg, Anastasia,",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Sparkler Edmund",
+      "corrected_text": "Sparkler, Edmund,",
+      "line_number": 29,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Stiltstalking Lord Decimus Tite Barnacle",
+      "corrected_text": "Stiltstalking, Lord Decimus Tite Barnacle,",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Tattycoram (Harriet Beadle)",
+      "corrected_text": "Tattycoram (Harriet Beadle),",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Tickit Mrs.",
+      "corrected_text": "Tickit, Mrs.,",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Wade Miss",
+      "corrected_text": "Wade, Miss,",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-07T21:03:32.170950",
+  "verified": false
+}

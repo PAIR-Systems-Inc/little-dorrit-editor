@@ -1,0 +1,31 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hoped so",
+      "corrected_text": "I hope so",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "\u201cOh! I have very much to ask of you.\u201d",
+      "corrected_text": "\u201cOh! I have very much to ask of you?\u201d",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o Mini",
+  "annotation_date": "2025-04-07T19:44:42.522930",
+  "verified": false
+}

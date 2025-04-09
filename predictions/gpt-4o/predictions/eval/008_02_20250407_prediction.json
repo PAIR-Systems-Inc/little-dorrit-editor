@@ -1,0 +1,59 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "A late,",
+      "corrected_text": "A late, dull",
+      "line_number": 5,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Saone.",
+      "corrected_text": "Saone. The",
+      "line_number": 5,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Chalons lay",
+      "corrected_text": "Chalons lay a",
+      "line_number": 8,
+      "page": "137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 9,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Saone it",
+      "corrected_text": "Saone it was",
+      "line_number": 10,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Chalons was",
+      "corrected_text": "Chalons was the",
+      "line_number": 12,
+      "page": "137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sodden with",
+      "corrected_text": "soddened with",
+      "line_number": 16,
+      "page": "137"
+    }
+  ],
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-07T23:24:32.829058",
+  "verified": false
+}

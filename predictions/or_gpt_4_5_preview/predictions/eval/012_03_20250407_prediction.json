@@ -1,0 +1,87 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "each recurring",
+      "corrected_text": "to each recurring",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "return of",
+      "corrected_text": "return of",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them",
+      "corrected_text": "them;",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it",
+      "corrected_text": "it;",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still",
+      "corrected_text": "stand-still;",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence",
+      "corrected_text": "existence,",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "lord",
+      "corrected_text": "liege",
+      "line_number": 32,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview (OR)",
+  "annotation_date": "2025-04-08T07:39:50.070890",
+  "verified": false
+}

@@ -1,0 +1,100 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "traveller's",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers'",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "travellers",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "travelers",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-08T05:58:25.340465",
+  "verified": false
+}

@@ -1,0 +1,37 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Mr. Casby\u2019s.",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Mr. Casby\u2019s",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "at any time,",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "at any time",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you.",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "you",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-08T11:52:10.569686",
+  "verified": false
+}

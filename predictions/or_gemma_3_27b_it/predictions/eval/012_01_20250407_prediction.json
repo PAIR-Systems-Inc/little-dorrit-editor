@@ -1,0 +1,64 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "to each",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "each",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "altered houses,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "altered houses",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "them;",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "them",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "busy existence, at",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "busy existence at",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to stand-still;",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "to stand still",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "out of",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "out",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T19:23:06.958645",
+  "verified": false
+}

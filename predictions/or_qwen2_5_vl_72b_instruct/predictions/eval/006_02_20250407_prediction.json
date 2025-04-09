@@ -1,0 +1,52 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "came to no haven",
+      "corrected_text": "came to no haven.",
+      "line_number": 5,
+      "page": "352"
+    },
+    {
+      "type": "deletion",
+      "original_text": "tion",
+      "corrected_text": "",
+      "line_number": 8,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "on her behalf",
+      "corrected_text": "on her behalf,",
+      "line_number": 10,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 12,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in amazement",
+      "corrected_text": "Clennam, in amazement",
+      "line_number": 14,
+      "page": "352"
+    }
+  ],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-07T23:57:47.668410",
+  "verified": false
+}

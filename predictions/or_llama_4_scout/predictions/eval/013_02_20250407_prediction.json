@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "italicize",
+      "original_text": "",
+      "corrected_text": "",
+      "line_number": 5,
+      "page": "page_451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "him",
+      "corrected_text": "him,",
+      "line_number": 7,
+      "page": "page_451"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "that",
+      "corrected_text": "That",
+      "line_number": 11,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorise",
+      "line_number": 16,
+      "page": "page_451"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T20:07:06.657576",
+  "verified": false
+}

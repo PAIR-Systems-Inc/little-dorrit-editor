@@ -1,0 +1,66 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bedroom",
+      "corrected_text": "bedroom,",
+      "line_number": 1,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 9,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sight as this and",
+      "corrected_text": "sight as this, and",
+      "line_number": 18,
+      "page": "page_identifier"
+    },
+    {
+      "type": "deletion",
+      "original_text": "a",
+      "corrected_text": "",
+      "line_number": 18,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "making me",
+      "corrected_text": "making me,",
+      "line_number": 19,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur for",
+      "corrected_text": "Arthur, for",
+      "line_number": 23,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur returned",
+      "corrected_text": "Arthur, returned",
+      "line_number": 25,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view but",
+      "corrected_text": "view, but",
+      "line_number": 31,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-08T06:21:34.249513",
+  "verified": false
+}

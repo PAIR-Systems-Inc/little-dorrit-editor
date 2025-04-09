@@ -1,0 +1,11 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen VL Plus",
+  "annotation_date": "2025-04-08T06:24:07.186875",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"and good sense; and, though a plain man, had been too much accustomed to combine wha...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"and good sense; and, though a plain man, had been too much accustomed to combine what was original and daring in conception with what was patient and minute in execution, to be by any means an ordinary man. It was at first difficult to lead him to speak about himself, and he put off Arthur's advances in that direction by admitting slightly, oh yes, he had done this, and he had done that, and such a thing was of his making, and such another thing was his discovery, but it was his trade, you see, his trade; until, as he gradually became assured that his companion had a real interest in his account of himself, he frankly yielded to it. Then it appeared that he was the son of a north-country blacksmith, and had originally been apprenticed by his widowed mother to a lock-maker; that he had \u201cstruck out a few little things\u201d at the lock-maker\u2019s, which had led to his being released from his indentures with a present, which "
+}

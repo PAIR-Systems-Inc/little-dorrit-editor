@@ -1,0 +1,52 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "the great difference that",
+      "corrected_text": "the great difference that,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and is so cold.",
+      "corrected_text": "and is so cold;",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "the fire; \"put it",
+      "corrected_text": "the fire; \"put it,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "the cold stones\"",
+      "corrected_text": "the cold stones\";",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to the mercy of the cold stones\"",
+      "corrected_text": "to the mercy of the cold stones\";",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "\"may I tell you something, sir?\"",
+      "corrected_text": "\"may I tell you something, sir?\"",
+      "line_number": 30,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o Mini",
+  "annotation_date": "2025-04-07T21:34:01.330640",
+  "verified": false
+}

@@ -1,0 +1,45 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "highroad",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about and",
+      "corrected_text": "about, and",
+      "line_number": 12,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "telling him",
+      "corrected_text": "telling, him",
+      "line_number": 20,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 28,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 32,
+      "page": "352"
+    }
+  ],
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-08T08:32:49.799093",
+  "verified": false
+}

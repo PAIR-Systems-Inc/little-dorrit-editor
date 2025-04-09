@@ -1,0 +1,109 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "themselves, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "themselves and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and, as",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "and as",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-07T20:56:14.408563",
+  "verified": false
+}

@@ -1,0 +1,46 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "indeed,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "indeed",
+      "page": "369.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "length, said",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "length said",
+      "page": "369.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hope so",
+      "line_number": 29,
+      "notes": null,
+      "original_text": null,
+      "page": "369.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hope; I",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "hope I",
+      "page": "369.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-07T23:02:12.331909",
+  "verified": false
+}

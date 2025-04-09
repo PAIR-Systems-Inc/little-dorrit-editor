@@ -1,0 +1,24 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "to-day, Sir,",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "howling,over",
+      "corrected_text": "howling, over",
+      "line_number": 5,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-07T21:20:57.604638",
+  "verified": false
+}

@@ -1,0 +1,50 @@
+{
+  "model_name": "or_chatgpt_4o_latest",
+  "date": "2025-04-08T23:32:04.393936",
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T19:54:33.955569",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 38,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit correctly matches the edit type 'replacement', exactly as indicated in the ground truth. Regarding text content, both the ground truth and predicted edit identify the same core change: replacing the word 'said' with 'asked'. Although the predicted edit includes only the single word ('said'\u2192'asked') and the ground truth explicitly includes the adjacent proper noun ('said Clennam'\u2192'asked Clennam'), the core essential change\u2014the verb replacement\u2014is accurately captured. According to the instructions, the addition or omission of extra context in the prediction is acceptable, as long as the essential edit itself is correct and clearly identified, which it is in this case."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 35,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

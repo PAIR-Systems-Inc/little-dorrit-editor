@@ -1,0 +1,52 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "eyes",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "marseilles harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bells will ring",
+      "corrected_text": "bells will ring\u2014",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Civita Vecchia",
+      "corrected_text": "Civita Vecchia,",
+      "line_number": 27,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T22:44:39.407859",
+  "verified": false
+}

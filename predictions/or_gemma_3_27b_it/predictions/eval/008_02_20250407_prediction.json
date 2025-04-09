@@ -1,0 +1,28 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "against him,",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "against him",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T20:40:18.241627",
+  "verified": false
+}

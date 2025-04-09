@@ -1,0 +1,31 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "if",
+      "corrected_text": "if he",
+      "line_number": 42,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "if he",
+      "line_number": 42,
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said Clennam.",
+      "corrected_text": "asked Clennam.",
+      "line_number": 43,
+      "page": "209"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-08T06:05:32.454555",
+  "verified": false
+}

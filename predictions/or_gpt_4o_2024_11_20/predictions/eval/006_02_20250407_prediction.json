@@ -1,0 +1,38 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "highroad",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about and",
+      "corrected_text": "about, and",
+      "line_number": 12,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 27,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 30,
+      "page": "352"
+    }
+  ],
+  "annotator": "GPT-4o (2024-11-20 OR)",
+  "annotation_date": "2025-04-08T01:04:22.407265",
+  "verified": false
+}

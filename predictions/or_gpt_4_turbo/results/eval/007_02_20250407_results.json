@@ -1,0 +1,22 @@
+{
+  "model_name": "or_gpt_4_turbo",
+  "date": "2025-04-09T00:27:37.190613",
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-07T23:46:53.951141",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit type 'punctuation' exactly matches the ground truth edit type. The text content accuracy is also correct, as both ground truth and predicted edits show the original text 'Sun and Shadow' being corrected to 'Sun and Shadow.' by adding a period. No discrepancies in type or core change are found. Line numbers explicitly instructed to be ignored, making this prediction fully correct."
+    }
+  ]
+}

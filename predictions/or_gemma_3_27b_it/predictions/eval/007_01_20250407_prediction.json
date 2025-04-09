@@ -1,0 +1,37 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Period here?",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Period here",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T19:20:21.623183",
+  "verified": false
+}

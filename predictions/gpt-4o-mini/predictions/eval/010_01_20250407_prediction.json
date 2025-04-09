@@ -1,0 +1,52 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "rose or two from hers",
+      "corrected_text": "rose or two from her",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and out at that arch of light at the other end,",
+      "corrected_text": "and out at that arch of light, at the other end,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "for a moment, with a look in which regard for him and trustfulness in him were strikingly blended",
+      "corrected_text": "for a moment, with a look in which regard for him and trustfulness in him, were strikingly blended",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that papa had abandoned the idea.",
+      "corrected_text": "that papa had abandoned the idea.",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "at this, he thought directly,",
+      "corrected_text": "At this, he thought directly,",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to be married.",
+      "corrected_text": "to be married?",
+      "line_number": 28,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o Mini",
+  "annotation_date": "2025-04-07T19:45:32.675469",
+  "verified": false
+}

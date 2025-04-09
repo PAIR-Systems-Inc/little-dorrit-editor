@@ -1,8 +1,8 @@
 {
   "model_id": "or_o1_pro",
-  "display_name": "OpenAI o1-pro",
+  "display_name": "OpenAI o1-pro (OR)",
   "shots": 2,
   "temperature": 0.0,
-  "date": "2025-04-06",
+  "date": "2025-04-08",
   "notes": "Benchmark run with 2-shot learning"
 }

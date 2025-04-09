@@ -1,0 +1,31 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "within",
+      "corrected_text": "within-doors",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "than",
+      "corrected_text": "that",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "was",
+      "corrected_text": "whatever",
+      "line_number": 7,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T22:50:16.098586",
+  "verified": false
+}

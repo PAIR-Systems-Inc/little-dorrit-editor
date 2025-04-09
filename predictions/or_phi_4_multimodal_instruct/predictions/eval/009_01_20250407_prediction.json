@@ -1,0 +1,28 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "indeed",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "indeed",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "I hoped so",
+      "page": "001.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Phi 4 Multimodal Instruct",
+  "annotation_date": "2025-04-07T19:53:36.321392",
+  "verified": false
+}

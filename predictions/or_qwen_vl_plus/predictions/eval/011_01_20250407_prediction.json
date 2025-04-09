@@ -1,0 +1,11 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen VL Plus",
+  "annotation_date": "2025-04-07T20:53:51.810785",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Mr. Meagles and Clennam walked up and down together for a few minutes more without s...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Mr. Meagles and Clennam walked up and down together for a few minutes more without speaking, until at length the former broke silence.\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_text\": \"Mr. Meagles and Clennam walked up and down together for a few minutes more without speaking, until at length the former broke silence.\",\n      \"page\": \"003.png\",\n      \"type\": \"insertion\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Arthur,\" said he, using that familiar address for the first time in their communication, \"do you remember my telling you, as we walked up and down one hot morning, looking over the harbour at Marseilles, that Pet's baby sister who was dead seemed to Mother and me to have grown as she had grown, and changed as she had changed?\",\n      \"line_number\": 2,\n      \"notes\": null,\n      \"original_text\": \"Arthur,\" said he, using that familiar address for the first time in the"
+}

@@ -1,0 +1,80 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "the great difference that",
+      "corrected_text": "the great difference between",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and he gentle",
+      "corrected_text": "and he, gentle",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "I knew you must",
+      "corrected_text": "I knew you must be",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and is so cold.",
+      "corrected_text": "and, it is so cold.",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to touch it, while",
+      "corrected_text": "to touch it while",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "put it nearer the warmth.",
+      "corrected_text": "put it nearer, the warmth.",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it was quite warm;",
+      "corrected_text": "it was quite warm.",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to the mercy of the cold stones.",
+      "corrected_text": "to the mercy of the cold stones?",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to people.",
+      "corrected_text": "to people?",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "I tell you something, sir?",
+      "corrected_text": "I tell you something, sir.",
+      "line_number": 36,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o Mini",
+  "annotation_date": "2025-04-07T19:40:01.422174",
+  "verified": false
+}

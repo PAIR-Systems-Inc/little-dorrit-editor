@@ -1,0 +1,24 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 26,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "indeed",
+      "corrected_text": "indeed",
+      "line_number": 18,
+      "page": "369"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-08T07:52:19.426988",
+  "verified": false
+}

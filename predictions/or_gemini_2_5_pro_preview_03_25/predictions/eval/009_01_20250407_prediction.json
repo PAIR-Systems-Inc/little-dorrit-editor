@@ -1,0 +1,442 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "August,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "August",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "thirty-five",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "thirty five",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sun",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "water,",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "water",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "basin,",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "basin",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boats,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "boats",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "quay,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "quay",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dust,",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "dust",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heat,",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "heat",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "smells,",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "smells",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "oil,",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "oil",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "garlic,",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "garlic",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "melons,",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "melons",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "grapes,",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "grapes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wine,",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "wine",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "vinegar,",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "vinegar",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "onions,",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "onions",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "horses,",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "horses",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mules,",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "mules",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "carts,",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "carts",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bales,",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "bales",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boxes,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "boxes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "barrels,",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "barrels",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "packages,",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "packages",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "men,",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "men",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "women,",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "women",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "children,",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "children",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dogs,",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "dogs",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fowls,",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "fowls",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "pigeons,",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "pigeons",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dirt,",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "dirt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "noise,",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "noise",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "business,",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "business",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "idleness,",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "idleness",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "were blazing",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "blazing",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blazing,",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "blazing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boiling,",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "boiling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "burning,",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "burning",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "seething,",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "seething",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stewing,",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "stewing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "frying,",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "frying",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shining,",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "shining",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "gasping,",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "gasping",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "panting,",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "panting",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "everywhere.",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "everywhere",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-07T21:08:04.612509",
+  "verified": false
+}

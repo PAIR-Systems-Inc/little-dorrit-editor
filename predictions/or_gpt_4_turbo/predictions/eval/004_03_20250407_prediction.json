@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "why did he dine",
+      "corrected_text": "why did he dine to",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "cap",
+      "corrected_text": "Cap",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "to",
+      "line_number": 23,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-08T06:12:47.237409",
+  "verified": false
+}

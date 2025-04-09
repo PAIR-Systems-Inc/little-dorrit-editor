@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "SHADOW",
+      "corrected_text": "SHADOW.",
+      "line_number": 0,
+      "page": "Chapter I"
+    }
+  ],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-07T19:13:04.635743",
+  "verified": false
+}

@@ -1,0 +1,24 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bedroom",
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me, not",
+      "corrected_text": "me; not",
+      "line_number": 17,
+      "page": "452"
+    }
+  ],
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T23:16:37.161218",
+  "verified": false
+}

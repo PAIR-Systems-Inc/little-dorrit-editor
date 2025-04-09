@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "bed",
+      "corrected_text": "",
+      "line_number": 1,
+      "page": "452"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "room",
+      "line_number": 1,
+      "page": "452"
+    },
+    {
+      "type": "deletion",
+      "original_text": "that",
+      "corrected_text": "",
+      "line_number": 4,
+      "page": "452"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "a",
+      "line_number": 6,
+      "page": "452"
+    }
+  ],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-08T00:03:35.635839",
+  "verified": false
+}

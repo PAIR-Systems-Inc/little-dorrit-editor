@@ -1,0 +1,66 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "late dull",
+      "corrected_text": "late, dull",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Saone.",
+      "corrected_text": "Saone.^ The",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stream like",
+      "corrected_text": "stream, like",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Saone",
+      "corrected_text": "Saone^ it",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "man slowly",
+      "corrected_text": "man, slowly",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons was",
+      "corrected_text": "Chalons, was",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden",
+      "corrected_text": "soddened",
+      "line_number": 12,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview (OR)",
+  "annotation_date": "2025-04-08T00:49:28.638571",
+  "verified": false
+}

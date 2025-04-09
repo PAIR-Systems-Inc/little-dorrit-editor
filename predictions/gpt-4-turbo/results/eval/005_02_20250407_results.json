@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-4-turbo",
+  "date": "2025-04-08T23:01:11.956445",
+  "annotator": "GPT-4 Turbo",
+  "annotation_date": "2025-04-08T00:13:47.402159",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 34,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit matches the edit type exactly: both the ground truth and prediction identify the edit as 'capitalization'. In terms of text content accuracy, the predicted edit ('if' to 'If') correctly captures the core change described in the ground truth edit ('if he' to 'If he'). The additional word 'he' in ground truth is context but not directly affected by the capitalization. Therefore, the prediction correctly identifies the exact intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 36,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "The predicted edit correctly captures the intended change from 'said' to 'asked', exactly matching the ground truth edit intention. Both the predicted and ground truth edits specify a type of 'replacement', satisfying the edit type accuracy criterion. The predicted edit isolates 'said' \u2192 'asked', which matches the essential content edit indicated by the ground truth ('said Clennam' \u2192 'asked Clennam'). Although the prediction does not explicitly include 'Clennam', it still correctly captures the main core change, which is the verb alteration from 'said' to 'asked'. The additional context ('Clennam') in the ground truth does not alter the correctness of the prediction, as the essential edit has been clearly identified."
+    }
+  ]
+}

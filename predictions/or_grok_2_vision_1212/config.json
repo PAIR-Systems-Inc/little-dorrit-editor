@@ -1,8 +1,8 @@
 {
-  "model_id": "grok_2_vision_1212",
+  "model_id": "or_grok_2_vision_1212",
   "display_name": "Grok 2 Vision 1212",
   "shots": 2,
   "temperature": 0.0,
-  "date": "2025-04-06",
+  "date": "2025-04-08",
   "notes": "Benchmark run with 2-shot learning"
 }

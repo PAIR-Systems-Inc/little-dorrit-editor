@@ -1,0 +1,31 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "hyphen",
+      "line_number": 5,
+      "page": "page 137"
+    },
+    {
+      "type": "deletion",
+      "original_text": "sullenly",
+      "corrected_text": "",
+      "line_number": 9,
+      "page": "page 137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "marseilles",
+      "corrected_text": "Marseilles",
+      "line_number": 11,
+      "page": "page 137"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T23:34:08.848988",
+  "verified": false
+}

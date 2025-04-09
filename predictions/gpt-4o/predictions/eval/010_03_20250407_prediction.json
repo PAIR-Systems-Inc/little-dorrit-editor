@@ -1,0 +1,59 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "line_number": 14,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "line_number": 20,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him were",
+      "corrected_text": "him, were",
+      "line_number": 21,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "line_number": 22,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hesitation that",
+      "corrected_text": "hesitation, that",
+      "line_number": 28,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "at this",
+      "corrected_text": "At this",
+      "line_number": 29,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "directly they",
+      "corrected_text": "directly, they",
+      "line_number": 29,
+      "page": "368"
+    }
+  ],
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-08T08:37:11.759864",
+  "verified": false
+}

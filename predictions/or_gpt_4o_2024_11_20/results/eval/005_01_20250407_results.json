@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gpt_4o_2024_11_20",
+  "date": "2025-04-09T00:15:42.742110",
+  "annotator": "GPT-4o (2024-11-20 OR)",
+  "annotation_date": "2025-04-08T00:07:56.974106",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 38,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The edit type ('capitalization') matches exactly. Although the ground truth correction is from 'if he' to 'If he', and the prediction only identifies the word 'if' to 'If', the core editorial intent (changing the capitalization of 'if') is accurately captured. The extra context ('he') provided by the ground truth is not essential to the capitalization edit itself. Thus, the predicted edit correctly captures the essential intent of the capitalization correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 40,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit type ('replacement') matches exactly with the ground truth. For text content, the essential correction from 'said' to 'asked' is accurately captured in the prediction. Although the ground truth specifies the original text as 'said Clennam' and the prediction omits 'Clennam', the core intent\u2014correcting 'said' to 'asked'\u2014is still clearly preserved. Per evaluation instructions, additional context differences do not affect correctness as long as the central intended edit is accurately identified. Therefore, the prediction is correct."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "over yonder to-day",
+      "corrected_text": "over yonder, to-day",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "I have heard none",
+      "corrected_text": "I have heard none.",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "When these people howl, they howl to be heard",
+      "corrected_text": "When these people howl, they howl to be heard.",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Ah! but these people are always howling. Never happy otherwise",
+      "corrected_text": "Ah! but these people are always howling. Never happy otherwise.",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Do you mean the Marseilles people",
+      "corrected_text": "Do you mean the Marseilles people?",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "As to Marseilles, we know what Marseilles is",
+      "corrected_text": "As to Marseilles, we know what Marseilles is.",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "It sent the most insurrectionary tune into the world that was ever composed. It couldn\u2019t exist without alllonging and marshonging to something or other \u2014victory or death, or blazes, or something",
+      "corrected_text": "It sent the most insurrectionary tune into the world that was ever composed. It couldn\u2019t exist without alllonging and marshonging to something or other \u2014victory or death, or blazes, or something.",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "The speaker, with a whimsical good humour upon him all the time, looked over the parapet-wall with the greatest disparagement of Marseilles; and taking up a determined position by putting his hands in his pockets and rattling his money at it, apostrophised it with a short laugh",
+      "corrected_text": "The speaker, with a whimsical good humour upon him all the time, looked over the parapet-wall with the greatest disparagement of Marseilles; and taking up a determined position by putting his hands in his pockets and rattling his money at it, apostrophised it with a short laugh.",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "It would be more creditable to you, I think, to let other people alllong and marshong about their lawful business, instead of shutting 'em up in quarantine",
+      "corrected_text": "It would be more creditable to you, I think, to let other people alllong and marshong about their lawful business, instead of shutting 'em up in quarantine!",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "But we shall be out to-day",
+      "corrected_text": "But we shall be out to-day.",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Out to-day!",
+      "corrected_text": "Out to-day!",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "It's almost an aggravation of the enormity, that we shall be out to-day. Out! What have we ever been in for",
+      "corrected_text": "It's almost an aggravation of the enormity, that we shall be out to-day. Out! What have we ever been in for?",
+      "line_number": 24,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T19:55:48.683447",
+  "verified": false
+}

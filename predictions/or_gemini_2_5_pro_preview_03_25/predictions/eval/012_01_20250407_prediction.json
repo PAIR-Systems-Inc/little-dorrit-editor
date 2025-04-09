@@ -1,0 +1,469 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "themselves, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "themselves and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dust, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "dust and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "smells, and",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "smells and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bells, and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "bells and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beggars, and",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "beggars and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dogs, and",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "dogs and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "flies, and",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "flies and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fleas, and",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "fleas and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "people, and",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "people and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "priests, and",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "priests and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soldiers, and",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "soldiers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stenches, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "stenches and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "streets, and",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "streets and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "houses, and",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "houses and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "palaces, and",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "palaces and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "churches, and",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "churches and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "jails, and",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "jails and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "barracks, and",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "barracks and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shops, and",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "shops and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "theatres, and",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "theatres and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "public gardens, and",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "public gardens and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "market-places, and",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "market-places and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fountains, and",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "fountains and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "statues, and",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "statues and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dirty water, and",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "dirty water and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "children, and",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "children and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "old men, and",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "old men and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "old women, and",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "old women and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boys, and",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "boys and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "girls, and",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "girls and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sweetmeats, and",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "sweetmeats and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "grapes, and",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "grapes and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "melon-seeds, and",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "melon-seeds and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "jackasses, and",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "jackasses and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "empty carriages, and",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "empty carriages and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "chairs, and",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "chairs and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tables, and",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "tables and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soldiers' rooms, and",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "soldiers' rooms and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prisoners' rooms, and",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "prisoners' rooms and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "carts, and",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "carts and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "horses, and",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "horses and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mules, and",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "mules and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stoppages, and",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "stoppages and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wildernesses of stone, and",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "wildernesses of stone and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wildernesses of waste, and",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "wildernesses of waste and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wildernesses of wooden forms, and",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "wildernesses of wooden forms and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wildernesses of many counts, and",
+      "line_number": 48,
+      "notes": null,
+      "original_text": "wildernesses of many counts and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wildernesses of dusty papers, and",
+      "line_number": 49,
+      "notes": null,
+      "original_text": "wildernesses of dusty papers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wildernesses of idle people all",
+      "line_number": 50,
+      "notes": null,
+      "original_text": "wildernesses of idle people, all",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "together, were",
+      "line_number": 51,
+      "notes": null,
+      "original_text": "together were",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-07T21:12:55.951276",
+  "verified": false
+}

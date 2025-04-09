@@ -1,8 +1,8 @@
 {
   "model_id": "or_gpt_4o_2024_11_20",
-  "display_name": "GPT-4o (2024-11-20)",
+  "display_name": "GPT-4o (2024-11-20 OR)",
   "shots": 2,
   "temperature": 0.0,
-  "date": "2025-04-05",
+  "date": "2025-04-08",
   "notes": "Benchmark run with 2-shot learning"
 }

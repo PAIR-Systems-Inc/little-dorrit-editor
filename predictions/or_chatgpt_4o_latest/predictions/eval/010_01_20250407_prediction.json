@@ -1,0 +1,52 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "line_number": 10,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "line_number": 11,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment",
+      "corrected_text": "moment,",
+      "line_number": 19,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "beautiful",
+      "corrected_text": "beautiful,",
+      "line_number": 21,
+      "page": "368"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that papa had abandoned",
+      "corrected_text": "That papa had abandoned",
+      "line_number": 26,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "that",
+      "corrected_text": "That",
+      "line_number": 26,
+      "page": "368"
+    }
+  ],
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T22:16:10.278372",
+  "verified": false
+}

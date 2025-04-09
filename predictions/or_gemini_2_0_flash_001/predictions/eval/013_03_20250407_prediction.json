@@ -1,0 +1,37 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts.",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "driest snorts.",
+      "page": "451.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "italicize",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "him",
+      "page": "451.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "451.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-08T08:03:41.884436",
+  "verified": false
+}

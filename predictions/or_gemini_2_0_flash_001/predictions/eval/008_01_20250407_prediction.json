@@ -1,0 +1,38 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 7,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "trees",
+      "corrected_text": "trees,",
+      "line_number": 7,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "fact",
+      "corrected_text": "fact.",
+      "line_number": 9,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "hand",
+      "corrected_text": "hand;",
+      "line_number": 11,
+      "page": "137.jpg"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-07T22:22:06.792507",
+  "verified": false
+}

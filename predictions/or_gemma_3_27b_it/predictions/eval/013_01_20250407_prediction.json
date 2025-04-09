@@ -1,0 +1,73 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts.",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "driest of snorts",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boiling-over",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "boiling over",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a perfect Pa-",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "a perfect Pa",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "have said",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "have said with",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it's high.",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "it's high,.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Italicize",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "Italicize",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "It",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "it",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T19:23:39.261417",
+  "verified": false
+}

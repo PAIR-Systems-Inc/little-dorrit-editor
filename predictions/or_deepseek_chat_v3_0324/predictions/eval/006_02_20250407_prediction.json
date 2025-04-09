@@ -1,0 +1,80 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "said he",
+      "corrected_text": "said, he",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english",
+      "corrected_text": "English",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said I",
+      "corrected_text": "said, I",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said he",
+      "corrected_text": "said, he",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said I",
+      "corrected_text": "said, I",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said he",
+      "corrected_text": "said, he",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said I",
+      "corrected_text": "said, I",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said he",
+      "corrected_text": "said, he",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said I",
+      "corrected_text": "said, I",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said he",
+      "corrected_text": "said, he",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-08T00:36:07.218724",
+  "verified": false
+}

@@ -1,0 +1,64 @@
+{
+  "model_name": "or_chatgpt_4o_latest",
+  "date": "2025-04-08T23:30:58.387035",
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T22:11:02.947351",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit type 'capitalization' exactly matches the ground truth, satisfying criterion 1. Regarding criterion 2 (Text Content Accuracy), the ground truth edit changes 'why did he dine' to 'Why did he dine', capitalizing just the initial 'why'. The predicted edit specifically identifies the change from 'why' to 'Why', accurately reflecting the core intended modification. Although the prediction includes less context (just the word 'why') than the ground truth (which shows the entire phrase), it precisely captures the core intended capitalization edit. Thus, both criteria are accurately met, and the predicted edit is correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "stones\u201d",
+      "corrected_text": "stones?\u201d",
+      "observed_line_number": 29,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

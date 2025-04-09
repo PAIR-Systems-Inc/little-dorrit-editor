@@ -1,0 +1,45 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "city",
+      "corrected_text": "city (CCCP)",
+      "line_number": 6,
+      "page": "page_identifier"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "lucrative",
+      "line_number": 10,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence",
+      "corrected_text": "existence;",
+      "line_number": 18,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence",
+      "corrected_text": "existence;",
+      "line_number": 20,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "liege",
+      "corrected_text": "lord",
+      "line_number": 26,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-07T23:51:38.707310",
+  "verified": false
+}

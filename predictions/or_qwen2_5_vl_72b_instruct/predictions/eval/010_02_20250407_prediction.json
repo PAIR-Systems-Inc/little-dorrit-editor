@@ -1,0 +1,24 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "Cap",
+      "line_number": 22,
+      "page": "368"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "T",
+      "line_number": 22,
+      "page": "368"
+    }
+  ],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-07T23:59:59.622874",
+  "verified": false
+}

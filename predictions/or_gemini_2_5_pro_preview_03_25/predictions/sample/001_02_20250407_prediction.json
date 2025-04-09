@@ -1,0 +1,469 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sea, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sea and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ships, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "ships and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "harbour, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "harbour and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "forts, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "forts and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "churches, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "churches and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "buildings, rising",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "buildings rising",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "another, were",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "another were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sunlight, were",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "sunlight were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, with",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Marseilles with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heat, was",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "heat was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, though",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "Marseilles though",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "streets, were",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "streets were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "houses, were",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "houses were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blinds, were",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "blinds were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fountains, were",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "fountains were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dogs, were",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "dogs were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "people, were",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "people were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade, were",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "shade were",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T00:29:33.452653",
+  "verified": false
+}

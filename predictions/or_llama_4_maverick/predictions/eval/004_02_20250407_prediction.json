@@ -1,0 +1,25 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 26,
+      "page": "page_184"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dine to-day",
+      "corrected_text": "dine today",
+      "line_number": 26,
+      "page": "page_184",
+      "notes": "The hyphen is removed, changing 'dine to-day' to 'dine today'."
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T20:32:13.156767",
+  "verified": false
+}

@@ -1,0 +1,73 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "wine-bottles",
+      "corrected_text": "wine bottles",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "go through",
+      "corrected_text": "got through",
+      "line_number": 16,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bars fashioned",
+      "corrected_text": "bars fashioned",
+      "line_number": 16,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "grating where",
+      "corrected_text": "grating where",
+      "line_number": 18,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "ocea",
+      "corrected_text": "Ocean",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "and",
+      "corrected_text": ", and",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "intact in",
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "fed looking",
+      "corrected_text": "fed; looking",
+      "line_number": 35,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 35,
+      "page": "5"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T20:30:58.490502",
+  "verified": false
+}

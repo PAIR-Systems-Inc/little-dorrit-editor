@@ -1,0 +1,31 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "thirty",
+      "corrected_text": "Thirty",
+      "line_number": 1,
+      "page": "page 3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Marseilles",
+      "corrected_text": "Marseilles,",
+      "line_number": 1,
+      "page": "page 3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Period",
+      "corrected_text": "Period.",
+      "line_number": 0,
+      "page": "page 3"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T20:04:23.683908",
+  "verified": false
+}

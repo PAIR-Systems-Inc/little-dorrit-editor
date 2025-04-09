@@ -1,8 +1,8 @@
 {
   "model_id": "or_chatgpt_4o_latest",
-  "display_name": "ChatGPT-4o",
+  "display_name": "ChatGPT-4o (OR)",
   "shots": 2,
   "temperature": 0.0,
-  "date": "2025-04-05",
+  "date": "2025-04-07",
   "notes": "Benchmark run with 2-shot learning"
 }

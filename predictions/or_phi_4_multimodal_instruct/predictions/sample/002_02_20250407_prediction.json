@@ -1,0 +1,28 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "terrace gardens",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "terrace gardens",
+      "page": "001.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Phi 4 Multimodal Instruct",
+  "annotation_date": "2025-04-07T20:49:00.974355",
+  "verified": false
+}

@@ -1,0 +1,59 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "dark blue",
+      "corrected_text": "dark-blue",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english Channel",
+      "corrected_text": "English Channel",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "however when",
+      "corrected_text": "however, when",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "santos dumont",
+      "corrected_text": "Santos Dumont",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Santos Dumont",
+      "corrected_text": "Santos-Dumont",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "head ache",
+      "corrected_text": "headache",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "its",
+      "corrected_text": "it's",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:31:00.515079",
+  "verified": false
+}

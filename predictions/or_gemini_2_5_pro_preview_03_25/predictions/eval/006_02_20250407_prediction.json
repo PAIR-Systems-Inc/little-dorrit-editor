@@ -1,0 +1,334 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "down, a",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "down a",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "water, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "water and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, the",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "shore the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "air, the",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "air the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hills, the",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "hills the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "objects, the",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "objects the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "birds, the",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "birds the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fish, the",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "fish the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boats, the",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "boats the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "men, the",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "men the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "women, the",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "women the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "children, the",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "children the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Alps, the",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "Alps the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Rhone, the",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "Rhone the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hill, the",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "hill the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river, the",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "river the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison, the",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "prison the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sky, the",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "sky the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river, the",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "river the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hills, the",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "hills the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sky.",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "sky",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "glare, which",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "glare which",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "down.",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "down",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "gone, the",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "gone the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "up, and",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "up and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "peaceful, and",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "peaceful and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lovely.",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "lovely",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison!",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "There, the",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "There the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sluggishly, uglily",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "sluggishly uglily",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "noisomely.",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "noisomely",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "eat), and",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "eat) and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "night.",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "night",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lockings-up",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "lockings up",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "time.",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "time",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wicket, a",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "wicket a",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T00:36:24.164766",
+  "verified": false
+}

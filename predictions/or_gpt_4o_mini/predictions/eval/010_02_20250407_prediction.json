@@ -1,0 +1,52 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "rose or two from hers",
+      "corrected_text": "rose or two from her",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and out at that arch of light at",
+      "corrected_text": "and out at that arch of light, at",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "for a moment, with",
+      "corrected_text": "for a moment; with",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that papa had abandoned",
+      "corrected_text": "that Papa had abandoned",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "they are to be married.",
+      "corrected_text": "they are to be married.",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "confidence",
+      "corrected_text": "Confidence",
+      "line_number": 28,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T21:53:33.734405",
+  "verified": false
+}

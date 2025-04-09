@@ -1,0 +1,22 @@
+{
+  "model_name": "or_qwen_vl_max",
+  "date": "2025-04-08T23:19:35.092786",
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T19:57:48.686984",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit exactly matches the ground truth edit. Specifically, the edit type ('punctuation') is identical, and the text content ('Sun and Shadow' changed to 'Sun and Shadow.') is identically captured by both the ground truth and the prediction. Since the criteria for both edit type and essential text content are met, the prediction accurately reflects the intended correction."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Marseilles,",
+      "corrected_text": "Marseilles",
+      "line_number": 3,
+      "page": "005.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "wine-bottles",
+      "corrected_text": "wine bottles",
+      "line_number": 7,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "got through",
+      "corrected_text": "got, through",
+      "line_number": 9,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars, that",
+      "corrected_text": "bars that",
+      "line_number": 10,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Indian Ocean",
+      "corrected_text": "Indian  Ocean",
+      "line_number": 16,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 10,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wine-bottles",
+      "corrected_text": "wine bottles",
+      "line_number": 7,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating, where",
+      "corrected_text": "grating where",
+      "line_number": 10,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 14,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars, that",
+      "corrected_text": "bars that",
+      "line_number": 10,
+      "page": "005.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wine bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 7,
+      "page": "005.png"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T19:44:32.342725",
+  "verified": false
+}

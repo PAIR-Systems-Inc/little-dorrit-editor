@@ -1,0 +1,94 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "occasional",
+      "line_number": 2,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bells",
+      "corrected_text": "bells,",
+      "line_number": 2,
+      "page": "page_5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "wine-bottles",
+      "corrected_text": "all wine-bottles",
+      "line_number": 10,
+      "page": "page_5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "got",
+      "corrected_text": "got,",
+      "line_number": 13,
+      "page": "page_5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bars",
+      "corrected_text": "bars,",
+      "line_number": 13,
+      "page": "page_5"
+    },
+    {
+      "type": "insertion",
+      "original_text": "grating",
+      "corrected_text": "grating, where",
+      "line_number": 16,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside",
+      "corrected_text": "outside;",
+      "line_number": 28,
+      "page": "page_5"
+    },
+    {
+      "type": "insertion",
+      "original_text": "and",
+      "corrected_text": "and",
+      "line_number": 28,
+      "page": "page_5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "intact",
+      "corrected_text": "intact,",
+      "line_number": 29,
+      "page": "page_5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "ocean",
+      "corrected_text": "Ocean",
+      "line_number": 30,
+      "page": "page_5"
+    },
+    {
+      "type": "insertion",
+      "original_text": "to be fed",
+      "corrected_text": "to be fed,",
+      "line_number": 35,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars",
+      "corrected_text": "bars,",
+      "line_number": 35,
+      "page": "page_5"
+    }
+  ],
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T23:04:51.859494",
+  "verified": false
+}

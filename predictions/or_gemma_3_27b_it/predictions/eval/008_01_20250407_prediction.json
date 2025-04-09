@@ -1,0 +1,37 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne-hyphen",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Sa\u00f4ne hyphen",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "slowly moving",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "man slowly moving",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with wet",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "with with wet",
+      "page": "003.png",
+      "type": "deletion"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T19:20:47.283689",
+  "verified": false
+}

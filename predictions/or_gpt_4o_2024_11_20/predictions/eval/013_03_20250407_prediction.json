@@ -1,0 +1,31 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "dryest snorts",
+      "corrected_text": "of the dryest snorts",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 26,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 38,
+      "page": "451"
+    }
+  ],
+  "annotator": "GPT-4o (2024-11-20 OR)",
+  "annotation_date": "2025-04-08T08:52:52.513274",
+  "verified": false
+}

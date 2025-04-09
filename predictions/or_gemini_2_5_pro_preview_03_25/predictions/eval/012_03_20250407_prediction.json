@@ -1,0 +1,379 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sun-burnt",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sun burnt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "country, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "country and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial,",
+      "line_number": 3,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 10,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 11,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 12,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 13,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 14,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 15,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 16,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 17,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 18,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 19,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 20,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 21,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 22,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 23,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 24,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 25,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 26,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 27,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 28,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 29,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 30,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 31,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 32,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 33,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 34,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 35,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 36,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 37,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 38,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 39,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 40,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 41,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 42,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 43,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 44,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 45,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 46,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun-dial",
+      "line_number": 47,
+      "notes": "Assuming hyphenation instruction is applied first.",
+      "original_text": "sun-dial",
+      "page": "003.png",
+      "type": "italicize"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T11:16:13.542331",
+  "verified": false
+}

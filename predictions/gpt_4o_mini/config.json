@@ -1,8 +1,0 @@
-{
-  "model_name": "gpt-4o-mini",
-  "display_name": "GPT-4o Mini",
-  "shots": 2,
-  "temperature": 0.0,
-  "date": "2025-04-04",
-  "notes": "Benchmark run with 2-shot learning"
-}

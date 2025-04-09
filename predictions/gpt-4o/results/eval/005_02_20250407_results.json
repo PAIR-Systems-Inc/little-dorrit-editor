@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-4o",
+  "date": "2025-04-08T22:19:30.682818",
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-07T23:21:46.659451",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 38,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The edit type ('capitalization') exactly matches the ground truth. Additionally, the predicted edit ('if' \u2192 'If') accurately captures the essential capitalization change indicated by the ground truth ('if he' \u2192 'If he'). The prediction omits the second word 'he', but since it correctly identifies the core intended edit (capitalizing 'if') and does not misrepresent the intended correction, it meets the criteria for text content accuracy. Thus, it correctly reflects the intention of the ground truth."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 41,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit correctly matches the ground truth edit type as 'replacement'. The core textual change ('said' to 'asked') is also precisely identified by the prediction. Even though the predicted edit contains only the single word 'said' -> 'asked' and the ground truth specifies 'said Clennam' -> 'asked Clennam', the essential correction ('said' \u2192 'asked') is accurately captured. Hence, according to the provided instructions, the prediction is considered correct."
+    }
+  ]
+}

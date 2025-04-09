@@ -1,0 +1,36 @@
+{
+  "model_name": "or_chatgpt_4o_latest",
+  "date": "2025-04-08T23:33:19.878557",
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T23:08:18.212404",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 33,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "The edit type matches exactly ('capitalization'). The essential edit identified in the ground truth is changing lowercase 'if' to uppercase 'If'. The predicted edit captures precisely this same core change ('if' to 'If'), and its smaller context ('if' rather than 'if he') is acceptable since it still clearly captures the intended capitalization correction. Therefore, both edit type and text content are accurate, making the predicted edit correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 36,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "The predicted edit correctly matches the ground truth edit type 'replacement'. Regarding text content accuracy, the prediction captures the essential modification of replacing 'said' with 'asked'. Although the ground truth edit includes the additional context 'Clennam', this extra context does not alter the core intended change. Since the evaluation guidelines explicitly allow for additional context or fewer context words as long as the essential replacement ('said' \u2192 'asked') is captured accurately, this prediction adheres correctly to the ground truth intention."
+    }
+  ]
+}

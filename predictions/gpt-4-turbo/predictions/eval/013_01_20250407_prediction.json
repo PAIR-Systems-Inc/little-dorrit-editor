@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "driest of snorts",
+      "corrected_text": "dryest of snorts",
+      "line_number": 6,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "boiling-over",
+      "corrected_text": "boiling over",
+      "line_number": 12,
+      "page": "page_identifier"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 25,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorize",
+      "line_number": 30,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "GPT-4 Turbo",
+  "annotation_date": "2025-04-07T21:18:55.318775",
+  "verified": false
+}

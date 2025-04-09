@@ -1,0 +1,66 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "heart",
+      "corrected_text": "heart,",
+      "line_number": 12,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "own",
+      "corrected_text": "his own",
+      "line_number": 13,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "up into his face, with some",
+      "corrected_text": "up into his face, indeed, with some",
+      "line_number": 24,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "thanked him from her heart",
+      "corrected_text": "thanked him from her heart,",
+      "line_number": 25,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 29,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "\"Oh! I have very much",
+      "corrected_text": "\"Oh! I have very much",
+      "line_number": 32,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "\"That's well! I hoped so;",
+      "corrected_text": "\"That's well! I hoped so;",
+      "line_number": 33,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "I hoped so;",
+      "corrected_text": "I hoped so",
+      "line_number": 33,
+      "page": "369"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview (OR)",
+  "annotation_date": "2025-04-08T07:36:15.666959",
+  "verified": false
+}

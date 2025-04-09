@@ -1,0 +1,50 @@
+{
+  "model_name": "or_gpt_4o_mini",
+  "date": "2025-04-08T23:46:30.441220",
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T20:22:07.060709",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 38,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit type ('capitalization') matches exactly the ground truth's edit type. Regarding text content, the essential change identified in the ground truth ('if he' \u2192 'If he') is captured accurately by the predicted edit ('if' \u2192 'If'). Although the prediction focuses on a smaller subset of the phrase, it fully captures the core capitalization issue, correctly highlighting the necessity of capitalizing the initial 'i' of the word 'if'. The omission of the following word ('he') does not affect the essential capitalization correction that is clearly identified in the ground truth. Therefore, considering both criteria\u2014edit type accuracy and core textual accuracy\u2014the predicted edit correctly matches the ground truth's intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "said",
+      "corrected_text": "Said",
+      "observed_line_number": 41,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "replacement",
+      "original_text": "said Clennam",
+      "corrected_text": "asked Clennam",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

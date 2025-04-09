@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "driest of snorts",
+      "corrected_text": "driest of snorts.",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "boiling-over",
+      "corrected_text": "boiling-over",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "bubbling out of him",
+      "corrected_text": "bubbling out of him",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorize",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4 Turbo",
+  "annotation_date": "2025-04-08T00:21:45.734499",
+  "verified": false
+}

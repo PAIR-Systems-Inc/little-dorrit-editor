@@ -1,0 +1,38 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "indeed",
+      "corrected_text": "indeed so",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "heart",
+      "corrected_text": "heart (as) she did",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "generous",
+      "corrected_text": "good, generous",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "I hoped so",
+      "line_number": 17,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T22:49:30.290534",
+  "verified": false
+}

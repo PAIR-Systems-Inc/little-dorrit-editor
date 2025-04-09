@@ -1,0 +1,45 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "in our fancy",
+      "corrected_text": "",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "Thank you,",
+      "line_number": 12,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "Thank you!",
+      "line_number": 13,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "within-doors",
+      "line_number": 20,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "than",
+      "line_number": 23,
+      "page": "372"
+    }
+  ],
+  "annotator": "Qwen2.5 VL 72B Instruct",
+  "annotation_date": "2025-04-07T19:14:55.858179",
+  "verified": false
+}

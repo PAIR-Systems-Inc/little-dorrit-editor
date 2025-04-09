@@ -1,0 +1,66 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "trees",
+      "corrected_text": "trees,",
+      "line_number": 6,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "row",
+      "corrected_text": "row,",
+      "line_number": 6,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Sa\u00f4ne",
+      "corrected_text": "Sa\u00f4ne,",
+      "line_number": 1,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "dull",
+      "corrected_text": "dull,",
+      "line_number": 1,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "autumn",
+      "corrected_text": "autumn,",
+      "line_number": 1,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "late",
+      "corrected_text": "'A late",
+      "line_number": 1,
+      "page": "137.jpg"
+    },
+    {
+      "type": "insertion",
+      "original_text": "hyphen",
+      "corrected_text": "hyphen",
+      "line_number": 6,
+      "page": "137.jpg"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-08T08:01:48.155140",
+  "verified": false
+}

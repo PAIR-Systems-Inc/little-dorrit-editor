@@ -1,0 +1,31 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "driest of snorts",
+      "corrected_text": "driest of snorts.",
+      "line_number": 5,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 25,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorize",
+      "line_number": 30,
+      "page": "451"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-08T06:08:47.798457",
+  "verified": false
+}

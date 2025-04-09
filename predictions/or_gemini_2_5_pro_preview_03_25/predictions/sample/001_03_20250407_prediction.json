@@ -1,0 +1,416 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "fishing boats",
+      "corrected_text": "fishing-boats",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "there",
+      "corrected_text": "there;",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "villas",
+      "corrected_text": "villas;",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stars",
+      "corrected_text": "stars;",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moon",
+      "corrected_text": "moon.",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hour when",
+      "corrected_text": "hour, when",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "deepest",
+      "corrected_text": "deepest,",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "repose when",
+      "corrected_text": "repose, when",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "profound",
+      "corrected_text": "profound,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "darkness when",
+      "corrected_text": "darkness, when",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "deepest",
+      "corrected_text": "deepest,",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sleep when",
+      "corrected_text": "sleep, when",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tranquil",
+      "corrected_text": "tranquil,",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dreams when",
+      "corrected_text": "dreams, when",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "vivid",
+      "corrected_text": "vivid.",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hour when",
+      "corrected_text": "hour, when",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "mistress",
+      "corrected_text": "mistress,",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "husband when",
+      "corrected_text": "husband, when",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wife",
+      "corrected_text": "wife,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "mother when",
+      "corrected_text": "mother, when",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "child",
+      "corrected_text": "child,",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "exile when",
+      "corrected_text": "exile, when",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "country",
+      "corrected_text": "country,",
+      "line_number": 29,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "prisoner when",
+      "corrected_text": "prisoner, when",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liberty",
+      "corrected_text": "liberty,",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "miser when",
+      "corrected_text": "miser, when",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "gold",
+      "corrected_text": "gold,",
+      "line_number": 33,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "gambler when",
+      "corrected_text": "gambler, when",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stakes",
+      "corrected_text": "stakes,",
+      "line_number": 35,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "priest when",
+      "corrected_text": "priest, when",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "God",
+      "corrected_text": "God.",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hour when",
+      "corrected_text": "hour, when",
+      "line_number": 38,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "trembles",
+      "corrected_text": "trembles,",
+      "line_number": 39,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "innocent when",
+      "corrected_text": "innocent, when",
+      "line_number": 40,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sleeps",
+      "corrected_text": "sleeps,",
+      "line_number": 41,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sentinel when",
+      "corrected_text": "sentinel, when",
+      "line_number": 42,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "watches",
+      "corrected_text": "watches,",
+      "line_number": 43,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "spy when",
+      "corrected_text": "spy, when",
+      "line_number": 44,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "listens",
+      "corrected_text": "listens,",
+      "line_number": 45,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "assassin when",
+      "corrected_text": "assassin, when",
+      "line_number": 46,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dagger",
+      "corrected_text": "dagger,",
+      "line_number": 47,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "lover when",
+      "corrected_text": "lover, when",
+      "line_number": 48,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "balcony",
+      "corrected_text": "balcony,",
+      "line_number": 49,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "husband when",
+      "corrected_text": "husband, when",
+      "line_number": 50,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bed",
+      "corrected_text": "bed,",
+      "line_number": 51,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "father when",
+      "corrected_text": "father, when",
+      "line_number": 52,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "children",
+      "corrected_text": "children,",
+      "line_number": 53,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poor when",
+      "corrected_text": "poor, when",
+      "line_number": 54,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "begs",
+      "corrected_text": "begs,",
+      "line_number": 55,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "rich when",
+      "corrected_text": "rich, when",
+      "line_number": 56,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "feasts",
+      "corrected_text": "feasts,",
+      "line_number": 57,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sick when",
+      "corrected_text": "sick, when",
+      "line_number": 58,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "groans",
+      "corrected_text": "groans,",
+      "line_number": 59,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dying when",
+      "corrected_text": "dying, when",
+      "line_number": 60,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "prays",
+      "corrected_text": "prays,",
+      "line_number": 61,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dead when",
+      "corrected_text": "dead, when",
+      "line_number": 62,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sleeps",
+      "corrected_text": "sleeps.",
+      "line_number": 63,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hour",
+      "corrected_text": "hour.",
+      "line_number": 64,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T10:03:43.614023",
+  "verified": false
+}

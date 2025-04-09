@@ -1,0 +1,45 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "heart,",
+      "corrected_text": "heart;",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him from her heart (as",
+      "corrected_text": "him from her heart; (as",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hoped so",
+      "corrected_text": "I hope so",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that\u2019s well! I hope so; I am not disappointed.",
+      "corrected_text": "that\u2019s well! I hope so; I am not disappointed.",
+      "line_number": 30,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T21:52:41.761170",
+  "verified": false
+}

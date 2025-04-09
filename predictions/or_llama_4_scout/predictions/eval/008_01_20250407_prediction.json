@@ -1,0 +1,45 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "sullenly, but",
+      "corrected_text": "sullenly, but,",
+      "line_number": 9,
+      "page": "page 137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "he",
+      "corrected_text": "he,",
+      "line_number": 16,
+      "page": "page 137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "hyphen",
+      "corrected_text": "hyphen",
+      "line_number": 7,
+      "page": "page 137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "To the devil with this plain that has no end!",
+      "corrected_text": "To the devil with this plain, that has no end!",
+      "line_number": 21,
+      "page": "page 137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "To the devil with this dim",
+      "corrected_text": "To the devil with this dismal",
+      "line_number": 24,
+      "page": "page 137"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T19:47:23.592210",
+  "verified": false
+}

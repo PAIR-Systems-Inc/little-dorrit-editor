@@ -1,0 +1,52 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "that in our fancy",
+      "corrected_text": "",
+      "line_number": 9,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Pet was,",
+      "corrected_text": "whatever Pet was,",
+      "line_number": 9,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now.\u201d",
+      "corrected_text": "now.\u201d \u201cThank you,\u201d",
+      "line_number": 13,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore and",
+      "corrected_text": "shore, and",
+      "line_number": 21,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "doors when",
+      "corrected_text": "doors when he entered,",
+      "line_number": 25,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that once",
+      "corrected_text": "than once",
+      "line_number": 31,
+      "page": "372"
+    }
+  ],
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-08T08:38:15.143385",
+  "verified": false
+}

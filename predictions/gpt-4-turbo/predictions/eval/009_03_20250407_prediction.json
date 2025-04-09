@@ -1,0 +1,38 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "I would have",
+      "corrected_text": "I wouldhave",
+      "line_number": 2,
+      "page": "page_identifier"
+    },
+    {
+      "type": "deletion",
+      "original_text": "Mr.",
+      "corrected_text": "",
+      "line_number": 16,
+      "page": "page_identifier"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 22,
+      "page": "page_identifier"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "I hope so",
+      "line_number": 28,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "GPT-4 Turbo",
+  "annotation_date": "2025-04-08T07:21:29.109067",
+  "verified": false
+}

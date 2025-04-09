@@ -1,0 +1,346 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "themselves and",
+      "corrected_text": "themselves, and",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and as",
+      "corrected_text": "and, as",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sun and",
+      "corrected_text": "sun, and",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "blinds and",
+      "corrected_text": "blinds, and",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "windows and",
+      "corrected_text": "windows, and",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "doors and",
+      "corrected_text": "doors, and",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "houses and",
+      "corrected_text": "houses, and",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "streets and",
+      "corrected_text": "streets, and",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shade and",
+      "corrected_text": "shade, and",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "water and",
+      "corrected_text": "water, and",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "everything was",
+      "corrected_text": "everything, was",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sun burnt",
+      "corrected_text": "sun-burnt",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dusty air",
+      "corrected_text": "dusty; air",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "water seemed",
+      "corrected_text": "water, seemed",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust and",
+      "corrected_text": "dust, and",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust and",
+      "corrected_text": "dust, and",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust and",
+      "corrected_text": "dust, and",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust except",
+      "corrected_text": "dust, except",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust which",
+      "corrected_text": "dust, which",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust discoloured",
+      "corrected_text": "dust, discoloured",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust veiled",
+      "corrected_text": "dust, veiled",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust clogged",
+      "corrected_text": "dust, clogged",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 29,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 33,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 35,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 38,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 39,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 40,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 41,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 42,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 43,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 44,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 45,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 46,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dust was",
+      "corrected_text": "dust, was",
+      "line_number": 47,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T11:14:30.498142",
+  "verified": false
+}

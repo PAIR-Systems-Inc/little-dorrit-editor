@@ -1,0 +1,100 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": "high",
+      "corrected_text": "hum of tongues or barking of dogs, with",
+      "line_number": 1,
+      "notes": "The caret mark indicates an insertion.",
+      "original_text": "hum of tongues or barking of dogs with",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "Wine-bottles",
+      "line_number": 11,
+      "notes": "The underlining indicates a replacement.",
+      "original_text": "wine-bottles",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "got, through",
+      "line_number": 14,
+      "notes": "The caret mark indicates an insertion.",
+      "original_text": "got through",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "iron bars, fashioned",
+      "line_number": 14,
+      "notes": "The caret mark indicates an insertion.",
+      "original_text": "iron bars fashioned",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "notes": "The caret mark indicates an insertion.",
+      "original_text": "grating where",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "notes": "The caret mark indicates an insertion.",
+      "original_text": "outside and",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "notes": "The caret mark indicates an insertion.",
+      "original_text": "intact in",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "notes": "The underlining indicates a replacement.",
+      "original_text": "indian ocean",
+      "page": "001.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "was waiting to be fed; looking",
+      "line_number": 36,
+      "notes": "The caret mark indicates an insertion.",
+      "original_text": "was waiting to be fed looking",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "high",
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "notes": "The caret mark indicates an insertion.",
+      "original_text": "bars that",
+      "page": "001.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T18:55:54.051937",
+  "verified": false
+}

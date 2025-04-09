@@ -1,0 +1,59 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "dark cold",
+      "corrected_text": "dark, cold",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mediterranean",
+      "corrected_text": "Mediterranean",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sea mist",
+      "corrected_text": "sea-mist",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "however that",
+      "corrected_text": "however, that",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "stonework",
+      "corrected_text": "stone-work",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "roman",
+      "corrected_text": "Roman",
+      "line_number": 29,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "window which",
+      "corrected_text": "window, which",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:05:35.722930",
+  "verified": false
+}

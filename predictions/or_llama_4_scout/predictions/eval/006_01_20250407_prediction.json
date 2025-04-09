@@ -1,0 +1,66 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "and",
+      "corrected_text": "and,",
+      "line_number": 9,
+      "page": "page 352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him.",
+      "corrected_text": "him.",
+      "line_number": 10,
+      "page": "page 352"
+    },
+    {
+      "type": "replacement",
+      "original_text": "high-road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "page 352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 16,
+      "page": "page 352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "(comma)",
+      "corrected_text": "",
+      "line_number": 21,
+      "page": "page 352"
+    },
+    {
+      "type": "deletion",
+      "original_text": "high-road",
+      "corrected_text": "",
+      "line_number": 0,
+      "page": "page 352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tossed about,and",
+      "corrected_text": "tossed about, and",
+      "line_number": 7,
+      "page": "page 352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and",
+      "corrected_text": "and,",
+      "line_number": 7,
+      "page": "page 352"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T19:46:41.756794",
+  "verified": false
+}

@@ -1,0 +1,73 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "had never seen in it before; and as he came near her, it entered his",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "had never seen in it before; and as he came near her, it entered his mind all at once that she was there of a set purpose to speak to him.",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "She gave him her hand, and said, \"You wonder to see me here by myself? But the evening is so lovely, I have rolled further than I meant at first. I thought it likely I might meet you, and that made me more confident. You always come this way, do you not?\"",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "She gave him her hand, and said, \"You wonder to see me here by myself? But the evening is so lovely, I have rolled further than I meant at first. I thought it likely I might meet you, and that made me more confident. You always come this way, do you not?\"",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "As Clennam said that it was his favourite way, he felt her hand fal-",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "As Clennam said that it was his favourite way, he felt her hand fal-",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mr. Clennam, she said, hesitating more timidly yet, and speaking so low that he bent his head to hear her. \"I should very much like to give you my confidence, if you would not mind having the goodness to receive it. I should have very much liked to have given it to you long ago, because\u2014I felt that you were becoming so much our friend.\"",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "Mr. Clennam, she said, hesitating more timidly yet, and speaking so low that he bent his head to hear her. \"I should very much like to give you my confidence, if you would not mind having the goodness to receive it. I should have very much liked to have given it to you long ago, because\u2014I felt that you were becoming so much our friend.\"",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "At this, he thought directly, \"they are to be married.\"",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "At this, he thought directly, \"they are to be married.\"",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mr. Clennam, she said, hesitating more timidly yet, and speaking so low that he bent his head to hear her. \"I should very much like to give you my confidence, if you would not mind having the goodness to receive it. I should have very much liked to have given it to you long ago, because\u2014I felt that you were becoming so much our friend.\"",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "Mr. Clennam, she said, hesitating more timidly yet, and speaking so low that he bent his head to hear her. \"I should very much like to give you my confidence, if you would not mind having the goodness to receive it. I should have very much liked to have given it to you long ago, because\u2014I felt that you were becoming so much our friend.\"",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "How can I be otherwise than proud of it at any time! Pray give it to me. Pray trust me.",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "How can I be otherwise than proud of it at any time! Pray give it to me. Pray trust me.",
+      "page": "001.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Phi 4 Multimodal Instruct",
+  "annotation_date": "2025-04-07T21:03:25.042708",
+  "verified": false
+}

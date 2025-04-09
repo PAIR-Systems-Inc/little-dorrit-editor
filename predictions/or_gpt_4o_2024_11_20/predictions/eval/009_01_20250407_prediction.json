@@ -1,0 +1,31 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 20,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "I hoped so",
+      "line_number": 28,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 10,
+      "page": "369"
+    }
+  ],
+  "annotator": "GPT-4o (2024-11-20 OR)",
+  "annotation_date": "2025-04-08T00:11:38.839721",
+  "verified": false
+}

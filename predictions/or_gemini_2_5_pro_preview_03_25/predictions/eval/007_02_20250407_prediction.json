@@ -1,0 +1,433 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "themselves, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "themselves and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sun and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dust, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "dust and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "smells, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "smells and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bells, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "bells and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beggars, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "beggars and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dogs, and",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "dogs and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dirt, and",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "dirt and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ruin, were",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "ruin were",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 10,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 11,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 12,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 13,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 14,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 15,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 16,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 17,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 18,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 19,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 20,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 21,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 22,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 23,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 24,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 25,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 26,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 27,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 28,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 29,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 30,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 31,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 32,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 33,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 34,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 35,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 36,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 37,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 38,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 39,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 40,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 41,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 42,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 43,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 44,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 45,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 46,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 47,
+      "notes": "Instruction 'cap' likely applies to all instances on the page.",
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T00:38:22.270731",
+  "verified": false
+}

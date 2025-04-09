@@ -1,0 +1,45 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "darkness and",
+      "corrected_text": "darkness, and",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english channel",
+      "corrected_text": "English Channel",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "flower pots",
+      "corrected_text": "flower-pots",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ship wreck",
+      "corrected_text": "ship-wreck",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mediterranean",
+      "corrected_text": "Mediterranean",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:24:54.939714",
+  "verified": false
+}

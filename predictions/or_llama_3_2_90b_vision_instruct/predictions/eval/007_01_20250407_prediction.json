@@ -1,0 +1,11 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Llama 3.2 90B Vision Instruct",
+  "annotation_date": "2025-04-07T23:41:51.467469",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: Since there is no actual text provided, I will assume that the image contains the text with handwritten editorial corrections. However, without the actual i...",
+  "raw_response": "Since there is no actual text provided, I will assume that the image contains the text with handwritten editorial corrections. However, without the actual image or text, I can only provide a general response.\n\nIf the image contains the text with handwritten editorial corrections, I would identify each correction and output them as JSON in the following format:\n\n```\n{\n  \"edits\": [\n    {\n      \"type\": \"insertion | deletion | replacement | punctuation | capitalization | italicize\",\n      \"original_text\": \"the text before the edit\",\n      \"corrected_text\": \"the text after the edit\",\n      \"line_number\": <integer>,\n      \"page\": \"page_identifier\"\n    },\n    ...\n  ]\n}\n```\n\nHowever, without the actual text or image, I cannot provide a specific JSON output.\n\nIf you can provide the actual text or image, I would be happy to assist you in identifying the handwritten editorial corrections and outputting them as JSON."
+}

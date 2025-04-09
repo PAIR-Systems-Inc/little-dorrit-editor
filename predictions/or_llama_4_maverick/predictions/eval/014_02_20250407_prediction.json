@@ -1,0 +1,164 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "details illustrated",
+      "corrected_text": "details (illustrated",
+      "line_number": 4,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "documents at the bedside",
+      "corrected_text": "documents) at the bedside",
+      "line_number": 4,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Rugg from",
+      "corrected_text": "Rugg\", from",
+      "line_number": 5,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "back and bundling",
+      "corrected_text": "back; and bundling",
+      "line_number": 6,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam he went",
+      "corrected_text": "Clennam, he went",
+      "line_number": 7,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Casby's He dressed",
+      "corrected_text": "Casby's. He dressed",
+      "line_number": 9,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time but it",
+      "corrected_text": "time; but it",
+      "line_number": 11,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "himself with a leisurely walk",
+      "corrected_text": "himself with a leisurely walk,",
+      "line_number": 12,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur \u2014 Doyce",
+      "corrected_text": "Arthur\u2014Doyce",
+      "line_number": 17,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam! cried",
+      "corrected_text": "Clennam!\" cried",
+      "line_number": 17,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "this and pray",
+      "corrected_text": "this; and pray",
+      "line_number": 18,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "mind mentioning it",
+      "corrected_text": "mind mentioning it,",
+      "line_number": 19,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you for you",
+      "corrected_text": "you, for you",
+      "line_number": 19,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "skirt and having",
+      "corrected_text": "skirt; and having",
+      "line_number": 21,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "visit but you",
+      "corrected_text": "visit; but you",
+      "line_number": 23,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "correct and though",
+      "corrected_text": "correct; and though",
+      "line_number": 25,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view at least",
+      "corrected_text": "view, at least",
+      "line_number": 26,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "again and you",
+      "corrected_text": "again; and you",
+      "line_number": 27,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him tenderly and resumed",
+      "corrected_text": "him tenderly; and resumed",
+      "line_number": 29,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "different to make",
+      "corrected_text": "different\u2014to make",
+      "line_number": 31,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "recalled except",
+      "corrected_text": "recalled; except",
+      "line_number": 32,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Cucumber and therefore",
+      "corrected_text": "Cucumber; and therefore",
+      "line_number": 33,
+      "page": "page_452"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T20:36:02.987800",
+  "verified": false
+}

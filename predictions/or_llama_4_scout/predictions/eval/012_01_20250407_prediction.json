@@ -1,0 +1,45 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "them",
+      "corrected_text": "them;",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "her",
+      "corrected_text": "",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "liege",
+      "corrected_text": "liege",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "invalid",
+      "corrected_text": "invalid.",
+      "line_number": 3,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T19:49:01.572255",
+  "verified": false
+}

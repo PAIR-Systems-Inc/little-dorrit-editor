@@ -1,0 +1,38 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "if",
+      "corrected_text": "if I",
+      "line_number": 47,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "can",
+      "line_number": 47,
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Hadn\u2019t he better let it go?",
+      "corrected_text": "Hadn\u2019t he better let it go?",
+      "line_number": 48,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "asked",
+      "line_number": 48,
+      "page": "209"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T22:03:30.435274",
+  "verified": false
+}

@@ -1,0 +1,92 @@
+{
+  "model_name": "or_gpt_4_5_preview",
+  "date": "2025-04-08T22:42:59.803160",
+  "annotator": "GPT-4.5 Preview (OR)",
+  "annotation_date": "2025-04-08T07:37:14.858094",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 15,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit type 'punctuation' exactly matches the ground truth edit type. Additionally, the predicted edit from 'hers and' to 'hers, and' precisely captures the core textual correction intended by the ground truth ('hers and' \u2192 'hers, and'). Even though the line numbers differ, this evaluation explicitly instructs ignoring line number differences. Thus, the edit type and the specific text content are correctly represented, making the predicted edit accurate."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 16,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The edit type in both the ground truth and prediction is 'punctuation', so the edit type matches exactly. Regarding text content accuracy, both original texts 'hers matters' and corrected texts 'hers, matters' match clearly in the predicted edit and ground truth. Since both the edit type and the essential text content change ('hers matters' \u2192 'hers, matters') are identical, the prediction correctly captures the intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 22,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit correctly matches the ground truth. The edit type ('punctuation') exactly matches the ground truth type. The textual content accuracy is also fully correct, as the prediction captures the exact punctuation change intended ('moment with' to 'moment, with'). Additional context or differing line numbers were explicitly disregarded according to instructions. Thus, both criteria (edit type and textual content) are accurately satisfied."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 24,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit type ('punctuation') exactly matches the ground truth ('punctuation'). Additionally, the text content modification\u2014adding a comma after 'beautiful'\u2014also precisely captures the essential edit in the ground truth ('beautiful that' \u2192 'beautiful, that'). Since both the edit type and the core textual correction align exactly, the prediction correctly captures the intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 31,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit accurately captures the edit type, 'capitalization', matching exactly the ground truth. The original and corrected text ('they' \u2192 'They') are identical to the ground truth. Although line numbers differ, the evaluation explicitly instructs to ignore line number discrepancies. Thus, the prediction correctly reflects both the edit type and the text content intended by the ground truth edit."
+    },
+    {
+      "observed_edit_num": 5,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hesitation, that papa had abandoned",
+      "corrected_text": "hesitation, that papa had abandoned,",
+      "observed_line_number": 30,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

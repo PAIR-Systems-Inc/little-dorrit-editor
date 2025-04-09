@@ -1,0 +1,78 @@
+{
+  "model_name": "or_llama_4_maverick",
+  "date": "2025-04-08T23:05:46.399792",
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-08T07:50:28.304354",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 26,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The edit type is correctly identified as 'capitalization' in both the ground truth and prediction. Additionally, even though the predicted edit highlights only 'why' instead of the full phrase 'why did he dine', the essential core change\u2014capitalizing the initial letter of 'why'\u2014is correctly captured. The additional context ('did he dine') is not strictly necessary to represent the capitalization change's intent accurately. Therefore, both edit type and the essential textual correction match the intended correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "emotion mask",
+      "corrected_text": "",
+      "observed_line_number": 27,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "cap",
+      "corrected_text": "",
+      "observed_line_number": 26,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

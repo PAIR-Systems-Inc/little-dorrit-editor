@@ -1,0 +1,22 @@
+{
+  "model_name": "or_gemini_2_0_flash_001",
+  "date": "2025-04-09T00:00:19.853966",
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-07T22:21:45.658368",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The edit type accurately matches the ground truth as both explicitly state 'punctuation'. The text content also perfectly matches; both the original text ('Sun and Shadow') and the corrected text ('Sun and Shadow.') are identical in both ground truth and prediction. Therefore, the predicted edit fully aligns with the intention of the ground truth edit."
+    }
+  ]
+}

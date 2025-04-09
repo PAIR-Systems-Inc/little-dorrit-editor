@@ -1,0 +1,11 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-08T00:26:29.522931",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"ed\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"eyes, by\",\n      \"original_text\": \"eyes by\",\n      \"line_number\": 5,\n      \"page\": \"002...",
+  "raw_response": "{\n  \"ed\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"eyes, by\",\n      \"original_text\": \"eyes by\",\n      \"line_number\": 5,\n      \"page\": \"002.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"white, but\",\n      \"original_text\": \"white but\",\n      \"line_number\": 11,\n      \"page\": \"002.png\",\n      \"type\": \"pun\",\n      \"corrected_text\": \"Marseilles Harbour\",\n      \"original_text\": \"marseilles harbour\",\n      \"line_number\": 30,\n      \"page\": \"002.png\",\n      \"type\": \"capitalization\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"terrace-gardens\",\n      \"original_text \":\" terrace gardens\",\n      \"line_number\": 34,\n      \"page\": \"002.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Civita Vecchia. So\",\n      \"original_text\": \"Civita Vecchia so\",\n      line_number\": 46,\n      \"page\": \"002.png\",\n      \"type\": \"punctuation\"\n    }\n  ]\n}"
+}

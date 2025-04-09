@@ -1,0 +1,45 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "darkness and",
+      "corrected_text": "darkness, and",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mediterranean",
+      "corrected_text": "Mediterranean",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "chains hooks",
+      "corrected_text": "chains, hooks",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "wooden",
+      "corrected_text": "iron",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "Libert\u00e9",
+      "corrected_text": "_Libert\u00e9_",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T20:24:23.045525",
+  "verified": false
+}

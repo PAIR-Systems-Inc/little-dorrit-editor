@@ -1,0 +1,80 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "high-road",
+      "corrected_text": "high-road",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "materials",
+      "corrected_text": "materials,",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "about",
+      "corrected_text": "about,",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "tion,",
+      "corrected_text": "",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "tion",
+      "corrected_text": "tion;",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "earnestly",
+      "corrected_text": "earnestly,",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "comma?",
+      "corrected_text": ",",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "n",
+      "corrected_text": "Clennam",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Clennam",
+      "corrected_text": "Clennam,",
+      "line_number": 32,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview",
+  "annotation_date": "2025-04-07T20:08:19.268198",
+  "verified": false
+}

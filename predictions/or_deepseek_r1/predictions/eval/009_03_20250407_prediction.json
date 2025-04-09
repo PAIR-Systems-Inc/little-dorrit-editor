@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "door way",
+      "corrected_text": "door-way",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "mr",
+      "corrected_text": "Mr.",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "paris",
+      "corrected_text": "Paris",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "head quarters",
+      "corrected_text": "head-quarters",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "francis",
+      "corrected_text": "Francis",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty four",
+      "corrected_text": "twenty-four",
+      "line_number": 9,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T20:36:48.066733",
+  "verified": false
+}

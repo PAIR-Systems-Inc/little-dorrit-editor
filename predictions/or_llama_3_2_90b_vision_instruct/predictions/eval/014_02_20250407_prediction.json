@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "italicize",
+      "original_text": "identify",
+      "corrected_text": "identify",
+      "line_number": 1,
+      "page": "image"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "editorial",
+      "line_number": 1,
+      "page": "image"
+    },
+    {
+      "type": "replacement",
+      "original_text": "printed",
+      "corrected_text": "digital",
+      "line_number": 1,
+      "page": "image"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "text",
+      "corrected_text": "text,",
+      "line_number": 1,
+      "page": "image"
+    }
+  ],
+  "annotator": "Llama 3.2 90B Vision Instruct",
+  "annotation_date": "2025-04-08T14:05:44.924080",
+  "verified": false
+}

@@ -1,0 +1,64 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "ter on his arm",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "ter on his",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hers, and",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "hers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with a",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "with",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ill for",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "for",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "they are",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "they",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "much like",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "like",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-08T11:49:59.940547",
+  "verified": false
+}

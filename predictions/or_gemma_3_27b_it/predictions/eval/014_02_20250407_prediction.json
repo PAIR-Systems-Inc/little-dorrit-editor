@@ -1,0 +1,127 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "said he would \u201cgo",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "said he would go",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "full speed",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "fullspeed",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bright brass",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "brightbrass",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "she shown",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "she shown.",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prayed",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "prayed.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "need mind",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "needmind",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "take place after",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "takeplace after",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stared",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "stared.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "abrupt",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "abrupt.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "though\u2014in",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "though in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you\u2014",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "you",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "naturally",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "naturally.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "except in his",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "except his",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T20:43:31.065919",
+  "verified": false
+}

@@ -1,0 +1,66 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "that",
+      "corrected_text": "",
+      "line_number": 12,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "fancy",
+      "corrected_text": "fancy,",
+      "line_number": 12,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "\"",
+      "corrected_text": "\"Thank you,\"",
+      "line_number": 18,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you?",
+      "corrected_text": "you,\"",
+      "line_number": 19,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore",
+      "corrected_text": "shore,",
+      "line_number": 26,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "within-doors",
+      "corrected_text": "within doors",
+      "line_number": 30,
+      "page": "372"
+    },
+    {
+      "type": "deletion",
+      "original_text": "the",
+      "corrected_text": "",
+      "line_number": 34,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 35,
+      "page": "372"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview (OR)",
+  "annotation_date": "2025-04-08T07:38:24.788850",
+  "verified": false
+}

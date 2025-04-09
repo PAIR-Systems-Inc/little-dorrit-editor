@@ -1,0 +1,80 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "said I",
+      "corrected_text": "said, I",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "english",
+      "corrected_text": "English",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "man and",
+      "corrected_text": "man, and",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "a",
+      "corrected_text": "an",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "prisoner said",
+      "corrected_text": "prisoner, said",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Yes I",
+      "corrected_text": "Yes, I",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "italian",
+      "corrected_text": "Italian",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "No I",
+      "corrected_text": "No, I",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "years I",
+      "corrected_text": "years, I",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "prisoner said",
+      "corrected_text": "prisoner, said",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V3 0324",
+  "annotation_date": "2025-04-08T00:24:55.018336",
+  "verified": false
+}

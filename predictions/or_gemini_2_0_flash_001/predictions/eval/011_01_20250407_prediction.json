@@ -1,0 +1,38 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "fancy",
+      "corrected_text": "fancy, whatever",
+      "line_number": 36,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Thank you",
+      "corrected_text": "Thank you!",
+      "line_number": 40,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "within",
+      "corrected_text": "within-doors",
+      "line_number": 48,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "than",
+      "corrected_text": "that",
+      "line_number": 52,
+      "page": "372"
+    }
+  ],
+  "annotator": "Google: Gemini 2.0 Flash",
+  "annotation_date": "2025-04-07T22:23:08.366198",
+  "verified": false
+}

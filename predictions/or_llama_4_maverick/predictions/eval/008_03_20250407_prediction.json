@@ -1,0 +1,24 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "the river Saone",
+      "corrected_text": "the river Saone,",
+      "line_number": 1,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 5,
+      "page": "page_137"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-08T07:51:56.337056",
+  "verified": false
+}

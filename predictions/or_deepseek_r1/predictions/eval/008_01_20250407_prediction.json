@@ -1,0 +1,37 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sun-light",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "sun light",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Paris",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "paris",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "then, he",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "then he",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:12:08.285533",
+  "verified": false
+}

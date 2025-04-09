@@ -1,0 +1,66 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Let Loose ,",
+      "corrected_text": "Let Loose,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Saone.",
+      "corrected_text": "Sa\u00f4ne.",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "trees,",
+      "corrected_text": "trees;",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "soddened",
+      "corrected_text": "sodden",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "with wet; limping",
+      "corrected_text": "with wet; limping,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "knives!",
+      "corrected_text": "knives!",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "darkness,",
+      "corrected_text": "darkness;",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "hyphen",
+      "line_number": 7,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T20:24:49.017255",
+  "verified": false
+}

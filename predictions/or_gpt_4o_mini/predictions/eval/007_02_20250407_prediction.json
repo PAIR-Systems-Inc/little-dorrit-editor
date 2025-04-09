@@ -1,0 +1,19 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": ".",
+      "line_number": 1,
+      "notes": "Period added.",
+      "original_text": "Sun and Shadow,",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T21:48:40.146156",
+  "verified": false
+}

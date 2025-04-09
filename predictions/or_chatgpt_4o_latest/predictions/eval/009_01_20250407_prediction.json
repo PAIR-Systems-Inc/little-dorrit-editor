@@ -1,0 +1,38 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 20,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "said Clennam,",
+      "line_number": 26,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Oh! I have very much to ask of you.",
+      "corrected_text": "That's well! I hoped so; I am not disappointed.",
+      "line_number": 27,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "I hoped so",
+      "line_number": 27,
+      "page": "369"
+    }
+  ],
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T22:15:23.114331",
+  "verified": false
+}

@@ -1,0 +1,82 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "high road",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "all cheap materials",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "cheap materials",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "in forty minutes.",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "forty minutes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "her place.",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "place",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "her behalf,",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "her behalf",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "(comme?)",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "(comme)",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "in amazement.",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "amazement",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "do it;",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "do it",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemma 3 27B",
+  "annotation_date": "2025-04-07T20:39:04.272027",
+  "verified": false
+}

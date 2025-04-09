@@ -1,0 +1,52 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high-road",
+      "corrected_text": "high-road.",
+      "line_number": 1,
+      "page": "page_352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and came to no haven",
+      "corrected_text": "and came to no haven.",
+      "line_number": 7,
+      "page": "page_352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "told him not to be uneasy on her behalf for she was quite well",
+      "corrected_text": "told him not to be uneasy on her behalf, for she was quite well",
+      "line_number": 11,
+      "page": "page_352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "On his opening the door Mr. Meagles stopped, faced round, and said",
+      "corrected_text": "On his opening the door, Mr. Meagles stopped, faced round, and said",
+      "line_number": 16,
+      "page": "page_352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Mr. Meagles in an excited state walking up and down his room",
+      "corrected_text": "Mr. Meagles, in an excited state, walking up and down his room",
+      "line_number": 17,
+      "page": "page_352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam!\u2014Tattycoram\u201d",
+      "corrected_text": "Clennam! \u2014 Tattycoram\u201d",
+      "line_number": 20,
+      "page": "page_352"
+    }
+  ],
+  "annotator": "Llama 4 Scout",
+  "annotation_date": "2025-04-07T20:04:01.518524",
+  "verified": false
+}

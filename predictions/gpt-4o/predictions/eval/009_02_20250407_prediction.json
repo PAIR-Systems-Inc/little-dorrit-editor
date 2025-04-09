@@ -1,0 +1,24 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "heart,",
+      "corrected_text": "heart, indeed,",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "well! I",
+      "corrected_text": "well! I hoped so;",
+      "line_number": 27,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-07T23:25:34.509336",
+  "verified": false
+}

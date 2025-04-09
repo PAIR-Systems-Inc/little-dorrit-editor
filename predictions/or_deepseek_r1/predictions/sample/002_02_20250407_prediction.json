@@ -1,0 +1,45 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "moon light",
+      "corrected_text": "moon-light",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mediterranean sea",
+      "corrected_text": "Mediterranean Sea",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ships that",
+      "corrected_text": "ships, that",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "harbor",
+      "corrected_text": "harbour",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "waves and",
+      "corrected_text": "waves, and",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek R1",
+  "annotation_date": "2025-04-07T19:22:38.296424",
+  "verified": false
+}

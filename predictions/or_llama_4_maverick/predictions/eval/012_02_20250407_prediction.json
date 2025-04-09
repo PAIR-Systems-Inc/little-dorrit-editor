@@ -1,0 +1,80 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 2,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "them;",
+      "corrected_text": "them,",
+      "line_number": 9,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "it;",
+      "corrected_text": "it,",
+      "line_number": 11,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence,",
+      "corrected_text": "existence",
+      "line_number": 11,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "stand-still;",
+      "corrected_text": "stand-still,",
+      "line_number": 12,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "view,",
+      "corrected_text": "view;",
+      "line_number": 13,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence;",
+      "corrected_text": "existence,",
+      "line_number": 13,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "reviewed,",
+      "corrected_text": "reviewed",
+      "line_number": 16,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "herself.",
+      "corrected_text": "herself;",
+      "line_number": 17,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 20,
+      "page": "page_373"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T20:35:09.128871",
+  "verified": false
+}

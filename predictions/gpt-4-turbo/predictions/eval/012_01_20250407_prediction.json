@@ -1,0 +1,45 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "city",
+      "corrected_text": "city (CCCP)",
+      "line_number": 6,
+      "page": "Chapter XXIX"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "lucrative",
+      "line_number": 9,
+      "page": "Chapter XXIX"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 16,
+      "page": "Chapter XXIX"
+    },
+    {
+      "type": "replacement",
+      "original_text": "it to",
+      "corrected_text": "it; to",
+      "line_number": 17,
+      "page": "Chapter XXIX"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence is",
+      "corrected_text": "existence; is",
+      "line_number": 19,
+      "page": "Chapter XXIX"
+    }
+  ],
+  "annotator": "GPT-4 Turbo",
+  "annotation_date": "2025-04-07T21:17:55.500184",
+  "verified": false
+}

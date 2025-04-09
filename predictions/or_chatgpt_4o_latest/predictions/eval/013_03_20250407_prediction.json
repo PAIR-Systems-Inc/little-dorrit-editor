@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "snorts",
+      "corrected_text": "of",
+      "line_number": 6,
+      "page": "page_451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "snorts",
+      "corrected_text": "snorts.",
+      "line_number": 6,
+      "page": "page_451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 22,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorize",
+      "line_number": 30,
+      "page": "page_451"
+    }
+  ],
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-08T05:38:19.301501",
+  "verified": false
+}

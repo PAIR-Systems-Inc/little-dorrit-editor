@@ -1,0 +1,87 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bedroom",
+      "corrected_text": "bedroom,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "so quickly that",
+      "corrected_text": "so quickly, that",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "and a",
+      "corrected_text": "",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "making me",
+      "corrected_text": "making me,",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "I ought",
+      "corrected_text": "I ought,",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur",
+      "corrected_text": "Arthur,",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "still 'tis",
+      "corrected_text": "still, 'tis",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and if",
+      "corrected_text": "and, if",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "I did",
+      "corrected_text": "I did,",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "I suppose",
+      "corrected_text": "I suppose,",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "but I'm",
+      "corrected_text": "but, I'm",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o (OR)",
+  "annotation_date": "2025-04-07T21:30:32.295312",
+  "verified": false
+}

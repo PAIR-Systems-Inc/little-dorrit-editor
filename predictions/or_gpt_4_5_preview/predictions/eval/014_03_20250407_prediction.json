@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "bed",
+      "corrected_text": "",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Fo",
+      "corrected_text": "For",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "quickly",
+      "corrected_text": "quickly,",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "me not",
+      "corrected_text": "me, not",
+      "line_number": 22,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.5 Preview (OR)",
+  "annotation_date": "2025-04-08T07:41:53.554628",
+  "verified": false
+}

@@ -1,0 +1,19 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Civita Vecchia. So",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "Civita Vecchia so",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen VL Plus",
+  "annotation_date": "2025-04-07T22:37:09.090103",
+  "verified": false
+}

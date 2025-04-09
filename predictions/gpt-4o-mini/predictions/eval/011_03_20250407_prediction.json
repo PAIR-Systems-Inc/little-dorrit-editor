@@ -1,0 +1,45 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "that in our fancy",
+      "corrected_text": "that in our fancy,",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "whatever Pet was, the other was?",
+      "corrected_text": "whatever Pet was, the other was?",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Thank you",
+      "corrected_text": "Thank you,",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "than",
+      "corrected_text": "than,",
+      "line_number": 30,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o Mini",
+  "annotation_date": "2025-04-08T08:23:57.556642",
+  "verified": false
+}

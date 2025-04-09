@@ -1,0 +1,17 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "over yonder, to-day, Sir, is there?",
+      "corrected_text": "howling over yonder, to-day, Sir, is there?",
+      "line_number": 5,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4 Turbo",
+  "annotation_date": "2025-04-07T21:09:09.857564",
+  "verified": false
+}

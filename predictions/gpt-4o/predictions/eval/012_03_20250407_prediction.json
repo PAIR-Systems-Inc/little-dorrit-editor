@@ -1,0 +1,66 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 3,
+      "page": "373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "recurring",
+      "corrected_text": "to each recurring",
+      "line_number": 6,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 12,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it to",
+      "corrected_text": "it; to",
+      "line_number": 13,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 13,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 14,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence; is",
+      "corrected_text": "existence, is",
+      "line_number": 15,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "lord and",
+      "corrected_text": "lord, and",
+      "line_number": 21,
+      "page": "373"
+    }
+  ],
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-08T08:39:23.919776",
+  "verified": false
+}

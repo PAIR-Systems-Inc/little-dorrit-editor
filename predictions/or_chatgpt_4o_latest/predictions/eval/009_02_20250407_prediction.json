@@ -1,0 +1,45 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 20,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "thanked him",
+      "corrected_text": "thanked Mr. Clennam",
+      "line_number": 21,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said Clennam",
+      "corrected_text": "said Clennam,",
+      "line_number": 25,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "I hoped so",
+      "line_number": 27,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 27,
+      "page": "369"
+    }
+  ],
+  "annotator": "ChatGPT-4o (OR)",
+  "annotation_date": "2025-04-07T23:12:02.754305",
+  "verified": false
+}

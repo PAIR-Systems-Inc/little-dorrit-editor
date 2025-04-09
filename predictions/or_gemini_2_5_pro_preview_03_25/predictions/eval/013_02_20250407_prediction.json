@@ -1,0 +1,694 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sun",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dust,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "dust",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "water-carts,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "water-carts",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sprinkled,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sprinkled",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "streets;",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "streets",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "houses,",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "houses",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "blinds,",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "blinds",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "awnings,",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "awnings",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shops;",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "shops",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "people,",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "people",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "caf\u00e9s,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "caf\u00e9s",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "billiard-tables,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "billiard-tables",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hats,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "hats",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "coats,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "coats",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shirt-sleeves",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "shirtsleeves",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shirt-sleeves,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "shirt-sleeves",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dogs,",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "dogs",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cats,",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "cats",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "canaries,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "canaries",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "goldfish,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "goldfish",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "pavement,",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "pavement",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun,",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "sun",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shade;",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "shade",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "summer,",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "summer",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "noon.",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "noon",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "South",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "south",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "France,",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "France",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it,",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "it",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "east,",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "east",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "west,",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "west",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "north,",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "north",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "south.",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "south",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles,",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "Marseilles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fish,",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "fish",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "oil,",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "oil",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "garlic,",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "garlic",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sour wine,",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "sour wine",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fruit,",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "fruit",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tobacco,",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "tobacco",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cheese,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "cheese",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "vegetables,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "vegetables",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dirt.",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "dirt",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "altogether,",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "altogether",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "streets,",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "streets",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lanes,",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "lanes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "passages,",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "passages",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "quays,",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "quays",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "terraces,",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "terraces",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "yards,",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "yards",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "courts,",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "courts",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "corners,",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "corners",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stank.",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "stank",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison,",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town;",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "town",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison,",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town,",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "town",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town,",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "town",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison.",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bottom,",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "bottom",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "basin,",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "basin",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "harbour,",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "harbour",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison.",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison,",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town;",
+      "line_number": 41,
+      "notes": null,
+      "original_text": "town",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison,",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town,",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "town",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town,",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "town",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison.",
+      "line_number": 43,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "minutes,",
+      "line_number": 44,
+      "notes": null,
+      "original_text": "minutes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison,",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town,",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "town",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "town,",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "town",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prison.",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "prison",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 2.5 Pro Preview 3/25",
+  "annotation_date": "2025-04-08T21:03:32.071371",
+  "verified": false
+}

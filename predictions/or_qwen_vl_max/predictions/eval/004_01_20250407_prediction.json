@@ -1,0 +1,38 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Why did he dine",
+      "corrected_text": "Why did he dine",
+      "line_number": 24,
+      "page": "184"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "CAP",
+      "line_number": 24,
+      "page": "184"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "exaggeration",
+      "line_number": 24,
+      "page": "184"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "mask",
+      "line_number": 24,
+      "page": "184"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T19:56:20.783903",
+  "verified": false
+}

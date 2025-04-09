@@ -1,0 +1,73 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "late, dull",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "late dull",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Saone",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar trees",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "Chalons",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Saone",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ed",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with wet",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "wet",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Mistral Small 3.1 24B",
+  "annotation_date": "2025-04-07T22:50:13.726790",
+  "verified": false
+}

@@ -1,0 +1,46 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "eyes by",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "eyesby",
+      "page": "page_006.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "white, but",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "whitebut",
+      "page": "page_006.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ring\u2014in",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "ring\u2014 in",
+      "page": "page_006.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "terrace-gardens",
+      "line_number": 41,
+      "notes": "written in margin",
+      "original_text": "terrace gardens",
+      "page": "page_006.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Llama 4 Maverick",
+  "annotation_date": "2025-04-07T20:31:19.687790",
+  "verified": false
+}

@@ -1,0 +1,45 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bedroom",
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "and a faded check too",
+      "corrected_text": "and a faded check too,",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "me, not that",
+      "corrected_text": "me; not that",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fled Arthur",
+      "corrected_text": "fled, Arthur",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Cucumber",
+      "corrected_text": "Cucumber,",
+      "line_number": 18,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T21:57:17.282387",
+  "verified": false
+}

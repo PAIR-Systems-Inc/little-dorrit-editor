@@ -1,0 +1,31 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 1,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "from her heart",
+      "corrected_text": "from her heart (as she did, if it be the source of earnestness)",
+      "line_number": 10,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "I hoped so",
+      "line_number": 12,
+      "page": "369"
+    }
+  ],
+  "annotator": "Qwen VL Max",
+  "annotation_date": "2025-04-07T22:05:11.397532",
+  "verified": false
+}

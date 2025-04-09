@@ -1,0 +1,45 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "to-day",
+      "corrected_text": "to-day,",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "to-day.",
+      "corrected_text": "to-day!",
+      "line_number": 38,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "to-day.",
+      "corrected_text": "to-day!",
+      "line_number": 41,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "to-day.",
+      "corrected_text": "to-day!",
+      "line_number": 43,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "and marshong",
+      "corrected_text": "and marshong,",
+      "line_number": 36,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4o-mini (OR)",
+  "annotation_date": "2025-04-07T21:45:18.660436",
+  "verified": false
+}
