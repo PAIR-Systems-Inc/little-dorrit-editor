@@ -26,7 +26,7 @@ The benchmark recognizes several types of editorial operations:
 3. `replacement`: Substituting text with alternatives
 4. `punctuation`: Modifying or adding punctuation
 5. `capitalization`: Changing case (upper/lower)
-6. `reordering`: Rearranging text sequence
+6. `italicize`: Changing text to italic
 
 ### Line Numbering Convention
 
