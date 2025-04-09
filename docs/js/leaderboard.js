@@ -366,6 +366,24 @@ async function prepareModelPerformanceData() {
         // Get metrics from processed data
         const details = modelData.details || {};
 
+        // Get all edit matches to calculate actual TP, FP, FN totals
+        let totalModelTp = 0;
+        let totalModelFp = 0;
+        let totalModelFn = 0;
+        
+        // Collect all edit matches from all files
+        const fileResultsData = details.file_results || modelData.file_results || [];
+        fileResultsData.forEach(fileResult => {
+            const fileDetails = fileResult.details;
+            if (Array.isArray(fileDetails)) {
+                fileDetails.forEach(edit => {
+                    totalModelTp += edit.tp || 0;
+                    totalModelFp += edit.fp || 0;
+                    totalModelFn += edit.fn || 0;
+                });
+            }
+        });
+        
         // Add model summary row
         const modelRow = {
             id: modelData.model_name,
@@ -374,9 +392,9 @@ async function prepareModelPerformanceData() {
             recall: modelData.recall || 0,
             f1_score: modelData.f1_score || 0,
             confidenceInterval: "pending...",
-            true_positives: details.correct_count || 0,
-            false_positives: (details.total_predicted || 0) - (details.correct_count || 0),
-            false_negatives: (details.total_ground_truth || 0) - (details.correct_count || 0),
+            true_positives: totalModelTp || 0,
+            false_positives: totalModelFp || 0,
+            false_negatives: totalModelFn || 0,
             _children: []
         };
 
@@ -422,13 +440,10 @@ async function prepareModelPerformanceData() {
                 fileRecall = totalTp / (totalTp + totalFn) || 0;
                 fileF1 = fBetaScore(filePrecision, fileRecall);
 
-                // Count "correct" edits (tp >= 0.5)
-                fileTp = fileDetails.filter(edit => (edit.tp || 0) >= 0.5).length;
-                const totalGT = fileDetails.filter(edit => edit.expected_edit_num !== undefined && edit.expected_edit_num !== null).length;
-                const totalPred = fileDetails.filter(edit => edit.observed_edit_num !== undefined && edit.observed_edit_num !== null).length;
-
-                fileFp = totalPred - fileTp;
-                fileFn = totalGT - fileTp;
+                // Use actual values from the edits
+                fileTp = totalTp;
+                fileFp = totalFp;
+                fileFn = totalFn;
             }
 
             // Add file row
@@ -515,23 +530,32 @@ async function createModelPerformanceTable() {
             {
                 title: "TP",
                 field: "true_positives",
-                width: 55,
+                width: 65,
                 headerHozAlign: "right",
                 hozAlign: "right",
+                formatter: function(cell) {
+                    return cell.getValue().toFixed(1);
+                }
             },
             {
                 title: "FP",
                 field: "false_positives",
-                width: 55,
+                width: 65,
                 headerHozAlign: "right",
                 hozAlign: "right",
+                formatter: function(cell) {
+                    return cell.getValue().toFixed(1);
+                }
             },
             {
                 title: "FN",
                 field: "false_negatives",
-                width: 55,
+                width: 65,
                 headerHozAlign: "right",
                 hozAlign: "right",
+                formatter: function(cell) {
+                    return cell.getValue().toFixed(1);
+                }
             }
         ]
     });
