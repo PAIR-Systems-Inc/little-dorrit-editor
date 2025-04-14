@@ -1,0 +1,66 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "high-road",
+      "corrected_text": "high road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "materials",
+      "corrected_text": "materials,",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": ",",
+      "corrected_text": "",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "about and",
+      "corrected_text": "about, and",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "tion did",
+      "corrected_text": "tion did not",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Clennam in amazement",
+      "corrected_text": "Clennam, in amazement",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.1 Mini",
+  "annotation_date": "2025-04-14T11:17:17.895145",
+  "verified": false
+}

@@ -1,0 +1,46 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Period here?",
+      "line_number": 2,
+      "notes": "Handwritten note in red ink next to 'Sun and Shadow.'",
+      "original_text": "Sun and Shadow.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Thirty",
+      "line_number": 4,
+      "notes": "Handwritten correction in red ink at the start of the paragraph, changing 'Hirty' to 'Thirty'.",
+      "original_text": "Hirty",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stranger",
+      "line_number": 4,
+      "notes": "Handwritten correction in red ink, changing 'strangers' to 'stranger'.",
+      "original_text": "strangers",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "universal",
+      "line_number": 4,
+      "notes": "Handwritten correction in red ink, changing 'univer-sal' to 'universal'.",
+      "original_text": "univer-sal",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T12:23:57.857369",
+  "verified": false
+}

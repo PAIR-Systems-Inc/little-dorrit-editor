@@ -1,0 +1,37 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "and thanked her.",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "and thanked her",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with a look in which regard for him and trustfulness in him were strikingly blended with a kind of timid sorrow for him, she was so beautiful that it was well for his peace\u2014or ill for his peace, he did not quite know which \u2014 that he had made that vigorous resolution he had so often thought about.",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "with a look in which regard for him and trustfulness in him were strikingly blended with a kind of timid sorrow for him, she was so beautiful that it was well for his peace\u2014or ill for his peace, he did not quite know which \u2014 that he had made that vigorous resolution he had so often thought about.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "At this, he thought directly, \"they are to be married.\"",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "At this, he thought directly, \"they are to be married.\"",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:33:22.319906",
+  "verified": false
+}

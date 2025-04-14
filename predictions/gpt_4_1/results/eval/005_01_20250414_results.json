@@ -1,0 +1,50 @@
+{
+  "model_name": "gpt_4_1",
+  "date": "2025-04-14T13:45:50.744302",
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:03:32.966167",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 37,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit type ('replacement') matches exactly with the ground truth edit type ('replacement'). Regarding text content accuracy, the core adjustment from 'said' to 'asked' is precisely reflected in both the ground truth and predicted corrections. The additional context provided ('Clennam') in the original text from the ground truth does not change the essential nature of the edit. The predicted text edit accurately captures the intended change, making the prediction correct according to the evaluation criteria."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 34,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

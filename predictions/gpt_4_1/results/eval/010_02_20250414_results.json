@@ -1,0 +1,92 @@
+{
+  "model_name": "gpt_4_1",
+  "date": "2025-04-14T13:55:11.920714",
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:21:59.516309",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth in edit type exactly ('punctuation'). Regarding text content accuracy, the predicted edit 'hers' \u2192 'hers,' directly reflects the core punctuation change ('hers' to 'hers,') indicated in the ground truth ('hers and' \u2192 'hers, and'). Although the prediction does not explicitly include the following word ('and'), it successfully captures the essential punctuation correction. As per the evaluation criteria, additional context is permitted but not required, and here the core edit of adding the comma after 'hers' is clearly and correctly identified. Therefore, both the edit type and the core text content change are accurately reflected."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches exactly the edit type ('punctuation') specified by the ground truth. Additionally, the core textual change is correctly captured\u2014the original text 'hers matters' is corrected in the ground truth to 'hers, matters' by adding a comma after 'hers'. The prediction indicates the correction from 'hers' to 'hers,' which precisely captures the essential comma insertion noted by the ground truth. Although the prediction only mentions the specific word 'hers', it correctly captures the core punctuation change intended by the ground truth. Therefore, the prediction satisfies both criteria: edit type accuracy and text content accuracy."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "moment",
+      "corrected_text": "moment,",
+      "observed_line_number": 25,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit correctly matches the ground truth intention. Both edits are of type 'punctuation', so the edit type accuracy criterion is satisfied. Regarding text content accuracy, the ground truth edit adds a comma after the word 'moment' ('moment with' \u2192 'moment, with'). The predicted edit similarly adds a comma after 'moment' ('moment' \u2192 'moment,'). Although the predicted edit includes slightly less context, it precisely captures the essential punctuation correction indicated by the ground truth edit\u2014introducing a comma after the word 'moment'. Therefore, both criteria (type accuracy and text content accuracy) are fully satisfied."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit precisely matches the ground truth. Specifically, the edit type 'capitalization' is identical, and the text content ('they' corrected to 'They') matches exactly as well. No differences in the core intended correction are identified, making this prediction fully accurate according to both specified criteria."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "that papa had abandoned",
+      "corrected_text": "that papa had abandoned,",
+      "observed_line_number": 31,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

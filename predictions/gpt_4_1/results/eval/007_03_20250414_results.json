@@ -1,0 +1,22 @@
+{
+  "model_name": "gpt_4_1",
+  "date": "2025-04-14T13:49:51.124458",
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:57:17.347463",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow,",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit has the same edit type ('punctuation') as the ground truth. The punctuation change from either no punctuation or incorrect punctuation (comma) to a period matches precisely with the ground truth's intention ('Sun and Shadow' \u2192 'Sun and Shadow.'). The difference in the original punctuation (no punctuation in ground truth vs. comma in prediction) does not detract from the essential correction that was made, which is adding or correcting to a period at the end of the phrase. Thus, both criteria (edit type and essential text-edit) are satisfied, making the predicted edit correct."
+    }
+  ]
+}

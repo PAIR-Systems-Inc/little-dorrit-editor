@@ -1,0 +1,55 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "thank him from her heart (as",
+      "line_number": 16,
+      "notes": "Added 'her' before 'heart'",
+      "original_text": "thank him from her heart (as",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "she did, if it be the source of earnestness),",
+      "line_number": 16,
+      "notes": "Added 'she did, if it be the source of earnestness),'",
+      "original_text": "she did, if it be the source of earnestness),",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and, now, Minnie Gowan,",
+      "line_number": 17,
+      "notes": "Added 'and,' at the beginning",
+      "original_text": "And now, Minnie Gowan,",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "smiling; \"will",
+      "line_number": 17,
+      "notes": "Added 'smiling;' after 'Gowan,'",
+      "original_text": "smiling; \"will",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Oh! I have very much to ask of you.\"",
+      "line_number": 18,
+      "notes": "Added quotation marks around the sentence",
+      "original_text": "\"Oh! I have very much to ask of you.",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:46:17.792014",
+  "verified": false
+}

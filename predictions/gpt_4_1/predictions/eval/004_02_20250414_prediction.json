@@ -1,0 +1,17 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "why did he dine to-",
+      "corrected_text": "Why did he dine to-",
+      "line_number": 27,
+      "page": "184"
+    }
+  ],
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:16:58.528140",
+  "verified": false
+}

@@ -1,0 +1,55 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "in our fancy,",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "in our fancy",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Thank you,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Thank you",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "gently launched them on the flowing river.",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "gently launched them on the flowing river.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "within-doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that once were",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "that once were",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:48:06.456076",
+  "verified": false
+}

@@ -1,0 +1,8 @@
+{
+  "model_id": "gpt_4_1_nano",
+  "display_name": "GPT-4.1 Nano",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2025-04-14",
+  "notes": "Benchmark run with 2-shot learning"
+}

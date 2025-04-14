@@ -1,0 +1,28 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Period here?",
+      "line_number": 2,
+      "notes": "Handwritten note in red ink next to 'Sun and Shadow.'",
+      "original_text": "Sun and Shadow.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Thirty",
+      "line_number": 4,
+      "notes": "Handwritten correction in red ink at the start of the paragraph, changing 'THIRTY' to 'Thirty'.",
+      "original_text": "THIRTY",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:30:33.341156",
+  "verified": false
+}

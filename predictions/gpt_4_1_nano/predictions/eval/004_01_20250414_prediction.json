@@ -1,0 +1,55 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 12,
+      "notes": "Correction of capitalization and spacing",
+      "original_text": "why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cap",
+      "line_number": 13,
+      "notes": "Abbreviation correction, possibly for 'cap' as in 'cap and cushion' or similar",
+      "original_text": "cap",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a cushion",
+      "line_number": 13,
+      "notes": "Added clarification or correction to 'cap'",
+      "original_text": "cap",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and",
+      "line_number": 13,
+      "notes": "Added conjunction",
+      "original_text": "a cushion",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mask",
+      "line_number": 13,
+      "notes": "Correction of 'mark' to 'mask'",
+      "original_text": "mark",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:27:51.606915",
+  "verified": false
+}

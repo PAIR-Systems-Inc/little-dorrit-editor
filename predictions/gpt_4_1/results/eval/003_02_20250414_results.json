@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt_4_1",
+  "date": "2025-04-14T13:43:28.290527",
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:16:03.736710",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Travellers .",
+      "corrected_text": "Travellers.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit is correct because: (1) Edit type accuracy matches exactly (both are identified as 'punctuation'). (2) The text content accuracy is also correct. The ground truth edit adds a period at the end of 'Fellow Travellers' (changing it to 'Fellow Travellers.'). The predicted edit similarly corrects 'Travellers .' to 'Travellers.', essentially capturing the exact core punctuation adjustment indicated by the ground truth. Although the predicted edit involves less context ('Travellers .' instead of the full 'Fellow Travellers'), it explicitly addresses the same punctuation correction, making it acceptable and accurate according to evaluation criteria."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "howling over yonder to-day, sir; is there?",
+      "corrected_text": "howling, over yonder, to-day, sir; is there?",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The prediction correctly identifies the edit type as 'punctuation', matching the ground truth precisely. The essential punctuation edit from 'howling over' to 'howling, over' is accurately captured in the predicted edit. Though the predicted text contains additional context ('over yonder, to-day, sir; is there?'), the core punctuation correction intended by the ground truth (adding a comma after 'howling') is clearly and correctly represented. According to the evaluation criteria, additional context does not negate correctness as long as the fundamental edit is accurate and the type exactly matches. Both conditions are satisfied here."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "punctuation",
+      "original_text": "pockets and rattling",
+      "corrected_text": "pockets, and rattling",
+      "observed_line_number": 14,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "The predicted edit correctly identifies the edit type as 'punctuation', matching exactly the ground truth. Regarding text content accuracy, the prediction captures the core punctuation change ('pockets and' \u2192 'pockets, and'), which precisely matches the intended change specified in the ground truth. The additional word ('rattling') included in context after the edit does not affect the correctness, as per the instructions provided. Therefore, the prediction fully satisfies both the edit type accuracy and the essential text content accuracy."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

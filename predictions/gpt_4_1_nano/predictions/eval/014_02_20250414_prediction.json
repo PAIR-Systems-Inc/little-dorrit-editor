@@ -1,0 +1,28 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "bedroom,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "bed room,",
+      "page": "0452.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that is past and what is past can never be recalled except in his own case as poor Mr. F. said when he was in spirits Cucumber and therefore never ate it.",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "that is past and what is past can never be recalled except in his own case as poor Mr. F. said when he was in spirits Cucumber and therefore never ate it.",
+      "page": "0452.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:50:57.761452",
+  "verified": false
+}

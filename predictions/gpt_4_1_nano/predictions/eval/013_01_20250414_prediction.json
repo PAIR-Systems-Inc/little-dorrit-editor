@@ -1,0 +1,34 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts.",
+      "line_number": 4,
+      "notes": "Handwritten note pointing to 'snorts' with correction 'driest of snorts.'"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boiling-over",
+      "line_number": 8,
+      "notes": "Handwritten correction to 'boiling-over' from 'boiling-over'."
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him.",
+      "line_number": 22,
+      "notes": "Handwritten correction to add 'him.' at the end of the sentence."
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 24,
+      "notes": "Handwritten correction to 'authorise' from 'authorise'."
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:36:05.994062",
+  "verified": false
+}

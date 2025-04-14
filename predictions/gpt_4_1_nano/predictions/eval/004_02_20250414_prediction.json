@@ -1,0 +1,55 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 16,
+      "notes": "Correction of 'w' to 'Why'",
+      "original_text": "w",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "why",
+      "line_number": 16,
+      "notes": "Added 'why' for clarity",
+      "original_text": "w",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cap",
+      "line_number": 17,
+      "notes": "Correction of 'cap' to 'cap'",
+      "original_text": "cap",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a cushion",
+      "line_number": 17,
+      "notes": "Added 'a cushion' after 'cap' for clarity",
+      "original_text": "cap",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mask",
+      "line_number": 17,
+      "notes": "Correction of 'mask' to 'mask'",
+      "original_text": "mask",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:41:44.160907",
+  "verified": false
+}

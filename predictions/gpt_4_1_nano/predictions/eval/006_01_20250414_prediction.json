@@ -1,0 +1,73 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high-road",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "costing",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "telling him not to be uneasy on her behalf, for she was quite well; but he had not seen her, for what, in their intercourse, was a long time.",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "telling him not to be uneasy on her, for she was quite well; but he had not seen her, for what, in their intercourse, was a long time.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam!\u2014Tattyoram!",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "Clennam!\u2014Tattyoram!",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "What\u2019s the matter?",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "What\u2019s the matter?",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cNever to come back,\u201d",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "Never to come back,\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cHow did it happen? Pray sit down and tell me.\u201d",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "How did it happen? Pray sit down and tell me.",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:29:47.230814",
+  "verified": false
+}

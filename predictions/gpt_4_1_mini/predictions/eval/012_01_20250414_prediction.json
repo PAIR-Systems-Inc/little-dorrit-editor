@@ -1,0 +1,73 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "ity",
+      "corrected_text": "City",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "reluctant return",
+      "corrected_text": "reluctant return to",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "busy existence,at",
+      "corrected_text": "busy existence, at",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "it;to",
+      "corrected_text": "it; to",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "motionlesswhen",
+      "corrected_text": "motionless when",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "stand-still;to",
+      "corrected_text": "stand-still; to",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "view,by",
+      "corrected_text": "view, by",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "existence;is",
+      "corrected_text": "existence; is",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "liege lord",
+      "corrected_text": "liege lord",
+      "line_number": 22,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.1 Mini",
+  "annotation_date": "2025-04-14T11:22:45.825196",
+  "verified": false
+}

@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "snorts",
+      "corrected_text": "snorts.",
+      "line_number": 6,
+      "page": "Chapter 35"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "of the driest",
+      "corrected_text": "of the driest,",
+      "line_number": 6,
+      "page": "Chapter 35"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 27,
+      "page": "Chapter 35"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 38,
+      "page": "Chapter 35"
+    }
+  ],
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T12:02:55.572468",
+  "verified": false
+}

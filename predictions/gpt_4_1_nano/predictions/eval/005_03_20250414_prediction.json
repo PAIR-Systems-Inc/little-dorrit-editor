@@ -1,0 +1,46 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "If he",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "If he",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "asked",
+      "page": "003.png",
+      "type": "spelling"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "say",
+      "page": "003.png",
+      "type": "spelling"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Ce",
+      "line_number": 16,
+      "notes": "initials or abbreviation correction",
+      "original_text": "Ce",
+      "page": "003.png",
+      "type": "text"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T12:22:00.893603",
+  "verified": false
+}

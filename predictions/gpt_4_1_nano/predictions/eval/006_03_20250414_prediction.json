@@ -1,0 +1,100 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high-road",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "costing absolutely nothing.",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "costing absolu-",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and, telling him not to be uneasy on her behalf, for she was quite well; but he had not seen her, for what, in their intercourse, was a long time.",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "and, telling him not to be uneasy on her behalf, for she was quite well; but he had not seen her, for what, in their intercourse, was a long time.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam!\u2014Tattycoram!",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "Clennam!\u2014Tattycoram!",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cWhat\u2019s the matter?\u201d",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "\u201cWhat\u2019s the matter?\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cLost!\u201d",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "\u201cLost!\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cWhy, bless my heart alive!\u201d cried Clennam, in amazement. \u201cWhat do you mean?\u201d",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "\u201cWhy, bless my heart alive!\u201d cried Clennam in amazement. \u201cWhat do you mean?\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cWouldn\u2019t count five-and-twenty, sir; couldn\u2019t be got to do it; stopped at eight, and took herself off.\u201d",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "\u201cWouldn\u2019t count five-and-twenty, sir; couldn\u2019t be got to do it; stopped at eight, and took herself off.\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cLeft your house?\u201d",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "\u201cLeft your house?\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cNever to come back,\u201d said Mr. Meagles, shaking his head. \u201cYou don\u2019t know that girl\u2019s passionate and proud character. A team of horses couldn\u2019t draw her back now; the bolts and bars of the old Bastille couldn\u2019t keep her.\u201d",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "\u201cNever to come back,\u201d said Mr. Meagles, shaking his head. \u201cYou don\u2019t know that girl\u2019s passionate and proud character. A team of horses couldn\u2019t draw her back now; the bolts and bars of the old Bastille couldn\u2019t keep her.\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T12:23:05.744461",
+  "verified": false
+}

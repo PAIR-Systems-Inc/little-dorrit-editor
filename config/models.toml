@@ -166,6 +166,24 @@ model_name = "gpt-4-turbo"
 api_key = "${OPENAI_API_KEY}"
 logical_name = "GPT-4 Turbo"
 
+[gpt_4_1]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-4.1"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-4.1"
+
+[gpt_4_1_mini]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-4.1-mini"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-4.1 Mini"
+
+[gpt_4_1_nano]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-4.1-nano"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-4.1 Nano"
+
 ["gpt-4.5-preview"]
 endpoint = "https://api.openai.com/v1"
 model_name = "gpt-4.5-preview"

@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt_4_1",
+  "date": "2025-04-14T13:42:49.226934",
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:01:46.386970",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "howling over yonder to-day, sir; is there?",
+      "corrected_text": "howling, over yonder, to-day, sir; is there?",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The edit type ('punctuation') matches exactly between ground truth and prediction. The text content accurately captures the essential punctuation correction ('howling over' \u2192 'howling, over'). Although the prediction shows additional context ('yonder to-day, sir; is there?'), it correctly identifies and implements the essential comma insertion after 'howling'. Therefore, both the type and essential change intended by the ground truth have been accurately reflected."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "pockets and rattling",
+      "corrected_text": "pockets, and rattling",
+      "observed_line_number": 15,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit type ('punctuation') exactly matches the ground truth edit type. Regarding content accuracy, the ground truth edit is 'pockets and' to 'pockets, and', while the predicted edit is 'pockets and rattling' to 'pockets, and rattling'. The prediction accurately captures the essential punctuation correction ('and' corrected to ', and') indicated by the ground truth. The additional context provided ('rattling') does not affect correctness, as the evaluation guidelines explicitly allow additional context. Therefore, the prediction is correct."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

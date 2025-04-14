@@ -1,0 +1,55 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "thank him from her heart (as",
+      "line_number": 16,
+      "notes": "Added 'her' before 'heart'",
+      "original_text": "thank him from her heart (as",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "she did, if it be the source of earnestness),",
+      "line_number": 16,
+      "notes": "Added 'she did, if it be the source of earnestness),'",
+      "original_text": "she did, if it be the source of earnestness),",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and, now and then a word of encouragement from him,",
+      "line_number": 17,
+      "notes": "Added 'and,' at the beginning",
+      "original_text": "and, if it be the source of earnestness),",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "smiling; \"will you ask me nothing?\"",
+      "line_number": 18,
+      "notes": "Added '\"will you ask me nothing?\"' at the end",
+      "original_text": "smiling, \"will you ask me nothing?\"",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "so; I am not disappointed.\"",
+      "line_number": 19,
+      "notes": "Added 'so;' at the beginning",
+      "original_text": "so; I am not disappointed.\"",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T12:25:50.112833",
+  "verified": false
+}

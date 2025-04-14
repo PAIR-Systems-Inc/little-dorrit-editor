@@ -1,0 +1,64 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "A late, dull autumn night was closing in upon the river Saone.",
+      "line_number": 2,
+      "notes": "Added 'A' at the beginning of the sentence",
+      "original_text": "late, dull autumn night was closing in upon the river Saone.",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "like a sullied looking-glass in a gloomy place, reflected",
+      "line_number": 3,
+      "notes": "Added 'like' at the beginning of the phrase",
+      "original_text": "a sullied looking-glass in a gloomy place, reflected",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heavy streak, occasionally made a little ragged by a row of poplar trees",
+      "line_number": 4,
+      "notes": "Added 'poplar' before 'trees'",
+      "original_text": "heavy streak, occasionally made a little ragged by a row of trees",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "One man, slowly moving on towards Chalons, was the only visible",
+      "line_number": 8,
+      "notes": "Added comma after 'man'",
+      "original_text": "One man slowly moving on towards Chalons was the only visible",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ed,",
+      "line_number": 10,
+      "notes": "Added comma after 'ed'",
+      "original_text": "and his shoes and gaiters trodden out, his hair and beard untrimmed; the cloak he carried over his shoulder, and the clothes he wore, sodden with wet; limping along in pain and difficulty; he looked as if the clouds were hurrying from him, as if the wail of the wind and the shuddering of the grass",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the low mysterious plashing of the water murmured at him, as if the fitful autumn night were disturbed by him.",
+      "line_number": 12,
+      "notes": "Rephrased or added to the sentence for clarity",
+      "original_text": "the low mysterious plashing of the water murmured at him, as if the fitful autumn night were disturbed by him.",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:31:27.461349",
+  "verified": false
+}

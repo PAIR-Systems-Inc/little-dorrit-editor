@@ -1,0 +1,52 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "A late, dull autumn night",
+      "corrected_text": "A late, dull autumn night",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "On the banks of the river Saone it was wet",
+      "corrected_text": "On the banks of the river Sa\u00f4ne it was wet",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "One man slowly moving on towards Chalons was",
+      "corrected_text": "One man slowly moving on towards Chalons, was",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sodden with wet",
+      "corrected_text": "sodden with",
+      "line_number": 7,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.1 Mini",
+  "annotation_date": "2025-04-14T12:11:21.818123",
+  "verified": false
+}

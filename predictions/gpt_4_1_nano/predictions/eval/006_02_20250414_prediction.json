@@ -1,0 +1,64 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high-road",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "costing",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "telling him not to be uneasy on her behalf, for she was quite well; but he had not seen her, for what, in their intercourse, was a long time.",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "telling him not to be uneasy on her behalf, for she was quite well; but he had not seen her, for what, in their intercourse, was a long time.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam!\u2014Tattyoram!",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "Clennam!\u2014Tattyoram!",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "What\u2019s the matter?",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "What\u2019s the matter?",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cNever to come back,\u201d said Mr. Meagles, shaking his head. \u201cYou don\u2019t know that girl\u2019s passionate and proud character. A team of horses couldn\u2019t draw her back now; the bolts and bars of the old Bastille couldn\u2019t keep her.\u201d",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "Never to come back,\u201d said Mr. Meagles, shaking his head. \u201cYou don\u2019t know that girl\u2019s passionate and proud character. A team of horses couldn\u2019t draw her back now; the bolts and bars of the old Bastille couldn\u2019t keep her.\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:43:42.824742",
+  "verified": false
+}

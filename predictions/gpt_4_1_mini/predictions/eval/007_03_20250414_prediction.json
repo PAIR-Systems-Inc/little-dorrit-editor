@@ -1,0 +1,24 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": ".",
+      "corrected_text": "",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": ".",
+      "corrected_text": "",
+      "line_number": 1,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.1 Mini",
+  "annotation_date": "2025-04-14T12:10:19.091682",
+  "verified": false
+}

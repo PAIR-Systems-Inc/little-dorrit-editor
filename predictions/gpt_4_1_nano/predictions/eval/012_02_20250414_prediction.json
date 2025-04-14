@@ -1,0 +1,64 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "city",
+      "line_number": 2,
+      "notes": "Handwritten note 'cap' above 'city'",
+      "original_text": "city",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to",
+      "line_number": 4,
+      "notes": "Handwritten arrow pointing to 'each'",
+      "original_text": "each",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "at",
+      "line_number": 8,
+      "notes": "Handwritten note 'at' near 'busy'",
+      "original_text": "busy",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "; to",
+      "line_number": 8,
+      "notes": "Handwritten note '; to' near 'a stand-still'",
+      "original_text": "a stand-still",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "; is",
+      "line_number": 12,
+      "notes": "Handwritten note '; is' near 'unhealthiness'",
+      "original_text": "unhealthiness",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lord",
+      "line_number": 14,
+      "notes": "Handwritten note 'lord' near 'liege'",
+      "original_text": "liege",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:49:02.309128",
+  "verified": false
+}

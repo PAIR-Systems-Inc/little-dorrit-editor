@@ -1,0 +1,38 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "If he",
+      "line_number": 16,
+      "notes": "Inserted 'If' before 'he'",
+      "original_text": "he"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 17,
+      "notes": "Changed 'asked' from lowercase to lowercase, indicating correction",
+      "original_text": "asked"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sir, true to a certain extent. But what is a man to do?",
+      "line_number": 17,
+      "notes": "Inserted 'sir, true to a certain extent. But what is a man to do?'",
+      "original_text": "\"True, sir, true to a certain extent. But what is a man to do?\""
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said",
+      "line_number": 17,
+      "notes": "Changed 'say' to 'said'",
+      "original_text": "say"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:42:32.690693",
+  "verified": false
+}

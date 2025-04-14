@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "line_number": 34,
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 37,
+      "page": "209"
+    }
+  ],
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:03:32.966167",
+  "verified": false
+}

@@ -1,0 +1,19 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "and rattling his money at it, apostrophised it with a short laugh.",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "and rattling his money at it, apostrophised it with a short laugh",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T12:19:58.783197",
+  "verified": false
+}

@@ -1,0 +1,52 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "line_number": 12,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "line_number": 13,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment",
+      "corrected_text": "moment,",
+      "line_number": 22,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "line_number": 25,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hesitation, that papa had abandoned the idea.",
+      "corrected_text": "hesitation, that papa had abandoned the idea.",
+      "line_number": 31,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "line_number": 32,
+      "page": "368"
+    }
+  ],
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T12:00:00.360384",
+  "verified": false
+}

@@ -1,0 +1,55 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "city",
+      "line_number": 2,
+      "notes": "handwritten note: 'cap'",
+      "original_text": "city",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to each recurring",
+      "line_number": 4,
+      "notes": "handwritten note: 'to'",
+      "original_text": "to each recurring",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "of the same sequences of machinery, like a dragging piece of clockwork.",
+      "line_number": 5,
+      "notes": "handwritten note: 'of'",
+      "original_text": "of the same sequences of machinery, like a dragging piece of clockwork.",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Pictures of demolished streets and altered houses, as they formerly were when the occupant of the chair was familiar with them; images of people as they too used to be, with little or no allowance made for the lapse of time since they were seen; of these, there must have been many in the long routine of gloomy days. To stop the clock of busy existence, at the hour when we were personally sequestered from it; to suppose mankind stricken motionless when we were brought to a stand-still; to be unable to measure the changes beyond our view, by any larger standard than the shrunken one of our own uniform and contracted existence; is the infirmity of many invalids, and the mental unhealthiness of almost all recluses.",
+      "line_number": 8,
+      "notes": "handwritten note: 'a'",
+      "original_text": "Pictures of demolished streets and altered houses, as they formerly were when the occupant of the chair was familiar with them; images of people as they too used to be, with little or no allowance made for the lapse of time since they were seen; of these, there must have been many in the long routine of gloomy days. To stop the clock of busy existence, at the hour when we were personally sequestered from it; to suppose mankind stricken motionless when we were brought to a stand-still; to be unable to measure the changes beyond our view, by any larger standard than the shrunken one of our own uniform and contracted existence; is the infirmity of many invalids, and the mental unhealthiness of almost all recluses.",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lord",
+      "line_number": 12,
+      "notes": "handwritten note: 'lord'",
+      "original_text": "lord",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T12:28:49.010351",
+  "verified": false
+}

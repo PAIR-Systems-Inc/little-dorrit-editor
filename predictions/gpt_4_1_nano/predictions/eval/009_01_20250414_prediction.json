@@ -1,0 +1,55 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "thank him from her heart (as",
+      "line_number": 22,
+      "notes": "Added 'her' before 'heart'",
+      "original_text": "thank him from her heart (as",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "she did, if it be the source of earnestness),",
+      "line_number": 22,
+      "notes": "Added 'she' before 'did,'",
+      "original_text": "she did, if it be the source of earnestness),",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and now and then a word of encouragement from him, as they walked on slowly and almost silently under the darkening trees.",
+      "line_number": 23,
+      "notes": "Added sentence after 'she did, if it be the source of earnestness),'",
+      "original_text": "and then a word of en- couragement from him, as they walked on slowly and almost silently under the darkening trees.",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cAnd, now, Minnie Gowan,\u201d at length, said Clennam, smiling; \u201cwill you ask me nothing?\u201d",
+      "line_number": 24,
+      "notes": "Added comma after 'And'",
+      "original_text": "\u201cAnd, now, Minnie Gowan,\u201d at length, said Clennam, smiling; \u201cwill you ask me nothing?\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cOh! I have very much to ask of you.\u201d",
+      "line_number": 25,
+      "notes": "Added exclamation mark after 'Oh'",
+      "original_text": "\u201cOh! I have very much to ask of you.\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:32:17.930245",
+  "verified": false
+}

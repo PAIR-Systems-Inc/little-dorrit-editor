@@ -1,0 +1,28 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "bedroom,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "bed room,",
+      "page": "0452.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that is past and what is past can never be recalled except in his own",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "that is past and what is past can never be recalled except in his own",
+      "page": "0452.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T11:36:51.332489",
+  "verified": false
+}

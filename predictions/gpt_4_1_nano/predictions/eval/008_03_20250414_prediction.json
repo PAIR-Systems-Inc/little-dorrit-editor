@@ -1,0 +1,46 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "A late, dull autumn night was closing in upon the river Saone.",
+      "line_number": 2,
+      "notes": "Added comma after 'A late'",
+      "original_text": "A late, dull autumn night was closing in upon the river Saone.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "trees, hyphen",
+      "line_number": 8,
+      "notes": "Added comma after 'trees', and 'hyphen' as a note",
+      "original_text": "trees against the wrathful sunset.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ed",
+      "line_number": 13,
+      "notes": "Added 'ed' as a note",
+      "original_text": "cloaked he carried",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "then",
+      "line_number": 17,
+      "notes": "Added 'then' at the beginning of the sentence",
+      "original_text": "he limped on again, toiling and muttering.",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T12:24:48.800003",
+  "verified": false
+}

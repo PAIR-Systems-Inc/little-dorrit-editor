@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": ",",
+      "corrected_text": "",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "why did he dine to-",
+      "corrected_text": "cop question mark",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.1 Mini",
+  "annotation_date": "2025-04-14T11:15:41.516526",
+  "verified": false
+}

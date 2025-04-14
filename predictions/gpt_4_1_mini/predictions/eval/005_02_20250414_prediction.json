@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "If",
+      "corrected_text": "If T cep",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sad",
+      "corrected_text": "asked",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.1 Mini",
+  "annotation_date": "2025-04-14T11:30:00.570041",
+  "verified": false
+}

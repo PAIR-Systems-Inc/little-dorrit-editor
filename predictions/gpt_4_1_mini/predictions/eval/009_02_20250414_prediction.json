@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart; so",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "his own",
+      "corrected_text": "his, own",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "generous",
+      "corrected_text": "generous,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "face, with some hurried words to the effect that she thanked him from her heart (as",
+      "corrected_text": "face, indeed, with some hurried words to the effect that she thanked him from her heart (as",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "hoped so",
+      "corrected_text": "I hoped so",
+      "line_number": 26,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-4.1 Mini",
+  "annotation_date": "2025-04-14T11:33:28.941008",
+  "verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "howling over yonder to-day, sir; is there?",
+      "corrected_text": "howling, over yonder, to-day, sir; is there?",
+      "line_number": 1,
+      "page": "19"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Travellers .",
+      "corrected_text": "Travellers.",
+      "line_number": 0,
+      "page": "19"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and rattling",
+      "corrected_text": "pockets, and rattling",
+      "line_number": 14,
+      "page": "19"
+    }
+  ],
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:16:03.736710",
+  "verified": false
+}

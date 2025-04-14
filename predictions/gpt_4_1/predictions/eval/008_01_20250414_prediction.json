@@ -1,0 +1,38 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "late, dull autumn night",
+      "corrected_text": "A late, dull autumn night",
+      "line_number": 1,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 4,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "wet,",
+      "corrected_text": "wet,",
+      "line_number": 8,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden with",
+      "corrected_text": "soddened with",
+      "line_number": 8,
+      "page": "137"
+    }
+  ],
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:06:20.044209",
+  "verified": false
+}

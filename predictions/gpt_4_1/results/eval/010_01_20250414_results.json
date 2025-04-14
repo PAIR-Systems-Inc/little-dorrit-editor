@@ -1,0 +1,92 @@
+{
+  "model_name": "gpt_4_1",
+  "date": "2025-04-14T13:54:14.105527",
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:08:17.157900",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches exactly with the ground truth edit type ('punctuation') and also accurately captures the core punctuation change ('hers and' to 'hers, and'). Thus, both criteria\u2014the edit type accuracy and the essential text edit\u2014are met perfectly."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The edit type specified ('punctuation') matches exactly between both ground truth and predicted edits. Additionally, the predicted edit ('on hers matters' \u2192 'on hers, matters') accurately captures the core intended punctuation change indicated in the ground truth ('hers matters' \u2192 'hers, matters'). The extra context ('on') in the prediction does not obscure or alter the essential punctuation correction; it merely provides additional surrounding words. Therefore, the predicted edit correctly captures the intention reflected in the ground truth edit."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly captures the intention of the ground truth edit. First, the edit type matches exactly ('punctuation' in both cases). Second, the text content accuracy criteria are fully met, as both the original and corrected texts from the prediction ('moment with' \u2192 'moment, with') exactly match the ground truth edit. Thus, the predicted edit accurately represents the ground truth correction."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 26,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The edit type 'punctuation' exactly matches between the ground truth and the prediction. Additionally, the textual correction ('beautiful that' to 'beautiful, that') precisely matches the ground truth edit, capturing exactly the intended punctuation insertion. Line numbers have been ignored as instructed. Therefore, the prediction accurately reflects both the edit type and the textual content specified by the ground truth edit."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "capitalization",
+      "original_text": "they are to be married.",
+      "corrected_text": "They are to be married.",
+      "observed_line_number": 33,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit and the ground truth match exactly in edit type ('capitalization'). The essential capitalization correction ('they' to 'They') is accurately captured by the predicted edit. Although the prediction includes additional context ('are to be married.'), this does not alter or detract from capturing the core correction intended by the ground truth edit. Thus, both criteria\u2014edit type and essential text content\u2014are satisfied."
+    },
+    {
+      "observed_edit_num": 5,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hesitation, that papa had abandoned the idea.",
+      "corrected_text": "hesitation, that papa had abandoned the idea.",
+      "observed_line_number": 32,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts.",
+      "line_number": 4,
+      "notes": "Added note pointing to 'snorts'",
+      "original_text": "snorts.",
+      "page": "003.png",
+      "type": "annotation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boiling-over",
+      "line_number": 8,
+      "notes": "Corrected 'boiling-over' from 'boiling-over'",
+      "original_text": "boiling-over",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him",
+      "line_number": 17,
+      "notes": "Underline and circle for italics, with note 'Italicize'",
+      "original_text": "him",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 19,
+      "notes": "Note 'authorise' with arrow pointing to 'authorise'",
+      "original_text": "authorise",
+      "page": "003.png",
+      "type": "annotation"
+    }
+  ],
+  "annotator": "GPT-4.1 Nano",
+  "annotation_date": "2025-04-14T12:29:45.778495",
+  "verified": false
+}

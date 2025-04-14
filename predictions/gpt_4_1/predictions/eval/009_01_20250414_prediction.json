@@ -1,0 +1,31 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 19,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said Clennam,",
+      "corrected_text": "said Clennam; ",
+      "line_number": 28,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hope so;",
+      "corrected_text": "I hoped so;",
+      "line_number": 31,
+      "page": "369"
+    }
+  ],
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:07:19.357714",
+  "verified": false
+}
