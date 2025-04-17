@@ -184,6 +184,19 @@ model_name = "gpt-4.1-nano"
 api_key = "${OPENAI_API_KEY}"
 logical_name = "GPT-4.1 Nano"
 
+[gpt_o4_mini]
+endpoint = "https://api.openai.com/v1"
+model_name = "o4-mini"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-o4 Mini"
+temperature = 1.0
+
+[gpt_o3]
+endpoint = "https://api.openai.com/v1"
+model_name = "o3"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-o3"
+
 ["gpt-4.5-preview"]
 endpoint = "https://api.openai.com/v1"
 model_name = "gpt-4.5-preview"

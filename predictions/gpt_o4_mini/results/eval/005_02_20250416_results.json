@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt_o4_mini",
+  "date": "2025-04-17T06:34:58.126443",
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:48:42.552220",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit type 'capitalization' exactly matches the ground truth edit type. The textual change captured is also fundamentally the same: both ground truth and prediction correctly identify the need to capitalize the first letter of 'if'. Although the ground truth included an additional word ('if he'), the critical capitalization edit occurs precisely at the word 'if', which the predicted edit accurately reflects. Since additional context differences are permitted as long as the core correction is appropriately identified, and here the predicted edit captures precisely the intended capitalization change, the prediction is correctly aligned with the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly matches the ground truth in edit type ('replacement'). Regarding text content accuracy, the predicted edit captures the core intended correction, namely the change of 'said' to 'asked'. Although the ground truth edit adds the proper noun 'Clennam' to provide additional context ('said Clennam' to 'asked Clennam'), the essential edit itself (changing 'said' to 'asked') has been accurately reflected in the predicted edit. Since additional context is permissible according to the evaluation rules, and the core intention of the edit is clearly and correctly captured, the prediction is determined correct."
+    }
+  ]
+}

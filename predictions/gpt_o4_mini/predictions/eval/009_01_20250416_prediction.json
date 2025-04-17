@@ -1,0 +1,45 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so much",
+      "corrected_text": "heart, so much",
+      "line_number": 4,
+      "page": "369"
+    },
+    {
+      "type": "deletion",
+      "original_text": "Mr.",
+      "corrected_text": "",
+      "line_number": 7,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 10,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "smiling;",
+      "corrected_text": "smiling,",
+      "line_number": 11,
+      "page": "369"
+    },
+    {
+      "type": "italicize",
+      "original_text": "I hoped so",
+      "corrected_text": "I hoped so",
+      "line_number": 13,
+      "page": "369"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:25:42.782516",
+  "verified": false
+}

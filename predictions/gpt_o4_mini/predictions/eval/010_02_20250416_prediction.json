@@ -1,0 +1,38 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "from hers and",
+      "corrected_text": "from hers, and",
+      "line_number": 7,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on hers, matters",
+      "line_number": 8,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "line_number": 12,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "line_number": 16,
+      "page": "368"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:55:51.861346",
+  "verified": false
+}

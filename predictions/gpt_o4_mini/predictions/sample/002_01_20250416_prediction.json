@@ -1,0 +1,38 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white but",
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "page": "002.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "Marseilles Harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 30,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace\u2011gardens",
+      "line_number": 34,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:16:50.732908",
+  "verified": false
+}

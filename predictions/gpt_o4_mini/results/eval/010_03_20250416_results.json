@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt_o4_mini",
+  "date": "2025-04-17T06:43:47.032230",
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T22:14:44.023082",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches exactly in both edit type ('punctuation') and the core correction content ('hers and' \u2192 'hers, and'). Since both the original and corrected texts are identical between the predicted edit and the ground truth, the prediction correctly captures the intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The edit type 'punctuation' exactly matches the ground truth. The essential punctuation change, inserting a comma between 'hers' and 'matters', is also identical between the ground truth and the predicted edit. The prediction correctly captures both the edit type and the core textual correction, meeting all specified evaluation criteria."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit type ('punctuation') matches exactly with the ground truth edit type ('punctuation'). Additionally, the predicted edited text ('moment, with') accurately matches the ground truth ('moment, with'), correctly inserting the comma as indicated by the ground truth. Although contextual wording is identical and no extra context is included, the core intended punctuation change from 'moment with' to 'moment, with' is precisely captured, satisfying both criteria."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit exactly matches the ground truth edit type ('capitalization') and correctly identifies the core textual change from 'they' to 'They'. Thus, both criteria\u2014edit type accuracy and text content accuracy\u2014are fully satisfied."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

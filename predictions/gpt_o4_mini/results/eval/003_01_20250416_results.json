@@ -1,0 +1,92 @@
+{
+  "model_name": "gpt_o4_mini",
+  "date": "2025-04-17T06:31:45.092436",
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:17:55.466078",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "observed_line_number": 2,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The edit type 'punctuation' matches exactly in both the predicted and ground truth edits, satisfying criterion 1. The text content change also matches precisely, 'howling over' \u2192 'howling, over'. Even though line numbers differ, the instructions explicitly state these should be ignored. Therefore, since both the edit type and the essential text edit match exactly, the predicted edit correctly captures the ground truth's intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": 2,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit accurately matches the ground truth edit. Specifically, both the edit type ('punctuation') and the core textual correction ('yonder to-day' changed to 'yonder, to-day') are the same. Although the line numbers differ, the evaluation instructions explicitly state to ignore line numbers completely. Thus, the prediction successfully captures the essential edit that the ground truth intended."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "deletion",
+      "original_text": ".",
+      "corrected_text": "",
+      "observed_line_number": 1,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "Mr.",
+      "corrected_text": "",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": ";",
+      "corrected_text": ",",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "That's well! I hoped so; I am not disappointed.",
+      "corrected_text": "I hoped so",
+      "line_number": 16,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T22:13:18.727999",
+  "verified": false
+}

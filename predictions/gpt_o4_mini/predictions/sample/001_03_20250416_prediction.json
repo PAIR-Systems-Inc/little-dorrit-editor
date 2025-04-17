@@ -1,0 +1,80 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "church bells",
+      "corrected_text": "church bells,",
+      "line_number": 2,
+      "page": "page5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "wine-bottles",
+      "corrected_text": "Wine-bottles",
+      "line_number": 11,
+      "page": "page5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "go",
+      "corrected_text": "got",
+      "line_number": 13,
+      "page": "page5"
+    },
+    {
+      "type": "deletion",
+      "original_text": "-",
+      "corrected_text": "",
+      "line_number": 13,
+      "page": "page5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "gratingwhere",
+      "corrected_text": "grating where",
+      "line_number": 16,
+      "page": "page5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 23,
+      "page": "page5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "intactin",
+      "corrected_text": "intact in",
+      "line_number": 24,
+      "page": "page5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "ocean",
+      "corrected_text": "Ocean",
+      "line_number": 25,
+      "page": "page5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fed looking",
+      "corrected_text": "fed, looking",
+      "line_number": 29,
+      "page": "page5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 29,
+      "page": "page5"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T22:03:00.660095",
+  "verified": false
+}

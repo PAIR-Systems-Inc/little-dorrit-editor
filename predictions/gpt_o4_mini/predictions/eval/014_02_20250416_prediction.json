@@ -1,0 +1,17 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bed room",
+      "corrected_text": "bedroom",
+      "line_number": 1,
+      "page": "452"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T22:01:25.225008",
+  "verified": false
+}

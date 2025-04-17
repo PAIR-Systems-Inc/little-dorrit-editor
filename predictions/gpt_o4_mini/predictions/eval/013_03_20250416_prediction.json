@@ -1,0 +1,31 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "driest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 5,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 10,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorixe",
+      "corrected_text": "authorise",
+      "line_number": 15,
+      "page": "451"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T22:19:31.091801",
+  "verified": false
+}

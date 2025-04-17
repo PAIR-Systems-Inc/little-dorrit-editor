@@ -1,0 +1,59 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "barsfashioned",
+      "corrected_text": "bars fashioned",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "insertion",
+      "original_text": "gratingwhere",
+      "corrected_text": "grating where",
+      "line_number": 17,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "page": "5"
+    },
+    {
+      "type": "insertion",
+      "original_text": "intactin",
+      "corrected_text": "intact in",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "indian",
+      "corrected_text": "Indian",
+      "line_number": 31,
+      "page": "5"
+    },
+    {
+      "type": "insertion",
+      "original_text": "fedlooking",
+      "corrected_text": "fed looking",
+      "line_number": 35,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 35,
+      "page": "5"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:15:24.606335",
+  "verified": false
+}

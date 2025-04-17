@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "No sir,",
+      "corrected_text": "No, sir,",
+      "line_number": 5,
+      "page": "184"
+    },
+    {
+      "type": "replacement",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "line_number": 10,
+      "page": "184"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "She had no belief",
+      "corrected_text": "she had no belief",
+      "line_number": 10,
+      "page": "184"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T22:06:58.286078",
+  "verified": false
+}

@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "that",
+      "corrected_text": "That",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stones",
+      "corrected_text": "stones?",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:47:27.727639",
+  "verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "road",
+      "corrected_text": "high\u2011road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 2,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about and came",
+      "corrected_text": "about, and came",
+      "line_number": 9,
+      "page": "352"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:21:43.997744",
+  "verified": false
+}

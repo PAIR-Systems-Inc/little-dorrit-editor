@@ -1,0 +1,66 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter xxix",
+      "corrected_text": "Chapter xxix.",
+      "line_number": 0,
+      "page": "page373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Mrs.\u00a0Flintwinch goes on Dreaming",
+      "corrected_text": "Mrs.\u00a0Flintwinch goes on Dreaming.",
+      "line_number": 1,
+      "page": "page373"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 2,
+      "page": "page373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "reluctant return",
+      "corrected_text": "to reluctant return",
+      "line_number": 3,
+      "page": "page373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "busy\u00a0existence,",
+      "corrected_text": "busy\u00a0existence;",
+      "line_number": 5,
+      "page": "page373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand\u2011still,",
+      "corrected_text": "stand\u2011still;",
+      "line_number": 5,
+      "page": "page373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 5,
+      "page": "page373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "liegelord",
+      "corrected_text": "liege\u00a0lord",
+      "line_number": 7,
+      "page": "page373"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T22:17:50.716306",
+  "verified": false
+}

@@ -1,0 +1,66 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": ".",
+      "corrected_text": "",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": ".",
+      "corrected_text": "",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "to",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": ",",
+      "corrected_text": "",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": ";",
+      "corrected_text": ",",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Is",
+      "corrected_text": "is",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": " ",
+      "line_number": 7,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-o4 Mini",
+  "annotation_date": "2025-04-16T21:58:28.717548",
+  "verified": false
+}
