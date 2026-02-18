@@ -135,7 +135,7 @@ The benchmark includes scripts to automate the entire prediction, evaluation, an
 
 2. **Evaluate Predictions**:
    ```bash
-   # Evaluate predictions and calculate metrics (using gpt-4.5-preview as judge)
+   # Evaluate predictions and calculate metrics (using gpt-4o as judge)
    ./scripts/run_evaluation.sh gpt-4o
    ```
 
@@ -177,7 +177,7 @@ The `predict run` command supports the following options:
 ### Running Individual Evaluations
 
 ```bash
-python -m little_dorrit_editor.cli evaluate run --model-name "your_model_id" --llm-model "gpt-4.5-preview" path/to/predicted.json path/to/ground_truth.json
+python -m little_dorrit_editor.cli evaluate run --model-name "your_model_id" --llm-model "gpt-4o" path/to/predicted.json path/to/ground_truth.json
 ```
 
 ### Preparing Datasets

@@ -16,7 +16,7 @@
 #
 # Options:
 #   --display-name "Name": Custom display name for the leaderboard (only used if creating new config)
-#   --judge-model MODEL: Model ID to use for evaluation judging (default: gpt-4.5-preview)
+#   --judge-model MODEL: Model ID to use for evaluation judging (default: gpt-4o)
 #                WARNING: Changing this is NOT recommended as it affects benchmark consistency
 #   --force: Force re-evaluation even if results already exist
 #   --question-ids "id1,id2,...": Only process specific question IDs (comma-separated, no spaces)
@@ -39,7 +39,7 @@
 # Default values
 DEFAULT_MODEL="gpt-4o"
 DISPLAY_NAME=""
-LLM_JUDGE_MODEL="gpt-4.5-preview"
+LLM_JUDGE_MODEL="gpt-4o"
 FORCE_EVAL=false
 MODELS=()
 QUESTION_IDS=""
@@ -81,15 +81,15 @@ if [ ${#MODELS[@]} -eq 0 ]; then
 fi
 
 # Show warning if custom judge model provided and it's not the default
-if [[ "$LLM_JUDGE_MODEL" != "gpt-4.5-preview" ]]; then
+if [[ "$LLM_JUDGE_MODEL" != "gpt-4o" ]]; then
     echo "⚠️ WARNING: Overriding the default judge model is NOT recommended ⚠️"
     echo "It affects benchmark consistency and makes results incomparable with others."
-    echo "Default judge: gpt-4.5-preview"
+    echo "Default judge: gpt-4o"
     echo "Custom judge: $LLM_JUDGE_MODEL"
     echo ""
     read -p "Are you sure you want to continue? (y/N): " confirm
     if [[ "$confirm" != [yY] && "$confirm" != [yY][eE][sS] ]]; then
-        LLM_JUDGE_MODEL="gpt-4.5-preview"
+        LLM_JUDGE_MODEL="gpt-4o"
         echo "Using default judge model: $LLM_JUDGE_MODEL"
     else
         echo "Using custom judge model: $LLM_JUDGE_MODEL"

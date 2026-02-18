@@ -41,7 +41,7 @@ def run(
         "unnamed_model", "--model-name", "-m", help="Name/ID of the model being evaluated"
     ),
     llm_model: str = typer.Option(
-        "gpt-4.5-preview", "--llm-model", "-l",
+        "gpt-4o", "--llm-model", "-l",
         help=f"LLM model ID to use for evaluation. Available models: {', '.join(list_models().keys())}"
     ),
     output: Optional[Path] = typer.Option(
