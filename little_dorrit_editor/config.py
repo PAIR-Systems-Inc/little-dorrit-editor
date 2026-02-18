@@ -15,6 +15,8 @@ class ModelConfig:
     model_name: str  # Technical model name
     api_key: str  # API key
     logical_name: str  # Human-readable name
+    temperature: float = 0.1  # Default temperature value
+    reasoning_effort: Optional[str] = None  # Reasoning effort for thinking models
 
 
 class ConfigManager:
@@ -66,6 +68,12 @@ class ConfigManager:
             endpoint = model_config["endpoint"]
             model_name = model_config["model_name"]
             logical_name = model_config["logical_name"]
+            
+            # Load optional temperature (with default of 0.1)
+            temperature = model_config.get("temperature", 0.1)
+
+            # Load optional reasoning effort (e.g., "low" | "medium" | "high")
+            reasoning_effort = model_config.get("reasoning_effort")
 
             # Create the model configuration
             self._models[model_id] = ModelConfig(
@@ -73,6 +81,8 @@ class ConfigManager:
                 model_name=model_name,
                 api_key=api_key,
                 logical_name=logical_name,
+                temperature=temperature,
+                reasoning_effort=reasoning_effort,
             )
 
     def get_model(self, model_id: str) -> ModelConfig:

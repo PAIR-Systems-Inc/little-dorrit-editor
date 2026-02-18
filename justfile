@@ -28,7 +28,7 @@ check: format typecheck test
 
 # Evaluate a prediction against ground truth
 evaluate MODEL_NAME PREDICTION GROUND_TRUTH:
-    python scripts/evaluate.py --model-name "{{MODEL_NAME}}" "{{PREDICTION}}" "{{GROUND_TRUTH}}"
+    python -m little_dorrit_editor.cli evaluate run --model-name "{{MODEL_NAME}}" "{{PREDICTION}}" "{{GROUND_TRUTH}}"
 
 # Convert a directory of data to a Hugging Face dataset
 convert INPUT_DIR OUTPUT_DIR:
@@ -42,9 +42,9 @@ convert-sample:
 convert-eval:
     python scripts/convert_to_hf_dataset.py "data/eval" "hf_dataset/eval"
 
-# Update the leaderboard with a new evaluation result
-update-leaderboard MODEL_NAME PREDICTION GROUND_TRUTH:
-    python scripts/evaluate.py --model-name "{{MODEL_NAME}}" --update-leaderboard "{{PREDICTION}}" "{{GROUND_TRUTH}}"
+# Rebuild docs/results.json for the leaderboard website (raw results only; metrics/CI computed client-side)
+update-leaderboard:
+    python scripts/build_site_results.py
 
 # Generate a sample prediction file from ground truth (for testing)
 generate-pred PAGE_NUM DATA_DIR="data/sample":

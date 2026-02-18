@@ -24,6 +24,7 @@ def generate_predictions(
     shots: int = 0,
     sample_dataset_path: Optional[Path] = None,
     temperature: float = 0.1,
+    reasoning_effort: Optional[str] = None,
     console: Optional[Console] = None
 ) -> Dict[str, Any]:
     """Generate predictions using a model.
@@ -35,6 +36,7 @@ def generate_predictions(
         shots: Number of examples to use for few-shot prompting
         sample_dataset_path: Path to the sample dataset for few-shot examples
         temperature: Model temperature parameter
+        reasoning_effort: Reasoning effort for thinking models (e.g. low/medium/high)
         console: Rich console for output (creates a new one if None)
         
     Returns:
@@ -84,6 +86,14 @@ def generate_predictions(
     
     # Get model configuration
     model_config = get_model(model_id)
+
+    # Prefer the explicit parameter, but fall back to the model's configured default.
+    effort = reasoning_effort if reasoning_effort is not None else model_config.reasoning_effort
+    effort_norm = effort.strip().lower() if isinstance(effort, str) else None
+    is_thinking = bool(effort_norm) and effort_norm != "none"
+
+    # GPT-5 family does not accept the temperature parameter at all.
+    is_gpt5_family = model_config.model_name.startswith("gpt-5")
     
     # Initialize the client with the appropriate base URL and API key
     client_params = {"api_key": model_config.api_key}
@@ -93,12 +103,26 @@ def generate_predictions(
     
     # Call the model
     console.print(f"Calling {model_config.logical_name} to generate predictions...")
-    response = client.chat.completions.create(
-        model=model_config.model_name,
-        messages=messages,
-        temperature=temperature,
-        response_format={"type": "json_object"},
-    )
+    create_kwargs: Dict[str, Any] = {
+        "model": model_config.model_name,
+        "messages": messages,
+        "response_format": {"type": "json_object"},
+    }
+
+    if is_thinking:
+        create_kwargs["reasoning_effort"] = effort_norm
+
+    if is_gpt5_family or is_thinking:
+        # Don't send temperature when it's not supported.
+        # If the caller provided one, tell them we're ignoring it.
+        if temperature is not None:
+            console.print(
+                "[yellow]Warning:[/yellow] temperature is not supported for this model/mode; ignoring."
+            )
+    else:
+        create_kwargs["temperature"] = temperature
+
+    response = client.chat.completions.create(**create_kwargs)
     
     console.print("[dim]Raw response received, extracting JSON...[/dim]")
     

@@ -121,6 +121,18 @@ def run(
         "-d",
         help="Path to the sample dataset for few-shot examples"
     ),
+    temperature: Optional[float] = typer.Option(
+        None, "--temperature", "-t",
+        help="Temperature setting for the model (overrides model's default temperature)"
+    ),
+    reasoning_effort: Optional[str] = typer.Option(
+        None,
+        "--reasoning-effort",
+        help=(
+            "Reasoning effort for thinking models (e.g. low/medium/high). "
+            "Set to 'none' to disable."
+        ),
+    ),
 ) -> None:
     """Generate predictions using an LLM model with optional few-shot examples."""
     try:
@@ -129,6 +141,17 @@ def run(
             model_id = model_name
             console.print(f"[yellow]Warning:[/yellow] --model-name is deprecated. Please use --model-id instead.")
 
+        # Get model configuration to access its default temperature
+        model_config = get_model(model_id)
+        
+        # Use CLI temperature if provided, otherwise use model's configured temperature
+        temp_value = temperature if temperature is not None else model_config.temperature
+
+        # Use CLI reasoning_effort if provided, otherwise use model's configured value
+        reasoning_value = (
+            reasoning_effort if reasoning_effort is not None else model_config.reasoning_effort
+        )
+        
         # Generate predictions
         generate_predictions(
             image_path=image,
@@ -136,6 +159,8 @@ def run(
             model_id=model_id,
             shots=shots,
             sample_dataset_path=sample_dataset,
+            temperature=temp_value,
+            reasoning_effort=reasoning_value,
             console=console
         )
 

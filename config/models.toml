@@ -204,6 +204,38 @@ api_key = "${OPENAI_API_KEY}"
 logical_name = "GPT-4.5 Preview"
 
 ################################################################################
+# G P T - 5   F A M I L Y   (Thinking mode by default)
+################################################################################
+
+[gpt-5]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-5"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-5"
+reasoning_effort = "high"
+
+["gpt-5.1"]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-5.1"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-5.1"
+reasoning_effort = "high"
+
+["gpt-5.2"]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-5.2"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-5.2"
+reasoning_effort = "high"
+
+["gpt-5.3"]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-5.3"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-5.3"
+reasoning_effort = "high"
+
+################################################################################
 # A N T H R O P I C   M O D E L S
 ################################################################################
 

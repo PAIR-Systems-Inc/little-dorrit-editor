@@ -33,6 +33,7 @@ class LLMJudge:
         self.client = openai.Client(**client_params)
         self.model = model_config.model_name
         self.model_name = model_config.logical_name
+        self.reasoning_effort = model_config.reasoning_effort
 
         self.console = Console()
 
@@ -96,14 +97,20 @@ Respond with a JSON object containing:
 
         self.console.print("[dim]Evaluating edit...[/dim]", end="")
 
-        response = self.client.chat.completions.create(
-            model=self.model,
-            messages=[
+        create_kwargs: Dict[str, Any] = {
+            "model": self.model,
+            "messages": [
                 {"role": "system", "content": "You are an expert editor and evaluator."},
                 {"role": "user", "content": prompt},
             ],
-            response_format={"type": "json_object"},
-        )
+            "response_format": {"type": "json_object"},
+        }
+
+        effort = (self.reasoning_effort or "").strip().lower()
+        if effort and effort != "none":
+            create_kwargs["reasoning_effort"] = effort
+
+        response = self.client.chat.completions.create(**create_kwargs)
 
         self.console.print(" [green]Done[/green]")
 

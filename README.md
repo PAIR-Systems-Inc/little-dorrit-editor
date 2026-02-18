@@ -130,7 +130,7 @@ The benchmark includes scripts to automate the entire prediction, evaluation, an
 1. **Generate Predictions**:
    ```bash
    # Generate predictions for all evaluation images using the gpt-4o model with 2-shot learning
-   ./scripts/run_prediction.sh gpt-4o 2
+   ./scripts/run_prediction.sh gpt-4o --shots 2
    ```
 
 2. **Evaluate Predictions**:
@@ -157,25 +157,27 @@ You can also run individual steps manually:
 
 ```bash
 # Zero-shot prediction
-python scripts/evaluate.py generate --model-id "gpt-4o" data/sample/001.png predictions/001_prediction.json
+python -m little_dorrit_editor.cli predict run --model-id "gpt-4o" --shots 0 data/sample/001.png predictions/001_prediction.json
 
 # Few-shot prediction with examples
-python scripts/evaluate.py generate --shots 2 --model-id "gpt-4o" data/sample/001.png predictions/001_prediction.json
+python -m little_dorrit_editor.cli predict run --model-id "gpt-4o" --shots 2 data/sample/001.png predictions/001_prediction.json
 
 # Using a different model (e.g., Claude)
-python scripts/evaluate.py generate --model-id "claude-3-7-sonnet-latest" data/sample/001.png predictions/001_prediction.json
+python -m little_dorrit_editor.cli predict run --model-id "claude-3-7-sonnet-latest" --shots 0 data/sample/001.png predictions/001_prediction.json
 ```
 
-The `generate` command supports the following options:
+The `predict run` command supports the following options:
 - `--model-id`, `-m`: Model ID from config to use for predictions (default: "gpt-4o")
 - `--shots`, `-s`: Number of examples to use for few-shot prompting (default: 0)
 - `--sample-dataset`, `-d`: Path to the dataset containing examples (default: "data/hf/sample/little-dorrit-editor")
 - `--model-name`: Alias for --model-id (for backward compatibility)
+- `--temperature`, `-t`: Temperature (overrides model's configured default; ignored for GPT-5 family / thinking mode)
+- `--reasoning-effort`: Reasoning effort for thinking models (e.g., low/medium/high; set to "none" to disable)
 
 ### Running Individual Evaluations
 
 ```bash
-python scripts/evaluate.py run --model-name "your_model_id" --llm-model "gpt-4.5-preview" path/to/predicted.json path/to/ground_truth.json
+python -m little_dorrit_editor.cli evaluate run --model-name "your_model_id" --llm-model "gpt-4.5-preview" path/to/predicted.json path/to/ground_truth.json
 ```
 
 ### Preparing Datasets
