@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-5",
+  "date": "2026-02-18T01:24:14.005566",
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:37:09.440539",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit and the ground truth edit both specify 'capitalization' as the edit type, which matches exactly and satisfies the Edit Type Accuracy criterion. For Text Content Accuracy, both edits capture the core change of capitalizing the word 'if' to 'If', which is the essential change indicated in the ground truth. Although the ground truth includes additional context by listing 'if he' as the original text while the prediction lists just 'if', the essential change\u2014capitalization of the word 'if'\u2014is accurately and effectively captured by the prediction. Therefore, both criteria are met, and the predicted edit is deemed correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and predicted edit share the same type of edit, which is a 'replacement'. Therefore, the edit type accuracy criterion is satisfied. \n\n2. Text Content Accuracy: The core change identified in the ground truth is the conversion from 'said' to 'asked'. The predicted edit successfully captures this essential change. While the context in the ground truth includes 'Clennam', the core replacement targeted by the prediction aligns with the desired modification by converting 'said' to 'asked'. Therefore, the text content accuracy criterion is also satisfied. \n\nBoth criteria are met, so the prediction is deemed correct."
+    }
+  ]
+}

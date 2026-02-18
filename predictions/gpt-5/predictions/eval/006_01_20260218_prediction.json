@@ -1,0 +1,45 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about,and",
+      "corrected_text": "about, and",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "association",
+      "corrected_text": "association,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam",
+      "corrected_text": "Clennam,",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:39:19.372963",
+  "verified": false
+}

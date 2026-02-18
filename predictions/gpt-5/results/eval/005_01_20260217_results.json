@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-5",
+  "date": "2026-02-18T01:23:45.483801",
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-17T23:18:48.021286",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth in terms of both edit type and text content. \n\n1. Edit Type Accuracy: Both the ground truth and the predicted edit identify the change as a 'capitalization' change. Therefore, this criterion is satisfied. \n\n2. Text Content Accuracy: The core change identified in the ground truth is the capitalization of 'if' to 'If'. The predicted edit captures this same core change. While the ground truth includes 'he' for additional context, the essential edit which is the capitalization of 'if' is accurately identified by the prediction. The additional words in the ground truth (specifically 'he') do not affect the correctness of the core edit, which is correctly recognized as changing 'if' to 'If'. \n\nThus, the predicted edit correctly captures the intention of the ground truth action."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth in terms of edit type and essential text content. \n\n1. Edit Type Accuracy: Both the ground truth and the prediction identify the edit type as 'replacement.' This is a correct match as there is no discrepancy in the classification of the type of edit between the two.\n\n2. Text Content Accuracy: The core change in both the ground truth and prediction is 'said' being replaced by 'asked.' The prediction captures this essential change even though it does not include the additional contextual word 'Clennam' in its identified original and corrected texts. The essential transformation of 'said' to 'asked' is accurately captured, which aligns with the objective of the editorial correction. \n\nTherefore, the prediction is considered correct as it fulfills both evaluation criteria."
+    }
+  ]
+}

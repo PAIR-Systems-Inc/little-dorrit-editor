@@ -1,0 +1,45 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "return of",
+      "corrected_text": "return to",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence; is",
+      "corrected_text": "existence, is",
+      "line_number": 18,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:22:06.715431",
+  "verified": false
+}

@@ -1,0 +1,52 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "driest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "boiling over",
+      "corrected_text": "boiling-over",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I",
+      "corrected_text": "now, I",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 35,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:24:04.459050",
+  "verified": false
+}

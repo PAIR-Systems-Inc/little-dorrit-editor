@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt-5",
+  "date": "2026-02-18T01:33:00.947304",
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:18:29.364079",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth edit in both the type and the text content. The edit type 'punctuation' is exactly the same in both the ground truth and the predicted edit. The text content focuses on the addition of a comma after 'hers' to change 'hers and' to 'hers, and'. Both the ground truth and the prediction reflect this same core change accurately, regardless of any additional context. Hence, the predicted edit fulfills both criteria for correctness: the edit type matches, and the essential text change is captured precisely as intended by the ground truth."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit is evaluated based on two criteria: Edit Type Accuracy and Text Content Accuracy. For Edit Type Accuracy, both the ground truth and the predicted edit classify the change as a 'punctuation' edit. This matches exactly, so the edit type is correct. For Text Content Accuracy, the ground truth indicates the original text 'hers matters' should be corrected to 'hers, matters'. The predicted edit exactly mirrors this text change with 'hers matters' becoming 'hers, matters'. Therefore, the core change in punctuation is accurately captured. Because both the edit type and the text content criteria are satisfied, the predicted edit is correct."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth edit in both the essential criteria: edit type and text content accuracy. \n\n1. Edit Type Accuracy: Both the predicted and ground truth edits are of type 'punctuation.' This matches exactly, fulfilling the requirement for edit type accuracy. \n\n2. Text Content Accuracy: The core change is the insertion of a comma after the word 'moment' to correct the text from 'moment with' to 'moment, with.' The prediction captures this change precisely, addressing the punctuation correction intended by the ground truth. \n\nSince both criteria are satisfied, the predicted edit is considered correct."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth in both critical aspects required for an accurate classification. \n\n1. Edit Type Accuracy: The predicted edit type is 'punctuation', which exactly matches the ground truth's type. This alignment means the prediction correctly understood the nature of the edit being related to punctuation. \n\n2. Text Content Accuracy: The core change, to insert a comma in the phrase 'beautiful that' making it 'beautiful, that', is precisely captured in both the predicted and ground truth edits. Even if the prediction included more or less context, the essential change of adding a comma is accurately identified in both the original and corrected text portions. \n\nGiven these considerations, the prediction correctly interprets the core editorial change intended by the ground truth."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly matches the ground truth edit on both the edit type and the text content. The edit type is 'capitalization' in both cases, indicating that the change pertains to capitalizing the first letter of the word. The original and corrected texts match exactly in both the ground truth and the prediction, with the correction of 'they' to 'They'. Therefore, the prediction accurately captures the essential change identified by the ground truth."
+    }
+  ]
+}

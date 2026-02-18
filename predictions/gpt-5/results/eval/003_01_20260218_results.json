@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt-5",
+  "date": "2026-02-18T01:21:22.472211",
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:31:24.265601",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth edit accurately based on both criteria. \n\n1. Edit Type Accuracy: The edit type is labeled as 'punctuation' in both the ground truth and the predicted edit, indicating a correct classification of the type of change made. \n\n2. Text Content Accuracy: The original text 'yonder to-day' and the corrected text 'yonder, to-day' are both identical in the ground truth and the prediction. This shows that the CORE change, the addition of a comma after 'yonder', is correctly captured in the prediction. Therefore, the prediction accurately reflects the intention of the ground truth edit. \n\nSince both the edit type and the text content align precisely with the ground truth, the prediction is considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": 16,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit correctly matches the ground truth edit based on both evaluation criteria. \n\n1. Edit Type Accuracy: The edit type in both the prediction and ground truth is 'punctuation'. This matches exactly, satisfying the requirement for edit type accuracy.\n\n2. Text Content Accuracy: The core change identified by both the ground truth and the prediction is the insertion of a comma between 'pockets' and 'and', transforming 'pockets and' into 'pockets, and'. The predicted edit captures this change accurately, which means the essential modification is correctly reflected.\n\nAs both the type and the actual change in text are correct, the prediction is deemed correct."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

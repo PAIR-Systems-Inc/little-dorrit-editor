@@ -1,0 +1,92 @@
+{
+  "model_name": "gpt-5",
+  "date": "2026-02-18T01:21:53.602736",
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:00:04.680135",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly captures the intention of the ground truth edit. For 'Edit Type Accuracy,' both the ground truth and the predicted edit identify the change as a 'punctuation' edit, and they are consistent in this categorization. For 'Text Content Accuracy,' the specific change from 'yonder to-day' to 'yonder, to-day' is accurately reproduced in the predicted edit. This captures the core punctuation change of adding a comma after 'yonder,' as intended in the ground truth. Therefore, the prediction is correct as it matches both the type and the essential text content change stipulated by the ground truth."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit is correct based on the given criteria. \n\n1. **Edit Type Accuracy:** \n   - The edit type in the predicted edit is 'capitalization', which matches exactly with the ground truth edit type. Therefore, the edit type is accurately captured.\n\n2. **Text Content Accuracy:** \n   - Both the ground truth and the predicted edit involve changing 'Sir' to 'sir', capturing the essential change in capitalization. \n   - There are no additional words included in either the original or corrected text in the predicted edit that diverge from the core change identified in the ground truth.\n\nSince both the edit type and the core textual change match the ground truth, the predicted edit is considered correct."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": ";",
+      "corrected_text": ",",
+      "observed_line_number": 14,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

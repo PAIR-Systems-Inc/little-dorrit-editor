@@ -1,0 +1,38 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "page_6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white but",
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "page": "page_6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "page_6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Civita Vecchia,",
+      "corrected_text": "Civita Vecchia.",
+      "line_number": 36,
+      "page": "page_6"
+    }
+  ],
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-17T22:58:53.668079",
+  "verified": false
+}

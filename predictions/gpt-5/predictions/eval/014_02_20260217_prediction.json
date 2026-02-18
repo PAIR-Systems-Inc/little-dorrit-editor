@@ -1,0 +1,45 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "For,",
+      "corrected_text": "For",
+      "line_number": 2,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "morning;",
+      "corrected_text": "morning,",
+      "line_number": 3,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and,",
+      "corrected_text": "and",
+      "line_number": 3,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly,",
+      "corrected_text": "quickly",
+      "line_number": 11,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me,",
+      "corrected_text": "me;",
+      "line_number": 21,
+      "page": "page_452"
+    }
+  ],
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:25:48.227292",
+  "verified": false
+}

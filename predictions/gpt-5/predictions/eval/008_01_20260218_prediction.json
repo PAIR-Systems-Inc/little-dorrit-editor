@@ -1,0 +1,31 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Saone it",
+      "corrected_text": "Saone, it",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sodden",
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-18T00:43:24.152913",
+  "verified": false
+}

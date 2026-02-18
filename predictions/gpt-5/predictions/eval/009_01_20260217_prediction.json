@@ -1,0 +1,31 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart",
+      "corrected_text": "heart,",
+      "line_number": 10,
+      "page": "page_369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "And,",
+      "corrected_text": "And",
+      "line_number": 32,
+      "page": "page_369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "hope",
+      "corrected_text": "hoped",
+      "line_number": 35,
+      "page": "page_369"
+    }
+  ],
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-17T23:30:16.193246",
+  "verified": false
+}

@@ -1,0 +1,66 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "each",
+      "corrected_text": "to each",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them;",
+      "corrected_text": "them,",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it;",
+      "corrected_text": "it,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view,",
+      "corrected_text": "view",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence;",
+      "corrected_text": "existence,",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liegelord",
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-5",
+  "annotation_date": "2026-02-17T23:40:02.067491",
+  "verified": false
+}
