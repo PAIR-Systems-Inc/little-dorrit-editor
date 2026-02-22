@@ -1,0 +1,37 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "No, sir,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "No sir,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stones?",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "stones!",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:22:46.455544",
+  "verified": false
+}

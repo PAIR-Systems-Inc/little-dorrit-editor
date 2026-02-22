@@ -1,0 +1,19 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 2,
+      "notes": "Handwritten note 'Period here?' suggests adding a period; one is already present, so this may be confirmation or emphasis. No change needed to text, but markup indicates editorial attention.",
+      "original_text": "SUN AND SHADOW.",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:46:45.131618",
+  "verified": false
+}

@@ -1,0 +1,82 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "A late, dull autumn night",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "A late dull autumn night",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Saone",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stream, like",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "stream like",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Saone",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "man, slowly",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "man slowly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened with",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "sodden with",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:48:10.266032",
+  "verified": false
+}

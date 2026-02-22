@@ -1,0 +1,8 @@
+{
+  "model_id": "or_qwen3_5_397b_a17b",
+  "display_name": "Qwen3.5 397B A17B",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-02-22",
+  "notes": "Benchmark run with 2-shot learning"
+}

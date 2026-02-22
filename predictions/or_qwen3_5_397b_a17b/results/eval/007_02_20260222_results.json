@@ -1,0 +1,36 @@
+{
+  "model_name": "or_qwen3_5_397b_a17b",
+  "date": "2026-02-22T12:07:55.125296",
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:46:39.831266",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW",
+      "corrected_text": "SUN AND SHADOW.",
+      "observed_line_number": 2,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 0,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

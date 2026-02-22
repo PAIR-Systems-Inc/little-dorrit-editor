@@ -1,0 +1,64 @@
+{
+  "model_name": "or_qwen3_5_397b_a17b",
+  "date": "2026-02-22T12:06:43.992550",
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:22:46.455544",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "No sir,",
+      "corrected_text": "No, sir,",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit is evaluated based on two main criteria: edit type accuracy and text content accuracy. \n\n1. **Edit Type Accuracy**: Both the ground truth and the predicted edit have the type 'punctuation'. This means the type of edit is consistent between the ground truth and prediction, meeting the required condition for type accuracy.\n\n2. **Text Content Accuracy**: The ground truth changes 'No sir' to 'No, sir'. The predicted edit takes 'No sir,' and changes it to 'No, sir,'. Despite the original text having an added comma at the end, the core change, which is the insertion of a comma between 'No' and 'sir', is accurately captured in the prediction. The alteration elsewhere (i.e., the punctuation at the end) does not affect the correctness of capturing the essential change identified in the ground truth.\n\nSince both criteria are satisfied - with the edit type matching and the core text content change being correctly captured - the predicted edit is considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "stones!",
+      "corrected_text": "stones?",
+      "observed_line_number": 28,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit matches the ground truth in terms of type and core textual change. \n\n1. Edit Type Accuracy: \n   - Both the ground truth and predicted edits are of the 'punctuation' type, indicating that the focus is on a punctuation change.\n\n2. Text Content Accuracy: \n   - The essential change identified in both the ground truth and prediction is the alteration of the punctuation mark from '!' to '?'.\n   - The prediction includes 'stones!' to 'stones?', while the ground truth includes 'cold stones!' to 'cold stones?'. The additional word 'cold' in the ground truth is context and does not change the nature of the punctuation edit itself.\n\nTherefore, the predicted edit effectively captures the core change intended by the ground truth."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 27,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "why did he dine",
+      "corrected_text": "Why did he dine",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

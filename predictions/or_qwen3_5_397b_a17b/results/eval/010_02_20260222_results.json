@@ -1,0 +1,92 @@
+{
+  "model_name": "or_qwen3_5_397b_a17b",
+  "date": "2026-02-22T12:09:20.531340",
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:50:33.712207",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 12,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit accurately captures the intention of the ground truth edit based on both criteria provided. \n\n1. Edit Type Accuracy: Both the ground truth and the predicted edit are classified under the same 'punctuation' type, indicating that the type classification is correct. \n\n2. Text Content Accuracy: The core change in both the ground truth and the predicted edit is the addition of a comma after 'hers' to correct 'hers and' to 'hers, and'. Despite potential variation in the line number, which is to be ignored in this evaluation, the essential change regarding punctuation is correctly captured. Therefore, the prediction's text content matches the ground truth's intention accurately."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 14,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The evaluation requires checking both the edit type and the text content accuracy, ignoring the line number. \n\n1. Edit Type Accuracy: Both the ground truth and the prediction have the edit type labeled as 'punctuation'. Therefore, the edit type matches exactly.\n\n2. Text Content Accuracy: The core change required by the ground truth was to insert a comma between 'hers' and 'matters', changing 'hers matters' to 'hers, matters'. The predicted text content also captures this essential change correctly, with 'hers matters' being changed to 'hers, matters'. Additional context or surrounding text is not present in this case to evaluate, but the essential change is correctly captured in the prediction.\n\nBased on these criteria, the predicted edit accurately captures the intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 20,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "The predicted edit correctly captures the intention of the ground truth edit. Both the ground truth and predicted edit types are 'punctuation', which means the type matches exactly, satisfying the edit type accuracy criterion. In terms of text content accuracy, both the ground truth and prediction aim to insert a comma between 'moment' and 'with', addressing the core punctuation change. While they both refer to 'moment with', which is the key text being altered, the essential edit of adding a comma remains the same in the predicted edit. Therefore, the prediction correctly reflects the intended correction as outlined by the ground truth. Line numbers are explicitly ignored in this evaluation, so they do not affect the correctness."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 22,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "The predicted edit is evaluated against two main criteria: edit type accuracy and text content accuracy. \n\n1. Edit Type Accuracy: The predicted edit type is 'punctuation', which matches the edit type in the ground truth. Therefore, the edit type is accurate. \n\n2. Text Content Accuracy: The ground truth specifies a correction from 'beautiful that' to 'beautiful, that'. The predicted edit also changes 'beautiful that' to 'beautiful, that'. This correctly captures the core change specified in the ground truth. The essential edit, which involves the insertion of a comma after 'beautiful', is reflected accurately in the predicted edit. \n\nLine numbers are explicitly ignored as instructed, and there is no discrepancy in page numbers. Therefore, both the edit type and the essential text content match the ground truth's intention. Overall, the prediction is correct."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "at this, he thought directly, \u201cthey",
+      "corrected_text": "At this, he thought directly, \u201cThey",
+      "observed_line_number": 28,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

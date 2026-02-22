@@ -1,0 +1,64 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hers,",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "hers",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hers,",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "hers",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "moment,",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "moment",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beautiful,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "beautiful",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Papa",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "papa",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "'they",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "\"they",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:52:20.583538",
+  "verified": false
+}

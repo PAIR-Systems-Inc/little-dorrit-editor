@@ -44,6 +44,12 @@ model_name = "qwen/qwen-vl-max"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Qwen VL Max"
 
+["or_qwen3_5_397b_a17b"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "qwen/qwen3.5-397b-a17b"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Qwen3.5 397B A17B"
+
 # Llama Family ########
 
 ["or_llama_3_2_90b_vision_instruct"]

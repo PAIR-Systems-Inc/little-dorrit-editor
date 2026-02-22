@@ -1,0 +1,92 @@
+{
+  "model_name": "or_qwen3_5_397b_a17b",
+  "date": "2026-02-22T12:06:35.611351",
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:43:23.330711",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "No sir,",
+      "corrected_text": "No, sir,",
+      "observed_line_number": 8,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit captures both the edit type and the core text content change described in the ground truth. \n\n1. **Edit Type Accuracy**: The edit type 'punctuation' matches exactly between the ground truth and the predicted edit.\n\n2. **Text Content Accuracy**: The core change in the ground truth is the insertion of a comma after 'No' in the phrase 'No sir' to become 'No, sir'. The predicted edit shows an original text of 'No sir,' and a corrected text of 'No, sir,' indicating the same core insertion of the comma after 'No'. The presence of an additional comma at the end of the predicted text does not alter the core change needed, which is the inclusion of the initial comma. Therefore, the essential punctuation change intended by the ground truth is captured correctly in the prediction.\n\nWith both criteria satisfied, the predicted edit is considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "why did he dine today, and leave this little creature to the mercy of the cold stones!",
+      "corrected_text": "why did he dine today, and leave this little creature to the mercy of the cold stones?",
+      "observed_line_number": 22,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "cap",
+      "observed_line_number": 22,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "!",
+      "corrected_text": "question mark",
+      "observed_line_number": 22,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "why did he dine",
+      "corrected_text": "Why did he dine",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hers, and",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "hers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hers, matters",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "hers matters",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "moment, with",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "moment with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beautiful, that",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "beautiful that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "At this, he thought directly, \u201cThey",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "at this, he thought directly, \u201cthey",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:51:28.416284",
+  "verified": false
+}

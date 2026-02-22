@@ -1,0 +1,100 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "City",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "return to",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "return of",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "them;",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "them,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence;",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "existence,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it;",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "it,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless;",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "motionless,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still;",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "stand-still,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view;",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "view,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence;",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "existence,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege-lord",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "liege lord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T12:05:17.043023",
+  "verified": false
+}

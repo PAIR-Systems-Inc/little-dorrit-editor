@@ -1,0 +1,91 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam; \"not",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Clennam; \"not",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "dryest snorts",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "premature.",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "premature",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twenty; sticking",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "twenty sticking",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "benevolence bubbling out of him,",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "benevolence bubbling out of him",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "italicize",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "benevolence bubbling out of him",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now, I",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "now I",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you, now",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "you now",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.5 397B A17B",
+  "annotation_date": "2026-02-22T11:55:23.007041",
+  "verified": false
+}
