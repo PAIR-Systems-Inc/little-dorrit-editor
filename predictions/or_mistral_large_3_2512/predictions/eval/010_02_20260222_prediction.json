@@ -1,0 +1,45 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "or two",
+      "corrected_text": "or two\u2014",
+      "line_number": 10,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "mattered little",
+      "corrected_text": "matters little.",
+      "line_number": 12,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "cop",
+      "corrected_text": "Cop.",
+      "line_number": 30,
+      "page": "368"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "\u201c",
+      "line_number": 30,
+      "page": "368"
+    },
+    {
+      "type": "italicize",
+      "original_text": "Cop",
+      "corrected_text": "Cop",
+      "line_number": 30,
+      "page": "368"
+    }
+  ],
+  "annotator": "Mistral Large 3 2512",
+  "annotation_date": "2026-02-22T13:48:25.842033",
+  "verified": false
+}

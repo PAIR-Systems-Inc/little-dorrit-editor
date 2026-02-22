@@ -1,0 +1,22 @@
+{
+  "model_name": "or_glm_4_6v",
+  "date": "2026-02-22T14:14:47.489701",
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:06:48.076295",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit and the ground truth edit both accurately identify the type of edit as 'punctuation', focusing on the addition of a period to the phrase 'Sun and Shadow'. Both edits correctly change 'Sun and Shadow' to 'Sun and Shadow.', capturing the core modification needed. The line number is intentionally ignored for this evaluation, and hence does not affect the correctness of the prediction. The purpose of the edit\u2014adding punctuation at the end of the sentence\u2014is maintained. Therefore, both the edit type and the text content match the ground truth's intention accurately."
+    }
+  ]
+}

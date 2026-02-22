@@ -1,0 +1,31 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "liege",
+      "corrected_text": "",
+      "line_number": 30,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "xxix",
+      "corrected_text": "XXIX",
+      "line_number": 1,
+      "page": "002.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "to",
+      "corrected_text": "",
+      "line_number": 5,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:12:38.610548",
+  "verified": false
+}

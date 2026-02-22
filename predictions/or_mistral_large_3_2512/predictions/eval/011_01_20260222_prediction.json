@@ -1,0 +1,52 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "whatever",
+      "corrected_text": "whatsoever",
+      "line_number": 8,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "you,",
+      "line_number": 14,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Thank you",
+      "corrected_text": "Thank you,",
+      "line_number": 14,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "thank you",
+      "corrected_text": "thank you!",
+      "line_number": 15,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 23,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them away",
+      "corrected_text": "them away;",
+      "line_number": 25,
+      "page": "372"
+    }
+  ],
+  "annotator": "Mistral Large 3 2512",
+  "annotation_date": "2026-02-22T13:48:31.479732",
+  "verified": false
+}

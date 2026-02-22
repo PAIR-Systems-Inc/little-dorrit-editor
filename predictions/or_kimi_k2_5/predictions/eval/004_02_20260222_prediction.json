@@ -1,0 +1,17 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "think, Why",
+      "corrected_text": "think, \"Why",
+      "line_number": 28,
+      "page": "184"
+    }
+  ],
+  "annotator": "Kimi K2.5",
+  "annotation_date": "2026-02-22T13:18:35.252569",
+  "verified": false
+}

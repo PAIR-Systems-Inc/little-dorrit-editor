@@ -1,0 +1,36 @@
+{
+  "model_name": "or_openai_gpt_5_2",
+  "date": "2026-02-22T13:34:15.493986",
+  "annotator": "GPT-5.2 (OR)",
+  "annotation_date": "2026-02-22T13:29:23.349529",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit is evaluated on two primary criteria: 'Edit Type Accuracy' and 'Text Content Accuracy'.\n\n1. Edit Type Accuracy: The predicted edit and the ground truth edit both specify the type as 'capitalization', indicating that the intention is to change the capitalization of a word in the text. Since the edit type matches exactly, this criterion is satisfied.\n\n2. Text Content Accuracy: The ground truth edit specifies changing 'if he' to 'If he'. The predicted edit specifies changing 'if' to 'If'. The core change both texts are referring to is the capitalization of the initial 'i' in 'if'. The predicted edit captures this essential change. Although it does not explicitly reference the 'he', the primary intention of changing the capitalization is evident in both, and the context is preserved since 'if' is a part of 'if he'.\n\nOverall, both the edit type and text content accurately align with the ground truth\u2019s intention. Therefore, the predicted edit is considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: The predicted edit correctly identifies the edit type as 'replacement', matching the ground truth. Since the types match exactly, the edit type criterion is satisfied. \n\n2. Text Content Accuracy: The core change in both the ground truth and the prediction involves replacing the word 'said' with 'asked'. The ground truth specifies 'said Clennam' is to be changed to 'asked Clennam', while the prediction specifies 'said' is to change to 'asked'. The essential edit, which is changing 'said' to 'asked', is captured by the prediction. Therefore, the prediction accurately captures the intention of the ground truth in terms of text content, even though it uses a shorter context.\n\nBoth criteria are addressed, and the prediction aligns with the ground truth in both type and content, thus the prediction is correct."
+    }
+  ]
+}

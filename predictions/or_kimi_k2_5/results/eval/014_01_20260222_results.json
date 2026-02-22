@@ -1,0 +1,92 @@
+{
+  "model_name": "or_kimi_k2_5",
+  "date": "2026-02-22T13:25:43.612165",
+  "annotator": "Kimi K2.5",
+  "annotation_date": "2026-02-22T13:23:05.700395",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "For Mr",
+      "corrected_text": "For, Mr",
+      "observed_line_number": 2,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: The edit type in both the ground truth and the predicted edit is 'punctuation'. There is an exact match in terms of edit type, which accurately reflects both intentions of adding punctuation. \n\n2. Text Content Accuracy: The core change required in the ground truth is the insertion of a comma between 'For' and 'Mr'. The predicted edit also performs this exact change. Although the original text slightly differs ('For Mr' vs 'For Mr. Pancks'), the prediction captures the essential edit intended by the ground truth, which is the addition of the comma just after 'For'. \n\nSince both the edit type and core change in text content are accurately captured in the prediction, the predicted edit correctly matches the ground truth edit's intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "observed_line_number": 11,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth in both criteria. Firstly, the edit type 'punctuation' is identical for both the ground truth and the prediction, ensuring type accuracy. Secondly, the text content change from 'quickly that' to 'quickly, that' is perfectly captured in both the prediction and the ground truth. The core change, which is the addition of a comma after 'quickly', is correctly identified without any deviation. Therefore, the prediction is accurate in capturing both the type and the essential text change intended by the ground truth."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "bedroom",
+      "corrected_text": "bed-room",
+      "observed_line_number": 1,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "making me not",
+      "corrected_text": "making me, not",
+      "observed_line_number": 21,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "replacement",
+      "original_text": "bed-room",
+      "corrected_text": "bed room",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "insertion",
+      "original_text": "me,",
+      "corrected_text": "me a,",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

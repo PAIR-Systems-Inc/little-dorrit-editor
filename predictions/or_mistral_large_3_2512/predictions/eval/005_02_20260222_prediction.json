@@ -1,0 +1,32 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "Cap",
+      "line_number": 27,
+      "page": "209"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "sir",
+      "corrected_text": "Sir",
+      "line_number": 28,
+      "notes": "Capitalization of 'sir' after question mark",
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 30,
+      "page": "209"
+    }
+  ],
+  "annotator": "Mistral Large 3 2512",
+  "annotation_date": "2026-02-22T13:47:24.525389",
+  "verified": false
+}

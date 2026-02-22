@@ -1,0 +1,92 @@
+{
+  "model_name": "or_kimi_k2_5",
+  "date": "2026-02-22T13:25:09.337148",
+  "annotator": "Kimi K2.5",
+  "annotation_date": "2026-02-22T13:20:17.199252",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit perfectly matches the ground truth in two critical aspects. First, the Edit Type Accuracy criterion is satisfied because both the ground truth and the prediction specify 'punctuation' as the type of edit, indicating that the model correctly identified the nature of the change required. Second, the Text Content Accuracy criterion is fully met since the predicted change of 'hers and' to 'hers, and' corresponds exactly to the ground truth. The insertion of a comma after 'hers' is the core change, which the prediction captures precisely. Therefore, the prediction is correct both in terms of the type of edit and the text content change."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit is correct based on the evaluation criteria. \n\n1. Edit Type Accuracy: Both the ground truth and the predicted edit have the type 'punctuation', which matches exactly, satisfying the first criterion. \n\n2. Text Content Accuracy: The essential change indicated by the ground truth is the insertion of a comma in 'hers matters' to become 'hers, matters'. The predicted edit captures this exact change from 'hers matters' to 'hers, matters'. Therefore, the core change is accurately identified in the predicted edit. \n\nAs both criteria are met, the predicted edit is evaluated as correct."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly matches the ground truth based on both criteria. \n\n1. **Edit Type Accuracy**: The edit type in both the ground truth and the predicted edit is 'punctuation,' indicating a change in punctuation. Since the types match exactly, this criterion is satisfied.\n\n2. **Text Content Accuracy**: The ground truth specifies a change from 'moment with' to 'moment, with,' which introduces a comma after 'moment.' The predicted edit successfully identifies the same change, adding a comma after 'moment,' resulting in 'moment, with.' Thus, the core change identified by the ground truth is captured correctly in the prediction. This satisfies the text content accuracy criterion because the essential edit\u2014the introduction of a comma\u2014is accurately reflected in the prediction, despite any additional context in the strings involved.\n\nBoth conditions for correctness are met, leading to the conclusion that the predicted edit is correct."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly captures the intention of the ground truth edit in both criteria specified. Firstly, the edit type accuracy is met as both the ground truth and the predicted edit specify 'punctuation' as the type. Secondly, the text content accuracy is also met as the core change is correctly identified by the prediction\u2014it captures the insertion of a comma in 'beautiful that' to become 'beautiful, that'. Both the essential edit and the context match perfectly; therefore, the prediction is deemed correct."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "deletion",
+      "original_text": "At this, he thought directly,",
+      "corrected_text": "",
+      "observed_line_number": 32,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

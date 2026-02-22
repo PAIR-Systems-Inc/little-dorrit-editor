@@ -1,0 +1,31 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bed room",
+      "corrected_text": "bedroom",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "making me,",
+      "corrected_text": "making me",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "cucumber",
+      "corrected_text": "Cucumber",
+      "line_number": 8,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:12:25.550484",
+  "verified": false
+}

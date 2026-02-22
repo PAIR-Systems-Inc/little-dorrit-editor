@@ -1,0 +1,66 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "chapter xxix",
+      "corrected_text": "Chapter XXIX",
+      "line_number": 0,
+      "page": "page_identifier"
+    },
+    {
+      "type": "insertion",
+      "original_text": "T",
+      "corrected_text": "The",
+      "line_number": 3,
+      "page": "page_identifier"
+    },
+    {
+      "type": "italicize",
+      "original_text": "cap",
+      "corrected_text": "cap",
+      "line_number": 3,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "round of life.",
+      "corrected_text": "round of life,",
+      "line_number": 4,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence.",
+      "corrected_text": "existence,",
+      "line_number": 16,
+      "page": "page_identifier"
+    },
+    {
+      "type": "replacement",
+      "original_text": "stop",
+      "corrected_text": "stay",
+      "line_number": 15,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "herself.",
+      "corrected_text": "herself!",
+      "line_number": 22,
+      "page": "page_identifier"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mister",
+      "corrected_text": "Mister",
+      "line_number": 24,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "Mistral Large 3 2512",
+  "annotation_date": "2026-02-22T13:49:17.426069",
+  "verified": false
+}

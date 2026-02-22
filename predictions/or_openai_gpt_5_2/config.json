@@ -1,0 +1,8 @@
+{
+  "model_id": "or_openai_gpt_5_2",
+  "display_name": "GPT-5.2 (OR)",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-02-22",
+  "notes": "Benchmark run with 2-shot learning"
+}

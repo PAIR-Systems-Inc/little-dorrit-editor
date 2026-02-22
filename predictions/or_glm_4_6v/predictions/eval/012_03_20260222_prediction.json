@@ -1,0 +1,31 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "busy existence",
+      "corrected_text": "busy existence,",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "liege",
+      "corrected_text": "",
+      "line_number": 28,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:11:33.042018",
+  "verified": false
+}

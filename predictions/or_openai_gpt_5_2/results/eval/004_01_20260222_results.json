@@ -1,0 +1,50 @@
+{
+  "model_name": "or_openai_gpt_5_2",
+  "date": "2026-02-22T13:34:06.963473",
+  "annotator": "GPT-5.2 (OR)",
+  "annotation_date": "2026-02-22T13:28:59.819068",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly identifies the edit type as 'capitalization', which matches the ground truth edit type. In terms of text content accuracy, the prediction captures the core change that the ground truth identifies, which is the capitalization of the word 'why'. The ground truth identifies the full original text as 'why did he dine' changing to 'Why did he dine', while the prediction only mentions the capitalization of 'why' to 'Why'. The essential change, which is the capitalization of the first word, is accurately captured in the prediction. Therefore, the predicted edit is correct according to both edit type accuracy and text content accuracy."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "!",
+      "corrected_text": "?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly identifies the edit type as 'punctuation,' which matches the ground truth edit type. For text content accuracy, the essential change in the punctuation from '!' to '?' is accurately captured in the predicted edit. While the ground truth specifies the full phrase 'cold stones!' to 'cold stones?', the core change is in the punctuation mark. The predicted edit lists the specific change from '!' to '?', which correctly captures the intended punctuation alteration highlighted in the ground truth. Therefore, since both the edit type and the text content change are accurate, the prediction is deemed correct."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

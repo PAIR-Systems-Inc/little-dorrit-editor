@@ -1,0 +1,92 @@
+{
+  "model_name": "or_kimi_k2_5",
+  "date": "2026-02-22T13:25:06.233399",
+  "annotator": "Kimi K2.5",
+  "annotation_date": "2026-02-22T13:19:48.696851",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit is correct as both the edit type and text content accurately match the ground truth edit. \n\n1. Edit Type Accuracy: The predicted edit type is 'punctuation', which matches exactly with the ground truth edit type of 'punctuation'.\n\n2. Text Content Accuracy: The prediction captures the core change identified by the ground truth. Both the ground truth and predicted edits show the transformation from 'heart so' to 'heart, so', correctly identifying the need for a comma after 'heart'. There is no deviation from or addition to the core change intended by the ground truth, and hence the text content is accurately reflected in the prediction.\n\nSince both criteria - edit type and text content - align perfectly with the ground truth, the prediction is considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "at length said",
+      "corrected_text": "at length, said",
+      "observed_line_number": 31,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly matches the ground truth in terms of edit type and text content. \n\n1. Edit Type Accuracy: Both the ground truth and the predicted edit are of type 'punctuation', which matches exactly.\n\n2. Text Content Accuracy: The core change identified by the ground truth is the addition of a comma in the phrase 'length said', changing it to 'length, said'. The predicted edit also captures this essential modification by correcting 'at length said' to 'at length, said'. Although the predicted edit includes additional context with the word 'at', it correctly implements the core punctuation change between 'length' and 'said'. Therefore, the prediction accurately captures the intention of the ground truth.\n\nSince both criteria\u2014edit type and text content\u2014are matched accurately, the prediction is considered correct."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "hope",
+      "corrected_text": "hoped",
+      "observed_line_number": 34,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: Both the predicted edit and the ground truth are of the 'replacement' type. The prediction matches the required edit type. 2. Text Content Accuracy: The ground truth edit aims to replace 'I hope so' with 'I hoped so'. The core change here is altering 'hope' to 'hoped'. The predicted edit accurately captures this core change by replacing 'hope' with 'hoped'. While the prediction does not include the surrounding words 'I' and 'so', it still correctly identifies and implements the essential change indicated by the original ground truth edit. Therefore, the prediction correctly captures the intention of the ground truth by focusing on the verb tense change, which is the primary edit required. Overall, both criteria are satisfied by the predicted edit, making it correct."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "(as she did",
+      "corrected_text": "indeed",
+      "observed_line_number": 27,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "generous, Mr.",
+      "corrected_text": "generous Mr.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "insertion",
+      "original_text": "as she did",
+      "corrected_text": "as indeed she did",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

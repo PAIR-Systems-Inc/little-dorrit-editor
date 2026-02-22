@@ -1,0 +1,78 @@
+{
+  "model_name": "or_kimi_k2_5",
+  "date": "2026-02-22T13:24:02.531694",
+  "annotator": "Kimi K2.5",
+  "annotation_date": "2026-02-22T13:15:16.825841",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth edit in both criteria. \n\n1. Edit Type Accuracy: The type is 'punctuation' in both the predicted and ground truth edits, indicating that both are categorized correctly as punctuation changes. \n\n2. Text Content Accuracy: The original text 'howling over' is corrected to 'howling, over' in both cases, capturing the core punctuation change accurately by adding a comma after 'howling'. \n\nThus, the prediction correctly captures the intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth in both the edit type and the text content. \n\n1. Edit Type Accuracy: The edit type in both the ground truth and the prediction is 'punctuation,' indicating that the nature of the modification involves adding or adjusting punctuation. This matches exactly.\n\n2. Text Content Accuracy: The original text 'yonder to-day' is transformed into 'yonder, to-day' by adding a comma after 'yonder'. This change is captured correctly by both the ground truth and the prediction. Therefore, the core change is accurately reflected in the prediction.\n\nSince both criteria are satisfied, the predicted edit correctly captures the intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": 16,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit accurately captures the intention of the ground truth edit in both aspects evaluated. Firstly, the edit type is 'punctuation' in both the ground truth and the prediction, which is a perfect match, satisfying the first criterion. Secondly, the core textual content change involves adding a comma between 'pockets' and 'and'. The original text 'pockets and' is corrected to 'pockets, and' in both the ground truth and the prediction, capturing the essential change intended by the ground truth. Thus, the text content accuracy criterion is also satisfied. Therefore, the prediction is correct."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

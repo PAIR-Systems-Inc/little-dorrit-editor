@@ -1,0 +1,59 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam \"not",
+      "corrected_text": "Clennam; \"not",
+      "line_number": 1,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest snorts.",
+      "corrected_text": "driest of snorts.",
+      "line_number": 7,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "been a premature.",
+      "corrected_text": "been a little premature.",
+      "line_number": 11,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 33,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I",
+      "corrected_text": "now, I",
+      "line_number": 38,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 41,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you now",
+      "corrected_text": "you, now",
+      "line_number": 41,
+      "page": "451"
+    }
+  ],
+  "annotator": "Gemini 3.1 Pro Preview",
+  "annotation_date": "2026-02-22T13:41:33.820445",
+  "verified": false
+}

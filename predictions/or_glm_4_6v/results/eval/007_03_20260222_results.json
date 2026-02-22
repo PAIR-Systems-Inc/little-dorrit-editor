@@ -1,0 +1,22 @@
+{
+  "model_name": "or_glm_4_6v",
+  "date": "2026-02-22T14:14:56.592191",
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:07:03.952342",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "The predicted edit and the ground truth both have the same edit type, which is 'punctuation'. This matches accurately with the requirement for edit type accuracy. For text content accuracy, the ground truth shows a change from 'Sun and Shadow' to 'Sun and Shadow.', indicating an addition of a period at the end. The predicted edit also reflects this change from 'Sun and Shadow' to 'Sun and Shadow.', capturing the core correction of adding a period. Therefore, the prediction accurately captures the essential change as shown in the ground truth, despite any potential differences in line numbers, which are ignored in this evaluation. Both criteria for correctness\u2014edit type and text content\u2014are satisfied, leading to the conclusion that the prediction is correct."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gemini_3_1_pro_preview",
+  "date": "2026-02-22T13:42:30.605059",
+  "annotator": "Gemini 3.1 Pro Preview",
+  "annotation_date": "2026-02-22T13:38:27.252490",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 38,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1. Edit Type Accuracy: The predicted edit type is 'capitalization', which matches the ground truth edit type exactly. Therefore, the edit type accuracy criterion is met.\n\n2. Text Content Accuracy: The core change identified in the ground truth is the capitalization of the letter 'i' in 'if', changing it to 'If'. The predicted edit also captures this core change, focusing on the word 'if' and changing it to 'If'. Although the ground truth specifies the context as 'if he' \u2192 'If he', the essential transformation is the capitalization of 'if' to 'If'. The additional context in the ground truth does not alter the nature of the core edit. Thus, the text content accuracy criterion is also met, as the critical transformation is captured accurately by the prediction.\n\nSince both criteria are fulfilled, the predicted edit correctly captures the intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 41,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "The predicted edit matches the ground truth in terms of edit type and text content. 1. Edit Type Accuracy: Both the ground truth and the prediction specify the edit type as 'replacement'. Therefore, the edit type matches exactly. 2. Text Content Accuracy: The core change here is the replacement of 'said' with 'asked'. The prediction captures this exact change, replacing 'said' with 'asked', which aligns with the intention of the ground truth. Although the ground truth specifies 'said Clennam' \u2192 'asked Clennam' and the predicted edit specifies only 'said' \u2192 'asked', the essential edit ('said' to 'asked') is accurately captured. Therefore, both criteria are met, and the prediction is considered correct."
+    }
+  ]
+}

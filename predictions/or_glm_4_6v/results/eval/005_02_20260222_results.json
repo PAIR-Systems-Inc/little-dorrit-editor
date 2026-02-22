@@ -1,0 +1,50 @@
+{
+  "model_name": "or_glm_4_6v",
+  "date": "2026-02-22T14:14:28.784853",
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:04:59.533724",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The edit type in both the ground truth and the predicted edit is 'replacement', which matches exactly, satisfying the first criterion for edit type accuracy. For text content accuracy, the core change identified by both the ground truth and the prediction is replacing 'said' with 'asked'. While the ground truth includes the additional context 'Clennam', this does not alter the fundamental transformation being applied to the text. Both scenarios capture the essential edit of changing \u2018said\u2019 to \u2018asked,\u2019 which means the prediction correctly interprets the main intention of the ground truth edit. As both criteria are met, the predicted edit is considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "If",
+      "corrected_text": "I can",
+      "observed_line_number": 36,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

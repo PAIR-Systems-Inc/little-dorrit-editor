@@ -1,0 +1,52 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "not",
+      "corrected_text": "now",
+      "line_number": 18,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "skirt and",
+      "corrected_text": "skirt, and",
+      "line_number": 18,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "apology for so early and abrupt",
+      "corrected_text": "apology, for so early and abrupt",
+      "line_number": 20,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur returned Mrs. Finching",
+      "corrected_text": "Arthur, returned Mrs. Finching,",
+      "line_number": 22,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "indeed for Arthur Clennam",
+      "corrected_text": "indeed, for Arthur Clennam",
+      "line_number": 25,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "different to make apologies",
+      "corrected_text": "different, to make apologies",
+      "line_number": 26,
+      "page": "452"
+    }
+  ],
+  "annotator": "Mistral Large 3 2512",
+  "annotation_date": "2026-02-22T13:49:26.034900",
+  "verified": false
+}

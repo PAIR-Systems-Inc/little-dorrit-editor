@@ -1,0 +1,36 @@
+{
+  "model_name": "or_kimi_k2_5",
+  "date": "2026-02-22T13:23:59.993339",
+  "annotator": "Kimi K2.5",
+  "annotation_date": "2026-02-22T13:16:13.075232",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth edit in both the type of the edit and the core change it captures. The edit type is 'capitalization' in both the ground truth and the predicted edit, ensuring accuracy in edit type. For text content accuracy, the ground truth edit changes 'if he' to 'If he', while the predicted edit changes 'if' to 'If'. The predicted edit correctly identifies the core change of capitalizing 'if' to 'If', which matches the ground truth's intention. Additional context ('he') in the ground truth does not alter the correctness of the predicted core capitalization change. Thus, the prediction correctly captures the intention of the ground truth edit."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit and the ground truth edit both indicate a 'replacement' type, which means they match in terms of edit type. For text content accuracy, the ground truth specifies changing 'said Clennam' to 'asked Clennam', while the prediction focuses on changing 'said' to 'asked'. The core change highlighted by the ground truth is replacing 'said' with 'asked', which is accurately captured in the prediction. The prediction includes the correction of the essential change, 'said' to 'asked', despite not noting 'Clennam'. Therefore, the predicted edit correctly captures the core change indicated by the ground truth."
+    }
+  ]
+}

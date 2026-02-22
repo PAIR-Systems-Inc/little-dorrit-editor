@@ -1,0 +1,15 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "sodden",
+      "corrected_text": "soddened"
+    }
+  ],
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:10:54.991451",
+  "verified": false
+}

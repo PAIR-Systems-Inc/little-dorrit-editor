@@ -1,0 +1,92 @@
+{
+  "model_name": "or_openai_gpt_5_2",
+  "date": "2026-02-22T13:35:04.526022",
+  "annotator": "GPT-5.2 (OR)",
+  "annotation_date": "2026-02-22T13:31:05.525964",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly captures the intention of the ground truth edit. Both the edit type and the text content are accurately matched. \n\n1. Edit Type Accuracy: Both the ground truth and predicted edit types are 'punctuation', which is a direct match. \n\n2. Text Content Accuracy: The ground truth shows the original text 'heart so' being corrected to 'heart, so', and the prediction reflects the same correction by adding a comma. The core change, which is the insertion of a comma after 'heart', is captured perfectly in the prediction. Therefore, the edit type and content both align correctly with the ground truth."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "observed_line_number": 31,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth edit perfectly in terms of both criteria. The edit type is 'punctuation' in both the ground truth and the prediction, satisfying the edit type accuracy. Additionally, the text content accuracy is met because both the ground truth and predicted edits involve the same correction, changing 'length said' to 'length, said'. There are no additional unnecessary changes or discrepancies in the core change, indicating that the predicted edit accurately captures the essential edit represented in the ground truth."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "observed_line_number": 34,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit matches the ground truth edit in both criteria evaluated. Firstly, the edit type is 'replacement' in both cases, ensuring perfect edit type accuracy. Secondly, both the original text ('I hope so') and the corrected text ('I hoped so') match exactly between the ground truth and the prediction, satisfying the text content accuracy requirement. The prediction accurately reflects the core change intended by the ground truth. Hence, the predicted edit is correct."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "thanked him from",
+      "corrected_text": "thanked him indeed from",
+      "observed_line_number": 27,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "generous, Mr.",
+      "corrected_text": "generous Mr.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "insertion",
+      "original_text": "as she did",
+      "corrected_text": "as indeed she did",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

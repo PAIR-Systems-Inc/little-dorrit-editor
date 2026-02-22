@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:04:41.163091",
+  "verified": false
+}

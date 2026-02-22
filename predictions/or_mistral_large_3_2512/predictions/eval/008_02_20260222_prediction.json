@@ -1,0 +1,66 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "late",
+      "corrected_text": "Late",
+      "line_number": 1,
+      "page": "page_137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "looking-glass",
+      "corrected_text": "looking glass",
+      "line_number": 1,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pictures in the water.",
+      "corrected_text": "pictures in the water",
+      "line_number": 3,
+      "page": "page_137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "heavy streak, occasionally made a little ragged by a row of poplar-trees",
+      "corrected_text": "heavy streak, occasionally made a little ragged by a row of poplar trees,",
+      "line_number": 4,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wet; depressing, solitary; and the night deepened fast.",
+      "corrected_text": "wet, depressing, solitary; and the night deepened fast.",
+      "line_number": 6,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons, was",
+      "corrected_text": "Chalons was",
+      "line_number": 7,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "clothes he wore, sodden with wet;",
+      "corrected_text": "clothes he wore sodden with wet;",
+      "line_number": 10,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him.",
+      "corrected_text": "him!",
+      "line_number": 13,
+      "page": "page_137"
+    }
+  ],
+  "annotator": "Mistral Large 3 2512",
+  "annotation_date": "2026-02-22T13:47:49.048751",
+  "verified": false
+}

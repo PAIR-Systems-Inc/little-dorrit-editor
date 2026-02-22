@@ -1,0 +1,45 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "hers, and",
+      "corrected_text": "hers and",
+      "line_number": 5,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hers, matters",
+      "corrected_text": "hers matters",
+      "line_number": 5,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment, with",
+      "corrected_text": "moment with",
+      "line_number": 7,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sorrow for him, she",
+      "corrected_text": "sorrow for him she",
+      "line_number": 7,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "line_number": 9,
+      "page": "368"
+    }
+  ],
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:10:42.705894",
+  "verified": false
+}

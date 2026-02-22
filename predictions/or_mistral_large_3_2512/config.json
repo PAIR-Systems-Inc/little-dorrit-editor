@@ -1,0 +1,8 @@
+{
+  "model_id": "or_mistral_large_3_2512",
+  "display_name": "Mistral Large 3 2512",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-02-22",
+  "notes": "Benchmark run with 2-shot learning"
+}

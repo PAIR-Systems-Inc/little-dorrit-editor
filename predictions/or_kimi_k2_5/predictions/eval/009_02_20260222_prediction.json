@@ -1,0 +1,45 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 4,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "generous Mr",
+      "corrected_text": "generous, Mr",
+      "line_number": 11,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "heart",
+      "corrected_text": "heart indeed",
+      "line_number": 15,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "line_number": 17,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "hope so",
+      "corrected_text": "hoped so",
+      "line_number": 19,
+      "page": "369"
+    }
+  ],
+  "annotator": "Kimi K2.5",
+  "annotation_date": "2026-02-22T13:19:51.642357",
+  "verified": false
+}

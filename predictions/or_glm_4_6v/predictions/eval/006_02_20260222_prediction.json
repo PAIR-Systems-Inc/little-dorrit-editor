@@ -1,0 +1,38 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "highway",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "her",
+      "corrected_text": "",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "alive!",
+      "corrected_text": "alive!,",
+      "line_number": 28,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:05:46.647416",
+  "verified": false
+}

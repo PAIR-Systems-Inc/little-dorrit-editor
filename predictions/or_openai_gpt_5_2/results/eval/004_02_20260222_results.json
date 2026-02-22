@@ -1,0 +1,50 @@
+{
+  "model_name": "or_openai_gpt_5_2",
+  "date": "2026-02-22T13:34:10.874323",
+  "annotator": "GPT-5.2 (OR)",
+  "annotation_date": "2026-02-22T13:29:07.727161",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly captures the intention of the ground truth edit based on the evaluation criteria. \n\n1. Edit Type Accuracy: Both the ground truth and the predicted edit have the type 'capitalization', which exactly matches. Therefore, the edit type criterion is satisfied.\n\n2. Text Content Accuracy: The essential change in both the ground truth and predicted edit involves capitalizing the first letter of 'why'. The ground truth mentions 'why did he dine' being corrected to 'Why did he dine', while the prediction indicates 'why' corrected to 'Why'. The prediction focuses on the core change, which is the capitalization of 'why'. Including only 'why' as context does not impact the correctness since the core change of capitalizing 'why' is accurately captured.\n\nSince both criteria for edit type and text content are satisfied, the predicted edit is considered correct."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "!",
+      "corrected_text": "?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The evaluation centers around two criteria: Edit Type Accuracy and Text Content Accuracy. \n\n1. Edit Type Accuracy: Both the ground truth and the predicted edit classify the change as a 'punctuation' edit. This means the edit type matches exactly, satisfying the first criterion.\n\n2. Text Content Accuracy: The core change identified by the ground truth is altering the punctuation from an exclamation mark '!' to a question mark '?'. The prediction focuses on this same change by identifying the original punctuation '!' and the corrected punctuation '?'. Although the ground truth includes some surrounding context ('cold stones!'), the essential change is the punctuation itself, which the prediction captures accurately.\n\nBoth criteria are fulfilled by the predicted edit, making it a correct representation of the ground truth edit."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

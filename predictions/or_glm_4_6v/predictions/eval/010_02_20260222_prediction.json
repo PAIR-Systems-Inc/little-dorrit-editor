@@ -1,0 +1,45 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "from hers and",
+      "corrected_text": "from hers, and",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "on hers matters little",
+      "corrected_text": "on hers, matters little",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "for a moment with a look",
+      "corrected_text": "for a moment, with a look",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sorrow for him she was so beautiful",
+      "corrected_text": "sorrow for him, she was so beautiful",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "peace\u2014or ill for his peace",
+      "corrected_text": "peace\u2014or ill, for his peace",
+      "line_number": 7,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:10:32.732649",
+  "verified": false
+}

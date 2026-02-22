@@ -1,0 +1,66 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XI",
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "LET LOOSE",
+      "corrected_text": "LET LOOSE.",
+      "line_number": 0,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stream like",
+      "corrected_text": "stream, like",
+      "line_number": 2,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "river Saone.",
+      "corrected_text": "river Saone. The",
+      "line_number": 1,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 7,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "man slowly",
+      "corrected_text": "man, slowly",
+      "line_number": 10,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons was",
+      "corrected_text": "Chalons, was",
+      "line_number": 10,
+      "page": "137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sodden",
+      "corrected_text": "soddened",
+      "line_number": 16,
+      "page": "137"
+    }
+  ],
+  "annotator": "Gemini 3.1 Pro Preview",
+  "annotation_date": "2026-02-22T13:40:47.123398",
+  "verified": false
+}

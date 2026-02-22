@@ -1,0 +1,50 @@
+{
+  "model_name": "or_glm_4_6v",
+  "date": "2026-02-22T14:14:30.541724",
+  "annotator": "GLM 4.6V",
+  "annotation_date": "2026-02-22T14:04:41.163091",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The evaluation involves two criteria: edit type accuracy and text content accuracy. \n\n1. Edit Type Accuracy: The ground truth and the predicted edit both specify 'capitalization' as the type of edit. This matches exactly, fulfilling the requirement for edit type accuracy.\n\n2. Text Content Accuracy: The ground truth edit changes the text from 'why did he dine' to 'Why did he dine', specifically involving the capitalization of the first word from 'why' to 'Why'. The predicted edit focuses on the core change by highlighting the adjustment of 'why' to 'Why', which is the essential modification indicated by the ground truth. The prediction captures the essential capitalization change despite providing less context than the ground truth, which is permissible as per the guidelines.\n\nSince both the edit type and the essential text content change are accurately represented in the prediction, the predicted edit correctly captures the intention of the ground truth."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "The predicted edit correctly captures the intention of the ground truth edit based on both criteria. Firstly, the edit type is accurate, as both the ground truth and the prediction indicate a 'punctuation' type of edit. Secondly, the text content accuracy is also correct, as both the ground truth and the prediction reflect the change from 'cold stones!' to 'cold stones?'. This matches precisely, capturing the core change of replacing the exclamation mark with a question mark. Thus, both criteria are satisfied, and the prediction can be considered correct."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

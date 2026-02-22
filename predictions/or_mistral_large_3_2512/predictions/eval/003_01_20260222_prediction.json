@@ -1,0 +1,136 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "N",
+      "corrected_text": "No",
+      "line_number": 4,
+      "page": "page_identifier"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "\u201c",
+      "line_number": 4,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day, sir, is there?",
+      "corrected_text": "to-day, sir, is there?\u201d",
+      "line_number": 4,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "heard none.",
+      "corrected_text": "heard none.\u201d",
+      "line_number": 5,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "otherwise.",
+      "corrected_text": "otherwise.\u201d",
+      "line_number": 9,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Marsailles people?",
+      "corrected_text": "Marseilles people?\u201d",
+      "line_number": 10,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "French people.",
+      "corrected_text": "French people.\u201d",
+      "line_number": 11,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "something.",
+      "corrected_text": "something.\u201d",
+      "line_number": 15,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "laugh.",
+      "corrected_text": "laugh.",
+      "line_number": 19,
+      "page": "page_identifier"
+    },
+    {
+      "type": "italicize",
+      "original_text": "em",
+      "corrected_text": "em",
+      "line_number": 21,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quarantine!",
+      "corrected_text": "quarantine!\u201d",
+      "line_number": 21,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "other.",
+      "corrected_text": "other.\u201d",
+      "line_number": 22,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day.",
+      "corrected_text": "to-day.\u201d",
+      "line_number": 22,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "first.",
+      "corrected_text": "first.\u201d",
+      "line_number": 23,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "enormity, that",
+      "corrected_text": "enormity, that",
+      "line_number": 24,
+      "page": "page_identifier"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "\u201c",
+      "line_number": 24,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Out!",
+      "corrected_text": "Out!",
+      "line_number": 24,
+      "page": "page_identifier"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "for?",
+      "corrected_text": "for?\u201d",
+      "line_number": 24,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "Mistral Large 3 2512",
+  "annotation_date": "2026-02-22T13:46:54.649845",
+  "verified": false
+}

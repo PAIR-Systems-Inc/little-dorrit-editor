@@ -1,0 +1,31 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW",
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 0,
+      "page": "page_identifier"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Period here?",
+      "corrected_text": ".",
+      "line_number": 0,
+      "page": "page_identifier"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "THIRTY",
+      "corrected_text": "Thirty",
+      "line_number": 3,
+      "page": "page_identifier"
+    }
+  ],
+  "annotator": "Mistral Large 3 2512",
+  "annotation_date": "2026-02-22T13:47:34.141165",
+  "verified": false
+}

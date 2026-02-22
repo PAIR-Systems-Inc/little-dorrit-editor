@@ -1,0 +1,8 @@
+{
+  "model_id": "or_glm_4_6v",
+  "display_name": "GLM 4.6V",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-02-22",
+  "notes": "Benchmark run with 2-shot learning"
+}

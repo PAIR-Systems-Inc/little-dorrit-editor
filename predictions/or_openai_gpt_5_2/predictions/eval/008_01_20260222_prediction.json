@@ -1,0 +1,38 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons was",
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "page": "page_137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden",
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "page": "page_137"
+    }
+  ],
+  "annotator": "GPT-5.2 (OR)",
+  "annotation_date": "2026-02-22T13:30:38.787849",
+  "verified": false
+}
