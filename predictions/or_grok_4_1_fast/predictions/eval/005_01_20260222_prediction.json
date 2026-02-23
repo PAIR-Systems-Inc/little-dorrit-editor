@@ -1,0 +1,91 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "back, and",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "back and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "means, he",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "means he",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "increased, from",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "increased from",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "England, with",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "England with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "regretted, said",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "regretted said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Doyle",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "doyle",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mr",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "mr",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "way, Mr",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "way Mr",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "leads\u2014washing",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "leads washing",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:17:54.149575",
+  "verified": false
+}

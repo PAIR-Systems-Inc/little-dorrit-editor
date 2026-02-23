@@ -1,0 +1,55 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driblet",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "drie l",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "white, but",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "white but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fair-haired",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "haired",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liable",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "libelized",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "yourself",
+      "line_number": 40,
+      "notes": null,
+      "original_text": "yours elf",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:23:01.421221",
+  "verified": false
+}

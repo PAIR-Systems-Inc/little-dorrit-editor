@@ -1,0 +1,73 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "hot using",
+      "corrected_text": "hot, using",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grown she",
+      "corrected_text": "grown; she",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "child tenderly",
+      "corrected_text": "child, tenderly",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "go said",
+      "corrected_text": "go, said",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "gently And",
+      "corrected_text": "gently; And",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wharf and",
+      "corrected_text": "wharf, and",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "short gently",
+      "corrected_text": "short, gently",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "women the",
+      "corrected_text": "women, the",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "breasts and",
+      "corrected_text": "breasts, and",
+      "line_number": 28,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:16:43.894360",
+  "verified": false
+}

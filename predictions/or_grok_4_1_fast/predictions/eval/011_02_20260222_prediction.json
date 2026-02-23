@@ -1,0 +1,109 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "few\u2014",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "few",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mr. Meagles",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Mr Meagles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Meagles;",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Meagles",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "presently,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "presently",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "half-hour",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "half hour",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bank,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "bank",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "moonlight,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "moonlight",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "subjects (the",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "subjects the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "In",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "in",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "breast,",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "breast",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "eternal.",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "eternal",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:20:06.930799",
+  "verified": false
+}

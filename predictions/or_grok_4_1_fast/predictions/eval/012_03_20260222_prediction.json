@@ -1,0 +1,37 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "luggage,",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "luggage",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "strike,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "strike",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "infirmities,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "infirmities",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:21:33.135788",
+  "verified": false
+}

@@ -1,0 +1,38 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "dull",
+      "corrected_text": "dull,",
+      "line_number": 5,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "trees",
+      "corrected_text": "trees,",
+      "line_number": 11,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 13,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sodden with wet; limping",
+      "corrected_text": "sodden with wet, limping",
+      "line_number": 21,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:22:26.958894",
+  "verified": false
+}

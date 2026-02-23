@@ -1,0 +1,80 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "driblet",
+      "corrected_text": "drivel",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "driblet",
+      "corrected_text": "drivel",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "driblet",
+      "corrected_text": "drivel",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "driblet",
+      "corrected_text": "drivel",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "paris",
+      "corrected_text": "Paris",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "gained one",
+      "corrected_text": "gained, one",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "thought for",
+      "corrected_text": "thought, for",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outset if",
+      "corrected_text": "outset, if",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "marquis",
+      "corrected_text": "Marquis",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "eh the",
+      "corrected_text": "eh, the",
+      "line_number": 12,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:20:23.482321",
+  "verified": false
+}

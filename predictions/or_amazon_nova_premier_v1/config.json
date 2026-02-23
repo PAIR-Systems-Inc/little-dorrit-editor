@@ -1,0 +1,8 @@
+{
+  "model_id": "or_amazon_nova_premier_v1",
+  "display_name": "Amazon Nova Premier v1",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-02-22",
+  "notes": "Benchmark run with 2-shot learning"
+}

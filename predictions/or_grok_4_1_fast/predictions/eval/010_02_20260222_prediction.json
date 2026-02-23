@@ -1,0 +1,100 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "before, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "before and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "near, it",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "near it",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hand, might",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "hand might",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "rose. Do",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "rose Do",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Rome",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "rome",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clam,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Clam",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "book, no",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "book no",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tour",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "your",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "this, he",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "this he",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "confidence, you",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "confidence you",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:19:41.315559",
+  "verified": false
+}

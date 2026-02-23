@@ -1,0 +1,82 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "son's",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tremendous, and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "tremendous and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wheel-chair",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "wheeled chair",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "clock, since",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "clock since",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "minds, and",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "minds and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "acts, the",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "acts the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sent her out",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "sent out",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "go about the",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "go the",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:20:03.588259",
+  "verified": false
+}

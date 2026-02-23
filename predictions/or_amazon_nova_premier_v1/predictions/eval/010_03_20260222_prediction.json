@@ -1,0 +1,31 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "and",
+      "corrected_text": "",
+      "line_number": 18,
+      "page": "3"
+    },
+    {
+      "type": "insertion",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "line_number": 20,
+      "page": "3"
+    },
+    {
+      "type": "deletion",
+      "original_text": "with a look in which regard for him and",
+      "corrected_text": "",
+      "line_number": 28,
+      "page": "3"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:25:11.252805",
+  "verified": false
+}

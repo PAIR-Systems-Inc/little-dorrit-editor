@@ -1,0 +1,118 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hot, dull",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "hot dull",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "like, mulattos",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "like mulattos",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mulattos,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "mulattos",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "half-breeds",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "half breeds",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lay, so",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "lay so",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heavy,",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "heavy",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lonely,",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "lonely",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "snow,",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "snow",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "him",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "here,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "here",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "glazing,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "glazing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "why:",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "why",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:20:49.770238",
+  "verified": false
+}

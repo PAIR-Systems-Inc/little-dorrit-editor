@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Period here?",
+      "corrected_text": "Period here.",
+      "line_number": 0,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:22:19.397614",
+  "verified": false
+}

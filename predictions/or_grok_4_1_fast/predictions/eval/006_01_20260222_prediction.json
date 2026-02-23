@@ -1,0 +1,11 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:17:33.119746",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"type\": \"punctuation\",\n      \"original_text\": \"Monsieur\",\n      \"corrected_text\": \"Monsieur,\",\n      \"line_number\": 11,\n      \"pa...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"type\": \"punctuation\",\n      \"original_text\": \"Monsieur\",\n      \"corrected_text\": \"Monsieur,\",\n      \"line_number\": 11,\n      \"page\": \"003.png\"\n    },\n    {\n      \"type\": \"punctuation\",\n      \"original_text\": \"Germany's\",\n      \"corrected_text\": \"Germany's;\",\n      \"line_number\": 12,\n      \"page\": \"003.png\"\n    },\n    {\n      \"type\": \"punctuation\",\n      \"original_text\": \"night he\",\n      \"corrected_text\": \"night, he\",\n      \"line_number\": 13,\n      \"page\": \"003.png\"\n    },\n    {\n      \"type\": \"punctuation\",\n      \"original_text\": \"it Mr\",\n      \"corrected_text\": \"it, Mr\",\n      \"line_number\": 13,\n      \"page\": \"003.png\"\n    },\n    {\n      \"type\": \"punctuation\",\n      \"original_text\": \"Meagles\",\n      \"corrected_text\": \"Meagles,\",\n      \"line_number\": 13,\n      \"page\": \"003.png\"\n    },\n    {\n      \"type\": \"punctuation\",\n      \"original_text\": \"so?\",\n      \"corrected_text\": \"so?'\",\n      \"line_number\": 14,\n      \"page\": \"003.png\"\n    },\n    {\n      \"type\": \"pu"
+}

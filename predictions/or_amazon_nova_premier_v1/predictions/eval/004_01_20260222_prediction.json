@@ -1,0 +1,17 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "that he might blame",
+      "corrected_text": "that he might think, that he might blame",
+      "line_number": 20,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:21:48.334262",
+  "verified": false
+}

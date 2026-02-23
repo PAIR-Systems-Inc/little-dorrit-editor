@@ -1,0 +1,45 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 7,
+      "page": "3"
+    },
+    {
+      "type": "deletion",
+      "original_text": "and",
+      "corrected_text": "",
+      "line_number": 12,
+      "page": "3"
+    },
+    {
+      "type": "insertion",
+      "original_text": "when she was hard at work to buy his supper--and",
+      "corrected_text": "when she was out visiting - which was what he always said when she was hard at work to buy his supper--and",
+      "line_number": 24,
+      "page": "3"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said,",
+      "corrected_text": "said, (comma)",
+      "line_number": 30,
+      "page": "3"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 35,
+      "page": "3"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:23:31.805976",
+  "verified": false
+}

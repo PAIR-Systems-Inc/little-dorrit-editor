@@ -1,0 +1,122 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "rainily",
+      "corrected_text": "smiling",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "returned\u2014",
+      "corrected_text": "returned,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Carker seems",
+      "corrected_text": "Carker, seems",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "After ",
+      "corrected_text": "",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "clasping",
+      "corrected_text": "Clennam, clasping",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "hands his arm",
+      "corrected_text": "hands in his arm",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "nally",
+      "corrected_text": "finally",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "composure herself",
+      "corrected_text": "composure about herself",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "south",
+      "corrected_text": "strength",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "week-en",
+      "corrected_text": "week-old",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "count",
+      "corrected_text": "account",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Miss. Gowan",
+      "corrected_text": "Miss Gowan",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I have",
+      "corrected_text": "You have",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "cap tion",
+      "corrected_text": "caption",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that.\" said",
+      "corrected_text": "that,\" said",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I'do?",
+      "corrected_text": "I do?",
+      "line_number": 16,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:19:47.749403",
+  "verified": false
+}

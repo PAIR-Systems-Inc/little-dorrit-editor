@@ -1,0 +1,87 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "happy in",
+      "corrected_text": "happy, in",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "walked He",
+      "corrected_text": "walked. He",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "of",
+      "corrected_text": "put",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "roses in breast",
+      "corrected_text": "roses in his breast",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "would say to his little friend her friends",
+      "corrected_text": "",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "confi\u2014 nally",
+      "corrected_text": "confidently",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "south",
+      "corrected_text": "sound",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "in",
+      "corrected_text": "into",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "How love",
+      "corrected_text": "How I love",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "went from",
+      "corrected_text": "went on from",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Carker",
+      "corrected_text": "said Carker",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:21:43.307562",
+  "verified": false
+}

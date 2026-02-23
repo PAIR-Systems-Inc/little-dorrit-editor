@@ -1,0 +1,59 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "high",
+      "corrected_text": "higher",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "safe",
+      "corrected_text": "sound",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "first bell",
+      "corrected_text": "first-bell",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "whitey brown",
+      "corrected_text": "whitey-brown",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "german",
+      "corrected_text": "German",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "baronet",
+      "corrected_text": "Baronet",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "know you",
+      "corrected_text": "know, you",
+      "line_number": 47,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:21:13.005850",
+  "verified": false
+}

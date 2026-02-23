@@ -1,0 +1,64 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Paris?",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Paris",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sun,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sun",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "France",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "france",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "siesta, by",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "siesta by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "stood",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sail.",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "sail",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:18:47.505275",
+  "verified": false
+}

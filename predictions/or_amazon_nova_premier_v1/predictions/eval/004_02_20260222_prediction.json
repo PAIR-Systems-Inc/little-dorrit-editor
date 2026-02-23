@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "He was going to say so lightly clad, but stopped himself",
+      "corrected_text": "He was going to say so lightly clad, but stopped himself, If in what would have been a",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "COP",
+      "corrected_text": "",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "question mark",
+      "corrected_text": "",
+      "line_number": 27,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:23:20.406539",
+  "verified": false
+}

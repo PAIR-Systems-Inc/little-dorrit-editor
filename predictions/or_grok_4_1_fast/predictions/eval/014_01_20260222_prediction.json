@@ -1,0 +1,11 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:18:30.057047",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Could not extract valid JSON from response: {\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Levr\u00e8re,\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_text\": \"Levr...",
+  "raw_response": "{\n  \"edits\": [\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Levr\u00e8re,\",\n      \"line_number\": 1,\n      \"notes\": null,\n      \"original_text\": \"Levr\u00e8re\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"morning, Monsieur\",\n      \"line_number\": 2,\n      \"notes\": null,\n      \"original_text\": \"morning Monsieur\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Saint-V\u00e9ran\",\n      \"line_number\": 2,\n      \"notes\": null,\n      \"original_text\": \"Saint Veran\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"friends, was\",\n      \"line_number\": 3,\n      \"notes\": null,\n      \"original_text\": \"friends was\",\n      \"page\": \"003.png\",\n      \"type\": \"punctuation\"\n    },\n    {\n      \"confidence\": null,\n      \"corrected_text\": \"Mr. C\u2014\u2014's\",\n      \"line_number\": 4,\n      \"notes\": null,\n      \"ori"
+}

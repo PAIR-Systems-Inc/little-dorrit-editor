@@ -1,0 +1,82 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "near,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "near",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Fire",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "fire",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "here",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "her",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hand\u2014",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "hand",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clare",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Clarc",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "had been thinking another your said he had with me",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "quietly,",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "quietly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prouder",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "proud er",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:17:12.247296",
+  "verified": false
+}

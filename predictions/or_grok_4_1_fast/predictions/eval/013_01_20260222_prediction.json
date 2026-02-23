@@ -1,0 +1,91 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chateau-Renaud,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Chateau Renaud",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dantes,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "Dantes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "eh, but",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "eh but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hair's",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "hair s",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Pan's",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "Pan s",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Rugg's",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "Rugg s",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Can 't",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "Can t",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Arthur",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "arthur",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Boris",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "boris",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:18:19.418250",
+  "verified": false
+}

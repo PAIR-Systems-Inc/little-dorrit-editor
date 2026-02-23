@@ -1,0 +1,17 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "over yonder to-day,",
+      "corrected_text": "",
+      "line_number": 4,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:23:07.960099",
+  "verified": false
+}

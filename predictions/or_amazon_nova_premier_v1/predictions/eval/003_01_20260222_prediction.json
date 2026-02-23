@@ -1,0 +1,17 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "over yonder to-day, sir, is there?",
+      "corrected_text": "over yonder to-day, sir; is there?",
+      "line_number": 4,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:21:43.073911",
+  "verified": false
+}

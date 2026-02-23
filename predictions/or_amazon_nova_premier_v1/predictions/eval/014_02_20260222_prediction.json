@@ -1,0 +1,24 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bedroom",
+      "corrected_text": "bed room",
+      "line_number": 5,
+      "page": "452"
+    },
+    {
+      "type": "insertion",
+      "original_text": "not that I need mind",
+      "corrected_text": "not that I need mind,",
+      "line_number": 20,
+      "page": "452"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:24:16.577660",
+  "verified": false
+}

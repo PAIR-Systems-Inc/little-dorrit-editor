@@ -1,0 +1,91 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "No",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "no",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sear",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "ser",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "happy, other",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "happy other",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "i",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, but",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Marseilles but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles, and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Marseilles and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to-day",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "today",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fire,",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "fire",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:16:55.999592",
+  "verified": false
+}

@@ -1,0 +1,82 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hot, dull",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "hot dull",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "half-moons",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "half moons",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heavy, so",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "heavy so",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "less",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "less raw",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "left, lonely",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "left lonely",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "difficulty, and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "difficulty and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him, if",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "him if",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "glancing, but",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "glancing but",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:16:54.469204",
+  "verified": false
+}

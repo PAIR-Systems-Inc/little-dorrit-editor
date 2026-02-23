@@ -1,0 +1,100 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Why, but",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Why but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseillais",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "marseillais",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "exist",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "exit",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "parapet, with",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "parapet with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "marseilles",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Aleck, and",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "Aleck and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "opposed",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "apposed",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "money, it",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "money it",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "'day,",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "'day",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "man",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "fire",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:20:27.643751",
+  "verified": false
+}

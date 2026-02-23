@@ -1,0 +1,52 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 6,
+      "page": "page_3"
+    },
+    {
+      "type": "insertion",
+      "original_text": "and came to no haven.",
+      "corrected_text": "and came to no haven.",
+      "line_number": 11,
+      "page": "page_3"
+    },
+    {
+      "type": "deletion",
+      "original_text": "did",
+      "corrected_text": "",
+      "line_number": 13,
+      "page": "page_3"
+    },
+    {
+      "type": "insertion",
+      "original_text": "she was quite well; but",
+      "corrected_text": "she was quite well;",
+      "line_number": 19,
+      "page": "page_3"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said",
+      "corrected_text": "said, (comma)",
+      "line_number": 27,
+      "page": "page_3"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Clennam in amazement.",
+      "corrected_text": "Clennam, in amazement.",
+      "line_number": 31,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:22:18.999687",
+  "verified": false
+}

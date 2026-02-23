@@ -1,0 +1,64 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "shook, he",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "shook he",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Passing, this",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "Passing this",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "moment, with",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "moment with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "known \u2014 which",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "known which",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": ", said",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "your said",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "speaking, give",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "speaking give",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:22:15.663349",
+  "verified": false
+}

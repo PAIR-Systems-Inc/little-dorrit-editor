@@ -1,0 +1,82 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Gwynplaine, Ursus",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "Gwynplaine Ursus",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "court, by",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "court by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "people, who",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "people who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "voice, \"the",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "voice; \"the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "man, \"but",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "man; \"but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Ursus, \"I",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "Ursus; \"I",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Ursus, \"the",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "Ursus; \"the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Gwynplaine, \"it",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "Gwynplaine; \"it",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:22:28.991889",
+  "verified": false
+}

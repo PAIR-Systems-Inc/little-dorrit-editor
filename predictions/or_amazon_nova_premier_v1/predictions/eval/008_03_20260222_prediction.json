@@ -1,0 +1,38 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "dull autumn night",
+      "corrected_text": "dull, autumn night",
+      "line_number": 5,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "popular trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 11,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "towards Chalons was",
+      "corrected_text": "towards Chalons, was",
+      "line_number": 14,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sodden with wet limping",
+      "corrected_text": "sodden with wet; limping",
+      "line_number": 22,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:24:57.165890",
+  "verified": false
+}

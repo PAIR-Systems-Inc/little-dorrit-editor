@@ -1,0 +1,100 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Shadow, Paris",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Shadow Paris",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Paris?",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Paris",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "French",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "french",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hurry, southwards",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "hurry southwards",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "before since",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "been placed them",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "any other time",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "since",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "been",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "consequence, staring",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "consequence staring",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:21:16.394643",
+  "verified": false
+}

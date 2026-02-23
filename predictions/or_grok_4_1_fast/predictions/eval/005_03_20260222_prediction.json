@@ -1,0 +1,91 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "ill-success",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "ill success",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wall",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "will",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Lyons",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "lyons",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "widower, made",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "widower made",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "regretted,",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "regretted.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Germain",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "germain",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "No,",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "no,",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "does up",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "does Jup",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "serviceable",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "glowing serviceable",
+      "page": "003.png",
+      "type": "deletion"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:20:54.682352",
+  "verified": false
+}

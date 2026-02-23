@@ -294,3 +294,43 @@ endpoint = "https://api.anthropic.com/v1"
 model_name = "claude-3-7-sonnet-latest"
 api_key = "${ANTHROPIC_API_KEY}"
 logical_name = "Claude 3.7 Sonnet"
+
+################################################################################
+# A D D I T I O N A L   O P E N R O U T E R   V I S I O N   M O D E L S
+################################################################################
+
+["or_grok_4_1_fast"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "x-ai/grok-4.1-fast"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Grok 4.1 Fast"
+
+["or_amazon_nova_premier_v1"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "amazon/nova-premier-v1"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Amazon Nova Premier v1"
+
+["or_claude_sonnet_4_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-sonnet-4.5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Sonnet 4.5"
+
+["or_claude_sonnet_4_6"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-sonnet-4.6"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Sonnet 4.6"
+
+["or_claude_opus_4_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-opus-4.5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Opus 4.5"
+
+["or_claude_opus_4_6"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-opus-4.6"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Opus 4.6"

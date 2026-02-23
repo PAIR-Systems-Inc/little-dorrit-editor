@@ -1,0 +1,38 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "said",
+      "corrected_text": "said Clennam,",
+      "line_number": 22,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said",
+      "corrected_text": "said Clennam.",
+      "line_number": 26,
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "car",
+      "corrected_text": "If",
+      "line_number": 27,
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 29,
+      "page": "209"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:24:56.293354",
+  "verified": false
+}

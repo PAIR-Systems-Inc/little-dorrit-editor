@@ -1,0 +1,55 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "he, to",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "he to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stole,",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "stole",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stolen",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "sto",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "trade",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "m\u00e9tier",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Child!",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "child!",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:17:36.321537",
+  "verified": false
+}

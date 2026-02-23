@@ -1,0 +1,64 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapitre",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Shadow,",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Shadow.,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Paris",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Pised?",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hurry, in",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "hurry in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "everywhere,",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "every-",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "he said.",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "sil.",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:16:59.431661",
+  "verified": false
+}

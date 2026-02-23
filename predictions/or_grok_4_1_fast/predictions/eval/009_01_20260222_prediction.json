@@ -1,0 +1,82 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clancy, says",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "Clancy says",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "eyes, as",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "eyes as",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "trouble, and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "trouble and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "waist, and",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "waist and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clancy",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "clancy",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "herself, with",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "herself with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Gowen, as",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "Gowen as",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Gowen",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "gowen",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Grok 4.1 Fast",
+  "annotation_date": "2026-02-22T17:17:05.475836",
+  "verified": false
+}

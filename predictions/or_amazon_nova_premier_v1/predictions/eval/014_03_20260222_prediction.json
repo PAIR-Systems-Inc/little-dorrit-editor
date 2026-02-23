@@ -1,0 +1,24 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bedroom,",
+      "corrected_text": "bed room,",
+      "line_number": 5,
+      "page": "452"
+    },
+    {
+      "type": "insertion",
+      "original_text": "a wrapper but our little friend is making a",
+      "corrected_text": "a wrapper but our little friend is making me a",
+      "line_number": 22,
+      "page": "452"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:25:43.845449",
+  "verified": false
+}

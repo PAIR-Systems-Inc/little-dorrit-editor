@@ -1,0 +1,45 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "of",
+      "corrected_text": "",
+      "line_number": 7,
+      "page": "page_451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "boiling-over",
+      "corrected_text": "boiling-over old Christian,",
+      "line_number": 11,
+      "page": "page_451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "Your own recompense for all this, Mr. Pancks,",
+      "corrected_text": "\"Your own recompense for all this, Mr. Pancks,\"",
+      "line_number": 24,
+      "page": "page_451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "now",
+      "corrected_text": "now,",
+      "line_number": 28,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorize",
+      "line_number": 33,
+      "page": "page_451"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:23:09.582451",
+  "verified": false
+}

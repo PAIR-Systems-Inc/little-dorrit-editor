@@ -1,0 +1,45 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "materials costing abso-",
+      "corrected_text": "materials, costing abso-",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "came to no haven.",
+      "corrected_text": "and came to no haven.",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "did not mend the matter.",
+      "corrected_text": "",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "she was quite well;",
+      "corrected_text": "she was quite well; [,]",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said,",
+      "corrected_text": "said, (comma)",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Amazon Nova Premier v1",
+  "annotation_date": "2026-02-22T17:25:02.690610",
+  "verified": false
+}
