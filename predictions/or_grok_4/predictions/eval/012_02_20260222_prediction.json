@@ -1,0 +1,100 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "has another Dream",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Goes on Dreaming",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "The house",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "the house",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "always the same",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "to the same",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "being, however",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "being however",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "abandoned and, as",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "abandoned and as",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "brought to bear",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "through to hear",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "daily life",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "daily like",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "force, would",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "force would",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "her. Little",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "her Little",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "there, with",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "there with",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:11:42.482358",
+  "verified": false
+}

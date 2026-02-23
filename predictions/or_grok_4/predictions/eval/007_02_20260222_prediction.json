@@ -1,0 +1,46 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": ", Painted Pierre?",
+      "corrected_text": "",
+      "line_number": 0,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "insertion",
+      "original_text": "T",
+      "corrected_text": "Thirty years ago, Marseilles lay burning in the sun, one day.",
+      "line_number": 1,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "insertion",
+      "original_text": "and been",
+      "corrected_text": "and had been",
+      "line_number": 5,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "urns",
+      "corrected_text": "turns",
+      "line_number": 5,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:14:19.382360",
+  "verified": false
+}

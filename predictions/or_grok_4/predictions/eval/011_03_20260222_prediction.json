@@ -1,0 +1,91 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "that",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "thag",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fancy what",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "fancy",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Pet",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Per",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Yes, well",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Yes well",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "further",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "fur",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Thank you! said",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Thank you!",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Thank you",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "thank you",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with-in doors",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "seas.",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "seas",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:19:51.488054",
+  "verified": false
+}

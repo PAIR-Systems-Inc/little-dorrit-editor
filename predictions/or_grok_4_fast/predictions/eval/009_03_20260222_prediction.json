@@ -1,0 +1,64 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sworn to trusting",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sworn of trusting",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "happy,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "happy",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "He thought of the roses",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "He of the roses",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "O, mother",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "O mother",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dant\u00e8s",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "Clamont",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "vocation",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "cation",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:28:59.061567",
+  "verified": false
+}

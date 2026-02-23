@@ -1,0 +1,136 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Mo's",
+      "corrected_text": "Mr.",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tears",
+      "corrected_text": "tears,",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "he up",
+      "corrected_text": "he said",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "man",
+      "corrected_text": "man,",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "German-Jan's",
+      "corrected_text": "Clennam's",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "what",
+      "corrected_text": "what?",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "book said",
+      "corrected_text": "book, said",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "G",
+      "corrected_text": "G.",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "what's",
+      "corrected_text": "What's",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it",
+      "corrected_text": "it?",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pass",
+      "corrected_text": "pass,",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "char",
+      "corrected_text": "char.",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "has",
+      "corrected_text": "Has",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Now",
+      "corrected_text": "Now.",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "did",
+      "corrected_text": "did.",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Pray",
+      "corrected_text": "'Pray",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "do",
+      "corrected_text": "don't",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sell",
+      "corrected_text": "sell'.",
+      "line_number": 11,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:28:34.483365",
+  "verified": false
+}

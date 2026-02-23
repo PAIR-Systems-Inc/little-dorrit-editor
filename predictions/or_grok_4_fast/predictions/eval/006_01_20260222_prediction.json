@@ -1,0 +1,87 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "little dorrit",
+      "corrected_text": "Little Dorrit",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "father\u2019s all",
+      "corrected_text": "father\u2019s, all",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "things making",
+      "corrected_text": "things, making",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "thing as",
+      "corrected_text": "thing as\u2014",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "gracious she",
+      "corrected_text": "gracious, she",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time that",
+      "corrected_text": "time, that",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "her with",
+      "corrected_text": "her, with",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "mr clennam",
+      "corrected_text": "Mr. Clennam",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "night book",
+      "corrected_text": "night, book",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "get it",
+      "corrected_text": "get it.",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "maggy",
+      "corrected_text": "Maggy",
+      "line_number": 23,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:23:04.417801",
+  "verified": false
+}

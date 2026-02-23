@@ -1,0 +1,52 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Dreans",
+      "corrected_text": "Dreams",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Transactions and",
+      "corrected_text": "Transactions, and",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "so much",
+      "corrected_text": "",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "machine like",
+      "corrected_text": "machine, like",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "to",
+      "corrected_text": "",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sewn",
+      "corrected_text": "seen",
+      "line_number": 10,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:27:26.976122",
+  "verified": false
+}

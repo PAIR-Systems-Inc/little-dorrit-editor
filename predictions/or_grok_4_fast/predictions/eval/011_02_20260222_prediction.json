@@ -1,0 +1,55 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "walked up",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "up",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "little-fellow",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "little fellow",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Madame",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "madame",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tears in her eyes,",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "tears in her eyes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "his bedside.",
+      "line_number": 60,
+      "notes": null,
+      "original_text": "his bedside",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:27:10.694820",
+  "verified": false
+}

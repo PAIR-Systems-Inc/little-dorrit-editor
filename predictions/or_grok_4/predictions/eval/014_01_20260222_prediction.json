@@ -1,0 +1,154 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Little",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Uttle",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bedroom,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "bedroom",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ill,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "ill",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "morning,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "morning",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "action),",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "action",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "rapid-speed",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "rapid speed",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "downstairs,",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "down stairs",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Cripps's,",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Cripps's",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "slowly;",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "slowly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "time,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "time",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bright-leaved",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "bright leaved",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Flora's",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "Kiona's",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "breakfast-time.",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "breakfast time",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bright,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "bright",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "going on",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "ping on",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "Cucumber",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T17:58:15.161127",
+  "verified": false
+}

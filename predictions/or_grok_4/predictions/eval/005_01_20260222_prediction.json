@@ -1,0 +1,100 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Petersburg",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "Perusburg",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "British",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "Britain",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Rebellion",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "Rebellful",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Bavaria",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "Bararias",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Rothenthal",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "Rothenhal",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "whatever",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "what ever",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "turn",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "turned",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Your",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "your",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "unserviceable",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "servicable",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Hadn't he better set it going?",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "he must follow where it leads him.",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:09:01.820230",
+  "verified": false
+}

@@ -1,0 +1,45 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Mai",
+      "corrected_text": "Mrs",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "the city",
+      "corrected_text": "London",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "and the same",
+      "corrected_text": "and with the same",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "its",
+      "corrected_text": "it's",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Alfred",
+      "corrected_text": "Affery",
+      "line_number": 16,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T17:58:48.686333",
+  "verified": false
+}

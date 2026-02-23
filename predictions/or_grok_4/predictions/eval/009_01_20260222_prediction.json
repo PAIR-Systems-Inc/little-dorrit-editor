@@ -1,0 +1,100 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chanter",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "reply",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "ply",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "replying",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "rain- ing",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "knew",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "know",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "under",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Inder",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "encouragement",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "couragement",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "good gracious",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "God goodness",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "don't",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "me you no not",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "hoped",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "well! I hope so; I am not disappointed.",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "You have very much to do of you.\" \"That's what I hope I am not disappointed how I love home.",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:03:13.538243",
+  "verified": false
+}

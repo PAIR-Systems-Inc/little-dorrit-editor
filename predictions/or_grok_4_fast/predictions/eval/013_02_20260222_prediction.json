@@ -1,0 +1,52 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "drivel of earth",
+      "corrected_text": "drizzle of earth",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sorry\" said",
+      "corrected_text": "sorry,\" said",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Renaud \"that",
+      "corrected_text": "Renaud, \"that",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chateau Renaud",
+      "corrected_text": "Chateau-Renaud",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dantes \"He",
+      "corrected_text": "Dantes,\" \"He",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "He s",
+      "corrected_text": "He's",
+      "line_number": 2,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:28:05.845997",
+  "verified": false
+}

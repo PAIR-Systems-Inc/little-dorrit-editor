@@ -1,0 +1,100 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "mind, at once",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "mind at once",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "at",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Do",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "do",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "1",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "1",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "marionettes",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "harmanettes",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the end, into",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "preach, thin.",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "his a moment",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "his moment",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "compassion for him",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "traumas in him",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "thinking of another",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "thinking another",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:34:30.381167",
+  "verified": false
+}

@@ -1,0 +1,38 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "The If",
+      "corrected_text": "The. If",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "there but",
+      "corrected_text": "there; but",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "gray The",
+      "corrected_text": "gray. The",
+      "line_number": 9,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:26:41.723281",
+  "verified": false
+}

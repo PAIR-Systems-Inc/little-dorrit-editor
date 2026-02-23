@@ -1,0 +1,38 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "At this",
+      "corrected_text": "so. At this",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to How",
+      "corrected_text": "to \u2014How",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "how I myself",
+      "corrected_text": "How I myself",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "give it",
+      "corrected_text": "give it.",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:29:12.031249",
+  "verified": false
+}

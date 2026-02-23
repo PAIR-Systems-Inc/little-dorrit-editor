@@ -1,0 +1,108 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "goods and",
+      "corrected_text": "goods, and",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wealth with",
+      "corrected_text": "wealth, with",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "making and",
+      "corrected_text": "making, and",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "interest because",
+      "corrected_text": "interest, because",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "purse which",
+      "corrected_text": "purse, which",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "savage and",
+      "corrected_text": "savage, and",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Lyons which",
+      "corrected_text": "Lyons, which",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "himself in",
+      "corrected_text": "himself, in",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Honor the",
+      "corrected_text": "Honor, the",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Glimmer",
+      "corrected_text": "Danglars",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Barma",
+      "corrected_text": "Danglars",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Doyes",
+      "corrected_text": "Danglars",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "do If",
+      "corrected_text": "do? If",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "leading",
+      "corrected_text": "lead",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:25:15.765891",
+  "verified": false
+}

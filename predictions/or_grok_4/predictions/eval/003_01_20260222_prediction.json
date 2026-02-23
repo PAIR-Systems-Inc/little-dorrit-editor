@@ -1,0 +1,109 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "N more",
+      "corrected_text": "No more",
+      "line_number": 1,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "capitalization",
+      "original_text": "is there",
+      "corrected_text": "Is there",
+      "line_number": 1,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "may it be sure",
+      "corrected_text": "you may be sure",
+      "line_number": 2,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Marseilles we",
+      "corrected_text": "Marseilles, we",
+      "line_number": 7,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "good humour",
+      "corrected_text": "good-humour",
+      "line_number": 12,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "parapet wall",
+      "corrected_text": "parapet-wall",
+      "line_number": 13,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "seilles and",
+      "corrected_text": "seilles; and",
+      "line_number": 14,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "other. \"",
+      "corrected_text": "other, \"",
+      "line_number": 20,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "capitalization",
+      "original_text": "But we",
+      "corrected_text": "but we",
+      "line_number": 20,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "first. \"",
+      "corrected_text": "first, \"",
+      "line_number": 21,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "capitalization",
+      "original_text": "It's almost",
+      "corrected_text": "it's almost",
+      "line_number": 21,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:01:45.783245",
+  "verified": false
+}

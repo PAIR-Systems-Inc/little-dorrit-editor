@@ -1,0 +1,45 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Gain",
+      "corrected_text": "His",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "wet, ing",
+      "corrected_text": "wetting",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "the by",
+      "corrected_text": "by the",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "yell",
+      "corrected_text": "feel",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "wrapping",
+      "corrected_text": "chill",
+      "line_number": 10,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:29:03.631668",
+  "verified": false
+}

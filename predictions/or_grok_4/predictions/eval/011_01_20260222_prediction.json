@@ -1,0 +1,91 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "speaking, silently",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "speaking silently",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Up",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "up",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "murmured",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "marked",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "time), and",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "time) and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that once were",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "advance were",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river; pale",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "river. Pale",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "pale",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "Pale",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "seas.",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "seas",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T17:53:08.279293",
+  "verified": false
+}

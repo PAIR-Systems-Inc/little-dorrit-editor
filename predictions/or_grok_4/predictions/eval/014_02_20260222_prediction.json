@@ -1,0 +1,73 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Constant",
+      "corrected_text": "Constantinople",
+      "line_number": 1,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "papers he said",
+      "corrected_text": "papers, he said",
+      "line_number": 5,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "there but",
+      "corrected_text": "there, but",
+      "line_number": 9,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "capitalization",
+      "original_text": "who",
+      "corrected_text": "Who",
+      "line_number": 11,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "Cucumber",
+      "corrected_text": "you know",
+      "line_number": 21,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "Cucumber",
+      "corrected_text": "apology",
+      "line_number": 22,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "care as point",
+      "corrected_text": "not to put too fine a point upon it",
+      "line_number": 22,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:12:30.398104",
+  "verified": false
+}

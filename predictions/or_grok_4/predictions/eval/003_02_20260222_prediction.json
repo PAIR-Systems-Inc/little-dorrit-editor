@@ -1,0 +1,55 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "No",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "N o",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to-day,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "to-day.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sir?",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "Sir",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Is",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "is",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "there?",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "there",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:02:47.187084",
+  "verified": false
+}

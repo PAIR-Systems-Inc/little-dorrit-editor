@@ -1,0 +1,64 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "is much to be regretted",
+      "corrected_text": "It is much to be regretted",
+      "line_number": 18,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "Doyle",
+      "corrected_text": "Doyce",
+      "line_number": 19,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "do",
+      "corrected_text": "do?",
+      "line_number": 20,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "insertion",
+      "original_text": "god Clemsam",
+      "corrected_text": "god full Clemsam",
+      "line_number": 22,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "capitalization",
+      "original_text": "god",
+      "corrected_text": "God",
+      "line_number": 22,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "Clemsam",
+      "corrected_text": "Clennam",
+      "line_number": 22,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:16:20.613050",
+  "verified": false
+}

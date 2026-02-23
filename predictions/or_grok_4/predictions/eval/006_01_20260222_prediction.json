@@ -1,0 +1,127 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-land",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "highland",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "judgment\u2014all",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "judgment - all",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "self-limitation",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "sailor hat limitation",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "reddening",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "reddened",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it, there",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "it. there",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sometimes",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "some times",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Little Dorrit",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Little Dorrit",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "carramba",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "carramba",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Tempest-tossed",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "Tempest tossed",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "carramba",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "carramba",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "L'ami",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "L'ami",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "My heart",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "my heart",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shaking",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "chatting",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T17:54:52.141158",
+  "verified": false
+}

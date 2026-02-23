@@ -1,0 +1,80 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "for a few",
+      "corrected_text": "for a few minutes",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "one hot",
+      "corrected_text": "one hot morning",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grown",
+      "corrected_text": "grown.",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "She has my mother",
+      "corrected_text": "She has my mother,",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "fur",
+      "corrected_text": "further",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "moonlit",
+      "corrected_text": "moonlight",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "of the",
+      "corrected_text": "on the",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "women the river",
+      "corrected_text": "women, the river",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "eternal",
+      "corrected_text": "eternal.",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "in ",
+      "corrected_text": "",
+      "line_number": 12,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:29:26.221343",
+  "verified": false
+}

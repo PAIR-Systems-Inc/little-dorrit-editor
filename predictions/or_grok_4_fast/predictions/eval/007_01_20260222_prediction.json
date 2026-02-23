@@ -1,0 +1,52 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "T year",
+      "corrected_text": "A year",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ago a",
+      "corrected_text": "ago, a",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "France at",
+      "corrected_text": "France, at",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "stood",
+      "corrected_text": "set",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "out of countenance",
+      "corrected_text": "in bold relief",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "white",
+      "corrected_text": "the sky",
+      "line_number": 5,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:21:22.459604",
+  "verified": false
+}

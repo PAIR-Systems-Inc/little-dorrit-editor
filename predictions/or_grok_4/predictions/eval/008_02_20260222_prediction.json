@@ -1,0 +1,181 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "moons, floated",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "moons floated",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "Chateaux",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lying low",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "lay so long",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "depressing, solitary",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "depressing solitary",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "as",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "and",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fast, was",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "fast was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "avoiding",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "avoided",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stick",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "such as",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "of rude",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "of new",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hand; many",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "hand, many",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "weary",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "many",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "footsore",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "footsores",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "as he was",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "and he were",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "was, would",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "was would",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "would-be",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "would have",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "king",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "being",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "king, keeping",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "king keeping",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "endlessness",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "ness",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "chill! I",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "chill I",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:14:24.736077",
+  "verified": false
+}

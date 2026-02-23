@@ -1,0 +1,145 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Ch\u00e2lons",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "Chalons",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "in",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "streaks",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "streak",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "solitary; and",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "solitary and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "averted",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "avoided",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wound",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "wood",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "manly",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "many",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "as",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "he",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "puckering",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "plucking",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "puckering of the",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "puckering the",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "muttered",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "measured",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "damnable",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "damnal",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "chillness",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "chill ness",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "chill! I",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "chill I",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "you",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:15:37.151749",
+  "verified": false
+}

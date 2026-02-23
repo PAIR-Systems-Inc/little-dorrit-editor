@@ -1,0 +1,87 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "world with",
+      "corrected_text": "world, with",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sang froid",
+      "corrected_text": "sang-froid",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "you",
+      "corrected_text": "You",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you 'You",
+      "corrected_text": "you. 'You",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "easily that",
+      "corrected_text": "easily, that",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "child who",
+      "corrected_text": "child, who",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "chains How",
+      "corrected_text": "chains. How",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "justification that",
+      "corrected_text": "justification, that",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "place and",
+      "corrected_text": "place, and",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Why said",
+      "corrected_text": " 'Why,' said",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 12,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:25:06.292823",
+  "verified": false
+}

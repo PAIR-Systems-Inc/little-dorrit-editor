@@ -1,0 +1,45 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "thing",
+      "corrected_text": "Thing",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fascinated him",
+      "corrected_text": "fascinated him.",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "he had believed",
+      "corrected_text": "simply known",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "retribution that",
+      "corrected_text": "retribution, that",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "that they did",
+      "corrected_text": "",
+      "line_number": 21,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T17:59:25.626473",
+  "verified": false
+}

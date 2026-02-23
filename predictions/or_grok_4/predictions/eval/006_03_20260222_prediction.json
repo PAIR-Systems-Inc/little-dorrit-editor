@@ -1,0 +1,172 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "sunset, than",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "sunset than",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Highland",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "highland",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "highland-peril",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "highland peril",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "rain, pre-",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "rain pre-",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "judgment, -",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "judgment -",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "clammy, and",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "clammy and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "N.B.",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "n.b.",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sailor-hat",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "sailor hat",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "limitation,",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "limitation",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "The removal of Little Dorrit home.",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "home,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "home",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sons,",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "sons",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "her, and",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "her and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "her, she",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "her she",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "master, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "master and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "corrected",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "Temporary",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Do you mean?",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "do you mean?",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "night, and",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "night and",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:25:35.520067",
+  "verified": false
+}

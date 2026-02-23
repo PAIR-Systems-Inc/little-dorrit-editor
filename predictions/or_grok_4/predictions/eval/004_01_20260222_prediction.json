@@ -1,0 +1,109 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Putting",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "Purring",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "and a child",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "women,",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "had he failed? If there was, that of anger which, Why he always",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "simply known",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "simultaneous",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "guide, pale",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "guide pale",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "remained",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "eliminated",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "jerked",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "jer ked",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "imperceptible",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "impercept",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fed, looking",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "fed; looking",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bars, that",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "bars that",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:00:41.020777",
+  "verified": false
+}

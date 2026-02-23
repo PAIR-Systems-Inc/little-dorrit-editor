@@ -1,0 +1,118 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "all",
+      "corrected_text": "not",
+      "line_number": 1,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "deletion",
+      "original_text": "in",
+      "corrected_text": "",
+      "line_number": 1,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "at",
+      "corrected_text": "the",
+      "line_number": 3,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "it",
+      "corrected_text": "in",
+      "line_number": 4,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "ing",
+      "corrected_text": "Thinking",
+      "line_number": 9,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "My.",
+      "corrected_text": "Mrs.",
+      "line_number": 9,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "movement",
+      "corrected_text": "arm",
+      "line_number": 11,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "harmanteaus lids",
+      "corrected_text": "her arm",
+      "line_number": 11,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "preach, thin.",
+      "corrected_text": "the end",
+      "line_number": 14,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "cined",
+      "corrected_text": "inclined",
+      "line_number": 18,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "can",
+      "line_number": 19,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "directly",
+      "corrected_text": "suddenly",
+      "line_number": 20,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:07:19.598413",
+  "verified": false
+}

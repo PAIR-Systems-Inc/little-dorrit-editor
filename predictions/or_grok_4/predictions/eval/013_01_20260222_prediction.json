@@ -1,0 +1,31 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "driel",
+      "corrected_text": "driest",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "radicate",
+      "corrected_text": "eradicate",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "durthare",
+      "corrected_text": "furtherance",
+      "line_number": 23,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:05:53.310062",
+  "verified": false
+}

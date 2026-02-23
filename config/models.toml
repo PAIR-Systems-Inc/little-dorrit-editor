@@ -334,3 +334,15 @@ endpoint = "https://openrouter.ai/api/v1"
 model_name = "anthropic/claude-opus-4.6"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Claude Opus 4.6"
+
+["or_grok_4"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "x-ai/grok-4"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Grok 4"
+
+["or_grok_4_fast"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "x-ai/grok-4-fast"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Grok 4 Fast"

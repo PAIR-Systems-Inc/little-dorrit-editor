@@ -1,0 +1,73 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "The",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "the",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tremendous proportions and",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "tremendous and",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Far",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Rarely",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "our surprise",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "surprise",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "surprise, the",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "surprise the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a higher",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "any",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "With",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "What",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:29:29.347608",
+  "verified": false
+}

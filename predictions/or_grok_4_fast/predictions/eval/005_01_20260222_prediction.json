@@ -1,0 +1,52 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "discovery",
+      "corrected_text": "discovery,",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "effort",
+      "corrected_text": "effort,",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "years",
+      "corrected_text": "Britain",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "of",
+      "corrected_text": "Morcerf",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "do J'up",
+      "corrected_text": "does up",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Gesh",
+      "corrected_text": "Dumas",
+      "line_number": 11,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:20:30.939726",
+  "verified": false
+}

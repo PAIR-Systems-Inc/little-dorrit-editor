@@ -1,0 +1,52 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "before and",
+      "corrected_text": "before, and",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "clarian",
+      "corrected_text": "Clarian",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "light at this",
+      "corrected_text": "light at this",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "preach think",
+      "corrected_text": "French think",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "speaking give",
+      "corrected_text": "speaking, give",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "godless to",
+      "corrected_text": "godless, to",
+      "line_number": 22,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:26:20.602919",
+  "verified": false
+}

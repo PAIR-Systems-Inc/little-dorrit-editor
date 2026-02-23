@@ -1,0 +1,80 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "trusting she",
+      "corrected_text": "trusting, she",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "god bless",
+      "corrected_text": "God bless",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "lips At",
+      "corrected_text": "lips. At",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "eyes to",
+      "corrected_text": "eyes, to",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "hands his arm",
+      "corrected_text": "hands in his arm",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "nally",
+      "corrected_text": "finally",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "south",
+      "corrected_text": "depth",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you'",
+      "corrected_text": "you.",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "minnie",
+      "corrected_text": "Minnie",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "free and",
+      "corrected_text": "free, and",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:23:07.741425",
+  "verified": false
+}

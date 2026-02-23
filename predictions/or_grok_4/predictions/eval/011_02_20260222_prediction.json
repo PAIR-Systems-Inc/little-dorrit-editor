@@ -1,0 +1,109 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "walked",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "stood",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "silence, then",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "silence then",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "parted.",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "added.",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Arthur.",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "arthur.",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fancy-fur-",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "fancy fur-",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mother",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "your mother",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "always",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "never",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sisters, and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "sisters and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Pet was, the",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Pet was the",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Very well,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "very well",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Very well,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Very well",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:07:35.352657",
+  "verified": false
+}

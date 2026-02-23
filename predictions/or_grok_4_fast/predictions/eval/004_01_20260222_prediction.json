@@ -1,0 +1,80 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "confidence in",
+      "corrected_text": "confidence, in",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "too was",
+      "corrected_text": "too, was",
+      "line_number": 5,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "child who",
+      "corrected_text": "child, who",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hours he",
+      "corrected_text": "hours, he",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "prison if",
+      "corrected_text": "prison, if",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "know he",
+      "corrected_text": "know, he",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "father's that",
+      "corrected_text": "father's, that",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "again 'Why",
+      "corrected_text": "again, 'Why",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "he story",
+      "corrected_text": "the story",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "the story",
+      "corrected_text": "The Story",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:20:26.178255",
+  "verified": false
+}

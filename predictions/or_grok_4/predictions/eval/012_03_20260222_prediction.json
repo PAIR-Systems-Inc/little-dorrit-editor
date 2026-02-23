@@ -1,0 +1,127 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Mrs",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Mai",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "The",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "T he",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "turning",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "to ing",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "clockwork",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "clockwork",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it. to",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "it to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "To",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "to",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "existence)",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence. is",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "existence is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Is",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "is",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "scenes and actors",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "sometimes acts on",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bear",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "hear",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "daily, like",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "daily like",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "devotion",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "Allie was concerned",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:29:27.298614",
+  "verified": false
+}

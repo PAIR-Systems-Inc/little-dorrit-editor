@@ -1,0 +1,127 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "instance, and",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "instance and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "slender",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "highest",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sailor, but",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "sailor but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "France",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Francis",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "made use of it. Little more than once when he wondered that he",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "unscrupulous",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "inscrupulous",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "not in an",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "not an",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Remand",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "Temporary",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "My heart",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "my heart",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stopped at night",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "stopped night",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "home,",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "home",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "girl, passionate",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "girl passionate",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sit",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "it",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:04:58.098367",
+  "verified": false
+}

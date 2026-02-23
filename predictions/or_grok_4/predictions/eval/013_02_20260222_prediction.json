@@ -1,0 +1,37 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "drizzle",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "driel",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Pancks",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "Pancks",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "way",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "way",
+      "page": "003.png",
+      "type": "italicize"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:28:41.615124",
+  "verified": false
+}

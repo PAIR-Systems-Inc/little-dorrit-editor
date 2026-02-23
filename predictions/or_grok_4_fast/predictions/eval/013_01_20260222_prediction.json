@@ -1,0 +1,52 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "drill",
+      "corrected_text": "drudge",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "intro",
+      "corrected_text": "introduction",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Pangs",
+      "corrected_text": "pangs",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "washed causing",
+      "corrected_text": "washed, causing",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "nose, like",
+      "corrected_text": "nose; like",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "An Apology for the Devil",
+      "corrected_text": "An Apology for the Devil",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:24:42.390873",
+  "verified": false
+}

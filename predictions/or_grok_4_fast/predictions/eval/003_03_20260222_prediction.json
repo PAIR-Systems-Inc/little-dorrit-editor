@@ -1,0 +1,45 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "N o",
+      "corrected_text": "No",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "mean? the",
+      "corrected_text": "mean?, the",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "marseilles",
+      "corrected_text": "Marseilles",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "What's",
+      "corrected_text": "What's,",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "for.",
+      "corrected_text": "fire.",
+      "line_number": 12,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:27:51.341091",
+  "verified": false
+}

@@ -1,0 +1,127 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Seine",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "seine",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and half afraid",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "and afraid",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "laid",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "lay",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "puff of wind",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "puff of",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wind, depressing",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "wind depressing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "solitary; and",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "solitary and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fast, he was",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "fast, was",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lone man, hairy, forlorn",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "new wood in his hand, many, footworn",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lime",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "the wet",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 8,
+      "notes": null,
+      "original_text": ", solid as lead, wringing",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "plashing",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "plucking",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sullenly, but",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "sullenly but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with chillness",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "with ness",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T17:55:22.566163",
+  "verified": false
+}

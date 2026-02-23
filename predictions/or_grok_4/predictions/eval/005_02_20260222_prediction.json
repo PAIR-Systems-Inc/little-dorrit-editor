@@ -1,0 +1,64 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "that",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "what",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "do? If he",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "do he",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Great British Legion of Honour",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "great british legion of honour",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "prince, who",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "prince who",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "laboured",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "taboured",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hard, hard",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "hard hard",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:11:44.262703",
+  "verified": false
+}

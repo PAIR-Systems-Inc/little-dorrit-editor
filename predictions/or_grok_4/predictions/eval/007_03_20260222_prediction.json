@@ -1,0 +1,73 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow, Painted Pierre?",
+      "line_number": 0,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "insertion",
+      "original_text": "T",
+      "corrected_text": "Thirty years ago, Marseilles lay burning in the sun, one day.",
+      "line_number": 1,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "were",
+      "corrected_text": "was",
+      "line_number": 3,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "deletion",
+      "original_text": "as if",
+      "corrected_text": "",
+      "line_number": 3,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "made of",
+      "corrected_text": "stared out of",
+      "line_number": 3,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "replacement",
+      "original_text": "universe",
+      "corrected_text": "universal staring",
+      "line_number": 3,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "deletion",
+      "original_text": "and been stared at in return",
+      "corrected_text": "",
+      "line_number": 4,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:18:42.014519",
+  "verified": false
+}

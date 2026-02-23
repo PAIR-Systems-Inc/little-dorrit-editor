@@ -1,0 +1,28 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Why did he know",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "that of a single check",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "simply knew",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "he had believed that there was a misunderstanding",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:11:25.805509",
+  "verified": false
+}

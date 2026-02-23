@@ -1,0 +1,80 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "once such",
+      "corrected_text": "once, such",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "discovery self",
+      "corrected_text": "discovery, self",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "under from",
+      "corrected_text": "under, from",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "savage from",
+      "corrected_text": "savage, from",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "well; and",
+      "corrected_text": "well; and",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "legion",
+      "corrected_text": "Legion",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said Edmond",
+      "corrected_text": "said, Edmond",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Morrel what",
+      "corrected_text": "Morrel, what",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "J'our",
+      "corrected_text": "your",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him said",
+      "corrected_text": "him, said",
+      "line_number": 11,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:28:11.248718",
+  "verified": false
+}

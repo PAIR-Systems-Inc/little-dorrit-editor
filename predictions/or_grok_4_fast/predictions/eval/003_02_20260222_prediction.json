@@ -1,0 +1,66 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "N o",
+      "corrected_text": "No",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "yon der",
+      "corrected_text": "yonder",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Wh y",
+      "corrected_text": "Why",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": " I ",
+      "corrected_text": "I",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "up at a wall",
+      "corrected_text": "over a parapet",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "ran g",
+      "corrected_text": "rang",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "to day",
+      "corrected_text": "today",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "speaker",
+      "corrected_text": "",
+      "line_number": 6,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:24:57.304872",
+  "verified": false
+}

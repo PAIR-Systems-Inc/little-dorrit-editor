@@ -1,0 +1,127 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam's",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Constant's",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bedroom, while",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "bedroom while",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "documents to",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "documents) to",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "drew",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "do",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "for",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "by",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "down-stairs",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "down stairs",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam's",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Caddy's",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Little Dorrit",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "little Dorrit",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "Constant",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "thought, well",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "thought well",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "Constant",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "except",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "Cucumber",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "except",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "Cucumber",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Grok 4",
+  "annotation_date": "2026-02-22T18:22:46.980011",
+  "verified": false
+}

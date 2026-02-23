@@ -1,0 +1,59 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "breakfast which",
+      "corrected_text": "breakfast, which",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "papers and",
+      "corrected_text": "papers, and",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "weary that",
+      "corrected_text": "weary, that",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "would and",
+      "corrected_text": "would, and",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "lit and",
+      "corrected_text": "lit, and",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "madman would",
+      "corrected_text": "madman, would",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you and",
+      "corrected_text": "you, and",
+      "line_number": 16,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4 Fast",
+  "annotation_date": "2026-02-22T18:24:28.345647",
+  "verified": false
+}
