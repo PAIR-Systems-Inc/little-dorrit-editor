@@ -1,6 +1,6 @@
 {
   "model_name": "or_chatgpt_4o_latest",
-  "date": "2025-04-08T23:30:26.910127",
+  "date": "2026-02-22T15:37:32.632963",
   "annotator": "ChatGPT-4o (OR)",
   "annotation_date": "2025-04-07T19:53:29.350066",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 27,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit matches exactly the ground truth edit type ('capitalization'). The ground truth edit changes 'why did he dine' to 'Why did he dine', primarily focusing on capitalizing 'why' to 'Why'. The predicted edit isolates the word 'why', correctly identifying and applying the exact capitalization correction. According to evaluation instructions, predictions capturing the core change are considered correct, even if context differs in quantity. Thus, the predicted edit accurately captures the essential edit intended in the ground truth."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"capitalization\" and the predicted edit type is also \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to capitalize the initial word in the phrase \"why did he dine\" \u2192 \"Why did he dine\" (i.e., change \"why\" to \"Why\"). The prediction captures this core change directly by specifying \"why\" \u2192 \"Why\". Although it includes less surrounding context than the ground truth, it accurately reflects the essential capitalization correction."
     },
     {
       "observed_edit_num": 1,

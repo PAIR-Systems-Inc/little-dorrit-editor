@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4_5_preview",
-  "date": "2025-04-08T22:40:51.063590",
+  "date": "2026-02-22T15:49:14.964113",
   "annotator": "GPT-4.5 Preview (OR)",
   "annotation_date": "2025-04-07T19:32:38.141874",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 15,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit type ('punctuation') exactly matches the ground truth edit type ('punctuation'). The text content corrected by the prediction ('hers and' \u2192 'hers, and') also accurately matches the exact punctuation correction intended by the ground truth. Since both criteria\u2014edit type and text content\u2014are fulfilled, the prediction is correct. The line number difference is explicitly ignored per instruction."
+      "judgement": "Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly. Text Content Accuracy: Both specify the same core change\u2014adding a comma after \"hers\" in the phrase \"hers and\", yielding \"hers, and\". Ignoring line numbers as instructed, the predicted edit captures the same intended punctuation correction."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 17,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit type matches exactly as punctuation, and the predicted text correction ('hers matters' \u2192 'hers, matters') precisely matches the ground truth edit. Although the line numbers differ, the instructions explicitly state to ignore line numbers completely. Both the edit type and the essential text content changes are correctly captured by the prediction, fulfilling all evaluation criteria."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"hers matters\") and the same corrected text (\"hers, matters\"), capturing the identical core change\u2014adding a comma after \"hers\". Line number differences are ignored as instructed, so the prediction matches the ground truth intention."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 23,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit correctly captures both criteria. First, the edit type ('punctuation') matches exactly the edit type in the ground truth. Second, the predicted edit ('moment with' \u2192 'moment, with') is identical to the ground truth edit, accurately reflecting the insertion of a comma. Thus, the prediction fully aligns with the edit intention identified in the ground truth."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change from \"moment with\" to \"moment, with,\" correctly capturing the insertion of a comma after \"moment.\" The core punctuation correction is identical."
     },
     {
       "observed_edit_num": 3,
@@ -58,7 +58,7 @@
       "observed_line_number": 25,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit correctly matches the ground truth in both aspects. Edit type is exactly the same ('punctuation'). The original and corrected texts are identical ('beautiful that' \u2192 'beautiful, that'), accurately capturing the essential punctuation change intended by the ground truth. There are no discrepancies in the relevant evaluation criteria."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as a \"punctuation\" edit, so the type matches exactly. Text Content Accuracy: Both specify the same transformation from \"beautiful that\" to \"beautiful, that\", inserting a comma after \"beautiful\". This captures the core intended punctuation change with identical original and corrected text."
     },
     {
       "observed_edit_num": 4,

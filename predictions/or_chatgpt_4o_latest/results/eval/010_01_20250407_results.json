@@ -1,11 +1,25 @@
 {
   "model_name": "or_chatgpt_4o_latest",
-  "date": "2025-04-08T23:44:19.652588",
+  "date": "2026-02-22T15:38:26.262375",
   "annotator": "ChatGPT-4o (OR)",
   "annotation_date": "2025-04-07T22:16:10.278372",
   "details": [
     {
       "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "observed_line_number": 10,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction are labeled as \"punctuation,\" so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth change is inserting a comma after \"hers\" in the phrase \"hers and\" \u2192 \"hers, and\". The prediction also inserts a comma after \"hers\" (\"hers\" \u2192 \"hers,\"). Although it does not include the following word \"and,\" it captures the core intended punctuation change (adding the comma after \"hers\"). Therefore, the text content matches the ground truth's intention."
+    },
+    {
+      "observed_edit_num": 1,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -19,7 +33,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 1,
+      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -33,7 +47,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 2,
+      "observed_edit_num": 3,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -47,7 +61,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 3,
+      "observed_edit_num": 4,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -56,20 +70,6 @@
       "original_text": "that papa had abandoned",
       "corrected_text": "That papa had abandoned",
       "observed_line_number": 26,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False positive: no matching ground truth edit found"
-    },
-    {
-      "observed_edit_num": 4,
-      "expected_edit_num": null,
-      "tp": 0.0,
-      "fp": 1.0,
-      "fn": 0.0,
-      "type": "punctuation",
-      "original_text": "hers",
-      "corrected_text": "hers,",
-      "observed_line_number": 10,
       "line_diff": null,
       "line_number_penalty": 0.0,
       "judgement": "False positive: no matching ground truth edit found"
@@ -90,7 +90,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 0,
+      "expected_edit_num": 1,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -104,7 +104,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 1,
+      "expected_edit_num": 2,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -118,27 +118,13 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 2,
+      "expected_edit_num": 3,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "capitalization",
       "original_text": "they",
       "corrected_text": "They",
-      "observed_line_number": null,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False negative: ground truth edit not found in prediction"
-    },
-    {
-      "observed_edit_num": null,
-      "expected_edit_num": 3,
-      "tp": 0.0,
-      "fp": 0.0,
-      "fn": 1.0,
-      "type": "punctuation",
-      "original_text": "hers and",
-      "corrected_text": "hers, and",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

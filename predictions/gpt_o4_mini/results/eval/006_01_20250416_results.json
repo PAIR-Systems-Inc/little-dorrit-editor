@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_o4_mini",
-  "date": "2025-04-17T06:36:09.026219",
+  "date": "2026-02-22T15:35:34.926865",
   "annotator": "GPT-o4 Mini",
   "annotation_date": "2025-04-16T21:21:43.997744",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 2,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit accurately captures both criteria. First, the edit type ('punctuation') matches exactly the ground truth's edit type. Second, the text content is identical, with both the ground truth and prediction adding a comma after 'materials'. Thus, the essential edit is correctly captured, and the slight difference in line numbering is explicitly ignored according to the instructions."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction label the change as a \"punctuation\" edit, so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"materials costing\") and the same corrected text (\"materials, costing\"), capturing the identical core change (inserting a comma after \"materials\").\nLine number differences are ignored as instructed, so the prediction correctly matches the ground truth intent."
     },
     {
       "observed_edit_num": 1,

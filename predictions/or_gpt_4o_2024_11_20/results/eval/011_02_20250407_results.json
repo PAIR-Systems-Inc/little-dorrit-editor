@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4o_2024_11_20",
-  "date": "2025-04-09T00:29:05.166130",
+  "date": "2026-02-22T15:53:43.169102",
   "annotator": "GPT-4o (2024-11-20 OR)",
   "annotation_date": "2025-04-08T01:08:48.557746",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 22,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit correctly matches the ground truth on both criteria. First, the edit type 'punctuation' is exactly identical in both the ground truth and prediction. Second, the text content accuracy is also correctly captured\u2014the predicted edit transforms 'shore and' into 'shore, and', precisely reflecting the core punctuation change indicated by the ground truth. Additional or differing context around this edit is not present, and no discrepancy exists. Given that line numbers are explicitly ignored for evaluation, the discrepancy in line_number is inconsequential. Thus, the prediction accurately captures the intention of the original editorial correction."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original_text (\"shore and\") and the same corrected_text (\"shore, and\"), capturing the identical core change (inserting a comma after \"shore\"). Ignoring line numbers as instructed, the prediction matches the ground truth edit intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 31,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type matches exactly ('replacement'), satisfying the first criterion. Regarding text content accuracy, the predicted edit ('that once' \u2192 'than once') completely captures the intended textual change from the ground truth ('that' \u2192 'than'). The prediction includes extra context ('once'), but this additional context does not alter or obscure the core correction (the word 'that' changed to 'than'). Thus, the essential edit (the actual textual change from 'that' to 'than') is correctly represented within the predicted edit. Therefore, both criteria for correctness are fulfilled."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction use the edit type \"replacement\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is specifically \"that\" \u2192 \"than\". The prediction expands the span to \"that once\" \u2192 \"than once\", but the essential intended correction (changing \"that\" to \"than\") is preserved, with \"once\" simply included as additional unchanged context. Therefore the core textual correction matches the ground truth intention."
     },
     {
       "observed_edit_num": 2,

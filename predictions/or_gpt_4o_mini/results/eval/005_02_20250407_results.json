@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4o_mini",
-  "date": "2025-04-08T23:47:18.953164",
+  "date": "2026-02-22T15:54:42.197219",
   "annotator": "GPT-4o-mini (OR)",
   "annotation_date": "2025-04-07T21:47:04.719963",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 34,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type matches exactly ('capitalization') for both the ground truth and predicted edit. Regarding text content accuracy, the ground truth corrected 'if he' to 'If he', while the predicted corrected only 'if' to 'If'. The essential modification\u2014the capitalization of 'if' to 'If'\u2014is fully and correctly captured by the prediction. The additional word 'he' provided in the ground truth does not affect the core change, because the capitalization edit itself is correctly identified and implemented in the prediction. Therefore, the prediction faithfully represents the intent of the ground truth correction and is considered correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the word \"if\" at the start of the phrase \"if he\" (\"if he\" \u2192 \"If he\"). The prediction captures the same core change by capitalizing \"if\" (\"if\" \u2192 \"If\"). Although it includes less surrounding context (omits \"he\"), it still represents the essential intended correction."
     },
     {
       "observed_edit_num": 1,

@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_o4_mini",
-  "date": "2025-04-17T06:42:48.188274",
+  "date": "2026-02-22T15:36:34.979061",
   "annotator": "GPT-o4 Mini",
   "annotation_date": "2025-04-16T21:26:59.925449",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 13,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit correctly matches the edit type 'punctuation' exactly as specified in the ground truth. The core change identified in the ground truth is the insertion of a comma after 'hers' to become 'hers, and'. The predicted edit does correctly capture this essential punctuation correction, though it includes additional context ('thanked') not shown in the original ground truth. Including this additional context is acceptable as long as the essential punctuation correction is accurately reflected. Therefore, the predicted edit meets the criteria for edit type accuracy and text content accuracy."
+      "judgement": "1) Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"hers\" in the phrase \"hers and\" \u2192 \"hers, and\". The prediction expands the span to include an extra following word (\"thanked\"), but it still performs the same core punctuation change: \"hers and thanked\" \u2192 \"hers, and thanked\". This correctly captures the intended edit, with permissible additional context."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 15,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit accurately matches the ground truth edit in both key criteria: 1) the edit type 'punctuation' matches exactly, and 2) the textual correction 'hers matters' to 'hers, matters' is identical and precisely captures the intended punctuation correction from the ground truth. Therefore, the prediction meets all required conditions successfully."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same core change\u2014adding a comma after \"hers\"\u2014with identical original_text (\"hers matters\") and corrected_text (\"hers, matters\"). The essential punctuation correction is captured exactly."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 22,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit type 'punctuation' exactly matches the ground truth edit type. Additionally, the predicted content 'moment with' \u2192 'moment, with' precisely matches the essential change indicated in the ground truth. Thus, disregarding the incorrect line number as instructed, the edit correctly represents both the type ('punctuation') and the textual content correction."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both edits change the same phrase from \"moment with\" to \"moment, with\" by inserting a comma after \"moment\". This captures the core intended punctuation correction with identical original and corrected text."
     },
     {
       "observed_edit_num": 3,
@@ -58,7 +58,7 @@
       "observed_line_number": 31,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The edit type matches exactly ('capitalization'), fulfilling the requirement of edit type accuracy. Regarding text content, both the ground truth and the prediction show the exact same change ('they' \u2192 'They'), correctly reflecting the intended capitalization correction. Since both criteria\u2014edit type accuracy and essential text content correctness\u2014are fully satisfied, the prediction is accurately capturing the ground truth edit."
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"capitalization,\" which exactly matches the ground truth type.\n\nText Content Accuracy: The ground truth changes \"they\" to \"They\". The prediction specifies the same original text (\"they\") and the same corrected text (\"They\"), capturing the identical core capitalization change. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": null,

@@ -1,6 +1,6 @@
 {
   "model_name": "or_mistral_small_3_1_24b_instruct",
-  "date": "2025-04-08T22:23:02.748622",
+  "date": "2026-02-22T16:03:11.504533",
   "annotator": "Mistral Small 3.1 24B",
   "annotation_date": "2025-04-07T22:50:13.726790",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit type ('replacement') exactly matches the ground truth edit type. Additionally, the text content accuracy is fully correct, as both original and corrected texts ('Saone' to 'Sa\u00f4ne') precisely match the ground truth edit. The essential core change intended by the ground truth\u2014adding the circumflex accent to correctly spell 'Sa\u00f4ne'\u2014is accurately captured. Hence, the prediction is correct according to the evaluation criteria."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n2) Text Content Accuracy: Both change the same original text \"Saone\" to the same corrected text \"Sa\u00f4ne\" (adding the circumflex on 'o'). The core intended correction is captured identically."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 4,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit accurately matches the edit type ('replacement') and exactly captures the essential text change from 'Saone' to 'Sa\u00f4ne'. Line numbers are explicitly ignored for this evaluation, and both the edit type and the core text content match exactly with what the ground truth intended. Therefore, this prediction correctly captures the ground truth edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n2) Text Content Accuracy: Both edits replace \"Saone\" with \"Sa\u00f4ne\" (adding the circumflex over the 'o'). This captures the core intended correction exactly. Line numbers are ignored as instructed."
     },
     {
       "observed_edit_num": 2,

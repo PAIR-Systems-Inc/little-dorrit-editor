@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1_mini",
-  "date": "2025-04-14T14:13:55.714264",
+  "date": "2026-02-22T15:31:33.698498",
   "annotator": "GPT-4.1 Mini",
   "annotation_date": "2025-04-14T11:19:58.564313",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 7,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit type 'punctuation' matches exactly the ground truth's edit type. The text content also accurately matches the ground truth's intended change from 'heart so' to 'heart, so', clearly capturing the essential punctuation edit. Since both criteria (type accuracy and text content accuracy) are correctly met, the prediction is correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text \"heart so\" and the same corrected text \"heart, so\", capturing the identical core change (inserting a comma after \"heart\"). Ignoring line numbers, the predicted edit matches the ground truth intention."
     },
     {
       "observed_edit_num": 1,

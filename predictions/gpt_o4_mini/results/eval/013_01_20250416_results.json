@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_o4_mini",
-  "date": "2025-04-17T06:47:26.080048",
+  "date": "2026-02-22T15:37:14.275666",
   "annotator": "GPT-o4 Mini",
   "annotation_date": "2025-04-16T21:30:46.623786",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 6,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit accurately captures the intention of the ground truth edit. First, the edit type ('replacement') is exactly the same in both the prediction and the ground truth. Second, the essential textual correction ('dryest snorts' being changed to 'driest of snorts') matches exactly. Although the model's prediction omits 'of the' before 'dryest', such minor contextual variations are allowed since the core change ('dryest' to 'driest of') is captured correctly. Therefore, the prediction meets all specified criteria."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The ground truth changes \"dryest\" \u2192 \"driest\" and inserts \"of\" to yield \"driest of snorts\" (within the larger phrase \"of the ... snorts.\"). The predicted edit also replaces \"dryest snorts\" with \"driest of snorts\", capturing the same core intent (spelling correction plus insertion of \"of\"). The prediction uses a narrower text span and omits surrounding context (\"of the\" and the period), but it does not alter the essential correction. Therefore, the predicted edit matches the ground truth\u2019s intended change."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 30,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit type ('italicize') exactly matches the ground truth edit type, fulfilling the first criterion. The text content in both the original and corrected form ('him' \u2192 'him') precisely aligns with the ground truth intention, correctly indicating italicization of the word 'him' without introducing any discrepancies or extra changes. Hence, both criteria\u2014edit type accuracy and text content accuracy\u2014are satisfied."
+      "judgement": "Edit Type Accuracy: The ground truth edit type is \"italicize\" and the predicted edit type is also \"italicize\", so the type matches exactly.\n\nText Content Accuracy: Both ground truth and prediction apply the italicization to the same word, \"him\" (original_text and corrected_text are identical in both). This captures the core intended change (formatting the word in italics) with no discrepancy."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 38,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The edit type matches exactly ('replacement'). The core textual correction from 'authorize' to 'authorise' is accurately captured in the prediction. Line numbers were specified to be ignored, and no additional textual correctness or inaccuracies are introduced. Therefore, the predicted edit correctly captures the ground truth edit intention."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n2) Text Content Accuracy: Both edits replace the exact same original text \"authorize\" with the same corrected text \"authorise\", capturing the intended spelling change. Line number differences are to be ignored, so this does not affect correctness."
     },
     {
       "observed_edit_num": null,

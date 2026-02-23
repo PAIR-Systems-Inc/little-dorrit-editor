@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4o_2024_11_20",
-  "date": "2025-04-09T00:27:09.815331",
+  "date": "2026-02-22T15:53:25.733384",
   "annotator": "GPT-4o (2024-11-20 OR)",
   "annotation_date": "2025-04-08T08:49:55.566197",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 14,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit is correct because it matches exactly on 'edit type' (punctuation). Additionally, it accurately addresses the core punctuation correction identified by the ground truth edit ('hers matters' \u2192 'hers, matters'). Although the prediction includes extra context ('on'), the essential edit ('hers' \u2192 'hers,') is correctly captured. Thus, the prediction satisfies both required criteria of edit type accuracy and text content accuracy."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth change is inserting a comma after \"hers\" in the phrase \"hers matters\" \u2192 \"hers, matters\". The predicted edit applies the same essential punctuation change within a longer snippet: \"on hers matters\" \u2192 \"on hers, matters\". The additional context word (\"on\") does not alter the core intended correction, which is the comma insertion after \"hers\".\n\nTherefore, the prediction correctly captures the ground truth edit\u2019s intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 22,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit is correct because both edits have the exact same type ('punctuation') and focus on inserting a comma after the word 'moment.' Although the predicted edit includes additional context ('for a moment with' \u2192 'for a moment, with'), this does not change the correctness of the punctuation insertion. The essential edit of inserting a comma after 'moment' is accurately captured, fully matching the ground truth intention."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after the word \"moment\" in the phrase \"moment with\" \u2192 \"moment, with\". The prediction does the same core change, adding a comma after \"moment\" in a slightly longer surrounding context: \"for a moment with\" \u2192 \"for a moment, with\". This captures the same intended punctuation correction."
     },
     {
       "observed_edit_num": 2,

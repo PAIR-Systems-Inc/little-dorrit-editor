@@ -1,6 +1,6 @@
 {
   "model_name": "or_mistral_small_3_1_24b_instruct",
-  "date": "2025-04-08T22:17:42.750026",
+  "date": "2026-02-22T16:02:48.989482",
   "annotator": "Mistral Small 3.1 24B",
   "annotation_date": "2025-04-07T19:01:31.734494",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 10,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The prediction is correct because both the edit type ('punctuation') and the corrected text change ('about and' \u2192 'about, and') exactly match the ground truth edit. Line numbers are ignored for this evaluation, so the discrepancy in line numbers does not affect correctness. Hence, the prediction accurately captures the intended punctuation edit."
+      "judgement": "1. Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: Both edits change \"about and\" to \"about, and\", inserting a comma after \"about\". The original_text and corrected_text match the ground truth\u2019s core change precisely.\n\nTherefore, the prediction correctly captures the intention of the ground truth edit."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 26,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted and ground truth edits match exactly in edit type ('punctuation'). The predicted edit correctly captures the core textual change from 'Clennam' to 'Clennam,', which aligns exactly with the ground truth's intention of adding a comma after 'Clennam'. Even though the prediction provides less context ('Clennam' vs. 'Clennam in') the essential punctuation change is accurately reflected, thus the prediction is correct according to the evaluation criteria."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth change is inserting a comma after the word \"Clennam\" in the phrase \"Clennam in\" \u2192 \"Clennam, in.\" The prediction captures the same essential punctuation change by editing \"Clennam\" \u2192 \"Clennam,.\" Although it omits the following word \"in\" as context, it still represents the core intended edit (adding a comma immediately after \"Clennam\")."
     },
     {
       "observed_edit_num": 2,

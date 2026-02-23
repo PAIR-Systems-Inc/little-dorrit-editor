@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4-turbo",
-  "date": "2025-04-08T23:03:22.962090",
+  "date": "2026-02-22T15:20:33.873274",
   "annotator": "GPT-4 Turbo",
   "annotation_date": "2025-04-08T07:18:29.337393",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 25,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly identifies the edit type as 'punctuation', matching exactly the type in the ground truth. Additionally, the essential punctuation change is accurately captured: both the ground truth and prediction involve inserting a comma after 'said'. Although the ground truth provides additional context ('said when' \u2192 'said, when'), the predicted edit ('said' \u2192 'said,') is still consistent and accurately captures the core intention, which is inserting a comma after 'said'."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is to insert a comma after \"said\" in the phrase \"said when\" \u2192 \"said, when\". The predicted edit \"said\" \u2192 \"said,\" captures the same core punctuation insertion (adding a comma immediately after \"said\"). Although it omits the following word \"when\" from the edit span, it still reflects the essential intended correction."
     },
     {
       "observed_edit_num": 1,

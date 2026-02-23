@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:15:36.190474",
+  "date": "2026-02-22T15:24:05.679071",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-07T19:27:02.706040",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 17,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The 'edit type' matches exactly as both ground truth and prediction identify the edit as 'punctuation'. For the 'text content accuracy', the essential punctuation correction the ground truth specifies\u2014adding a comma after the word 'pockets'\u2014is correctly captured by the prediction (changing 'pockets and' to 'pockets, and'). Although the prediction includes an additional word ('rattling') after 'and', this is acceptable, as extra context does not affect correctness. Therefore, both criteria are satisfied."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma after \"pockets\" in the phrase \"pockets and\" \u2192 \"pockets, and\". The predicted edit also inserts a comma after \"pockets\" (\"pockets and rattling\" \u2192 \"pockets, and rattling\"). The prediction includes additional following context (\"rattling\"), but the core change\u2014adding the comma after \"pockets\" before \"and\"\u2014is the same. Therefore it captures the ground truth intention."
     },
     {
       "observed_edit_num": 1,

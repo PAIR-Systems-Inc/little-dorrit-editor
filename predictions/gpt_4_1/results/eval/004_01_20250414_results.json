@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1",
-  "date": "2025-04-14T13:44:25.523758",
+  "date": "2026-02-22T15:28:30.074935",
   "annotator": "GPT-4.1",
   "annotation_date": "2025-04-14T11:02:42.064439",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 27,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit type 'capitalization' exactly matches the ground truth. The essential capitalization step from 'why did he dine' to 'Why did he dine' in the ground truth is correctly represented in the prediction ('why did he dine to-' to 'Why did he dine to-'). The prediction includes additional context ('to-') but correctly captures the core intended capitalization edit without changing any additional aspect. Therefore, both the edit type accuracy and core text content accuracy criteria are satisfied."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify the edit type as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to capitalize the initial word \"why\" to \"Why\" in the phrase \"why did he dine\". The predicted edit applies the same capitalization change (\"why\" \u2192 \"Why\") but includes additional trailing context (\"to-\"). Including extra surrounding words is acceptable as long as the core change is the same, which it is here.\n\nTherefore, the predicted edit correctly captures the intention of the ground truth edit."
     },
     {
       "observed_edit_num": null,

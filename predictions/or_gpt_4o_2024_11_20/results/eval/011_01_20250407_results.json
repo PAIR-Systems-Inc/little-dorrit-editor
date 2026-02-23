@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4o_2024_11_20",
-  "date": "2025-04-09T00:28:03.227792",
+  "date": "2026-02-22T15:53:41.597743",
   "annotator": "GPT-4o (2024-11-20 OR)",
   "annotation_date": "2025-04-08T00:13:36.657097",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 22,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit type \"punctuation\" exactly matches the ground truth edit type. The predicted text change \"shore and\" \u2192 \"shore, and\" also precisely matches the intended punctuation addition indicated by the ground truth edit. Ignoring the line numbers (as instructed), this prediction correctly captures both the edit type and the core textual change."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: Both specify the same original text (\"shore and\") and the same corrected text (\"shore, and\"), capturing the identical core change\u2014adding a comma after \"shore\" before \"and\". Any difference in line number is to be ignored per instructions.\n\nTherefore, the predicted edit correctly reflects the ground truth intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 32,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The edit type ('replacement') predicted exactly matches the ground truth edit type. Regarding text content, although the prediction includes an extra word ('once'), it correctly captures the intended core change ('that' \u2192 'than'). The additional context does not alter or distort the fundamental editorial correction intended by the ground truth. Therefore, both the edit type and essential textual change have been accurately captured."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are of type \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the word \"that\" to \"than\". The predicted edit changes \"that once\" to \"than once\", which includes additional surrounding context (the word \"once\") but preserves the same core correction: \"that\" \u2192 \"than\". This accurately captures the ground truth\u2019s intended change."
     },
     {
       "observed_edit_num": 2,

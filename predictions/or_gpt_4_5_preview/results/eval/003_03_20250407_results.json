@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4_5_preview",
-  "date": "2025-04-08T22:26:06.363440",
+  "date": "2026-02-22T15:48:08.920867",
   "annotator": "GPT-4.5 Preview (OR)",
   "annotation_date": "2025-04-08T07:29:56.521621",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit type ('punctuation') exactly matches the ground truth edit type. The text content also matches the ground truth\u2014both the original ('howling over') and corrected ('howling, over') texts precisely replicate the intended punctuation correction. Therefore, both criteria (edit type accuracy and text content accuracy) are fully met by the prediction."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original phrase \"howling over\" and the same corrected form \"howling, over\", inserting a comma after \"howling\". This captures the core intended punctuation change with no discrepancy."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit matches exactly the edit type 'punctuation' provided by the ground truth. The text content 'yonder to-day' corrected to 'yonder, to-day' also precisely matches the ground truth edit, accurately capturing the core change of inserting a comma after 'yonder'. As both type of edit and edited text content match fully and accurately, the predicted edit correctly represents the ground truth's intention."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n2. Text Content Accuracy: Both edits change \"yonder to-day\" to \"yonder, to-day\" by inserting a comma after \"yonder\". The original and corrected text strings are identical between ground truth and prediction, capturing the same core punctuation change."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 17,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit matches the ground truth exactly in terms of both edit type and text content. The edit type is correctly identified as 'punctuation', matching the ground truth. The text change also accurately corresponds to the intended correction: 'pockets and' corrected to 'pockets, and'. Since both edit type and textual modifications precisely align with the ground truth's intention, the predicted edit is considered correct."
+      "judgement": "Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\nText Content Accuracy: Both ground truth and prediction change \"pockets and\" to \"pockets, and\" by inserting a comma after \"pockets\". The core punctuation change is identical, with no discrepancies in the original or corrected text. Therefore, the predicted edit fully captures the ground truth intention."
     },
     {
       "observed_edit_num": 3,

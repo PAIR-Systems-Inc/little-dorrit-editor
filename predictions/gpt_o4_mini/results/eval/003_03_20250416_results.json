@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_o4_mini",
-  "date": "2025-04-17T06:32:47.187302",
+  "date": "2026-02-22T15:35:06.970153",
   "annotator": "GPT-o4 Mini",
   "annotation_date": "2025-04-16T22:05:28.906511",
   "details": [
@@ -16,21 +16,21 @@
       "observed_line_number": 1,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit accurately matches the ground truth edit. Both the predicted and ground truth edits share the same edit type 'punctuation.' The original text, 'Fellow Travellers,' and corrected text, 'Fellow Travellers.,' are identical in both cases. Since line numbers are explicitly ignored for this evaluation, and the essential edit (adding a period punctuation mark at the end of the text) is correctly captured, the prediction is correct."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2. Text Content Accuracy: Both edits change \"Fellow Travellers\" to \"Fellow Travellers.\" by adding a period at the end. This captures the same core punctuation correction with identical original and corrected text. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 1,
-      "expected_edit_num": 1,
-      "tp": 0.9,
-      "fp": 0.04999999999999999,
-      "fn": 0.04999999999999999,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
       "type": "punctuation",
-      "original_text": "howling,over",
-      "corrected_text": "howling, over",
+      "original_text": "sir,is",
+      "corrected_text": "sir, is",
       "observed_line_number": 2,
-      "line_diff": 1,
-      "line_number_penalty": 0.1,
-      "judgement": "The predicted edit correctly matches the edit type ('punctuation') exactly. The ground truth clarifies a punctuation correction, changing 'howling over' to 'howling, over'. The predicted edit similarly shows the corrected punctuation clearly as 'howling, over'. The absence of a space in the predicted original text ('howling,over') compared to the ground truth ('howling over') is permissible, as the essential punctuation edit itself ('howling' to 'howling,') is captured accurately. Additional context or slight spacing difference does not affect the core intention of the punctuation correction. Thus, the predicted edit successfully captures the ground truth intention."
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
     },
     {
       "observed_edit_num": 2,
@@ -39,8 +39,8 @@
       "fp": 1.0,
       "fn": 0.0,
       "type": "punctuation",
-      "original_text": "sir,is",
-      "corrected_text": "sir, is",
+      "original_text": "howling,over",
+      "corrected_text": "howling, over",
       "observed_line_number": 2,
       "line_diff": null,
       "line_number_penalty": 0.0,
@@ -62,7 +62,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 2,
+      "expected_edit_num": 1,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -76,13 +76,27 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 3,
+      "expected_edit_num": 2,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "punctuation",
       "original_text": "pockets and",
       "corrected_text": "pockets, and",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

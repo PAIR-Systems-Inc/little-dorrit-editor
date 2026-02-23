@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:20:15.799362",
+  "date": "2026-02-22T15:24:38.437447",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-08T08:31:51.453104",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 38,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit type ('capitalization') matches exactly with the ground truth. Regarding text content, the essential edit captured by both ground truth ('if he' \u2192 'If he') and prediction ('if' \u2192 'If') is essentially the capitalization of the word 'if'. Although the predicted edit encompasses fewer words ('if' rather than 'if he'), the core intention of changing the first letter from lowercase to uppercase is correctly identified and captured. Extra context or words provided by the ground truth are allowed, and since the prediction accurately reflects the essential capitalized change, it meets the requirements for correctness."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"capitalization\" and the predicted edit type is also \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"if he\" to \"If he\", which is specifically capitalizing the initial \"i\" in \"if\" at the start of the phrase. The prediction changes \"if\" to \"If\", capturing the same core capitalization change, just with less surrounding context (it omits \"he\"). Since the essential intended change\u2014capitalizing \"if\"\u2014is correctly represented, the text content matches the ground truth\u2019s intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 40,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit type ('replacement') exactly matches the ground truth edit type ('replacement'). Additionally, the core text change ('said' \u2192 'asked') correctly captures the essence of the ground truth edit ('said Clennam' \u2192 'asked Clennam'). Even though the predicted edit omits the additional context ('Clennam') provided in the ground truth, the essential correction\u2014changing 'said' to 'asked'\u2014is clearly identified. Thus, both edit type and the essential nature of the correction are correctly represented in the prediction."
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth changes \"said Clennam\" to \"asked Clennam\", whose core intended change is replacing the word \"said\" with \"asked\" while leaving the surrounding context (\"Clennam\") unchanged. The prediction replaces \"said\" with \"asked\" without including the trailing context, but it still captures the essential substitution that the ground truth indicates. Including less context is acceptable as long as the core change is correctly represented."
     }
   ]
 }

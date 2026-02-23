@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:35:17.339197",
+  "date": "2026-02-22T15:25:57.277919",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-07T19:35:18.283828",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 3,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit matches exactly with the ground truth edit type ('capitalization'). Both original and corrected texts ('city' \u2192 'City') are also exactly captured in the prediction. Line numbers are ignored as per instructions, thus the mismatch there is irrelevant. Therefore, both criteria ('edit type accuracy' and 'text content accuracy') are fully satisfied, making the prediction correct."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as a \"capitalization\" edit, so the type matches exactly.\n\nText Content Accuracy: Both specify the same core transformation: \"city\" \u2192 \"City\". This captures the essential intended correction in the ground truth. Line numbers are ignored as instructed, so the differing line_number does not affect correctness."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 12,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit matches the ground truth in terms of edit type ('punctuation'), and correctly captures the core punctuation change ('existence' updated to 'existence,'). Although the predicted edit includes additional context ('at'), it correctly identifies the essential comma insertion after 'existence', thus accurately capturing the intended punctuation correction."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is adding a comma immediately after the word \"existence\" (\"existence\" \u2192 \"existence,\"). The prediction also inserts a comma immediately after \"existence\" within a slightly larger span (\"existence at\" \u2192 \"existence, at\"). This captures the same core punctuation correction, merely including additional surrounding context. Therefore, the essential edit intention is correctly represented."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 13,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly matches the edit type as 'punctuation', identical to the ground truth edit type. Regarding text content accuracy, the predicted edit ('motionless, when') includes additional context after the essential punctuation edit ('motionless' \u2192 'motionless,'), precisely capturing the core change indicated in the ground truth. Extra textual context ('when') does not detract from this accuracy, as per the instructions. Thus, the prediction correctly captures both the edit type and the essential punctuation correction, making it correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma after the word \"motionless\" (\"motionless\" \u2192 \"motionless,\"). The predicted edit also inserts a comma immediately after \"motionless\", using additional surrounding context (\"motionless when\" \u2192 \"motionless, when\"). This captures the same core change\u2014adding a comma after \"motionless\"\u2014so the text content matches the ground truth intention."
     },
     {
       "observed_edit_num": 3,
@@ -58,7 +58,7 @@
       "observed_line_number": 14,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly matches the ground truth edit type ('punctuation'). Although the prediction presents additional context ('view by' \u2192 'view, by'), the essential correction ('view' \u2192 'view,') aligns accurately with the ground truth. Additional contextual words, as per the evaluation guidelines, are acceptable. Therefore, the predicted content fully captures the core punctuation correction intended by the ground truth."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth edit inserts a comma after the word \"view\" (\"view\" \u2192 \"view,\"). The predicted edit also inserts a comma immediately after \"view\" within a longer span (\"view by\" \u2192 \"view, by\"). This preserves the core intended punctuation change (adding a comma after \"view\") while including extra surrounding context, which is allowed.\n\nTherefore, the predicted edit correctly captures the intention of the ground truth edit."
     },
     {
       "observed_edit_num": 4,

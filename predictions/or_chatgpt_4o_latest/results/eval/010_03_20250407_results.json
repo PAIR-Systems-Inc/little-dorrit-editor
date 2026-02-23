@@ -1,6 +1,6 @@
 {
   "model_name": "or_chatgpt_4o_latest",
-  "date": "2025-04-08T23:46:29.799512",
+  "date": "2026-02-22T15:38:41.584870",
   "annotator": "ChatGPT-4o (OR)",
   "annotation_date": "2025-04-08T05:35:28.497145",
   "details": [
@@ -11,16 +11,30 @@
       "fp": 0.45,
       "fn": 0.45,
       "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "observed_line_number": 10,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and predicted edits are of type \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth change inserts a comma after \"hers\" in the phrase \"hers and\" \u2192 \"hers, and\". The predicted edit \"hers\" \u2192 \"hers,\" captures the same core punctuation insertion (adding a comma immediately after \"hers\"). Although it does not include the following word \"and\" in its span, it still reflects the essential intended correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "punctuation",
       "original_text": "moment",
       "corrected_text": "moment,",
       "observed_line_number": 20,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit is correct because it matches the ground truth in terms of edit type ('punctuation') exactly. Additionally, the essential change ('moment' to 'moment,') is accurately captured in the prediction. Although the ground truth includes slightly more context ('moment with' to 'moment, with'), the predicted edit correctly identifies the core intended punctuation correction, adding a comma after 'moment'. Extra context ('with') in the ground truth does not affect the correctness in this evaluation. Thus, the prediction correctly captures the intention of the ground truth edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after the word \"moment\" in the phrase \"moment with\" \u2192 \"moment, with.\" The prediction captures the same core punctuation change by editing \"moment\" \u2192 \"moment,\" (it simply omits the following word \"with\" as context). Since the essential intended change\u2014adding a comma immediately after \"moment\"\u2014is correctly represented, the text content matches the ground truth\u2019s intention."
     },
     {
-      "observed_edit_num": 1,
-      "expected_edit_num": 1,
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
       "tp": 0.6,
       "fp": 0.2,
       "fn": 0.2,
@@ -30,10 +44,10 @@
       "observed_line_number": 23,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type ('punctuation') matches exactly between prediction and ground truth. The ground truth edit intends to insert a comma after the word 'beautiful' ('beautiful that' \u2192 'beautiful, that'). The predicted edit correctly captures this essential punctuation insertion ('beautiful' \u2192 'beautiful,'). Although the prediction includes slightly less context (only 'beautiful' rather than 'beautiful that'), this is acceptable according to the evaluation criteria, as it still accurately captures the core intended punctuation correction. Thus, the prediction correctly represents the intention of the ground truth edit."
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction are labeled as \"punctuation\", so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth change is inserting a comma after the word \"beautiful\" (\"beautiful that\" \u2192 \"beautiful, that\"). The predicted edit (\"beautiful\" \u2192 \"beautiful,\") captures the same core punctuation insertion at the same location, just with less surrounding context. This aligns with the ground truth's intention."
     },
     {
-      "observed_edit_num": 2,
+      "observed_edit_num": 3,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -47,7 +61,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 3,
+      "observed_edit_num": 4,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -61,7 +75,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 4,
+      "observed_edit_num": 5,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -75,22 +89,8 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 5,
-      "expected_edit_num": null,
-      "tp": 0.0,
-      "fp": 1.0,
-      "fn": 0.0,
-      "type": "punctuation",
-      "original_text": "hers",
-      "corrected_text": "hers,",
-      "observed_line_number": 10,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False positive: no matching ground truth edit found"
-    },
-    {
       "observed_edit_num": null,
-      "expected_edit_num": 2,
+      "expected_edit_num": 3,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -104,27 +104,13 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 3,
+      "expected_edit_num": 4,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "capitalization",
       "original_text": "they",
       "corrected_text": "They",
-      "observed_line_number": null,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False negative: ground truth edit not found in prediction"
-    },
-    {
-      "observed_edit_num": null,
-      "expected_edit_num": 4,
-      "tp": 0.0,
-      "fp": 0.0,
-      "fn": 1.0,
-      "type": "punctuation",
-      "original_text": "hers and",
-      "corrected_text": "hers, and",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

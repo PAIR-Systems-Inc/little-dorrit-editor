@@ -1,6 +1,6 @@
 {
   "model_name": "or_chatgpt_4o_latest",
-  "date": "2025-04-08T23:41:56.484128",
+  "date": "2026-02-22T15:38:41.430566",
   "annotator": "ChatGPT-4o (OR)",
   "annotation_date": "2025-04-07T23:11:01.530582",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 12,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit type ('replacement') exactly matches the ground truth edit type ('replacement'), satisfying edit type accuracy. For text content accuracy, the ground truth identifies a change from 'sodden' to 'soddened'. The prediction adds additional context, suggesting changing 'soddenwith' to 'soddened with'. The core change, 'sodden' \u2192 'soddened', is correctly captured within the predicted edit. Additional context ('with') does not interfere with the accuracy criteria provided. Therefore, both edit type and text content accurately reflect the intention of the ground truth edit."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction are labeled as a \"replacement,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth\u2019s core intended change is to replace \"sodden\" with \"soddened\" (i.e., add \"-ed\"). The prediction performs that same core change within a slightly larger span: it changes \"soddenwith\" to \"soddened with.\" Although the prediction also introduces a space before \"with\" and includes \"with\" in the replacement span, it still captures the essential correction from \"sodden\" \u2192 \"soddened,\" which is the ground truth\u2019s intention. Additional surrounding context is allowed, so this is considered correct."
     },
     {
       "observed_edit_num": 1,

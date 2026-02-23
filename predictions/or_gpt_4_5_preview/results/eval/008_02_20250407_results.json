@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4_5_preview",
-  "date": "2025-04-08T22:37:32.926476",
+  "date": "2026-02-22T15:48:56.138837",
   "annotator": "GPT-4.5 Preview (OR)",
   "annotation_date": "2025-04-08T00:49:28.638571",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 8,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The edit type is identical ('punctuation') in both ground truth and prediction. The text content also exactly matches the ground truth's intention, changing 'man slowly' to 'man, slowly'. Ignoring the line number discrepancy as directed, both criteria\u2014matching edit type and correctly capturing the essential punctuation insertion\u2014are fulfilled by the prediction."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same core change: inserting a comma after \"man\" in the phrase \"man slowly\" to become \"man, slowly\". The original_text and corrected_text are identical between ground truth and prediction, capturing the intended punctuation correction."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 8,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit is correct. Firstly, the edit type is exactly matched ('punctuation'). Secondly, the text content accurately matches the ground truth: both ground truth and prediction are making the exact same punctuation edit ('Chalons was' to 'Chalons, was'). Additional context or differences in line numbers are explicitly ignored according to the evaluation instructions, so neither affects correctness. Therefore, this prediction accurately captures the intention of the ground truth edit."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: Both edits change \"Chalons was\" to \"Chalons, was\", inserting a comma after \"Chalons\". This captures the core intended punctuation change exactly. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 2,

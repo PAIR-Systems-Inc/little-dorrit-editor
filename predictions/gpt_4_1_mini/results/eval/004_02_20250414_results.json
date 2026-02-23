@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1_mini",
-  "date": "2025-04-14T14:06:15.866096",
+  "date": "2026-02-22T15:30:40.520228",
   "annotator": "GPT-4.1 Mini",
   "annotation_date": "2025-04-14T11:28:58.651072",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 9,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit correctly captures the ground truth intention. The edit type matches exactly ('punctuation'), and the textual change precisely aligns with the ground truth edit ('No sir' \u2192 'No, sir'). Although the line number given in the prediction differs from the ground truth, the evaluation explicitly instructed to ignore line numbers entirely. Therefore, both criteria\u2014edit type accuracy and text content accuracy\u2014are accurately met by the prediction."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change from \"No sir\" to \"No, sir,\" inserting a comma after \"No.\" This captures the core intended correction with no substantive difference.\n(Line number differences are ignored as instructed.)"
     },
     {
       "observed_edit_num": 1,

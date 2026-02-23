@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1",
-  "date": "2025-04-14T13:52:44.006966",
+  "date": "2026-02-22T15:29:30.958463",
   "annotator": "GPT-4.1",
   "annotation_date": "2025-04-14T11:07:19.357714",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 31,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit type 'replacement' exactly matches the ground truth edit type. The essential change identified by the ground truth is transforming 'I hope so' to 'I hoped so'. The model prediction correctly captures this core textual change ('hope' to 'hoped'). Although the model includes an additional semicolon at the end ('I hope so;' to 'I hoped so;'), this extra punctuation represents broader context and does not alter the essential intended editorial correction. Thus, the model prediction accurately captures the ground truth intention both in edit type and the core textual correction."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction label the change as a \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The core intended change is converting \"hope\" to past tense \"hoped\" in the phrase \"I hope so\" \u2192 \"I hoped so\". The predicted edit captures this exact core change (\"I hope so;\" \u2192 \"I hoped so;\"). Although the prediction includes a semicolon as additional surrounding context, it does not alter the essential correction (hope \u2192 hoped). Therefore, the text content matches the ground truth\u2019s intention."
     },
     {
       "observed_edit_num": 1,

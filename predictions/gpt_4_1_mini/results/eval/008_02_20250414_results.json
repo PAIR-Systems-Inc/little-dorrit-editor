@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1_mini",
-  "date": "2025-04-14T14:12:42.142948",
+  "date": "2026-02-22T15:31:30.394319",
   "annotator": "GPT-4.1 Mini",
   "annotation_date": "2025-04-14T11:32:36.122665",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 13,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit type ('replacement') matches exactly with the ground truth edit type. Regarding text content accuracy, the predicted correction ('sodden' \u2192 'soddened') correctly captures the core intended edit, changing the adjective to its past participle form. The inclusion of additional context words ('with') does not affect the correctness, as instructed. Thus, the prediction accurately reflects the ground truth edit intention."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches.\n\n2. Text Content Accuracy: The ground truth changes \"sodden\" to \"soddened\". The prediction changes \"sodden with\" to \"soddened with\", which includes extra surrounding context but preserves the same core correction (adding \"ed\" to \"sodden\"). Therefore, the essential intended edit is correctly captured."
     },
     {
       "observed_edit_num": 1,

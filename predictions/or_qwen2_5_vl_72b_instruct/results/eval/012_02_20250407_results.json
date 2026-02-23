@@ -1,6 +1,6 @@
 {
   "model_name": "or_qwen2_5_vl_72b_instruct",
-  "date": "2025-04-08T23:09:08.126833",
+  "date": "2026-02-22T16:07:35.373469",
   "annotator": "Qwen2.5 VL 72B Instruct",
   "annotation_date": "2025-04-08T00:01:53.290022",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 2,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit matches the ground truth edit exactly in terms of edit type ('capitalization'). The text change from lowercase 'city' to uppercase initial 'City' is also correctly identified and matches precisely. The line number discrepancy is explicitly ignored as per the evaluation instructions. Since both the edit type and text content are accurate and match the ground truth intended correction, the prediction is correct."
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"capitalization,\" which exactly matches the ground truth type.\n\nText Content Accuracy: The ground truth change is \"city\" \u2192 \"City\". The predicted edit also changes \"city\" \u2192 \"City\", capturing the same core correction. Line number differences are to be ignored, so they do not affect correctness."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 8,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly captures the essential punctuation correction indicated by the ground truth, specifically changing the punctuation after the word \"them\" from a comma to a semicolon. The edit type matches exactly (both are \"punctuation\"). Although the prediction includes some additional context (\"familiar with\"), the core textual change (\"them,\" to \"them;\") is correctly identified. Therefore, the prediction meets both criteria for correctness."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches.\n\n2) Text Content Accuracy: The ground truth changes the punctuation immediately after \"them\" from a comma to a semicolon (\"them,\" \u2192 \"them;\"). The predicted edit applies the same core punctuation outcome by making the text end with a semicolon after \"them\" (\"familiar with them\" \u2192 \"familiar with them;\"). Although the prediction includes more surrounding context and does not explicitly show the comma in its \"original_text\" span, it still captures the essential intended change: the punctuation following \"them\" should be a semicolon."
     },
     {
       "observed_edit_num": 2,

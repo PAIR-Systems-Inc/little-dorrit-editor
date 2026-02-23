@@ -1,6 +1,6 @@
 {
   "model_name": "or_llama_4_maverick",
-  "date": "2025-04-08T23:05:06.135048",
+  "date": "2026-02-22T15:57:57.419412",
   "annotator": "Llama 4 Maverick",
   "annotation_date": "2025-04-07T20:32:13.156767",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 26,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly identifies the edit type ('capitalization'), matching the ground truth exactly. Additionally, although the ground truth included additional context ('why did he dine' \u2192 'Why did he dine'), the actual intended capitalization change was solely the word 'why' to 'Why'. The predicted edit also correctly captures the essential edit ('why' \u2192 'Why'). Thus, despite the difference in surrounding context length, the core edit intention is accurately represented in the prediction."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"capitalization\" and the predicted edit type is also \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the phrase \"why did he dine\" to \"Why did he dine\", which is specifically capitalizing the initial word \"why\" to \"Why\" while leaving the rest unchanged. The prediction captures this core change by editing \"why\" \u2192 \"Why\". Although it provides less surrounding context than the ground truth, it correctly reflects the essential intended correction (capitalizing the first word)."
     },
     {
       "observed_edit_num": 1,

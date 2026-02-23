@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4.5-preview",
-  "date": "2025-04-08T22:53:18.407688",
+  "date": "2026-02-22T15:23:47.672276",
   "annotator": "GPT-4.5 Preview",
   "annotation_date": "2025-04-07T20:15:04.995713",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 0,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit accurately matches both the edit type ('punctuation') and the text content ('Chapter XXIX' \u2192 'Chapter XXIX.'). The edit type and core textual correction are identical to the ground truth, and no discrepancy is found between predicted and ground truth edits. Thus, the prediction is fully correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit have type \"punctuation\", so the edit type matches exactly. 2) Text Content Accuracy: Both specify the same core change\u2014adding a period to the end of \"Chapter XXIX\" to make it \"Chapter XXIX.\". The original and corrected texts are identical between ground truth and prediction, so the intended punctuation correction is captured precisely."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 4,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit correctly matches the ground truth edit in both edit type and text content. Both edits are classified as 'capitalization', and both specify the same exact change from 'city' to 'City'. Although the line number provided differs, the evaluation explicitly instructs to ignore line numbers. Therefore, considering only the edit type and core text content, this prediction correctly captures the intention of the ground truth edit."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as a \"capitalization\" edit, so the type matches exactly.\nText Content Accuracy: Both specify the same core transformation: \"city\" \u2192 \"City\". This captures the essential intended correction. Line numbers are ignored as instructed."
     },
     {
       "observed_edit_num": 2,

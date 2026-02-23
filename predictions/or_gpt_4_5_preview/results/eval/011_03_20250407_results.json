@@ -1,11 +1,25 @@
 {
   "model_name": "or_gpt_4_5_preview",
-  "date": "2025-04-08T22:46:48.399553",
+  "date": "2026-02-22T15:49:35.010360",
   "annotator": "GPT-4.5 Preview (OR)",
   "annotation_date": "2025-04-08T07:38:24.788850",
   "details": [
     {
       "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "shore",
+      "corrected_text": "shore,",
+      "observed_line_number": 26,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after \"shore\" in the phrase \"shore and\" \u2192 \"shore, and\". The predicted edit \"shore\" \u2192 \"shore,\" captures the same core punctuation change (adding a comma immediately after \"shore\"). Although the prediction provides less surrounding context (it omits \"and\"), it still reflects the essential intended correction."
+    },
+    {
+      "observed_edit_num": 1,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -19,7 +33,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 1,
+      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -33,7 +47,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 2,
+      "observed_edit_num": 3,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -47,7 +61,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 3,
+      "observed_edit_num": 4,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -61,7 +75,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 4,
+      "observed_edit_num": 5,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -75,7 +89,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 5,
+      "observed_edit_num": 6,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -84,20 +98,6 @@
       "original_text": "\"",
       "corrected_text": "\"Thank you,\"",
       "observed_line_number": 18,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False positive: no matching ground truth edit found"
-    },
-    {
-      "observed_edit_num": 6,
-      "expected_edit_num": null,
-      "tp": 0.0,
-      "fp": 1.0,
-      "fn": 0.0,
-      "type": "punctuation",
-      "original_text": "shore",
-      "corrected_text": "shore,",
-      "observed_line_number": 26,
       "line_diff": null,
       "line_number_penalty": 0.0,
       "judgement": "False positive: no matching ground truth edit found"
@@ -118,7 +118,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 0,
+      "expected_edit_num": 1,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -132,7 +132,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 1,
+      "expected_edit_num": 2,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -146,7 +146,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 2,
+      "expected_edit_num": 3,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -160,27 +160,13 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 3,
+      "expected_edit_num": 4,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "punctuation",
       "original_text": "Thank you!",
       "corrected_text": "Thank you,",
-      "observed_line_number": null,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False negative: ground truth edit not found in prediction"
-    },
-    {
-      "observed_edit_num": null,
-      "expected_edit_num": 4,
-      "tp": 0.0,
-      "fp": 0.0,
-      "fn": 1.0,
-      "type": "punctuation",
-      "original_text": "shore and",
-      "corrected_text": "shore, and",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

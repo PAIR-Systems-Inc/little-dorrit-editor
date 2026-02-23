@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1",
-  "date": "2025-04-14T13:46:19.130136",
+  "date": "2026-02-22T15:28:32.211168",
   "annotator": "GPT-4.1",
   "annotation_date": "2025-04-14T11:17:41.697214",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 36,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The edit type matches exactly; both ground truth and prediction specify a 'replacement' type of edit. Regarding text content accuracy, the ground truth changes 'said Clennam' to 'asked Clennam' while the prediction specifies a narrower context 'said' to 'asked'. The prediction captures the core textual modification correctly, clearly identifying the intended verb change ('said' to 'asked'), though with slightly less context (omitting 'Clennam'). According to the instructions, additional or less context around the essential edit is acceptable as long as the core change itself is correctly identified. In this case, the prediction successfully meets both criteria."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"said Clennam\" to \"asked Clennam\", whose core correction is replacing the word \"said\" with \"asked\". The predicted edit replaces \"said\" with \"asked\" (without including the trailing context \"Clennam\"). Omitting surrounding context is acceptable as long as the essential change is captured, and it is. Therefore, the prediction matches the ground truth\u2019s intended correction."
     },
     {
       "observed_edit_num": 1,

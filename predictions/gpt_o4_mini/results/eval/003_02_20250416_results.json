@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_o4_mini",
-  "date": "2025-04-17T06:32:09.953924",
+  "date": "2026-02-22T15:34:58.204701",
   "annotator": "GPT-o4 Mini",
   "annotation_date": "2025-04-16T21:46:15.341359",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit type ('punctuation') exactly matches the ground truth edit type. Additionally, the text content accuracy criterion is met precisely: both the original text ('Fellow Travellers') and corrected text ('Fellow Travellers.') match perfectly between the ground truth and the prediction, capturing the core editorial punctuation correction. Although the line numbers differ, the instructions explicitly say to ignore line numbers, leaving no discrepancies. Thus, the predicted edit correctly captures the intention of the ground truth."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both apply the same core change: adding a period after \"Fellow Travellers\" (\"Fellow Travellers\" \u2192 \"Fellow Travellers.\"). The original and corrected texts match the ground truth\u2019s intended punctuation change."
     },
     {
       "observed_edit_num": null,

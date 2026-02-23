@@ -1,6 +1,6 @@
 {
   "model_name": "or_llama_4_maverick",
-  "date": "2025-04-08T23:06:59.022777",
+  "date": "2026-02-22T15:58:07.236338",
   "annotator": "Llama 4 Maverick",
   "annotation_date": "2025-04-07T19:39:54.614212",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 13,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit correctly matches the ground truth edit in both edit type (\"punctuation\") and text content accuracy. Although the predicted edit includes additional context (\"about and came\" vs. ground truth \"about and\"), it accurately captures the core punctuation change (adding a comma to become \"about, and\"). Additional context in the prediction is allowed and does not affect the correctness since the essential edit has been accurately identified."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"about\" in the phrase \"about and\" \u2192 \"about, and\". The prediction likewise inserts a comma after \"about\" in a longer span: \"about and came\" \u2192 \"about, and came\". This includes extra surrounding context but preserves the same core punctuation change at the correct location. Therefore, the prediction captures the ground truth intention."
     },
     {
       "observed_edit_num": 1,

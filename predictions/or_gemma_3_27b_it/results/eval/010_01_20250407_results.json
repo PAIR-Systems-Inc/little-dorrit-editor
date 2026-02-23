@@ -1,6 +1,6 @@
 {
   "model_name": "or_gemma_3_27b_it",
-  "date": "2025-04-09T00:10:56.815866",
+  "date": "2026-02-22T15:46:58.449277",
   "annotator": "Gemma 3 27B",
   "annotation_date": "2025-04-07T19:21:45.450133",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 12,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "Edit type accuracy: The predicted edit type is 'punctuation', matching exactly the ground truth 'punctuation' edit type.\nText content accuracy: The predicted original text ('hers and') and the corrected text ('hers, and') precisely match the ground truth original and corrected texts, correctly capturing the intended punctuation addition.\nTherefore, both criteria\u2014edit type and essential text change\u2014are completely satisfied, confirming the prediction as correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both edits apply the same core punctuation change, inserting a comma after \"hers\" in the phrase \"hers and\" \u2192 \"hers, and\". The original and corrected text strings match the ground truth\u2019s intended modification. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 1,

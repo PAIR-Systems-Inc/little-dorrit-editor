@@ -14,6 +14,21 @@ from little_dorrit_editor.types import EditAnnotation, EditMatch, EditType, Eval
 from little_dorrit_editor.utils import extract_json_from_llm_response
 
 
+def _safe_edit_type(value: Any) -> Optional[EditType]:
+    """Convert raw edit type strings to the enum without raising.
+
+    Some historical predictions contain out-of-schema values (e.g. "spelling").
+    Those should not crash evaluation; returning None preserves the row while
+    avoiding invalid enum construction.
+    """
+    if value is None:
+        return None
+    try:
+        return EditType(str(value).lower())
+    except ValueError:
+        return None
+
+
 class LLMJudge:
     """Judge that uses an LLM API to evaluate the correctness of predicted edits."""
 
@@ -492,7 +507,7 @@ def evaluate(
             tp=score,                                           # True positive score
             fp=(1.0 - score) / 2,                               # False positive portion
             fn=(1.0 - score) / 2,                               # False negative portion
-            type=EditType(pred_edit.get("type", "unknown")),    # Edit type from prediction
+            type=_safe_edit_type(pred_edit.get("type", "unknown")),    # Edit type from prediction
             original_text=pred_edit.get("original_text", ""),   # Text from prediction
             corrected_text=pred_edit.get("corrected_text", ""), # Text from prediction
             observed_line_number=pred_line,                     # Line number from prediction
@@ -516,7 +531,7 @@ def evaluate(
             tp=0.0,                                             # No true positive component
             fp=1.0,                                             # Pure false positive
             fn=0.0,                                             # No false negative component
-            type=EditType(fp_edit.get("type", "unknown")),      # Edit type from prediction
+            type=_safe_edit_type(fp_edit.get("type", "unknown")),      # Edit type from prediction
             original_text=fp_edit.get("original_text", ""),     # Text from prediction
             corrected_text=fp_edit.get("corrected_text", ""),   # Text from prediction
             observed_line_number=fp_edit.get("line_number"),    # Line number from prediction
@@ -535,7 +550,7 @@ def evaluate(
             tp=0.0,                                             # No true positive component
             fp=0.0,                                             # No false positive component
             fn=1.0,                                             # Pure false negative
-            type=EditType(fn_edit.get("type", "unknown")),      # Edit type from ground truth
+            type=_safe_edit_type(fn_edit.get("type", "unknown")),      # Edit type from ground truth
             original_text=fn_edit.get("original_text", ""),     # Text from ground truth
             corrected_text=fn_edit.get("corrected_text", ""),   # Text from ground truth
             observed_line_number=None,                          # No line number (no match)

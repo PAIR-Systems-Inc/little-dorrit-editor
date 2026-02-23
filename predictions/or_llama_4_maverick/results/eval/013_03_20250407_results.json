@@ -1,6 +1,6 @@
 {
   "model_name": "or_llama_4_maverick",
-  "date": "2025-04-08T23:21:27.503875",
+  "date": "2026-02-22T15:59:37.336857",
   "annotator": "Llama 4 Maverick",
   "annotation_date": "2025-04-08T07:53:52.540712",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 4,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type matches exactly ('replacement' in both). The predicted edit captures the core textual change correctly, altering 'dryest snorts' to 'driest of snorts'. Although the predicted edit slightly differs in the scope (the ground truth includes the preceding phrase 'of the', while the prediction only includes 'dryest snorts'), this difference does not affect the essential edit intention, which was to change 'dryest snorts' into 'driest of snorts'. Thus, the essential correction is accurately represented."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement,\" so the edit type matches.\n\n2) Text Content Accuracy: The ground truth changes \"dryest\" to \"driest\" and inserts an additional \"of\" to make the phrase \"the driest of snorts\" (within the larger context \"of the ... .\"). The predicted edit captures the same core transformation: \"dryest snorts\" \u2192 \"driest of snorts.\" Although the prediction omits surrounding context (\"of the\" and the final period), it correctly represents the essential textual change intended by the ground truth."
     },
     {
       "observed_edit_num": 1,

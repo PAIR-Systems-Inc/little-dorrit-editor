@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:19:30.682818",
+  "date": "2026-02-22T15:24:34.310308",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-07T23:21:46.659451",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 38,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type ('capitalization') exactly matches the ground truth. Additionally, the predicted edit ('if' \u2192 'If') accurately captures the essential capitalization change indicated by the ground truth ('if he' \u2192 'If he'). The prediction omits the second word 'he', but since it correctly identifies the core intended edit (capitalizing 'if') and does not misrepresent the intended correction, it meets the criteria for text content accuracy. Thus, it correctly reflects the intention of the ground truth."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"capitalization\" edit, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial word in the phrase \"if he\" \u2192 \"If he\". The predicted edit capitalizes \"if\" \u2192 \"If\". Although the prediction includes less surrounding context (it does not include the following word \"he\"), it captures the core intended change: capitalizing the word \"if\" at the start of the phrase. Therefore, the essential edit is correctly represented."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 41,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly matches the ground truth edit type as 'replacement'. The core textual change ('said' to 'asked') is also precisely identified by the prediction. Even though the predicted edit contains only the single word 'said' -> 'asked' and the ground truth specifies 'said Clennam' -> 'asked Clennam', the essential correction ('said' \u2192 'asked') is accurately captured. Hence, according to the provided instructions, the prediction is considered correct."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the core intended substitution by replacing \"said\" with \"asked\". Although it omits the following context word (\"Clennam\"), this is acceptable because the essential change (said \u2192 asked) is correctly represented."
     }
   ]
 }

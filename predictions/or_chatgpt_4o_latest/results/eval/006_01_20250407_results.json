@@ -1,6 +1,6 @@
 {
   "model_name": "or_chatgpt_4o_latest",
-  "date": "2025-04-08T23:34:03.136126",
+  "date": "2026-02-22T15:37:57.695692",
   "annotator": "ChatGPT-4o (OR)",
   "annotation_date": "2025-04-07T19:55:25.093056",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 10,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit matches exactly the ground truth in both edit type ('punctuation') and text content ('about and' \u2192 'about, and'). The core punctuation addition (comma after 'about') is correctly identified with no discrepancy. Thus, the prediction accurately captures the intention of the ground truth edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits have type \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original_text (\"about and\") and the same corrected_text (\"about, and\"), capturing the core change of inserting a comma after \"about\". Therefore, the predicted edit matches the ground truth intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 27,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type provided ('punctuation') matches exactly with the ground truth edit type. Additionally, the text content accurately captures the essential change from 'said' to 'said,', matching the intent of the ground truth precisely. The difference in line numbers is intentionally disregarded as instructed. Therefore, both the edit type and text content are correctly identified in the predicted edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same core change: adding a comma after \"said\" (\"said\" \u2192 \"said,\"). This captures the essential correction exactly. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 31,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly matches the edit type ('punctuation') of the ground truth edit. The text content change from 'Clennam in' to 'Clennam, in' is accurately captured in both the ground truth and the predicted edit, demonstrating the same core punctuation correction. The minor discrepancy in line number has been explicitly disregarded in this evaluation as instructed, leaving no errors in the edit type or content accuracy. Therefore, the predicted edit correctly conveys the original editorial intention."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\nText Content Accuracy: Both specify the same core correction: inserting a comma after \"Clennam\" (\"Clennam in\" \u2192 \"Clennam, in\"). The essential punctuation change is identical. Line numbers are ignored as instructed."
     },
     {
       "observed_edit_num": 3,

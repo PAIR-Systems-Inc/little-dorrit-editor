@@ -1,11 +1,25 @@
 {
   "model_name": "or_gpt_4_5_preview",
-  "date": "2025-04-08T22:56:12.056035",
+  "date": "2026-02-22T15:50:00.967324",
   "annotator": "GPT-4.5 Preview (OR)",
   "annotation_date": "2025-04-07T19:36:25.382440",
   "details": [
     {
       "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "For",
+      "corrected_text": "For,",
+      "observed_line_number": 3,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth intends to insert a comma after the word \"For\" in the phrase \"For Mr. Pancks\" (i.e., \"For\" \u2192 \"For,\"). The predicted edit also changes \"For\" to \"For,\", capturing the same core punctuation insertion, even though it provides less surrounding context. This still matches the essential intended correction."
+    },
+    {
+      "observed_edit_num": 1,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -19,7 +33,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 1,
+      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -28,20 +42,6 @@
       "original_text": "bed-",
       "corrected_text": "",
       "observed_line_number": 2,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False positive: no matching ground truth edit found"
-    },
-    {
-      "observed_edit_num": 2,
-      "expected_edit_num": null,
-      "tp": 0.0,
-      "fp": 1.0,
-      "fn": 0.0,
-      "type": "punctuation",
-      "original_text": "For",
-      "corrected_text": "For,",
-      "observed_line_number": 3,
       "line_diff": null,
       "line_number_penalty": 0.0,
       "judgement": "False positive: no matching ground truth edit found"
@@ -62,7 +62,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 0,
+      "expected_edit_num": 1,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -76,27 +76,13 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 1,
+      "expected_edit_num": 2,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "replacement",
       "original_text": "bed-room",
       "corrected_text": "bed room",
-      "observed_line_number": null,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False negative: ground truth edit not found in prediction"
-    },
-    {
-      "observed_edit_num": null,
-      "expected_edit_num": 2,
-      "tp": 0.0,
-      "fp": 0.0,
-      "fn": 1.0,
-      "type": "punctuation",
-      "original_text": "For Mr. Pancks",
-      "corrected_text": "For, Mr. Pancks",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

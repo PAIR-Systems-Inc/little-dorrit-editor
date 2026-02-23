@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1",
-  "date": "2025-04-14T13:42:49.226934",
+  "date": "2026-02-22T15:28:22.428148",
   "annotator": "GPT-4.1",
   "annotation_date": "2025-04-14T11:01:46.386970",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The edit type ('punctuation') matches exactly between ground truth and prediction. The text content accurately captures the essential punctuation correction ('howling over' \u2192 'howling, over'). Although the prediction shows additional context ('yonder to-day, sir; is there?'), it correctly identifies and implements the essential comma insertion after 'howling'. Therefore, both the type and essential change intended by the ground truth have been accurately reflected."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth core change is inserting a comma between \"howling\" and \"over\" (\"howling over\" \u2192 \"howling, over\"). The prediction includes a larger span of surrounding text, but it does make the same essential change: \"howling over ...\" \u2192 \"howling, over ...\". Although the prediction also introduces additional commas elsewhere (e.g., after \"yonder\" and \"to-day\"), it still captures the ground truth\u2019s intended punctuation change at the target location.\n\nTherefore, the predicted edit correctly captures the intention of the ground truth edit."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 15,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit type ('punctuation') exactly matches the ground truth edit type. Regarding content accuracy, the ground truth edit is 'pockets and' to 'pockets, and', while the predicted edit is 'pockets and rattling' to 'pockets, and rattling'. The prediction accurately captures the essential punctuation correction ('and' corrected to ', and') indicated by the ground truth. The additional context provided ('rattling') does not affect correctness, as the evaluation guidelines explicitly allow additional context. Therefore, the prediction is correct."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"pockets\" in the phrase \"pockets and\" \u2192 \"pockets, and\". The prediction applies the same core punctuation change in a longer span: \"pockets and rattling\" \u2192 \"pockets, and rattling\". This includes extra surrounding context but preserves the essential intended edit (adding a comma after \"pockets\").\n\nTherefore, the predicted edit correctly captures the intention of the ground truth edit."
     },
     {
       "observed_edit_num": null,

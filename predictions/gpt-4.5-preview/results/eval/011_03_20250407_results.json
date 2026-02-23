@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4.5-preview",
-  "date": "2025-04-08T22:50:40.688989",
+  "date": "2026-02-22T15:23:26.258170",
   "annotator": "GPT-4.5 Preview",
   "annotation_date": "2025-04-08T11:38:16.454087",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 26,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit correctly matches the ground truth in both required aspects: 1) Edit Type Accuracy: both edits are classified exactly as 'punctuation'. 2) Text Content Accuracy: both specify changing 'shore and' to 'shore, and', capturing the exact core punctuation correction identified by the ground truth. As explicitly instructed, the mismatch in line numbers is ignored in this evaluation. Hence, the prediction is accurate and correctly captures the ground truth's intended edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"shore and\") and the same corrected text (\"shore, and\"), capturing the core intended change\u2014adding a comma after \"shore\". Line numbers are ignored, so this does not affect correctness."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 34,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit accurately matches the ground truth edit. The edit type ('replacement') matches exactly. The original text ('that') is correctly identified, and the corrected text ('than') is also exactly the same. Although the predicted and ground truth line numbers differ, the instruction explicitly states to ignore the line numbers. Therefore, based solely on edit type and text content accuracy, the predicted edit is correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n2) Text Content Accuracy: Both edits replace the original text \"that\" with the corrected text \"than\", capturing the same core change. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 2,

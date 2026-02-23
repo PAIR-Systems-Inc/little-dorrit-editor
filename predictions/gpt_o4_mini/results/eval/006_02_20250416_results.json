@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_o4_mini",
-  "date": "2025-04-17T06:36:50.351038",
+  "date": "2026-02-22T15:35:47.824415",
   "annotator": "GPT-o4 Mini",
   "annotation_date": "2025-04-16T21:50:09.186715",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit correctly identifies the edit type as 'punctuation', matching the ground truth exactly. Additionally, the essential textual change, adding a hyphen between 'high' and 'road', is correctly captured in the prediction. Although the predicted edit uses the Unicode character '\\u2011' (non-breaking hyphen) instead of the standard hyphen '-', the intention of punctuation correction (hyphenation) remains clearly and accurately conveyed. Therefore, both the edit type and essential text content align correctly, making the prediction accurate."
+      "judgement": "1) Edit Type Accuracy: The predicted type is \"punctuation,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is to hyphenate \"high road\" \u2192 \"high-road.\" The prediction changes \"high road\" \u2192 \"high\u2011road\" using a non-breaking hyphen (U+2011) instead of a standard hyphen-minus (-). Despite the different hyphen character, the core intended edit\u2014adding a hyphen between \"high\" and \"road\"\u2014is correctly captured."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 3,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The edit type matches exactly ('punctuation') in both the predicted and ground truth edits. Additionally, the core textual change ('materials costing' \u2192 'materials, costing') is precisely captured. The edit accurately reflects the intended comma insertion indicated by the ground truth. Hence, both the edit type and textual content accuracy are fully satisfied."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same transformation: inserting a comma after \"materials\" in the phrase \"materials costing\" to produce \"materials, costing\". The core change is identical, with no discrepancies in original or corrected text."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 13,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit exactly matches the ground truth edit in both criteria. First, the 'edit type' is specified as 'punctuation' in both the prediction and the ground truth, making it accurate. Second, regarding 'text content accuracy', both edits indicate the same original text ('about and') and corrected text ('about, and'). Thus, the prediction accurately represents the essential edit intention identified by the ground truth."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and predicted edit have the type \"punctuation\", so the type matches exactly.\n2. Text Content Accuracy: Both specify the same core punctuation change, inserting a comma after \"about\" (\"about and\" \u2192 \"about, and\"). There is no discrepancy in original or corrected text. Therefore, the predicted edit correctly captures the ground truth intention."
     },
     {
       "observed_edit_num": 3,
@@ -58,7 +58,7 @@
       "observed_line_number": 25,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The edit type ('punctuation') matches exactly. Regarding text content accuracy, the ground truth edits 'said' to 'said,', while the predicted edit indicates the addition of a comma after the same word ('said' \u2192 'said,') but it also includes additional context ('said 'Clennam' \u2192 'said, 'Clennam'). This extra context does not alter the core correction intended by the ground truth (adding a comma after 'said'). The prediction correctly captures the essential punctuation edit, satisfying both criteria."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to add a comma after the word \"said\" (\"said\" \u2192 \"said,\"). The predicted edit also inserts a comma immediately after \"said\" (\"said 'Clennam\" \u2192 \"said, 'Clennam\"). Although the prediction includes additional surrounding context (the following quoted name), the core punctuation change is the same and correctly captured."
     },
     {
       "observed_edit_num": 4,

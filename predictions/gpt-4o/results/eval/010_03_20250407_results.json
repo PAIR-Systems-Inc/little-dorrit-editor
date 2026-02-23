@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:31:02.058177",
+  "date": "2026-02-22T15:25:28.667781",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-08T08:37:11.759864",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 14,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit correctly matches the edit type exactly ('punctuation') from the ground truth. Additionally, the text content also perfectly captures the intended punctuation correction from 'hers matters' to 'hers, matters'. Minor context differences are acceptable, and here the prediction matches explicitly the core change defined in the ground truth edit. Therefore, based solely on the criteria (edit type and text content, disregarding line numbers), the predicted edit is correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: Both edits change \"hers matters\" to \"hers, matters\" by inserting a comma after \"hers\". This captures the same core punctuation correction with identical original and corrected text. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 20,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The edit type matches exactly ('punctuation'), fulfilling criterion 1. Next, the text content change also exactly matches the ground truth ('moment with' \u2192 'moment, with'). Even though the line numbers differ, these are explicitly ignored according to evaluation rules. Therefore, both the edit type and the essential text content accurately capture the ground truth's intention."
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction label the change as a \"punctuation\" edit, so the type matches exactly.\n\n2. Text Content Accuracy: Both specify the same original text (\"moment with\") and the same corrected text (\"moment, with\"), capturing the identical core change: inserting a comma after \"moment\". Any difference in line number is to be ignored, so the text change fully matches the ground truth intention."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 22,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The edit type in both the ground truth and predicted edits is exactly 'punctuation', thus satisfying the edit type accuracy criterion. Regarding text content accuracy, both specify the change from 'beautiful that' to 'beautiful, that', indicating the insertion of a comma after the word 'beautiful'. This perfectly matches the essential punctuation edit necessary according to the ground truth. Differences in line numbers have been explicitly ignored per instructions, thus the prediction is fully correct in capturing the intended edit."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\nText Content Accuracy: Both specify the same core change: inserting a comma after \"beautiful\" in the phrase \"beautiful that\" to make \"beautiful, that.\" The original and corrected texts match the ground truth\u2019s intended punctuation change. Line numbers are ignored as instructed."
     },
     {
       "observed_edit_num": 3,

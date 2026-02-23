@@ -1,6 +1,6 @@
 {
   "model_name": "or_llama_4_maverick",
-  "date": "2025-04-08T23:07:23.595209",
+  "date": "2026-02-22T15:58:08.507688",
   "annotator": "Llama 4 Maverick",
   "annotation_date": "2025-04-07T20:32:56.353020",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 24,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit matches the ground truth's edit type exactly ('punctuation'). The ground truth corrects 'said when' to 'said, when', and the predicted edit corrects 'said' to 'said,'. Even though the ground truth includes an additional word ('when') as context, the essential punctuation correction intended by the ground truth\u2014adding a comma after 'said'\u2014is accurately captured in the prediction. Thus, the core intention and edit type are correctly identified."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma after the word \"said\" in the phrase \"said when\" \u2192 \"said, when.\" The predicted edit is \"said\" \u2192 \"said,\", which captures the same core change: adding a comma immediately after \"said.\" Although the prediction provides less surrounding context (it omits \"when\"), it still reflects the essential intended punctuation insertion at the correct location."
     },
     {
       "observed_edit_num": 1,

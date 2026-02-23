@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1_mini",
-  "date": "2025-04-14T14:11:28.921625",
+  "date": "2026-02-22T15:31:25.554399",
   "annotator": "GPT-4.1 Mini",
   "annotation_date": "2025-04-14T11:19:03.398451",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 3,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit matches exactly the edit type (both are 'replacement') and correctly captures the core textual correction from 'Saone' to 'Sa\u00f4ne'. The essential character modification (adding the accent) aligns perfectly with the ground truth's intended correction. The discrepancy in line number information is explicitly instructed to be ignored, and thus does not impact the judgment of correctness."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"Saone\") and the same corrected text (\"Sa\u00f4ne\"), capturing the identical core change (adding the circumflex on the 'o'). Line numbers are to be ignored, so there is no discrepancy affecting correctness."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 8,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit has correctly captured the intention of the ground truth. Specifically: \n1. Edit Type Accuracy: Both the ground truth and prediction indicate a 'replacement' edit type, which matches exactly.\n2. Text Content Accuracy: The predicted original text ('Saone') and corrected text ('Sa\u00f4ne') precisely match the ground truth original and corrected texts, clearly capturing the core editorial correction.\nNote: Line numbers were explicitly instructed to be ignored in this evaluation, thus the discrepancy in line numbers is immaterial."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\nText Content Accuracy: Both edits replace \"Saone\" with \"Sa\u00f4ne\", correctly adding the circumflex accent over the \"o\". This captures the core intended correction with identical original and corrected text. Line numbers are ignored as instructed."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 13,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit type accurately matches the ground truth edit type of 'replacement'. The text content of the prediction ('sodden with' \u2192 'soddened with') correctly captures the core lexical change indicated by the ground truth ('sodden' \u2192 'soddened'). The prediction includes additional context ('with') which goes beyond the ground truth but does not alter or obscure the intended correction. Thus, the essence of the correction ('sodden' to 'soddened') is correctly and fully captured."
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction are labeled as a \"replacement,\" so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth changes \"sodden\" to \"soddened.\" The prediction changes \"sodden with\" to \"soddened with,\" which includes extra surrounding context (\"with\") but preserves the same core correction (\"sodden\" \u2192 \"soddened\"). Therefore, the predicted edit captures the intended textual change."
     },
     {
       "observed_edit_num": 3,

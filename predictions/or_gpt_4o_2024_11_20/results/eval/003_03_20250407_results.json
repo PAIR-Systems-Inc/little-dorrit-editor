@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4o_2024_11_20",
-  "date": "2025-04-09T00:14:02.524600",
+  "date": "2026-02-22T15:52:09.148758",
   "annotator": "GPT-4o (2024-11-20 OR)",
   "annotation_date": "2025-04-08T08:43:47.297679",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit exactly matches the ground truth edit on both required criteria. First, the 'type' of edit is identical, namely 'punctuation.' Second, the text content of the edit matches precisely\u2014the original and corrected texts in the prediction ('yonder to-day' \u2192 'yonder, to-day') clearly capture the core change indicated by the ground truth edit. Since both the edit type and content of the correction are accurately represented, the prediction is correct."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n2. Text Content Accuracy: Both edits change \"yonder to-day\" to \"yonder, to-day\", inserting a comma after \"yonder\". The core punctuation change is identical in the prediction and ground truth."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 14,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The edit type ('punctuation') in both the ground truth and the prediction matches exactly. The core intended edit\u2014adding a comma after 'pockets' to correct the punctuation\u2014is accurately captured by the predicted edit. Although the prediction includes additional words ('rattling') that were not part of the ground truth, this additional context does not alter or detract from capturing the essential punctuation edit. Therefore, the prediction accurately reflects both the type and content of the intended correction."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"pockets\" in the phrase \"pockets and\" \u2192 \"pockets, and.\" The prediction applies the same core punctuation change within a longer context: \"pockets and rattling\" \u2192 \"pockets, and rattling.\" The essential edit (adding a comma after \"pockets\" before \"and\") is correctly captured, and the extra surrounding words are acceptable context."
     },
     {
       "observed_edit_num": 2,

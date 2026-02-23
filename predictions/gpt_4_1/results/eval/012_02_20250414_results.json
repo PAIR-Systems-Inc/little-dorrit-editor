@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1",
-  "date": "2025-04-14T14:00:15.857558",
+  "date": "2026-02-22T15:30:02.106241",
   "annotator": "GPT-4.1",
   "annotation_date": "2025-04-14T11:23:51.981023",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The edit type exactly matches ('capitalization') and the essential text correction ('city' \u2192 'City') is precisely captured, aligning perfectly with the ground truth. No discrepancies found in the edit type or content change, making this prediction entirely correct."
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\nText Content Accuracy: The predicted change matches the ground truth core change, converting \"city\" to \"City\" with identical original and corrected text. No additional or conflicting modifications are introduced.\n\nTherefore, the prediction correctly captures the ground truth edit intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 12,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit correctly identifies the edit type as 'punctuation', matching exactly the ground truth edit type. Additionally, the text content accuracy is also correct. Even though the prediction includes extra context ('when'), it captures precisely the essential punctuation edit ('motionless' \u2192 'motionless,') indicated by the ground truth. Thus, both edit type and the core textual change are accurately reflected."
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is adding a comma after the word \"motionless\" (\"motionless\" \u2192 \"motionless,\"). The prediction changes \"motionless when\" to \"motionless, when\", which likewise inserts a comma immediately after \"motionless\". Although the prediction includes extra surrounding context (the following word \"when\"), it captures the same core punctuation change intended by the ground truth."
     },
     {
       "observed_edit_num": 2,

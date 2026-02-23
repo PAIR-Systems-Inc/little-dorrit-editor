@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:34:06.220845",
+  "date": "2026-02-22T15:25:42.191221",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-08T08:38:15.143385",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 31,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type matches exactly (both indicate 'replacement'). The ground truth edit indicates changing 'that' to 'than', and the predicted edit indicates changing 'that once' to 'than once'. Although the predicted edit includes additional context ('once'), it still correctly captures the core textual change intended by the ground truth ('that' to 'than'). Therefore, both the edit type and essential content change accurately match the ground truth's intention."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"that\" to \"than\". The prediction changes \"that once\" to \"than once\", which contains the same core correction (\"that\" \u2192 \"than\") while including additional surrounding context (\"once\"). This still captures the essential intended edit."
     },
     {
       "observed_edit_num": 1,

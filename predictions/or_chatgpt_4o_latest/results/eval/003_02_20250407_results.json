@@ -1,6 +1,6 @@
 {
   "model_name": "or_chatgpt_4o_latest",
-  "date": "2025-04-08T23:29:20.237226",
+  "date": "2026-02-22T15:37:32.240177",
   "annotator": "ChatGPT-4o (OR)",
   "annotation_date": "2025-04-07T22:10:13.294512",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The edit type exactly matches ('punctuation'). The predicted correction ('howling, over') matches the ground truth correction perfectly and directly captures the intended punctuation insertion ('howling' \u2192 'howling,'). Since both the edit type and the essential text change are accurately identified by the predicted edit, it is considered correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change from \"howling over\" to \"howling, over\", inserting a comma after \"howling\". The core punctuation correction is captured identically. Therefore, the predicted edit matches the ground truth intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit type ('punctuation') exactly matches the ground truth edit type. Additionally, the textual correction correctly captures the exact core change from 'yonder to-day' to 'yonder, to-day'. Since both the edit type and the essential text content match the ground truth precisely, the prediction meets all criteria for accuracy."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the change as a \"punctuation\" edit, so the type matches exactly.\n2. Text Content Accuracy: Both specify the same original text (\"yonder to-day\") and the same corrected text (\"yonder, to-day\"), inserting a comma after \"yonder\". This captures the core intended change with no discrepancy."
     },
     {
       "observed_edit_num": 2,

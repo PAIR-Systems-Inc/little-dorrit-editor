@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4o_2024_11_20",
-  "date": "2025-04-09T00:12:29.324134",
+  "date": "2026-02-22T15:52:13.281744",
   "annotator": "GPT-4o (2024-11-20 OR)",
   "annotation_date": "2025-04-08T00:06:16.341168",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 0,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The edit type in both ground truth and prediction matches exactly as 'punctuation'. The ground truth indicates an addition of a period at the end of 'Fellow Travellers'. The predicted edit correctly reflects this change, focusing only on the word 'Travellers' and thus accurately capturing the essential punctuation addition. Since additional context (e.g., including 'Fellow') is allowed but is not strictly necessary, this prediction still accurately represents the core intention of the ground truth edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth adds a period at the end of the phrase \"Fellow Travellers\" (making it \"Fellow Travellers.\"). The predicted edit adds a period at the end of the final word \"Travellers\" (making it \"Travellers.\"). Although the prediction includes less surrounding context (it omits \"Fellow\"), it captures the core intended change: inserting a period immediately after \"Travellers\" at the end of the phrase. Therefore, the essential punctuation correction is correctly represented."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit matches the ground truth exactly in both edit type and text content. Specifically, the edit type 'punctuation' is the same, and the original text 'yonder to-day' as well as the corrected text 'yonder, to-day' are accurately and exactly reproduced. Therefore, both criteria (edit type accuracy and text content accuracy) are satisfied fully."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and predicted edit have the type \"punctuation\", so the type matches exactly.\n2. Text Content Accuracy: Both specify the same original text \"yonder to-day\" and the same correction \"yonder, to-day\", inserting a comma after \"yonder\". The core change is identical, so the intended edit is fully captured."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 15,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly captures the essential punctuation addition indicated in the ground truth (adding a comma after 'pockets'). Although the predicted edit includes an extra word ('rattling') in its context, the core correction ('pockets and' \u2192 'pockets, and') matches exactly. The edit type is also identical ('punctuation'). Thus, both criteria\u2014'Edit Type Accuracy' and 'Text Content Accuracy'\u2014are satisfied."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"pockets\" in the phrase \"pockets and\" \u2192 \"pockets, and.\" The predicted edit makes the same core punctuation change (\"pockets and rattling\" \u2192 \"pockets, and rattling\"), simply including additional surrounding context. The essential intended correction\u2014adding a comma after \"pockets\" before \"and\"\u2014is correctly captured."
     },
     {
       "observed_edit_num": 3,

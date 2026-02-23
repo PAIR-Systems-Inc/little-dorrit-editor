@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1",
-  "date": "2025-04-14T13:55:11.920714",
+  "date": "2026-02-22T15:29:41.352957",
   "annotator": "GPT-4.1",
   "annotation_date": "2025-04-14T11:21:59.516309",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 13,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit matches the ground truth in edit type exactly ('punctuation'). Regarding text content accuracy, the predicted edit 'hers' \u2192 'hers,' directly reflects the core punctuation change ('hers' to 'hers,') indicated in the ground truth ('hers and' \u2192 'hers, and'). Although the prediction does not explicitly include the following word ('and'), it successfully captures the essential punctuation correction. As per the evaluation criteria, additional context is permitted but not required, and here the core edit of adding the comma after 'hers' is clearly and correctly identified. Therefore, both the edit type and the core text content change are accurately reflected."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth edit changes \"hers and\" to \"hers, and,\" which is functionally inserting a comma after \"hers\" before the conjunction \"and.\" The predicted edit changes \"hers\" to \"hers,\", which captures the same core punctuation change (adding the comma after \"hers\"). Although the prediction omits the following word \"and\" from its context, it still represents the essential intended correction."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 15,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit matches exactly the edit type ('punctuation') specified by the ground truth. Additionally, the core textual change is correctly captured\u2014the original text 'hers matters' is corrected in the ground truth to 'hers, matters' by adding a comma after 'hers'. The prediction indicates the correction from 'hers' to 'hers,' which precisely captures the essential comma insertion noted by the ground truth. Although the prediction only mentions the specific word 'hers', it correctly captures the core punctuation change intended by the ground truth. Therefore, the prediction satisfies both criteria: edit type accuracy and text content accuracy."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"hers matters\" to \"hers, matters\", which is specifically inserting a comma after the word \"hers\". The prediction changes \"hers\" to \"hers,\", which captures the same essential punctuation insertion at the same location. Although the prediction includes less surrounding context (it omits \"matters\"), it still reflects the core intended edit: adding a comma after \"hers\"."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 25,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly matches the ground truth intention. Both edits are of type 'punctuation', so the edit type accuracy criterion is satisfied. Regarding text content accuracy, the ground truth edit adds a comma after the word 'moment' ('moment with' \u2192 'moment, with'). The predicted edit similarly adds a comma after 'moment' ('moment' \u2192 'moment,'). Although the predicted edit includes slightly less context, it precisely captures the essential punctuation correction indicated by the ground truth edit\u2014introducing a comma after the word 'moment'. Therefore, both criteria (type accuracy and text content accuracy) are fully satisfied."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after the word \"moment\" in the phrase \"moment with\" \u2192 \"moment, with.\" The predicted edit \"moment\" \u2192 \"moment,\" captures the same core punctuation change (adding a comma immediately after \"moment\"). Although it does not include the following word \"with,\" it still correctly represents the essential intended correction."
     },
     {
       "observed_edit_num": 3,
@@ -58,7 +58,7 @@
       "observed_line_number": 32,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit precisely matches the ground truth. Specifically, the edit type 'capitalization' is identical, and the text content ('they' corrected to 'They') matches exactly as well. No differences in the core intended correction are identified, making this prediction fully accurate according to both specified criteria."
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"capitalization,\" which exactly matches the ground truth type.\n\nText Content Accuracy: The ground truth change is \"they\" \u2192 \"They\". The predicted edit makes the same core change, capitalizing the initial letter of the word. There is no discrepancy in original or corrected text content."
     },
     {
       "observed_edit_num": 4,

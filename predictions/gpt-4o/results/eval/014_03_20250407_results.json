@@ -1,11 +1,25 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:41:13.473416",
+  "date": "2026-02-22T15:26:14.354847",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-08T08:41:20.497225",
   "details": [
     {
       "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "For Mr.",
+      "corrected_text": "For, Mr.",
+      "observed_line_number": 2,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to insert a comma after \"For\" (\"For Mr. Pancks\" \u2192 \"For, Mr. Pancks\"). The prediction also inserts a comma after \"For\" (\"For Mr.\" \u2192 \"For, Mr.\"). Although the predicted span is shorter and omits \"Pancks,\" it captures the same core punctuation change in the correct location. Therefore, the essential edit is accurately represented."
+    },
+    {
+      "observed_edit_num": 1,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -19,7 +33,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 1,
+      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -33,22 +47,8 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 2,
-      "expected_edit_num": null,
-      "tp": 0.0,
-      "fp": 1.0,
-      "fn": 0.0,
-      "type": "punctuation",
-      "original_text": "For Mr.",
-      "corrected_text": "For, Mr.",
-      "observed_line_number": 2,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False positive: no matching ground truth edit found"
-    },
-    {
       "observed_edit_num": null,
-      "expected_edit_num": 0,
+      "expected_edit_num": 1,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -62,7 +62,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 1,
+      "expected_edit_num": 2,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -76,27 +76,13 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 2,
+      "expected_edit_num": 3,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "insertion",
       "original_text": "me,",
       "corrected_text": "me a,",
-      "observed_line_number": null,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False negative: ground truth edit not found in prediction"
-    },
-    {
-      "observed_edit_num": null,
-      "expected_edit_num": 3,
-      "tp": 0.0,
-      "fp": 0.0,
-      "fn": 1.0,
-      "type": "punctuation",
-      "original_text": "For Mr. Pancks",
-      "corrected_text": "For, Mr. Pancks",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

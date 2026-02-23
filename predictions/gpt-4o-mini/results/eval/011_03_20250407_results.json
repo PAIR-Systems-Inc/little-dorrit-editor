@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o-mini",
-  "date": "2025-04-09T00:00:04.016106",
+  "date": "2026-02-22T15:27:52.863329",
   "annotator": "GPT-4o Mini",
   "annotation_date": "2025-04-08T08:23:57.556642",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 27,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit is correct. Specifically, the edit type ('replacement') matches exactly with the ground truth. Additionally, the text content change identified ('within doors' replaced by 'within-doors') matches exactly, capturing the core editorial correction precisely. Ignoring line numbers, the prediction appropriately reflects the intended correction."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly.\n2) Text Content Accuracy: Both specify replacing \"within doors\" with \"within-doors\". The core intended change (hyphenating the phrase) is identical. Line number differences are to be ignored, so the prediction captures the ground truth intention."
     },
     {
       "observed_edit_num": 1,

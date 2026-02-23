@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4-turbo",
-  "date": "2025-04-08T23:14:09.642396",
+  "date": "2026-02-22T15:21:20.644389",
   "annotator": "GPT-4 Turbo",
   "annotation_date": "2025-04-08T00:20:45.498627",
   "details": [
@@ -16,24 +16,10 @@
       "observed_line_number": 19,
       "line_diff": 3,
       "line_number_penalty": 0.9,
-      "judgement": "The predicted edit correctly matches the edit type ('punctuation') from the ground truth. Regarding text content accuracy, the ground truth indicates adding a comma after 'view', transforming 'view' into 'view,'. The predicted version similarly indicates adding a comma after 'view' ('view by' to 'view, by'). Although it provides additional context ('by'), the essential punctuation edit (a comma after 'view') is captured precisely. Therefore, both the edit type and the essential punctuation change match the ground truth's intended correction, making this prediction correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma after the word \"view\" (\"view\" \u2192 \"view,\"). The predicted edit inserts a comma in the same location within a larger span of text (\"view by\" \u2192 \"view, by\"). This includes extra context but preserves the core intended change: adding a comma immediately after \"view.\" \u0907\u0938\u0932\u093f\u090f the prediction matches the ground truth\u2019s intention."
     },
     {
       "observed_edit_num": 1,
-      "expected_edit_num": 1,
-      "tp": 1.0,
-      "fp": 0.0,
-      "fn": 0.0,
-      "type": "punctuation",
-      "original_text": "existence at",
-      "corrected_text": "existence; at",
-      "observed_line_number": 18,
-      "line_diff": 0,
-      "line_number_penalty": 0.0,
-      "judgement": "The edit type matches exactly ('punctuation'). The predicted edit correctly identifies the essential punctuation change from a comma (,) to a semicolon (;), precisely capturing the intention of the ground truth. The extra word 'at' included in the prediction represents additional surrounding context, which is acceptable per the evaluation criteria. Thus, the core change indicated by the ground truth ('existence,' \u2192 'existence;') is accurately captured in the prediction."
-    },
-    {
-      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -47,7 +33,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 3,
+      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -61,7 +47,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 4,
+      "observed_edit_num": 3,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -75,8 +61,22 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
+      "observed_edit_num": 4,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence; at",
+      "observed_line_number": 18,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
       "observed_edit_num": null,
-      "expected_edit_num": 2,
+      "expected_edit_num": 1,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -90,7 +90,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 3,
+      "expected_edit_num": 2,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -104,7 +104,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 4,
+      "expected_edit_num": 3,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -118,7 +118,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 5,
+      "expected_edit_num": 4,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -132,7 +132,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 6,
+      "expected_edit_num": 5,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -146,7 +146,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 7,
+      "expected_edit_num": 6,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -160,7 +160,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 8,
+      "expected_edit_num": 7,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -174,7 +174,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 9,
+      "expected_edit_num": 8,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -188,7 +188,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 10,
+      "expected_edit_num": 9,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -202,13 +202,27 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 11,
+      "expected_edit_num": 10,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "punctuation",
       "original_text": "them,",
       "corrected_text": "them;",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 11,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "existence,",
+      "corrected_text": "existence;",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

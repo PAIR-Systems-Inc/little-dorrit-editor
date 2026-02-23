@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4_turbo",
-  "date": "2025-04-09T00:26:45.996416",
+  "date": "2026-02-22T15:50:36.823859",
   "annotator": "GPT-4o (OR)",
   "annotation_date": "2025-04-07T23:46:04.911365",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 27,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit matches exactly with the ground truth in both edit type ('punctuation') and the corrected text content ('said' \u2192 'said,'). Although line numbers differ, instructions explicitly stated to ignore line numbers. Therefore, the predicted edit correctly captures the intention of the ground truth edit."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as a \"punctuation\" edit, so the type matches exactly. Text Content Accuracy: Both specify the same core correction\u2014adding a comma after \"said\" (\"said\" \u2192 \"said,\"). Ignoring line numbers as instructed, the predicted edit captures the same essential punctuation change as the ground truth."
     },
     {
       "observed_edit_num": 1,

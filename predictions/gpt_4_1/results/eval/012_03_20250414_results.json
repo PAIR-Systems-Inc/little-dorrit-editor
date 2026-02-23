@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1",
-  "date": "2025-04-14T14:00:51.061560",
+  "date": "2026-02-22T15:30:13.440315",
   "annotator": "GPT-4.1",
   "annotation_date": "2025-04-14T12:02:02.606709",
   "details": [
@@ -16,24 +16,10 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit matches exactly the ground truth edit. Both the edit type ('capitalization') and the text content change ('city' to 'City') are precisely captured. There is no discrepancy in either the edit type or the core textual correction."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change from \"city\" to \"City\", capturing the identical core correction. No mismatch in original or corrected text."
     },
     {
       "observed_edit_num": 1,
-      "expected_edit_num": 1,
-      "tp": 0.9,
-      "fp": 0.04999999999999999,
-      "fn": 0.04999999999999999,
-      "type": "punctuation",
-      "original_text": "existence; is",
-      "corrected_text": "existence, is",
-      "observed_line_number": 13,
-      "line_diff": 1,
-      "line_number_penalty": 0.1,
-      "judgement": "The predicted edit correctly matches the ground truth's edit type (punctuation) exactly. Although the predicted edit includes extra context ('existence; is' to 'existence, is'), it captures clearly the intended punctuation change made in the ground truth ('existence' to 'existence,'). The inclusion of additional words ('is') does not alter the correctness of identifying the intended punctuation edit. Therefore, the prediction accurately captures the core edit highlighted by the ground truth."
-    },
-    {
-      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -47,7 +33,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 3,
+      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -61,7 +47,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 4,
+      "observed_edit_num": 3,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -75,7 +61,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 5,
+      "observed_edit_num": 4,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -89,7 +75,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 6,
+      "observed_edit_num": 5,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -103,7 +89,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 7,
+      "observed_edit_num": 6,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -117,7 +103,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 8,
+      "observed_edit_num": 7,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -131,7 +117,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 9,
+      "observed_edit_num": 8,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -145,8 +131,22 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
+      "observed_edit_num": 9,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "existence; is",
+      "corrected_text": "existence, is",
+      "observed_line_number": 13,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
       "observed_edit_num": null,
-      "expected_edit_num": 2,
+      "expected_edit_num": 1,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -160,7 +160,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 3,
+      "expected_edit_num": 2,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -174,7 +174,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 4,
+      "expected_edit_num": 3,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -188,7 +188,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 5,
+      "expected_edit_num": 4,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -202,7 +202,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 6,
+      "expected_edit_num": 5,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -216,7 +216,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 7,
+      "expected_edit_num": 6,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -230,7 +230,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 8,
+      "expected_edit_num": 7,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -244,7 +244,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 9,
+      "expected_edit_num": 8,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -258,7 +258,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 10,
+      "expected_edit_num": 9,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -272,13 +272,27 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 11,
+      "expected_edit_num": 10,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "replacement",
       "original_text": "of",
       "corrected_text": "to",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 11,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "existence",
+      "corrected_text": "existence,",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

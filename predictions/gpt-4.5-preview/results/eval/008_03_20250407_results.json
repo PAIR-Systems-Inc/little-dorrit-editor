@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4.5-preview",
-  "date": "2025-04-08T22:42:27.381083",
+  "date": "2026-02-22T15:22:59.825205",
   "annotator": "GPT-4.5 Preview",
   "annotation_date": "2025-04-08T11:32:59.539359",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 11,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly matches the ground truth edit in both criteria. First, the edit type is exactly the same in both ('punctuation'). Second, the text content perfectly mirrors the ground truth change ('man slowly' \u2192 'man, slowly'). The discrepancy in line numbers is explicitly ignored based on instructions, and no other mismatch is found in the essential edit itself. Therefore, the predicted edit correctly captures the intention identified by the ground truth edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change from \"man slowly\" to \"man, slowly,\" correctly capturing the intended insertion of a comma after \"man.\" Line numbers are to be ignored, so the differing line_number does not affect correctness."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 11,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit type matches exactly the edit type in the ground truth ('punctuation'). Additionally, the core textual change\u2014the insertion of a comma between 'Chalons' and 'was'\u2014is accurately captured ('Chalons was' \u2192 'Chalons, was'). The difference in line numbers is explicitly ignored per instructions, so it does not affect evaluation. Therefore, both criteria (edit type accuracy and text content accuracy) are met, making the predicted edit correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same core change: inserting a comma after \"Chalons\" in the phrase \"Chalons was\" to become \"Chalons, was\". The original and corrected text strings match the ground truth intention. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 15,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The edit type matches exactly ('replacement'). The predicted edit correctly captures the core change identified in the ground truth edit: changing 'sodden' to 'soddened'. Although the prediction includes an additional word ('with') for context, the essential correction ('sodden' \u2192 'soddened') accurately represents the ground truth edit intention. Therefore, the predicted edit is correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The ground truth changes \"sodden\" to \"soddened\". The predicted edit changes \"sodden with\" to \"soddened with\", which includes extra surrounding context but preserves the same core substitution (sodden \u2192 soddened). Therefore, the essential intended correction is correctly captured."
     },
     {
       "observed_edit_num": 3,

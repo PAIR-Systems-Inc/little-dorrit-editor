@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4_5_preview",
-  "date": "2025-04-08T22:41:45.049157",
+  "date": "2026-02-22T15:49:20.693574",
   "annotator": "GPT-4.5 Preview (OR)",
   "annotation_date": "2025-04-08T00:51:09.608029",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 15,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type in both ground truth and prediction matches exactly, as both indicate a 'punctuation' edit. Furthermore, the text content also accurately captures the core intended change: inserting a comma after the word 'hers'. Both the original ('hers and') and corrected ('hers, and') texts are identical in the prediction and ground truth. According to the evaluation rules provided, line numbers are explicitly ignored. Therefore, the prediction fully and accurately represents the intended edit from the ground truth."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same core change, inserting a comma after \"hers\" (\"hers and\" \u2192 \"hers, and\"). The original and corrected text strings match the ground truth\u2019s intended correction. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 17,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type ('punctuation') matches exactly between ground truth and predicted edit. The text content also matches exactly: the predicted correction ('hers matters' \u2192 'hers, matters') accurately captures the punctuation insertion indicated by the ground truth. Line number discrepancies were explicitly ignored according to evaluation instructions, therefore the prediction correctly matches the intended edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both edits change \"hers matters\" to \"hers, matters\" by inserting a comma after \"hers.\" This captures the core intended correction with identical original and corrected text. Line numbers are ignored as instructed."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 23,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The edit type between ground truth ('punctuation') and predicted ('punctuation') exactly matches. The predicted edit ('moment with' \u2192 'moment, with') captures precisely the intended punctuation change indicated by the ground truth ('moment' \u2192 'moment,'). Since both the edit type and the text content exactly match the intention (adding a comma after 'moment'), the predicted edit is correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original span \"moment with\" and the same correction \"moment, with\", inserting a comma after \"moment\". The core change is identical. Therefore, the predicted edit correctly captures the ground truth intention."
     },
     {
       "observed_edit_num": 3,
@@ -58,7 +58,7 @@
       "observed_line_number": 25,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "The predicted edit type ('punctuation') matches exactly the ground truth edit type. Additionally, the text content correctly captures the intended punctuation change ('beautiful that' \u2192 'beautiful, that') precisely, with no differences. Hence, both edit type and text content are captured accurately."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same transformation: inserting a comma after \"beautiful\" in the phrase \"beautiful that\" to make it \"beautiful, that\". The original and corrected text strings are identical between ground truth and prediction, capturing the core intended change."
     },
     {
       "observed_edit_num": 4,

@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o-mini",
-  "date": "2025-04-08T23:48:44.414336",
+  "date": "2026-02-22T15:26:52.476283",
   "annotator": "GPT-4o Mini",
   "annotation_date": "2025-04-07T19:42:03.583185",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 24,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit matches exactly the edit type ('punctuation') specified in the ground truth. Additionally, the essential textual correction ('said' \u2192 'said,') is correctly captured by the prediction. The predicted edit omits the subsequent text context ('when'), but including or excluding surrounding context is acceptable as per instructions. Therefore, the core punctuation change is correctly addressed."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \u201csaid\u201d in the phrase \u201csaid when\u201d \u2192 \u201csaid, when.\u201d The prediction also captures the essential change by adding a comma after \u201csaid\u201d (\u201csaid\u201d \u2192 \u201csaid,\u201d). Although it does not include the following word \u201cwhen,\u201d it still represents the same core punctuation correction (comma after \u201csaid\u201d). Therefore, the prediction matches the ground truth\u2019s intended edit."
     },
     {
       "observed_edit_num": 1,

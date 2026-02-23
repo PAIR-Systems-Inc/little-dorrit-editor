@@ -1,6 +1,6 @@
 {
   "model_name": "or_llama_4_maverick",
-  "date": "2025-04-08T23:20:04.491641",
+  "date": "2026-02-22T15:59:27.540461",
   "annotator": "Llama 4 Maverick",
   "annotation_date": "2025-04-07T19:42:36.493650",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 7,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The prediction correctly matches the ground truth edit type ('replacement'). In terms of text content, the prediction accurately captures the core change intended by the ground truth: changing 'dryest snorts' to 'driest of snorts'. Although the predicted original text omits the preceding phrase 'of the,' this does not affect the core corrected text and clearly represents the intended correction ('dryest' \u2192 'driest of'). Thus, both edit type and core textual modification align accurately."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the predicted edit are labeled as a \"replacement,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"dryest\" to \"driest\" and inserts \"of\" so that \"dryest snorts\" becomes \"driest of snorts\" (within the larger phrase \"of the ... .\"). The predicted edit makes the same core change: \"dryest snorts\" \u2192 \"driest of snorts.\" Although the prediction omits surrounding context (\"of the\" and the final period), it correctly captures the essential intended correction (spelling change + insertion of \"of\")."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 29,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit correctly identifies the edit type as 'italicize', matching the ground truth exactly. The original and corrected text ('him') are consistent with the intention described in the ground truth. Although the predicted version shows '_him_' (which is a common Markdown indicator for italics), this stylistic difference does not change the core intention of italicizing the word. Hence, the predicted edit accurately captures both the edit type and the text content intended by the ground truth."
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"italicize,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth indicates that the word \"him\" should be italicized (same word before/after, formatting change only). The prediction also targets \"him\" and represents the italicization explicitly as \"_him_\". Although the ground truth\u2019s corrected_text field does not add markup, the core intended change\u2014italicizing \"him\"\u2014is correctly captured."
     },
     {
       "observed_edit_num": 2,

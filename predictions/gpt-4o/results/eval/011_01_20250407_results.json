@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:32:17.184444",
+  "date": "2026-02-22T15:25:33.411862",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-07T19:34:11.820149",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 23,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit type 'punctuation' matches exactly with the ground truth edit type. Additionally, the corrected text 'shore, and' accurately reflects the punctuation change specified in the ground truth edit ('shore and' \u2192 'shore, and'). Even though there is a difference in the indicated line numbers, this evaluation explicitly instructs to disregard line numbers. Therefore, since both type and core content changes match perfectly, the prediction is correct."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\nText Content Accuracy: Both specify the same original segment \"shore and\" and the same corrected form \"shore, and,\" capturing the core intended punctuation insertion (a comma after \"shore\"). Line numbers are to be ignored, so there is no mismatch affecting correctness."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 34,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit matches exactly the ground truth's intended edit type ('replacement'). Additionally, the textual correction from 'that' to 'than' is accurately captured. Although the predicted edit provides extra context by including the word 'once', this does not contradict or alter the core intended correction from 'that' to 'than'. Thus, the essential textual correction is properly identified and the edit type is correct, fulfilling both required criteria."
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction are \"replacement\" edits, so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth replaces \"that\" with \"than\". The prediction replaces the larger phrase \"that once\" with \"than once\", which preserves the core intended change (\"that\" \u2192 \"than\") while including additional surrounding context (\"once\"). This correctly captures the essential correction."
     },
     {
       "observed_edit_num": 2,

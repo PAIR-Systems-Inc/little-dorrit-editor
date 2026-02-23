@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4.5-preview",
-  "date": "2025-04-08T22:56:11.123852",
+  "date": "2026-02-22T15:23:50.712522",
   "annotator": "GPT-4.5 Preview",
   "annotation_date": "2025-04-07T20:16:13.515060",
   "details": [
@@ -16,24 +16,10 @@
       "observed_line_number": 7,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The edit type matches exactly (both labeled as 'replacement'). Regarding text content accuracy, the predicted edit ('dryest snorts' \u2192 'driest of snorts') correctly captures the core intention of the ground truth edit (changing 'dryest snorts' to the more accurate 'driest of snorts'). The minor difference in the inclusion of 'of the' in the ground truth versus just 'of' in the prediction does not affect the core edit intention, as the essential correction ('dryest' \u2192 'driest of') is accurately preserved. Thus, the prediction successfully captures the intention of the ground truth edit."
+      "judgement": "1. Edit Type Accuracy: Both ground truth and predicted edits are of type \"replacement\", so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth changes \"dryest\" to \"driest\" and inserts \"of\" so that \"dryest snorts\" becomes \"driest of snorts\" (within the larger phrase \"of the \u2026 .\"). The predicted edit makes the same essential change: \"dryest snorts\" \u2192 \"driest of snorts\". Although the prediction omits surrounding context (\"of the\" and the final period), it captures the core intended correction (spelling change + insertion of \"of\")."
     },
     {
       "observed_edit_num": 1,
-      "expected_edit_num": 1,
-      "tp": 0.6,
-      "fp": 0.2,
-      "fn": 0.2,
-      "type": "italicize",
-      "original_text": "benevolence bubbling out of him",
-      "corrected_text": "benevolence bubbling out of him",
-      "observed_line_number": 28,
-      "line_diff": 2,
-      "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly identifies the edit type as 'italicize', matching exactly with the ground truth. Regarding text content accuracy, although the predicted edit includes additional context ('benevolence bubbling out of him') instead of just ('him'), it still correctly captures and applies the core essential edit indicated by the ground truth: italicizing the word 'him'. The presence of extra context around the specifically intended italicized word is acceptable based on the evaluation criteria. Therefore, both the edit type and text content core change are correctly captured, making the predicted edit correct."
-    },
-    {
-      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -47,7 +33,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 3,
+      "observed_edit_num": 2,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -61,7 +47,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 4,
+      "observed_edit_num": 3,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -75,7 +61,7 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
-      "observed_edit_num": 5,
+      "observed_edit_num": 4,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -89,8 +75,22 @@
       "judgement": "False positive: no matching ground truth edit found"
     },
     {
+      "observed_edit_num": 5,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "observed_line_number": 28,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
       "observed_edit_num": null,
-      "expected_edit_num": 2,
+      "expected_edit_num": 1,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -104,7 +104,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 3,
+      "expected_edit_num": 2,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -118,7 +118,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 4,
+      "expected_edit_num": 3,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -132,7 +132,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 5,
+      "expected_edit_num": 4,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -146,7 +146,7 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 6,
+      "expected_edit_num": 5,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
@@ -160,13 +160,27 @@
     },
     {
       "observed_edit_num": null,
-      "expected_edit_num": 7,
+      "expected_edit_num": 6,
       "tp": 0.0,
       "fp": 0.0,
       "fn": 1.0,
       "type": "punctuation",
       "original_text": "twenty;",
       "corrected_text": "twenty:",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 7,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

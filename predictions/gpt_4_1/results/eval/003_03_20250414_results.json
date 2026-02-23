@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_4_1",
-  "date": "2025-04-14T13:43:59.497284",
+  "date": "2026-02-22T15:28:30.896000",
   "annotator": "GPT-4.1",
   "annotation_date": "2025-04-14T11:53:45.819507",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 15,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The predicted edit correctly identifies the edit type ('punctuation'), matching exactly the ground truth type. The essential punctuation edit from 'pockets and' to 'pockets, and' is accurately captured. Although the prediction includes an additional word ('rattling'), this additional context does not alter the core correction being made. Therefore, both the edit type and the text content capturing the essential comma insertion are correctly identified."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"pockets\" in the phrase \"pockets and\" \u2192 \"pockets, and.\" The prediction makes the same core punctuation change\u2014adding a comma after \"pockets\"\u2014but includes additional surrounding context (\"rattling\"). Since the essential edit (\"pockets\" \u2192 \"pockets,\") is correctly captured, the text content matches the ground truth\u2019s intention."
     },
     {
       "observed_edit_num": 1,

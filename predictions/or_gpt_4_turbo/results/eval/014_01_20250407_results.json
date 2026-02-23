@@ -1,6 +1,6 @@
 {
   "model_name": "or_gpt_4_turbo",
-  "date": "2025-04-09T00:40:45.701175",
+  "date": "2026-02-22T15:51:44.913950",
   "annotator": "GPT-4o (OR)",
   "annotation_date": "2025-04-07T21:30:32.295312",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 9,
       "line_diff": 2,
       "line_number_penalty": 0.4,
-      "judgement": "The edit type accurately matches (both are punctuation edits). The predicted edit correctly captures the essential punctuation change intended by the ground truth\u2014that is, the insertion of a comma after the word 'quickly'. Although the prediction includes an additional word 'so' before 'quickly', the core punctuation insertion ('quickly' \u2192 'quickly,') exactly corresponds to the ground truth's intended edit. According to the specified evaluation criteria, additional context words are allowed, making the predicted edit correct."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after the word \"quickly\" (\"quickly that\" \u2192 \"quickly, that\"). The prediction also inserts a comma after \"quickly\" in the same construction, just with extra preceding context (\"so quickly that\" \u2192 \"so quickly, that\"). This captures the same core punctuation correction intended by the ground truth."
     },
     {
       "observed_edit_num": 1,

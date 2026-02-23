@@ -1,6 +1,6 @@
 {
   "model_name": "gpt-4o",
-  "date": "2025-04-08T22:18:01.105861",
+  "date": "2026-02-22T15:24:15.837448",
   "annotator": "GPT-4o",
   "annotation_date": "2025-04-07T23:20:52.958622",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 27,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit's type ('capitalization') exactly matches the ground truth edit type. Both the ground truth and prediction make the same essential capitalization change: changing 'why' to 'Why'. Although the ground truth mentions additional words ('why did he dine') versus just the single word ('why') in the prediction, this does not affect the essential core of the edit, which is focused specifically on capitalizing the first letter of the sentence. Ignoring line numbers as instructed, the predicted edit accurately captures the primary intention of the ground truth edit."
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction specify the edit type as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is to capitalize the initial \"why\" in the phrase \"why did he dine\" to \"Why did he dine\". The prediction captures the same core change by converting \"why\" to \"Why\". Although it includes less surrounding context, it correctly represents the essential capitalization edit intended in the ground truth."
     },
     {
       "observed_edit_num": null,

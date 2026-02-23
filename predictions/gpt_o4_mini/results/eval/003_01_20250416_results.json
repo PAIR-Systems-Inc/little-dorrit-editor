@@ -1,6 +1,6 @@
 {
   "model_name": "gpt_o4_mini",
-  "date": "2025-04-17T06:31:45.092436",
+  "date": "2026-02-22T15:35:01.956623",
   "annotator": "GPT-o4 Mini",
   "annotation_date": "2025-04-16T21:17:55.466078",
   "details": [
@@ -16,7 +16,7 @@
       "observed_line_number": 2,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The edit type 'punctuation' matches exactly in both the predicted and ground truth edits, satisfying criterion 1. The text content change also matches precisely, 'howling over' \u2192 'howling, over'. Even though line numbers differ, the instructions explicitly state these should be ignored. Therefore, since both the edit type and the essential text edit match exactly, the predicted edit correctly captures the ground truth's intention."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"punctuation\" edit, so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"howling over\") and the same corrected text (\"howling, over\"), capturing the identical core change (inserting a comma after \"howling\"). Ignoring line numbers, the prediction fully matches the ground truth intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 2,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "The predicted edit accurately matches the ground truth edit. Specifically, both the edit type ('punctuation') and the core textual correction ('yonder to-day' changed to 'yonder, to-day') are the same. Although the line numbers differ, the evaluation instructions explicitly state to ignore line numbers completely. Thus, the prediction successfully captures the essential edit that the ground truth intended."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"yonder to-day\") and the same corrected text (\"yonder, to-day\"), capturing the identical core change: inserting a comma after \"yonder\". Therefore, the predicted edit matches the ground truth intention."
     },
     {
       "observed_edit_num": 2,
