@@ -87803,7 +87803,10 @@
         ],
         "file_id": "014"
       }
-    ]
+    ],
+    "release_date": "2026-03-03",
+    "release_source": "https://openai.com/index/gpt-5-3-instant/",
+    "release_notes": "Alias to gpt-5.3-chat-latest; using the GPT-5.3 Instant launch date."
   },
   {
     "model_name": "GPT-5.3 Codex (OR)",
@@ -91911,7 +91914,10 @@
         ],
         "file_id": "014"
       }
-    ]
+    ],
+    "release_date": "2026-02-05",
+    "release_source": "https://openai.com/index/introducing-gpt-5-3-codex/",
+    "release_notes": "OpenRouter route to the same GPT-5.3-Codex release."
   },
   {
     "model_name": "GPT-5.4",
@@ -95991,7 +95997,9 @@
         ],
         "file_id": "014"
       }
-    ]
+    ],
+    "release_date": "2026-03-05",
+    "release_source": "https://openai.com/index/introducing-gpt-5-4/"
   },
   {
     "model_name": "GPT-o4 Mini",

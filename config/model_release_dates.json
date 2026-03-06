@@ -70,9 +70,23 @@
     "release_date": "2025-12-11",
     "release_source": "https://openai.com/index/introducing-gpt-5-2/"
   },
+  "or_openai_gpt_5_3_codex": {
+    "release_date": "2026-02-05",
+    "release_source": "https://openai.com/index/introducing-gpt-5-3-codex/",
+    "release_notes": "OpenRouter route to the same GPT-5.3-Codex release."
+  },
   "gpt_o4_mini": {
     "release_date": "2025-04-16",
     "release_source": "https://openai.com/index/introducing-o3-and-o4-mini/"
+  },
+  "gpt-5.3-chat": {
+    "release_date": "2026-03-03",
+    "release_source": "https://openai.com/index/gpt-5-3-instant/",
+    "release_notes": "Alias to gpt-5.3-chat-latest; using the GPT-5.3 Instant launch date."
+  },
+  "gpt-5.4": {
+    "release_date": "2026-03-05",
+    "release_source": "https://openai.com/index/introducing-gpt-5-4/"
   },
   "or_gemini_2_5_pro_preview_03_25": {
     "release_date": "2025-03-25",
