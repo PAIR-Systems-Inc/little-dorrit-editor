@@ -1,0 +1,50 @@
+{
+  "model_name": "or_openai_gpt_5_3_codex",
+  "date": "2026-03-05T19:28:43.626477",
+  "annotator": "GPT-5.3 Codex (OR)",
+  "annotation_date": "2026-03-05T19:21:47.053871",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth intends to capitalize the first word of the phrase, changing \"why did he dine\" to \"Why did he dine.\" The prediction captures this core change by changing \"why\" to \"Why.\" Although it includes less surrounding context, it correctly represents the essential capitalization correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "stones!",
+      "corrected_text": "stones?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the terminal punctuation from an exclamation mark to a question mark in the phrase \"cold stones!\" \u2192 \"cold stones?\". The prediction captures the same core change on the relevant word/segment: \"stones!\" \u2192 \"stones?\". Although it includes less surrounding context (omitting \"cold\"), it still reflects the essential intended edit (replacing ! with ? after \"stones\"). Therefore, the text content matches the ground truth's intention."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

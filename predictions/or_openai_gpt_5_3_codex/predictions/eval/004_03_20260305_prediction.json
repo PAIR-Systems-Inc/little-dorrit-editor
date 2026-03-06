@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "line_number": 10,
+      "page": "page_184"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "think, why",
+      "corrected_text": "think, \"Why",
+      "line_number": 28,
+      "page": "page_184"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 28,
+      "page": "page_184"
+    }
+  ],
+  "annotator": "GPT-5.3 Codex (OR)",
+  "annotation_date": "2026-03-05T19:21:55.946389",
+  "verified": false
+}

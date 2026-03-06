@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt-5.4",
+  "date": "2026-03-05T19:34:10.251087",
+  "annotator": "GPT-5.4",
+  "annotation_date": "2026-03-05T19:27:41.010484",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both edits change \"Fellow Travellers\" to \"Fellow Travellers.\" by adding a period at the end. This captures the same core punctuation correction with identical original and corrected text. Therefore, the prediction matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "howling",
+      "corrected_text": "howling,",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction label the change as \"punctuation\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after the word \"howling\" in the phrase \"howling over\" \u2192 \"howling, over\". The predicted edit captures this same core punctuation change by editing \"howling\" \u2192 \"howling,\". Although it does not include the following word \"over\" in its span, it still reflects the essential intended correction (adding a comma after \"howling\")."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder",
+      "corrected_text": "yonder,",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth intends to insert a comma after the word \"yonder\" in the phrase \"yonder to-day\" \u2192 \"yonder, to-day\". The prediction captures this same core change by editing \"yonder\" \u2192 \"yonder,\". Although it omits the following word \"to-day\" as context, it still correctly represents the essential punctuation insertion at the correct location."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"capitalization\" edit, so the type matches exactly. 2) Text Content Accuracy: Both specify the same core change from \"Sir\" to \"sir\". The predicted edit captures the identical original and corrected text, matching the ground truth intention."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "pockets",
+      "corrected_text": "pockets,",
+      "observed_line_number": 17,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are of type \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to insert a comma after the word \"pockets\" in the phrase \"pockets and\" \u2192 \"pockets, and\". The predicted edit captures the same core change by changing \"pockets\" \u2192 \"pockets,\". Although it omits the following word \"and\" from the context, it still represents the essential punctuation insertion at the correct location. Therefore, the prediction matches the ground truth\u2019s intention."
+    }
+  ]
+}

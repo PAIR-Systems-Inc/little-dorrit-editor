@@ -8,14 +8,11 @@ on the leaderboard site. No metrics are calculated server-side - all metric calc
 is deferred to the JavaScript client.
 """
 
-import json
 import datetime
+import json
 from pathlib import Path
-import glob
 import re
 from typing import Dict, List, Any, Optional
-
-from little_dorrit_editor.types import EditMatch, EvaluationResult
 
 
 def extract_file_id(filename: str) -> str:
@@ -91,7 +88,31 @@ def load_config_file(config_path: Path) -> Dict[str, Any]:
         return default_config
 
 
-def collect_model_results(predictions_dir: Path, shot_filter: Optional[int] = None) -> List[Dict[str, Any]]:
+def load_release_metadata(metadata_path: Path) -> Dict[str, Dict[str, Any]]:
+    """Load model release metadata keyed by leaderboard model ID."""
+    if not metadata_path.exists():
+        print(f"Warning: Release metadata not found: {metadata_path}")
+        return {}
+
+    try:
+        with open(metadata_path, "r") as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"Error loading release metadata {metadata_path}: {e}")
+        return {}
+
+    if not isinstance(data, dict):
+        print(f"Warning: Release metadata must be a JSON object: {metadata_path}")
+        return {}
+
+    return data
+
+
+def collect_model_results(
+    predictions_dir: Path,
+    shot_filter: Optional[int] = None,
+    release_metadata: Optional[Dict[str, Dict[str, Any]]] = None,
+) -> List[Dict[str, Any]]:
     """Collect results for all models in the predictions directory without calculating metrics.
     
     Args:
@@ -102,6 +123,7 @@ def collect_model_results(predictions_dir: Path, shot_filter: Optional[int] = No
         List of model results with raw data for client-side processing
     """
     all_model_results = []
+    release_metadata = release_metadata or {}
     
     # Find all model directories
     model_dirs = [d for d in predictions_dir.iterdir() if d.is_dir()]
@@ -213,6 +235,10 @@ def collect_model_results(predictions_dir: Path, shot_filter: Optional[int] = No
             "annotation_date": annotation_date,  # Include annotation date if available
             "file_results": file_results  # Include all raw file results for client-side processing
         }
+
+        release_info = release_metadata.get(model_name, {})
+        if release_info:
+            model_result.update(release_info)
         
         all_model_results.append(model_result)
     
@@ -226,14 +252,20 @@ def main():
     project_root = Path(__file__).parent.parent
     predictions_dir = project_root / "predictions"
     output_path = project_root / "docs" / "results.json"
+    release_metadata_path = project_root / "config" / "model_release_dates.json"
     
     # Default shot count for the leaderboard (2 as per requirements)
     shot_filter = 2
     
     print(f"Collecting results from {predictions_dir} (shot filter: {shot_filter})")
+    release_metadata = load_release_metadata(release_metadata_path)
     
     # Collect raw model results without calculating metrics
-    model_results = collect_model_results(predictions_dir, shot_filter=shot_filter)
+    model_results = collect_model_results(
+        predictions_dir,
+        shot_filter=shot_filter,
+        release_metadata=release_metadata,
+    )
     
     if not model_results:
         print("Warning: No model results found")

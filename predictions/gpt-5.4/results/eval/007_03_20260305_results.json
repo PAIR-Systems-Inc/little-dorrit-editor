@@ -1,0 +1,22 @@
+{
+  "model_name": "gpt-5.4",
+  "date": "2026-03-05T19:35:46.926400",
+  "annotator": "GPT-5.4",
+  "annotation_date": "2026-03-05T19:29:10.999967",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow,",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intention is to ensure the phrase ends with a period: \"Sun and Shadow\" \u2192 \"Sun and Shadow.\". The predicted edit also results in the same corrected text, changing the ending punctuation to a period: \"Sun and Shadow,\" \u2192 \"Sun and Shadow.\". Although the predicted original text includes a comma that is not present in the ground truth original, the core intended correction (making the ending punctuation a period) is captured correctly."
+    }
+  ]
+}

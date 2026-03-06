@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt-5.4",
+  "date": "2026-03-05T19:36:38.595642",
+  "annotator": "GPT-5.4",
+  "annotation_date": "2026-03-05T19:32:08.155449",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit have the type set to \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same transformation: \"hers and\" \u2192 \"hers, and\", correctly capturing the intended insertion of a comma after \"hers\". There is no discrepancy in the core change."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly. Text Content Accuracy: Both edits change \"hers matters\" to \"hers, matters\" by inserting a comma after \"hers\". The core punctuation change is identical, so the text content matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 24,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the types match exactly.\n\nText Content Accuracy: Both edits target the same original string \"moment with\" and correct it to \"moment, with\" by inserting a comma after \"moment\". This captures the core intended change precisely. Line number differences are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 26,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit are labeled as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both edits change \"beautiful that\" to \"beautiful, that\", inserting a comma after \"beautiful\". The core punctuation change is identical, so the text content matches the ground truth intention. Line numbers are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 33,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as a \"capitalization\" edit, so the type matches exactly.\nText Content Accuracy: Both edits change the same word from \"they\" to \"They\", capturing the identical core capitalization correction. Line number difference is ignored as instructed."
+    }
+  ]
+}

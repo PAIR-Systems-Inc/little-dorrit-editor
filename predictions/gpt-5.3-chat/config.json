@@ -1,0 +1,8 @@
+{
+  "model_id": "gpt-5.3-chat",
+  "display_name": "GPT-5.3 Chat",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-03-05",
+  "notes": "Benchmark run with 2-shot learning"
+}

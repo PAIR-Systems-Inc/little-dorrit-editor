@@ -1,0 +1,78 @@
+{
+  "model_name": "or_openai_gpt_5_3_codex",
+  "date": "2026-03-05T19:31:02.479970",
+  "annotator": "GPT-5.3 Codex (OR)",
+  "annotation_date": "2026-03-05T19:24:19.541973",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change from \"hers and\" to \"hers, and,\" inserting a comma after \"hers.\" This captures the core intended punctuation correction with identical original and corrected text."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly. Text Content Accuracy: Both edits change \"hers matters\" to \"hers, matters\" by inserting a comma after \"hers\". The core change is identical in the prediction and ground truth. Therefore, the predicted edit correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\nText Content Accuracy: Both specify the identical correction from \"moment with\" to \"moment, with,\" inserting a comma after \"moment.\" The core change is captured exactly with no discrepancy."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"beautiful that\") and the same corrected text (\"beautiful, that\"), capturing the identical core change\u2014adding a comma after \"beautiful\". Therefore the prediction matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"capitalization,\" which exactly matches the ground truth. Text Content Accuracy: Both ground truth and prediction change the same token from \"they\" to \"They,\" capturing the identical core correction with no discrepancy. Therefore, the prediction correctly matches the ground truth intention."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XXIX",
+      "corrected_text": "Chapter XXIX.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Mrs. Flintwinch goes on Dreaming",
+      "corrected_text": "Mrs. Flintwinch goes on Dreaming.",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "city",
+      "corrected_text": "city (car)",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "return of",
+      "corrected_text": "return to",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them images",
+      "corrected_text": "them; images",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it to",
+      "corrected_text": "it; to",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still to",
+      "corrected_text": "stand-still; to",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view; by",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence is",
+      "corrected_text": "existence; is",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "her liege lord",
+      "corrected_text": "her liege-lord",
+      "line_number": 23,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-5.3 Chat",
+  "annotation_date": "2026-03-05T19:20:12.261062",
+  "verified": false
+}

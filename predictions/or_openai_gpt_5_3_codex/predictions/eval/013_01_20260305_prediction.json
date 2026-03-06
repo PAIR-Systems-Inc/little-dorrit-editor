@@ -1,0 +1,52 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "driest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that-boiling-over",
+      "corrected_text": "that boiling-over",
+      "line_number": 11,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him)",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "Your own recompense for all this, Mr. Pancks,",
+      "corrected_text": "*Your own recompense for all this, Mr. Pancks,*",
+      "line_number": 31,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "451"
+    }
+  ],
+  "annotator": "GPT-5.3 Codex (OR)",
+  "annotation_date": "2026-03-05T19:27:03.282354",
+  "verified": false
+}

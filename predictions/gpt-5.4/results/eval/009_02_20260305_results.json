@@ -1,0 +1,92 @@
+{
+  "model_name": "gpt-5.4",
+  "date": "2026-03-05T19:36:26.172387",
+  "annotator": "GPT-5.4",
+  "annotation_date": "2026-03-05T19:32:08.403613",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The predicted type is \"punctuation,\" which exactly matches the ground truth.\nText Content Accuracy: Both ground truth and prediction change \"heart so\" to \"heart, so,\" inserting a comma after \"heart.\" The core punctuation correction is identical."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "observed_line_number": 32,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the type matches exactly. Text Content Accuracy: Both edits change the same original text \"length said\" to the same corrected text \"length, said\", inserting a comma after \"length\". This captures the core intended change precisely. Line numbers are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "hope",
+      "corrected_text": "hoped",
+      "observed_line_number": 35,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement,\" so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth replaces \"I hope so\" with \"I hoped so,\" which is essentially changing the verb form \"hope\" \u2192 \"hoped\" while keeping the surrounding words the same. The predicted edit captures this core change directly by replacing \"hope\" with \"hoped.\" Although it provides less surrounding context than the ground truth, it correctly represents the essential intended correction."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "thanked",
+      "corrected_text": "indeed thanked",
+      "observed_line_number": 28,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "generous, Mr.",
+      "corrected_text": "generous Mr.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "insertion",
+      "original_text": "as she did",
+      "corrected_text": "as indeed she did",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

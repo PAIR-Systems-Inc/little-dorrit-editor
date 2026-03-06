@@ -1,0 +1,59 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam;",
+      "corrected_text": "Clennam,",
+      "line_number": 1,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "dryest snorts",
+      "corrected_text": "dryest of snorts",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "little",
+      "corrected_text": "little",
+      "line_number": 10,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I",
+      "corrected_text": "now, I",
+      "line_number": 34,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "451"
+    }
+  ],
+  "annotator": "GPT-5.4",
+  "annotation_date": "2026-03-05T19:36:08.988651",
+  "verified": false
+}

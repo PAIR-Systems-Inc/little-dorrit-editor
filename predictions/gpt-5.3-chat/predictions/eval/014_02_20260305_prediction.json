@@ -1,0 +1,31 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "bedroom",
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "For Mr. Pancks",
+      "corrected_text": "For, Mr. Pancks",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "making me not",
+      "corrected_text": "making me, not",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "GPT-5.3 Chat",
+  "annotation_date": "2026-03-05T19:20:29.382035",
+  "verified": false
+}

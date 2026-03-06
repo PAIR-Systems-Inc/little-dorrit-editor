@@ -1,0 +1,92 @@
+{
+  "model_name": "gpt-5.3-chat",
+  "date": "2026-03-05T19:22:43.062148",
+  "annotator": "GPT-5.3 Chat",
+  "annotation_date": "2026-03-05T19:18:11.653064",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Travellers",
+      "corrected_text": "Travellers.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is adding a period at the end of the phrase \"Fellow Travellers\" (i.e., after \"Travellers\"). The prediction also adds a period after \"Travellers\". Although the prediction uses less surrounding context (it edits only \"Travellers\" rather than \"Fellow Travellers\"), it captures the same essential punctuation change at the same word boundary. Therefore, the core intended correction is correctly represented."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"yonder to-day\") and the same corrected text (\"yonder, to-day\"), capturing the identical core change: insertion of a comma after \"yonder\". Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": 17,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n2. Text Content Accuracy: Both specify the same core change: inserting a comma after \"pockets\" in the phrase \"pockets and\" to make it \"pockets, and\". The original and corrected texts match exactly, so the intended punctuation correction is captured."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "Sir",
+      "corrected_text": "Sir",
+      "observed_line_number": 1,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt-5.4",
+  "date": "2026-03-05T19:37:03.069234",
+  "annotator": "GPT-5.4",
+  "annotation_date": "2026-03-05T19:33:01.632494",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma after \"hers\" in the phrase \"hers and\" \u2192 \"hers, and.\" The predicted edit \"hers\" \u2192 \"hers,\" captures the same core punctuation change (adding a comma immediately after \"hers\"). Although it omits the following word \"and\" as context, it still correctly represents the essential intended correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"hers matters\" to \"hers, matters,\" which is fundamentally an insertion of a comma after \"hers.\" The predicted edit changes \"hers\" to \"hers,\", which captures the same core punctuation change (adding a comma immediately after \"hers\"). Although the prediction includes less surrounding context (it omits \"matters\"), it still reflects the essential intended correction."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment",
+      "corrected_text": "moment,",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after the word \"moment\" in the phrase \"moment with\" \u2192 \"moment, with\". The predicted edit \"moment\" \u2192 \"moment,\" captures the same essential punctuation change (adding a comma immediately after \"moment\"). Although it provides less surrounding context (it omits \"with\"), it still represents the core intended correction."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful",
+      "corrected_text": "beautiful,",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after the word \"beautiful\" in the phrase \"beautiful that\" \u2192 \"beautiful, that.\" The predicted edit \"beautiful\" \u2192 \"beautiful,\" captures the same core punctuation insertion (adding a comma immediately after \"beautiful\"). Although it provides less surrounding context (it omits \"that\"), it still represents the essential intended correction."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization\", so the type matches exactly.\n\nText Content Accuracy: Both specify the same core change from \"they\" to \"They\". There is no discrepancy in the original or corrected text. Therefore, the prediction captures the intended edit."
+    }
+  ]
+}

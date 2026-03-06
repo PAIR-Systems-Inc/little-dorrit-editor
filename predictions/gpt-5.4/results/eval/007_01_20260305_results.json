@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-5.4",
+  "date": "2026-03-05T19:35:21.661568",
+  "annotator": "GPT-5.4",
+  "annotation_date": "2026-03-05T19:28:49.829447",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and predicted edit have the type \"punctuation\", so the edit type matches exactly. Text Content Accuracy: Both specify the same change, adding a period to transform \"Sun and Shadow\" into \"Sun and Shadow.\". The core punctuation correction is captured identically. Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

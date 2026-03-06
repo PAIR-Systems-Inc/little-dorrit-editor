@@ -1,0 +1,80 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about and",
+      "corrected_text": "about, and",
+      "line_number": 13,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said when",
+      "corrected_text": "said, when",
+      "line_number": 23,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 25,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 29,
+      "page": "352"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 40,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 44,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia, So",
+      "corrected_text": "Vecchia. So",
+      "line_number": 46,
+      "page": "352"
+    }
+  ],
+  "annotator": "GPT-5.4",
+  "annotation_date": "2026-03-05T19:31:08.762450",
+  "verified": false
+}

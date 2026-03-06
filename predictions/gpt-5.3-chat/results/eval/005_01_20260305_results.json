@@ -1,0 +1,50 @@
+{
+  "model_name": "gpt-5.3-chat",
+  "date": "2026-03-05T19:23:14.900435",
+  "annotator": "GPT-5.3 Chat",
+  "annotation_date": "2026-03-05T19:18:10.701731",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 33,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"if he\" to \"If he\", which is specifically capitalizing the word \"if\" at the start of the phrase. The prediction changes \"if\" to \"If\", capturing the same core capitalization change. Although it omits the following word (\"he\"), the essential intended correction (capitalizing \"if\") is correctly represented."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 36,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction specify a \"replacement\" edit, so the edit type matches.\n\n2) Text Content Accuracy: The ground truth replaces \"said Clennam\" with \"asked Clennam\". The prediction replaces \"said\" with \"asked\". This captures the core intended change (\"said\" \u2192 \"asked\"). Although the prediction omits the surrounding word \"Clennam\" from both original and corrected text, it still represents the same essential replacement within the phrase, so the intended correction is correctly captured."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "do",
+      "corrected_text": "do?",
+      "observed_line_number": 33,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

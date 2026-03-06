@@ -1,0 +1,45 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "said Clennam:",
+      "corrected_text": "said Clennam;",
+      "line_number": 1,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "driest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 5,
+      "page": "page_451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "been a little premature",
+      "corrected_text": "been a little premature.",
+      "line_number": 8,
+      "page": "page_451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 21,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 27,
+      "page": "page_451"
+    }
+  ],
+  "annotator": "GPT-5.3 Chat",
+  "annotation_date": "2026-03-05T19:20:21.355844",
+  "verified": false
+}

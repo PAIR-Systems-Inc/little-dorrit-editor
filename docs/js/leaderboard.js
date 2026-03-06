@@ -1,6 +1,15 @@
 // Load data from results.json
 let leaderboardData = [];
 
+function escapeHtml(value) {
+    return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll("\"", "&quot;")
+        .replaceAll("'", "&#39;");
+}
+
 // Create and configure the leaderboard table
 const leaderboardTable = new Tabulator("#leaderboard-table", {
     data: leaderboardData,
@@ -46,6 +55,25 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
                     return `<span class="medal ${medalClass}">${medalText}</span>${modelWithShots}`;
                 }
                 return modelWithShots;
+            }
+        },
+        {
+            title: "Date Released",
+            field: "releaseDate",
+            sorter: "date",
+            headerHozAlign: "center",
+            hozAlign: "center",
+            width: 125,
+            formatter: function(cell) {
+                const row = cell.getRow().getData();
+                const displayValue = row.releaseDateDisplay || "Unknown";
+                const notes = row.releaseNotes ? ` title="${escapeHtml(row.releaseNotes)}"` : "";
+
+                if (!row.releaseSource) {
+                    return `<span${notes}>${escapeHtml(displayValue)}</span>`;
+                }
+
+                return `<a href="${escapeHtml(row.releaseSource)}" target="_blank" rel="noreferrer"${notes}>${escapeHtml(displayValue)}</a>`;
             }
         },
         {
@@ -96,7 +124,7 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
             }
         },
         {
-            title: "Date",
+            title: "Run Date",
             field: "date",
             sorter: "date",
             headerHozAlign: "center",
@@ -631,6 +659,10 @@ document.addEventListener("DOMContentLoaded", async function() {
             modelId: model.model_id || model.model_name, // Use model_id as primary key
             model: model.model_name,
             shots: model.shots || 2,
+            releaseDate: model.release_date || "",
+            releaseDateDisplay: model.release_display || model.release_date || "Unknown",
+            releaseSource: model.release_source || "",
+            releaseNotes: model.release_notes || "",
             f1Score: model.f1_score,
             confidenceInterval: "pending...",
             precision: model.precision,

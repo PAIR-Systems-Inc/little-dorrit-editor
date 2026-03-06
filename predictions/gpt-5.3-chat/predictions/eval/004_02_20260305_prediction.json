@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "think why",
+      "corrected_text": "think, why",
+      "line_number": 23,
+      "page": "184"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stones\" She",
+      "corrected_text": "stones!\" She",
+      "line_number": 23,
+      "page": "184"
+    }
+  ],
+  "annotator": "GPT-5.3 Chat",
+  "annotation_date": "2026-03-05T19:18:13.156391",
+  "verified": false
+}
