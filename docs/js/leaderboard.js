@@ -30,7 +30,7 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
         {
             title: "Model",
             field: "model",
-            widthGrow: 3,
+            widthGrow: 2.4,
             formatter: function(cell) {
                 const value = cell.getValue();
                 const row = cell.getRow().getData();
@@ -55,25 +55,6 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
                     return `<span class="medal ${medalClass}">${medalText}</span>${modelWithShots}`;
                 }
                 return modelWithShots;
-            }
-        },
-        {
-            title: "Date Released",
-            field: "releaseDate",
-            sorter: "date",
-            headerHozAlign: "center",
-            hozAlign: "center",
-            width: 125,
-            formatter: function(cell) {
-                const row = cell.getRow().getData();
-                const displayValue = row.releaseDateDisplay || "Unknown";
-                const notes = row.releaseNotes ? ` title="${escapeHtml(row.releaseNotes)}"` : "";
-
-                if (!row.releaseSource) {
-                    return `<span${notes}>${escapeHtml(displayValue)}</span>`;
-                }
-
-                return `<a href="${escapeHtml(row.releaseSource)}" target="_blank" rel="noreferrer"${notes}>${escapeHtml(displayValue)}</a>`;
             }
         },
         {
@@ -124,12 +105,31 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
             }
         },
         {
-            title: "Run Date",
+            title: "Eval Date",
             field: "date",
             sorter: "date",
             headerHozAlign: "center",
             hozAlign: "center",
             width: 100
+        },
+        {
+            title: "Date Released",
+            field: "releaseDate",
+            sorter: "date",
+            headerHozAlign: "center",
+            hozAlign: "center",
+            width: 145,
+            formatter: function(cell) {
+                const row = cell.getRow().getData();
+                const displayValue = row.releaseDateDisplay || "Unknown";
+                const notes = row.releaseNotes ? ` title="${escapeHtml(row.releaseNotes)}"` : "";
+
+                if (!row.releaseSource) {
+                    return `<span${notes}>${escapeHtml(displayValue)}</span>`;
+                }
+
+                return `<a href="${escapeHtml(row.releaseSource)}" target="_blank" rel="noreferrer"${notes}>${escapeHtml(displayValue)}</a>`;
+            }
         }
     ]
 });
