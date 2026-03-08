@@ -1,0 +1,80 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "far straiter and narrower than the broad",
+      "corrected_text": "far straiter and narrower than the broad high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 4,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 19,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "well but",
+      "corrected_text": "well; but",
+      "line_number": 20,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "her for",
+      "corrected_text": "her, for",
+      "line_number": 20,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said when",
+      "corrected_text": "said, when",
+      "line_number": 25,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 28,
+      "page": "352"
+    },
+    {
+      "type": "insertion",
+      "original_text": "and said",
+      "corrected_text": "and said, (comma)",
+      "line_number": 28,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 32,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sir couldn't",
+      "corrected_text": "sir, couldn't",
+      "line_number": 35,
+      "page": "352"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T09:53:49.092625",
+  "verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "are\u2014\"He was going",
+      "corrected_text": "are\u2014\"He was going",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "\"why did he dine to",
+      "corrected_text": "\"why did he dine to",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "stones?\" She",
+      "corrected_text": "stones?\" She",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T09:51:58.369211",
+  "verified": false
+}

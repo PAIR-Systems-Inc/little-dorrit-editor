@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Shadow.",
+      "corrected_text": "Shadow. Period here?",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Opus 4.6",
+  "annotation_date": "2026-03-08T10:04:17.761153",
+  "verified": false
+}

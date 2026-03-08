@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 10,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "generous Mr.",
+      "corrected_text": "generous, Mr.",
+      "line_number": 23,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "tially up into his face, with some hurried words to the effect that she thanked him from her heart (as",
+      "corrected_text": "indeed thanked him from her heart (as",
+      "line_number": 26,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ness), she",
+      "corrected_text": "ness), she",
+      "line_number": 28,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length, said",
+      "corrected_text": "length, said",
+      "line_number": 31,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 34,
+      "page": "369"
+    }
+  ],
+  "annotator": "Claude Opus 4.6",
+  "annotation_date": "2026-03-08T10:05:36.827813",
+  "verified": false
+}

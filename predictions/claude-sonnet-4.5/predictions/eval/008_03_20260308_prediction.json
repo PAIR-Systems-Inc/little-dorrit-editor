@@ -1,0 +1,94 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Sa\u00f4ne",
+      "corrected_text": "Sa\u00f4ne.",
+      "line_number": 1,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "heavily; and",
+      "corrected_text": "heavily, and",
+      "line_number": 3,
+      "page": "137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "poplar-trees",
+      "corrected_text": "poplar-trees, hyphen",
+      "line_number": 6,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "solitary; and",
+      "corrected_text": "solitary, and",
+      "line_number": 8,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons, was",
+      "corrected_text": "Chalons was",
+      "line_number": 9,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hand; miry, footsore,",
+      "corrected_text": "hand, miry, footsore,",
+      "line_number": 13,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "untrimmed; the",
+      "corrected_text": "untrimmed, the",
+      "line_number": 14,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sodden with wet; limping",
+      "corrected_text": "sodden with wet, limping",
+      "line_number": 15,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "difficulty; he",
+      "corrected_text": "difficulty, he",
+      "line_number": 16,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shrinkingly;",
+      "corrected_text": "shrinkingly,",
+      "line_number": 20,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "muttering.",
+      "corrected_text": "muttering:",
+      "line_number": 22,
+      "page": "137"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.5",
+  "annotation_date": "2026-03-08T10:57:22.868544",
+  "verified": false
+}

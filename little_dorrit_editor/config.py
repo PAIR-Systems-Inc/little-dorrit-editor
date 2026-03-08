@@ -17,6 +17,7 @@ class ModelConfig:
     logical_name: str  # Human-readable name
     temperature: float = 0.1  # Default temperature value
     reasoning_effort: Optional[str] = None  # Reasoning effort for thinking models
+    image_max_bytes: Optional[int] = None  # Optional per-image payload cap
 
 
 class ConfigManager:
@@ -75,6 +76,9 @@ class ConfigManager:
             # Load optional reasoning effort (e.g., "low" | "medium" | "high")
             reasoning_effort = model_config.get("reasoning_effort")
 
+            # Load optional per-image byte cap for providers with payload limits
+            image_max_bytes = model_config.get("image_max_bytes")
+
             # Create the model configuration
             self._models[model_id] = ModelConfig(
                 endpoint=endpoint,
@@ -83,6 +87,7 @@ class ConfigManager:
                 logical_name=logical_name,
                 temperature=temperature,
                 reasoning_effort=reasoning_effort,
+                image_max_bytes=image_max_bytes,
             )
 
     def get_model(self, model_id: str) -> ModelConfig:

@@ -1,0 +1,64 @@
+{
+  "model_name": "claude-opus-4.6",
+  "date": "2026-03-08T11:14:43.554053",
+  "annotator": "Claude Opus 4.6",
+  "annotation_date": "2026-03-08T10:46:16.784521",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "capitalization",
+      "original_text": "\"why did he dine to-",
+      "corrected_text": "\"Why did he dine to-",
+      "observed_line_number": 29,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"capitalization\" and the predicted edit type is also \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to change the initial word \"why\" to \"Why\" in the phrase \"why did he dine\". The prediction likewise changes \"why\" to \"Why\" (\"\\\"why did he dine to-\" \u2192 \"\\\"Why did he dine to-\"). Although the prediction includes additional surrounding context (a leading quotation mark and the following \"to-\"), it captures the same core capitalization change identified in the ground truth."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "cold stones!\" She",
+      "corrected_text": "cold stones?\" She",
+      "observed_line_number": 30,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The core change in the ground truth is replacing the exclamation mark with a question mark in \"cold stones!\" \u2192 \"cold stones?\". The prediction performs the same essential punctuation substitution, just with additional surrounding context (\"\\\" She\"). This extra context does not alter the intended edit, and the key change (! \u2192 ?) is correctly captured."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "No, sir, i have",
+      "corrected_text": "No, sir, I have",
+      "observed_line_number": 12,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

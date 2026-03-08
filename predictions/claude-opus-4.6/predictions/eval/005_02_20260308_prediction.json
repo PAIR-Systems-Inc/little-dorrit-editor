@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "If",
+      "corrected_text": "I cap If",
+      "line_number": 33,
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 36,
+      "page": "209"
+    }
+  ],
+  "annotator": "Claude Opus 4.6",
+  "annotation_date": "2026-03-08T10:46:51.950986",
+  "verified": false
+}

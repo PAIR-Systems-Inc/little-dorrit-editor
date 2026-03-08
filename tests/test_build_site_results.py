@@ -34,7 +34,9 @@ def test_collect_model_results_merges_release_metadata(tmp_path):
             "release_date": "2024-01-15",
             "release_display": "2024-01-15",
             "release_source": "https://example.com/test-model",
-            "release_notes": "Release metadata should be copied through."
+            "release_notes": "Release metadata should be copied through.",
+            "display_suffix": "*",
+            "display_note": "Synthetic caveat for display metadata."
         }
     }))
 
@@ -51,3 +53,5 @@ def test_collect_model_results_merges_release_metadata(tmp_path):
     assert results[0]["release_display"] == "2024-01-15"
     assert results[0]["release_source"] == "https://example.com/test-model"
     assert results[0]["release_notes"] == "Release metadata should be copied through."
+    assert results[0]["display_suffix"] == "*"
+    assert results[0]["display_note"] == "Synthetic caveat for display metadata."

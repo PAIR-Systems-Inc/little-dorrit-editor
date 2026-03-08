@@ -1,0 +1,45 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "driest of snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 7,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "boiling-over",
+      "corrected_text": "boiling-over",
+      "line_number": 11,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "bubbling out of him",
+      "corrected_text": "bubbling out of him",
+      "line_number": 31,
+      "page": "page_451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "italicize",
+      "corrected_text": "italicize",
+      "line_number": 32,
+      "page": "page_451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "authorise",
+      "corrected_text": "authorise",
+      "line_number": 43,
+      "page": "page_451"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T09:58:46.462298",
+  "verified": false
+}

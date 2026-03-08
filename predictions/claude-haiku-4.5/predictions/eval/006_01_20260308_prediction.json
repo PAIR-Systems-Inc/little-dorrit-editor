@@ -1,0 +1,38 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "far straiter and narrower than the broad high-road paved with vain pro-",
+      "corrected_text": "far straiter and narrower than the broad high-road paved with vain pro-",
+      "line_number": 2,
+      "page": "352"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said",
+      "corrected_text": "said (comma)",
+      "line_number": 32,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 32,
+      "page": "352"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Clennam in amazement",
+      "corrected_text": "Clennam in amazement",
+      "line_number": 36,
+      "page": "352"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T09:53:06.302510",
+  "verified": false
+}

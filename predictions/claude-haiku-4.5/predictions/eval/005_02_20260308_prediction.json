@@ -1,0 +1,31 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "first",
+      "corrected_text": "First",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "cap",
+      "corrected_text": "Cap",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 47,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T10:36:36.682925",
+  "verified": false
+}

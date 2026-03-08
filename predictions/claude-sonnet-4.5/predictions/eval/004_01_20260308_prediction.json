@@ -1,0 +1,45 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stones?",
+      "corrected_text": "stones!",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "knew,",
+      "corrected_text": "knew",
+      "line_number": 29,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at;",
+      "corrected_text": "at,",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sir?",
+      "corrected_text": "sir",
+      "line_number": 37,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.5",
+  "annotation_date": "2026-03-08T09:52:19.922926",
+  "verified": false
+}

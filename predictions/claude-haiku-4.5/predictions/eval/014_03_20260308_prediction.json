@@ -1,0 +1,17 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "never and a faded check too",
+      "corrected_text": "never and a faded check too",
+      "line_number": 24,
+      "page": "452"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T11:00:08.523742",
+  "verified": false
+}

@@ -1,0 +1,73 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "dryest snorts",
+      "page": "451",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that, boiling-over",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "that boiling-over",
+      "page": "451",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twenty;",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "twenty:",
+      "page": "451",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him,",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "him",
+      "page": "451",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Your own recompense",
+      "line_number": 31,
+      "notes": "Italicize marked",
+      "original_text": "Your own recompense",
+      "page": "451",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "451",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you, now",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "you now",
+      "page": "451",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Opus 4.5",
+  "annotation_date": "2026-03-08T10:50:58.560167",
+  "verified": false
+}

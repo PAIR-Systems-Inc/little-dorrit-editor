@@ -1,0 +1,78 @@
+{
+  "model_name": "claude-opus-4.6",
+  "date": "2026-03-08T11:21:39.994749",
+  "annotator": "Claude Opus 4.6",
+  "annotation_date": "2026-03-08T10:49:59.457083",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 15,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the type matches exactly.\n\nText Content Accuracy: Both ground truth and prediction change \"hers and\" to \"hers, and\", inserting a comma after \"hers\". This captures the core intended punctuation correction with identical original and corrected text segments. Line numbers are irrelevant per instructions."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 17,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"hers matters\") and the same corrected text (\"hers, matters\"), capturing the identical core change (inserting a comma after \"hers\"). Line number differences are to be ignored, so the prediction matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 25,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: Both specify the same core change: inserting a comma after \"moment\" in the phrase \"moment with\", resulting in \"moment, with\". The original_text and corrected_text match the ground truth\u2019s intended punctuation change.\n\nLine numbers are ignored as instructed, so the differing line_number does not affect correctness."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 27,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same core change: inserting a comma after \"beautiful\" in the phrase \"beautiful that\" to make it \"beautiful, that\". The original and corrected text strings match the ground truth\u2019s intended punctuation change.\nLine numbers are ignored, so the difference in line_number does not affect correctness."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "\"they",
+      "corrected_text": "\"They",
+      "observed_line_number": 35,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is capitalizing \u201cthey\u201d to \u201cThey.\u201d The prediction applies the same capitalization change but includes an additional leading quotation mark in both the original and corrected text (\"they \u2192 \"They). This extra context does not alter the core intended correction (lowercase t \u2192 uppercase T on \u201cthey\u201d). Therefore, the prediction captures the essential edit accurately."
+    }
+  ]
+}

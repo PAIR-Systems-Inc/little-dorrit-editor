@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter I,",
+      "corrected_text": "Chapter I.",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.5",
+  "annotation_date": "2026-03-08T10:37:53.849420",
+  "verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "do?",
+      "corrected_text": "do?",
+      "line_number": 37,
+      "page": "page_209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "If he",
+      "corrected_text": "cop If he",
+      "line_number": 37,
+      "page": "page_209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 41,
+      "page": "page_209"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T10:37:08.758806",
+  "verified": false
+}

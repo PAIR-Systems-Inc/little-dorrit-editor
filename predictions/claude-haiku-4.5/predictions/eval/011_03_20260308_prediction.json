@@ -1,0 +1,52 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "fancy, whatever",
+      "corrected_text": "fancy, whatever",
+      "line_number": 8,
+      "page": "372"
+    },
+    {
+      "type": "deletion",
+      "original_text": "Thank you,",
+      "corrected_text": "Thank you",
+      "line_number": 18,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore, and",
+      "corrected_text": "shore, and",
+      "line_number": 32,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "within-doors",
+      "corrected_text": "within-doors",
+      "line_number": 37,
+      "page": "372"
+    },
+    {
+      "type": "deletion",
+      "original_text": "cheerful",
+      "corrected_text": "cheerful",
+      "line_number": 40,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "that once",
+      "corrected_text": "that once",
+      "line_number": 46,
+      "page": "372"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T10:58:26.086858",
+  "verified": false
+}

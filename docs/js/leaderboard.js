@@ -1,5 +1,6 @@
 // Load data from results.json
 let leaderboardData = [];
+let performanceTable = null;
 
 function escapeHtml(value) {
     return String(value)
@@ -8,6 +9,12 @@ function escapeHtml(value) {
         .replaceAll(">", "&gt;")
         .replaceAll("\"", "&quot;")
         .replaceAll("'", "&#39;");
+}
+
+function getModelDisplayName(model) {
+    const baseName = model.model_name || model.model || "";
+    const suffix = model.display_suffix || model.modelDisplaySuffix || "";
+    return `${baseName}${suffix}`;
 }
 
 // Create and configure the leaderboard table
@@ -49,7 +56,11 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
                 }
 
                 const shots = row.shots || 2;
-                const modelWithShots = `${value} (${shots}-shot)`;
+                const displayName = `${value}${row.modelDisplaySuffix || ""}`;
+                const noteAttr = row.modelDisplayNote
+                    ? ` title="${escapeHtml(row.modelDisplayNote)}"`
+                    : "";
+                const modelWithShots = `<span${noteAttr}>${escapeHtml(displayName)}</span> (${shots}-shot)`;
 
                 if (medalClass) {
                     return `<span class="medal ${medalClass}">${medalText}</span>${modelWithShots}`;
@@ -107,7 +118,12 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
         {
             title: "Eval Date",
             field: "date",
-            sorter: "date",
+            sorter: function(a, b) {
+                // YYYY-MM-DD strings sort lexicographically; push empty/unknown to the end
+                const da = a && a !== "Unknown" ? a : "";
+                const db = b && b !== "Unknown" ? b : "";
+                return da.localeCompare(db);
+            },
             headerHozAlign: "center",
             hozAlign: "center",
             width: 100
@@ -115,7 +131,11 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
         {
             title: "Date Released",
             field: "releaseDate",
-            sorter: "date",
+            sorter: function(a, b) {
+                const da = a || "";
+                const db = b || "";
+                return da.localeCompare(db);
+            },
             headerHozAlign: "center",
             hozAlign: "center",
             width: 145,
@@ -414,8 +434,8 @@ async function prepareModelPerformanceData() {
         
         // Add model summary row
         const modelRow = {
-            id: modelData.model_name,
-            model: modelData.model_name,
+            id: modelData.model_id || modelData.model_name,
+            model: getModelDisplayName(modelData),
             precision: modelData.precision || 0,
             recall: modelData.recall || 0,
             f1_score: modelData.f1_score || 0,
@@ -658,8 +678,12 @@ document.addEventListener("DOMContentLoaded", async function() {
             rank: index + 1, // Assign rank based on sorted order
             modelId: model.model_id || model.model_name, // Use model_id as primary key
             model: model.model_name,
+            modelDisplaySuffix: model.display_suffix || "",
+            modelDisplayNote: model.display_note || "",
             shots: model.shots || 2,
+            vendor: model.vendor || "",
             releaseDate: model.release_date || "",
+            releaseYear: model.release_date ? model.release_date.substring(0, 4) : "",
             releaseDateDisplay: model.release_display || model.release_date || "Unknown",
             releaseSource: model.release_source || "",
             releaseNotes: model.release_notes || "",
@@ -686,7 +710,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (results.length > 0) {
             // Find top model (first in sorted results by F1 score)
             const topModel = results[0];
-            document.getElementById("top-model").textContent = topModel.model_name;
+            document.getElementById("top-model").textContent = getModelDisplayName(topModel);
             document.getElementById("top-model-name").textContent = "Highest F1 Score";
 
             // Find model with best F1 score
@@ -694,28 +718,103 @@ document.addEventListener("DOMContentLoaded", async function() {
                 model.f1_score > arr[maxIndex].f1_score ? currentIndex : maxIndex, 0);
             const bestF1Model = results[bestF1Index];
             document.getElementById("best-f1-score").textContent = bestF1Model.f1_score.toFixed(4);
-            document.getElementById("best-f1-model").textContent = bestF1Model.model_name;
+            document.getElementById("best-f1-model").textContent = getModelDisplayName(bestF1Model);
 
             // Find model with best precision
             const bestPrecisionIndex = results.reduce((maxIndex, model, currentIndex, arr) =>
                 model.precision > arr[maxIndex].precision ? currentIndex : maxIndex, 0);
             const bestPrecisionModel = results[bestPrecisionIndex];
             document.getElementById("best-precision").textContent = bestPrecisionModel.precision.toFixed(4);
-            document.getElementById("best-precision-model").textContent = bestPrecisionModel.model_name;
+            document.getElementById("best-precision-model").textContent = getModelDisplayName(bestPrecisionModel);
 
             // Find model with best recall
             const bestRecallIndex = results.reduce((maxIndex, model, currentIndex, arr) =>
                 model.recall > arr[maxIndex].recall ? currentIndex : maxIndex, 0);
             const bestRecallModel = results[bestRecallIndex];
             document.getElementById("best-recall").textContent = bestRecallModel.recall.toFixed(4);
-            document.getElementById("best-recall-model").textContent = bestRecallModel.model_name;
+            document.getElementById("best-recall-model").textContent = getModelDisplayName(bestRecallModel);
         }
     }
 
     // Create detailed performance table
-    createModelPerformanceTable();
+    performanceTable = await createModelPerformanceTable();
+
+    // Initialize filters
+    initFilters();
 
     // Update the last updated date
     const lastDate = results.length > 0 ? new Date(results[0].date) : new Date();
     document.getElementById("last-updated").textContent = lastDate.toISOString().split('T')[0];
 });
+
+// Filter initialization and logic
+function initFilters() {
+    const vendorSelect = document.getElementById("filter-vendor");
+    const yearSelect = document.getElementById("filter-year");
+    const clearLink = document.getElementById("filter-clear");
+
+    if (!vendorSelect || !yearSelect) return;
+
+    // Populate vendor options from data
+    const vendors = [...new Set(leaderboardData.map(r => r.vendor).filter(Boolean))].sort();
+    for (const v of vendors) {
+        const opt = document.createElement("option");
+        opt.value = v;
+        opt.textContent = v;
+        vendorSelect.appendChild(opt);
+    }
+
+    // Populate year options from data
+    const years = [...new Set(leaderboardData.map(r => r.releaseYear).filter(Boolean))].sort();
+    for (const y of years) {
+        const opt = document.createElement("option");
+        opt.value = y;
+        opt.textContent = y;
+        yearSelect.appendChild(opt);
+    }
+
+    vendorSelect.addEventListener("change", applyFilters);
+    yearSelect.addEventListener("change", applyFilters);
+    clearLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        vendorSelect.value = "";
+        yearSelect.value = "";
+        applyFilters();
+    });
+}
+
+function applyFilters() {
+    const vendor = document.getElementById("filter-vendor").value;
+    const year = document.getElementById("filter-year").value;
+    const clearLink = document.getElementById("filter-clear");
+
+    // Show/hide clear link
+    clearLink.hidden = !vendor && !year;
+
+    // Build Tabulator filter array for the leaderboard
+    const filters = [];
+    if (vendor) filters.push({ field: "vendor", type: "=", value: vendor });
+    if (year) filters.push({ field: "releaseYear", type: "=", value: year });
+
+    leaderboardTable.setFilter(filters);
+
+    // Recalculate ranks after filtering
+    recalcRanks();
+
+    // Filter the performance table by matching model IDs
+    if (performanceTable) {
+        const visibleIds = new Set(
+            leaderboardTable.getData("active").map(r => r.modelId)
+        );
+        performanceTable.setFilter(function(data) {
+            return visibleIds.has(data.id);
+        });
+    }
+}
+
+function recalcRanks() {
+    const rows = leaderboardTable.getRows("active");
+    rows.forEach((row, i) => {
+        row.update({ rank: i + 1 });
+    });
+}

@@ -1,0 +1,73 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "The house in the city",
+      "corrected_text": "The house in the clear city",
+      "line_number": 1,
+      "page": "page_373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "each recurring with its accompanying monotony,",
+      "corrected_text": "to each recurring with its accompanying monotony,",
+      "line_number": 4,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at the hour",
+      "corrected_text": "existence, at the hour",
+      "line_number": 14,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it to suppose",
+      "corrected_text": "it; to suppose",
+      "line_number": 16,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when we were",
+      "corrected_text": "motionless, when we were",
+      "line_number": 16,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still to be unable",
+      "corrected_text": "stand-still, to be unable",
+      "line_number": 17,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by any larger",
+      "corrected_text": "view, by any larger",
+      "line_number": 17,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence is the infirmity",
+      "corrected_text": "existence; is the infirmity",
+      "line_number": 19,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord and her",
+      "corrected_text": "liege, lord and her",
+      "line_number": 28,
+      "page": "page_373"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T09:58:06.433302",
+  "verified": false
+}

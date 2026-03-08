@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "bedkroom",
+      "corrected_text": "bedroom",
+      "line_number": 1,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "For Mr.",
+      "corrected_text": "For, Mr.",
+      "line_number": 2,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 12,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "making me not",
+      "corrected_text": "making me, not",
+      "line_number": 22,
+      "page": "452"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.6",
+  "annotation_date": "2026-03-08T11:09:14.223280",
+  "verified": false
+}

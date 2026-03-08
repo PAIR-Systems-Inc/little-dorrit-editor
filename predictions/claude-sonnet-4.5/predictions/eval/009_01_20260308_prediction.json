@@ -1,0 +1,45 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 10,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "generous Mr",
+      "corrected_text": "generous, Mr",
+      "line_number": 24,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "tially up into his face, with some hurried words to the effect that she thanked him from her heart (as she did, if it be the source of earnest-",
+      "corrected_text": "tially up into his face, with some hurried words to the effect that she thanked him from her heart (indeed, as she did, if it be the source of earnest-",
+      "line_number": 28,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at length said",
+      "corrected_text": "at length, said",
+      "line_number": 35,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hope so",
+      "corrected_text": "hope so;",
+      "line_number": 39,
+      "page": "369"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.5",
+  "annotation_date": "2026-03-08T09:55:22.174350",
+  "verified": false
+}

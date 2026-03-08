@@ -1,0 +1,38 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "high-road paved",
+      "corrected_text": "high-road high-road paved",
+      "line_number": 2,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said,when",
+      "corrected_text": "said, when",
+      "line_number": 24,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said (comma)",
+      "corrected_text": "said,",
+      "line_number": 31,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 35,
+      "page": "352"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T10:37:10.751800",
+  "verified": false
+}

@@ -1,0 +1,115 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "For Mr. Pancks",
+      "corrected_text": "For, Mr. Pancks",
+      "line_number": 2,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "morning and",
+      "corrected_text": "morning, and",
+      "line_number": 3,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Rugg from",
+      "corrected_text": "Rugg, from",
+      "line_number": 6,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "back and",
+      "corrected_text": "back, and",
+      "line_number": 7,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam of course",
+      "corrected_text": "Clennam, of course,",
+      "line_number": 10,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 11,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time but",
+      "corrected_text": "time, but",
+      "line_number": 12,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "word and",
+      "corrected_text": "word, and",
+      "line_number": 22,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me not",
+      "corrected_text": "me, not",
+      "line_number": 23,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur for",
+      "corrected_text": "Arthur, for",
+      "line_number": 29,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "visit but",
+      "corrected_text": "visit, but",
+      "line_number": 31,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Finching pray",
+      "corrected_text": "Finching, pray",
+      "line_number": 32,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that and",
+      "corrected_text": "that, and",
+      "line_number": 36,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view but",
+      "corrected_text": "view, but",
+      "line_number": 37,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time but",
+      "corrected_text": "time, but",
+      "line_number": 44,
+      "page": "page_452"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T10:43:41.931551",
+  "verified": false
+}

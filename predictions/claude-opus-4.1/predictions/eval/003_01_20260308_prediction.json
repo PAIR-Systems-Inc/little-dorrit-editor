@@ -1,0 +1,31 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "FELLOW TRAVELLERS",
+      "corrected_text": "Fellow Travellers",
+      "line_number": 0,
+      "page": "page_19"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day, sir",
+      "corrected_text": "to-day, sir,",
+      "line_number": 1,
+      "page": "page_19"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "page": "page_19"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T09:51:46.626614",
+  "verified": false
+}

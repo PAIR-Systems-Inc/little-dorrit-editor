@@ -4,12 +4,15 @@ import json
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
+import httpx
+import openai
 import pytest
 from pydantic import TypeAdapter
 from rich.console import Console
 
 from little_dorrit_editor.evaluate import (
     LLMJudge,
+    _should_retry_api_error,
     calculate_metrics,
     match_edits,
     evaluate,
@@ -306,6 +309,52 @@ def test_llm_judge(mock_get_model, mock_client):
     # Check the result
     assert result["is_correct"] is True
     assert result["reasoning"] == "The prediction matches the ground truth"
+
+
+@patch("little_dorrit_editor.evaluate.time.sleep")
+@patch("openai.Client")
+@patch("little_dorrit_editor.evaluate.get_model")
+def test_llm_judge_retries_transient_connection_errors(mock_get_model, mock_client, mock_sleep):
+    """Test the LLM judge retries transient API connection failures."""
+    mock_model_config = MagicMock()
+    mock_model_config.api_key = "test_key"
+    mock_model_config.endpoint = "https://api.test.com"
+    mock_model_config.model_name = "test_model"
+    mock_model_config.logical_name = "Test Model"
+    mock_model_config.reasoning_effort = None
+    mock_get_model.return_value = mock_model_config
+
+    mock_completion = MagicMock()
+    mock_choice = MagicMock()
+    mock_message = MagicMock()
+    mock_message.content = '{"is_correct": true, "reasoning": "Recovered after retry"}'
+    mock_choice.message = mock_message
+    mock_completion.choices = [mock_choice]
+
+    request = httpx.Request("POST", "https://api.test.com/v1/chat/completions")
+    mock_client_instance = MagicMock()
+    mock_client_instance.chat.completions.create.side_effect = [
+        openai.APIConnectionError(request=request),
+        mock_completion,
+    ]
+    mock_client.return_value = mock_client_instance
+
+    judge = LLMJudge(model_id="test_model")
+    result = judge.evaluate_edit(
+        {"type": "insertion", "original_text": "", "corrected_text": "test", "line_number": 1},
+        {"type": "insertion", "original_text": "", "corrected_text": "test", "line_number": 1},
+    )
+
+    assert mock_client_instance.chat.completions.create.call_count == 2
+    mock_sleep.assert_called_once_with(1)
+    assert result["is_correct"] is True
+    assert result["reasoning"] == "Recovered after retry"
+
+
+def test_should_retry_api_error_connection_error():
+    """Test transient OpenAI connection errors are retried."""
+    request = httpx.Request("POST", "https://api.test.com/v1/chat/completions")
+    assert _should_retry_api_error(openai.APIConnectionError(request=request)) is True
 
 
 def test_match_edits_missing_line_number():

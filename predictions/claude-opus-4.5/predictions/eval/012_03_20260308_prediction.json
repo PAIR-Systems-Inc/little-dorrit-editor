@@ -1,0 +1,109 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "city",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "gity",
+      "page": "373",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to each",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "each",
+      "page": "373",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "return of",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "return pf",
+      "page": "373",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "them;",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "them,",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence, at",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "existence at",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it; to",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "it, to",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless, when",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "motionless when",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still; to",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "stand-still, to",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view, by",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "view by",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence; is",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "existence, is",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege lord",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "liegelord",
+      "page": "373",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Claude Opus 4.5",
+  "annotation_date": "2026-03-08T11:09:33.052698",
+  "verified": false
+}

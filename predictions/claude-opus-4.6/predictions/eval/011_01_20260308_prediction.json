@@ -1,0 +1,59 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "that in",
+      "corrected_text": "that, in",
+      "line_number": 11,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "fancy whatever",
+      "corrected_text": "fancy, whatever",
+      "line_number": 11,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "is now.\"",
+      "corrected_text": "is now.\" \"Thank you,\"",
+      "line_number": 17,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "you!\"",
+      "corrected_text": "you,\"",
+      "line_number": 18,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore and",
+      "corrected_text": "shore, and",
+      "line_number": 26,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "within-doors",
+      "corrected_text": "within-doors",
+      "line_number": 29,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 34,
+      "page": "372"
+    }
+  ],
+  "annotator": "Claude Opus 4.6",
+  "annotation_date": "2026-03-08T10:06:56.189924",
+  "verified": false
+}

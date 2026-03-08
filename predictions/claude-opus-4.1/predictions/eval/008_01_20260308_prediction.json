@@ -1,0 +1,45 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "late, dull autumn night was closing in upon the river Sa\u00f4ne.",
+      "corrected_text": "A late, dull autumn night was closing in upon the river Sa\u00f4ne.",
+      "line_number": 1,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons lay a long",
+      "corrected_text": "Chalons lay a long,",
+      "line_number": 5,
+      "page": "page_137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "heavy streak, occasionally made a little ragged by a row of poplar trees",
+      "corrected_text": "heavy streak, occasionally made a little ragged by a row of poplar-trees, hyphen",
+      "line_number": 6,
+      "page": "page_137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "One man slowly moving on towards Chalons was the only visible",
+      "corrected_text": "One man, slowly moving on towards Chalons, was the only visible",
+      "line_number": 9,
+      "page": "page_137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sodden with wet;",
+      "corrected_text": "sodden with wet,",
+      "line_number": 16,
+      "page": "page_137"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T09:55:07.485280",
+  "verified": false
+}

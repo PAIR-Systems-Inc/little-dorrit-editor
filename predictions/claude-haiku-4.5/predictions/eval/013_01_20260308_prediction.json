@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest of snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that boiling-over old Christian",
+      "corrected_text": "that boiling-over old Christian",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 47,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 54,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T09:57:05.773668",
+  "verified": false
+}

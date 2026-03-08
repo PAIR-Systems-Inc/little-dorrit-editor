@@ -1,0 +1,94 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "Chapter xxix .",
+      "corrected_text": "Chapter xxix",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "Mrs. Flintwinch goes on Dreaming ,",
+      "corrected_text": "Mrs. Flintwinch goes on Dreaming",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "THE house",
+      "corrected_text": "THE house c (ccp)",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "luctant return of",
+      "corrected_text": "luctant return of",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them;",
+      "corrected_text": "them,",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence,at",
+      "corrected_text": "existence, at",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it; to",
+      "corrected_text": "it; to",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless,when",
+      "corrected_text": "motionless, when",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still; to",
+      "corrected_text": "stand-still; to",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view, by",
+      "corrected_text": "view, by",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence; is",
+      "corrected_text": "existence; is",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "liege",
+      "corrected_text": "liege",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T09:56:32.177454",
+  "verified": false
+}

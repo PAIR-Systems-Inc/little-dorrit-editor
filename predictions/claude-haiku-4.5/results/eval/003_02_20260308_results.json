@@ -1,0 +1,78 @@
+{
+  "model_name": "claude-haiku-4.5",
+  "date": "2026-03-08T11:13:19.697139",
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T10:35:31.410672",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day,",
+      "corrected_text": "yonder, to-day,",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"yonder\" (\"yonder to-day\" \u2192 \"yonder, to-day\"). The predicted change also inserts a comma after \"yonder\" (\"yonder to-day,\" \u2192 \"yonder, to-day,\"). Although the prediction includes an additional trailing comma in both the original and corrected text (extra surrounding context), the core intended punctuation correction\u2014adding the comma after \"yonder\"\u2014is captured correctly."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": 18,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "Edit Type Accuracy: The predicted type is \"punctuation,\" which exactly matches the ground truth edit type.\n\nText Content Accuracy: The ground truth changes \"pockets and\" to \"pockets, and\" by inserting a comma after \"pockets.\" The predicted edit makes the identical change with the same original and corrected text. This captures the core intended correction precisely.\n\nLine numbers are ignored as instructed, and there are no other discrepancies."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so much to its pain and trouble;",
+      "corrected_text": "heart, so much to its pain and trouble;",
+      "line_number": 9,
+      "page": "page_369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "tially up into his face, with some hurried words to the effect that she",
+      "corrected_text": "tially up into his face, with some hurried words to the effect that she indeed",
+      "line_number": 25,
+      "page": "page_369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "thanked him from her heart (as she did,",
+      "corrected_text": "thanked him from her heart (as, she did,",
+      "line_number": 26,
+      "page": "page_369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ness), she gradually composed herself,",
+      "corrected_text": "ness), she gradually composed herself",
+      "line_number": 27,
+      "page": "page_369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at length said Clennam,",
+      "corrected_text": "at length, said Clennam,",
+      "line_number": 30,
+      "page": "page_369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "\"That's well! I hope so;",
+      "corrected_text": "\"That's well! I hope so, I hope so;",
+      "line_number": 34,
+      "page": "page_369"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T10:39:59.837970",
+  "verified": false
+}

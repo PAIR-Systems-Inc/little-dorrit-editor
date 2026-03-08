@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "he might blame her father, if he saw them; that he might think,",
+      "corrected_text": "he might blame her father, if he saw them; that he might think, as a scar",
+      "line_number": 29,
+      "page": "page_184"
+    },
+    {
+      "type": "replacement",
+      "original_text": "\"Why did he dine today, and leave this little creature to the mercy of the cold stones?\"",
+      "corrected_text": "\"Why did he dine today, and leave this little creature to the mercy of the cold stones?\" a reaction made",
+      "line_number": 30,
+      "page": "page_184"
+    }
+  ],
+  "annotator": "Claude Opus 4.1",
+  "annotation_date": "2026-03-08T10:55:14.098953",
+  "verified": false
+}

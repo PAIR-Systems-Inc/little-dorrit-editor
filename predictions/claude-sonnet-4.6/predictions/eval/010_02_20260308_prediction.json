@@ -1,0 +1,38 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "line_number": 15,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "line_number": 17,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "line_number": 27,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "at this, he thought directly, \"they",
+      "corrected_text": "At this, he thought directly, \"They",
+      "line_number": 38,
+      "page": "368"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.6",
+  "annotation_date": "2026-03-08T10:47:44.937754",
+  "verified": false
+}

@@ -29,6 +29,35 @@ endpoint = "https://openrouter.ai/api/v1"
 model_name = "anthropic/claude-3.7-sonnet"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Claude 3.7 Sonnet"
+image_max_bytes = 3930112
+
+["or_claude_sonnet_4"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-sonnet-4"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Sonnet 4"
+image_max_bytes = 3930112
+
+["or_claude_opus_4"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-opus-4"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Opus 4"
+image_max_bytes = 3930112
+
+["or_claude_opus_4_1"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-opus-4.1"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Opus 4.1"
+image_max_bytes = 3930112
+
+["or_claude_haiku_4_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-haiku-4.5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Haiku 4.5"
+image_max_bytes = 3930112
 
 # Qwen Family ########
 
@@ -305,9 +334,66 @@ reasoning_effort = "high"
 
 [claude-3-7-sonnet-latest]
 endpoint = "https://api.anthropic.com/v1"
-model_name = "claude-3-7-sonnet-latest"
+model_name = "claude-3-7-sonnet-20250219"
 api_key = "${ANTHROPIC_API_KEY}"
 logical_name = "Claude 3.7 Sonnet"
+image_max_bytes = 3930112
+
+["claude-sonnet-4"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-sonnet-4-0"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Sonnet 4"
+image_max_bytes = 3930112
+
+["claude-opus-4"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-opus-4-0"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Opus 4"
+image_max_bytes = 3930112
+
+["claude-opus-4.1"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-opus-4-1"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Opus 4.1"
+image_max_bytes = 3930112
+
+["claude-haiku-4.5"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-haiku-4-5"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Haiku 4.5"
+image_max_bytes = 3930112
+
+["claude-sonnet-4.5"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-sonnet-4-5"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Sonnet 4.5"
+image_max_bytes = 3930112
+
+["claude-sonnet-4.6"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-sonnet-4-6"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Sonnet 4.6"
+image_max_bytes = 3930112
+
+["claude-opus-4.5"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-opus-4-5"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Opus 4.5"
+image_max_bytes = 3930112
+
+["claude-opus-4.6"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-opus-4-6"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Opus 4.6"
+image_max_bytes = 3930112
 
 ################################################################################
 # A D D I T I O N A L   O P E N R O U T E R   V I S I O N   M O D E L S
@@ -330,24 +416,28 @@ endpoint = "https://openrouter.ai/api/v1"
 model_name = "anthropic/claude-sonnet-4.5"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Claude Sonnet 4.5"
+image_max_bytes = 3930112
 
 ["or_claude_sonnet_4_6"]
 endpoint = "https://openrouter.ai/api/v1"
 model_name = "anthropic/claude-sonnet-4.6"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Claude Sonnet 4.6"
+image_max_bytes = 3930112
 
 ["or_claude_opus_4_5"]
 endpoint = "https://openrouter.ai/api/v1"
 model_name = "anthropic/claude-opus-4.5"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Claude Opus 4.5"
+image_max_bytes = 3930112
 
 ["or_claude_opus_4_6"]
 endpoint = "https://openrouter.ai/api/v1"
 model_name = "anthropic/claude-opus-4.6"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Claude Opus 4.6"
+image_max_bytes = 3930112
 
 ["or_grok_4"]
 endpoint = "https://openrouter.ai/api/v1"

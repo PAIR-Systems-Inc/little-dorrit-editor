@@ -1,0 +1,59 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XI",
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Let Loose",
+      "corrected_text": "Let Loose.",
+      "line_number": 0,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "river Saone",
+      "corrected_text": "river Sa\u00f4ne",
+      "line_number": 1,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar-trees",
+      "corrected_text": "poplar-trees,",
+      "line_number": 6,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "river Saone",
+      "corrected_text": "river Sa\u00f4ne",
+      "line_number": 7,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons was",
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "page": "137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sodden with",
+      "corrected_text": "sodden-ed with",
+      "line_number": 14,
+      "page": "137"
+    }
+  ],
+  "annotator": "Claude Opus 4.5",
+  "annotation_date": "2026-03-08T10:47:44.724915",
+  "verified": false
+}

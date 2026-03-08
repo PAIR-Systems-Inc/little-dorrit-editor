@@ -1,0 +1,22 @@
+{
+  "model_name": "claude-sonnet-4.6",
+  "date": "2026-03-08T11:17:08.973584",
+  "annotator": "Claude Sonnet 4.6",
+  "annotation_date": "2026-03-08T10:45:58.285617",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow,",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intent is to make the title end with a period: \"Sun and Shadow\" \u2192 \"Sun and Shadow.\" The predicted edit also results in the same corrected text, \"Sun and Shadow.\" Although the prediction\u2019s \"original_text\" includes a comma (\"Sun and Shadow,\") rather than no punctuation, it still captures the core intended change: the ending punctuation should be a period. Therefore, the essential correction is represented correctly."
+    }
+  ]
+}

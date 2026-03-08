@@ -1,0 +1,31 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "\"Your own recompense for all this, Mr. Pancks,\" said Clennam, \"ought to be a large one.\"",
+      "corrected_text": "\"Your own recompense for all this, Mr. Pancks,\" said Clennam, \"ought to be a large one.\"",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorise",
+      "line_number": 38,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.6",
+  "annotation_date": "2026-03-08T10:05:50.746301",
+  "verified": false
+}

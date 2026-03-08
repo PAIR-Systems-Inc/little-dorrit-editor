@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "Sun and Shadow.",
+      "corrected_text": "Sun and Shadow, Perioded here?",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T09:53:39.971248",
+  "verified": false
+}

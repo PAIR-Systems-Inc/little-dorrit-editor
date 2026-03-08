@@ -1,0 +1,185 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "bed. For Mr. Pancks",
+      "corrected_text": "bed. For, Mr. Pancks",
+      "line_number": 2,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "morning; and",
+      "corrected_text": "morning; and,",
+      "line_number": 3,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Mr. Rugg",
+      "corrected_text": "Mr. Rugg,",
+      "line_number": 7,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "back; and",
+      "corrected_text": "back; and,",
+      "line_number": 8,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "papers, and",
+      "corrected_text": "papers, and,",
+      "line_number": 8,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam, he",
+      "corrected_text": "Clennam, he",
+      "line_number": 9,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "down-stairs, and",
+      "corrected_text": "down-stairs, and",
+      "line_number": 10,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "course, resolved",
+      "corrected_text": "course, resolved",
+      "line_number": 11,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly, that",
+      "corrected_text": "quickly, that",
+      "line_number": 12,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time; but",
+      "corrected_text": "time; but",
+      "line_number": 14,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "street, and",
+      "corrected_text": "street, and",
+      "line_number": 16,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "come, and",
+      "corrected_text": "come, and",
+      "line_number": 17,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "herself, but",
+      "corrected_text": "herself, but",
+      "line_number": 19,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "was, and",
+      "corrected_text": "was, and",
+      "line_number": 19,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "lady, \"who",
+      "corrected_text": "lady, \"who",
+      "line_number": 21,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and pray excuse",
+      "corrected_text": "and pray excuse",
+      "line_number": 22,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me; not",
+      "corrected_text": "me; not",
+      "line_number": 24,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur, \"for",
+      "corrected_text": "Arthur, \"for",
+      "line_number": 29,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "visit, but",
+      "corrected_text": "visit, but",
+      "line_number": 30,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur,\" returned",
+      "corrected_text": "Arthur,\" returned",
+      "line_number": 32,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Finching, \"pray",
+      "corrected_text": "Finching, \"pray",
+      "line_number": 32,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view, at",
+      "corrected_text": "view, at",
+      "line_number": 36,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view, but",
+      "corrected_text": "view, but",
+      "line_number": 38,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tenderly, and",
+      "corrected_text": "tenderly, and",
+      "line_number": 41,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time, but",
+      "corrected_text": "time, but",
+      "line_number": 45,
+      "page": "452"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.5",
+  "annotation_date": "2026-03-08T09:58:51.320814",
+  "verified": false
+}

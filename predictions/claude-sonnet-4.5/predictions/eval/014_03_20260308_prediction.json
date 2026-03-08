@@ -1,0 +1,143 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "bed. For Mr. Pancks",
+      "corrected_text": "bed. For, Mr. Pancks",
+      "line_number": 2,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "morning; and",
+      "corrected_text": "morning; and,",
+      "line_number": 3,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Mr. Rugg",
+      "corrected_text": "Mr. Rugg,",
+      "line_number": 7,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "back; and",
+      "corrected_text": "back; and,",
+      "line_number": 8,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "papers, and",
+      "corrected_text": "papers, and,",
+      "line_number": 8,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "down-stairs, and",
+      "corrected_text": "down-stairs, and,",
+      "line_number": 10,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time; but",
+      "corrected_text": "time; but,",
+      "line_number": 15,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "street, and",
+      "corrected_text": "street, and,",
+      "line_number": 17,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "come, and",
+      "corrected_text": "come, and,",
+      "line_number": 18,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "was, and",
+      "corrected_text": "was, and,",
+      "line_number": 20,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me; not",
+      "corrected_text": "me, not",
+      "line_number": 24,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "visit, but",
+      "corrected_text": "visit; but",
+      "line_number": 30,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Arthur,",
+      "corrected_text": "Arthur;",
+      "line_number": 32,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "still 'tis",
+      "corrected_text": "still, 'tis",
+      "line_number": 35,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view, but",
+      "corrected_text": "view; but",
+      "line_number": 37,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "again and",
+      "corrected_text": "again, and",
+      "line_number": 37,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tenderly, and",
+      "corrected_text": "tenderly, and,",
+      "line_number": 40,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "time, but",
+      "corrected_text": "time; but",
+      "line_number": 44,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "past and",
+      "corrected_text": "past, and",
+      "line_number": 46,
+      "page": "452"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.5",
+  "annotation_date": "2026-03-08T11:01:16.259508",
+  "verified": false
+}

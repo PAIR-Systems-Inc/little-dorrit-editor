@@ -1,0 +1,94 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter xxix",
+      "corrected_text": "Chapter xxix.",
+      "line_number": 0,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dreaming",
+      "corrected_text": "Dreaming.",
+      "line_number": 0,
+      "page": "373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "city",
+      "corrected_text": "c(cap) ity",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "each recurring with its accompanying monotony, always the same re-\nluctant return of",
+      "corrected_text": "to each recurring with its accompanying monotony, always the same re-\nluctant return of",
+      "line_number": 4,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "with them;",
+      "corrected_text": "with them,",
+      "line_number": 12,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it; to",
+      "corrected_text": "it, to",
+      "line_number": 17,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 17,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still; to",
+      "corrected_text": "stand-still, to",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "our view by",
+      "corrected_text": "our view, by",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence; is",
+      "corrected_text": "existence, is",
+      "line_number": 20,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 28,
+      "page": "373"
+    }
+  ],
+  "annotator": "Claude Opus 4.6",
+  "annotation_date": "2026-03-08T11:10:34.286172",
+  "verified": false
+}

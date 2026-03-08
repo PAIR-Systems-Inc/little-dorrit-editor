@@ -364,6 +364,59 @@ code {
     margin: 0 auto;
 }
 
+/* Filter bar */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: var(--shadow-sm);
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.filter-group select {
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 0.85em;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(58, 90, 120, 0.2);
+}
+
+.filter-clear {
+    margin-left: auto;
+    font-size: 0.85em;
+    color: var(--primary-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.filter-clear:hover {
+    text-decoration: underline;
+}
+
 /* 5. Media Queries */
 @media (min-width: 768px) {
     .content-wrapper {
@@ -391,6 +444,10 @@ code {
 @media (max-width: 768px) {
     .metrics {
         flex-direction: column;
+    }
+
+    .filter-bar {
+        flex-wrap: wrap;
     }
 
     .file-summary {

@@ -1,0 +1,59 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 7,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that boiling-over",
+      "corrected_text": "that, boiling-over",
+      "line_number": 12,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at twenty, sticking",
+      "corrected_text": "at twenty; sticking",
+      "line_number": 16,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 31,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "of him, than",
+      "corrected_text": "of him than",
+      "line_number": 31,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 38,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you now",
+      "corrected_text": "you, now",
+      "line_number": 38,
+      "page": "451"
+    }
+  ],
+  "annotator": "Claude Opus 4.6",
+  "annotation_date": "2026-03-08T10:51:54.315908",
+  "verified": false
+}

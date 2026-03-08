@@ -1,164 +1,348 @@
 {
   "or_chatgpt_4o_latest": {
+    "vendor": "OpenAI",
     "release_date": "2024-05-13",
     "release_source": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
     "release_notes": "Rolling alias; using the initial public GPT-4o launch date for ChatGPT."
   },
   "or_deepseek_r1": {
+    "vendor": "DeepSeek",
     "release_date": "2025-01-20",
     "release_source": "https://api-docs.deepseek.com/news/news250120"
   },
   "or_deepseek_chat_v3_0324": {
+    "vendor": "DeepSeek",
     "release_date": "2025-03-25",
     "release_source": "https://api-docs.deepseek.com/news/news250325"
   },
   "or_glm_4_6v": {
+    "vendor": "Zhipu AI",
     "release_date": "2025-12-08"
   },
   "gpt-4-turbo": {
+    "vendor": "OpenAI",
     "release_date": "2023-11-06",
     "release_source": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/"
   },
   "gpt_4_1": {
+    "vendor": "OpenAI",
     "release_date": "2025-04-14",
     "release_source": "https://openai.com/index/gpt-4-1/"
   },
   "gpt_4_1_mini": {
+    "vendor": "OpenAI",
     "release_date": "2025-04-14",
     "release_source": "https://openai.com/index/gpt-4-1/"
   },
   "gpt_4_1_nano": {
+    "vendor": "OpenAI",
     "release_date": "2025-04-14",
     "release_source": "https://openai.com/index/gpt-4-1/"
   },
   "gpt-4.5-preview": {
+    "vendor": "OpenAI",
     "release_date": "2025-02-27",
     "release_source": "https://openai.com/index/introducing-gpt-4-5/"
   },
   "or_gpt_4_5_preview": {
+    "vendor": "OpenAI",
     "release_date": "2025-02-27",
     "release_source": "https://openai.com/index/introducing-gpt-4-5/",
     "release_notes": "OpenRouter route to the same GPT-4.5 Preview release."
   },
   "gpt-4o": {
+    "vendor": "OpenAI",
     "release_date": "2024-05-13",
     "release_source": "https://openai.com/index/hello-gpt-4o/"
   },
   "or_gpt_4o_2024_11_20": {
+    "vendor": "OpenAI",
     "release_date": "2024-11-20",
     "release_source": "https://help.openai.com/en/articles/9624314-model-release-notes"
   },
   "or_gpt_4_turbo": {
+    "vendor": "OpenAI",
     "release_date": "2023-11-06",
     "release_source": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
     "release_notes": "OpenRouter route to GPT-4 Turbo."
   },
   "gpt-4o-mini": {
+    "vendor": "OpenAI",
     "release_date": "2024-07-18",
     "release_source": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
   },
   "or_gpt_4o_mini": {
+    "vendor": "OpenAI",
     "release_date": "2024-07-18",
     "release_source": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
     "release_notes": "OpenRouter route to GPT-4o mini."
   },
   "gpt-5": {
+    "vendor": "OpenAI",
     "release_date": "2025-08-07",
     "release_source": "https://openai.com/index/introducing-gpt-5/"
   },
   "or_openai_gpt_5_2": {
+    "vendor": "OpenAI",
     "release_date": "2025-12-11",
     "release_source": "https://openai.com/index/introducing-gpt-5-2/"
   },
   "or_openai_gpt_5_3_codex": {
+    "vendor": "OpenAI",
     "release_date": "2026-02-05",
     "release_source": "https://openai.com/index/introducing-gpt-5-3-codex/",
     "release_notes": "OpenRouter route to the same GPT-5.3-Codex release."
   },
   "gpt_o4_mini": {
+    "vendor": "OpenAI",
     "release_date": "2025-04-16",
     "release_source": "https://openai.com/index/introducing-o3-and-o4-mini/"
   },
+  "or_o1_pro": {
+    "vendor": "OpenAI"
+  },
   "gpt-5.3-chat": {
+    "vendor": "OpenAI",
     "release_date": "2026-03-03",
     "release_source": "https://openai.com/index/gpt-5-3-instant/",
     "release_notes": "Alias to gpt-5.3-chat-latest; using the GPT-5.3 Instant launch date."
   },
   "gpt-5.4": {
+    "vendor": "OpenAI",
     "release_date": "2026-03-05",
     "release_source": "https://openai.com/index/introducing-gpt-5-4/"
   },
   "or_gemini_2_5_pro_preview_03_25": {
+    "vendor": "Google",
     "release_date": "2025-03-25",
     "release_source": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/"
   },
   "or_gemini_3_1_pro_preview": {
+    "vendor": "Google",
     "release_date": "2026-02-19",
     "release_notes": "Release date taken from Google's official Gemini 3.1 announcement."
   },
   "or_gemma_3_27b_it": {
+    "vendor": "Google",
     "release_date": "2025-03-12",
     "release_source": "https://blog.google/technology/developers/gemma-3/"
   },
   "or_gemini_2_0_flash_001": {
+    "vendor": "Google",
     "release_date": "2025-02-05",
     "release_source": "https://developers.googleblog.com/en/gemini-2-family-expands/"
   },
+  "or_grok_2_vision_1212": {
+    "vendor": "xAI"
+  },
   "or_grok_4": {
+    "vendor": "xAI",
     "release_date": "2025-07-09",
     "release_source": "https://x.ai/news/grok-4"
   },
   "or_grok_4_fast": {
+    "vendor": "xAI",
     "release_date": "2025-09-25",
     "release_notes": "Fast variant release date from xAI announcement about Grok 4 Fast availability."
   },
   "or_grok_4_1_fast": {
+    "vendor": "xAI",
     "release_date": "2026-01-29",
     "release_notes": "Fast variant release date from xAI API announcement for Grok 4.1."
   },
   "or_kimi_k2_5": {
+    "vendor": "Moonshot",
     "release_date": "2025-07-11",
     "release_notes": "Release date taken from Moonshot AI's official Kimi K2 announcement."
   },
   "or_llama_3_2_90b_vision_instruct": {
+    "vendor": "Meta",
     "release_date": "2024-09-25",
     "release_source": "https://about.fb.com/news/2024/09/introducing-llama-3-2/"
   },
   "or_llama_4_maverick": {
+    "vendor": "Meta",
     "release_date": "2025-04-05",
     "release_source": "https://about.fb.com/news/2025/04/introducing-llama-4/"
   },
   "or_llama_4_scout": {
+    "vendor": "Meta",
     "release_date": "2025-04-05",
     "release_source": "https://about.fb.com/news/2025/04/introducing-llama-4/"
   },
   "or_mistral_large_3_2512": {
+    "vendor": "Mistral",
     "release_date": "2025-12-02",
     "release_notes": "Release date taken from Mistral's official Large 3 launch announcement."
   },
   "or_mistral_small_3_1_24b_instruct": {
+    "vendor": "Mistral",
     "release_date": "2025-03-17",
     "release_source": "https://mistral.ai/news/mistral-small-3-1"
   },
   "or_phi_4_multimodal_instruct": {
+    "vendor": "Microsoft",
     "release_date": "2025-02-01",
     "release_display": "Feb 2025",
     "release_source": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
     "release_notes": "Official Microsoft model card lists February 2025; exact day was not available from the source used."
   },
+  "or_amazon_nova_premier_v1": {
+    "vendor": "Amazon"
+  },
+  "claude-3-7-sonnet-latest": {
+    "vendor": "Anthropic",
+    "release_date": "2025-02-24",
+    "release_source": "https://www.anthropic.com/news/claude-3-7-sonnet",
+    "release_notes": "Rolling alias; using the initial Claude 3.7 Sonnet launch date.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-sonnet-4": {
+    "vendor": "Anthropic",
+    "release_date": "2025-05-22",
+    "release_source": "https://docs.anthropic.com/en/release-notes/api",
+    "release_notes": "Claude Sonnet 4 launched alongside Claude Opus 4.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-opus-4": {
+    "vendor": "Anthropic",
+    "release_date": "2025-05-22",
+    "release_source": "https://docs.anthropic.com/en/release-notes/api",
+    "release_notes": "Claude Opus 4 launched alongside Claude Sonnet 4.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-opus-4.1": {
+    "vendor": "Anthropic",
+    "release_date": "2025-08-05",
+    "release_source": "https://www.anthropic.com/news/claude-opus-4-1",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-haiku-4.5": {
+    "vendor": "Anthropic",
+    "release_date": "2025-10-15",
+    "release_source": "https://www.anthropic.com/claude/haiku",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-sonnet-4.5": {
+    "vendor": "Anthropic",
+    "release_date": "2025-09-29",
+    "release_source": "https://www.anthropic.com/claude/sonnet",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-sonnet-4.6": {
+    "vendor": "Anthropic",
+    "release_date": "2026-02-17",
+    "release_source": "https://www.anthropic.com/news/claude-sonnet-4-6",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-opus-4.5": {
+    "vendor": "Anthropic",
+    "release_date": "2025-11-01",
+    "release_display": "Nov 2025",
+    "release_source": "https://www.anthropic.com/transparency",
+    "release_notes": "Official Anthropic source used here lists November 2025 but not an exact day.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-opus-4.6": {
+    "vendor": "Anthropic",
+    "release_date": "2026-02-05",
+    "release_source": "https://www.anthropic.com/news/claude-opus-4-6",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_3_7_sonnet": {
+    "vendor": "Anthropic",
+    "release_date": "2025-02-24",
+    "release_source": "https://www.anthropic.com/news/claude-3-7-sonnet",
+    "release_notes": "OpenRouter route to the same Claude 3.7 Sonnet release.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_sonnet_4": {
+    "vendor": "Anthropic",
+    "release_date": "2025-05-22",
+    "release_source": "https://docs.anthropic.com/en/release-notes/api",
+    "release_notes": "Claude Sonnet 4 launched alongside Claude Opus 4.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_opus_4": {
+    "vendor": "Anthropic",
+    "release_date": "2025-05-22",
+    "release_source": "https://docs.anthropic.com/en/release-notes/api",
+    "release_notes": "Claude Opus 4 launched alongside Claude Sonnet 4.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_opus_4_1": {
+    "vendor": "Anthropic",
+    "release_date": "2025-08-05",
+    "release_source": "https://www.anthropic.com/news/claude-opus-4-1",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_haiku_4_5": {
+    "vendor": "Anthropic",
+    "release_date": "2025-10-15",
+    "release_source": "https://www.anthropic.com/claude/haiku",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_sonnet_4_5": {
+    "vendor": "Anthropic",
+    "release_date": "2025-09-29",
+    "release_source": "https://www.anthropic.com/claude/sonnet",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_sonnet_4_6": {
+    "vendor": "Anthropic",
+    "release_date": "2026-02-17",
+    "release_source": "https://www.anthropic.com/news/claude-sonnet-4-6",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_opus_4_5": {
+    "vendor": "Anthropic",
+    "release_date": "2025-11-01",
+    "release_display": "Nov 2025",
+    "release_source": "https://www.anthropic.com/transparency",
+    "release_notes": "Official Anthropic source used here lists November 2025 but not an exact day.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_opus_4_6": {
+    "vendor": "Anthropic",
+    "release_date": "2026-02-05",
+    "release_source": "https://www.anthropic.com/news/claude-opus-4-6",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
   "or_qwen_vl_max": {
+    "vendor": "Alibaba",
     "release_date": "2024-01-25",
     "release_source": "https://qwenlm.github.io/blog/qwen-vl/"
   },
   "or_qwen_vl_plus": {
+    "vendor": "Alibaba",
     "release_date": "2024-01-25",
     "release_source": "https://qwenlm.github.io/blog/qwen-vl/"
   },
   "or_qwen2_5_vl_72b_instruct": {
+    "vendor": "Alibaba",
     "release_date": "2025-01-26",
     "release_source": "https://qwenlm.github.io/blog/qwen2.5-vl/"
   },
   "or_qwen3_5_397b_a17b": {
+    "vendor": "Alibaba",
     "release_date": "2026-02-17",
     "release_notes": "Release date taken from the official Alibaba Cloud announcement for Qwen3.5-397B-A17B."
   }

@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest of snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "page": "Chapter 35, page 451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that boiling-over old Christian",
+      "corrected_text": "that boiling-over old Christian",
+      "line_number": 13,
+      "page": "Chapter 35, page 451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 38,
+      "page": "Chapter 35, page 451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 48,
+      "page": "Chapter 35, page 451"
+    }
+  ],
+  "annotator": "Claude Haiku 4.5",
+  "annotation_date": "2026-03-08T10:59:35.040250",
+  "verified": false
+}

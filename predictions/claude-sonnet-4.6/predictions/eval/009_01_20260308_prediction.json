@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "generous Mr.",
+      "corrected_text": "generous, Mr.",
+      "line_number": 24,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "with some hurried words to the effect that she thanked him from her heart",
+      "corrected_text": "indeed thanked him from her heart",
+      "line_number": 27,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "as she did",
+      "corrected_text": "as she did,",
+      "line_number": 28,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at length said",
+      "corrected_text": "at length, said",
+      "line_number": 33,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hopedso",
+      "corrected_text": "I hoped so",
+      "line_number": 37,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "\"That's well! I hopedso; I am not disappointed.\"",
+      "corrected_text": "\"I hoped so; I am not disappointed.\"",
+      "line_number": 37,
+      "page": "369"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.6",
+  "annotation_date": "2026-03-08T10:03:23.043004",
+  "verified": false
+}

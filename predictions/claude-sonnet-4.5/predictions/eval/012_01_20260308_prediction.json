@@ -1,0 +1,94 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them",
+      "corrected_text": "them;",
+      "line_number": 14,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "these",
+      "corrected_text": "these,",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence",
+      "corrected_text": "existence,",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it",
+      "corrected_text": "it;",
+      "line_number": 19,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still",
+      "corrected_text": "stand-still;",
+      "line_number": 20,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view",
+      "corrected_text": "view,",
+      "line_number": 20,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence",
+      "corrected_text": "existence;",
+      "line_number": 22,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "her",
+      "corrected_text": "her;",
+      "line_number": 28,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "concerned",
+      "corrected_text": "concerned,",
+      "line_number": 30,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege",
+      "corrected_text": "liege-",
+      "line_number": 30,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wonder",
+      "corrected_text": "wonder,",
+      "line_number": 31,
+      "page": "373"
+    }
+  ],
+  "annotator": "Claude Sonnet 4.5",
+  "annotation_date": "2026-03-08T09:57:24.469582",
+  "verified": false
+}

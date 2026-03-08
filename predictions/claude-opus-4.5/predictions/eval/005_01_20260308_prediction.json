@@ -1,0 +1,28 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "do? I can't help it. If he",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "do? If he",
+      "page": "209",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "said",
+      "page": "209",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Claude Opus 4.5",
+  "annotation_date": "2026-03-08T10:02:12.111770",
+  "verified": false
+}

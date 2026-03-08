@@ -1,6 +1,7 @@
 """Evaluation logic for the Little Dorrit Editor benchmark."""
 
 import json
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple, Union
@@ -27,6 +28,17 @@ def _safe_edit_type(value: Any) -> Optional[EditType]:
         return EditType(str(value).lower())
     except ValueError:
         return None
+
+
+def _should_retry_api_error(exc: Exception) -> bool:
+    """Return True for transient API failures worth retrying."""
+    if isinstance(exc, (openai.APIConnectionError, openai.RateLimitError, openai.InternalServerError)):
+        return True
+
+    if isinstance(exc, openai.APIStatusError):
+        return exc.status_code in {408, 409, 429} or exc.status_code >= 500
+
+    return False
 
 
 class LLMJudge:
@@ -125,7 +137,22 @@ Respond with a JSON object containing:
         if effort and effort != "none":
             create_kwargs["reasoning_effort"] = effort
 
-        response = self.client.chat.completions.create(**create_kwargs)
+        response = None
+        max_attempts = 3
+        for attempt in range(1, max_attempts + 1):
+            try:
+                response = self.client.chat.completions.create(**create_kwargs)
+                break
+            except Exception as exc:
+                if attempt == max_attempts or not _should_retry_api_error(exc):
+                    raise
+
+                backoff_seconds = 2 ** (attempt - 1)
+                self.console.print(
+                    " [yellow]Retrying[/yellow]"
+                    f" ({type(exc).__name__}: {exc}) in {backoff_seconds}s..."
+                )
+                time.sleep(backoff_seconds)
 
         self.console.print(" [green]Done[/green]")
 

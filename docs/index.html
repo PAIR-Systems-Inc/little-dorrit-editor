@@ -67,6 +67,21 @@
     </div>
 
     <h2 class="section-title" id="leaderboard">Performance Leaderboard</h2>
+    <div class="filter-bar">
+        <div class="filter-group">
+            <label for="filter-vendor">Vendor</label>
+            <select id="filter-vendor">
+                <option value="">All vendors</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="filter-year">Release Year</label>
+            <select id="filter-year">
+                <option value="">All years</option>
+            </select>
+        </div>
+        <a href="#" id="filter-clear" class="filter-clear" hidden>Clear filters</a>
+    </div>
     <div id="leaderboard-table"></div>
     <p>
         Most models listed above were tested through <a href="https://openrouter.ai/">OpenRouter</a>,
@@ -74,14 +89,17 @@
         endpoint, so the OpenRouter versions are suffixed with "OR".
     </p>
     <p>
+        <em>* Claude-family results use the same benchmark prompt, but the page images are
+        resized and recompressed as needed to stay below Anthropic's 5 MiB per-image limit.</em>
+    </p>
+    <p>
         The notes below are not comprehensive, but document some of our observations
         during testing.
         <ol>
             <li>
-                Claude Sonnet 3.7 fails due to the image size:
-                <tt>messages.0.content.1.image.source.base64: image exceeds
-                    5 MB maximum: 7586472 bytes > 5242880 bytes
-                </tt>
+                Claude-family models are marked with <tt>*</tt> on the leaderboard because
+                their inputs are resized and recompressed to fit Anthropic's 5 MiB
+                image limit before inference.
             </li>
             <li>
                 Grok 2 Vision 1212 and OpenAI o1-pro continuously fail with
