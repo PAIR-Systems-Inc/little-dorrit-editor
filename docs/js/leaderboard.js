@@ -580,6 +580,7 @@ async function createModelPerformanceTable() {
         dataTreeStartExpanded: false,
         dataTreeChildIndent: 15,
         dataTreeBranchElement: "<span class='tabulator-data-tree-branch'></span>",
+        dataTreeFilter: false, // Only filter top-level rows; children always visible
         initialSort: [{ column: "f1_score", dir: "desc" }], // Sort by F1 score descending
         columns: [
             {
