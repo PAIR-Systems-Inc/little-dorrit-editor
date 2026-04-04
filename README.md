@@ -151,6 +151,35 @@ The benchmark includes scripts to automate the entire prediction, evaluation, an
    python scripts/build_site_results.py
    ```
 
+### Diagnosing a Model Run
+
+Use the diagnostic utility to inspect the current state of a model directory under `predictions/`.
+
+```bash
+# Human-readable report with detailed issues
+python scripts/diagnose_model_run.py or_gemma_4_31b --expected-runs 3 --details
+
+# JSON output for automation
+python scripts/diagnose_model_run.py or_gemma_4_31b --expected-runs 3 --json
+
+# just wrapper
+just diagnose or_gemma_4_31b
+```
+
+The diagnostic report checks:
+- sample prediction completeness
+- eval prediction completeness
+- bad prediction files containing an `"error"` field or invalid JSON
+- missing result files for otherwise valid eval predictions
+- duplicate `(file_id, run_id)` keys caused by reruns on different dates
+- orphan result files with no corresponding prediction file
+
+This is the right first tool to run before deciding whether a model needs:
+- selective reruns of bad predictions
+- selective re-judging
+- cleanup of duplicate run IDs
+- a full rebuild of the model directory
+
 ### Manual Prediction and Evaluation
 
 You can also run individual steps manually:

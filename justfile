@@ -46,6 +46,10 @@ convert-eval:
 update-leaderboard:
     python scripts/build_site_results.py
 
+# Diagnose the state of a model's sample/eval/result files
+diagnose MODEL EXPECTED_RUNS="3":
+    python scripts/diagnose_model_run.py "{{MODEL}}" --expected-runs {{EXPECTED_RUNS}} --details
+
 # Generate a sample prediction file from ground truth (for testing)
 generate-pred PAGE_NUM DATA_DIR="data/sample":
     @echo "Generating sample prediction for page {{PAGE_NUM}} from {{DATA_DIR}}"
