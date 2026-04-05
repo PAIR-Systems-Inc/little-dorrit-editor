@@ -360,5 +360,11 @@
     "vendor": "Alibaba",
     "release_date": "2026-02-17",
     "release_notes": "Release date taken from the official Alibaba Cloud announcement for Qwen3.5-397B-A17B."
+  },
+  "or_qwen3_6_plus_free": {
+    "vendor": "Alibaba",
+    "release_date": "2026-04-02",
+    "release_source": "https://openrouter.ai/qwen/qwen3.6-plus:free",
+    "release_notes": "Release date currently taken from the OpenRouter model page for Qwen3.6 Plus (Free)."
   }
 }

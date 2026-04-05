@@ -175825,13 +175825,13 @@
     "release_source": "https://blog.google/technology/developers/gemma-3/"
   },
   {
-    "model_name": "Gemma 4 27B",
+    "model_name": "Gemma 4 26B A4B IT",
     "model_id": "or_gemma_4_27b",
     "date": "2026-04-04T09:02:42.009432",
     "shots": 2,
     "config": {
       "model_id": "or_gemma_4_27b",
-      "display_name": "Gemma 4 27B",
+      "display_name": "Gemma 4 26B A4B IT",
       "shots": 2,
       "temperature": 0.0,
       "date": "2026-04-04",

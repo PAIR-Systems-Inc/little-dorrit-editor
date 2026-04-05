@@ -91,6 +91,12 @@ model_name = "qwen/qwen3-max-thinking"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Qwen3 Max Thinking"
 
+["or_qwen3_6_plus_free"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "qwen/qwen3.6-plus:free"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Qwen3.6 Plus (Free)"
+
 # Moonshot Family ########
 
 ["or_kimi_k2_5"]
@@ -206,7 +212,7 @@ logical_name = "Gemma 3 27B"
 endpoint = "https://openrouter.ai/api/v1"
 model_name = "google/gemma-4-26b-a4b-it"
 api_key = "${OPEN_ROUTER_API_KEY}"
-logical_name = "Gemma 4 27B"
+logical_name = "Gemma 4 26B A4B IT"
 
 ["or_gemma_4_31b"]
 endpoint = "https://openrouter.ai/api/v1"
