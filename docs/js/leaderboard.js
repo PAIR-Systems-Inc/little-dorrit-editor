@@ -743,8 +743,13 @@ document.addEventListener("DOMContentLoaded", async function() {
     // Initialize filters
     initFilters();
 
-    // Update the last updated date
-    const lastDate = results.length > 0 ? new Date(results[0].date) : new Date();
+    // Update the last updated date using the newest model run in the dataset.
+    const lastDate = results.length > 0
+        ? results
+            .map(model => new Date(model.date))
+            .filter(date => !Number.isNaN(date.getTime()))
+            .reduce((maxDate, date) => date > maxDate ? date : maxDate, new Date(0))
+        : new Date();
     document.getElementById("last-updated").textContent = lastDate.toISOString().split('T')[0];
 });
 
