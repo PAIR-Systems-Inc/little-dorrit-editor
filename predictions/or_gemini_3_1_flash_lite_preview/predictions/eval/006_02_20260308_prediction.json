@@ -1,0 +1,66 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "broad high-road",
+      "corrected_text": "broad high-road high-road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about and",
+      "corrected_text": "about, and",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "tionx",
+      "corrected_text": "tion",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said when",
+      "corrected_text": "said, when",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 3.1 Flash Lite Preview",
+  "annotation_date": "2026-03-08T12:08:31.330516",
+  "verified": false
+}

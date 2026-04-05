@@ -1,0 +1,17 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "why did he dine to-",
+      "corrected_text": "why did he dine to- [CAP question mark]",
+      "line_number": 21,
+      "page": "184"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:21:01.758169",
+  "verified": false
+}

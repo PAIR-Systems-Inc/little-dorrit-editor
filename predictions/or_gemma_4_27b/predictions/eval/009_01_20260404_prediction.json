@@ -1,0 +1,136 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "you\"",
+      "corrected_text": "you,\"",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "face. \"I",
+      "corrected_text": "face, \"I",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Gowan,\"",
+      "corrected_text": "Gowan,\" ",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sympathy \u2014 what",
+      "corrected_text": "sympathy \u2014 what",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam! Good, generous Mr.",
+      "corrected_text": "Clennam! Good, generous Mr.",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me.\"",
+      "corrected_text": "me.\"",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam. \"My",
+      "corrected_text": "Clennam, \"My",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "No!",
+      "corrected_text": "No!\"",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "confidence-",
+      "corrected_text": "confidence,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tially up into his face, as",
+      "corrected_text": "tially up into his face, as",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him, as",
+      "corrected_text": "him, as",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him, as they",
+      "corrected_text": "him, as they",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam, \"said",
+      "corrected_text": "Clennam, \"said",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you.\"",
+      "corrected_text": "you!\"",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hope; so",
+      "corrected_text": "hope; so",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "disappointed.\"",
+      "corrected_text": "disappointed!\"",
+      "line_number": 33,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam, \"Can",
+      "corrected_text": "Clennam, \"Can",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it?\"",
+      "corrected_text": "it?\"",
+      "line_number": 37,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemma 4 27B",
+  "annotation_date": "2026-04-04T07:31:28.718354",
+  "verified": false
+}

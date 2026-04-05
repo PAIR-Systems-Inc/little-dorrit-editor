@@ -1,0 +1,80 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "church bells",
+      "corrected_text": "church bells,",
+      "line_number": 2,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Wine-bottles",
+      "corrected_text": "Wine-bottles",
+      "line_number": 11,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "through",
+      "corrected_text": "through,",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "iron bars",
+      "corrected_text": "iron bars,",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating",
+      "corrected_text": "grating,",
+      "line_number": 17,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside",
+      "corrected_text": "outside,",
+      "line_number": 29,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "intact",
+      "corrected_text": "intact,",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "indian ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fed",
+      "corrected_text": "fed,",
+      "line_number": 36,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars",
+      "corrected_text": "bars,",
+      "line_number": 36,
+      "page": "5"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:17:29.829528",
+  "verified": false
+}

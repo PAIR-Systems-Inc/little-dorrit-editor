@@ -18,6 +18,7 @@
 #   --display-name "Name": Custom display name for the leaderboard (only used if creating new config)
 #   --judge-model MODEL: Model ID to use for evaluation judging (default: gpt-4o)
 #                WARNING: Changing this is NOT recommended as it affects benchmark consistency
+#   --jobs N: Number of worker processes to use (default: 1)
 #   --force: Force re-evaluation even if results already exist
 #   --question-ids "id1,id2,...": Only process specific question IDs (comma-separated, no spaces)
 #
@@ -39,10 +40,59 @@
 # Default values
 DEFAULT_MODEL="gpt-4o"
 DISPLAY_NAME=""
-LLM_JUDGE_MODEL="gpt-4o"
+LLM_JUDGE_MODEL="or_openai_gpt_5_2"
+JOBS=1
 FORCE_EVAL=false
 MODELS=()
 QUESTION_IDS=""
+SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
+
+run_evaluation_task() {
+    local model_id="$1"
+    local llm_judge_model="$2"
+    local prediction_file="$3"
+    local json_file="$4"
+    local results_path="$5"
+
+    mkdir -p "$(dirname "$results_path")"
+    echo "[start] eval $(basename "$prediction_file") -> $(basename "$results_path")"
+    uv run python -m little_dorrit_editor.cli evaluate run \
+        --model-name "$model_id" \
+        --llm-model "$llm_judge_model" \
+        --output "$results_path" \
+        "$prediction_file" \
+        "$json_file"
+}
+
+run_task_file() {
+    local task_file="$1"
+    local jobs="$2"
+
+    if [ ! -s "$task_file" ]; then
+        return 0
+    fi
+
+    if [ "$jobs" -le 1 ]; then
+        while IFS= read -r task; do
+            [ -z "$task" ] && continue
+            bash "$SCRIPT_PATH" --evaluate-task "$task" || return 1
+        done < "$task_file"
+        return 0
+    fi
+
+    xargs -0 -P "$jobs" -I{} bash "$SCRIPT_PATH" --evaluate-task "{}" < <(
+        while IFS= read -r task; do
+            [ -z "$task" ] && continue
+            printf '%s\0' "$task"
+        done < "$task_file"
+    )
+}
+
+if [[ "${1:-}" == "--evaluate-task" ]]; then
+    IFS=$'\t' read -r model_id llm_judge_model prediction_file json_file results_path <<< "$2"
+    run_evaluation_task "$model_id" "$llm_judge_model" "$prediction_file" "$json_file" "$results_path"
+    exit $?
+fi
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -53,6 +103,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --judge-model)
       LLM_JUDGE_MODEL="$2"
+      shift 2
+      ;;
+    --jobs)
+      JOBS="$2"
       shift 2
       ;;
     --force)
@@ -75,21 +129,26 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+if ! [[ "$JOBS" =~ ^[1-9][0-9]*$ ]]; then
+    echo "Error: --jobs must be a positive integer"
+    exit 1
+fi
+
 # If no models specified, use default
 if [ ${#MODELS[@]} -eq 0 ]; then
   MODELS=("$DEFAULT_MODEL")
 fi
 
 # Show warning if custom judge model provided and it's not the default
-if [[ "$LLM_JUDGE_MODEL" != "gpt-4o" ]]; then
+if [[ "$LLM_JUDGE_MODEL" != "or_openai_gpt_5_2" ]]; then
     echo "⚠️ WARNING: Overriding the default judge model is NOT recommended ⚠️"
     echo "It affects benchmark consistency and makes results incomparable with others."
-    echo "Default judge: gpt-4o"
+    echo "Default judge: or_openai_gpt_5_2"
     echo "Custom judge: $LLM_JUDGE_MODEL"
     echo ""
     read -p "Are you sure you want to continue? (y/N): " confirm
     if [[ "$confirm" != [yY] && "$confirm" != [yY][eE][sS] ]]; then
-        LLM_JUDGE_MODEL="gpt-4o"
+        LLM_JUDGE_MODEL="or_openai_gpt_5_2"
         echo "Using default judge model: $LLM_JUDGE_MODEL"
     else
         echo "Using custom judge model: $LLM_JUDGE_MODEL"
@@ -114,6 +173,8 @@ for MODEL_ID in "${MODELS[@]}"; do
     EVAL_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/eval"
     RESULTS_DIR="${PREDICTIONS_DIR}/results"
     EVAL_RESULTS_DIR="${RESULTS_DIR}/eval"
+    TASK_FILE=$(mktemp)
+    trap 'rm -f "$TASK_FILE"' EXIT
     
     # Verify the model directory exists
     if [ ! -d "$PREDICTIONS_DIR" ]; then
@@ -227,24 +288,24 @@ EOL
                     if [ -f "$results_path" ] && [ "$FORCE_EVAL" = true ]; then
                         echo "  Force flag set: Re-evaluating existing results..."
                     fi
-                    
-                    # Run evaluation with correct command structure and fixed judge model
-                    # Directly call the CLI module
-                    uv run python -m little_dorrit_editor.cli evaluate run \
-                        --model-name "$MODEL_ID" \
-                        --llm-model "$LLM_JUDGE_MODEL" \
-                        --output "$results_path" \
-                        "$prediction_file" \
-                        "$json_file"
+
+                    printf '%s\t%s\t%s\t%s\t%s\n' \
+                        "$MODEL_ID" "$LLM_JUDGE_MODEL" "$prediction_file" "$json_file" "$results_path" >> "$TASK_FILE"
                 else
                     echo "  Skipping evaluation: Results already exist at $results_path"
                     echo "  Use --force to re-evaluate if needed"
                 fi
             done
         done
+
+        echo "Running queued evaluation tasks with ${JOBS} worker(s)..."
+        run_task_file "$TASK_FILE" "$JOBS"
     else
         echo "No evaluation files found in data/eval. Please ensure evaluation data is available."
     fi
+
+    rm -f "$TASK_FILE"
+    trap - EXIT
     
     # Use the report script to show detailed results for this model
     echo -e "\nGenerating evaluation report for $MODEL_ID..."

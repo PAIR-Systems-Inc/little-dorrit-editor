@@ -18,6 +18,7 @@ class ModelConfig:
     temperature: float = 0.1  # Default temperature value
     reasoning_effort: Optional[str] = None  # Reasoning effort for thinking models
     image_max_bytes: Optional[int] = None  # Optional per-image payload cap
+    supports_json_object_response: Optional[bool] = None  # Optional override for JSON mode support
 
 
 class ConfigManager:
@@ -79,6 +80,9 @@ class ConfigManager:
             # Load optional per-image byte cap for providers with payload limits
             image_max_bytes = model_config.get("image_max_bytes")
 
+            # Load optional override for JSON object response support
+            supports_json_object_response = model_config.get("supports_json_object_response")
+
             # Create the model configuration
             self._models[model_id] = ModelConfig(
                 endpoint=endpoint,
@@ -88,6 +92,7 @@ class ConfigManager:
                 temperature=temperature,
                 reasoning_effort=reasoning_effort,
                 image_max_bytes=image_max_bytes,
+                supports_json_object_response=supports_json_object_response,
             )
 
     def get_model(self, model_id: str) -> ModelConfig:

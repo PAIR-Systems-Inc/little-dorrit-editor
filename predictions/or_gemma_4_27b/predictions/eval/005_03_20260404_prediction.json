@@ -1,0 +1,45 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennan, said",
+      "corrected_text": "Clennan, said",
+      "line_number": 41,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennan, said",
+      "corrected_text": "Clennan, said",
+      "line_number": 43,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said Clennan",
+      "corrected_text": "said Clennan.",
+      "line_number": 43,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said Clennan",
+      "corrected_text": "said Clennan,",
+      "line_number": 43,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "asked",
+      "corrected_text": "asked.",
+      "line_number": 45,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemma 4 27B",
+  "annotation_date": "2026-04-04T08:24:57.236808",
+  "verified": false
+}

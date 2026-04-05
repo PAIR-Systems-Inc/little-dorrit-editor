@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 7,
+      "page": "page_369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "generous Mr. Clennam",
+      "corrected_text": "generous Mr. Clennam",
+      "line_number": 18,
+      "page": "page_369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "tially up",
+      "corrected_text": "indexed tially up",
+      "line_number": 21,
+      "page": "page_369"
+    },
+    {
+      "type": "deletion",
+      "original_text": "(as she did, if it be the source of earnestness),",
+      "corrected_text": "",
+      "line_number": 22,
+      "page": "page_369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "line_number": 26,
+      "page": "page_369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 29,
+      "page": "page_369"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:54:33.361980",
+  "verified": false
+}

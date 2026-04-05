@@ -1,0 +1,92 @@
+{
+  "model_name": "or_gemini_3_1_flash_lite_preview",
+  "date": "2026-03-08T12:32:23.434635",
+  "annotator": "Gemini 3.1 Flash Lite Preview",
+  "annotation_date": "2026-03-08T12:10:42.590124",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 10,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: Both specify the same original text \"hers and\" and the same corrected text \"hers, and\", inserting a comma after \"hers\". This captures the core intended change precisely.\n\nTherefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 12,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the type matches exactly. Text Content Accuracy: Both edits change the same original text \"hers matters\" to the same corrected text \"hers, matters\", inserting a comma after \"hers\". This captures the core intended correction precisely. Line numbers are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 21,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly. Text Content Accuracy: Both specify the same core change\u2014adding a comma after \"moment\" in the phrase \"moment with\" to become \"moment, with\". Since the essential punctuation edit is identical, the prediction captures the ground truth intention. Line numbers are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 28,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

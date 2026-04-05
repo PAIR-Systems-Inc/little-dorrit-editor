@@ -1,0 +1,24 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "than once",
+      "corrected_text": "than, once",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemma 4 27B",
+  "annotation_date": "2026-04-04T07:30:46.159118",
+  "verified": false
+}

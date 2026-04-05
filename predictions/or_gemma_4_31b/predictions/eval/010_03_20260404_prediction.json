@@ -1,0 +1,52 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "two from hers and",
+      "corrected_text": "two from hers, and",
+      "line_number": 13,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "on her matters",
+      "corrected_text": "on her, matters",
+      "line_number": 15,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "line_number": 22,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "for his peace",
+      "corrected_text": "for his peace,",
+      "line_number": 25,
+      "page": "368"
+    },
+    {
+      "type": "insertion",
+      "original_text": "At this",
+      "corrected_text": "(Cap) At this",
+      "line_number": 32,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "directly They",
+      "corrected_text": "directly, They",
+      "line_number": 32,
+      "page": "368"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T10:16:40.081792",
+  "verified": false
+}

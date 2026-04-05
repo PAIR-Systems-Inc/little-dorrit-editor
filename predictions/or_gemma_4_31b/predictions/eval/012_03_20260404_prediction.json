@@ -1,0 +1,80 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "page_373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "each recurring",
+      "corrected_text": "to each recurring",
+      "line_number": 4,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "reluctant return",
+      "corrected_text": "reluctant return",
+      "line_number": 5,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "with them images",
+      "corrected_text": "with them; images",
+      "line_number": 9,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "busy existence at",
+      "corrected_text": "busy existence, at",
+      "line_number": 13,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence to",
+      "corrected_text": "existence; to",
+      "line_number": 14,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still to",
+      "corrected_text": "stand-still; to",
+      "line_number": 15,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence is",
+      "corrected_text": "existence; is",
+      "line_number": 17,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "liege",
+      "corrected_text": "lord",
+      "line_number": 25,
+      "page": "page_373"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T10:21:29.731066",
+  "verified": false
+}

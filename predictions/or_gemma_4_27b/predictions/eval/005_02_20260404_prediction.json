@@ -1,0 +1,31 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennan, said",
+      "corrected_text": "Clennan, said",
+      "line_number": 38,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennan, said",
+      "corrected_text": "Clennan, said",
+      "line_number": 40,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennan, said",
+      "corrected_text": "Clennan, said",
+      "line_number": 42,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemma 4 27B",
+  "annotation_date": "2026-04-04T07:31:50.255989",
+  "verified": false
+}

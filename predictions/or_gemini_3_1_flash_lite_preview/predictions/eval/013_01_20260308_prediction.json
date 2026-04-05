@@ -1,0 +1,45 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "dryest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "been a",
+      "corrected_text": "been a little",
+      "line_number": 8,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I",
+      "corrected_text": "now, I",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "your hands. I authorize you, now",
+      "corrected_text": "your hands. I authorise you, now",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 3.1 Flash Lite Preview",
+  "annotation_date": "2026-03-08T12:03:59.343432",
+  "verified": false
+}

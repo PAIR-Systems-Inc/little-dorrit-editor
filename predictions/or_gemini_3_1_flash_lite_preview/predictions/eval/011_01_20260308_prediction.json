@@ -1,0 +1,45 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "is now.",
+      "corrected_text": "is now. \"Thank you,\"",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "you\"",
+      "corrected_text": "\"",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore and",
+      "corrected_text": "shore, and",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "within-doors",
+      "corrected_text": "within-doors",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "that",
+      "corrected_text": "than that",
+      "line_number": 27,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 3.1 Flash Lite Preview",
+  "annotation_date": "2026-03-08T12:02:57.660029",
+  "verified": false
+}

@@ -131,12 +131,18 @@ The benchmark includes scripts to automate the entire prediction, evaluation, an
    ```bash
    # Generate predictions for all evaluation images using the gpt-4o model with 2-shot learning
    ./scripts/run_prediction.sh gpt-4o --shots 2
+
+   # Same run with 9 parallel workers
+   ./scripts/run_prediction.sh gpt-4o --shots 2 --jobs 9
    ```
 
 2. **Evaluate Predictions**:
    ```bash
-   # Evaluate predictions and calculate metrics (using gpt-4o as judge)
+   # Evaluate predictions and calculate metrics (using the default GPT-5.2 judge)
    ./scripts/run_evaluation.sh gpt-4o
+
+   # Evaluate in parallel
+   ./scripts/run_evaluation.sh gpt-4o --jobs 9
    ```
 
 3. **Generate Report**:
@@ -179,6 +185,20 @@ This is the right first tool to run before deciding whether a model needs:
 - selective re-judging
 - cleanup of duplicate run IDs
 - a full rebuild of the model directory
+
+### Parallelism
+
+Both benchmark runner scripts support built-in parallel worker control:
+
+```bash
+./scripts/run_prediction.sh MODEL_ID --jobs 9
+./scripts/run_evaluation.sh MODEL_ID --jobs 9
+```
+
+Notes:
+- `--jobs 1` is the default and preserves the original sequential behavior.
+- Prediction run IDs are assigned before workers start, so parallel prediction runs keep deterministic filenames without collisions.
+- The Python CLI remains single-file-per-invocation; parallelism lives in the shell orchestration layer.
 
 ### Manual Prediction and Evaluation
 

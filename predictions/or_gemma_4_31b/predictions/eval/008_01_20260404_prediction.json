@@ -1,0 +1,24 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "poplar-trees,",
+      "corrected_text": "poplar-trees, hyphen",
+      "line_number": 6,
+      "page": "page_3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "sodden",
+      "corrected_text": "sodden with wet",
+      "line_number": 12,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:26:14.710566",
+  "verified": false
+}

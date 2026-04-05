@@ -122,10 +122,25 @@
     "release_date": "2026-02-19",
     "release_notes": "Release date taken from Google's official Gemini 3.1 announcement."
   },
+  "or_gemini_3_1_flash_lite_preview": {
+    "vendor": "Google",
+    "release_date": "2026-03-03",
+    "release_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"
+  },
   "or_gemma_3_27b_it": {
     "vendor": "Google",
     "release_date": "2025-03-12",
     "release_source": "https://blog.google/technology/developers/gemma-3/"
+  },
+  "or_gemma_4_27b": {
+    "vendor": "Google",
+    "release_date": "2026-04-02",
+    "release_source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+  },
+  "or_gemma_4_31b": {
+    "vendor": "Google",
+    "release_date": "2026-04-02",
+    "release_source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
   },
   "or_gemini_2_0_flash_001": {
     "vendor": "Google",

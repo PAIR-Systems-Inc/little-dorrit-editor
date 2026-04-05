@@ -1,0 +1,8 @@
+{
+  "model_id": "or_gemma_4_27b",
+  "display_name": "Gemma 4 27B",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-04-04",
+  "notes": "Benchmark run with 2-shot learning"
+}

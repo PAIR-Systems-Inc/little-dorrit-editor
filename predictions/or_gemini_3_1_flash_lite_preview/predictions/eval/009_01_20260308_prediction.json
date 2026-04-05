@@ -1,0 +1,38 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "generous Mr.",
+      "corrected_text": "generous, Mr.",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "thanked him from her heart",
+      "corrected_text": "indeed thanked him from her heart",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 27,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 3.1 Flash Lite Preview",
+  "annotation_date": "2026-03-08T12:01:42.055818",
+  "verified": false
+}

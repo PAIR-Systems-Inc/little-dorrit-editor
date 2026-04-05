@@ -190,11 +190,30 @@ model_name = "google/gemini-3.1-pro-preview"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Gemini 3.1 Pro Preview"
 
+["or_gemini_3_1_flash_lite_preview"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemini-3.1-flash-lite-preview"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemini 3.1 Flash Lite Preview"
+
 ["or_gemma_3_27b_it"]
 endpoint = "https://openrouter.ai/api/v1"
 model_name = "google/gemma-3-27b-it"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Gemma 3 27B"
+
+["or_gemma_4_27b"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemma-4-26b-a4b-it"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemma 4 27B"
+
+["or_gemma_4_31b"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemma-4-31b-it"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemma 4 31B"
+supports_json_object_response = false
 
 # Deepseek Family ########
 

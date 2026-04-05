@@ -16,6 +16,7 @@
 #
 # Options:
 #   --shots N: Number of shots to use (default: 2)
+#   --jobs N: Number of worker processes to use (default: 1)
 #   --display-name "Name": Custom display name for the leaderboard (optional)
 #   --refresh-datasets: Force rebuild of the sample and evaluation datasets
 #   --question-ids "id1,id2,...": Only process specific question IDs (comma-separated, no spaces)
@@ -41,16 +42,71 @@
 # Default values
 DEFAULT_MODEL="gpt-4o"
 SHOTS=2
+JOBS=1
 DISPLAY_NAME=""
 MODELS=()
 REFRESH_DATASETS=false
 QUESTION_IDS=""
+SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
+
+run_prediction_task() {
+    local split="$1"
+    local model_id="$2"
+    local shots="$3"
+    local sample_dataset="$4"
+    local img_file="$5"
+    local prediction_file="$6"
+
+    mkdir -p "$(dirname "$prediction_file")"
+    echo "[start] pred ${split} $(basename "$img_file" .png) -> $(basename "$prediction_file")"
+    uv run python -m little_dorrit_editor.cli predict run \
+        --model-id "$model_id" \
+        --shots "$shots" \
+        --sample-dataset "$sample_dataset" \
+        "$img_file" \
+        "$prediction_file"
+}
+
+run_task_file() {
+    local task_file="$1"
+    local worker_flag="$2"
+    local jobs="$3"
+
+    if [ ! -s "$task_file" ]; then
+        return 0
+    fi
+
+    if [ "$jobs" -le 1 ]; then
+        while IFS= read -r task; do
+            [ -z "$task" ] && continue
+            bash "$SCRIPT_PATH" "$worker_flag" "$task" || return 1
+        done < "$task_file"
+        return 0
+    fi
+
+    xargs -0 -P "$jobs" -I{} bash "$SCRIPT_PATH" "$worker_flag" "{}" < <(
+        while IFS= read -r task; do
+            [ -z "$task" ] && continue
+            printf '%s\0' "$task"
+        done < "$task_file"
+    )
+}
+
+if [[ "${1:-}" == "--predict-task" ]]; then
+    IFS=$'\t' read -r split model_id shots sample_dataset img_file prediction_file <<< "$2"
+    run_prediction_task "$split" "$model_id" "$shots" "$sample_dataset" "$img_file" "$prediction_file"
+    exit $?
+fi
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --shots)
       SHOTS="$2"
+      shift 2
+      ;;
+    --jobs)
+      JOBS="$2"
       shift 2
       ;;
     --display-name)
@@ -76,6 +132,11 @@ while [[ $# -gt 0 ]]; do
       ;;
   esac
 done
+
+if ! [[ "$JOBS" =~ ^[1-9][0-9]*$ ]]; then
+  echo "Error: --jobs must be a positive integer"
+  exit 1
+fi
 
 # If no models specified, use default
 if [ ${#MODELS[@]} -eq 0 ]; then
@@ -115,8 +176,9 @@ function get_highest_run_id_for_file() {
     
     for dir in "$sample_dir" "$eval_dir"; do
         if [ -d "$dir" ]; then
-            # Find any prediction files with today's date and the specific file_id for this model
-            local existing_files=$(find "$dir" -type f -name "${file_id}_*_${DATE_STAMP}_prediction.json" 2>/dev/null)
+            # Find any prediction files for this file_id regardless of date so
+            # run IDs remain monotonic across multi-day benchmark runs.
+            local existing_files=$(find "$dir" -type f -name "${file_id}_*_prediction.json" 2>/dev/null)
             
             # Extract run numbers from filenames and find highest
             for file in $existing_files; do
@@ -152,6 +214,8 @@ for MODEL_ID in "${MODELS[@]}"; do
     EVAL_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/eval"
     SAMPLE_PREDICTIONS_DIR="${PREDICTIONS_OUTPUT_DIR}/sample"
     CONFIG_FILE="${PREDICTIONS_DIR}/config.json"
+    TASK_FILE=$(mktemp)
+    trap 'rm -f "$TASK_FILE"' EXIT
     
     # Ensure the output directories exist
     mkdir -p "$EVAL_PREDICTIONS_DIR"
@@ -198,20 +262,13 @@ EOL
     
             # Define the output prediction file
             prediction_file="${SAMPLE_PREDICTIONS_DIR}/${base_name}_${FILE_RUN_ID}_${DATE_STAMP}_prediction.json"
-    
-            echo "Processing $img_file -> $prediction_file (Run ID: ${FILE_RUN_ID})"
-    
-            # Generate predictions using n-shot learning with uv
-            # Directly call the CLI module
-            uv run python -m little_dorrit_editor.cli predict run \
-                --model-id "$MODEL_ID" \
-                --shots "$SHOTS" \
-                --sample-dataset "$SAMPLE_DATASET" \
-                "$img_file" \
-                "$prediction_file"
+
+            echo "Queueing sample $img_file -> $prediction_file (Run ID: ${FILE_RUN_ID})"
+            printf 'sample\t%s\t%s\t%s\t%s\t%s\n' \
+                "$MODEL_ID" "$SHOTS" "$SAMPLE_DATASET" "$img_file" "$prediction_file" >> "$TASK_FILE"
         done
     fi
-    
+
     # Process the evaluation files
     if [ -d "data/eval" ] && [ "$(ls -A data/eval/*.png 2>/dev/null)" ]; then
         echo "Generating predictions for evaluation files..."
@@ -256,23 +313,22 @@ EOL
     
             # Define the output prediction file
             prediction_file="${EVAL_PREDICTIONS_DIR}/${base_name}_${FILE_RUN_ID}_${DATE_STAMP}_prediction.json"
-    
-            echo "Processing $img_file -> $prediction_file (Run ID: ${FILE_RUN_ID})"
-    
-            # Generate predictions using n-shot learning with uv
-            # Directly call the CLI module
-            uv run python -m little_dorrit_editor.cli predict run \
-                --model-id "$MODEL_ID" \
-                --shots "$SHOTS" \
-                --sample-dataset "$SAMPLE_DATASET" \
-                "$img_file" \
-                "$prediction_file"
+
+            echo "Queueing eval $img_file -> $prediction_file (Run ID: ${FILE_RUN_ID})"
+            printf 'eval\t%s\t%s\t%s\t%s\t%s\n' \
+                "$MODEL_ID" "$SHOTS" "$SAMPLE_DATASET" "$img_file" "$prediction_file" >> "$TASK_FILE"
         done
         echo "Prediction generation complete for $MODEL_ID."
         echo "Evaluation predictions stored in: $EVAL_PREDICTIONS_DIR"
     else
         echo "No evaluation files found in data/eval. Please ensure evaluation data is available."
     fi
+
+    echo "Running queued prediction tasks with ${JOBS} worker(s)..."
+    run_task_file "$TASK_FILE" "--predict-task" "$JOBS"
+
+    rm -f "$TASK_FILE"
+    trap - EXIT
     
     echo "Finished processing model: $MODEL_ID"
     echo "Use './scripts/run_evaluation.sh ${MODEL_ID}' to evaluate the predictions."

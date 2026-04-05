@@ -32,6 +32,9 @@ def _safe_edit_type(value: Any) -> Optional[EditType]:
 
 def _should_retry_api_error(exc: Exception) -> bool:
     """Return True for transient API failures worth retrying."""
+    if isinstance(exc, json.JSONDecodeError):
+        return True
+
     if isinstance(exc, (openai.APIConnectionError, openai.RateLimitError, openai.InternalServerError)):
         return True
 

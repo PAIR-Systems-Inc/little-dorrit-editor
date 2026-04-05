@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW,",
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 1,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:49:48.066580",
+  "verified": false
+}

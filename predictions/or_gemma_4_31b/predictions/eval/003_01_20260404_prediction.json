@@ -1,0 +1,31 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "howling over yonder to-day, Sir",
+      "corrected_text": "howling over yonder to-day, sir",
+      "line_number": 3,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day, sir",
+      "corrected_text": "to-day, sir,",
+      "line_number": 3,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 18,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:20:06.353115",
+  "verified": false
+}

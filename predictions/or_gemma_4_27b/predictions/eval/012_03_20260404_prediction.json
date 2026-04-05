@@ -1,0 +1,17 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "Chapter XXIX.",
+      "corrected_text": "Chapter XXIX. (cap)",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemma 4 27B",
+  "annotation_date": "2026-04-04T08:46:43.474923",
+  "verified": false
+}

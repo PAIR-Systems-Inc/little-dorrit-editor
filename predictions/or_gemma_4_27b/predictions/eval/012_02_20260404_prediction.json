@@ -1,0 +1,17 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "THE house",
+      "corrected_text": "THE (cap) house",
+      "line_number": 5,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemma 4 27B",
+  "annotation_date": "2026-04-04T08:16:28.460318",
+  "verified": false
+}

@@ -1,0 +1,45 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dres",
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "page": "45"
+    },
+    {
+      "type": "replacement",
+      "original_text": "throptic",
+      "corrected_text": "throptic",
+      "line_number": 7,
+      "page": "45"
+    },
+    {
+      "type": "insertion",
+      "original_text": "that",
+      "corrected_text": "that boiling-over",
+      "line_number": 11,
+      "page": "45"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 26,
+      "page": "45"
+    },
+    {
+      "type": "replacement",
+      "original_text": "your hands. I authorise",
+      "corrected_text": "your hands. I authorise",
+      "line_number": 33,
+      "page": "45"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:43:25.458753",
+  "verified": false
+}

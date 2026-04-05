@@ -1,0 +1,17 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "why",
+      "corrected_text": "CAP question mark",
+      "line_number": 21,
+      "page": "184"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T10:01:02.223920",
+  "verified": false
+}

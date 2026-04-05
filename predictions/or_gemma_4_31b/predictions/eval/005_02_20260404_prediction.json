@@ -1,0 +1,31 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "Moyce.\"",
+      "corrected_text": "Moyce.\" Cap",
+      "line_number": 33,
+      "page": "209"
+    },
+    {
+      "type": "insertion",
+      "original_text": "do? \"True",
+      "corrected_text": "do? If True",
+      "line_number": 34,
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 37,
+      "page": "209"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:48:09.775353",
+  "verified": false
+}

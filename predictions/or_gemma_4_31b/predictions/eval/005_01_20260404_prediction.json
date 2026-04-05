@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "Mr.oyce.\"",
+      "corrected_text": "Mr. Doyle.\" Cap",
+      "line_number": 34,
+      "page": "209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 38,
+      "page": "209"
+    }
+  ],
+  "annotator": "Gemma 4 31B",
+  "annotation_date": "2026-04-04T09:21:57.884606",
+  "verified": false
+}

@@ -1,0 +1,17 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Pancks",
+      "corrected_text": "Pancks,",
+      "line_number": 2,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemma 4 27B",
+  "annotation_date": "2026-04-04T07:30:49.710044",
+  "verified": false
+}

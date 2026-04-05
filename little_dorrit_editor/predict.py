@@ -20,6 +20,9 @@ from little_dorrit_editor.utils import extract_json_from_llm_response
 
 def _should_retry_api_error(exc: Exception) -> bool:
     """Return True for transient API failures worth retrying."""
+    if isinstance(exc, json.JSONDecodeError):
+        return True
+
     if isinstance(exc, (openai.APIConnectionError, openai.RateLimitError, openai.InternalServerError)):
         return True
 
@@ -167,7 +170,11 @@ def generate_predictions(
     
     # Call the model
     console.print(f"Calling {model_config.logical_name} to generate predictions...")
-    supports_json_object_response = "anthropic.com" not in model_config.endpoint
+    supports_json_object_response = (
+        model_config.supports_json_object_response
+        if model_config.supports_json_object_response is not None
+        else "anthropic.com" not in model_config.endpoint
+    )
     create_kwargs: Dict[str, Any] = {
         "model": model_config.model_name,
         "messages": messages,
