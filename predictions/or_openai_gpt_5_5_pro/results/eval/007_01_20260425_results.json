@@ -1,0 +1,36 @@
+{
+  "model_name": "or_openai_gpt_5_5_pro",
+  "date": "2026-04-26T00:24:06.621646",
+  "annotator": "GPT-5.5 Pro (OR)",
+  "annotation_date": "2026-04-25T23:15:36.277423",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The predicted type is \"punctuation,\" which exactly matches the ground truth.\nText Content Accuracy: Both ground truth and prediction change \"Sun and Shadow\" to \"Sun and Shadow.\" by adding a period at the end. The core punctuation change is captured identically.\nTherefore, the predicted edit matches the ground truth in both type and content."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

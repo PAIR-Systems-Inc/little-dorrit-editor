@@ -1,0 +1,59 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "snorts",
+      "corrected_text": "of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "a little",
+      "corrected_text": "",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "boiling-over",
+      "corrected_text": "",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now",
+      "corrected_text": "now,",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Qwen3.6 Plus Nitro (OR)",
+  "annotation_date": "2026-04-26T00:05:24.102730",
+  "verified": false
+}

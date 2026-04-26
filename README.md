@@ -76,6 +76,7 @@ The system uses the following configuration files:
    - Contains standard model configurations
    - Uses environment variables for API keys (e.g., `${OPENAI_API_KEY}`)
    - Checked into version control
+   - Supports OpenRouter routing knobs such as `openrouter_provider = { sort = "latency" }` and `service_tier = "priority"`
 
 2. **Local configuration**: `config/models.local.toml` and `config/local*.toml`
    - For local development with direct API keys

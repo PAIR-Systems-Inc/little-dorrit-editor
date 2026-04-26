@@ -66,6 +66,7 @@ config/local*.toml
 # Exclude environment variable scripts
 scripts/set_env_variables.sh
 # Local benchmark scratch
+.codex
 .codex_tmp/
 backups/
 logs/

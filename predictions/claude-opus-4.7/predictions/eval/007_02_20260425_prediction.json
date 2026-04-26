@@ -1,0 +1,19 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Sun and Shadow.",
+      "line_number": 0,
+      "notes": "Editor questions whether comma should be period",
+      "original_text": "Sun and Shadow,",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:13:58.266240",
+  "verified": false
+}

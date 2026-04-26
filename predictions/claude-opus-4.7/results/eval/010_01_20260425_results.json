@@ -1,0 +1,78 @@
+{
+  "model_name": "claude-opus-4.7",
+  "date": "2026-04-26T00:11:26.150180",
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:09:08.413618",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"hers and\") and the same corrected text (\"hers, and\"), capturing the identical core change\u2014adding a comma after \"hers\". Therefore, the prediction matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The predicted type is \"punctuation,\" which exactly matches the ground truth. Text Content Accuracy: Both ground truth and prediction change \"hers matters\" to \"hers, matters\" by inserting a comma after \"hers.\" The core punctuation correction is identical."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 25,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same transformation: \"moment with\" \u2192 \"moment, with\", inserting a comma after \"moment\". This captures the core intended correction with identical original and corrected text."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 27,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "Edit Type Accuracy: The predicted type is \"punctuation,\" which exactly matches the ground truth.\n\nText Content Accuracy: Both ground truth and prediction change \"beautiful that\" to \"beautiful, that\" by inserting a comma after \"beautiful.\" This captures the core intended correction with identical original and corrected text. Line number differences are to be ignored, so they do not affect correctness."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "directly, \"they",
+      "corrected_text": "directly, \"They",
+      "observed_line_number": 35,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to change \"they\" to \"They\" (capitalizing the initial letter). The prediction changes \"directly, \\\"they\" to \"directly, \\\"They,\" which includes extra surrounding context but performs the same core capitalization change on the word \"they.\" Since the essential correction (they \u2192 They) is captured, the text content matches the ground truth\u2019s intention."
+    }
+  ]
+}

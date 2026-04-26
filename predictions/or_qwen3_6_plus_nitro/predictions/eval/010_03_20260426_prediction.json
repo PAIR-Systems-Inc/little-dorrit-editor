@@ -1,0 +1,59 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "from hers and",
+      "corrected_text": "from hers, and",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on hers, matters",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him she",
+      "corrected_text": "him, she",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "peace he",
+      "corrected_text": "peace, he",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "that papa had abandoned the idea.",
+      "corrected_text": "that papa had abandoned the idea.",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "line_number": 32,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Qwen3.6 Plus Nitro (OR)",
+  "annotation_date": "2026-04-26T00:25:30.471643",
+  "verified": false
+}

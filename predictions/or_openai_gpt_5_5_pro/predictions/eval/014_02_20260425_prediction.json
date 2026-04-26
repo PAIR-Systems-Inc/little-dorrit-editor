@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "bedroom",
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "For Mr.",
+      "corrected_text": "For, Mr.",
+      "line_number": 2,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 11,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me not",
+      "corrected_text": "me, not",
+      "line_number": 21,
+      "page": "452"
+    }
+  ],
+  "annotator": "GPT-5.5 Pro (OR)",
+  "annotation_date": "2026-04-25T23:41:36.858372",
+  "verified": false
+}

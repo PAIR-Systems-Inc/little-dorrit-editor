@@ -1,0 +1,11 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen3.6 Plus Nitro (OR)",
+  "annotation_date": "2026-04-26T00:13:10.247724",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Model returned empty or non-text content...",
+  "raw_response": "{\n  \"id\": \"gen-1777187551-cNEL6BYk1YlnGgARjcLl\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"logprobs\": null,\n      \"message\": {\n        \"content\": null,\n        \"refusal\": null,\n        \"role\": \"assistant\",\n        \"annotations\": null,\n        \"audio\": null,\n        \"function_call\": null,\n        \"tool_calls\": null,\n        \"reasoning\": \"user wants me to identify handwritten editorial corrections on a printed page.\\n\\n**Page Analysis:**\\n- Page number: 452\\n- Title: LITTLE DORRIT\\n\\n**Scanning for corrections:**\\n\\n1.  **Line 1:** \\\"Clennam's bedroom\\\" -> There is a red 'X' or cross-out over the 'k' in \\\"bedkroom\\\" (wait, looking closer, it says \\\"bedkroom\\\" with a cross over the 'k'). Actually, it looks like \\\"bedkroom\\\" where the 'k' is crossed out. So \\\"bedkroom\\\" -> \\\"bedroom\\\". Wait, let me look really closely at crop 1. It says \\\"bedkroom\\\" and there is a red cross over the 'k'. So it's a deletion of 'k'.\\n    *   Original: \\\"bedkroom\\\"\\n    *   "
+}

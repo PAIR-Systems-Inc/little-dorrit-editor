@@ -1,0 +1,82 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high road",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "materials costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "about and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tion, did",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "tion did",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestly, telling",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "earnestly telling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, when",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "said when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said,",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:09:04.067513",
+  "verified": false
+}

@@ -1,0 +1,55 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "that, in our fancy,",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "that in our fancy",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you,\"",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "\"Thank you!\"",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "things than once were",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "things that once were",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:32:32.676558",
+  "verified": false
+}

@@ -1,0 +1,22 @@
+{
+  "model_name": "claude-opus-4.7",
+  "date": "2026-04-26T00:10:26.067309",
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:31:50.010966",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow,",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is to add a period at the end of \"Sun and Shadow\" (\"Sun and Shadow\" \u2192 \"Sun and Shadow.\"). The prediction also results in the same corrected text ending with a period. Although the prediction\u2019s original_text includes a comma (\"Sun and Shadow,\") implying a comma-to-period replacement rather than period insertion, it still captures the core intended correction: the phrase should end with a period. Therefore, the essential edit matches the ground truth\u2019s intention."
+    }
+  ]
+}

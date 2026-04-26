@@ -325,7 +325,13 @@ EOL
     fi
 
     echo "Running queued prediction tasks with ${JOBS} worker(s)..."
-    run_task_file "$TASK_FILE" "--predict-task" "$JOBS"
+    if ! run_task_file "$TASK_FILE" "--predict-task" "$JOBS"; then
+        echo "Error: One or more prediction worker tasks failed for ${MODEL_ID}."
+        echo "Run scripts/diagnose_model_run.py ${MODEL_ID} to identify missing or bad artifacts."
+        rm -f "$TASK_FILE"
+        trap - EXIT
+        exit 1
+    fi
 
     rm -f "$TASK_FILE"
     trap - EXIT

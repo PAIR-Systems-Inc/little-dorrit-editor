@@ -1,0 +1,92 @@
+{
+  "model_name": "gpt_4_1",
+  "date": "2026-02-22T14:33:48.632022",
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T12:00:00.360384",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "observed_line_number": 12,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are of type \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after the word \"hers\" in the phrase \"hers and\" (\"hers and\" \u2192 \"hers, and\"). The predicted edit also inserts a comma after \"hers\" (\"hers\" \u2192 \"hers,\"). Although the prediction omits the following word \"and\" as context, it captures the core intended punctuation change: adding a comma immediately after \"hers\". Therefore, the text-content intention matches."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "observed_line_number": 13,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after the word \"hers\" (\"hers matters\" \u2192 \"hers, matters\"). The predicted edit (\"hers\" \u2192 \"hers,\") captures the same essential punctuation change\u2014adding a comma immediately after \"hers\"\u2014even though it includes less surrounding context. This matches the core intention of the ground truth."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "moment",
+      "corrected_text": "moment,",
+      "observed_line_number": 22,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change \"moment with\" \u2192 \"moment, with\" indicates inserting a comma immediately after the word \"moment\" (before \"with\"). The prediction \"moment\" \u2192 \"moment,\" captures the same core punctuation insertion at the correct location. Although it includes less surrounding context (it omits \"with\"), it still represents the essential intended edit."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both edits change \"beautiful that\" to \"beautiful, that,\" inserting a comma after \"beautiful.\" This captures the same core punctuation correction with identical original and corrected text."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify the edit type as \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: Both identify the same core change: changing \"they\" to \"They\". There is no discrepancy in original or corrected text. Therefore, the prediction captures the intended edit."
+    },
+    {
+      "observed_edit_num": 5,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hesitation, that papa had abandoned the idea.",
+      "corrected_text": "hesitation, that papa had abandoned the idea.",
+      "observed_line_number": 31,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

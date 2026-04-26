@@ -1,0 +1,36 @@
+{
+  "model_name": "claude-opus-4.7",
+  "date": "2026-04-26T00:09:21.102473",
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:09:06.512498",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The predicted type is \"capitalization,\" which exactly matches the ground truth.\nText Content Accuracy: Both ground truth and prediction change \"if he\" to \"If he,\" capturing the identical core correction (capitalizing the initial 'i'). No additional or missing changes are present."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction label the change as a \"replacement,\" so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth changes the word \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam.\" The predicted edit captures the same core substitution (\"said\" \u2192 \"asked\") even though it includes less surrounding context (it omits \"Clennam\" from the specified span). Since the essential intended change is the replacement of \"said\" with \"asked,\" the prediction matches the ground truth\u2019s intention."
+    }
+  ]
+}

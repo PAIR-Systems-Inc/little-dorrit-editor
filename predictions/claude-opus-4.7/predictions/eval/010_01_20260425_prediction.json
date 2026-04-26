@@ -1,0 +1,55 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hers, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "hers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hers, matters",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "hers matters",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "moment, with",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "moment with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beautiful, that",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "beautiful that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "directly, \"They",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "directly, \"they",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:09:08.413618",
+  "verified": false
+}

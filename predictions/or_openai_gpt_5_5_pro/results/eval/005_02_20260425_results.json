@@ -1,0 +1,36 @@
+{
+  "model_name": "or_openai_gpt_5_5_pro",
+  "date": "2026-04-26T00:23:41.581708",
+  "annotator": "GPT-5.5 Pro (OR)",
+  "annotation_date": "2026-04-25T23:32:59.718118",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the word \"if\" at the start of the phrase (\"if he\" \u2192 \"If he\"). The prediction captures the same core change by capitalizing \"if\" (\"if\" \u2192 \"If\"). Although it includes less surrounding context (omits \"he\"), the essential intended correction\u2014capitalizing \"if\"\u2014is correctly represented."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The ground truth changes the verb \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the same core substitution by replacing \"said\" with \"asked\" (with less surrounding context). Since the essential intended change is the verb replacement and the remaining context (\"Clennam\") is unchanged, the prediction matches the ground truth\u2019s intention."
+    }
+  ]
+}

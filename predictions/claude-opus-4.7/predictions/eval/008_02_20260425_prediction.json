@@ -1,0 +1,91 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XI",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Let Loose.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Let Loose",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dull, autumn",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "dull autumn",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river Sa\u00f4ne",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "river Saone",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river Sa\u00f4ne",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "river Saone",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "man, slowly",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "man slowly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "sodden",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:14:03.628194",
+  "verified": false
+}

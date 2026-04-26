@@ -1,0 +1,24 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "line_number": 0,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW",
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 0,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "GPT-5.5 Pro (OR)",
+  "annotation_date": "2026-04-25T23:35:08.585645",
+  "verified": false
+}

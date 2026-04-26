@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "\"No, sir",
+      "corrected_text": "\n\"No, sir",
+      "line_number": 10,
+      "page": "page_184"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 28,
+      "page": "page_184"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "!'",
+      "corrected_text": "?'",
+      "line_number": 29,
+      "page": "page_184"
+    }
+  ],
+  "annotator": "Qwen3.6 Plus Nitro (OR)",
+  "annotation_date": "2026-04-26T00:04:50.840404",
+  "verified": false
+}

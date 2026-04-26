@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW",
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Qwen3.6 Plus Nitro (OR)",
+  "annotation_date": "2026-04-26T00:11:32.607147",
+  "verified": false
+}

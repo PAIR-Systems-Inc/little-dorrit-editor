@@ -1,0 +1,78 @@
+{
+  "model_name": "gpt-5.5",
+  "date": "2026-04-26T00:09:29.502896",
+  "annotator": "GPT-5.5",
+  "annotation_date": "2026-04-25T23:32:09.177225",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both edits change \"Fellow Travellers\" to \"Fellow Travellers.\" by adding a period at the end. The core intended punctuation change is captured identically. Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\nText Content Accuracy: Both specify the same original span (\"howling over\") and the same correction (inserting a comma to make \"howling, over\"). The core intended punctuation change is captured precisely."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\nText Content Accuracy: Both specify the same original text (\"yonder to-day\") and the same corrected text (\"yonder, to-day\"), inserting a comma after \"yonder\". The core change is identical. Therefore, the prediction correctly captures the ground truth edit."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"capitalization,\" which exactly matches the ground truth.\nText Content Accuracy: Both ground truth and prediction change \"Sir\" to \"sir,\" capturing the identical core correction (lowercasing the initial letter). No discrepancies in original or corrected text content."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": 17,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly. Text Content Accuracy: Both specify the same original text (\"pockets and\") and the same correction (\"pockets, and\"), inserting a comma after \"pockets\". The core intended change is captured identically. Therefore, the predicted edit matches the ground truth."
+    }
+  ]
+}

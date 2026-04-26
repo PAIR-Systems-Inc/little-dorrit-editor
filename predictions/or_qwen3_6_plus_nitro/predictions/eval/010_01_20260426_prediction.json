@@ -1,0 +1,11 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen3.6 Plus Nitro (OR)",
+  "annotation_date": "2026-04-26T00:02:52.325189",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Model returned empty or non-text content...",
+  "raw_response": "{\n  \"id\": \"gen-1777186946-ai9OEtOruYn14Bcbz14y\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"logprobs\": null,\n      \"message\": {\n        \"content\": null,\n        \"refusal\": null,\n        \"role\": \"assistant\",\n        \"annotations\": null,\n        \"audio\": null,\n        \"function_call\": null,\n        \"tool_calls\": null,\n        \"reasoning\": \"user wants me to identify handwritten editorial corrections on a printed page.\\n\\n**Page Analysis:**\\n- Page number: 368\\n- Title: LITTLE DORRIT\\n\\n**Scanning for corrections:**\\n\\n1.  **Line 13:** \\\"His own hand shook, as he accepted a rose or two from hers, and thanked her.\\\"\\n    - There is a red mark after \\\"hers\\\". It looks like a comma insertion mark (a small caret or just a mark indicating a comma). Wait, looking closely at \\\"hers, and\\\", there is a red mark that looks like a comma or a caret. Actually, looking at the next line \\\"turned into it on his movement or on hers matters little.\\\" There is a red mark und"
+}

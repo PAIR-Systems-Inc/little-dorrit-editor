@@ -161,6 +161,11 @@ def generate_predictions(
 
     # GPT-5 family does not accept the temperature parameter at all.
     is_gpt5_family = model_config.model_name.startswith("gpt-5")
+    supports_temperature = (
+        model_config.supports_temperature
+        if model_config.supports_temperature is not None
+        else True
+    )
     
     # Initialize the client with the appropriate base URL and API key
     client_params = {"api_key": model_config.api_key}
@@ -183,10 +188,19 @@ def generate_predictions(
     if supports_json_object_response:
         create_kwargs["response_format"] = {"type": "json_object"}
 
+    if model_config.service_tier:
+        create_kwargs["service_tier"] = model_config.service_tier
+
+    if model_config.openrouter_provider:
+        create_kwargs["extra_body"] = {"provider": model_config.openrouter_provider}
+
+    if model_config.max_tokens is not None:
+        create_kwargs["max_tokens"] = model_config.max_tokens
+
     if is_thinking:
         create_kwargs["reasoning_effort"] = effort_norm
 
-    if is_gpt5_family or is_thinking:
+    if is_gpt5_family or is_thinking or not supports_temperature:
         # Don't send temperature when it's not supported.
         # If the caller provided one, tell them we're ignoring it.
         if temperature is not None:

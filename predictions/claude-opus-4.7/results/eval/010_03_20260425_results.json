@@ -1,0 +1,78 @@
+{
+  "model_name": "claude-opus-4.7",
+  "date": "2026-04-26T00:11:31.834993",
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:31:47.462752",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 12,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\nText Content Accuracy: Both specify the same original segment (\"hers and\") and the same correction (\"hers, and\"), inserting a comma after \"hers\". This captures the core intended change precisely. Line numbers are irrelevant per instructions."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 14,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"hers matters\") and the same corrected text (\"hers, matters\"), capturing the identical core change\u2014adding a comma after \"hers.\" Line numbers are to be ignored, so the mismatch there does not affect correctness."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 24,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same original_text (\"moment with\") and the same corrected_text (\"moment, with\"), capturing the core intended change\u2014adding a comma after \"moment.\" Ignoring line numbers, the prediction matches the ground truth edit precisely."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 26,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"beautiful that\") and the same corrected text (\"beautiful, that\"), capturing the identical core change: inserting a comma after \"beautiful\". Ignoring line numbers as instructed, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 35,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization\", so the type matches exactly.\n\nText Content Accuracy: Both specify the same core change: original_text \"they\" corrected to \"They\". This captures the essential intended edit with identical before/after text.\n\nLine numbers are ignored per instructions, so the mismatch there does not affect correctness."
+    }
+  ]
+}

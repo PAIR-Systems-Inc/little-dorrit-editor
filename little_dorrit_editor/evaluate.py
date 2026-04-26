@@ -64,6 +64,21 @@ class LLMJudge:
         self.model = model_config.model_name
         self.model_name = model_config.logical_name
         self.reasoning_effort = model_config.reasoning_effort
+        self.openrouter_provider = (
+            model_config.openrouter_provider
+            if isinstance(model_config.openrouter_provider, dict)
+            else None
+        )
+        self.service_tier = (
+            model_config.service_tier
+            if isinstance(model_config.service_tier, str)
+            else None
+        )
+        self.max_tokens = (
+            model_config.max_tokens
+            if isinstance(model_config.max_tokens, int)
+            else None
+        )
 
         self.console = Console()
 
@@ -139,6 +154,15 @@ Respond with a JSON object containing:
         effort = (self.reasoning_effort or "").strip().lower()
         if effort and effort != "none":
             create_kwargs["reasoning_effort"] = effort
+
+        if self.service_tier:
+            create_kwargs["service_tier"] = self.service_tier
+
+        if self.openrouter_provider:
+            create_kwargs["extra_body"] = {"provider": self.openrouter_provider}
+
+        if self.max_tokens is not None:
+            create_kwargs["max_tokens"] = self.max_tokens
 
         response = None
         max_attempts = 3

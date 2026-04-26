@@ -1,0 +1,92 @@
+{
+  "model_name": "gpt_4_1",
+  "date": "2026-02-22T14:33:45.247027",
+  "annotator": "GPT-4.1",
+  "annotation_date": "2025-04-14T11:08:17.157900",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same core change: inserting a comma after \"hers\" in the phrase \"hers and,\" resulting in \"hers, and.\" The original and corrected texts are identical between ground truth and prediction, so the intended punctuation correction is captured exactly."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma between \"hers\" and \"matters\" (\"hers matters\" \u2192 \"hers, matters\"). The prediction makes the same core punctuation change, just with extra surrounding context (\"on hers matters\" \u2192 \"on hers, matters\"). The essential intended edit\u2014adding a comma after \"hers\"\u2014is correctly captured."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change, inserting a comma after \"moment\" in the phrase \"moment with\" to become \"moment, with.\" The original_text and corrected_text align exactly with the ground truth\u2019s intended punctuation change."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 26,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"beautiful that\") and the same corrected text (\"beautiful, that\"), capturing the identical core change: inserting a comma after \"beautiful\". Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "capitalization",
+      "original_text": "they are to be married.",
+      "corrected_text": "They are to be married.",
+      "observed_line_number": 33,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction label the change as \"capitalization,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"they\" to \"They\" (capitalizing the word). The prediction changes \"they are to be married.\" to \"They are to be married.\", which applies the same core correction\u2014capitalizing the initial \"they\" to \"They\"\u2014while including additional surrounding context. This accurately captures the essential intended change."
+    },
+    {
+      "observed_edit_num": 5,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hesitation, that papa had abandoned the idea.",
+      "corrected_text": "hesitation, that papa had abandoned the idea.",
+      "observed_line_number": 32,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

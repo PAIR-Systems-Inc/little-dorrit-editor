@@ -1,0 +1,11 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Qwen3.6 Plus Nitro (OR)",
+  "annotation_date": "2026-04-26T00:28:44.379793",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Model returned empty or non-text content...",
+  "raw_response": "{\n  \"id\": \"gen-1777188392-wiQrDhPoJGpmQObdhBim\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"logprobs\": null,\n      \"message\": {\n        \"content\": null,\n        \"refusal\": null,\n        \"role\": \"assistant\",\n        \"annotations\": null,\n        \"audio\": null,\n        \"function_call\": null,\n        \"tool_calls\": null,\n        \"reasoning\": \"user wants me to identify handwritten editorial corrections on a printed page.\\n\\n**Page Analysis:**\\n- **Header:** \\\"452\\\" and \\\"LITTLE DORRIT\\\". This is line 0.\\n- **Line 1:** \\\"This conversation took place in Clennam's bed room, while he was\\\" -> There is a red 'X' or cross-out mark over the space between \\\"bed\\\" and \\\"room\\\". It looks like it's deleting the space to make it \\\"bedroom\\\". Wait, looking closer at crop 1, there is a red mark that looks like a caret or insertion mark, but actually, it looks like a deletion of the space. Or perhaps it's marking \\\"bed room\\\" to be \\\"bedroom\\\". Let's look at the context. \\"
+}

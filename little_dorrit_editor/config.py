@@ -4,7 +4,7 @@ import os
 import tomllib
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Any, Dict, Optional
 
 
 @dataclass
@@ -19,6 +19,10 @@ class ModelConfig:
     reasoning_effort: Optional[str] = None  # Reasoning effort for thinking models
     image_max_bytes: Optional[int] = None  # Optional per-image payload cap
     supports_json_object_response: Optional[bool] = None  # Optional override for JSON mode support
+    supports_temperature: Optional[bool] = None  # Optional override when providers reject temperature
+    openrouter_provider: Optional[Dict[str, Any]] = None  # Optional OpenRouter provider routing options
+    service_tier: Optional[str] = None  # Optional provider service tier, e.g. OpenRouter/OpenAI priority
+    max_tokens: Optional[int] = None  # Optional output token cap for provider compatibility/cost control
 
 
 class ConfigManager:
@@ -83,6 +87,18 @@ class ConfigManager:
             # Load optional override for JSON object response support
             supports_json_object_response = model_config.get("supports_json_object_response")
 
+            # Load optional override for temperature support
+            supports_temperature = model_config.get("supports_temperature")
+
+            # Load optional OpenRouter/provider routing options
+            openrouter_provider = model_config.get("openrouter_provider")
+
+            # Load optional service tier, e.g. "priority"
+            service_tier = model_config.get("service_tier")
+
+            # Load optional output token cap
+            max_tokens = model_config.get("max_tokens")
+
             # Create the model configuration
             self._models[model_id] = ModelConfig(
                 endpoint=endpoint,
@@ -93,6 +109,10 @@ class ConfigManager:
                 reasoning_effort=reasoning_effort,
                 image_max_bytes=image_max_bytes,
                 supports_json_object_response=supports_json_object_response,
+                supports_temperature=supports_temperature,
+                openrouter_provider=openrouter_provider,
+                service_tier=service_tier,
+                max_tokens=max_tokens,
             )
 
     def get_model(self, model_id: str) -> ModelConfig:

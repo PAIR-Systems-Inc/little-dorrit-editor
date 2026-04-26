@@ -112,6 +112,23 @@
     "release_date": "2026-03-05",
     "release_source": "https://openai.com/index/introducing-gpt-5-4/"
   },
+  "gpt-5.5": {
+    "vendor": "OpenAI",
+    "release_date": "2026-04-23",
+    "release_source": "https://openai.com/index/introducing-gpt-5-5/"
+  },
+  "or_openai_gpt_5_5_pro": {
+    "vendor": "OpenAI",
+    "release_date": "2026-04-24",
+    "release_source": "https://openrouter.ai/openai/gpt-5.5-pro",
+    "release_notes": "OpenRouter listing for GPT-5.5 Pro. OpenAI describes GPT-5.5 Pro as a higher-compute variant of GPT-5.5."
+  },
+  "or_openai_gpt_5_5": {
+    "vendor": "OpenAI",
+    "release_date": "2026-04-24",
+    "release_source": "https://openrouter.ai/openai/gpt-5.5",
+    "release_notes": "OpenRouter listing for the standard GPT-5.5 route."
+  },
   "or_gemini_2_5_pro_preview_03_25": {
     "vendor": "Google",
     "release_date": "2025-03-25",
@@ -273,6 +290,13 @@
     "display_suffix": "*",
     "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
   },
+  "claude-opus-4.7": {
+    "vendor": "Anthropic",
+    "release_date": "2026-04-16",
+    "release_source": "https://www.anthropic.com/news/claude-opus-4-7",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
   "or_claude_3_7_sonnet": {
     "vendor": "Anthropic",
     "release_date": "2025-02-24",
@@ -366,5 +390,11 @@
     "release_date": "2026-04-02",
     "release_source": "https://openrouter.ai/qwen/qwen3.6-plus:free",
     "release_notes": "Release date currently taken from the OpenRouter model page for Qwen3.6 Plus (Free)."
+  },
+  "or_qwen3_6_plus_nitro": {
+    "vendor": "Alibaba",
+    "release_date": "2026-04-02",
+    "release_source": "https://openrouter.ai/qwen/qwen3.6-plus",
+    "release_notes": "Latency-optimized OpenRouter run using the Qwen3.6 Plus Nitro route with provider latency sorting."
   }
 }

@@ -1,0 +1,8 @@
+{
+  "model_id": "or_qwen3_6_plus_nitro",
+  "display_name": "Qwen3.6 Plus Nitro (OR)",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-04-26",
+  "notes": "Benchmark run with 2-shot learning"
+}

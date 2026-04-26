@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-4o",
+  "date": "2026-02-22T14:19:32.958869",
+  "annotator": "GPT-4o",
+  "annotation_date": "2025-04-08T08:31:51.453104",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 38,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth change is capitalizing the word \"if\" at the start of the phrase \"if he\" (\"if he\" \u2192 \"If he\"). The prediction captures the same core change by capitalizing \"if\" (\"if\" \u2192 \"If\"). Although it omits the following word \"he\", it still correctly represents the essential intended correction (capitalizing \"if\")."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 40,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction are \"replacement\" edits, so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth changes the phrase \"said Clennam\" to \"asked Clennam\"\u2014the essential correction is replacing \"said\" with \"asked\" while leaving \"Clennam\" unchanged. The prediction replaces \"said\" with \"asked\" (without including the following word \"Clennam\"), but it captures the core intended change. Additional surrounding context is optional, so this is considered a correct match."
+    }
+  ]
+}

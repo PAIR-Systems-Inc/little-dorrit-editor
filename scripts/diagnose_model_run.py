@@ -210,9 +210,10 @@ def analyze_model(
                 eval_bad += 1
                 entry["status"] = "bad_prediction"
                 entry["reason"] = reason
-                diagnostics["eval"].append(entry)
                 if latest_res is not None:
-                    diagnostics["orphan_results"].append(str(latest_res.path))
+                    result_count += 1
+                    entry["result"] = str(latest_res.path)
+                diagnostics["eval"].append(entry)
                 continue
 
             if latest_res is None:

@@ -299,7 +299,13 @@ EOL
         done
 
         echo "Running queued evaluation tasks with ${JOBS} worker(s)..."
-        run_task_file "$TASK_FILE" "$JOBS"
+        if ! run_task_file "$TASK_FILE" "$JOBS"; then
+            echo "Error: One or more evaluation worker tasks failed for ${MODEL_ID}."
+            echo "Run scripts/diagnose_model_run.py ${MODEL_ID} to identify missing result artifacts."
+            rm -f "$TASK_FILE"
+            trap - EXIT
+            exit 1
+        fi
     else
         echo "No evaluation files found in data/eval. Please ensure evaluation data is available."
     fi

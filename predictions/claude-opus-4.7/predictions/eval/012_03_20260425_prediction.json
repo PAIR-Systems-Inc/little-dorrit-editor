@@ -1,0 +1,91 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "City",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "of to the",
+      "line_number": 4,
+      "notes": "insertion of 'to' marked with caret",
+      "original_text": "of the",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "existence at",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it, to",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "it; to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "motionless when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still, to",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "stand-still; to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "view by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence, is",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "existence; is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege lord",
+      "line_number": 26,
+      "notes": "insertion mark between 'liege' and 'lord'",
+      "original_text": "liegelord",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:32:36.813477",
+  "verified": false
+}

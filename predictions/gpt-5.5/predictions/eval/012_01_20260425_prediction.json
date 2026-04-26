@@ -1,0 +1,94 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter xxix",
+      "corrected_text": "Chapter xxix.",
+      "line_number": 0,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dreaming",
+      "corrected_text": "Dreaming,",
+      "line_number": 0,
+      "page": "373"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "of",
+      "corrected_text": "to",
+      "line_number": 5,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them",
+      "corrected_text": "them;",
+      "line_number": 10,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it to",
+      "corrected_text": "it; to",
+      "line_number": 15,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still to",
+      "corrected_text": "stand-still; to",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence is",
+      "corrected_text": "existence; is",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "page": "373"
+    }
+  ],
+  "annotator": "GPT-5.5",
+  "annotation_date": "2026-04-25T23:16:31.615976",
+  "verified": false
+}

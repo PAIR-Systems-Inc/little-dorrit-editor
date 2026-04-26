@@ -98,26 +98,35 @@ for result_file in $result_files; do
         # Extract base name from result file
         base_name=$(basename "$result_file" | sed 's/_[0-9]*_[0-9]*_results.json//')
 
-        # Extract metrics from the result file
-        precision=$(grep -o '"precision": [0-9.]*' "$result_file" | head -1 | cut -d' ' -f2)
-        recall=$(grep -o '"recall": [0-9.]*' "$result_file" | head -1 | cut -d' ' -f2)
-        f1=$(grep -o '"f1_score": [0-9.]*' "$result_file" | head -1 | cut -d' ' -f2)
+        # Result files store per-edit judgements under details; derive counts
+        # directly so this report stays compatible with the current JSON shape.
+        metrics=$(python - "$result_file" <<'PY'
+import json
+import sys
 
-        # Extract counts for aggregation
-        correct_count=$(grep -o '"correct_count": [0-9]*' "$result_file" | head -1 | awk '{print $2}')
-        total_gt=$(grep -o '"total_ground_truth": [0-9]*' "$result_file" | head -1 | awk '{print $2}')
-        total_pred=$(grep -o '"total_predicted": [0-9]*' "$result_file" | head -1 | awk '{print $2}')
+with open(sys.argv[1], "r") as f:
+    data = json.load(f)
 
-        # Calculate metrics for this file
-        tp=$correct_count
-        fp=$((total_pred - tp))
-        fn=$((total_gt - tp))
+tp = fp = fn = 0
+for detail in data.get("details", []):
+    tp += int(detail.get("tp") or 0)
+    fp += int(detail.get("fp") or 0)
+    fn += int(detail.get("fn") or 0)
+
+precision = tp / (tp + fp) if tp + fp else 0.0
+recall = tp / (tp + fn) if tp + fn else 0.0
+f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+
+print(f"{precision:.4f}\t{recall:.4f}\t{f1:.4f}\t{tp}\t{fp}\t{fn}")
+PY
+)
+        IFS=$'\t' read -r precision recall f1 tp fp fn <<< "$metrics"
 
         # Add to overall totals
         total_true_positives=$((total_true_positives + tp))
         total_false_positives=$((total_false_positives + fp))
         total_false_negatives=$((total_false_negatives + fn))
-        total_correct_count=$((total_correct_count + correct_count))
+        total_correct_count=$((total_correct_count + tp))
         total_files=$((total_files + 1))
 
         # Store data for table
@@ -166,20 +175,16 @@ echo "==================================================="
 total_predictions=$((total_true_positives + total_false_positives))
 total_ground_truth=$((total_true_positives + total_false_negatives))
 
-if [ $total_true_positives -eq 0 ]; then
-    overall_precision=0
-    overall_recall=0
-    overall_f1=0
-else
-    overall_precision=$(echo "scale=4; $total_true_positives / $total_predictions" | bc 2>/dev/null || echo "0")
-    overall_recall=$(echo "scale=4; $total_true_positives / $total_ground_truth" | bc 2>/dev/null || echo "0")
-    sum_pr=$(echo "$overall_precision + $overall_recall" | bc 2>/dev/null || echo "0")
-    if (( $(echo "$sum_pr > 0" | bc -l) )); then
-        overall_f1=$(echo "scale=4; 2 * $overall_precision * $overall_recall / ($overall_precision + $overall_recall)" | bc 2>/dev/null || echo "0")
-    else
-        overall_f1=0
-    fi
-fi
+read -r overall_precision overall_recall overall_f1 < <(python - <<PY
+tp = $total_true_positives
+fp = $total_false_positives
+fn = $total_false_negatives
+precision = tp / (tp + fp) if tp + fp else 0.0
+recall = tp / (tp + fn) if tp + fn else 0.0
+f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+print(f"{precision:.4f} {recall:.4f} {f1:.4f}")
+PY
+)
 
 # Format the metrics for display
 formatted_precision=$(printf "%.4f" $overall_precision)

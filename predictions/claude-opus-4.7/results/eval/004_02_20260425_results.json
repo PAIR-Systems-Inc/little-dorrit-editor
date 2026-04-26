@@ -1,0 +1,50 @@
+{
+  "model_name": "claude-opus-4.7",
+  "date": "2026-04-26T00:09:22.964073",
+  "annotator": "Claude Opus 4.7",
+  "annotation_date": "2026-04-25T23:14:01.289009",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": 8,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same change from \"No sir\" to \"No, sir\" (inserting a comma after \"No\"). The core correction is identical. Line numbers are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is capitalizing the initial word in the phrase: \"why did he dine\" \u2192 \"Why did he dine.\" The predicted edit focuses on the essential change within that phrase: \"why\" \u2192 \"Why.\" Although it includes less surrounding context, it captures the core intended correction (capitalizing \"why\"). Therefore, the text content matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "observed_line_number": 30,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the edit type matches exactly.\n2) Text Content Accuracy: Both specify the same core punctuation change from \"cold stones!\" to \"cold stones?\" with identical original and corrected text. Ignoring line numbers, the intended edit is captured exactly."
+    }
+  ]
+}
