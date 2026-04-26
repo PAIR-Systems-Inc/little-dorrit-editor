@@ -21,6 +21,7 @@ class ModelConfig:
     supports_json_object_response: Optional[bool] = None  # Optional override for JSON mode support
     supports_temperature: Optional[bool] = None  # Optional override when providers reject temperature
     openrouter_provider: Optional[Dict[str, Any]] = None  # Optional OpenRouter provider routing options
+    openrouter_reasoning: Optional[Dict[str, Any]] = None  # Optional OpenRouter reasoning options
     service_tier: Optional[str] = None  # Optional provider service tier, e.g. OpenRouter/OpenAI priority
     max_tokens: Optional[int] = None  # Optional output token cap for provider compatibility/cost control
 
@@ -93,6 +94,9 @@ class ConfigManager:
             # Load optional OpenRouter/provider routing options
             openrouter_provider = model_config.get("openrouter_provider")
 
+            # Load optional OpenRouter reasoning options
+            openrouter_reasoning = model_config.get("openrouter_reasoning")
+
             # Load optional service tier, e.g. "priority"
             service_tier = model_config.get("service_tier")
 
@@ -111,6 +115,7 @@ class ConfigManager:
                 supports_json_object_response=supports_json_object_response,
                 supports_temperature=supports_temperature,
                 openrouter_provider=openrouter_provider,
+                openrouter_reasoning=openrouter_reasoning,
                 service_tier=service_tier,
                 max_tokens=max_tokens,
             )

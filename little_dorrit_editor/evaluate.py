@@ -69,6 +69,11 @@ class LLMJudge:
             if isinstance(model_config.openrouter_provider, dict)
             else None
         )
+        self.openrouter_reasoning = (
+            model_config.openrouter_reasoning
+            if isinstance(model_config.openrouter_reasoning, dict)
+            else None
+        )
         self.service_tier = (
             model_config.service_tier
             if isinstance(model_config.service_tier, str)
@@ -158,8 +163,15 @@ Respond with a JSON object containing:
         if self.service_tier:
             create_kwargs["service_tier"] = self.service_tier
 
+        extra_body = {}
         if self.openrouter_provider:
-            create_kwargs["extra_body"] = {"provider": self.openrouter_provider}
+            extra_body["provider"] = self.openrouter_provider
+
+        if self.openrouter_reasoning:
+            extra_body["reasoning"] = self.openrouter_reasoning
+
+        if extra_body:
+            create_kwargs["extra_body"] = extra_body
 
         if self.max_tokens is not None:
             create_kwargs["max_tokens"] = self.max_tokens

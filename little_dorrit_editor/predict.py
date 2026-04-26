@@ -192,7 +192,10 @@ def generate_predictions(
         create_kwargs["service_tier"] = model_config.service_tier
 
     if model_config.openrouter_provider:
-        create_kwargs["extra_body"] = {"provider": model_config.openrouter_provider}
+        create_kwargs.setdefault("extra_body", {})["provider"] = model_config.openrouter_provider
+
+    if model_config.openrouter_reasoning:
+        create_kwargs.setdefault("extra_body", {})["reasoning"] = model_config.openrouter_reasoning
 
     if model_config.max_tokens is not None:
         create_kwargs["max_tokens"] = model_config.max_tokens

@@ -1,0 +1,36 @@
+{
+  "model_name": "or_kimi_k2_6",
+  "date": "2026-04-26T09:33:32.981770",
+  "annotator": "Kimi K2.6 Nitro (OR)",
+  "annotation_date": "2026-04-26T09:17:29.990690",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial word in the phrase \"if he\" \u2192 \"If he\". The prediction captures the same essential change by capitalizing \"if\" \u2192 \"If\" (with less surrounding context). Since the core intended correction is the capitalization of \"if\" at the start, the predicted edit matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The ground truth replaces the phrase \"said Clennam\" with \"asked Clennam\", where the core intended change is substituting \"said\" with \"asked\" while keeping \"Clennam\" the same. The predicted edit captures this essential substitution (\"said\" \u2192 \"asked\") even though it includes less surrounding context. This still matches the ground truth\u2019s intention."
+    }
+  ]
+}

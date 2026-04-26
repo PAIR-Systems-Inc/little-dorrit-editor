@@ -1,0 +1,45 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "though.",
+      "corrected_text": "though,",
+      "line_number": 1,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "of the dryest",
+      "corrected_text": "driest of",
+      "line_number": 6,
+      "page": "page_451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "that boiling-over",
+      "corrected_text": "that there boiling-over",
+      "line_number": 11,
+      "page": "page_451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "page_451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "page_451"
+    }
+  ],
+  "annotator": "Kimi K2.6 Nitro (OR)",
+  "annotation_date": "2026-04-26T09:32:30.865332",
+  "verified": false
+}

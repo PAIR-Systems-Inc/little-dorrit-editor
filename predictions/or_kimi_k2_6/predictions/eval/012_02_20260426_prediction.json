@@ -1,0 +1,66 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "page_373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "return of",
+      "corrected_text": "return to",
+      "line_number": 5,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them,",
+      "corrected_text": "them;",
+      "line_number": 10,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence is",
+      "corrected_text": "existence, is",
+      "line_number": 18,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "page": "page_373"
+    }
+  ],
+  "annotator": "Kimi K2.6 Nitro (OR)",
+  "annotation_date": "2026-04-26T09:08:16.854868",
+  "verified": false
+}

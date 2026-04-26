@@ -1,0 +1,8 @@
+{
+  "model_id": "or_kimi_k2_6",
+  "display_name": "Kimi K2.6 Nitro (OR)",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-04-26",
+  "notes": "Benchmark run with 2-shot learning"
+}

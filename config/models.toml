@@ -115,6 +115,15 @@ model_name = "moonshotai/kimi-k2.5"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Kimi K2.5"
 
+["or_kimi_k2_6"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "moonshotai/kimi-k2.6:nitro"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Kimi K2.6 Nitro (OR)"
+service_tier = "priority"
+openrouter_provider = { sort = "latency" }
+openrouter_reasoning = { exclude = true }
+
 # Llama Family ########
 
 ["or_llama_3_2_90b_vision_instruct"]
