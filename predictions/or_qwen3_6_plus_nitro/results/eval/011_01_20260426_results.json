@@ -1,8 +1,8 @@
 {
   "model_name": "or_qwen3_6_plus_nitro",
-  "date": "2026-04-26T08:20:22.303859",
+  "date": "2026-04-26T10:01:00.728240",
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:04:50.257450",
+  "annotation_date": "2026-04-26T09:48:14.193551",
   "details": [
     {
       "observed_edit_num": 0,
@@ -16,7 +16,7 @@
       "observed_line_number": 16,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "1. Edit Type Accuracy: Both the ground truth and the prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2. Text Content Accuracy: The core intended change in the ground truth is replacing the exclamation point with a comma: \"Thank you!\" \u2192 \"Thank you,\". The prediction captures the same essential punctuation substitution, merely including surrounding quotation marks as additional context: \"\\\"Thank you!\\\"\" \u2192 \"\\\"Thank you,\\\"\". This preserves the same core edit (\"!\" to \",\")."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the punctuation in the phrase from an exclamation point to a comma (\"Thank you!\" \u2192 \"Thank you,\"). The prediction makes the same core change (\"Thank you!\" \u2192 \"Thank you,\") while including surrounding quotation marks as additional context. The essential intended correction\u2014replacing \"!\" with \",\"\u2014is correctly captured."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 24,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"shore and\") and the same correction (\"shore, and\"), inserting a comma after \"shore.\" This captures the core intended change with no discrepancy in the actual edit."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both edits change \"shore and\" to \"shore, and\" by inserting a comma after \"shore.\" This captures the same core correction with identical original and corrected text. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 32,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n2) Text Content Accuracy: Both indicate replacing the word \"that\" with \"than.\" This captures the same core change as the ground truth with identical original and corrected text. Line number differences are ignored as instructed."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit, so the type matches exactly.\nText Content Accuracy: Both replace the original text \"that\" with the corrected text \"than\". This captures the core intended change precisely. Line number differences are to be ignored, so they do not affect correctness."
     },
     {
       "observed_edit_num": 3,
@@ -52,9 +52,9 @@
       "tp": 0.0,
       "fp": 1.0,
       "fn": 0.0,
-      "type": "punctuation",
-      "original_text": "that in",
-      "corrected_text": "that, in",
+      "type": "deletion",
+      "original_text": "in our fancy",
+      "corrected_text": "",
       "observed_line_number": 10,
       "line_diff": null,
       "line_number_penalty": 0.0,
@@ -62,20 +62,6 @@
     },
     {
       "observed_edit_num": 4,
-      "expected_edit_num": null,
-      "tp": 0.0,
-      "fp": 1.0,
-      "fn": 0.0,
-      "type": "punctuation",
-      "original_text": "fancy whatever",
-      "corrected_text": "fancy, whatever",
-      "observed_line_number": 10,
-      "line_diff": null,
-      "line_number_penalty": 0.0,
-      "judgement": "False positive: no matching ground truth edit found"
-    },
-    {
-      "observed_edit_num": 5,
       "expected_edit_num": null,
       "tp": 0.0,
       "fp": 1.0,
@@ -95,8 +81,8 @@
       "fp": 0.0,
       "fn": 1.0,
       "type": "punctuation",
-      "original_text": "that, in",
-      "corrected_text": "that in",
+      "original_text": "fancy, whatever",
+      "corrected_text": "fancy whatever",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,
@@ -109,8 +95,8 @@
       "fp": 0.0,
       "fn": 1.0,
       "type": "punctuation",
-      "original_text": "fancy, whatever",
-      "corrected_text": "fancy whatever",
+      "original_text": "that, in",
+      "corrected_text": "that in",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

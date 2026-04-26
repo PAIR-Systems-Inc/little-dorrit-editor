@@ -7,67 +7,67 @@
       "type": "capitalization",
       "original_text": "city",
       "corrected_text": "City",
-      "line_number": 1,
-      "page": "003.png"
+      "line_number": 2,
+      "page": "373"
     },
     {
-      "type": "replacement",
+      "type": "insertion",
+      "original_text": "return",
+      "corrected_text": "to return",
+      "line_number": 6,
+      "page": "373"
+    },
+    {
+      "type": "deletion",
       "original_text": "of",
-      "corrected_text": "to",
-      "line_number": 5,
-      "page": "003.png"
+      "corrected_text": "",
+      "line_number": 6,
+      "page": "373"
     },
     {
       "type": "punctuation",
-      "original_text": ",",
-      "corrected_text": ";",
-      "line_number": 10,
-      "page": "003.png"
+      "original_text": "them,",
+      "corrected_text": "them;",
+      "line_number": 11,
+      "page": "373"
     },
     {
       "type": "punctuation",
-      "original_text": ",",
-      "corrected_text": ";",
-      "line_number": 14,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": ",",
-      "corrected_text": ";",
+      "original_text": "existence,",
+      "corrected_text": "existence;",
       "line_number": 15,
-      "page": "003.png"
+      "page": "373"
     },
     {
       "type": "punctuation",
-      "original_text": ",",
-      "corrected_text": ";",
+      "original_text": "it,",
+      "corrected_text": "it;",
       "line_number": 16,
-      "page": "003.png"
+      "page": "373"
     },
     {
       "type": "punctuation",
-      "original_text": ",",
-      "corrected_text": ";",
-      "line_number": 16,
-      "page": "003.png"
+      "original_text": "stand-still,",
+      "corrected_text": "stand-still;",
+      "line_number": 17,
+      "page": "373"
     },
     {
       "type": "punctuation",
-      "original_text": ",",
-      "corrected_text": ";",
-      "line_number": 18,
-      "page": "003.png"
+      "original_text": "existence,",
+      "corrected_text": "existence;",
+      "line_number": 19,
+      "page": "373"
     },
     {
       "type": "punctuation",
       "original_text": "liege lord",
       "corrected_text": "liege-lord",
-      "line_number": 25,
-      "page": "003.png"
+      "line_number": 26,
+      "page": "373"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:13:27.582472",
+  "annotation_date": "2026-04-26T09:54:40.579623",
   "verified": false
 }

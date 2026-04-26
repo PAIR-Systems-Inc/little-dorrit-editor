@@ -7,18 +7,18 @@
       "type": "capitalization",
       "original_text": "if",
       "corrected_text": "If",
-      "line_number": 37,
-      "page": "003.png"
+      "line_number": 36,
+      "page": "209"
     },
     {
       "type": "replacement",
       "original_text": "said",
       "corrected_text": "asked",
-      "line_number": 40,
-      "page": "003.png"
+      "line_number": 39,
+      "page": "209"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T08:17:30.464520",
+  "annotation_date": "2026-04-26T09:57:13.284700",
   "verified": false
 }

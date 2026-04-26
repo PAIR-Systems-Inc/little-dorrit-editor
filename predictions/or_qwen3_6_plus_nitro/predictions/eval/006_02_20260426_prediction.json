@@ -26,8 +26,8 @@
     },
     {
       "type": "deletion",
-      "original_text": "association, did",
-      "corrected_text": "association did",
+      "original_text": "tion, did",
+      "corrected_text": "tion did",
       "line_number": 15,
       "page": "003.png"
     },
@@ -51,16 +51,9 @@
       "corrected_text": "said,",
       "line_number": 25,
       "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": "Clennam in",
-      "corrected_text": "Clennam, in",
-      "line_number": 29,
-      "page": "003.png"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:12:02.962855",
+  "annotation_date": "2026-04-26T09:52:48.782188",
   "verified": false
 }

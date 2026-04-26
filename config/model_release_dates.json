@@ -401,6 +401,6 @@
     "vendor": "Alibaba",
     "release_date": "2026-04-02",
     "release_source": "https://openrouter.ai/qwen/qwen3.6-plus",
-    "release_notes": "Latency-optimized OpenRouter run using the Qwen3.6 Plus Nitro route with provider latency sorting."
+    "release_notes": "Latency-optimized OpenRouter run using the Qwen3.6 Plus Nitro route with provider latency sorting and reasoning tokens excluded from API responses."
   }
 }

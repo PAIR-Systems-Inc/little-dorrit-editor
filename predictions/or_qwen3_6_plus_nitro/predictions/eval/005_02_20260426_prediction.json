@@ -2,27 +2,10 @@
   "image": "005.png",
   "page_number": 1,
   "source": "Little Dorrit",
-  "edits": [
-    {
-      "confidence": null,
-      "corrected_text": "If",
-      "line_number": 36,
-      "notes": null,
-      "original_text": "if",
-      "page": "003.png",
-      "type": "capitalization"
-    },
-    {
-      "confidence": null,
-      "corrected_text": "asked",
-      "line_number": 39,
-      "notes": null,
-      "original_text": "said",
-      "page": "003.png",
-      "type": "replacement"
-    }
-  ],
+  "edits": [],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:10:19.482600",
-  "verified": false
+  "annotation_date": "2026-04-26T09:51:55.138958",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Model returned empty or non-text content...",
+  "raw_response": "{\n  \"id\": \"gen-1777222282-EioFhuV2jTI4lfaQ6GkL\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"logprobs\": null,\n      \"message\": {\n        \"content\": null,\n        \"refusal\": null,\n        \"role\": \"assistant\",\n        \"annotations\": null,\n        \"audio\": null,\n        \"function_call\": null,\n        \"tool_calls\": null\n      },\n      \"native_finish_reason\": \"null\"\n    }\n  ],\n  \"created\": 1777222282,\n  \"model\": \"qwen/qwen3.6-plus-04-02\",\n  \"object\": \"chat.completion\",\n  \"service_tier\": null,\n  \"system_fingerprint\": null,\n  \"usage\": {\n    \"completion_tokens\": 2783,\n    \"prompt_tokens\": 9355,\n    \"total_tokens\": 12138,\n    \"completion_tokens_details\": {\n      \"accepted_prediction_tokens\": null,\n      \"audio_tokens\": 0,\n      \"reasoning_tokens\": 2783,\n      \"rejected_prediction_tokens\": null,\n      \"image_tokens\": 0\n    },\n    \"prompt_tokens_details\": {\n      \"audio_tokens\": 0,\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"video_tokens\": 0\n  "
 }

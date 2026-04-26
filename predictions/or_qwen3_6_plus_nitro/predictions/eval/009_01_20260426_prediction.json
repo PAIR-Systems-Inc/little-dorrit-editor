@@ -8,59 +8,66 @@
       "original_text": "heart so",
       "corrected_text": "heart, so",
       "line_number": 10,
-      "page": "369"
+      "page": "003.png"
     },
     {
       "type": "deletion",
       "original_text": "Mr. ",
       "corrected_text": "",
       "line_number": 22,
-      "page": "369"
+      "page": "003.png"
     },
     {
       "type": "insertion",
-      "original_text": "thanked",
-      "corrected_text": "indeed thanked",
-      "line_number": 27,
-      "page": "369"
+      "original_text": "face, with",
+      "corrected_text": "face, indeed, with",
+      "line_number": 26,
+      "page": "003.png"
     },
     {
       "type": "italicize",
       "original_text": "thanked him from her heart",
       "corrected_text": "thanked him from her heart",
       "line_number": 27,
-      "page": "369"
+      "page": "003.png"
     },
     {
       "type": "punctuation",
-      "original_text": "ness) she",
-      "corrected_text": "ness), she",
+      "original_text": "heart (as",
+      "corrected_text": "heart, as",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ness), she",
+      "corrected_text": "ness, she",
       "line_number": 28,
-      "page": "369"
+      "page": "003.png"
     },
     {
       "type": "punctuation",
       "original_text": "length said",
       "corrected_text": "length, said",
       "line_number": 31,
-      "page": "369"
+      "page": "003.png"
     },
     {
       "type": "italicize",
-      "original_text": "very much",
-      "corrected_text": "very much",
+      "original_text": "very",
+      "corrected_text": "very",
       "line_number": 33,
-      "page": "369"
+      "page": "003.png"
     },
     {
       "type": "replacement",
       "original_text": "hope",
       "corrected_text": "hoped",
       "line_number": 34,
-      "page": "369"
+      "page": "003.png"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:04:02.372868",
+  "annotation_date": "2026-04-26T09:47:43.194299",
   "verified": false
 }

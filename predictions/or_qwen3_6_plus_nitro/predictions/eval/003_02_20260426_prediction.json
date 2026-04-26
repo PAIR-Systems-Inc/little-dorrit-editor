@@ -5,41 +5,48 @@
   "edits": [
     {
       "type": "punctuation",
-      "original_text": "Travellers.",
-      "corrected_text": "Travellers,",
-      "line_number": 0,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": "howling over",
-      "corrected_text": "howling, over",
+      "original_text": "Fellow Travellers.",
+      "corrected_text": "Fellow Travellers,",
       "line_number": 1,
       "page": "003.png"
     },
     {
       "type": "punctuation",
-      "original_text": "yonder to-day",
-      "corrected_text": "yonder, to-day",
-      "line_number": 1,
+      "original_text": "howling",
+      "corrected_text": "howling,",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "yonder",
+      "corrected_text": "yonder,",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day",
+      "corrected_text": "to-day,",
+      "line_number": 2,
       "page": "003.png"
     },
     {
       "type": "capitalization",
-      "original_text": "sir",
-      "corrected_text": "Sir",
-      "line_number": 1,
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "line_number": 2,
       "page": "003.png"
     },
     {
       "type": "punctuation",
-      "original_text": "pockets and",
-      "corrected_text": "pockets, and",
-      "line_number": 17,
+      "original_text": "pockets",
+      "corrected_text": "pockets,",
+      "line_number": 18,
       "page": "003.png"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:11:23.261490",
+  "annotation_date": "2026-04-26T09:52:43.159180",
   "verified": false
 }

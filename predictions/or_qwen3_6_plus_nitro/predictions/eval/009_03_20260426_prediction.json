@@ -4,13 +4,6 @@
   "source": "Little Dorrit",
   "edits": [
     {
-      "type": "punctuation",
-      "original_text": "heart so",
-      "corrected_text": "heart, so",
-      "line_number": 10,
-      "page": "003.png"
-    },
-    {
       "type": "deletion",
       "original_text": "Mr.",
       "corrected_text": "",
@@ -18,10 +11,38 @@
       "page": "003.png"
     },
     {
-      "type": "replacement",
+      "type": "italicize",
       "original_text": "with some hurried words to the effect that she thanked him from her heart",
-      "corrected_text": "indeed",
+      "corrected_text": "with some hurried words to the effect that she thanked him from her heart",
       "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "thanked",
+      "corrected_text": "indeed thanked",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "(",
+      "corrected_text": "",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "heart ",
+      "corrected_text": "heart, ",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": ")",
+      "corrected_text": ",",
+      "line_number": 28,
       "page": "003.png"
     },
     {
@@ -32,21 +53,21 @@
       "page": "003.png"
     },
     {
-      "type": "deletion",
+      "type": "italicize",
       "original_text": "very much",
-      "corrected_text": "",
+      "corrected_text": "very much",
       "line_number": 33,
       "page": "003.png"
     },
     {
       "type": "replacement",
-      "original_text": "hope",
-      "corrected_text": "hoped",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
       "line_number": 34,
       "page": "003.png"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:26:18.658815",
+  "annotation_date": "2026-04-26T09:57:52.549626",
   "verified": false
 }

@@ -5,8 +5,8 @@
   "edits": [
     {
       "type": "capitalization",
-      "original_text": "'why",
-      "corrected_text": "'Why",
+      "original_text": "why",
+      "corrected_text": "Why",
       "line_number": 28,
       "page": "184"
     },
@@ -19,6 +19,6 @@
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:25:23.022633",
+  "annotation_date": "2026-04-26T09:57:13.925846",
   "verified": false
 }

@@ -4,7 +4,7 @@
   "source": "Little Dorrit",
   "edits": [
     {
-      "type": "replacement",
+      "type": "punctuation",
       "original_text": "high road",
       "corrected_text": "high-road",
       "line_number": 1,
@@ -14,7 +14,7 @@
       "type": "punctuation",
       "original_text": "materials costing",
       "corrected_text": "materials, costing",
-      "line_number": 4,
+      "line_number": 3,
       "page": "003.png"
     },
     {
@@ -26,8 +26,8 @@
     },
     {
       "type": "deletion",
-      "original_text": ",",
-      "corrected_text": "",
+      "original_text": "tion, did",
+      "corrected_text": "tion did",
       "line_number": 15,
       "page": "003.png"
     },
@@ -40,15 +40,8 @@
     },
     {
       "type": "punctuation",
-      "original_text": "said when",
-      "corrected_text": "said, when",
-      "line_number": 23,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": ";",
-      "corrected_text": ",",
+      "original_text": "said;",
+      "corrected_text": "said,",
       "line_number": 25,
       "page": "003.png"
     },
@@ -61,6 +54,6 @@
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T08:18:09.025455",
+  "annotation_date": "2026-04-26T09:58:16.853738",
   "verified": false
 }

@@ -4,42 +4,42 @@
   "source": "Little Dorrit",
   "edits": [
     {
-      "type": "italicize",
+      "type": "deletion",
       "original_text": "in our fancy",
-      "corrected_text": "in our fancy",
+      "corrected_text": "",
       "line_number": 10,
-      "page": "003.png"
+      "page": "372"
     },
     {
       "type": "punctuation",
-      "original_text": "\"Thank you!\"",
-      "corrected_text": "\"Thank you,\"",
+      "original_text": "Thank you!",
+      "corrected_text": "Thank you,",
       "line_number": 16,
-      "page": "003.png"
+      "page": "372"
     },
     {
       "type": "punctuation",
       "original_text": "shore and",
       "corrected_text": "shore, and",
       "line_number": 24,
-      "page": "003.png"
+      "page": "372"
     },
     {
       "type": "punctuation",
       "original_text": "within doors",
       "corrected_text": "within-doors",
       "line_number": 27,
-      "page": "003.png"
+      "page": "372"
     },
     {
       "type": "replacement",
       "original_text": "that",
       "corrected_text": "than",
       "line_number": 32,
-      "page": "003.png"
+      "page": "372"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:13:24.442012",
+  "annotation_date": "2026-04-26T09:54:17.594220",
   "verified": false
 }

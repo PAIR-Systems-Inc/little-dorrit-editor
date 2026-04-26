@@ -19,8 +19,15 @@
     },
     {
       "type": "capitalization",
-      "original_text": "Marseilles harbour",
-      "corrected_text": "Marseilles Harbour",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 30,
+      "page": "6"
+    },
+    {
+      "type": "insertion",
+      "original_text": "I am. See here!",
+      "corrected_text": "I am.\nSee here!",
       "line_number": 30,
       "page": "6"
     },
@@ -33,20 +40,13 @@
     },
     {
       "type": "punctuation",
-      "original_text": "Civita Vecchia so",
-      "corrected_text": "Civita Vecchia, so",
-      "line_number": 36,
-      "page": "6"
-    },
-    {
-      "type": "capitalization",
-      "original_text": "so",
-      "corrected_text": "So",
+      "original_text": "Vecchia, So",
+      "corrected_text": "Vecchia. So",
       "line_number": 36,
       "page": "6"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:27:51.388741",
+  "annotation_date": "2026-04-26T09:57:27.270286",
   "verified": false
 }

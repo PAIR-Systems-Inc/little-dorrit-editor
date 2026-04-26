@@ -1,9 +1,23 @@
 {
   "model_name": "or_qwen3_6_plus_nitro",
-  "date": "2026-04-26T08:19:36.665975",
+  "date": "2026-04-26T10:00:14.924279",
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:25:47.230664",
+  "annotation_date": "2026-04-26T09:57:48.355467",
   "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW",
+      "corrected_text": "SUN AND SHADOW.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
     {
       "observed_edit_num": null,
       "expected_edit_num": 0,

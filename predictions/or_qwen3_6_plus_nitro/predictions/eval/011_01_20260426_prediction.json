@@ -4,49 +4,52 @@
   "source": "Little Dorrit",
   "edits": [
     {
-      "type": "punctuation",
-      "original_text": "that in",
-      "corrected_text": "that, in",
+      "confidence": null,
+      "corrected_text": "",
       "line_number": 10,
-      "page": "003.png"
+      "notes": null,
+      "original_text": "in our fancy",
+      "page": "003.png",
+      "type": "deletion"
     },
     {
-      "type": "punctuation",
-      "original_text": "fancy whatever",
-      "corrected_text": "fancy, whatever",
-      "line_number": 10,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": "\"Thank you!\"",
+      "confidence": null,
       "corrected_text": "\"Thank you,\"",
       "line_number": 16,
-      "page": "003.png"
+      "notes": null,
+      "original_text": "\"Thank you!\"",
+      "page": "003.png",
+      "type": "punctuation"
     },
     {
-      "type": "punctuation",
-      "original_text": "shore and",
+      "confidence": null,
       "corrected_text": "shore, and",
       "line_number": 24,
-      "page": "003.png"
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
     },
     {
-      "type": "punctuation",
-      "original_text": "within doors",
+      "confidence": null,
       "corrected_text": "within-doors",
       "line_number": 27,
-      "page": "003.png"
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
     },
     {
-      "type": "replacement",
-      "original_text": "that",
+      "confidence": null,
       "corrected_text": "than",
       "line_number": 32,
-      "page": "003.png"
+      "notes": null,
+      "original_text": "that",
+      "page": "003.png",
+      "type": "replacement"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:04:50.257450",
+  "annotation_date": "2026-04-26T09:48:14.193551",
   "verified": false
 }

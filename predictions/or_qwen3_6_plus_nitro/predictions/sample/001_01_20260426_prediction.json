@@ -5,76 +5,76 @@
   "edits": [
     {
       "type": "punctuation",
-      "original_text": "bells and",
-      "corrected_text": "bells, and",
+      "original_text": "church bells and",
+      "corrected_text": "church bells, and",
       "line_number": 2,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "punctuation",
       "original_text": "wine bottles",
       "corrected_text": "wine-bottles",
       "line_number": 11,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "punctuation",
       "original_text": "got through",
       "corrected_text": "got, through",
       "line_number": 14,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "punctuation",
       "original_text": "bars fash-",
       "corrected_text": "bars, fash-",
       "line_number": 14,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "punctuation",
       "original_text": "grating where",
       "corrected_text": "grating, where",
       "line_number": 17,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "punctuation",
       "original_text": "outside and",
       "corrected_text": "outside; and",
       "line_number": 29,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "punctuation",
       "original_text": "intact in",
       "corrected_text": "intact, in",
       "line_number": 30,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "capitalization",
       "original_text": "ocean",
       "corrected_text": "Ocean",
       "line_number": 31,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "punctuation",
       "original_text": "fed looking",
-      "corrected_text": "fed, looking",
+      "corrected_text": "fed; looking",
       "line_number": 36,
-      "page": "001.png"
+      "page": "5"
     },
     {
       "type": "punctuation",
       "original_text": "bars that",
       "corrected_text": "bars, that",
       "line_number": 36,
-      "page": "001.png"
+      "page": "5"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:04:07.438267",
+  "annotation_date": "2026-04-26T09:46:14.339070",
   "verified": false
 }

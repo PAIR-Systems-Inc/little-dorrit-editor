@@ -1,8 +1,8 @@
 {
   "model_name": "or_qwen3_6_plus_nitro",
-  "date": "2026-04-26T08:19:23.766570",
+  "date": "2026-04-26T10:00:05.762684",
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:04:15.596218",
+  "annotation_date": "2026-04-26T09:48:01.476737",
   "details": [
     {
       "observed_edit_num": 0,
@@ -16,7 +16,7 @@
       "observed_line_number": 1,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the edit type matches exactly.\n2) Text Content Accuracy: Both specify the same transformation from \"high road\" to \"high-road\" (inserting a hyphen between the words). The core change is identical, with no discrepancies in original or corrected text.\nTherefore, the predicted edit correctly captures the ground truth intention."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same core change: converting \"high road\" to the hyphenated form \"high-road.\" There is no discrepancy in original or corrected text. Therefore, the prediction fully matches the ground truth intention."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 3,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the edit type matches exactly.\n2) Text Content Accuracy: Both specify the same transformation from \"materials costing\" to \"materials, costing,\" inserting a comma after \"materials.\" This captures the core intended change with no discrepancy."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly. Text Content Accuracy: Both specify the same original text (\"materials costing\") and the same correction (\"materials, costing\"), capturing the identical core change\u2014adding a comma after \"materials.\" Therefore, the predicted edit correctly reflects the ground truth intention."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 13,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\nText Content Accuracy: Both specify the same original segment (\"about and\") and the same correction (\"about, and\"), capturing the identical core change\u2014adding a comma after \"about.\" Therefore, the predicted edit matches the ground truth intention."
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\n\nText Content Accuracy: Both ground truth and prediction change the phrase \"about and\" to \"about, and\" by inserting a comma after \"about.\" This captures the core intended punctuation correction with identical original and corrected text.\n\nTherefore, the prediction correctly matches the ground truth intention."
     },
     {
       "observed_edit_num": 3,
@@ -58,7 +58,7 @@
       "observed_line_number": 18,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"earnestly telling\") and the same corrected text (\"earnestly, telling\"), capturing the identical core change\u2014adding a comma after \"earnestly\". Therefore the predicted edit matches the ground truth intention."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original_text (\"earnestly telling\") and the same corrected_text (\"earnestly, telling\"), capturing the identical core change\u2014adding a comma after \"earnestly\". Therefore, the prediction matches the ground truth intention."
     },
     {
       "observed_edit_num": 4,
@@ -72,7 +72,7 @@
       "observed_line_number": 23,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change, inserting a comma after \"said\" in the phrase \"said when\" \u2192 \"said, when\". The core correction is identical with no discrepancy in original or corrected text."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the identical change from \"said when\" to \"said, when\", inserting a comma after \"said\". The core intended punctuation correction is captured exactly."
     },
     {
       "observed_edit_num": 5,
@@ -86,7 +86,7 @@
       "observed_line_number": 29,
       "line_diff": 0,
       "line_number_penalty": 0.0,
-      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\nText Content Accuracy: Both specify the same core change: inserting a comma after \"Clennam\" (\"Clennam in\" \u2192 \"Clennam, in\"). The original and corrected text match exactly, so the intended correction is fully captured."
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same transformation, adding a comma after \"Clennam\" (\"Clennam in\" \u2192 \"Clennam, in\"). The core intended punctuation change is captured exactly with matching original and corrected text."
     },
     {
       "observed_edit_num": 6,
@@ -94,9 +94,9 @@
       "tp": 0.0,
       "fp": 1.0,
       "fn": 0.0,
-      "type": "deletion",
-      "original_text": "tion, did",
-      "corrected_text": "tion did",
+      "type": "punctuation",
+      "original_text": "association did",
+      "corrected_text": "association, did",
       "observed_line_number": 15,
       "line_diff": null,
       "line_number_penalty": 0.0,

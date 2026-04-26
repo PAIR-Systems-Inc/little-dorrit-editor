@@ -1,36 +1,36 @@
 {
   "model_name": "or_qwen3_6_plus_nitro",
-  "date": "2026-04-26T08:19:14.232563",
+  "date": "2026-04-26T09:59:52.591193",
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T08:17:30.464520",
+  "annotation_date": "2026-04-26T09:57:13.284700",
   "details": [
     {
       "observed_edit_num": 0,
       "expected_edit_num": 0,
-      "tp": 0.9,
-      "fp": 0.04999999999999999,
-      "fn": 0.04999999999999999,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
       "type": "capitalization",
       "original_text": "if",
       "corrected_text": "If",
-      "observed_line_number": 37,
-      "line_diff": 1,
-      "line_number_penalty": 0.1,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial word in the phrase \"if he\" \u2192 \"If he.\" The prediction captures the same core change by capitalizing \"if\" \u2192 \"If.\" Although it omits the following word \"he\" from the span, it still correctly represents the essential intended correction (capitalizing \"if\")."
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the word \"if\" in the phrase \"if he\" \u2192 \"If he.\" The prediction applies the same core change, \"if\" \u2192 \"If,\" just with less surrounding context. Since the essential intended correction (capitalizing \"if\") is correctly captured, the text content matches the ground truth\u2019s intention."
     },
     {
       "observed_edit_num": 1,
       "expected_edit_num": 1,
-      "tp": 0.9,
-      "fp": 0.04999999999999999,
-      "fn": 0.04999999999999999,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
       "type": "replacement",
       "original_text": "said",
       "corrected_text": "asked",
-      "observed_line_number": 40,
-      "line_diff": 1,
-      "line_number_penalty": 0.1,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the core substitution \"said\" \u2192 \"asked\" (with less surrounding context). Omitting \"Clennam\" does not change the essential intended correction, since the actual corrected word is the same.\n\nTherefore, the predicted edit matches the ground truth's intention."
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are \"replacement\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"said\" to \"asked\" within the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the same core substitution (\"said\" \u2192 \"asked\"), just with less surrounding context (it omits \"Clennam\"). Since the essential intended change is the verb replacement, the prediction matches the ground truth\u2019s intention."
     }
   ]
 }

@@ -5,48 +5,41 @@
   "edits": [
     {
       "type": "punctuation",
-      "original_text": "Fellow Travellers",
-      "corrected_text": "Fellow Travellers.",
-      "line_number": 0,
+      "original_text": "Travellers.",
+      "corrected_text": "Travellers,",
+      "line_number": 1,
       "page": "003.png"
     },
     {
       "type": "punctuation",
       "original_text": "howling",
       "corrected_text": "howling,",
-      "line_number": 1,
+      "line_number": 2,
       "page": "003.png"
     },
     {
       "type": "punctuation",
       "original_text": "yonder",
       "corrected_text": "yonder,",
-      "line_number": 1,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": "to-day",
-      "corrected_text": "to-day,",
-      "line_number": 1,
+      "line_number": 2,
       "page": "003.png"
     },
     {
       "type": "capitalization",
       "original_text": "sir",
       "corrected_text": "Sir",
-      "line_number": 1,
+      "line_number": 2,
       "page": "003.png"
     },
     {
       "type": "punctuation",
       "original_text": "pockets",
       "corrected_text": "pockets,",
-      "line_number": 17,
+      "line_number": 18,
       "page": "003.png"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:25:24.171781",
+  "annotation_date": "2026-04-26T09:56:55.131385",
   "verified": false
 }

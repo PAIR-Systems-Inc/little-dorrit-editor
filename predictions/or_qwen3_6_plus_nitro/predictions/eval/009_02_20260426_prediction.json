@@ -2,58 +2,10 @@
   "image": "009.png",
   "page_number": 1,
   "source": "Little Dorrit",
-  "edits": [
-    {
-      "type": "deletion",
-      "original_text": "Mr.",
-      "corrected_text": "",
-      "line_number": 22,
-      "page": "003.png"
-    },
-    {
-      "type": "replacement",
-      "original_text": "with some hurried words to the effect that she",
-      "corrected_text": "indeed",
-      "line_number": 26,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": "heart",
-      "corrected_text": "heart,",
-      "line_number": 27,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": "ness)",
-      "corrected_text": "ness),",
-      "line_number": 28,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": "length",
-      "corrected_text": "length,",
-      "line_number": 31,
-      "page": "003.png"
-    },
-    {
-      "type": "italicize",
-      "original_text": "very much",
-      "corrected_text": "very much",
-      "line_number": 33,
-      "page": "003.png"
-    },
-    {
-      "type": "replacement",
-      "original_text": "hope so",
-      "corrected_text": "hoped",
-      "line_number": 34,
-      "page": "003.png"
-    }
-  ],
+  "edits": [],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:12:01.712165",
-  "verified": false
+  "annotation_date": "2026-04-26T09:52:45.450411",
+  "verified": false,
+  "error": "Failed to parse model output as JSON: Model returned empty or non-text content...",
+  "raw_response": "{\n  \"id\": \"gen-1777222284-JShdn37KaFKjgGW1OmfQ\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"logprobs\": null,\n      \"message\": {\n        \"content\": null,\n        \"refusal\": null,\n        \"role\": \"assistant\",\n        \"annotations\": null,\n        \"audio\": null,\n        \"function_call\": null,\n        \"tool_calls\": null\n      },\n      \"native_finish_reason\": \"null\"\n    }\n  ],\n  \"created\": 1777222284,\n  \"model\": \"qwen/qwen3.6-plus-04-02\",\n  \"object\": \"chat.completion\",\n  \"service_tier\": null,\n  \"system_fingerprint\": null,\n  \"usage\": {\n    \"completion_tokens\": 7462,\n    \"prompt_tokens\": 9312,\n    \"total_tokens\": 16774,\n    \"completion_tokens_details\": {\n      \"accepted_prediction_tokens\": null,\n      \"audio_tokens\": 0,\n      \"reasoning_tokens\": 7462,\n      \"rejected_prediction_tokens\": null,\n      \"image_tokens\": 0\n    },\n    \"prompt_tokens_details\": {\n      \"audio_tokens\": 0,\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"video_tokens\": 0\n  "
 }

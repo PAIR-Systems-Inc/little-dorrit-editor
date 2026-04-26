@@ -1,8 +1,8 @@
 {
   "model_name": "or_qwen3_6_plus_nitro",
-  "date": "2026-04-26T08:20:22.856551",
+  "date": "2026-04-26T10:01:07.397725",
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:13:24.442012",
+  "annotation_date": "2026-04-26T09:54:17.594220",
   "details": [
     {
       "observed_edit_num": 0,
@@ -11,12 +11,12 @@
       "fp": 0.04999999999999999,
       "fn": 0.04999999999999999,
       "type": "punctuation",
-      "original_text": "\"Thank you!\"",
-      "corrected_text": "\"Thank you,\"",
+      "original_text": "Thank you!",
+      "corrected_text": "Thank you,",
       "observed_line_number": 16,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "1. Edit Type Accuracy: Both ground truth and predicted edit are labeled as \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth changes the terminal punctuation in \"Thank you!\" to a comma: \"Thank you,\". The prediction makes the same core change (replacing \"!\" with \",\") while including additional surrounding context (quotation marks) in both the original and corrected text. Since the essential punctuation change is correctly captured and extra context is allowed, the prediction matches the ground truth\u2019s intention."
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\n\nText Content Accuracy: Both ground truth and prediction change the exact same text from \"Thank you!\" to \"Thank you,\", replacing the exclamation mark with a comma. This captures the core intended correction precisely. Line number differences are ignored as instructed."
     },
     {
       "observed_edit_num": 1,
@@ -30,7 +30,7 @@
       "observed_line_number": 24,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"shore and\") and the same corrected text (\"shore, and\"), capturing the identical core change\u2014adding a comma after \"shore.\" Therefore, the predicted edit matches the ground truth\u2019s intention."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly. Text Content Accuracy: Both specify the same original text (\"shore and\") and the same correction (\"shore, and\"), capturing the core intended change of inserting a comma after \"shore.\" Line numbers are ignored as instructed. Therefore, the predicted edit matches the ground truth intention."
     },
     {
       "observed_edit_num": 2,
@@ -44,7 +44,7 @@
       "observed_line_number": 32,
       "line_diff": 1,
       "line_number_penalty": 0.1,
-      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement,\" so the edit type matches exactly.\n2) Text Content Accuracy: Both specify replacing \"that\" with \"than,\" which captures the identical core correction. Ignoring line numbers as instructed, the predicted edit matches the ground truth intention."
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement,\" so the edit type matches exactly.\n\nText Content Accuracy: Both specify replacing the original text \"that\" with the corrected text \"than.\" This captures the core intended change precisely. Line number differences are to be ignored, so they do not affect correctness."
     },
     {
       "observed_edit_num": 3,
@@ -52,9 +52,9 @@
       "tp": 0.0,
       "fp": 1.0,
       "fn": 0.0,
-      "type": "italicize",
+      "type": "deletion",
       "original_text": "in our fancy",
-      "corrected_text": "in our fancy",
+      "corrected_text": "",
       "observed_line_number": 10,
       "line_diff": null,
       "line_number_penalty": 0.0,
@@ -81,8 +81,8 @@
       "fp": 0.0,
       "fn": 1.0,
       "type": "punctuation",
-      "original_text": "that, in",
-      "corrected_text": "that in",
+      "original_text": "fancy, whatever",
+      "corrected_text": "fancy whatever",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,
@@ -95,8 +95,8 @@
       "fp": 0.0,
       "fn": 1.0,
       "type": "punctuation",
-      "original_text": "fancy, whatever",
-      "corrected_text": "fancy whatever",
+      "original_text": "that, in",
+      "corrected_text": "that in",
       "observed_line_number": null,
       "line_diff": null,
       "line_number_penalty": 0.0,

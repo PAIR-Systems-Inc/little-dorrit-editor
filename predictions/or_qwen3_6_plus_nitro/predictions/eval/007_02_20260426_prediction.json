@@ -5,13 +5,21 @@
   "edits": [
     {
       "type": "punctuation",
-      "original_text": "SUN AND SHADOW",
-      "corrected_text": "SUN AND SHADOW.",
+      "original_text": "Chapter I.",
+      "corrected_text": "Chapter I,",
       "line_number": 0,
       "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW",
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 1,
+      "page": "003.png",
+      "notes": "Handwritten note 'Period here?'"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:11:32.607147",
+  "annotation_date": "2026-04-26T09:52:41.665968",
   "verified": false
 }

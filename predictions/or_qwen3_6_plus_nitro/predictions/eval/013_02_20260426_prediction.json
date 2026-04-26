@@ -11,16 +11,16 @@
       "page": "003.png"
     },
     {
-      "type": "deletion",
-      "original_text": "a little ",
-      "corrected_text": "",
+      "type": "italicize",
+      "original_text": "a little",
+      "corrected_text": "a little",
       "line_number": 10,
       "page": "003.png"
     },
     {
-      "type": "deletion",
-      "original_text": "boiling-over ",
-      "corrected_text": "",
+      "type": "italicize",
+      "original_text": "boiling-over",
+      "corrected_text": "boiling-over",
       "line_number": 11,
       "page": "003.png"
     },
@@ -33,15 +33,15 @@
     },
     {
       "type": "italicize",
-      "original_text": "benevolence bubbling out of him",
-      "corrected_text": "benevolence bubbling out of him",
+      "original_text": "him",
+      "corrected_text": "him",
       "line_number": 30,
       "page": "003.png"
     },
     {
       "type": "punctuation",
-      "original_text": "now ",
-      "corrected_text": "now, ",
+      "original_text": "now I",
+      "corrected_text": "now, I",
       "line_number": 34,
       "page": "003.png"
     },
@@ -54,20 +54,13 @@
     },
     {
       "type": "punctuation",
-      "original_text": "you ",
-      "corrected_text": "you, ",
-      "line_number": 37,
-      "page": "003.png"
-    },
-    {
-      "type": "punctuation",
-      "original_text": "now ",
-      "corrected_text": "now, ",
+      "original_text": "now to",
+      "corrected_text": "now, to",
       "line_number": 37,
       "page": "003.png"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:14:06.393181",
+  "annotation_date": "2026-04-26T09:54:31.387250",
   "verified": false
 }

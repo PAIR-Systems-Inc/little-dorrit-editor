@@ -4,42 +4,56 @@
   "source": "Little Dorrit",
   "edits": [
     {
-      "type": "punctuation",
-      "original_text": "stream like",
-      "corrected_text": "stream, like",
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
       "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stream",
+      "corrected_text": "stream,",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 6,
       "page": "003.png"
     },
     {
       "type": "punctuation",
       "original_text": "poplar trees",
       "corrected_text": "poplar-trees",
-      "line_number": 6,
+      "line_number": 7,
       "page": "003.png"
     },
     {
       "type": "punctuation",
-      "original_text": "man slowly",
-      "corrected_text": "man, slowly",
-      "line_number": 9,
+      "original_text": "man",
+      "corrected_text": "man,",
+      "line_number": 10,
       "page": "003.png"
     },
     {
       "type": "punctuation",
-      "original_text": "Chalons was",
-      "corrected_text": "Chalons, was",
-      "line_number": 9,
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 10,
       "page": "003.png"
     },
     {
-      "type": "replacement",
+      "type": "insertion",
       "original_text": "sodden",
       "corrected_text": "soddened",
-      "line_number": 14,
+      "line_number": 15,
       "page": "003.png"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:04:00.589589",
+  "annotation_date": "2026-04-26T09:46:53.851482",
   "verified": false
 }

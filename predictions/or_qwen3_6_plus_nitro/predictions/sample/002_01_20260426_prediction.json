@@ -33,20 +33,13 @@
     },
     {
       "type": "punctuation",
-      "original_text": "Vecchia so",
-      "corrected_text": "Vecchia, so",
-      "line_number": 36,
-      "page": "002.png"
-    },
-    {
-      "type": "capitalization",
-      "original_text": "so",
-      "corrected_text": "So",
+      "original_text": "Vecchia, So",
+      "corrected_text": "Vecchia. So",
       "line_number": 36,
       "page": "002.png"
     }
   ],
   "annotator": "Qwen3.6 Plus Nitro (OR)",
-  "annotation_date": "2026-04-26T00:04:34.991144",
+  "annotation_date": "2026-04-26T09:46:43.484990",
   "verified": false
 }
