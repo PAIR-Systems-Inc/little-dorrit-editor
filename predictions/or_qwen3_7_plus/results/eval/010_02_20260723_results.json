@@ -1,0 +1,78 @@
+{
+  "model_name": "or_qwen3_7_plus",
+  "date": "2026-07-23T15:42:02.536665",
+  "annotator": "Qwen3.7 Plus",
+  "annotation_date": "2026-07-23T12:59:43.638583",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 12,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"hers and\") and the same corrected text (\"hers, and\"), capturing the identical core change\u2014adding a comma after \"hers\". Ignoring line numbers as instructed, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 14,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both edits apply the same core change, inserting a comma after \"hers\" (\"hers matters\" \u2192 \"hers, matters\"). The original and corrected text strings match the ground truth\u2019s intended correction. Line number differences are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 22,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"moment with\") and the same correction (\"moment, with\"), inserting a comma after \"moment\". This captures the core intended change exactly. Line numbers are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 24,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change: inserting a comma after \"beautiful\" in the phrase \"beautiful that\" to make it \"beautiful, that\". The original and corrected text strings match the ground truth\u2019s intended core change.\nLine numbers are ignored as instructed, so the discrepancy there does not affect correctness."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "capitalization",
+      "original_text": "At this, he thought directly, \"they",
+      "corrected_text": "At this, he thought directly, \"They",
+      "observed_line_number": 31,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth intends to change \"they\" to \"They\" (capitalizing the first letter). The prediction applies the same capitalization change within a longer surrounding context (\"...\\\"they\" \u2192 \"...\\\"They\"). This captures the core intended correction accurately, and the extra context does not alter the essential edit."
+    }
+  ]
+}

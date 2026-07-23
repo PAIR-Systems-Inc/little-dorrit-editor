@@ -1,0 +1,37 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "If he",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "if he",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "asked",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:54:44.804569",
+  "verified": false
+}

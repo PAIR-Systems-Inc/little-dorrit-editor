@@ -1,0 +1,55 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "that in our fancy whatever",
+      "line_number": 14,
+      "notes": "commas after 'that' and 'fancy' deleted",
+      "original_text": "that, in our fancy, whatever",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you,\"",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "\"Thank you!\"",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the shore, and",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "the shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "greater things than once",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "greater things that once",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Claude Opus 4.8",
+  "annotation_date": "2026-07-23T13:23:51.012969",
+  "verified": false
+}

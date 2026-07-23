@@ -1,0 +1,28 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "do? If",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "do? if",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked Clennam.",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "said Clennam.",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.7 Plus",
+  "annotation_date": "2026-07-23T14:02:23.215397",
+  "verified": false
+}

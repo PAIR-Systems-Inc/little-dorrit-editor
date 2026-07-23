@@ -1,0 +1,80 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "discordant church bells and",
+      "corrected_text": "discordant church bells, and",
+      "line_number": 2,
+      "page": "5"
+    },
+    {
+      "type": "replacement",
+      "original_text": "two or three wine bottles",
+      "corrected_text": "two or three wine-bottles",
+      "line_number": 11,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "as it got through",
+      "corrected_text": "as it got, through",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating of iron bars fashioned",
+      "corrected_text": "grating of iron bars, fashioned",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to this grating where",
+      "corrected_text": "to this grating, where",
+      "line_number": 17,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "brightness outside and",
+      "corrected_text": "brightness outside, and",
+      "line_number": 29,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "atmosphere intact in",
+      "corrected_text": "atmosphere intact, in",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Indian ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to be fed looking",
+      "corrected_text": "to be fed, looking",
+      "line_number": 36,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "through the bars that",
+      "corrected_text": "through the bars, that",
+      "line_number": 36,
+      "page": "5"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:55:29.370837",
+  "verified": false
+}

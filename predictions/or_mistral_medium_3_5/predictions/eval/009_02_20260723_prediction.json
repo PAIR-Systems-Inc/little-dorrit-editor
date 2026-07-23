@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so much to its pain and trouble",
+      "corrected_text": "heart, so much to its pain and trouble",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "generous",
+      "corrected_text": "",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "she",
+      "corrected_text": "she indeed",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 35,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 35,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "And, now, Minnie Gowan",
+      "corrected_text": "And now, Minnie Gowan",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Medium 3.5",
+  "annotation_date": "2026-07-23T13:04:50.956716",
+  "verified": false
+}

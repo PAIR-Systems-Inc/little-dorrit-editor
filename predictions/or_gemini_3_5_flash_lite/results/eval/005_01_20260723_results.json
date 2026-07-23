@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gemini_3_5_flash_lite",
+  "date": "2026-07-23T15:57:55.986912",
+  "annotator": "Gemini 3.5 Flash Lite",
+  "annotation_date": "2026-07-23T12:21:53.778780",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": 33,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization,\" so the type matches exactly.\nText Content Accuracy: Both specify the same original text \"if he\" and the same corrected text \"If he,\" capturing the identical core change (capitalizing the initial 'i' to 'I'). Line numbers are ignored as instructed, so there is no discrepancy affecting correctness."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 38,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are a \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The ground truth changes the verb phrase from \"said Clennam\" to \"asked Clennam\". The prediction captures the core intended change by replacing \"said\" with \"asked\"; the surrounding context (\"Clennam\") is unchanged in the ground truth and can be omitted without altering the essential correction. Therefore, the prediction matches the ground truth\u2019s intended textual change."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "model_id": "or_step_3_7_flash",
+  "display_name": "Step 3.7 Flash",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-07-23",
+  "notes": "Benchmark run with 2-shot learning"
+}

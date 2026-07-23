@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "SHADOW",
+      "corrected_text": "SHADOW.",
+      "line_number": 1,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T14:24:52.679783",
+  "verified": false
+}

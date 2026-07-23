@@ -571,3 +571,154 @@ model_name = "x-ai/grok-4-fast"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Grok 4 Fast"
 openrouter_reasoning = { exclude = true }
+
+################################################################################
+# J U L Y   2 0 2 6   R E F R E S H
+# Frontier models released after the 2026-04-26 benchmark runs.
+################################################################################
+
+# Anthropic (direct API) ########
+
+["claude-opus-4.8"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-opus-4-8"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Opus 4.8"
+image_max_bytes = 3930112
+supports_temperature = false
+
+["claude-fable-5"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-fable-5"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Fable 5"
+image_max_bytes = 3930112
+supports_temperature = false
+
+["claude-sonnet-5"]
+endpoint = "https://api.anthropic.com/v1"
+model_name = "claude-sonnet-5"
+api_key = "${ANTHROPIC_API_KEY}"
+logical_name = "Claude Sonnet 5"
+image_max_bytes = 3930112
+supports_temperature = false
+
+# OpenAI GPT-5.6 family (direct API) ########
+
+["gpt-5.6-sol"]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-5.6-sol"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-5.6 Sol"
+reasoning_effort = "high"
+
+["gpt-5.6-terra"]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-5.6-terra"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-5.6 Terra"
+reasoning_effort = "high"
+
+["gpt-5.6-luna"]
+endpoint = "https://api.openai.com/v1"
+model_name = "gpt-5.6-luna"
+api_key = "${OPENAI_API_KEY}"
+logical_name = "GPT-5.6 Luna"
+reasoning_effort = "high"
+
+# Google (OpenRouter) ########
+
+["or_gemini_3_5_flash"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemini-3.5-flash"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemini 3.5 Flash"
+openrouter_reasoning = { exclude = true }
+
+["or_gemini_3_6_flash"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemini-3.6-flash"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemini 3.6 Flash"
+openrouter_reasoning = { exclude = true }
+
+# Meta (OpenRouter) ########
+
+["or_meta_muse_spark_1_1"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "meta/muse-spark-1.1"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Muse Spark 1.1"
+openrouter_reasoning = { exclude = true }
+
+# Chinese labs (OpenRouter) ########
+
+["or_kimi_k3"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "moonshotai/kimi-k3"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Kimi K3"
+openrouter_reasoning = { exclude = true }
+
+["or_qwen3_7_plus"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "qwen/qwen3.7-plus"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Qwen3.7 Plus"
+# Alibaba's Qwen3.7 route rejects large request bodies (413 RequestTooLarge);
+# 3.75 MiB keeps page + few-shot images under the cap.
+image_max_bytes = 3930112
+openrouter_reasoning = { exclude = true }
+
+["or_minimax_m3"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "minimax/minimax-m3"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "MiniMax M3"
+openrouter_reasoning = { exclude = true }
+
+# xAI (OpenRouter) ########
+
+["or_grok_4_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "x-ai/grok-4.5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Grok 4.5"
+openrouter_reasoning = { exclude = true }
+
+# Second tier (OpenRouter) ########
+
+["or_mistral_medium_3_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "mistralai/mistral-medium-3-5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Mistral Medium 3.5"
+openrouter_reasoning = { exclude = true }
+
+["or_step_3_7_flash"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "stepfun/step-3.7-flash"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Step 3.7 Flash"
+openrouter_reasoning = { exclude = true }
+
+["or_inkling"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "thinkingmachines/inkling"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Inkling"
+openrouter_reasoning = { exclude = true }
+
+["or_kimi_k2_7_code"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "moonshotai/kimi-k2.7-code"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Kimi K2.7 Code"
+openrouter_reasoning = { exclude = true }
+
+["or_gemini_3_5_flash_lite"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemini-3.5-flash-lite"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemini 3.5 Flash Lite"
+openrouter_reasoning = { exclude = true }

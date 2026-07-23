@@ -1,0 +1,64 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XI",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Let Loose.",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Let Loose",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "man, slowly",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "man slowly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened with wet",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "sodden with wet",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T13:28:28.681072",
+  "verified": false
+}

@@ -1,0 +1,55 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart, so much",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "heart so much",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "generous, Mr.",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "generous Mr.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "thanked him from her heart indeed (as she did",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "thanked him from her heart (as she did",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "length, said",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "length said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "I hope so",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T11:16:35.319343",
+  "verified": false
+}

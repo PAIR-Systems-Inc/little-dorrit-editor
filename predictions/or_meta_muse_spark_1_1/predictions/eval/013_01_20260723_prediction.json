@@ -1,0 +1,80 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam;",
+      "corrected_text": "Clennam,",
+      "line_number": 1,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "dryest snorts",
+      "corrected_text": "dryest of snorts",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "a little",
+      "corrected_text": "a little",
+      "line_number": 10,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty; sticking",
+      "corrected_text": "twenty, sticking",
+      "line_number": 15,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him,",
+      "corrected_text": "benevolence bubbling out of him,",
+      "line_number": 30,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now, I",
+      "corrected_text": "now I",
+      "line_number": 34,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you,",
+      "corrected_text": "you",
+      "line_number": 37,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now,",
+      "corrected_text": "now",
+      "line_number": 37,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "451"
+    }
+  ],
+  "annotator": "Muse Spark 1.1",
+  "annotation_date": "2026-07-23T11:33:17.513985",
+  "verified": false
+}

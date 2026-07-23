@@ -1,0 +1,46 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "bed room",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "For, Mr.",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "For Mr.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "quickly, that",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "quickly that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "me, not",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "me not",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T11:16:55.284321",
+  "verified": false
+}

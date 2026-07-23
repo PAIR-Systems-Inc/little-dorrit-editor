@@ -1,0 +1,66 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tossed about and",
+      "corrected_text": "tossed about, and",
+      "line_number": 13,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "association did not",
+      "corrected_text": "association, did not",
+      "line_number": 14,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said when",
+      "corrected_text": "said, when",
+      "line_number": 23,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 25,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in amazement",
+      "corrected_text": "Clennam, in amazement",
+      "line_number": 29,
+      "page": "352"
+    }
+  ],
+  "annotator": "Kimi K2.7 Code",
+  "annotation_date": "2026-07-23T14:58:32.304554",
+  "verified": false
+}

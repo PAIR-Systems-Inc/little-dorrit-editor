@@ -1,0 +1,28 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "indeed",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "indeeds",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "I hope so",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T13:01:16.927439",
+  "verified": false
+}

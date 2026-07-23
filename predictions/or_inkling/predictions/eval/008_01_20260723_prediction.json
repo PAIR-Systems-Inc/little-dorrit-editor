@@ -1,0 +1,66 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "page": "page_003"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Chalons",
+      "corrected_text": "Ch\u00e2lons",
+      "line_number": 5,
+      "page": "page_003"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "page_003"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden",
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "page": "page_003"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 27,
+      "page": "page_003"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Cornice",
+      "corrected_text": "Corniche",
+      "line_number": 30,
+      "page": "page_003"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 31,
+      "page": "page_003"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Go",
+      "corrected_text": "go",
+      "line_number": 33,
+      "page": "page_003"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T12:11:40.384262",
+  "verified": false
+}

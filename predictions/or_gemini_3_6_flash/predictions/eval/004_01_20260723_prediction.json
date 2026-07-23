@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stones!",
+      "corrected_text": "stones?",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 3.6 Flash",
+  "annotation_date": "2026-07-23T11:30:16.115121",
+  "verified": false
+}

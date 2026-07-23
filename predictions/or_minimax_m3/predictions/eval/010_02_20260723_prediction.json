@@ -1,0 +1,64 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "from hers,",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "from hers",
+      "page": "368",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "on hers,",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "on hers",
+      "page": "368",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "for a moment,",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "for a moment",
+      "page": "368",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "so beautiful,",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "so beautiful",
+      "page": "368",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "thought Directly,",
+      "line_number": 32,
+      "notes": "Editorial note '(cap)' in margin",
+      "original_text": "thought directly,",
+      "page": "368",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"they are to be married.\"",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "they are to be married.\"",
+      "page": "368",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T13:01:12.147275",
+  "verified": false
+}

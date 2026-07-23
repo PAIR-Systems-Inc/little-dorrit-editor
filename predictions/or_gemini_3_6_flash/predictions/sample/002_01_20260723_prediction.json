@@ -1,0 +1,52 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes",
+      "corrected_text": "eyes,",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white",
+      "corrected_text": "white,",
+      "line_number": 11,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 30,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia,",
+      "corrected_text": "Vecchia.",
+      "line_number": 36,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "so",
+      "corrected_text": "So",
+      "line_number": 36,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "Gemini 3.6 Flash",
+  "annotation_date": "2026-07-23T11:30:27.725873",
+  "verified": false
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "or_qwen3_7_plus",
+  "date": "2026-07-23T15:41:11.673524",
+  "annotator": "Qwen3.7 Plus",
+  "annotation_date": "2026-07-23T11:46:38.848621",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n\nText Content Accuracy: Both edits change \"Sun and Shadow\" to \"Sun and Shadow.\" by adding a final period. This captures the same core punctuation correction identified in the ground truth. (Line number differences are ignored as instructed.)"
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

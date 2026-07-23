@@ -1,0 +1,22 @@
+{
+  "model_name": "claude-sonnet-5",
+  "date": "2026-07-23T15:17:02.651826",
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T12:27:29.462984",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"Sun and Shadow\" to \"Sun and Shadow.\" by adding a period after \"Shadow\". The prediction captures the same original text and the same corrected text with the period added. The note about a handwritten query does not alter the core change.\n\nTherefore, the predicted edit correctly captures the ground truth intention."
+    }
+  ]
+}

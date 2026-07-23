@@ -1,0 +1,73 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XI",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "LET LOOSE.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "LET LOOSE",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river Saone.",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "river Saone",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stream, like",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "stream like",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees,",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened with",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "sodden with",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.7 Plus",
+  "annotation_date": "2026-07-23T14:01:57.951623",
+  "verified": false
+}

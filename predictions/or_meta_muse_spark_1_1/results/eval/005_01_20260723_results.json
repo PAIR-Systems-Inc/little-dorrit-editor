@@ -1,0 +1,36 @@
+{
+  "model_name": "or_meta_muse_spark_1_1",
+  "date": "2026-07-23T15:35:13.476538",
+  "annotator": "Muse Spark 1.1",
+  "annotation_date": "2026-07-23T11:32:08.717731",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to capitalize the initial word in the phrase \"if he\" to \"If he\"\u2014i.e., changing \"if\" to \"If\" while leaving \"he\" unchanged. The prediction captures this core change by specifying \"if\" \u2192 \"If\". Although it provides less surrounding context (omits \"he\"), it still correctly represents the essential correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the phrase \"said Clennam\" to \"asked Clennam\", whose core change is replacing the word \"said\" with \"asked\" while leaving \"Clennam\" unchanged. The prediction replaces \"said\" with \"asked\" without including the trailing context \"Clennam\", but it still captures the essential intended substitution. Applying the predicted change in the original context would yield the same corrected wording (\"asked Clennam\"). Therefore the text content matches the ground truth intention."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "model_id": "or_kimi_k3",
+  "display_name": "Kimi K3",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-07-23",
+  "notes": "Benchmark run with 2-shot learning"
+}

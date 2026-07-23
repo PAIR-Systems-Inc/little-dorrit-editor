@@ -1,0 +1,19 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Shadow.",
+      "line_number": 0,
+      "notes": "Handwritten marginal query reads 'Period here?', suggesting the comma after the chapter subtitle should be a period",
+      "original_text": "Shadow,",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T13:46:12.127561",
+  "verified": false
+}

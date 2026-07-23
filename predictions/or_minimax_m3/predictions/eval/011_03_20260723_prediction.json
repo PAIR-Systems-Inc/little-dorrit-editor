@@ -1,0 +1,64 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "our fancy, whatever",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "our fancy. Whatever",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you.\"",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "\"Thank you\"",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you!\"",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "\"Thank you\"",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "things that once",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "things than once",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:06:03.974731",
+  "verified": false
+}

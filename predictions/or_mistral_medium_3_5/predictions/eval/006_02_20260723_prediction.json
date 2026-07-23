@@ -1,0 +1,38 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high-road",
+      "corrected_text": "high road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "association did not",
+      "corrected_text": "association, did not",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "cumma",
+      "corrected_text": "comma",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 30,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Medium 3.5",
+  "annotation_date": "2026-07-23T13:04:53.223441",
+  "verified": false
+}

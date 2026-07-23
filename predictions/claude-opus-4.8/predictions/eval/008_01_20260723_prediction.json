@@ -1,0 +1,100 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XI",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Let Loose.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Let Loose",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dull, autumn",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "dull autumn",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river Sa\u00f4ne",
+      "line_number": 1,
+      "notes": "circumflex accent added over o",
+      "original_text": "river Saone",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stream,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "stream",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees,",
+      "line_number": 7,
+      "notes": "hyphen added and comma",
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river Sa\u00f4ne",
+      "line_number": 8,
+      "notes": "circumflex accent added over o",
+      "original_text": "river Saone",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "One man,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "One man",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "Chalons",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened with",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "sodden with",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Claude Opus 4.8",
+  "annotation_date": "2026-07-23T11:11:25.662427",
+  "verified": false
+}

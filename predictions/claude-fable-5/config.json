@@ -1,0 +1,8 @@
+{
+  "model_id": "claude-fable-5",
+  "display_name": "Claude Fable 5",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-07-23",
+  "notes": "Benchmark run with 2-shot learning"
+}

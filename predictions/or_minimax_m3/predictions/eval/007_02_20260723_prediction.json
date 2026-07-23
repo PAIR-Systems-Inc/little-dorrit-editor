@@ -1,0 +1,19 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": 0.85,
+      "corrected_text": "SUN AND SHADOW?",
+      "line_number": 0,
+      "notes": "Editor is querying whether the period should be removed (making it 'SUN AND SHADOW' without period, or keeping it as is).",
+      "original_text": "SUN AND SHADOW.",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T13:00:56.576604",
+  "verified": false
+}

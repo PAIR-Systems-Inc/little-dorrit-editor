@@ -1,0 +1,45 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chalons lay",
+      "corrected_text": "Chalons, lay",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 7,
+      "page": "002.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "soddened",
+      "corrected_text": "sodden",
+      "line_number": 14,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 26,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T13:10:00.500104",
+  "verified": false
+}

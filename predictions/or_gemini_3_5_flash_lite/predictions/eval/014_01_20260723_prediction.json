@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "bedkroom",
+      "corrected_text": "bedroom",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "For",
+      "line_number": 3,
+      "corrected_text": "For,",
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly",
+      "line_number": 10,
+      "corrected_text": "quickly,",
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "me",
+      "corrected_text": "me,",
+      "line_number": 26,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Gemini 3.5 Flash Lite",
+  "annotation_date": "2026-07-23T12:22:28.407367",
+  "verified": false
+}

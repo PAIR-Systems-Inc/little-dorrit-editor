@@ -1,0 +1,45 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Travellers",
+      "corrected_text": "Travellers.",
+      "line_number": 0,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "howling, over",
+      "corrected_text": "howling over",
+      "line_number": 1,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "yonder, to",
+      "corrected_text": "yonder to",
+      "line_number": 1,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "day, sir",
+      "corrected_text": "day-sir",
+      "line_number": 1,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Gemini 3.5 Flash Lite",
+  "annotation_date": "2026-07-23T14:44:22.635055",
+  "verified": false
+}

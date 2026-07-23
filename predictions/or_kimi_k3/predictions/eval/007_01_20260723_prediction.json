@@ -1,0 +1,19 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Sun and Shadow.",
+      "line_number": 0,
+      "notes": "Handwritten marginal note reads \"Period here?\" querying the addition of a period after the chapter subtitle.",
+      "original_text": "Sun and Shadow",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T11:35:11.541772",
+  "verified": false
+}

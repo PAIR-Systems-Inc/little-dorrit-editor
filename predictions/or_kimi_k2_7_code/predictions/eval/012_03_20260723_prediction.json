@@ -1,0 +1,66 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "return of",
+      "corrected_text": "return to",
+      "line_number": 5,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them,",
+      "corrected_text": "them;",
+      "line_number": 10,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it",
+      "corrected_text": "it;",
+      "line_number": 15,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "still",
+      "corrected_text": "still;",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view, by",
+      "corrected_text": "view; by",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence is",
+      "corrected_text": "existence; is",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "page": "373"
+    }
+  ],
+  "annotator": "Kimi K2.7 Code",
+  "annotation_date": "2026-07-23T14:33:19.000159",
+  "verified": false
+}

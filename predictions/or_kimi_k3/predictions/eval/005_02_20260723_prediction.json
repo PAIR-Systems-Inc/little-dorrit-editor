@@ -1,0 +1,28 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "If",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "if",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T12:49:37.879956",
+  "verified": false
+}

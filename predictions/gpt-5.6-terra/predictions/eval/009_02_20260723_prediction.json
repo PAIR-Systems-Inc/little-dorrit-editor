@@ -1,0 +1,38 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart",
+      "corrected_text": "heart,",
+      "line_number": 10,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "thanked",
+      "corrected_text": "indeed thanked",
+      "line_number": 27,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "smiling;",
+      "corrected_text": "smiling,",
+      "line_number": 31,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 34,
+      "page": "369"
+    }
+  ],
+  "annotator": "GPT-5.6 Terra",
+  "annotation_date": "2026-07-23T12:32:50.516087",
+  "verified": false
+}

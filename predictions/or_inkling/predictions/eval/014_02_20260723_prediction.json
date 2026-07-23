@@ -1,0 +1,45 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "bed",
+      "corrected_text": "bedroom",
+      "line_number": 1,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "this and",
+      "corrected_text": "this, and",
+      "line_number": 19,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "never and",
+      "corrected_text": "never, and",
+      "line_number": 20,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "making me not",
+      "corrected_text": "making me, not",
+      "line_number": 21,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "still \"tis",
+      "corrected_text": "still, \"tis",
+      "line_number": 29,
+      "page": "page_452"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T13:14:58.260906",
+  "verified": false
+}

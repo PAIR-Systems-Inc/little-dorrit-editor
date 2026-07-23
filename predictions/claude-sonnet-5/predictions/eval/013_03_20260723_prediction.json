@@ -1,0 +1,91 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Clennam;",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dryest of snorts",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "dryest snorts",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "dryest",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "*little*",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "little",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twenty;",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "twenty,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "*him*",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "him",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now, I have paid",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "now I have paid",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you, now",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "you now",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T13:29:25.046174",
+  "verified": false
+}

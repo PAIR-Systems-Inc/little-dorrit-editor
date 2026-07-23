@@ -1,0 +1,59 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "corrected_text": "that, in",
+      "line_number": 10,
+      "original_text": "that in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "fancy, whatever",
+      "line_number": 10,
+      "original_text": "fancy whatever",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "is now.\" \"Thank you,\"",
+      "line_number": 16,
+      "original_text": "is now.\"",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "corrected_text": "you",
+      "line_number": 17,
+      "original_text": "you,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "shore, and",
+      "line_number": 25,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "original_text": "within-doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "than",
+      "line_number": 33,
+      "original_text": "that",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Muse Spark 1.1",
+  "annotation_date": "2026-07-23T11:33:27.640502",
+  "verified": false
+}

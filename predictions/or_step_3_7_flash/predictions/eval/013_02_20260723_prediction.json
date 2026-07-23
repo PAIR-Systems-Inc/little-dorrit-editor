@@ -1,0 +1,38 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "of the dryest",
+      "corrected_text": "driest of",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "bubbling out of him",
+      "corrected_text": "bubbling out of him",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "now",
+      "corrected_text": "",
+      "line_number": 11,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T13:11:38.871884",
+  "verified": false
+}

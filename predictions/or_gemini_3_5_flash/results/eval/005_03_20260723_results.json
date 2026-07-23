@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gemini_3_5_flash",
+  "date": "2026-07-23T15:28:38.306281",
+  "annotator": "Gemini 3.5 Flash",
+  "annotation_date": "2026-07-23T13:39:26.389618",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial word in the phrase \"if he\" \u2192 \"If he.\" The prediction captures the same essential change by capitalizing \"if\" \u2192 \"If.\" Although it omits the following word \"he\" from the original/corrected text span, the core intended correction (capitalizing the word \"if\") is accurately represented, and reduced context is acceptable under the rubric."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces \"said\" with \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the same core substitution \"said\" \u2192 \"asked\" but omits the surrounding context (\"Clennam\"). Since the essential intended change is the word replacement itself, the prediction correctly reflects the ground truth\u2019s intention."
+    }
+  ]
+}

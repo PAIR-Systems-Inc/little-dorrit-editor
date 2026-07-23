@@ -1,0 +1,50 @@
+{
+  "model_name": "claude-sonnet-5",
+  "date": "2026-07-23T15:16:33.879915",
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T12:27:38.463529",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly. Text Content Accuracy: Both specify the same transformation from \"No sir\" to \"No, sir\" (inserting a comma after \"No\"). The core change is identical, with no discrepancies."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why did he dine",
+      "corrected_text": "Why did he dine",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"why did he dine\") and the same corrected text (\"Why did he dine\"), capturing the core intended change of capitalizing the initial 'w' to 'W'. Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "cold stones!\"",
+      "corrected_text": "cold stones?\"",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth intends to change the punctuation from an exclamation mark to a question mark in the phrase \"cold stones!\" \u2192 \"cold stones?\". The prediction captures the same core change (\"!\" \u2192 \"?\") and simply includes an additional trailing quotation mark in both the original and corrected strings (\"cold stones!\\\"\" \u2192 \"cold stones?\\\"\"). This added context does not alter the essential correction and still reflects the same intended punctuation change.\n\nTherefore, the prediction correctly captures the ground truth edit."
+    }
+  ]
+}

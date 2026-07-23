@@ -18,7 +18,7 @@
 #   --display-name "Name": Custom display name for the leaderboard (only used if creating new config)
 #   --judge-model MODEL: Model ID to use for evaluation judging (default: gpt-4o)
 #                WARNING: Changing this is NOT recommended as it affects benchmark consistency
-#   --jobs N: Number of worker processes to use (default: 1)
+#   --jobs N: Number of worker processes to use (default: ${LDE_JOBS:-9})
 #   --force: Force re-evaluation even if results already exist
 #   --question-ids "id1,id2,...": Only process specific question IDs (comma-separated, no spaces)
 #
@@ -41,7 +41,7 @@
 DEFAULT_MODEL="gpt-4o"
 DISPLAY_NAME=""
 LLM_JUDGE_MODEL="or_openai_gpt_5_2"
-JOBS=1
+JOBS="${LDE_JOBS:-9}"
 FORCE_EVAL=false
 MODELS=()
 QUESTION_IDS=""

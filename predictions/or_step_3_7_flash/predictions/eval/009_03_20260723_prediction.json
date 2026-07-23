@@ -1,0 +1,31 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "confidently up",
+      "corrected_text": "confidently indeed up",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "as she did",
+      "corrected_text": "she did",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hoped",
+      "corrected_text": "I had hoped",
+      "line_number": 10,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T14:25:33.745669",
+  "verified": false
+}

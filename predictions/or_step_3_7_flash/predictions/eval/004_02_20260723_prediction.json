@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "stones\"",
+      "corrected_text": "stones?\"",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "to-day",
+      "corrected_text": "To-day",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 47,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T13:10:01.687333",
+  "verified": false
+}

@@ -1,0 +1,28 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "If",
+      "line_number": 36,
+      "notes": "handwritten 'cap' instruction with stroke on the initial letter",
+      "original_text": "if",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 39,
+      "notes": "'said' crossed out and 'asked' written below",
+      "original_text": "said",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T13:48:42.439035",
+  "verified": false
+}

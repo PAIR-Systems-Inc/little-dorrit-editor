@@ -1,0 +1,46 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of south",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "driest of smith",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boiling over",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "boiling-over",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "habit, of",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "habit of",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "authorise you",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T11:59:17.923837",
+  "verified": false
+}

@@ -1,0 +1,50 @@
+{
+  "model_name": "or_gemini_3_6_flash",
+  "date": "2026-07-23T15:31:51.241074",
+  "annotator": "Gemini 3.6 Flash",
+  "annotation_date": "2026-07-23T11:30:16.115121",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is to capitalize the initial word in the phrase \"why did he dine\" \u2192 \"Why did he dine\". The prediction captures the core change by capitalizing \"why\" \u2192 \"Why\". Although it provides less surrounding context than the ground truth, it still reflects the essential intended correction (capitalizing the first word)."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "stones!",
+      "corrected_text": "stones?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the terminal punctuation from an exclamation mark to a question mark in the phrase \"cold stones!\" \u2192 \"cold stones?\". The prediction applies the same core change\u2014\"!\" \u2192 \"?\"\u2014to the same word at the end of the phrase: \"stones!\" \u2192 \"stones?\". Although the prediction omits the preceding word \"cold\" in both original and corrected text spans, it still captures the essential intended edit (replacing the exclamation mark with a question mark after \"stones\")."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

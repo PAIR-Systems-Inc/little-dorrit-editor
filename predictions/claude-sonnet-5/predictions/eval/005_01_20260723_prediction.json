@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "line_number": 36,
+      "page": "page_209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 39,
+      "page": "page_209"
+    }
+  ],
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T11:16:06.114440",
+  "verified": false
+}

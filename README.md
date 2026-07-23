@@ -197,7 +197,7 @@ Both benchmark runner scripts support built-in parallel worker control:
 ```
 
 Notes:
-- `--jobs 1` is the default and preserves the original sequential behavior.
+- `--jobs 9` is the default (override with `--jobs N` or the `LDE_JOBS` environment variable). Pass `--jobs 1` to restore the original sequential behavior.
 - Prediction run IDs are assigned before workers start, so parallel prediction runs keep deterministic filenames without collisions.
 - The Python CLI remains single-file-per-invocation; parallelism lives in the shell orchestration layer.
 

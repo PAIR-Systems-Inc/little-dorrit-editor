@@ -1,0 +1,73 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "that, in",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "that in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fancy, whatever",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "fancy whatever",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you,\"",
+      "line_number": 19,
+      "notes": "Handwritten insertion of dialogue text after 'is now.'",
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you,\" murmured Clennam",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "\"Thank you!\" murmured Clennam",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 38,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "things than once were",
+      "line_number": 47,
+      "notes": null,
+      "original_text": "things that once were",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T13:29:05.384510",
+  "verified": false
+}

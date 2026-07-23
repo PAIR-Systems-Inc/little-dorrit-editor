@@ -1,0 +1,45 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "n",
+      "corrected_text": "N",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day",
+      "corrected_text": "to-day,",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "sir",
+      "corrected_text": "Sir",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets",
+      "corrected_text": "pockets,",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "creditable",
+      "corrected_text": "creditable",
+      "line_number": 21,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Medium 3.5",
+  "annotation_date": "2026-07-23T12:03:47.374577",
+  "verified": false
+}

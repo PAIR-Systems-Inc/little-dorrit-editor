@@ -1,0 +1,101 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "city",
+      "corrected_text": "to city",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "eyes",
+      "corrected_text": "eyes,",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "but",
+      "corrected_text": "but,",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them",
+      "corrected_text": "them;",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence)",
+      "corrected_text": "existence;",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view,",
+      "corrected_text": "view;",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence",
+      "corrected_text": "existence;",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "recluses.",
+      "corrected_text": "recluses;",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Harbour",
+      "corrected_text": "Harbour",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liegelord",
+      "corrected_text": "liegelord;",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia.",
+      "corrected_text": "Vecchia,",
+      "line_number": 36,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T13:12:29.939143",
+  "verified": false
+}

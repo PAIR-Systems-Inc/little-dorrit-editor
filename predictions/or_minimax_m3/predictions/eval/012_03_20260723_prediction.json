@@ -1,0 +1,28 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "copy",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "copy",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fluctuant",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "fluctuant",
+      "page": "003.png",
+      "type": "italicize"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:06:19.005371",
+  "verified": false
+}

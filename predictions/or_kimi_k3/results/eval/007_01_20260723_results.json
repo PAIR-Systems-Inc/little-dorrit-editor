@@ -1,0 +1,22 @@
+{
+  "model_name": "or_kimi_k3",
+  "date": "2026-07-23T15:38:26.253346",
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T11:35:11.541772",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same core change\u2014adding a period to change \"Sun and Shadow\" to \"Sun and Shadow.\" The prediction\u2019s note adds contextual commentary but does not alter the essential edit. Therefore, it correctly captures the ground truth intention."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XI",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Let Loose.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Let Loose",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "late, dull, autumn",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "late, dull autumn",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river Sa\u00f4ne",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "river Saone",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees, against",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "poplar trees against",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "river Sa\u00f4ne",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "river Saone",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "One man, slowly",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "One man slowly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened with",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "sodden with",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Claude Fable 5",
+  "annotation_date": "2026-07-23T13:24:57.201789",
+  "verified": false
+}

@@ -1,0 +1,59 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "page_6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "cheerfulness;",
+      "corrected_text": "cheerfulness,",
+      "line_number": 17,
+      "page": "page_6"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "marseilles",
+      "corrected_text": "Marseilles",
+      "line_number": 30,
+      "page": "page_6"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 30,
+      "page": "page_6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "page_6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia go",
+      "corrected_text": "Vecchia, go",
+      "line_number": 36,
+      "page": "page_6"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "go",
+      "corrected_text": "Go",
+      "line_number": 36,
+      "page": "page_6"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T13:14:53.794346",
+  "verified": false
+}

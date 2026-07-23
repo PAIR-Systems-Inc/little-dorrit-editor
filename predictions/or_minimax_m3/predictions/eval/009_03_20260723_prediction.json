@@ -1,0 +1,82 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart, so",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "heart so",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "generous Mr.",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "generous Mr.",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "heart (as",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "heart (as",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestness, she",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "earnestness) she",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "at length, said",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "at length said",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "ask of you.\" \"That's well! I hoped so; I am not disappointed.\"",
+      "line_number": 33,
+      "notes": "The original text 'ask of you' and 'That's well! I hope so; I am not disappointed.' is modified to combine with the inserted 'indeed' and other edits.",
+      "original_text": "ask of you.\" \"That's well! I hope so; I am not disappointed.\"",
+      "page": "001.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "I hope so",
+      "page": "001.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "indeed",
+      "line_number": 23,
+      "notes": "Handwritten insertion in the left margin with a caret mark indicating where it should be inserted.",
+      "original_text": "",
+      "page": "001.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:55:52.529752",
+  "verified": false
+}

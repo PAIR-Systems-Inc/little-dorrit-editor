@@ -1,0 +1,37 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne. The",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "Saone The",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "broken",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "hyphen",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sodden, with",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "sodden with",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:06:02.284800",
+  "verified": false
+}

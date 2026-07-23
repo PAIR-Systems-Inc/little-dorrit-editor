@@ -1,0 +1,55 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "dull, autumn",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "dull autumn",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "man, slowly",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "man slowly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "sodden",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T11:44:37.322926",
+  "verified": false
+}

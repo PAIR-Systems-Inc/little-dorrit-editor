@@ -16,7 +16,7 @@
 #
 # Options:
 #   --shots N: Number of shots to use (default: 2)
-#   --jobs N: Number of worker processes to use (default: 1)
+#   --jobs N: Number of worker processes to use (default: ${LDE_JOBS:-9})
 #   --display-name "Name": Custom display name for the leaderboard (optional)
 #   --refresh-datasets: Force rebuild of the sample and evaluation datasets
 #   --question-ids "id1,id2,...": Only process specific question IDs (comma-separated, no spaces)
@@ -42,7 +42,7 @@
 # Default values
 DEFAULT_MODEL="gpt-4o"
 SHOTS=2
-JOBS=1
+JOBS="${LDE_JOBS:-9}"
 DISPLAY_NAME=""
 MODELS=()
 REFRESH_DATASETS=false
@@ -337,7 +337,7 @@ EOL
     trap - EXIT
     
     echo "Finished processing model: $MODEL_ID"
-    echo "Use './scripts/run_evaluation.sh ${MODEL_ID}' to evaluate the predictions."
+    echo "Use './scripts/run_evaluation.sh ${MODEL_ID} --jobs ${JOBS}' to evaluate the predictions."
 done
 
 echo "=========================================================="
@@ -345,5 +345,5 @@ echo "All predictions generated successfully for ${#MODELS[@]} models."
 echo
 echo "To evaluate all models, run:"
 for MODEL_ID in "${MODELS[@]}"; do
-    echo "  ./scripts/run_evaluation.sh ${MODEL_ID}"
+    echo "  ./scripts/run_evaluation.sh ${MODEL_ID} --jobs ${JOBS}"
 done

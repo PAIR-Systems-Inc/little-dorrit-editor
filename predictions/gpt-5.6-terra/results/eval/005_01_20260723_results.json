@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-5.6-terra",
+  "date": "2026-07-23T15:22:25.289577",
+  "annotator": "GPT-5.6 Terra",
+  "annotation_date": "2026-07-23T11:20:51.406133",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the word \"if\" in the phrase \"if he\" \u2192 \"If he.\" The prediction captures the same essential change (\"if\" \u2192 \"If\"). Although it omits the following word \"he\" from the original/corrected text span, it still reflects the core intended correction: capitalizing \"if.\" Therefore, the prediction matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to change the verb \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam.\" The predicted edit replaces \"said\" with \"asked\" without including the following context (\"Clennam\"), but it still captures the essential intended change (said \u2192 asked). Additional surrounding context is optional, so this is considered a correct match to the ground truth\u2019s core correction."
+    }
+  ]
+}

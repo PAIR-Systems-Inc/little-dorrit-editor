@@ -1,0 +1,87 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "city",
+      "corrected_text": "to",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "THE",
+      "corrected_text": "THE",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them,",
+      "corrected_text": "them;",
+      "line_number": 10,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "days",
+      "corrected_text": "days,",
+      "line_number": 13,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it",
+      "corrected_text": "it;",
+      "line_number": 14,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless",
+      "corrected_text": "motionless;",
+      "line_number": 15,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view",
+      "corrected_text": "view;",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence",
+      "corrected_text": "existence;",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege",
+      "corrected_text": "liege,",
+      "line_number": 25,
+      "page": "373"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Harbour",
+      "corrected_text": "Harbour",
+      "line_number": 31,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 35,
+      "page": "373"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T12:10:12.111134",
+  "verified": false
+}

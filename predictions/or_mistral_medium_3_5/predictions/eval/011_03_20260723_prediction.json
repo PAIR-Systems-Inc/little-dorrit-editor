@@ -1,0 +1,59 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "in our fancy",
+      "corrected_text": "",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "deletion",
+      "original_text": "whatever Pet was,",
+      "corrected_text": "",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Thank you",
+      "corrected_text": "Thank you,",
+      "line_number": 15,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Thank you",
+      "corrected_text": "Thank you,",
+      "line_number": 15,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within-doors",
+      "corrected_text": "within-doors,",
+      "line_number": 25,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "in the moonlight",
+      "corrected_text": "in moonlight",
+      "line_number": 30,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that once were",
+      "corrected_text": "which once were",
+      "line_number": 31,
+      "page": "372"
+    }
+  ],
+  "annotator": "Mistral Medium 3.5",
+  "annotation_date": "2026-07-23T14:22:17.497475",
+  "verified": false
+}

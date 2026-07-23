@@ -1,0 +1,45 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "thank",
+      "corrected_text": "Thank",
+      "line_number": 16,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you!",
+      "corrected_text": "you,",
+      "line_number": 16,
+      "page": "372"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 42,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 52,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 57,
+      "page": "372"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T13:15:29.098363",
+  "verified": false
+}

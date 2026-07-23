@@ -1,0 +1,55 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "bedroom, while",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "bed room, while",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "had knocked",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "had knockeup",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Pancks had",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Pancks had",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "quickly, that",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "quickly that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "me, not",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "me not",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:06:16.101178",
+  "verified": false
+}

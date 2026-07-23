@@ -1,0 +1,45 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "dryest",
+      "corrected_text": "dryest of",
+      "line_number": 6,
+      "page": "page_3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "the",
+      "line_number": 11,
+      "page": "page_3"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him,",
+      "corrected_text": "benevolence bubbling out of him,",
+      "line_number": 27,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now",
+      "corrected_text": "now,",
+      "line_number": 32,
+      "page": "page_3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 35,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Gemini 3.5 Flash Lite",
+  "annotation_date": "2026-07-23T14:44:48.256518",
+  "verified": false
+}

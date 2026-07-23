@@ -1,0 +1,26 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": 0.7,
+      "corrected_text": "\"No, sir, I have got Maggy with me.\" (new paragraph)",
+      "line_number": 10,
+      "notes": "Small red paragraph mark (\u00b6) in left margin indicates the start of a new paragraph.",
+      "original_text": "\"No, sir, I have got Maggy with me.\"",
+      "page": "page_184"
+    },
+    {
+      "confidence": 0.5,
+      "corrected_text": "cold stones!\". She",
+      "line_number": 29,
+      "notes": "Red caret/insertion mark in text with marginal notes 'CAP' and 'PUNCTUATION MARK' in red ink in the right margin. The editor's annotation suggests a capitalization change and an added punctuation mark at this location.",
+      "original_text": "cold stones!\" She",
+      "page": "page_184"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T12:01:39.095885",
+  "verified": false
+}

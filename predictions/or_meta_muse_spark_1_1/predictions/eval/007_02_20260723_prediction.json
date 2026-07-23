@@ -1,0 +1,17 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "line_number": 0,
+      "page": "3"
+    }
+  ],
+  "annotator": "Muse Spark 1.1",
+  "annotation_date": "2026-07-23T12:44:44.698071",
+  "verified": false
+}

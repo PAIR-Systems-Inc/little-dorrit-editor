@@ -1,0 +1,50 @@
+{
+  "model_name": "or_kimi_k3",
+  "date": "2026-07-23T15:37:57.997600",
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T12:49:50.268852",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which exactly matches the ground truth.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial word in the phrase (\"why did he dine\" \u2192 \"Why did he dine\"). The predicted edit captures the core intended change by capitalizing \"why\" \u2192 \"Why\". Although it includes less surrounding context, it still represents the same essential correction (capitalizing the first word)."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same core change: replacing the exclamation mark with a question mark in \"cold stones!\" \u2192 \"cold stones?\". There is no discrepancy in original or corrected text content. Therefore, the predicted edit fully captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

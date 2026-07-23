@@ -1,0 +1,59 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes",
+      "corrected_text": "eyes,",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "heart",
+      "corrected_text": "heart,",
+      "line_number": 10,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white",
+      "corrected_text": "white,",
+      "line_number": 11,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length",
+      "corrected_text": "length,",
+      "line_number": 28,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Harbour",
+      "corrected_text": "Harbour",
+      "line_number": 29,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 33,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "So",
+      "corrected_text": "so",
+      "line_number": 35,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T12:07:48.049764",
+  "verified": false
+}

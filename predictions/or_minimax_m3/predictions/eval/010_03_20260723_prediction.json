@@ -1,0 +1,46 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "movement; or",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "movement or",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "matters little.",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "matters little",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "peace \u2014 or",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "peace or",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "(cap)",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "cap",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:05:44.285938",
+  "verified": false
+}

@@ -1,0 +1,82 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": "Handwritten note 'high-road' above the line with insertion mark between 'high' and 'road'",
+      "original_text": "high road",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "materials costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tossed about, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "tossed about and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "tion, did not",
+      "line_number": 15,
+      "notes": "Comma inserted after 'association' (word hyphenated across lines as 'associa-'/'tion')",
+      "original_text": "tion did not",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "earnestly telling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "always said, when",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "always said when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and said,",
+      "line_number": 25,
+      "notes": "Marginal handwritten note '(comma)' confirms the insertion",
+      "original_text": "and said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cried Clennam, in",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "cried Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T11:35:25.823147",
+  "verified": false
+}

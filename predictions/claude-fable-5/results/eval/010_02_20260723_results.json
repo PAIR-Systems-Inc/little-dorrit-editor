@@ -1,0 +1,78 @@
+{
+  "model_name": "claude-fable-5",
+  "date": "2026-07-23T15:13:31.936874",
+  "annotator": "Claude Fable 5",
+  "annotation_date": "2026-07-23T12:25:45.775095",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both edits change \"hers and\" to \"hers, and\" by inserting a comma after \"hers\". The core punctuation change is identical, with matching original and corrected text. Therefore, the prediction correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change: inserting a comma after \"hers\" to convert \"hers matters\" into \"hers, matters.\" The core punctuation correction is identical. Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same change from \"moment with\" to \"moment, with,\" inserting a comma after \"moment.\" The core correction is identical, with no discrepancy in original or corrected text."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: Both specify the same change: inserting a comma after \"beautiful\" in the phrase \"beautiful that\" \u2192 \"beautiful, that\". The core punctuation correction is identical.\n\nTherefore, the predicted edit correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "\u201cthey are to be married.\u201d",
+      "corrected_text": "\u201cThey are to be married.\u201d",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: The ground truth edit type is \"capitalization\" and the predicted edit type is also \"capitalization\", so this matches exactly.\n\n2. Text Content Accuracy: The ground truth corrects the word \"they\" to \"They\". The prediction changes the quoted phrase from \u201cthey are to be married.\u201d to \u201cThey are to be married.\u201d, which includes the same core change (capitalizing the initial \"they\" to \"They\"). The additional surrounding context does not alter the essential correction, so the prediction captures the intended edit."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "me, not",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "me not",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "me, that",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "me that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "skirt, and",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "skirt and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "staircase",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "stair case",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "excuse me",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "excuse me",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I don't",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "I dont",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "head",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "head",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "different",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "different",
+      "page": "003.png",
+      "type": "italicize"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:55:11.969741",
+  "verified": false
+}

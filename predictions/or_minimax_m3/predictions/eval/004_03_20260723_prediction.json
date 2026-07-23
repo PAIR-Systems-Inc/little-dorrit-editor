@@ -1,0 +1,28 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": "low",
+      "corrected_text": "And you are \u2014\"",
+      "line_number": 15,
+      "notes": "Handwritten circles drawn around the em dash punctuation mark",
+      "original_text": "And you are \u2014\"",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": "low",
+      "corrected_text": "Cold stones!",
+      "line_number": 29,
+      "notes": "Caret mark with marginal annotation appears to indicate capitalization of 'cold'; marginal note appears to read 'cap' with additional text 'A relation note'",
+      "original_text": "cold stones!",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:54:23.149005",
+  "verified": false
+}

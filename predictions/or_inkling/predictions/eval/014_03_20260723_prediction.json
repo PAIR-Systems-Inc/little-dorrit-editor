@@ -1,0 +1,66 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "bed room",
+      "corrected_text": "bedroom",
+      "line_number": 1,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "this and",
+      "corrected_text": "this, and",
+      "line_number": 19,
+      "page": "page_452"
+    },
+    {
+      "type": "deletion",
+      "original_text": "never",
+      "corrected_text": "",
+      "line_number": 20,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me not",
+      "corrected_text": "me, not",
+      "line_number": 21,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fled Arthur",
+      "corrected_text": "fled, Arthur",
+      "line_number": 27,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me Doyce",
+      "corrected_text": "me, Doyce",
+      "line_number": 28,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "correct and",
+      "corrected_text": "correct, and",
+      "line_number": 28,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "spirits Cucumber",
+      "corrected_text": "spirits, Cucumber",
+      "line_number": 38,
+      "page": "page_452"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T14:29:53.329516",
+  "verified": false
+}

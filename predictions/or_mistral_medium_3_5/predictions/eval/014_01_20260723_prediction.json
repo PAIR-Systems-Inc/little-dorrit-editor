@@ -1,0 +1,276 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "bedroom while",
+      "corrected_text": "bedroom, while",
+      "line_number": 2,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "in very early",
+      "corrected_text": "in, very early",
+      "line_number": 2,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and without once sitting down or standing",
+      "corrected_text": "and, without once sitting down or standing,",
+      "line_number": 3,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "illustrated with a variety of documents) at",
+      "corrected_text": "illustrated with a variety of documents), at",
+      "line_number": 4,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "go and look up Mr Rugg",
+      "corrected_text": "go and look up Mr. Rugg",
+      "line_number": 5,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to require another back and bundling up his papers",
+      "corrected_text": "to require another back; and bundling up his papers,",
+      "line_number": 6,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "one more hearty shake of the hand with Clennam",
+      "corrected_text": "one more hearty shake of the hand with Clennam,",
+      "line_number": 6,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "he went at full speed down-stairs",
+      "corrected_text": "he went at full speed down-stairs,",
+      "line_number": 7,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam of course",
+      "corrected_text": "Clennam, of course,",
+      "line_number": 8,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and got out so quickly that he found himself at the corner of the patriarchal street",
+      "corrected_text": "and got out so quickly, that he found himself at the corner of the patriarchal street,",
+      "line_number": 8,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "nearly an hour before her time but he was not sorry to",
+      "corrected_text": "nearly an hour before her time; but he was not sorry to",
+      "line_number": 9,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "have the opportunity of calming himself with a leisurely walk",
+      "corrected_text": "have the opportunity of calming himself with a leisurely walk.",
+      "line_number": 9,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "When he returned to the street and had knocked at the bright brass knocker",
+      "corrected_text": "When he returned to the street, and had knocked at the bright brass knocker,",
+      "line_number": 10,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "he was informed that she had come and was shown up-stairs to Flora's breakfast-room",
+      "corrected_text": "he was informed that she had come, and was shown up-stairs to Flora's breakfast-room.",
+      "line_number": 11,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Little Dorrit was not there herself but Flora was",
+      "corrected_text": "Little Dorrit was not there herself, but Flora was,",
+      "line_number": 12,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and testified the greatest amazement at seeing him",
+      "corrected_text": "and testified the greatest amazement at seeing him.",
+      "line_number": 12,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Good gracious Arthur \u2014 Doyce and Clennam",
+      "corrected_text": "Good gracious, Arthur \u2014 Doyce and Clennam!",
+      "line_number": 14,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "who would have ever thought of seeing such a sight as this and pray",
+      "corrected_text": "who would have ever thought of seeing such a sight as this, and pray",
+      "line_number": 15,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "excuse a wrapper for upon my word I really never and a faded check too",
+      "corrected_text": "excuse a wrapper for, upon my word, I really never, and a faded check too,",
+      "line_number": 15,
+      "page": "452.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "me",
+      "corrected_text": "me,",
+      "line_number": 16,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "not that I need mind mentioning it to you for you must know that there are such things",
+      "corrected_text": "not that I need mind mentioning it to you, for you must know that there are such things,",
+      "line_number": 16,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "a skirt and having arranged that a trying on should take place after breakfast",
+      "corrected_text": "a skirt, and having arranged that a trying on should take place after breakfast,",
+      "line_number": 17,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "is the reason though I wish not so badly starched",
+      "corrected_text": "is the reason, though I wish not so badly starched.",
+      "line_number": 17,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "I ought to make an apology",
+      "corrected_text": "I ought to make an apology,",
+      "line_number": 19,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "for so early and abrupt a visit but you will excuse it when I tell you the cause",
+      "corrected_text": "for so early and abrupt a visit; but you will excuse it when I tell you the cause.",
+      "line_number": 19,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "In times for ever fled Arthur",
+      "corrected_text": "In times for ever fled, Arthur,",
+      "line_number": 21,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pray excuse me Doyce and Clennam infinitely more correct and though un",
+      "corrected_text": "pray excuse me, Doyce and Clennam, infinitely more correct, and though un-",
+      "line_number": 21,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "questionably distant still tis distance lends enchantment to the view",
+      "corrected_text": "questionably distant, still 'tis distance lends enchantment to the view,",
+      "line_number": 22,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at least I dont mean that and if I did I suppose it would depend",
+      "corrected_text": "at least I don't mean that, and if I did, I suppose it would depend",
+      "line_number": 22,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "considerably on the nature of the view but Im running on again and you",
+      "corrected_text": "considerably on the nature of the view, but I'm running on again, and you",
+      "line_number": 23,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "put it all out of my head",
+      "corrected_text": "put it all out of my head.",
+      "line_number": 23,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "She glanced at him tenderly and resumed",
+      "corrected_text": "She glanced at him tenderly, and resumed:",
+      "line_number": 24,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "In times for ever fled I was going to say it would have sounded",
+      "corrected_text": "In times for ever fled, I was going to say, it would have sounded",
+      "line_number": 25,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "strange indeed for Arthur Clennam \u2014 Doyce and Clennam naturally",
+      "corrected_text": "strange indeed for Arthur Clennam \u2014 Doyce and Clennam, naturally,",
+      "line_number": 25,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quite different \u2014 to make apologies for coming here at any time but",
+      "corrected_text": "quite different \u2014 to make apologies for coming here at any time, but",
+      "line_number": 26,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that is past and what is past can never be recalled except in his own",
+      "corrected_text": "that is past, and what is past can never be recalled, except in his own",
+      "line_number": 27,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "case as poor Mr F said when he was in spirits Cumberland and therefore",
+      "corrected_text": "case, as poor Mr. F. said when he was in spirits, Cumberland, and therefore",
+      "line_number": 27,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "never ate it",
+      "corrected_text": "never ate it.",
+      "line_number": 28,
+      "page": "452.png"
+    }
+  ],
+  "annotator": "Mistral Medium 3.5",
+  "annotation_date": "2026-07-23T12:05:42.685245",
+  "verified": false
+}

@@ -1,0 +1,19 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Period here?",
+      "line_number": 1,
+      "notes": "Handwritten editorial query/question in margin next to 'SUN AND SHADOW.' asking whether a period is needed there.",
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:05:28.723803",
+  "verified": false
+}

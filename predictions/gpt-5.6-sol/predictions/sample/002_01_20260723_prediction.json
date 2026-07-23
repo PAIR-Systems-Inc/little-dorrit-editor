@@ -1,0 +1,45 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes",
+      "corrected_text": "eyes,",
+      "line_number": 5,
+      "page": "6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white",
+      "corrected_text": "white,",
+      "line_number": 11,
+      "page": "6"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 30,
+      "page": "6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "6"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "so",
+      "corrected_text": "So",
+      "line_number": 36,
+      "page": "6"
+    }
+  ],
+  "annotator": "GPT-5.6 Sol",
+  "annotation_date": "2026-07-23T11:18:09.535417",
+  "verified": false
+}

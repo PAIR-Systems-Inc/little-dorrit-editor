@@ -1,0 +1,73 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XXIX",
+      "corrected_text": "Chapter XXIX.",
+      "line_number": 0,
+      "page": "page_373"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them;",
+      "corrected_text": "them,",
+      "line_number": 10,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "seen;",
+      "corrected_text": "seen,",
+      "line_number": 12,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "days.",
+      "corrected_text": "days,",
+      "line_number": 13,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it;",
+      "corrected_text": "it,",
+      "line_number": 15,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still;",
+      "corrected_text": "stand-still,",
+      "line_number": 16,
+      "page": "page_373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view",
+      "corrected_text": "view,",
+      "line_number": 16,
+      "page": "page_373"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "lord",
+      "corrected_text": "Lord",
+      "line_number": 25,
+      "page": "page_373"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T14:30:11.060263",
+  "verified": false
+}

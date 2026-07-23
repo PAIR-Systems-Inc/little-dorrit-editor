@@ -1,0 +1,66 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "Chapter xxix",
+      "corrected_text": "Chapter XXIX",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Mrs. Flintwinch goes on Dreaming",
+      "corrected_text": "Mrs. Flintwinch Goes on Dreaming",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "THE house in the city",
+      "corrected_text": "The house in the City",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at the hour",
+      "corrected_text": "existence, at the hour",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "mankind stricken motionless when we were brought to",
+      "corrected_text": "mankind stricken motionless, when we were brought to",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "a stand-still to be unable to measure the changes beyond our view",
+      "corrected_text": "a stand-still; to be unable to measure the changes beyond our view",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence is the infirmity of many invalids",
+      "corrected_text": "existence; is the infirmity of many invalids",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 22,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Medium 3.5",
+  "annotation_date": "2026-07-23T14:22:25.977066",
+  "verified": false
+}

@@ -1,0 +1,52 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "judgment",
+      "corrected_text": "judgment,",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Marseilles",
+      "corrected_text": "Marseilles harbour",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 41,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia So",
+      "corrected_text": "Vecchia, So",
+      "line_number": 43,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "amazement.",
+      "corrected_text": "amazement,",
+      "line_number": 53,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T14:29:21.734381",
+  "verified": false
+}

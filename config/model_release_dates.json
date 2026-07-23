@@ -402,5 +402,115 @@
     "release_date": "2026-04-02",
     "release_source": "https://openrouter.ai/qwen/qwen3.6-plus",
     "release_notes": "Latency-optimized OpenRouter run using the Qwen3.6 Plus Nitro route with provider latency sorting and reasoning tokens excluded from API responses."
+  },
+  "claude-opus-4.8": {
+    "vendor": "Anthropic",
+    "release_date": "2026-05-28",
+    "release_notes": "Anthropic released Claude Opus 4.8 in late May 2026; the OpenRouter listing appeared 2026-05-27.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit. Opus 4.8's score is depressed by unreliable line counting: it identifies most edits correctly (166 of ~200 match ground truth by text) but reports noisy line numbers that drift progressively down the page and vary between runs, so the judge rejects the matches."
+  },
+  "claude-fable-5": {
+    "vendor": "Anthropic",
+    "release_date": "2026-06-09",
+    "release_source": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "release_notes": "First model in the Claude 5 family (Mythos-class tier above Opus). Availability was suspended by a US Commerce Department order on 2026-06-12 and restored on 2026-07-01.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "claude-sonnet-5": {
+    "vendor": "Anthropic",
+    "release_date": "2026-06-30",
+    "release_notes": "Claude Sonnet 5 shipped as Anthropic's new default model at the end of June 2026; the OpenRouter listing appeared 2026-06-30 and press coverage ran 2026-07-01.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "gpt-5.6-sol": {
+    "vendor": "OpenAI",
+    "release_date": "2026-07-09",
+    "release_source": "https://community.openai.com/t/introducing-gpt-5-6-series-sol-terra-and-luna-coming-july-9-10am-pt/1384931",
+    "release_notes": "Flagship tier of the GPT-5.6 series (Sol/Terra/Luna), released 2026-07-09."
+  },
+  "gpt-5.6-terra": {
+    "vendor": "OpenAI",
+    "release_date": "2026-07-09",
+    "release_source": "https://community.openai.com/t/introducing-gpt-5-6-series-sol-terra-and-luna-coming-july-9-10am-pt/1384931",
+    "release_notes": "Mid tier of the GPT-5.6 series; OpenAI positions Terra as matching GPT-5.5."
+  },
+  "gpt-5.6-luna": {
+    "vendor": "OpenAI",
+    "release_date": "2026-07-09",
+    "release_source": "https://community.openai.com/t/introducing-gpt-5-6-series-sol-terra-and-luna-coming-july-9-10am-pt/1384931",
+    "release_notes": "Fast/low-cost tier of the GPT-5.6 series."
+  },
+  "or_gemini_3_5_flash": {
+    "vendor": "Google",
+    "release_date": "2026-05-19",
+    "release_source": "https://openrouter.ai/google/gemini-3.5-flash",
+    "release_notes": "Release date taken from the OpenRouter listing; Gemini 3.5 Pro remained unreleased as of 2026-07-23."
+  },
+  "or_gemini_3_6_flash": {
+    "vendor": "Google",
+    "release_date": "2026-07-21",
+    "release_source": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+    "release_notes": "Released alongside Gemini 3.5 Flash-Lite and Flash Cyber on 2026-07-21."
+  },
+  "or_meta_muse_spark_1_1": {
+    "vendor": "Meta",
+    "release_date": "2026-07-16",
+    "release_source": "https://venturebeat.com/technology/goodbye-llama-meta-launches-new-proprietary-ai-model-muse-spark-first-since",
+    "release_notes": "Muse Spark is Meta Superintelligence Labs' proprietary successor to Llama, announced 2026-04-09; the 1.1 update listed on OpenRouter 2026-07-16 is the current route."
+  },
+  "or_kimi_k3": {
+    "vendor": "Moonshot",
+    "release_date": "2026-07-16",
+    "release_source": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+    "release_notes": "2.8T-parameter open-weight multimodal MoE with 1M-token context, released 2026-07-16."
+  },
+  "or_qwen3_7_plus": {
+    "vendor": "Alibaba",
+    "release_date": "2026-05-31",
+    "release_source": "https://www.digitalapplied.com/blog/qwen-3-7-plus-alibaba-multimodal-agent-model-2026-release",
+    "release_notes": "Multimodal agent model announced 2026-05-31 with general availability 2026-06-01; OpenRouter route appeared 2026-06-03."
+  },
+  "or_minimax_m3": {
+    "vendor": "MiniMax",
+    "release_date": "2026-05-28",
+    "release_notes": "Announced 2026-05-28 as an open-weight natively multimodal model with 1M context; OpenRouter listing appeared 2026-05-31."
+  },
+  "or_grok_4_5": {
+    "vendor": "xAI",
+    "release_date": "2026-07-08",
+    "release_notes": "xAI announced Grok 4.5 on 2026-07-08 on the 1.5T-parameter V9 foundation; OpenRouter listing appeared the same day."
+  },
+  "or_mistral_medium_3_5": {
+    "vendor": "Mistral",
+    "release_date": "2026-04-30",
+    "release_source": "https://openrouter.ai/mistralai/mistral-medium-3-5",
+    "release_notes": "Release date taken from the OpenRouter listing."
+  },
+  "or_step_3_7_flash": {
+    "vendor": "StepFun",
+    "release_date": "2026-05-28",
+    "release_source": "https://openrouter.ai/stepfun/step-3.7-flash",
+    "release_notes": "Release date taken from the OpenRouter listing."
+  },
+  "or_inkling": {
+    "vendor": "Thinking Machines",
+    "release_date": "2026-07-17",
+    "release_source": "https://openrouter.ai/thinkingmachines/inkling",
+    "release_notes": "Thinking Machines' first production model; release date taken from the OpenRouter listing."
+  },
+  "or_kimi_k2_7_code": {
+    "vendor": "Moonshot",
+    "release_date": "2026-06-12",
+    "release_source": "https://openrouter.ai/moonshotai/kimi-k2.7-code",
+    "release_notes": "Coding-focused Kimi variant; release date taken from the OpenRouter listing."
+  },
+  "or_gemini_3_5_flash_lite": {
+    "vendor": "Google",
+    "release_date": "2026-07-21",
+    "release_source": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+    "release_notes": "Released alongside Gemini 3.6 Flash and Flash Cyber on 2026-07-21."
   }
 }

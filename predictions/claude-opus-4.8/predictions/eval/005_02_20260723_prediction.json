@@ -1,0 +1,28 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "If he",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "if he",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked Clennam",
+      "line_number": 49,
+      "notes": null,
+      "original_text": "said Clennam",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Claude Opus 4.8",
+  "annotation_date": "2026-07-23T12:23:20.980294",
+  "verified": false
+}

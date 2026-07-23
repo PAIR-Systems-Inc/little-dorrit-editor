@@ -1,0 +1,64 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "movement, or",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "movement or",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "matters little",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "matters little",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "eyes raised",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "eyes raised",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "peace\u2014or",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "peace\u2014or",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "yet, and",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "yet and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "(cap)",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "(cap)",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T11:58:57.657792",
+  "verified": false
+}

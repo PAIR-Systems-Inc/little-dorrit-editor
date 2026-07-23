@@ -1,0 +1,36 @@
+{
+  "model_name": "claude-sonnet-5",
+  "date": "2026-07-23T15:16:37.723582",
+  "annotator": "Claude Sonnet 5",
+  "annotation_date": "2026-07-23T13:28:17.175026",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": 33,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change from \"if he\" to \"If he\", capturing the identical core capitalization correction. Line number differences are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "replacement",
+      "original_text": "said Clennam",
+      "corrected_text": "asked Clennam",
+      "observed_line_number": 36,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"said Clennam\") and the same corrected text (\"asked Clennam\"), capturing the identical core change. Line numbers are ignored as instructed, so the mismatch there does not affect correctness."
+    }
+  ]
+}

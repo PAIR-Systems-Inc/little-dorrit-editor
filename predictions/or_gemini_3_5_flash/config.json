@@ -1,0 +1,8 @@
+{
+  "model_id": "or_gemini_3_5_flash",
+  "display_name": "Gemini 3.5 Flash",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-07-23",
+  "notes": "Benchmark run with 2-shot learning"
+}

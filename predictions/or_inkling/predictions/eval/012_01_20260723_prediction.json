@@ -1,0 +1,45 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "each recurring",
+      "corrected_text": "to each recurring",
+      "line_number": 4,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them;",
+      "corrected_text": "them,",
+      "line_number": 10,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it;",
+      "corrected_text": "it,",
+      "line_number": 15,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "page": "page_3"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "lord",
+      "corrected_text": "Lord",
+      "line_number": 25,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T12:12:19.458467",
+  "verified": false
+}

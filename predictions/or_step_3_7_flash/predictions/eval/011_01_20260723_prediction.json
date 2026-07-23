@@ -1,0 +1,73 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "in",
+      "corrected_text": "",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "whatever",
+      "corrected_text": "",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white but",
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "\"Thank you,\"",
+      "corrected_text": "\"Thank you,\",",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore,",
+      "corrected_text": "shore,,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Civita Vecchia, so",
+      "corrected_text": "Civita Vecchia. So",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Step 3.7 Flash",
+  "annotation_date": "2026-07-23T12:10:06.562587",
+  "verified": false
+}

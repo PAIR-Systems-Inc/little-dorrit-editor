@@ -1,0 +1,37 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons,",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "Chalons",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sodden, with",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "sodden with",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T13:00:52.514110",
+  "verified": false
+}

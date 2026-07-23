@@ -1,0 +1,36 @@
+{
+  "model_name": "or_inkling",
+  "date": "2026-07-23T15:53:06.625958",
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T14:29:01.723858",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify the edit type as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial word in the phrase \"if he\" \u2192 \"If he\". The prediction applies the same essential change by capitalizing \"if\" \u2192 \"If\". Although it provides less surrounding context (omitting \"he\"), it captures the core intended correction (capitalizing the word \"if\" at the start of the phrase/sentence). Therefore, the text content matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces the phrase \"said Clennam\" with \"asked Clennam\", whose core change is substituting \"said\" \u2192 \"asked\" while retaining the surrounding context. The predicted edit replaces \"said\" with \"asked\" without including the trailing context \"Clennam\", but it still captures the essential intended correction (changing the verb from \"said\" to \"asked\"). Since the core textual change matches the ground truth\u2019s intention, the content is accurate."
+    }
+  ]
+}

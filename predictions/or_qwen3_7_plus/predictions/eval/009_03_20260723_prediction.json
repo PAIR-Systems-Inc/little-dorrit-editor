@@ -1,0 +1,64 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart, so",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "heart so",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "generous Mr.",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "generous, Mr.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "confidentially up into his face, with some hurried words to the effect that she thanked him from her heart indeed (as she did",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "confidentially up into his face, with some hurried words to the effect that she thanked him from her heart (as she did",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestness), she",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "earnestness) she",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "length, said",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "length said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so; I am",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "I hope so; I am",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.7 Plus",
+  "annotation_date": "2026-07-23T14:02:15.806000",
+  "verified": false
+}

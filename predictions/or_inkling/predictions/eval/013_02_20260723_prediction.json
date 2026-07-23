@@ -1,0 +1,52 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "page_003"
+    },
+    {
+      "type": "italicize",
+      "original_text": "boiling-over",
+      "corrected_text": "boiling-over",
+      "line_number": 11,
+      "page": "page_003"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "page_003"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "page_003"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you",
+      "corrected_text": "you,",
+      "line_number": 37,
+      "page": "page_003"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now",
+      "corrected_text": "now,",
+      "line_number": 37,
+      "page": "page_003"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T13:16:14.421572",
+  "verified": false
+}

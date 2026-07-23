@@ -1,0 +1,91 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam; \"not",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Clennam; \"not",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "dryest snorts",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "having,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "having",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that boiling-over",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "that boiling-over",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twenty;",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "twenty",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him,",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "him",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now,",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "now",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now,",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "now",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.7 Plus",
+  "annotation_date": "2026-07-23T14:04:40.041207",
+  "verified": false
+}

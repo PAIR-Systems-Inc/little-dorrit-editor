@@ -1,0 +1,8 @@
+{
+  "model_id": "or_meta_muse_spark_1_1",
+  "display_name": "Muse Spark 1.1",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-07-23",
+  "notes": "Benchmark run with 2-shot learning"
+}

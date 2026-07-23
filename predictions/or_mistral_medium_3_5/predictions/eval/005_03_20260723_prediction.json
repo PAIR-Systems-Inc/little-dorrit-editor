@@ -1,0 +1,38 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "cap",
+      "corrected_text": "Cap",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "If he",
+      "corrected_text": "If he has",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said Clennam",
+      "corrected_text": "asked Clennam",
+      "line_number": 32,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "asked",
+      "corrected_text": "Asked",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Medium 3.5",
+  "annotation_date": "2026-07-23T14:21:37.886868",
+  "verified": false
+}

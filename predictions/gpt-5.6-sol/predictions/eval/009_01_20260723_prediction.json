@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 10,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "generous,",
+      "corrected_text": "generous",
+      "line_number": 22,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "as she",
+      "corrected_text": "as indeed she",
+      "line_number": 27,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ness) she",
+      "corrected_text": "ness), she",
+      "line_number": 28,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam smiling",
+      "corrected_text": "Clennam, smiling",
+      "line_number": 31,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "hope",
+      "corrected_text": "hoped",
+      "line_number": 34,
+      "page": "369"
+    }
+  ],
+  "annotator": "GPT-5.6 Sol",
+  "annotation_date": "2026-07-23T11:18:53.037097",
+  "verified": false
+}

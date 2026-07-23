@@ -1,0 +1,52 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 10,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "generous Mr.",
+      "corrected_text": "generous, Mr.",
+      "line_number": 22,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "she thanked",
+      "corrected_text": "she indeed thanked",
+      "line_number": 27,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "ness) she",
+      "corrected_text": "ness), she",
+      "line_number": 28,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at length said",
+      "corrected_text": "at length, said",
+      "line_number": 31,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "hope",
+      "corrected_text": "hoped",
+      "line_number": 34,
+      "page": "369"
+    }
+  ],
+  "annotator": "GPT-5.6 Sol",
+  "annotation_date": "2026-07-23T13:32:39.247125",
+  "verified": false
+}

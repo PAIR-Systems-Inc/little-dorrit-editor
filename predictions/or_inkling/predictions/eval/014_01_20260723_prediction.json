@@ -1,0 +1,52 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "this and",
+      "corrected_text": "this, and",
+      "line_number": 19,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "never and",
+      "corrected_text": "never, and",
+      "line_number": 20,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me not",
+      "corrected_text": "me, not",
+      "line_number": 21,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam infinitely",
+      "corrected_text": "Clennam, infinitely",
+      "line_number": 28,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that and",
+      "corrected_text": "that, and",
+      "line_number": 30,
+      "page": "page_452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "again and",
+      "corrected_text": "again, and",
+      "line_number": 31,
+      "page": "page_452"
+    }
+  ],
+  "annotator": "Inkling",
+  "annotation_date": "2026-07-23T12:12:12.299914",
+  "verified": false
+}

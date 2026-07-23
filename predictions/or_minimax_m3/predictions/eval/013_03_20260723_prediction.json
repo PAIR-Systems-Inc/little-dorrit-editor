@@ -1,0 +1,55 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snath",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "driest of snath.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boiling-over",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "boiling over",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "him,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "italicize",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "italicize",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "authorise",
+      "page": "003.png",
+      "type": "italicize"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T14:06:30.128146",
+  "verified": false
+}

@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "bedroom",
+      "corrected_text": "bedroom",
+      "line_number": 1,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bed. For",
+      "corrected_text": "bed. For",
+      "line_number": 2,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 10,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me, not",
+      "corrected_text": "me; not",
+      "line_number": 20,
+      "page": "452"
+    }
+  ],
+  "annotator": "Grok 4.5",
+  "annotation_date": "2026-07-23T12:02:47.324444",
+  "verified": false
+}

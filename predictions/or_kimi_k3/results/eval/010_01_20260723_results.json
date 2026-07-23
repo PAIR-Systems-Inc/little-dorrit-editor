@@ -1,0 +1,92 @@
+{
+  "model_name": "or_kimi_k3",
+  "date": "2026-07-23T15:39:16.910875",
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T11:38:21.243665",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "from hers and",
+      "corrected_text": "from hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"hers and\" to \"hers, and\" (inserting a comma after \"hers\"). The prediction changes \"from hers and\" to \"from hers, and\", which includes additional surrounding context but performs the same core punctuation change: inserting a comma after \"hers\" before \"and\". This accurately captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma between \"hers\" and \"matters\" (\"hers matters\" \u2192 \"hers, matters\"). The prediction makes the same core punctuation change in a slightly larger context (\"on hers matters\" \u2192 \"on hers, matters\"). Including the extra surrounding word \"on\" does not change the essential edit, and the comma is inserted in the correct location. Therefore, the prediction captures the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "a moment with",
+      "corrected_text": "a moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma after the word \"moment\" in the phrase \"moment with\" \u2192 \"moment, with\". The prediction performs the same core change, inserting the comma after \"moment\" as well, but includes one additional preceding word (\"a\"): \"a moment with\" \u2192 \"a moment, with\". This added context does not alter the essential punctuation correction, so the intended edit is correctly captured."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "so beautiful that",
+      "corrected_text": "so beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth changes \"beautiful that\" to \"beautiful, that\" (inserting a comma after \"beautiful\"). The prediction changes \"so beautiful that\" to \"so beautiful, that\", which also inserts a comma after \"beautiful\" and simply includes additional surrounding context (\"so\"). This captures the same core punctuation change intended by the ground truth."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "papa",
+      "corrected_text": "Papa",
+      "observed_line_number": 31,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Clennam;",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "dryest snorts",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "little",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "little",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that-boiling-over",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "that boiling-over",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twenty,",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "twenty;",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "benevolence bubbling out of him",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now, I have paid it",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "now I have paid it",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you, now",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "you now",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now, to break",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "now to break",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T13:50:27.316245",
+  "verified": false
+}

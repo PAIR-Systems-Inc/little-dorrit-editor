@@ -1,0 +1,8 @@
+{
+  "model_id": "or_qwen3_7_plus",
+  "display_name": "Qwen3.7 Plus",
+  "shots": 2,
+  "temperature": 0.0,
+  "date": "2026-07-23",
+  "notes": "Benchmark run with 2-shot learning"
+}

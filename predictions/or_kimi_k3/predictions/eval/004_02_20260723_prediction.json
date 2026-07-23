@@ -1,0 +1,28 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cold stones?",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "cold stones!",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T12:49:50.268852",
+  "verified": false
+}

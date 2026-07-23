@@ -1,0 +1,31 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "italicize",
+      "original_text": "driest of snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 24,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "authorise",
+      "corrected_text": "authorise",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Medium 3.5",
+  "annotation_date": "2026-07-23T13:05:39.822809",
+  "verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "line_number": 10,
+      "page": "164"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 28,
+      "page": "164"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stones!",
+      "corrected_text": "stones?",
+      "line_number": 29,
+      "page": "164"
+    }
+  ],
+  "annotator": "GPT-5.6 Sol",
+  "annotation_date": "2026-07-23T12:29:46.412548",
+  "verified": false
+}

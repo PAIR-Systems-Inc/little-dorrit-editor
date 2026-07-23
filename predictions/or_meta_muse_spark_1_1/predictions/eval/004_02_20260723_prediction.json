@@ -1,0 +1,24 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "line_number": 28,
+      "page": "184"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stones!\"",
+      "corrected_text": "stones?\"",
+      "line_number": 29,
+      "page": "184"
+    }
+  ],
+  "annotator": "Muse Spark 1.1",
+  "annotation_date": "2026-07-23T12:44:49.087860",
+  "verified": false
+}

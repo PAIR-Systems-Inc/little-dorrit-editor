@@ -1,0 +1,55 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "eyes by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "white but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "Marseilles harbour",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "notes": "handwritten marginal note 'terrace-gardens' confirms hyphenation",
+      "original_text": "terrace gardens",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Civita Vecchia. So",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "Civita Vecchia so",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Kimi K3",
+  "annotation_date": "2026-07-23T11:36:21.865560",
+  "verified": false
+}

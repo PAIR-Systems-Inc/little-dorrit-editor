@@ -1,0 +1,80 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "though.",
+      "corrected_text": "though,",
+      "line_number": 1,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 5,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "snorts",
+      "corrected_text": "of snorts",
+      "line_number": 5,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "premature",
+      "corrected_text": "too premature",
+      "line_number": 9,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "that",
+      "corrected_text": "that same",
+      "line_number": 10,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty,",
+      "corrected_text": "twenty;",
+      "line_number": 14,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 29,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I",
+      "corrected_text": "now, I",
+      "line_number": 33,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 36,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now to",
+      "corrected_text": "now, to",
+      "line_number": 36,
+      "page": "451"
+    }
+  ],
+  "annotator": "Kimi K2.7 Code",
+  "annotation_date": "2026-07-23T14:59:24.702732",
+  "verified": false
+}

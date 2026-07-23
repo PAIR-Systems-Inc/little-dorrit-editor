@@ -1,0 +1,55 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "that, in our fancy, whatever",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "that in our fancy whatever",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "is now. \"Thank you,\"",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "is now.\"",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "things than once",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "things that once",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.7 Plus",
+  "annotation_date": "2026-07-23T11:56:05.826998",
+  "verified": false
+}

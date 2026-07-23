@@ -1,0 +1,19 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": 0.4,
+      "corrected_text": "dinner, if he",
+      "line_number": 28,
+      "notes": "Marginalia with caret mark near 'dine' in line 28 reads approximately '\u2192 CAP' / 'RELATION' / 'MARC'. The marks are difficult to interpret precisely but suggest an editorial annotation. Possibly indicating a capitalization or word change, but exact intention is unclear.",
+      "original_text": "dine to-",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "MiniMax M3",
+  "annotation_date": "2026-07-23T13:00:54.809354",
+  "verified": false
+}
