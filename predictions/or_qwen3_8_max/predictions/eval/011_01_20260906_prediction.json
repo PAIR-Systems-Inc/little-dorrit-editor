@@ -1,0 +1,64 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "and that in our fancy whatever Pet was,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "and that, in our fancy, whatever Pet was,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "is now.\" \"Thank you,\"",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "is now.\"",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you,\" murmured",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "\"Thank you!\" murmured",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "greater things than once were",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "greater things that once were",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.8 Max (0902)",
+  "annotation_date": "2026-09-06T03:16:38.479010",
+  "verified": false
+}

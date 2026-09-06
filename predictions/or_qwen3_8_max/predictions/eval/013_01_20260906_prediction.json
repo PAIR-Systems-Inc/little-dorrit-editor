@@ -1,0 +1,66 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam; \"not",
+      "corrected_text": "Clennam, \"not",
+      "line_number": 1,
+      "page": "page_3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 5,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "been a little premature.",
+      "corrected_text": "been a little premature",
+      "line_number": 8,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at twenty: sticking",
+      "corrected_text": "at twenty, sticking",
+      "line_number": 12,
+      "page": "page_3"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him, than out of a ninepin.",
+      "corrected_text": "benevolence bubbling out of him, than out of a ninepin.",
+      "line_number": 22,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I have paid it",
+      "corrected_text": "now, I have paid it",
+      "line_number": 26,
+      "page": "page_3"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorise",
+      "corrected_text": "authorise",
+      "line_number": 28,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you now to break",
+      "corrected_text": "you, now, to break",
+      "line_number": 28,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Qwen3.8 Max (0902)",
+  "annotation_date": "2026-09-06T03:17:18.568730",
+  "verified": false
+}

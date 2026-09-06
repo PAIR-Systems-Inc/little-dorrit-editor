@@ -1,0 +1,36 @@
+{
+  "model_name": "or_claude_fable_5_1",
+  "date": "2026-09-06T04:15:30.200333",
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:09:27.162242",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth type is \"capitalization\" and the predicted type is also \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: Both edits change the same phrase from \"if he\" to \"If he\", capturing the identical core capitalization correction. No mismatch in original or corrected text."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said Clennam",
+      "corrected_text": "asked Clennam",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n2) Text Content Accuracy: Both change the exact same phrase from \"said Clennam\" to \"asked Clennam.\" The core intended substitution is identical with no discrepancies.\nTherefore, the predicted edit correctly captures the ground truth intention."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "the eyes by probably",
+      "corrected_text": "the eyes, by probably",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "unusually white but",
+      "corrected_text": "unusually white, but",
+      "line_number": 11,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Marseilles harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 30,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Civita Vecchia so",
+      "corrected_text": "Civita Vecchia. So",
+      "line_number": 36,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "Claude Opus 5 (OR)",
+  "annotation_date": "2026-09-06T04:02:36.455947",
+  "verified": false
+}

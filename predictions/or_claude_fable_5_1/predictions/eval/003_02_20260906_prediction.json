@@ -1,0 +1,55 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Fellow Travellers.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Fellow Travellers",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "howling, over",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "howling over",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "yonder, to-day",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "yonder to-day",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sir",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Sir",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "pockets and",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:11:39.377923",
+  "verified": false
+}

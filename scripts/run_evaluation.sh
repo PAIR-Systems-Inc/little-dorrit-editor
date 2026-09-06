@@ -200,6 +200,16 @@ for MODEL_ID in "${MODELS[@]}"; do
                 CURRENT_DISPLAY_NAME="${MODEL_ID}"
             fi
         fi
+
+        REASONING_EFFORT=$(uv run python scripts/get_model_name.py \
+            "${MODEL_ID}" "config/models.toml" "reasoning_effort")
+        if [[ -n "${REASONING_EFFORT}" ]]; then
+            REASONING_EFFORT_JSON="\"${REASONING_EFFORT}\""
+            NOTES="Benchmark run with 2-shot learning at ${REASONING_EFFORT} reasoning effort (default)"
+        else
+            REASONING_EFFORT_JSON="null"
+            NOTES="Benchmark run with 2-shot learning (default)"
+        fi
     
         # Create a default config.json file
         cat > "$CONFIG_FILE" << EOL
@@ -208,8 +218,9 @@ for MODEL_ID in "${MODELS[@]}"; do
   "display_name": "${CURRENT_DISPLAY_NAME}",
   "shots": 2,
   "temperature": 0.0,
+  "reasoning_effort": ${REASONING_EFFORT_JSON},
   "date": "$(date +"%Y-%m-%d")",
-  "notes": "Benchmark run with 2-shot learning (default)"
+  "notes": "${NOTES}"
 }
 EOL
         echo "Default configuration saved to $CONFIG_FILE"

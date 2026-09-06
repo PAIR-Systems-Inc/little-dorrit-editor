@@ -1,0 +1,118 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XXIX.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XXIX",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "MRS. FLINTWINCH GOES ON DREAMING.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "MRS. FLINTWINCH GOES ON DREAMING",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the City",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "the city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "reluctant return to",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "reluctant return of",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "familiar with them;",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "familiar with them,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "busy existence, at",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "busy existence at",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it; to suppose",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "it, to suppose",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "motionless when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a stand-still; to",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "a stand-still, to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "our view, by",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "our view by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "contracted existence; is",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "contracted existence, is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "liege lord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Opus 5 (OR)",
+  "annotation_date": "2026-09-06T03:58:49.762565",
+  "verified": false
+}

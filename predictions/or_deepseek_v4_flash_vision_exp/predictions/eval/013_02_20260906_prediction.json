@@ -1,0 +1,31 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "of the dryest snorls",
+      "corrected_text": "driest of snorls",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him",
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 29,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 36,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:30:22.125090",
+  "verified": false
+}

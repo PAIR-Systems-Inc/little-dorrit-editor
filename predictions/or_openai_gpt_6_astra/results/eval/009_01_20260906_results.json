@@ -1,0 +1,78 @@
+{
+  "model_name": "or_openai_gpt_6_astra",
+  "date": "2026-09-06T04:25:55.792838",
+  "annotator": "GPT-6 Astra (OR)",
+  "annotation_date": "2026-09-06T04:18:34.099869",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "heart",
+      "corrected_text": "heart,",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the edit type matches exactly.\n\n2. Text Content Accuracy: The ground truth intends to insert a comma after the word \"heart\" in the phrase \"heart so,\" producing \"heart, so.\" The predicted edit changes \"heart\" to \"heart,\", which captures the same essential punctuation insertion (a comma immediately after \"heart\"). Although the prediction omits the following word \"so\" from its context, it still represents the core intended change at the correct location."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "generous,",
+      "corrected_text": "generous",
+      "observed_line_number": 22,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is the removal of the comma after \"generous\" (turning \"generous, Mr.\" into \"generous Mr.\"). The predicted edit also removes the comma after \"generous\" (\"generous,\" \u2192 \"generous\"). Although the prediction includes less surrounding context (it omits \"Mr.\"), it captures the core intended punctuation change: deleting the comma after \"generous.\""
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "as",
+      "corrected_text": "as indeed",
+      "observed_line_number": 27,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as an \"insertion,\" so the edit type matches.\n\n2) Text Content Accuracy: The ground truth changes \"as she did\" to \"as indeed she did,\" which is essentially the insertion of the word \"indeed\" immediately after \"as.\" The predicted edit changes \"as\" to \"as indeed,\" which captures that same core insertion, even though it provides less surrounding context (it does not include \"she did\"). Since the essential intended change\u2014adding \"indeed\" after \"as\"\u2014is correctly represented, the prediction matches the ground truth\u2019s intent."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "length",
+      "corrected_text": "length,",
+      "observed_line_number": 31,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after the word \"length\" in the phrase \"length said\" \u2192 \"length, said\". The predicted edit \"length\" \u2192 \"length,\" captures the same core intention: adding a comma immediately after \"length\". Although it omits the following word \"said\" from the original/corrected text span, it still represents the essential punctuation insertion at the correct location.\n\nBecause both the type and the core textual change align with the ground truth\u2019s intention, the prediction is correct."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "hope",
+      "corrected_text": "hoped",
+      "observed_line_number": 34,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are of type \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The ground truth changes the phrase \"I hope so\" to \"I hoped so\", i.e., the essential correction is changing the verb form \"hope\" \u2192 \"hoped\". The predicted edit replaces \"hope\" with \"hoped\", which captures the core intended change even though it provides less surrounding context (omits \"I\" and \"so\"). This still matches the ground truth\u2019s intention."
+    }
+  ]
+}

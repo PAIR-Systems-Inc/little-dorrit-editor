@@ -1,0 +1,24 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "The house",
+      "corrected_text": "The cof house",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "piece of clockwork.",
+      "corrected_text": "to piece of clockwork.",
+      "line_number": 6,
+      "page": "373"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T02:17:49.243104",
+  "verified": false
+}

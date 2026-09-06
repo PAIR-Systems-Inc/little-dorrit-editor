@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gemini_3_8_flash",
+  "date": "2026-09-06T03:11:03.308741",
+  "annotator": "Gemini 3.8 Flash",
+  "annotation_date": "2026-09-06T03:07:23.062937",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW,",
+      "corrected_text": "SUN AND SHADOW.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 0,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

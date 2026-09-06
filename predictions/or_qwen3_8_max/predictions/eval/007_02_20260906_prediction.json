@@ -1,0 +1,28 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter I.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter I",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sun and Shadow.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Sun and Shadow",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.8 Max (0902)",
+  "annotation_date": "2026-09-06T03:24:05.410699",
+  "verified": false
+}

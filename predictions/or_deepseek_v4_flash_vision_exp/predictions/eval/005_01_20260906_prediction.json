@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "he",
+      "corrected_text": "If he",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 39,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:17:41.950694",
+  "verified": false
+}

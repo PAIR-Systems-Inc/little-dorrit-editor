@@ -1,0 +1,24 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "hurried words",
+      "corrected_text": "hurried indeed words",
+      "line_number": 26,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "And, now, Minnie Gowan,",
+      "corrected_text": "I hope so And, now, Minnie Gowan,",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:18:08.284638",
+  "verified": false
+}

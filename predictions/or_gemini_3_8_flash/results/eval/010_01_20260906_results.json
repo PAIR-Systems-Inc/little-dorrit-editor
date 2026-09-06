@@ -1,0 +1,78 @@
+{
+  "model_name": "or_gemini_3_8_flash",
+  "date": "2026-09-06T03:11:33.917683",
+  "annotator": "Gemini 3.8 Flash",
+  "annotation_date": "2026-09-06T02:54:55.540885",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly. Text Content Accuracy: Both specify the identical transformation from \"hers and\" to \"hers, and\", inserting a comma after \"hers\". The core intended change is fully captured with no deviation."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change: inserting a comma after \"hers\" (\"hers matters\" \u00126 \"hers, matters\"). The core correction is identical in the predicted edit."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"moment with\") and the same correction (\"moment, with\"), inserting a comma after \"moment.\" The core intended punctuation change is captured exactly."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\nText Content Accuracy: Both specify the same transformation: \"beautiful that\" \u2192 \"beautiful, that,\" inserting a comma after \"beautiful.\" This captures the core intended punctuation change with identical original and corrected text."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify the edit type as \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: Both identify the same change from \"they\" to \"They\". The essential correction (capitalizing the first letter) is captured precisely with no discrepancy. Line numbers are irrelevant per instructions."
+    }
+  ]
+}

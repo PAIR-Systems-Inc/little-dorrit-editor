@@ -1,0 +1,9 @@
+{
+  "model_id": "or_qwen3_8_max",
+  "display_name": "Qwen3.8 Max (0902)",
+  "shots": 2,
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "date": "2026-09-06",
+  "notes": "Benchmark run with 2-shot learning at high reasoning effort; images resized/recompressed when needed for the provider request limit"
+}

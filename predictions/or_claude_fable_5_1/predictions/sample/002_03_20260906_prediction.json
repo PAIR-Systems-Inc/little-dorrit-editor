@@ -1,0 +1,52 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white but",
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Marseilles harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 30,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Civita Vecchia so",
+      "corrected_text": "Civita Vecchia. so",
+      "line_number": 36,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "so away",
+      "corrected_text": "So away",
+      "line_number": 36,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:13:59.351953",
+  "verified": false
+}

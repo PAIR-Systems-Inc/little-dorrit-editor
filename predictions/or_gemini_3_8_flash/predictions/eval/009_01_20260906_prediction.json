@@ -1,0 +1,55 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart, so",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "heart so",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "generous, Mr.",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "generous Mr.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "indeed",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "as",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "length, said",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "length said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hoped",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "hope",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Gemini 3.8 Flash",
+  "annotation_date": "2026-09-06T02:55:17.973798",
+  "verified": false
+}

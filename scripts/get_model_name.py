@@ -1,45 +1,47 @@
 #!/usr/bin/env python
-"""
-Simple script to extract logical_name from models.toml for a given model_id.
-This script avoids importing the full config module to prevent any warnings.
-"""
+"""Read a model configuration value without loading provider credentials."""
 
 import sys
 import tomllib
-from pathlib import Path
 
-def get_logical_name(model_id, config_path):
-    """Get the logical name for a model from the TOML config.
-    
+
+def get_model_value(model_id, config_path, field="logical_name"):
+    """Get a model value from the TOML config.
+
     Args:
         model_id: The ID of the model to look up
         config_path: Path to the config file
-        
+
     Returns:
-        The logical name of the model or the model_id if not found
+        The configured value, or a field-appropriate default if not found.
     """
     try:
         with open(config_path, "rb") as f:
             config = tomllib.load(f)
-        
-        # In the TOML file, model entries use the format ["model_id"]
-        # So we need to look for the model_id in the config
-        if model_id in config and "logical_name" in config[model_id]:
-            return config[model_id]["logical_name"]
-    except Exception as e:
-        # Failed to find the model - return the model_id
+
+        if model_id in config and field in config[model_id]:
+            return config[model_id][field]
+    except Exception:
         pass
-    
-    # If no logical name found, return the model_id
-    return model_id
+
+    return model_id if field == "logical_name" else ""
+
+
+def get_logical_name(model_id, config_path):
+    """Preserve the original helper API for callers and tests."""
+    return get_model_value(model_id, config_path)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: get_model_name.py MODEL_ID CONFIG_PATH", file=sys.stderr)
+        print(
+            "Usage: get_model_name.py MODEL_ID CONFIG_PATH [FIELD]",
+            file=sys.stderr,
+        )
         sys.exit(1)
-        
+
     model_id = sys.argv[1]
     config_path = sys.argv[2]
-    
-    logical_name = get_logical_name(model_id, config_path)
-    print(logical_name)
+    field = sys.argv[3] if len(sys.argv) > 3 else "logical_name"
+
+    print(get_model_value(model_id, config_path, field))

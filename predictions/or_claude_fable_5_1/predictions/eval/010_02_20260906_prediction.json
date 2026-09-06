@@ -1,0 +1,55 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "from hers, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "from hers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "on hers, matters little",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "on hers matters little",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "for a moment, with",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "for a moment with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "so beautiful, that",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "so beautiful that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"They are to be married.\"",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "\"they are to be married.\"",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:11:44.287954",
+  "verified": false
+}

@@ -1,0 +1,45 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart",
+      "corrected_text": "heart,",
+      "line_number": 10,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "generous,",
+      "corrected_text": "generous",
+      "line_number": 22,
+      "page": "369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "as",
+      "corrected_text": "as indeed",
+      "line_number": 27,
+      "page": "369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length",
+      "corrected_text": "length,",
+      "line_number": 31,
+      "page": "369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "hope",
+      "corrected_text": "hoped",
+      "line_number": 34,
+      "page": "369"
+    }
+  ],
+  "annotator": "GPT-6 Astra (OR)",
+  "annotation_date": "2026-09-06T04:18:34.099869",
+  "verified": false
+}

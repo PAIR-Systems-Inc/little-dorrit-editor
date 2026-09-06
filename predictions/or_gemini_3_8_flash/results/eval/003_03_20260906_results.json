@@ -1,0 +1,78 @@
+{
+  "model_name": "or_gemini_3_8_flash",
+  "date": "2026-09-06T03:10:42.318109",
+  "annotator": "Gemini 3.8 Flash",
+  "annotation_date": "2026-09-06T03:06:36.494051",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit have type \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both edits change the same text from \"Fellow Travellers\" to \"Fellow Travellers.\" by adding a period at the end. The core punctuation change is identical. Therefore, the prediction correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"howling over\") and the same corrected text (\"howling, over\"), capturing the identical core change: inserting a comma after \"howling\". Therefore the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"yonder to-day\") and the same correction (inserting a comma to make \"yonder, to-day\"). The core change\u2014adding the comma after \"yonder\"\u2014is captured identically. Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"capitalization\" edit, so the type matches exactly. 2) Text Content Accuracy: Both specify the same core change, converting \"Sir\" to \"sir\". There is no discrepancy in original or corrected text. Therefore the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "observed_line_number": 17,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly. Text Content Accuracy: Both specify the same transformation from \"pockets and\" to \"pockets, and,\" correctly capturing the core intended change (inserting a comma after \"pockets\"). Therefore, the predicted edit matches the ground truth intent."
+    }
+  ]
+}

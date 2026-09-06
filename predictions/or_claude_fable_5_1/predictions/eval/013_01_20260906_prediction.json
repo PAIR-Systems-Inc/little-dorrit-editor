@@ -1,0 +1,109 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam;",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Clennam:",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "dryest",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "driest snorts",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a little",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "a little",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twenty; sticking",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "twenty, sticking",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "him",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him, than",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "him than",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now, I have paid it",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "now I have paid it",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you, now",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "you now",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now, to break",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "now to break",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:10:18.871455",
+  "verified": false
+}

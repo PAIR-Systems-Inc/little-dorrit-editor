@@ -1,0 +1,37 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "\"No, sir, I have got Maggy with me.\"",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "\"No sir, I have got Maggy with me.\"",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Why did he dine to-",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "\"why did he dine to-",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the cold stones?\"",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "the cold stones!\"",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Opus 5 (OR)",
+  "annotation_date": "2026-09-06T03:58:28.887570",
+  "verified": false
+}

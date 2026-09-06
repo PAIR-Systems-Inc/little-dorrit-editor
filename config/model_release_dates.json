@@ -512,5 +512,57 @@
     "release_date": "2026-07-21",
     "release_source": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
     "release_notes": "Released alongside Gemini 3.6 Flash and Flash Cyber on 2026-07-21."
+  },
+  "or_openai_gpt_6_astra": {
+    "vendor": "OpenAI",
+    "release_date": "2026-09-03",
+    "release_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "release_notes": "OpenAI's GPT-6 flagship model. Benchmark configuration uses high reasoning effort."
+  },
+  "or_claude_fable_5_1": {
+    "vendor": "Anthropic",
+    "release_date": "2026-09-01",
+    "release_source": "https://www.anthropic.com/claude/fable",
+    "release_notes": "Successor to Claude Fable 5. Benchmark configuration uses high reasoning effort.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_opus_5": {
+    "vendor": "Anthropic",
+    "release_date": "2026-07-24",
+    "release_source": "https://www.anthropic.com/news/claude-opus-5",
+    "release_notes": "Fifth-generation Opus model. Benchmark configuration uses high reasoning effort.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_gemini_3_8_flash": {
+    "vendor": "Google",
+    "release_date": "2026-09-02",
+    "release_source": "https://openrouter.ai/google/gemini-3.8-flash",
+    "release_notes": "Google's stable Gemini 3.8 Flash model. Benchmark configuration uses high reasoning effort.",
+    "display_suffix": "*",
+    "display_note": "Images are resized/recompressed when needed to stay below the provider's request payload limit."
+  },
+  "or_grok_4_6": {
+    "vendor": "SpaceXAI",
+    "release_date": "2026-08-12",
+    "release_source": "https://x.ai/news/grok-4-6",
+    "release_notes": "Vision-capable Grok 4.6 model. Benchmark configuration uses high reasoning effort."
+  },
+  "or_qwen3_8_max": {
+    "vendor": "Alibaba",
+    "release_date": "2026-09-03",
+    "release_source": "https://openrouter.ai/qwen/qwen3.8-max",
+    "release_notes": "OpenRouter's 0902 snapshot of Qwen3.8 Max. Benchmark configuration uses high reasoning effort.",
+    "display_suffix": "*",
+    "display_note": "Images are resized/recompressed when needed to stay below the provider's request payload limit."
+  },
+  "or_deepseek_v4_flash_vision_exp": {
+    "vendor": "DeepSeek",
+    "release_date": "2026-08-21",
+    "release_source": "https://api-docs.deepseek.com/news/news260821/",
+    "release_notes": "Experimental vision-enabled DeepSeek V4 Flash model. Benchmark configuration uses high reasoning effort.",
+    "display_suffix": "*",
+    "display_note": "Incomplete run: 35 of 36 evaluation predictions completed; one request repeatedly timed out at the provider."
   }
 }

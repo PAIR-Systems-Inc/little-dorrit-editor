@@ -1,0 +1,24 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "rais-",
+      "corrected_text": "rais- indeed",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "\"will",
+      "corrected_text": "\"will I hope so",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:30:36.792289",
+  "verified": false
+}

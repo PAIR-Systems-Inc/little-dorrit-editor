@@ -1,0 +1,28 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter I.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter I",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 0,
+      "notes": "Editor wrote 'Period here?' next to the subtitle",
+      "original_text": "SUN AND SHADOW",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:13:43.174389",
+  "verified": false
+}

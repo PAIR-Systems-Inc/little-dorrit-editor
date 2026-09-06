@@ -1,0 +1,66 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about and",
+      "corrected_text": "about, and",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tion, did not mend",
+      "corrected_text": "tion did not mend",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "always said when",
+      "corrected_text": "always said, when",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and said;",
+      "corrected_text": "and said,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in amazement",
+      "corrected_text": "Clennam, in amazement",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Opus 5 (OR)",
+  "annotation_date": "2026-09-06T04:00:37.998260",
+  "verified": false
+}

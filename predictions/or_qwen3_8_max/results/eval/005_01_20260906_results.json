@@ -1,0 +1,36 @@
+{
+  "model_name": "or_qwen3_8_max",
+  "date": "2026-09-06T03:35:29.560734",
+  "annotator": "Qwen3.8 Max (0902)",
+  "annotation_date": "2026-09-06T03:15:28.379847",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 33,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1) Edit Type Accuracy: The ground truth type is \"capitalization\" and the predicted type is also \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"if he\" to \"If he\", which is specifically capitalizing the initial \"if\" to \"If\". The prediction changes \"if\" to \"If\", capturing the same core intended correction (capitalizing the word \"if\"). Although the prediction omits the following word \"he\", it still correctly represents the essential edit being made: lowercase \"if\" \u2192 uppercase \"If\" at the start of the phrase."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.09999999999999998,
+      "fp": 0.45,
+      "fn": 0.45,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 36,
+      "line_diff": 3,
+      "line_number_penalty": 0.9,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches.\n\n2. Text Content Accuracy: The ground truth changes the word \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam.\" The prediction captures the same core substitution (\"said\" \u2192 \"asked\"), just with less surrounding context (it omits \"Clennam\"). Since the essential intended change is the same word replacement, the prediction matches the ground truth\u2019s intention."
+    }
+  ]
+}

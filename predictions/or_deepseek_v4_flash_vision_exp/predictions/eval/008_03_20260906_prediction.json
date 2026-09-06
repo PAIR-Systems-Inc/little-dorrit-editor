@@ -1,0 +1,38 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "was",
+      "corrected_text": "was",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "he",
+      "corrected_text": "he",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "with",
+      "corrected_text": "with",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "the",
+      "corrected_text": "the",
+      "line_number": 16,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:47:26.492082",
+  "verified": false
+}

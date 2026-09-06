@@ -1,0 +1,78 @@
+{
+  "model_name": "or_claude_fable_5_1",
+  "date": "2026-09-06T04:16:33.008957",
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:11:44.287954",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "from hers and",
+      "corrected_text": "from hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after \"hers\" (\"hers and\" \u2192 \"hers, and\"). The prediction also inserts a comma after \"hers,\" but includes extra surrounding context (\"from hers and\" \u2192 \"from hers, and\"). This still captures the same core punctuation correction intended by the ground truth.\n\nTherefore, the predicted edit correctly reflects the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "on hers matters little",
+      "corrected_text": "on hers, matters little",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma after \"hers\" (\"hers matters\" \u2192 \"hers, matters\"). The prediction performs the same essential change\u2014adding a comma immediately after \"hers\"\u2014but includes extra surrounding context (\"on\" before and \"matters little\" after). This added context does not alter the core punctuation correction, so the intended edit is correctly captured."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "for a moment with",
+      "corrected_text": "for a moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after \"moment\" (\"moment with\" \u2192 \"moment, with\"). The prediction performs the same core punctuation insertion, merely including extra surrounding context (\"for a moment with\" \u2192 \"for a moment, with\"). This captures the essential intended edit accurately."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "so beautiful that",
+      "corrected_text": "so beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \u201cbeautiful\u201d in the phrase \u201cbeautiful that\u201d \u2192 \u201cbeautiful, that.\u201d The prediction performs the same core punctuation change (comma after \u201cbeautiful\u201d) but includes additional surrounding context (\u201cso\u201d before the phrase): \u201cso beautiful that\u201d \u2192 \u201cso beautiful, that.\u201d This preserves the essential intended correction.\n\nTherefore, the prediction correctly captures the ground truth edit."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "\"they are to be married.\"",
+      "corrected_text": "\"They are to be married.\"",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to change \"they\" to \"They\" (capitalizing the initial 't'). The prediction performs the same core change, but includes additional surrounding context (the full quoted sentence), changing \"\\\"they are to be married.\\\"\" to \"\\\"They are to be married.\\\"\". This captures the essential capitalization correction identified in the ground truth.\n\nTherefore, the predicted edit correctly reflects the ground truth intention."
+    }
+  ]
+}

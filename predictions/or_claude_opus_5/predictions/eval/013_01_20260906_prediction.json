@@ -1,0 +1,87 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "said Clennam;",
+      "corrected_text": "said Clennam,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "dryest snorts",
+      "corrected_text": "dryest of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that-boiling-over",
+      "corrected_text": "that boiling-over",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at twenty;",
+      "corrected_text": "at twenty,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "out of him, than",
+      "corrected_text": "out of him than",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "Your own recompense",
+      "corrected_text": "Your own recompense",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I have paid it",
+      "corrected_text": "now, I have paid it",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you now",
+      "corrected_text": "you, now",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now to break",
+      "corrected_text": "now, to break",
+      "line_number": 37,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Opus 5 (OR)",
+  "annotation_date": "2026-09-06T03:59:23.652541",
+  "verified": false
+}

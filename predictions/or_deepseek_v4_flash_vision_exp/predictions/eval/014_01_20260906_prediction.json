@@ -1,0 +1,17 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "Panks",
+      "corrected_text": "Pancks",
+      "line_number": 2,
+      "page": "452"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:28:24.156169",
+  "verified": false
+}

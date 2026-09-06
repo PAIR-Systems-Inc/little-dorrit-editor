@@ -1,0 +1,64 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart, so much",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "heart so much",
+      "page": "028.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "generous Mr.",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "generous, Mr.",
+      "page": "028.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "face, with some hurried words to the effect that she thanked him from her heart (as she did, if it be the source of earnestness), indeed she gradually",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "face, with some hurried words to the effect that she thanked him from her heart (as she did, if it be the source of earnestness), she gradually",
+      "page": "028.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestness), she",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "earnestness) she",
+      "page": "028.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "at length, said",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "at length said",
+      "page": "028.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "I hope so",
+      "page": "028.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.8 Max (0902)",
+  "annotation_date": "2026-09-06T03:16:36.548211",
+  "verified": false
+}

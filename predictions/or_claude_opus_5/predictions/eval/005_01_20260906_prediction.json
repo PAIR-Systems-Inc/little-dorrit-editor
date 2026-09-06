@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 39,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Opus 5 (OR)",
+  "annotation_date": "2026-09-06T03:58:40.138356",
+  "verified": false
+}

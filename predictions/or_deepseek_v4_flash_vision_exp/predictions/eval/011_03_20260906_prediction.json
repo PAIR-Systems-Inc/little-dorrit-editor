@@ -1,0 +1,31 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "in our whatever",
+      "corrected_text": "in our fancy whatever",
+      "line_number": 10,
+      "page": "page_372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "now.\" \"Thank you,\"",
+      "corrected_text": "now.\" \"Thank you,\" \"Thank you,\"",
+      "line_number": 16,
+      "page": "page_372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "page": "page_372"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:44:04.312684",
+  "verified": false
+}

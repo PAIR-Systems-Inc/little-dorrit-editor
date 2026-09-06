@@ -1,0 +1,46 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "No, sir,",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "No sir,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "think, why",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "think why",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that he might blame her father,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "that he might blame her father,",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stones?",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "stones",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.8 Max (0902)",
+  "annotation_date": "2026-09-06T03:31:17.128248",
+  "verified": false
+}

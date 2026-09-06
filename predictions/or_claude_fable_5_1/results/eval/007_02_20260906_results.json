@@ -1,0 +1,36 @@
+{
+  "model_name": "or_claude_fable_5_1",
+  "date": "2026-09-06T04:15:59.751662",
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:11:32.618794",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: Ground truth changes \"Sun and Shadow\" to \"Sun and Shadow.\" (adds a period). The predicted edit applies the same core change with identical original and corrected text. The additional notes about a handwritten query do not alter the edit itself. Therefore, the prediction captures the intended correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

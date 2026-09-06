@@ -3,6 +3,7 @@
   "display_name": "Claude Fable 5",
   "shots": 2,
   "temperature": 0.0,
+  "reasoning_effort": "high",
   "date": "2026-07-23",
   "notes": "Benchmark run with 2-shot learning"
 }

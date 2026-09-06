@@ -1,0 +1,45 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "line_number": 13,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "hers",
+      "corrected_text": "hers,",
+      "line_number": 15,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "moment",
+      "corrected_text": "moment,",
+      "line_number": 23,
+      "page": "368"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "beautiful",
+      "corrected_text": "beautiful,",
+      "line_number": 25,
+      "page": "368"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "line_number": 32,
+      "page": "368"
+    }
+  ],
+  "annotator": "GPT-6 Astra (OR)",
+  "annotation_date": "2026-09-06T04:20:43.239405",
+  "verified": false
+}

@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "bed room",
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "For",
+      "corrected_text": "For,",
+      "line_number": 2,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly",
+      "corrected_text": "quickly,",
+      "line_number": 11,
+      "page": "452"
+    },
+    {
+      "type": "insertion",
+      "original_text": "me",
+      "corrected_text": "me a",
+      "line_number": 21,
+      "page": "452"
+    }
+  ],
+  "annotator": "GPT-6 Astra (OR)",
+  "annotation_date": "2026-09-06T04:24:01.606436",
+  "verified": false
+}

@@ -57,9 +57,12 @@ class LLMJudge:
         model_config = get_model(model_id)
 
         # Initialize the OpenAI client with the appropriate base URL and API key
-        client_params = {"api_key": model_config.api_key}
+        client_params = {"api_key": model_config.api_key, "max_retries": 0}
         if model_config.endpoint:
             client_params["base_url"] = model_config.endpoint
+        request_timeout_seconds = getattr(model_config, "request_timeout_seconds", None)
+        if request_timeout_seconds is not None:
+            client_params["timeout"] = request_timeout_seconds
         self.client = openai.Client(**client_params)
         self.model = model_config.model_name
         self.model_name = model_config.logical_name

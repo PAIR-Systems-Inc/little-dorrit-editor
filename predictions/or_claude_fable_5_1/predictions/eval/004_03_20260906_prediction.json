@@ -1,0 +1,31 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "\"why did he dine",
+      "corrected_text": "\"Why did he dine",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "cold stones!\"",
+      "corrected_text": "cold stones?\"",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:13:56.350345",
+  "verified": false
+}

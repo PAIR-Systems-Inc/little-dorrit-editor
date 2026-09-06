@@ -1,0 +1,46 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts.",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "dryest snorts.",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him,",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "him,",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now, I",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "now I",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Gemini 3.8 Flash",
+  "annotation_date": "2026-09-06T02:58:26.133029",
+  "verified": false
+}

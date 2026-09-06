@@ -24,6 +24,7 @@ class ModelConfig:
     openrouter_reasoning: Optional[Dict[str, Any]] = None  # Optional OpenRouter reasoning options
     service_tier: Optional[str] = None  # Optional provider service tier, e.g. OpenRouter/OpenAI priority
     max_tokens: Optional[int] = None  # Optional output token cap for provider compatibility/cost control
+    request_timeout_seconds: Optional[float] = None  # Optional per-attempt API timeout
 
 
 class ConfigManager:
@@ -103,6 +104,9 @@ class ConfigManager:
             # Load optional output token cap
             max_tokens = model_config.get("max_tokens")
 
+            # Load optional per-attempt API timeout
+            request_timeout_seconds = model_config.get("request_timeout_seconds")
+
             # Create the model configuration
             self._models[model_id] = ModelConfig(
                 endpoint=endpoint,
@@ -118,6 +122,7 @@ class ConfigManager:
                 openrouter_reasoning=openrouter_reasoning,
                 service_tier=service_tier,
                 max_tokens=max_tokens,
+                request_timeout_seconds=request_timeout_seconds,
             )
 
     def get_model(self, model_id: str) -> ModelConfig:

@@ -1,0 +1,52 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "that,",
+      "corrected_text": "that",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fancy,",
+      "corrected_text": "fancy",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you!",
+      "corrected_text": "you,",
+      "line_number": 17,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore",
+      "corrected_text": "shore,",
+      "line_number": 25,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 33,
+      "page": "372"
+    }
+  ],
+  "annotator": "GPT-6 Astra (OR)",
+  "annotation_date": "2026-09-06T04:23:03.515639",
+  "verified": false
+}

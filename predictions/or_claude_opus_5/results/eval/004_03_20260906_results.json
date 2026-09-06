@@ -1,0 +1,50 @@
+{
+  "model_name": "or_claude_opus_5",
+  "date": "2026-09-06T04:04:44.427434",
+  "annotator": "Claude Opus 5 (OR)",
+  "annotation_date": "2026-09-06T04:02:46.901781",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "\"No sir,",
+      "corrected_text": "\"No, sir,",
+      "observed_line_number": 9,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to insert a comma between \u201cNo\u201d and \u201csir\u201d (\"No sir\" \u2192 \"No, sir\"). The predicted edit likewise inserts a comma after \u201cNo\u201d (\"No sir,\" \u2192 \"No, sir,\"). Although the prediction includes extra surrounding context (an opening quote and an existing trailing comma), it still captures the core intended change: adding the comma after \u201cNo\u201d. Therefore, the essential punctuation correction matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "capitalization",
+      "original_text": "\"why did he dine",
+      "corrected_text": "\"Why did he dine",
+      "observed_line_number": 30,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth changes the initial word from \"why\" to \"Why\" in the phrase \"why did he dine.\" The prediction applies the same core capitalization change (\"why\" \u2192 \"Why\") and simply includes an additional leading quotation mark in both the original and corrected text. This added context does not alter the essential intended correction, so the core change is correctly captured."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.6,
+      "fp": 0.2,
+      "fn": 0.2,
+      "type": "punctuation",
+      "original_text": "the cold stones!\"",
+      "corrected_text": "the cold stones?\"",
+      "observed_line_number": 31,
+      "line_diff": 2,
+      "line_number_penalty": 0.4,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the punctuation in \"cold stones!\" to \"cold stones?\" (exclamation to question mark). The prediction performs the same core change (! \u2192 ?) on the same phrase, merely including additional surrounding context (the preceding word \"the\" and a closing quote). Since the essential punctuation correction is captured, the text content matches the ground truth\u2019s intention."
+    }
+  ]
+}

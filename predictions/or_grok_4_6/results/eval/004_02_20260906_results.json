@@ -1,0 +1,64 @@
+{
+  "model_name": "or_grok_4_6",
+  "date": "2026-09-06T03:55:23.149862",
+  "annotator": "Grok 4.6",
+  "annotation_date": "2026-09-06T03:45:07.923811",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the initial word \"why\" to \"Why\" at the start of the phrase \"why did he dine\". The prediction captures this same core change by specifying \"why\" \u2192 \"Why\". Although it includes less surrounding context than the ground truth, it still reflects the essential intended correction (capitalizing the initial word)."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "stones!",
+      "corrected_text": "stones?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the ending punctuation from an exclamation mark to a question mark in the phrase ending with \"stones\" (\"cold stones!\" \u2192 \"cold stones?\"). The prediction applies the same core change (! \u2192 ?) on the relevant word/ending (\"stones!\" \u2192 \"stones?\"). Although it omits the preceding word \"cold,\" it still captures the essential intended correction: converting the exclamation to a question mark at the end of the phrase. Therefore, the text content matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "No,sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": 10,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

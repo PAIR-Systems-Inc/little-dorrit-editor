@@ -1,0 +1,24 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "THE",
+      "corrected_text": "The",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "lucant return",
+      "corrected_text": "lucant to return",
+      "line_number": 5,
+      "page": "373"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:17:56.746114",
+  "verified": false
+}

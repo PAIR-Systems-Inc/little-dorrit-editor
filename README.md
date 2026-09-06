@@ -200,6 +200,7 @@ Notes:
 - `--jobs 9` is the default (override with `--jobs N` or the `LDE_JOBS` environment variable). Pass `--jobs 1` to restore the original sequential behavior.
 - Prediction run IDs are assigned before workers start, so parallel prediction runs keep deterministic filenames without collisions.
 - The Python CLI remains single-file-per-invocation; parallelism lives in the shell orchestration layer.
+- Current reasoning-capable frontier models are benchmarked at `high` reasoning effort. The selected effort is stored in each model's `predictions/<model-id>/config.json` experiment snapshot.
 
 ### Manual Prediction and Evaluation
 

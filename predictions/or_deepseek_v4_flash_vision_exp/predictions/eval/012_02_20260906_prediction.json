@@ -1,0 +1,17 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "a stand-still",
+      "corrected_text": "a to stand-still",
+      "line_number": 16,
+      "page": "page_373"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:30:15.543799",
+  "verified": false
+}

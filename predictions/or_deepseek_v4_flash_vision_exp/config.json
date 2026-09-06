@@ -1,0 +1,9 @@
+{
+  "model_id": "or_deepseek_v4_flash_vision_exp",
+  "display_name": "DeepSeek V4 Flash Vision Exp",
+  "shots": 2,
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "date": "2026-09-06",
+  "notes": "Benchmark run with 2-shot learning at high reasoning effort; incomplete at 35/36 evaluation predictions after repeated provider timeouts"
+}

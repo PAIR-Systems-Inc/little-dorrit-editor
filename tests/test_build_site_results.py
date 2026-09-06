@@ -21,6 +21,7 @@ def test_collect_model_results_merges_release_metadata(tmp_path):
     (model_dir / "config.json").write_text(json.dumps({
         "display_name": "Test Model",
         "shots": 2,
+        "reasoning_effort": "high",
     }))
     (results_dir / "003_01_20250101_results.json").write_text(json.dumps({
         "model_name": "test-model",
@@ -55,3 +56,4 @@ def test_collect_model_results_merges_release_metadata(tmp_path):
     assert results[0]["release_notes"] == "Release metadata should be copied through."
     assert results[0]["display_suffix"] == "*"
     assert results[0]["display_note"] == "Synthetic caveat for display metadata."
+    assert results[0]["config"]["reasoning_effort"] == "high"

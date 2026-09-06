@@ -236,14 +236,24 @@ for MODEL_ID in "${MODELS[@]}"; do
     
     # Create a config.json file for the experiment
     echo "Creating experiment configuration..."
+    REASONING_EFFORT=$(uv run python scripts/get_model_name.py \
+        "${MODEL_ID}" "config/models.toml" "reasoning_effort")
+    if [[ -n "${REASONING_EFFORT}" ]]; then
+        REASONING_EFFORT_JSON="\"${REASONING_EFFORT}\""
+        NOTES="Benchmark run with ${SHOTS}-shot learning at ${REASONING_EFFORT} reasoning effort"
+    else
+        REASONING_EFFORT_JSON="null"
+        NOTES="Benchmark run with ${SHOTS}-shot learning"
+    fi
     cat > "$CONFIG_FILE" << EOL
 {
   "model_id": "${MODEL_ID}",
   "display_name": "${CURRENT_DISPLAY_NAME}",
   "shots": ${SHOTS},
   "temperature": ${TEMPERATURE},
+  "reasoning_effort": ${REASONING_EFFORT_JSON},
   "date": "$(date +"%Y-%m-%d")",
-  "notes": "Benchmark run with ${SHOTS}-shot learning"
+  "notes": "${NOTES}"
 }
 EOL
     echo "Experiment configuration saved to $CONFIG_FILE"

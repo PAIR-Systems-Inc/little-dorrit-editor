@@ -1,0 +1,24 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "1",
+      "corrected_text": "1.",
+      "line_number": 0,
+      "page": "3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Shadow",
+      "corrected_text": "Shadow.",
+      "line_number": 0,
+      "page": "3"
+    }
+  ],
+  "annotator": "GPT-6 Astra (OR)",
+  "annotation_date": "2026-09-06T04:18:17.205581",
+  "verified": false
+}

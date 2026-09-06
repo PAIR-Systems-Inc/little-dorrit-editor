@@ -1,0 +1,36 @@
+{
+  "model_name": "or_claude_fable_5_1",
+  "date": "2026-09-06T04:15:30.752161",
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:11:45.990013",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "do? if he",
+      "corrected_text": "do? If he",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is capitalizing \"if\" to \"If\" in the phrase \"if he\" \u2192 \"If he.\" The prediction applies the same capitalization change, but includes additional surrounding context (\"do? \") in both original and corrected text: \"do? if he\" \u2192 \"do? If he.\" This still captures the core intended correction (lowercase \"if\" to uppercase \"If\")."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said Clennam",
+      "corrected_text": "asked Clennam",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly. Text Content Accuracy: Both identify the same original text (\"said Clennam\") and the same corrected text (\"asked Clennam\"), capturing the identical core change with no discrepancies. Therefore, the predicted edit matches the ground truth intention."
+    }
+  ]
+}

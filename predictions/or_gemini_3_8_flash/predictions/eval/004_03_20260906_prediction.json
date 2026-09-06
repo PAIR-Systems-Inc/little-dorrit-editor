@@ -1,0 +1,37 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "\"No",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "No",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stones?",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "stones!",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 3.8 Flash",
+  "annotation_date": "2026-09-06T03:07:03.500465",
+  "verified": false
+}

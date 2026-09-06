@@ -1,0 +1,78 @@
+{
+  "model_name": "or_grok_4_6",
+  "date": "2026-09-06T03:56:07.237501",
+  "annotator": "Grok 4.6",
+  "annotation_date": "2026-09-06T03:45:45.064779",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits are labeled as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: Both specify the same original text (\"hers and\") and the same correction (\"hers, and\"), inserting a comma after \"hers\". The core change is identical.\n\nTherefore, the predicted edit correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"hers matters\") and the same corrected text (\"hers, matters\"), capturing the identical core change\u2014adding a comma after \"hers.\" Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\nText Content Accuracy: Both specify the same transformation from \"moment with\" to \"moment, with\" (inserting a comma after \"moment\"). The core punctuation change is identical. Therefore, the predicted edit correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\nText Content Accuracy: Both ground truth and prediction change \"beautiful that\" to \"beautiful, that,\" inserting a comma after \"beautiful.\" The core punctuation change is identical. Therefore, the prediction correctly captures the intended edit."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify the edit type as \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: Both indicate the same core change: converting \"they\" to \"They\". There is no discrepancy in original or corrected text, so the predicted edit captures the ground truth intention."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "she thanked",
+      "corrected_text": "she indeed thanked",
+      "line_number": 27,
+      "page": "page_369"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T01:43:16.089341",
+  "verified": false
+}

@@ -1,0 +1,118 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XXIX.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XXIX",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Mrs. Flintwinch goes on Dreaming.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Mrs. Flintwinch goes on Dreaming",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the City preserved",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "the city preserved",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "return to the same",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "return of the same",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "familiar with them;",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "familiar with them,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence, at the hour",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "existence at the hour",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it; to suppose",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "it, to suppose",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "motionless when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still; to be",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "stand-still, to be",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "view by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "contracted existence; is",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "contracted existence, is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "liege lord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Fable 5.1 (OR)",
+  "annotation_date": "2026-09-06T04:14:01.754492",
+  "verified": false
+}

@@ -1,0 +1,24 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "O",
+      "corrected_text": "NO",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "TRAVELLERS",
+      "corrected_text": "TRAVELLERS.",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T02:18:54.347893",
+  "verified": false
+}

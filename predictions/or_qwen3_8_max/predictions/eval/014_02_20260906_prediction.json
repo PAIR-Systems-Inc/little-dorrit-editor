@@ -1,0 +1,38 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "bedroom",
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "For Mr.",
+      "corrected_text": "For, Mr.",
+      "line_number": 2,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 10,
+      "page": "page_3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me not",
+      "corrected_text": "me, not",
+      "line_number": 17,
+      "page": "page_3"
+    }
+  ],
+  "annotator": "Qwen3.8 Max (0902)",
+  "annotation_date": "2026-09-06T03:27:24.016290",
+  "verified": false
+}

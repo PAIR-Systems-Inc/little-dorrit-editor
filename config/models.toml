@@ -214,6 +214,7 @@ api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "GPT-5.2 (OR)"
 openrouter_reasoning = { exclude = true }
 max_tokens = 2048
+request_timeout_seconds = 180
 
 ["or_openai_gpt_5_5_pro"]
 endpoint = "https://openrouter.ai/api/v1"
@@ -594,6 +595,7 @@ api_key = "${ANTHROPIC_API_KEY}"
 logical_name = "Claude Fable 5"
 image_max_bytes = 3930112
 supports_temperature = false
+reasoning_effort = "high"
 
 ["claude-sonnet-5"]
 endpoint = "https://api.anthropic.com/v1"
@@ -721,4 +723,79 @@ endpoint = "https://openrouter.ai/api/v1"
 model_name = "google/gemini-3.5-flash-lite"
 api_key = "${OPEN_ROUTER_API_KEY}"
 logical_name = "Gemini 3.5 Flash Lite"
+openrouter_reasoning = { exclude = true }
+
+################################################################################
+# S E P T E M B E R   2 0 2 6   R E F R E S H
+# Current multimodal frontier models. All reasoning-capable models use high effort.
+################################################################################
+
+["or_openai_gpt_6_astra"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "openai/gpt-6-astra"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "GPT-6 Astra (OR)"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_claude_fable_5_1"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-fable-5.1"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Fable 5.1 (OR)"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+image_max_bytes = 3930112
+supports_temperature = false
+openrouter_reasoning = { exclude = true }
+
+["or_claude_opus_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-opus-5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Opus 5 (OR)"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+image_max_bytes = 3930112
+supports_temperature = false
+openrouter_reasoning = { exclude = true }
+
+["or_gemini_3_8_flash"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemini-3.8-flash"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemini 3.8 Flash"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+image_max_bytes = 3930112
+openrouter_reasoning = { exclude = true }
+
+["or_grok_4_6"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "x-ai/grok-4.6"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Grok 4.6"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_qwen3_8_max"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "qwen/qwen3.8-max"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Qwen3.8 Max (0902)"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+image_max_bytes = 3930112
+openrouter_reasoning = { exclude = true }
+
+["or_deepseek_v4_flash_vision_exp"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "deepseek/deepseek-v4-flash-vision-exp"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "DeepSeek V4 Flash Vision Exp"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_provider = { sort = "latency" }
 openrouter_reasoning = { exclude = true }

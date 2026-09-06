@@ -1,0 +1,59 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "that in",
+      "corrected_text": "that, in",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fancy whatever",
+      "corrected_text": "fancy, whatever",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "insertion",
+      "original_text": "now.\u201d",
+      "corrected_text": "now.\u201d \u201cThank you,\u201d",
+      "line_number": 16,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you murmured",
+      "corrected_text": "you,\u201d murmured",
+      "line_number": 17,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore and",
+      "corrected_text": "shore, and",
+      "line_number": 25,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 33,
+      "page": "372"
+    }
+  ],
+  "annotator": "Grok 4.6",
+  "annotation_date": "2026-09-06T03:45:58.421891",
+  "verified": false
+}

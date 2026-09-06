@@ -1,0 +1,9 @@
+{
+  "model_id": "or_grok_4_6",
+  "display_name": "Grok 4.6",
+  "shots": 2,
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "date": "2026-09-06",
+  "notes": "Benchmark run with 2-shot learning at high reasoning effort"
+}

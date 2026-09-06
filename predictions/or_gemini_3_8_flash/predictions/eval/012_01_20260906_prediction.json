@@ -1,0 +1,118 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter xxix.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter xxix",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "MRS. FLINTWINCH GOES ON DREAMING.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "MRS. FLINTWINCH GOES ON DREAMING",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "City",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "of",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "them;",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "them",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "existence at",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it; to",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "it to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "motionless when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still; to",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "stand-still to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "view by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence; is",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "existence is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "liege lord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 3.8 Flash",
+  "annotation_date": "2026-09-06T02:55:44.128919",
+  "verified": false
+}

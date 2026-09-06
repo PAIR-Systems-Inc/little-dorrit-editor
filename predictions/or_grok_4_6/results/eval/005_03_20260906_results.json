@@ -1,0 +1,36 @@
+{
+  "model_name": "or_grok_4_6",
+  "date": "2026-09-06T03:55:19.649175",
+  "annotator": "Grok 4.6",
+  "annotation_date": "2026-09-06T03:49:34.918551",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted type is \"capitalization,\" which exactly matches the ground truth.\n\n2) Text Content Accuracy: The ground truth changes \"if he\" to \"If he,\" i.e., capitalizes the initial \"if\" in that phrase. The prediction changes \"if\" to \"If,\" capturing the same essential capitalization change. Although the prediction omits the following word \"he\" as context, it still reflects the core intended correction (lowercase to uppercase initial letter on \"if\")."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the core intended change by replacing \"said\" with \"asked\". Although it omits the surrounding context word (\"Clennam\"), it still correctly reflects the essential substitution the ground truth indicates."
+    }
+  ]
+}

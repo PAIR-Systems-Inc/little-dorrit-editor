@@ -1,0 +1,9 @@
+{
+  "model_id": "or_claude_fable_5_1",
+  "display_name": "Claude Fable 5.1 (OR)",
+  "shots": 2,
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "date": "2026-09-06",
+  "notes": "Benchmark run with 2-shot learning at high reasoning effort"
+}

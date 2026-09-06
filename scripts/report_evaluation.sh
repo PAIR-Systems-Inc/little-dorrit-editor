@@ -107,26 +107,25 @@ import sys
 with open(sys.argv[1], "r") as f:
     data = json.load(f)
 
-tp = fp = fn = 0
+tp = fp = fn = 0.0
 for detail in data.get("details", []):
-    tp += int(detail.get("tp") or 0)
-    fp += int(detail.get("fp") or 0)
-    fn += int(detail.get("fn") or 0)
+    tp += float(detail.get("tp") or 0)
+    fp += float(detail.get("fp") or 0)
+    fn += float(detail.get("fn") or 0)
 
 precision = tp / (tp + fp) if tp + fp else 0.0
 recall = tp / (tp + fn) if tp + fn else 0.0
 f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
 
-print(f"{precision:.4f}\t{recall:.4f}\t{f1:.4f}\t{tp}\t{fp}\t{fn}")
+print(f"{precision:.4f}\t{recall:.4f}\t{f1:.4f}\t{tp:.4f}\t{fp:.4f}\t{fn:.4f}")
 PY
 )
         IFS=$'\t' read -r precision recall f1 tp fp fn <<< "$metrics"
 
         # Add to overall totals
-        total_true_positives=$((total_true_positives + tp))
-        total_false_positives=$((total_false_positives + fp))
-        total_false_negatives=$((total_false_negatives + fn))
-        total_correct_count=$((total_correct_count + tp))
+        total_true_positives=$(awk -v total="$total_true_positives" -v value="$tp" 'BEGIN { printf "%.10f", total + value }')
+        total_false_positives=$(awk -v total="$total_false_positives" -v value="$fp" 'BEGIN { printf "%.10f", total + value }')
+        total_false_negatives=$(awk -v total="$total_false_negatives" -v value="$fn" 'BEGIN { printf "%.10f", total + value }')
         total_files=$((total_files + 1))
 
         # Store data for table
@@ -151,7 +150,7 @@ line=$(printf "%0.s━" $(seq 1 100))
 echo ""
 # Bold top line with no vertical lines
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-printf "  %-11s   %9s   %6s   %8s   %2s   %2s   %2s\n" "File Name" "Precision" "Recall" "F1 Score" "TP" "FP" "FN"
+printf "  %-11s   %9s   %6s   %8s   %7s   %7s   %7s\n" "File Name" "Precision" "Recall" "F1 Score" "TP" "FP" "FN"
 echo "─────────────────────────────────────────────────────────────────"
 
 # Print each row of the table
@@ -159,7 +158,7 @@ for i in "${!file_names[@]}"; do
     precision=$(printf "%.4f" "${precisions[$i]}")
     recall=$(printf "%.4f" "${recalls[$i]}")
     f1=$(printf "%.4f" "${f1s[$i]}")
-    printf "  %-11s   %9s   %6s   %8s   %2s   %2s   %2s\n" \
+    printf "  %-11s   %9s   %6s   %8s   %7.2f   %7.2f   %7.2f\n" \
         "${file_names[$i]}" "$precision" "$recall" "$f1" "${tps[$i]}" "${fps[$i]}" "${fns[$i]}"
 done
 
@@ -172,8 +171,8 @@ echo "    Overall Evaluation Results for ${DISPLAY_NAME} (${SHOTS}-shot)"
 echo "==================================================="
 
 # Calculate aggregate precision, recall, F1
-total_predictions=$((total_true_positives + total_false_positives))
-total_ground_truth=$((total_true_positives + total_false_negatives))
+total_predictions=$(awk -v tp="$total_true_positives" -v fp="$total_false_positives" 'BEGIN { printf "%.10f", tp + fp }')
+total_ground_truth=$(awk -v tp="$total_true_positives" -v fn="$total_false_negatives" 'BEGIN { printf "%.10f", tp + fn }')
 
 read -r overall_precision overall_recall overall_f1 < <(python - <<PY
 tp = $total_true_positives
@@ -196,10 +195,10 @@ echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "                   Aggregate Metrics"
 echo "─────────────────────────────────────────────────────────────────"
-printf "  %-25s   %17s\n" "True Positives" "$total_true_positives"
-printf "  %-25s   %17s\n" "False Positives" "$total_false_positives"
-printf "  %-25s   %17s\n" "False Negatives" "$total_false_negatives"
-printf "  %-25s   %17s\n" "Total Edits" "$total_ground_truth"
+printf "  %-25s   %17.2f\n" "True Positives" "$total_true_positives"
+printf "  %-25s   %17.2f\n" "False Positives" "$total_false_positives"
+printf "  %-25s   %17.2f\n" "False Negatives" "$total_false_negatives"
+printf "  %-25s   %17.2f\n" "Total Edits" "$total_ground_truth"
 echo "─────────────────────────────────────────────────────────────────"
 printf "  %-25s   %17s\n" "Precision" "$formatted_precision"
 printf "  %-25s   %17s\n" "Recall" "$formatted_recall"

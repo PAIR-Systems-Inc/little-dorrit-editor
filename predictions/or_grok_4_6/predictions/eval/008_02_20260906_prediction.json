@@ -1,0 +1,66 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "XI",
+      "corrected_text": "XI.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "LOOSE",
+      "corrected_text": "LOOSE.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stream like",
+      "corrected_text": "stream, like",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "man slowly",
+      "corrected_text": "man, slowly",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons was",
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "untrimmed the",
+      "corrected_text": "untrimmed; the",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden with",
+      "corrected_text": "soddened with",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Grok 4.6",
+  "annotation_date": "2026-09-06T03:46:30.881483",
+  "verified": false
+}

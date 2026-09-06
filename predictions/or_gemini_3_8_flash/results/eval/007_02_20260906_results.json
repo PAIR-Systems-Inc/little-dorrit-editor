@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gemini_3_8_flash",
+  "date": "2026-09-06T03:10:57.364280",
+  "annotator": "Gemini 3.8 Flash",
+  "annotation_date": "2026-09-06T03:00:39.717399",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow,",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intention is to end the phrase \"Sun and Shadow\" with a period (i.e., add terminal punctuation). The predicted edit also results in \"Sun and Shadow.\" The prediction\u2019s original_text includes a comma (\"Sun and Shadow,\") whereas the ground truth original_text has no punctuation (\"Sun and Shadow\"), but the essential intended change\u2014making the ending punctuation a period\u2014is correctly captured."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter 1",
+      "corrected_text": "Chapter 1.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

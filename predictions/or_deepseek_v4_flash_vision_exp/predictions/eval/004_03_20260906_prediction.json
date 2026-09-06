@@ -1,0 +1,17 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "stones.\"",
+      "corrected_text": "stones?\"",
+      "line_number": 29,
+      "page": "184.png"
+    }
+  ],
+  "annotator": "DeepSeek V4 Flash Vision Exp",
+  "annotation_date": "2026-09-06T02:18:15.779079",
+  "verified": false
+}

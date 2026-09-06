@@ -1,0 +1,24 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "If he",
+      "corrected_text": "if he",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 31,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Qwen3.8 Max (0902)",
+  "annotation_date": "2026-09-06T03:30:30.549550",
+  "verified": false
+}
