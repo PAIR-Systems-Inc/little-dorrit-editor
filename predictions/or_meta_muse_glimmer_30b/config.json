@@ -1,0 +1,9 @@
+{
+  "model_id": "or_meta_muse_glimmer_30b",
+  "display_name": "Muse Glimmer 30B",
+  "shots": 2,
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "date": "2026-09-10",
+  "notes": "Benchmark run with 2-shot learning at high reasoning effort"
+}

@@ -1,0 +1,91 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, \"not",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "Clennam; \"not",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts.",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "driest snorts.",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "a little premature.",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "a little premature.",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "that boiling-over",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "that boiling-over",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twenty, sticking",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "twenty sticking",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "benevolence bubbling out of him,",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "benevolence bubbling out of him,",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "score; now, I",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "score; now I",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you, now",
+      "line_number": 42,
+      "notes": null,
+      "original_text": "you now",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Muse Glimmer 30B",
+  "annotation_date": "2026-09-10T23:12:51.365880",
+  "verified": false
+}

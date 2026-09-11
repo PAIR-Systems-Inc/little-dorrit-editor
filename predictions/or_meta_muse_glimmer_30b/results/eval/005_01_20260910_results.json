@@ -1,0 +1,36 @@
+{
+  "model_name": "or_meta_muse_glimmer_30b",
+  "date": "2026-09-10T23:17:35.586807",
+  "annotator": "Muse Glimmer 30B",
+  "annotation_date": "2026-09-10T23:02:34.600757",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth intends to capitalize the initial word in the phrase \"if he\" to \"If he.\" The prediction captures the core change\u2014lowercase \"if\" to uppercase \"If\"\u2014even though it includes less surrounding context (it omits \"he\"). This still reflects the same essential correction (capitalizing \"if\" at the start of the phrase/sentence)."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches.\n2) Text Content Accuracy: The ground truth replaces \"said\" with \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction replaces \"said\" with \"asked\" without including the trailing context (\"Clennam\"), but it captures the core intended change (said \u2192 asked). Omitting surrounding unchanged words is acceptable since the essential substitution is correctly identified."
+    }
+  ]
+}
