@@ -1,7 +1,7 @@
 """Type definitions for the Little Dorrit Editor project."""
 
 from enum import Enum
-from typing import List, Literal, Optional
+from typing import Any, List, Literal, Optional
 from pydantic import BaseModel, Field
 
 
@@ -90,4 +90,7 @@ class EditAnnotation(BaseModel):
     )
     raw_response: Optional[str] = Field(
         None, description="Raw model response excerpt for debugging (if error occurred)"
+    )
+    inference: Optional[dict[str, Any]] = Field(
+        None, description="Provider-reported token usage, cost, and request metadata"
     )

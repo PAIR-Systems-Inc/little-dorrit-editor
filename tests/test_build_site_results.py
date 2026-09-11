@@ -57,3 +57,28 @@ def test_collect_model_results_merges_release_metadata(tmp_path):
     assert results[0]["display_suffix"] == "*"
     assert results[0]["display_note"] == "Synthetic caveat for display metadata."
     assert results[0]["config"]["reasoning_effort"] == "high"
+
+
+def test_usage_joins_only_matching_eval_prediction_and_preserves_scores(tmp_path):
+    model_dir = tmp_path / "tracked"
+    result_dir = model_dir / "results/eval"
+    result_dir.mkdir(parents=True)
+    prediction_dir = model_dir / "predictions/eval"
+    (prediction_dir / "usage").mkdir(parents=True)
+    (model_dir / "config.json").write_text(json.dumps({"shots": 2}))
+    result = {"model_name": "tracked", "date": "2026-09-11T00:00:00", "details": [{"tp": 1, "fp": 0, "fn": 0}]}
+    for run in [1, 2, 3]:
+        (result_dir / f"003_0{run}_20260911_results.json").write_text(json.dumps(result))
+    inference = {"usage": {"provider_cost_usd": .3, "input_tokens": 200}}
+    name = "003_01_20260911_prediction"
+    (prediction_dir / f"{name}.json").write_text(json.dumps({"inference": inference}))
+    (prediction_dir / "usage" / f"{name}.jsonl").write_text(json.dumps(inference) + "\n")
+    (prediction_dir / "003_03_20260911_prediction.json").write_text("broken metadata")
+    files = build_site_results.collect_model_results(tmp_path)[0]["file_results"]
+    assert len(files) == 3
+    assert sum(f["details"][0]["tp"] for f in files) == 3
+    tracked_files = [file for file in files if "inference" in file]
+    assert len(tracked_files) == 1
+    assert tracked_files[0]["inference"] == inference
+    assert tracked_files[0]["inference_attempts"] == [inference]
+    assert sum("inference" not in file for file in files) == 2

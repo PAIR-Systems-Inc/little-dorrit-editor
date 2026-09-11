@@ -5,13 +5,19 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
-  workflow_dispatch:  # This enables manual triggering
+      - 'scripts/build_site_seo.py'
+      - '.github/workflows/pages.yaml'
+  workflow_dispatch:
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pages: write
       id-token: write
     environment:
@@ -20,6 +26,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Generate crawlable results and metadata
+        run: python3 scripts/build_site_seo.py
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

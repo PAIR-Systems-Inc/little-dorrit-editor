@@ -1,0 +1,16 @@
+{
+  "gpt-5.4": {
+    "route": "OpenAI",
+    "input_per_million": 2.5,
+    "output_per_million": 15,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+    "verified_at": "2026-09-11"
+  },
+  "claude-fable-5": {
+    "route": "Anthropic",
+    "input_per_million": 10,
+    "output_per_million": 50,
+    "source": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "verified_at": "2026-09-11"
+  }
+}

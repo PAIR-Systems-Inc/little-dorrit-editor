@@ -172,6 +172,23 @@ def collect_model_results(
                 # Extract the file ID for reference
                 file_id = extract_file_id(result_file.name)
                 result_data["file_id"] = file_id
+
+                # Join only the matching evaluated prediction. Historical usage
+                # is absent, not free. Preserve per-attempt costs separately.
+                prediction_name = result_file.name.replace("_results.json", "_prediction.json")
+                prediction_path = model_dir / "predictions" / "eval" / prediction_name
+                if prediction_path.exists():
+                    try:
+                        prediction = json.loads(prediction_path.read_text())
+                        if prediction.get("inference"):
+                            result_data["inference"] = prediction["inference"]
+                        audit = prediction_path.parent / "usage" / f"{prediction_path.stem}.jsonl"
+                        if audit.exists():
+                            attempts = [json.loads(line) for line in audit.read_text().splitlines() if line.strip()]
+                            result_data["inference_attempts"] = attempts
+                    except (OSError, ValueError, TypeError) as exc:
+                        # A damaged usage record must not remove scored edits.
+                        print(f"Warning: Usage unavailable for {prediction_path.name}: {exc}")
                 
                 # Keep track of the latest result date
                 if "date" in result_data:

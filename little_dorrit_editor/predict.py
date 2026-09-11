@@ -16,6 +16,7 @@ from little_dorrit_editor.prompt import (
     load_examples
 )
 from little_dorrit_editor.utils import extract_json_from_llm_response
+from little_dorrit_editor.usage import append_usage_attempt, normalize_usage
 
 
 def _should_retry_api_error(exc: Exception) -> bool:
@@ -219,10 +220,18 @@ def generate_predictions(
     response = None
     max_attempts = 3
     for attempt in range(1, max_attempts + 1):
+        started = time.monotonic()
         try:
             response = client.chat.completions.create(**create_kwargs)
             break
         except Exception as exc:
+            append_usage_attempt(output_path, {
+                "model_id": model_id, "model": model_config.model_name,
+                "attempt": attempt, "status": "api_error",
+                "error_type": type(exc).__name__,
+                "elapsed_seconds": round(time.monotonic() - started, 3),
+                "usage": None,
+            })
             if attempt == max_attempts or not _should_retry_api_error(exc):
                 raise
 
@@ -233,6 +242,8 @@ def generate_predictions(
             )
             time.sleep(backoff_seconds)
     
+    elapsed_seconds = round(time.monotonic() - started, 3)
+    usage = normalize_usage(response)
     console.print("[dim]Raw response received, extracting JSON...[/dim]")
 
     message_content = None
@@ -260,6 +271,19 @@ def generate_predictions(
         console.print("[yellow]Creating empty prediction with error information[/yellow]")
         edits = []
         error_message = f"Failed to parse model output as JSON: {str(e)[:200]}..."
+
+    inference = {
+        "model_id": model_id,
+        "model": getattr(response, "model", None) or model_config.model_name,
+        "response_id": getattr(response, "id", None),
+        "provider": getattr(response, "provider", None),
+        "endpoint": model_config.endpoint,
+        "attempt": attempt,
+        "status": "parse_error" if error_message else "success",
+        "elapsed_seconds": elapsed_seconds,
+        "usage": usage,
+    }
+    append_usage_attempt(output_path, inference)
     
     # Create the full prediction with metadata
     full_prediction = {
@@ -269,7 +293,8 @@ def generate_predictions(
         "edits": edits,
         "annotator": model_config.logical_name,
         "annotation_date": datetime.now().isoformat(),
-        "verified": False
+        "verified": False,
+        "inference": inference,
     }
     
     # Add error information if parsing failed

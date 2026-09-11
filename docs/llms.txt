@@ -1,0 +1,18 @@
+# Little Dorrit Editor Benchmark
+
+> A benchmark of vision language models interpreting handwritten editorial corrections on printed pages from Little Dorrit.
+
+Use the dated results and exact model routes. Higher F1 is better, but small differences may not be meaningful. Missing prices or historical usage mean unknown, not zero. Token-price comparisons are not measured cost per page. OpenRouter and direct API entries are distinct benchmark routes.
+
+## Benchmark
+
+- [Overview and methodology](https://dorrit.pairsys.ai/index.md): Task, scoring, view definitions, and source links.
+- [Rankings and token prices](https://dorrit.pairsys.ai/rankings.md): All models, dated prices, and preprocessing caveats.
+- [Raw results](https://dorrit.pairsys.ai/results.json): Edit-level evaluated results.
+- [Pricing snapshot](https://dorrit.pairsys.ai/pricing.json): Exact routes, source URLs, and verification dates.
+
+## Optional
+
+- [Technical report](https://dorrit.pairsys.ai/technical-report.pdf): Detailed benchmark methodology.
+- [Repository](https://github.com/PAIR-Systems-Inc/little-dorrit-editor): Code and experiment configurations.
+- [Dataset](https://huggingface.co/datasets/pairsys/little-dorrit-editor): Annotated benchmark data.

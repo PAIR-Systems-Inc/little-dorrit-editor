@@ -17,6 +17,34 @@ function getModelDisplayName(model) {
     return `${baseName}${suffix}`;
 }
 
+function setMetricModel(elementId, model, description) {
+    const mark = window.dorritCharts?.modelMark(model) || "";
+    const route = (model.model_id || "").startsWith("or_")
+        ? '<span class="route-badge">OR</span>' : "";
+    const name = description || getModelDisplayName(model).replace(/\s*\(OR\)/g, "");
+    const element = document.getElementById(elementId);
+    element.innerHTML = `${mark}<span class="metric-model-label">${escapeHtml(name)}</span>${route}`;
+    element.querySelectorAll("img[data-fallback]").forEach(img => {
+        img.addEventListener("error", () => img.replaceWith(document.createTextNode(img.dataset.fallback)), { once: true });
+    });
+}
+
+// Shared model identity for both tables; file/run rows keep their plain labels.
+function formatTableModel(cell) {
+    const row = cell.getRow().getData();
+    if (!row.modelId) return escapeHtml(cell.getValue());
+    const fullName = `${cell.getValue()}${row.modelDisplaySuffix || ""}`.replace(/\s*\(OR\)/g, "");
+    const element = document.createElement("span");
+    element.className = "table-model";
+    element.title = row.modelDisplayNote ? `${fullName} — ${row.modelDisplayNote}` : fullName;
+    const route = row.modelId.startsWith("or_") ? '<span class="route-badge" title="OpenRouter route">OR</span>' : "";
+    element.innerHTML = `${window.dorritCharts?.modelMark(row) || ""}<span class="table-model-name">${escapeHtml(fullName)}</span>${route}<span class="shot-badge" title="Prompt examples">${escapeHtml(row.shots ?? 2)}-shot</span>`;
+    element.querySelectorAll("img[data-fallback]").forEach(img => {
+        img.addEventListener("error", () => img.replaceWith(document.createTextNode(img.dataset.fallback)), { once: true });
+    });
+    return element;
+}
+
 // Create and configure the leaderboard table
 const leaderboardTable = new Tabulator("#leaderboard-table", {
     data: leaderboardData,
@@ -38,35 +66,8 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
             title: "Model",
             field: "model",
             widthGrow: 2.4,
-            formatter: function(cell) {
-                const value = cell.getValue();
-                const row = cell.getRow().getData();
-                let medalClass = "";
-                let medalText = "";
-
-                if (row.rank === 1) {
-                    medalClass = "gold";
-                    medalText = "1";
-                } else if (row.rank === 2) {
-                    medalClass = "silver";
-                    medalText = "2";
-                } else if (row.rank === 3) {
-                    medalClass = "bronze";
-                    medalText = "3";
-                }
-
-                const shots = row.shots || 2;
-                const displayName = `${value}${row.modelDisplaySuffix || ""}`;
-                const noteAttr = row.modelDisplayNote
-                    ? ` title="${escapeHtml(row.modelDisplayNote)}"`
-                    : "";
-                const modelWithShots = `<span${noteAttr}>${escapeHtml(displayName)}</span> (${shots}-shot)`;
-
-                if (medalClass) {
-                    return `<span class="medal ${medalClass}">${medalText}</span>${modelWithShots}`;
-                }
-                return modelWithShots;
-            }
+            minWidth: 290,
+            formatter: formatTableModel
         },
         {
             title: "F1",
@@ -152,6 +153,12 @@ const leaderboardTable = new Tabulator("#leaderboard-table", {
             }
         }
     ]
+});
+
+// Tabulator must measure its columns after its previously hidden panel is shown.
+document.addEventListener("dorrit:table-shown", event => {
+    const table = event.detail === "details" ? performanceTable : leaderboardTable;
+    table?.redraw(true);
 });
 
 // Calculate F-beta score (F1 when beta=1)
@@ -387,18 +394,21 @@ function updateConfidenceIntervals(model, bootstrapResults) {
         const upperDiff = (upperBound - pointEstimate).toFixed(3);
 
         model.confidenceInterval = `+${upperDiff}/-${lowerDiff}`;
+        model.confidenceBounds = { low: lowerBound, high: upperBound };
 
         // Update the matching row in leaderboardData
         const modelId = model.model_id || model.model_name;
         const matchingRow = leaderboardData.find(row => row.modelId === modelId);
         if (matchingRow) {
             matchingRow.confidenceInterval = model.confidenceInterval;
+            matchingRow.confidenceBounds = model.confidenceBounds;
 
             // Update just the cell for this model row
             leaderboardTable.updateData([{
                 modelId: modelId,
                 confidenceInterval: model.confidenceInterval
             }]);
+            if (bootstrapResults.length >= 1000) window.dorritCharts?.refreshIntervals();
         }
     }
 }
@@ -435,6 +445,10 @@ async function prepareModelPerformanceData() {
         // Add model summary row
         const modelRow = {
             id: modelData.model_id || modelData.model_name,
+            modelId: modelData.model_id || modelData.model_name,
+            vendor: modelData.vendor || "",
+            shots: modelData.shots ?? 2,
+            modelDisplayNote: modelData.display_note || "",
             model: getModelDisplayName(modelData),
             precision: modelData.precision || 0,
             recall: modelData.recall || 0,
@@ -587,6 +601,8 @@ async function createModelPerformanceTable() {
                 title: "Model / File / Run",
                 field: "model",
                 widthGrow: 4,
+                minWidth: 340,
+                formatter: formatTableModel,
                 resizable: true
             },
             {
@@ -597,18 +613,8 @@ async function createModelPerformanceTable() {
                 hozAlign: "right",
                 formatter: function(cell) {
                     const value = cell.getValue();
-                    const formattedValue = value.toFixed(4);
-
-                    let colorClass = "";
-                    if (value >= 0.8) {
-                        colorClass = "perfect-score";
-                    } else if (value >= 0.5) {
-                        colorClass = "good-score";
-                    } else {
-                        colorClass = "low-score";
-                    }
-
-                    return `<span><span class="performance-indicator ${colorClass}"></span>${formattedValue}</span>`;
+                    const colorClass = value >= 0.8 ? "perfect-score" : value >= 0.5 ? "good-score" : "low-score";
+                    return `<span class="detail-score"><span class="performance-indicator ${colorClass}" aria-hidden="true"></span>${value.toFixed(4)}</span>`;
                 }
             },
             {
@@ -699,6 +705,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
         // Update the leaderboard table with real data
         leaderboardTable.setData(leaderboardData);
+        window.dorritCharts?.init(leaderboardData);
 
         // Start calculating confidence intervals
         setTimeout(() => {
@@ -709,31 +716,32 @@ document.addEventListener("DOMContentLoaded", async function() {
 
         // Update metrics dynamically
         if (results.length > 0) {
+            document.getElementById("metrics").hidden = false;
             // Find top model (first in sorted results by F1 score)
             const topModel = results[0];
-            document.getElementById("top-model").textContent = getModelDisplayName(topModel);
-            document.getElementById("top-model-name").textContent = "Highest F1 Score";
+            document.getElementById("top-model").textContent = getModelDisplayName(topModel).replace(/\s*\(OR\)/g, "");
+            setMetricModel("top-model-name", topModel, `${topModel.vendor || "Overall"} · F1 leader`);
 
             // Find model with best F1 score
             const bestF1Index = results.reduce((maxIndex, model, currentIndex, arr) =>
                 model.f1_score > arr[maxIndex].f1_score ? currentIndex : maxIndex, 0);
             const bestF1Model = results[bestF1Index];
             document.getElementById("best-f1-score").textContent = bestF1Model.f1_score.toFixed(4);
-            document.getElementById("best-f1-model").textContent = getModelDisplayName(bestF1Model);
+            setMetricModel("best-f1-model", bestF1Model);
 
             // Find model with best precision
             const bestPrecisionIndex = results.reduce((maxIndex, model, currentIndex, arr) =>
                 model.precision > arr[maxIndex].precision ? currentIndex : maxIndex, 0);
             const bestPrecisionModel = results[bestPrecisionIndex];
             document.getElementById("best-precision").textContent = bestPrecisionModel.precision.toFixed(4);
-            document.getElementById("best-precision-model").textContent = getModelDisplayName(bestPrecisionModel);
+            setMetricModel("best-precision-model", bestPrecisionModel);
 
             // Find model with best recall
             const bestRecallIndex = results.reduce((maxIndex, model, currentIndex, arr) =>
                 model.recall > arr[maxIndex].recall ? currentIndex : maxIndex, 0);
             const bestRecallModel = results[bestRecallIndex];
             document.getElementById("best-recall").textContent = bestRecallModel.recall.toFixed(4);
-            document.getElementById("best-recall-model").textContent = getModelDisplayName(bestRecallModel);
+            setMetricModel("best-recall-model", bestRecallModel);
         }
     }
 
@@ -750,11 +758,14 @@ document.addEventListener("DOMContentLoaded", async function() {
             .filter(date => !Number.isNaN(date.getTime()))
             .reduce((maxDate, date) => date > maxDate ? date : maxDate, new Date(0))
         : new Date();
-    document.getElementById("last-updated").textContent = lastDate.toISOString().split('T')[0];
+    const latestRun = document.getElementById("last-updated");
+    latestRun.textContent = lastDate.toISOString().split('T')[0];
+    latestRun.dateTime = latestRun.textContent;
 });
 
 // Filter initialization and logic
 function initFilters() {
+    document.getElementById("leaderboard-filters").hidden = false;
     const vendorSelect = document.getElementById("filter-vendor");
     const yearSelect = document.getElementById("filter-year");
     const clearLink = document.getElementById("filter-clear");
@@ -803,6 +814,7 @@ function applyFilters() {
     if (year) filters.push({ field: "releaseYear", type: "=", value: year });
 
     leaderboardTable.setFilter(filters);
+    window.dorritCharts?.setFilters(vendor, year);
 
     // Recalculate ranks after filtering
     recalcRanks();
