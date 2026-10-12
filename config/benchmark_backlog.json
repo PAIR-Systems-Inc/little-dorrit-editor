@@ -9,9 +9,9 @@
       "status": "awaiting_benchmark_compatible_access",
       "api_model_id": null,
       "availability_checked_at": "2026-10-12",
-      "availability_note": "Meta lists Muse Wonder Full for Muse Code subscribers. A public API route for Full has not been verified; OpenRouter currently lists only Muse Wonder.",
-      "source": "https://dev.meta.ai/docs/overview",
-      "next_action": "Verify supported programmatic image-input access for Muse Wonder Full before configuring the next batch."
+      "availability_note": "Meta explicitly lists Muse Wonder Full as unavailable on Model API and exclusive to Muse Code Power Usage or Maximum Usage subscriptions. OpenRouter catalog rechecked on 2026-10-12 contains Muse Wonder but no Full variant. Raising standard Wonder reasoning effort to max does not select Full.",
+      "source": "https://dev.meta.ai/docs/models",
+      "next_action": "Obtain access to an authenticated eligible Muse Code installation, then verify image-input automation and benchmark comparability; otherwise wait for supported API access."
     }
   ]
 }
