@@ -1,0 +1,92 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Opus 5.5 (OR)",
+  "annotation_date": "2026-10-12T11:01:02.803916",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_opus_5_5",
+    "model": "anthropic/claude-opus-5.5",
+    "response_id": "gen-1791820852-sje8YGWa3sooWdD66LP9",
+    "provider": "Claude Platform on AWS",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 13.745,
+    "usage": {
+      "input_tokens": 16439,
+      "output_tokens": 655,
+      "total_tokens": 17094,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 303,
+      "answer_tokens": 352,
+      "provider_cost_usd": 0.078856,
+      "raw": {
+        "completion_tokens": 655,
+        "prompt_tokens": 16439,
+        "total_tokens": 17094,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 303,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.078856,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.078856,
+          "upstream_inference_prompt_cost": 0.065756,
+          "upstream_inference_completions_cost": 0.0131
+        }
+      }
+    }
+  }
+}

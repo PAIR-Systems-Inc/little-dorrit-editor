@@ -1,0 +1,64 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW.",
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash",
+  "annotation_date": "2026-10-12T11:02:01.034602",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "response_id": "gen-1791820887-FKtF30T38GIRAlim5ry5",
+    "provider": "Together",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 36.242,
+    "usage": {
+      "input_tokens": 4581,
+      "output_tokens": 5095,
+      "total_tokens": 9676,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4480,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 5028,
+      "answer_tokens": 67,
+      "provider_cost_usd": 0.00617118,
+      "raw": {
+        "completion_tokens": 5095,
+        "prompt_tokens": 4581,
+        "total_tokens": 9676,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 5028,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4480,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00617118,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00617118,
+          "upstream_inference_prompt_cost": 5.718e-05,
+          "upstream_inference_completions_cost": 0.006114
+        }
+      }
+    }
+  }
+}

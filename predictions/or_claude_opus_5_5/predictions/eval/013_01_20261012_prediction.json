@@ -1,0 +1,127 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam",
+      "corrected_text": "Clennam;",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "driest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty sticking",
+      "corrected_text": "twenty; sticking",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "him than",
+      "corrected_text": "him, than",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I have",
+      "corrected_text": "now, I have",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you now",
+      "corrected_text": "you, now",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now to break",
+      "corrected_text": "now, to break",
+      "line_number": 37,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Opus 5.5 (OR)",
+  "annotation_date": "2026-10-12T10:55:52.319937",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_opus_5_5",
+    "model": "anthropic/claude-opus-5.5",
+    "response_id": "gen-1791820526-bR5q1hQvhJa1pOc7XlDI",
+    "provider": "Claude Platform on AWS",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 30.621,
+    "usage": {
+      "input_tokens": 16479,
+      "output_tokens": 2102,
+      "total_tokens": 18581,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1357,
+      "answer_tokens": 745,
+      "provider_cost_usd": 0.107956,
+      "raw": {
+        "completion_tokens": 2102,
+        "prompt_tokens": 16479,
+        "total_tokens": 18581,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1357,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.107956,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.107956,
+          "upstream_inference_prompt_cost": 0.065916,
+          "upstream_inference_completions_cost": 0.04204
+        }
+      }
+    }
+  }
+}

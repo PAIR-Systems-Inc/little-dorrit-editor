@@ -1,0 +1,36 @@
+{
+  "model_name": "or_claude_opus_5_5",
+  "date": "2026-10-12T11:04:14.578935",
+  "annotator": "Claude Opus 5.5 (OR)",
+  "annotation_date": "2026-10-12T11:01:06.485903",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The ground truth edit type is \"capitalization\" and the predicted edit type is also \"capitalization\", so the types match exactly.\n\nText Content Accuracy: Both ground truth and prediction change the text from \"if he\" to \"If he\", capturing the identical core change (capitalizing the initial 'I'). No discrepancy in original or corrected text content.\n\nTherefore, the predicted edit correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the verb \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction also changes \"said\" \u2192 \"asked\". Although it omits the following context (\"Clennam\"), it still captures the core intended change (replacing \"said\" with \"asked\"). Therefore, the text content matches the ground truth\u2019s intention."
+    }
+  ]
+}

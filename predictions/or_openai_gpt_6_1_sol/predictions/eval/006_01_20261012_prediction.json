@@ -1,0 +1,113 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials",
+      "corrected_text": "materials,",
+      "line_number": 3,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about",
+      "corrected_text": "about,",
+      "line_number": 13,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "association,",
+      "corrected_text": "association",
+      "line_number": 15,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly",
+      "corrected_text": "earnestly,",
+      "line_number": 18,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 23,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said;",
+      "corrected_text": "said,",
+      "line_number": 25,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam",
+      "corrected_text": "Clennam,",
+      "line_number": 29,
+      "page": "352"
+    }
+  ],
+  "annotator": "GPT-6.1 Sol (OR)",
+  "annotation_date": "2026-10-12T10:55:00.388145",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_1_sol",
+    "model": "openai/gpt-6.1-sol",
+    "response_id": "gen-1791820456-SZfJcLqld9nIeM4ZOL8B",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 50.829,
+    "usage": {
+      "input_tokens": 22524,
+      "output_tokens": 1946,
+      "total_tokens": 24470,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 22521,
+      "reasoning_tokens": 1552,
+      "answer_tokens": 394,
+      "provider_cost_usd": 0.0757685,
+      "raw": {
+        "completion_tokens": 1946,
+        "prompt_tokens": 22524,
+        "total_tokens": 24470,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1552,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 22521,
+          "video_tokens": 0
+        },
+        "cost": 0.0757685,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0757685,
+          "upstream_inference_prompt_cost": 0.0563085,
+          "upstream_inference_completions_cost": 0.01946
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "model_name": "or_openai_gpt_6_1_sol",
+  "date": "2026-10-12T11:06:39.532460",
+  "annotator": "GPT-6.1 Sol (OR)",
+  "annotation_date": "2026-10-12T10:54:31.230177",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Travellers",
+      "corrected_text": "Travellers.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to add a period at the end of the phrase \"Fellow Travellers\" (i.e., after the word \"Travellers\"). The prediction captures the same core change by editing \"Travellers\" \u2192 \"Travellers.\" Even though it provides less surrounding context (omitting \"Fellow\"), it still applies the period to the correct terminal word and therefore reflects the same intended punctuation correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "howling",
+      "corrected_text": "howling,",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after the word \"howling\" in the phrase \"howling over\" \u2192 \"howling, over\". The prediction captures this same core punctuation change by editing \"howling\" \u2192 \"howling,\". Although it does not include the following word \"over\" in the edited span, it correctly reflects the essential intended correction (adding the comma after \"howling\")."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "yonder",
+      "corrected_text": "yonder,",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth changes \"yonder to-day\" to \"yonder, to-day\", which is essentially the insertion of a comma immediately after \"yonder\". The prediction changes \"yonder\" to \"yonder,\", capturing the same core punctuation change (adding the comma after \"yonder\"). Although the prediction omits the following word \"to-day\", it still correctly represents the essential intended correction."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "observed_line_number": 1,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify the edit type as \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: Both edits change \"Sir\" to \"sir\". The core change (lowercasing the initial letter) is identical and fully captures the ground truth intention.\nTherefore, the predicted edit is correct."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "pockets",
+      "corrected_text": "pockets,",
+      "observed_line_number": 17,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both the ground truth and the prediction label the change as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to insert a comma after the word \"pockets\" (changing \"pockets and\" to \"pockets, and\"). The prediction captures the same core punctuation change by converting \"pockets\" to \"pockets,\". Although it includes less surrounding context (it does not explicitly include the following word \"and\"), it still correctly reflects the essential edit: adding a comma after \"pockets\"."
+    }
+  ]
+}

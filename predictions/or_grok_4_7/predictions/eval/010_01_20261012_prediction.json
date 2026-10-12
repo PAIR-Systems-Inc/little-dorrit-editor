@@ -1,0 +1,102 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hers, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "hers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hers, matters",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "hers matters",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "moment, with",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "moment with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beautiful, that",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "beautiful that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "They",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "they",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Grok 4.7",
+  "annotation_date": "2026-10-12T10:57:25.428115",
+  "verified": false,
+  "inference": {
+    "model_id": "or_grok_4_7",
+    "model": "x-ai/grok-4.7",
+    "response_id": "gen-1791820451-vUpTmfWx4nGpkoqOzdOU",
+    "provider": "xAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 198.237,
+    "usage": {
+      "input_tokens": 10216,
+      "output_tokens": 16849,
+      "total_tokens": 27065,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 7680,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 16517,
+      "answer_tokens": 332,
+      "provider_cost_usd": 0.110006,
+      "raw": {
+        "completion_tokens": 16849,
+        "prompt_tokens": 10216,
+        "total_tokens": 27065,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 16517,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 7680,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.110006,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.110006,
+          "upstream_inference_prompt_cost": 0.008912,
+          "upstream_inference_completions_cost": 0.101094
+        }
+      }
+    }
+  }
+}

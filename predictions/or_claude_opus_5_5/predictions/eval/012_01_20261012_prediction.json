@@ -1,0 +1,141 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XXIX",
+      "corrected_text": "Chapter XXIX.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Mrs. Flintwinch Goes on Dreaming",
+      "corrected_text": "Mrs. Flintwinch Goes on Dreaming.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "return of the",
+      "corrected_text": "return to the",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them,",
+      "corrected_text": "them;",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it,",
+      "corrected_text": "it;",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still,",
+      "corrected_text": "stand-still;",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence,",
+      "corrected_text": "existence;",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Opus 5.5 (OR)",
+  "annotation_date": "2026-10-12T10:54:49.472913",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_opus_5_5",
+    "model": "anthropic/claude-opus-5.5",
+    "response_id": "gen-1791820472-bS5v9e181UuC7g46X0rX",
+    "provider": "Claude Platform on AWS",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 21.802,
+    "usage": {
+      "input_tokens": 16450,
+      "output_tokens": 1471,
+      "total_tokens": 17921,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 647,
+      "answer_tokens": 824,
+      "provider_cost_usd": 0.09522,
+      "raw": {
+        "completion_tokens": 1471,
+        "prompt_tokens": 16450,
+        "total_tokens": 17921,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 647,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.09522,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.09522,
+          "upstream_inference_prompt_cost": 0.0658,
+          "upstream_inference_completions_cost": 0.02942
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "insertion",
+      "original_text": "each recurring",
+      "corrected_text": "to each recurring",
+      "line_number": 4,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them",
+      "corrected_text": "them;",
+      "line_number": 10,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence at",
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it to",
+      "corrected_text": "it; to",
+      "line_number": 15,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still to",
+      "corrected_text": "stand-still; to",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence is",
+      "corrected_text": "existence; is",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "page": "373"
+    }
+  ],
+  "annotator": "Grok 4.7",
+  "annotation_date": "2026-10-12T11:12:47.664689",
+  "verified": false,
+  "inference": {
+    "model_id": "or_grok_4_7",
+    "model": "x-ai/grok-4.7",
+    "response_id": "gen-1791821322-qf1ZCeO1UTFJUDi0ptek",
+    "provider": "xAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 254.514,
+    "usage": {
+      "input_tokens": 10203,
+      "output_tokens": 19187,
+      "total_tokens": 29390,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 7680,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 18839,
+      "answer_tokens": 348,
+      "provider_cost_usd": 0.124008,
+      "raw": {
+        "completion_tokens": 19187,
+        "prompt_tokens": 10203,
+        "total_tokens": 29390,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 18839,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 7680,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.124008,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.124008,
+          "upstream_inference_prompt_cost": 0.008886,
+          "upstream_inference_completions_cost": 0.115122
+        }
+      }
+    }
+  }
+}

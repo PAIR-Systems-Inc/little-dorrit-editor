@@ -1,0 +1,36 @@
+{
+  "model_name": "or_grok_4_7",
+  "date": "2026-10-12T11:36:16.701439",
+  "annotator": "Grok 4.7",
+  "annotation_date": "2026-10-12T10:58:42.877131",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is \"if he\" \u2192 \"If he\", which capitalizes the initial \"if\" to \"If\" while leaving \"he\" unchanged. The prediction specifies \"if\" \u2192 \"If\", which captures the same core intended correction (capitalizing \"if\"). The omission of the following word \"he\" is acceptable because it is unchanged context, and the essential edit (lowercase to uppercase on \"if\") is correctly represented."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces \"said\" with \"asked\" within the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction replaces \"said\" \u2192 \"asked\" without including the following context (\"Clennam\"), but it captures the essential/core change (the word substitution from \"said\" to \"asked\"). Including less context is acceptable as long as the core change is correctly represented.\n\nTherefore, the predicted edit correctly captures the intention of the ground truth edit."
+    }
+  ]
+}

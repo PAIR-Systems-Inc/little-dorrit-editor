@@ -1,0 +1,36 @@
+{
+  "model_name": "or_claude_sonnet_5_5",
+  "date": "2026-10-12T11:03:03.107434",
+  "annotator": "Claude Sonnet 5.5 (OR)",
+  "annotation_date": "2026-10-12T10:57:53.697711",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the word \"if\" at the start of the phrase (\"if he\" \u2192 \"If he\"). The prediction captures the same core change by capitalizing \"if\" (\"if\" \u2192 \"If\"). Although the prediction omits the following word \"he\" as context, it still reflects the essential intended correction (capitalizing \"if\")."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are \"replacement\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces \"said Clennam\" with \"asked Clennam\", whose core intended change is the word substitution \"said\" \u2192 \"asked\" while keeping the surrounding context (\"Clennam\") the same. The prediction replaces \"said\" with \"asked\" and omits \"Clennam\" from the specified span, but applying the predicted replacement in context would still produce the same corrected phrase (\"asked Clennam\"). Therefore, it captures the essential change intended by the ground truth."
+    }
+  ]
+}

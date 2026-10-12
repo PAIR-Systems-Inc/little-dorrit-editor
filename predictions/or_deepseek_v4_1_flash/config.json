@@ -1,0 +1,14 @@
+{
+  "model_id": "or_deepseek_v4_1_flash",
+  "display_name": "DeepSeek V4.1 Flash",
+  "shots": 2,
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "date": "2026-10-12",
+  "notes": "Benchmark run with 2-shot learning at high reasoning effort",
+  "repeats": 3,
+  "judge_model": "or_openai_gpt_5_2",
+  "evaluation_pages": 12,
+  "sample_pages": 2,
+  "benchmark_max_concurrent_requests": 72
+}

@@ -1,0 +1,127 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "XI",
+      "corrected_text": "XI.",
+      "line_number": 0,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Loose",
+      "corrected_text": "Loose.",
+      "line_number": 0,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dull",
+      "corrected_text": "dull,",
+      "line_number": 1,
+      "page": "137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "trees",
+      "corrected_text": "trees,",
+      "line_number": 6,
+      "page": "137"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 7,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "man",
+      "corrected_text": "man,",
+      "line_number": 9,
+      "page": "137"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 9,
+      "page": "137"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden",
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "page": "137"
+    }
+  ],
+  "annotator": "GPT-6.1 Sol (OR)",
+  "annotation_date": "2026-10-12T10:54:50.842966",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_1_sol",
+    "model": "openai/gpt-6.1-sol",
+    "response_id": "gen-1791820460-yVYFeuBYIUnRI98otNOZ",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 41.139,
+    "usage": {
+      "input_tokens": 22638,
+      "output_tokens": 1522,
+      "total_tokens": 24160,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 22635,
+      "reasoning_tokens": 1034,
+      "answer_tokens": 488,
+      "provider_cost_usd": 0.0718135,
+      "raw": {
+        "completion_tokens": 1522,
+        "prompt_tokens": 22638,
+        "total_tokens": 24160,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1034,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 22635,
+          "video_tokens": 0
+        },
+        "cost": 0.0718135,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0718135,
+          "upstream_inference_prompt_cost": 0.0565935,
+          "upstream_inference_completions_cost": 0.01522
+        }
+      }
+    }
+  }
+}

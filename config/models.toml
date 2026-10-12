@@ -817,3 +817,68 @@ reasoning_effort = "high"
 request_timeout_seconds = 180
 openrouter_provider = { sort = "latency" }
 openrouter_reasoning = { exclude = true }
+
+################################################################################
+# O C T O B E R   2 0 2 6   R E F R E S H
+# Two-shot benchmark with three repeats and high reasoning effort.
+################################################################################
+
+["or_openai_gpt_6_1_sol"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "openai/gpt-6.1-sol"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "GPT-6.1 Sol (OR)"
+reasoning_effort = "high"
+supports_temperature = false
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_claude_opus_5_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-opus-5.5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Opus 5.5 (OR)"
+reasoning_effort = "high"
+supports_temperature = false
+image_max_bytes = 3930112
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_claude_sonnet_5_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-sonnet-5.5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Sonnet 5.5 (OR)"
+reasoning_effort = "high"
+supports_temperature = false
+image_max_bytes = 3930112
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_grok_4_7"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "x-ai/grok-4.7"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Grok 4.7"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_mistral_large_4"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "mistralai/mistral-large-4-0"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Mistral Large 4 Preview"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_deepseek_v4_1_flash"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "deepseek/deepseek-v4.1-flash"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "DeepSeek V4.1 Flash"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_provider = { sort = "latency" }
+openrouter_reasoning = { exclude = true }

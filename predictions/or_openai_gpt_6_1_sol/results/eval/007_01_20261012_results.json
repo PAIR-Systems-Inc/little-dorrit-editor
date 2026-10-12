@@ -1,0 +1,36 @@
+{
+  "model_name": "or_openai_gpt_6_1_sol",
+  "date": "2026-10-12T11:08:21.604441",
+  "annotator": "GPT-6.1 Sol (OR)",
+  "annotation_date": "2026-10-12T10:54:23.559744",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Shadow",
+      "corrected_text": "Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth type is \"punctuation\" and the predicted type is also \"punctuation\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is adding a period at the end of the title phrase \u201cSun and Shadow\u201d \u2192 \u201cSun and Shadow.\u201d The prediction applies the same core punctuation change (adding a final period) but uses a narrower text span: \u201cShadow\u201d \u2192 \u201cShadow.\u201d Since the period is added after the final word of the phrase (\u201cShadow\u201d), this captures the essential intended correction (a terminal period at the end of the title). The reduced context does not change the core edit.\n\nTherefore, both criteria are satisfied."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "I",
+      "corrected_text": "I.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

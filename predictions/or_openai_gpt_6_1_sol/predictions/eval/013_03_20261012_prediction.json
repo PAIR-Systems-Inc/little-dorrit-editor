@@ -1,0 +1,120 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam;",
+      "corrected_text": "Clennam,",
+      "line_number": 1,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "snorts",
+      "corrected_text": "of snorts",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that boiling-over",
+      "corrected_text": "that\u2014boiling-over",
+      "line_number": 11,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now",
+      "corrected_text": "now,",
+      "line_number": 34,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you",
+      "corrected_text": "you,",
+      "line_number": 37,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now",
+      "corrected_text": "now,",
+      "line_number": 37,
+      "page": "451"
+    }
+  ],
+  "annotator": "GPT-6.1 Sol (OR)",
+  "annotation_date": "2026-10-12T11:03:52.720540",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_1_sol",
+    "model": "openai/gpt-6.1-sol",
+    "response_id": "gen-1791820972-eHh5j4lK27tzFnfpWDCu",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 64.502,
+    "usage": {
+      "input_tokens": 22524,
+      "output_tokens": 2745,
+      "total_tokens": 25269,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 22521,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2306,
+      "answer_tokens": 439,
+      "provider_cost_usd": 0.0297081,
+      "raw": {
+        "completion_tokens": 2745,
+        "prompt_tokens": 22524,
+        "total_tokens": 25269,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2306,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 22521,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0297081,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0297081,
+          "upstream_inference_prompt_cost": 0.0022581,
+          "upstream_inference_completions_cost": 0.02745
+        }
+      }
+    }
+  }
+}

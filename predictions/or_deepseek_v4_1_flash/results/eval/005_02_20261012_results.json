@@ -1,0 +1,36 @@
+{
+  "model_name": "or_deepseek_v4_1_flash",
+  "date": "2026-10-12T11:04:48.889098",
+  "annotator": "DeepSeek V4.1 Flash",
+  "annotation_date": "2026-10-12T10:58:55.590708",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is capitalizing the initial word in the phrase \"if he\" to \"If he.\" The prediction captures the same core change by converting \"if\" to \"If.\" Although it omits the following word \"he\" from the original/corrected spans, this is acceptable because the essential edit (capitalizing \"if\") is correctly represented and the extra context is not required."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces the word \"said\" with \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the same core change by replacing \"said\" with \"asked\". Although it omits the surrounding context (\"Clennam\"), the essential intended edit (said \u2192 asked) is correctly represented, and extra context is not required."
+    }
+  ]
+}

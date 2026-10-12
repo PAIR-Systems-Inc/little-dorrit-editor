@@ -1,0 +1,71 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "I",
+      "corrected_text": "I.",
+      "line_number": 0,
+      "page": "3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Shadow",
+      "corrected_text": "Shadow.",
+      "line_number": 0,
+      "page": "3"
+    }
+  ],
+  "annotator": "GPT-6.1 Sol (OR)",
+  "annotation_date": "2026-10-12T10:58:33.933813",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_1_sol",
+    "model": "openai/gpt-6.1-sol",
+    "response_id": "gen-1791820700-5zmeyObbq7sGN1AdMFMC",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 18.902,
+    "usage": {
+      "input_tokens": 22410,
+      "output_tokens": 308,
+      "total_tokens": 22718,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 22407,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 199,
+      "answer_tokens": 109,
+      "provider_cost_usd": 0.0053267,
+      "raw": {
+        "completion_tokens": 308,
+        "prompt_tokens": 22410,
+        "total_tokens": 22718,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 199,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 22407,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0053267,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0053267,
+          "upstream_inference_prompt_cost": 0.0022467,
+          "upstream_inference_completions_cost": 0.00308
+        }
+      }
+    }
+  }
+}

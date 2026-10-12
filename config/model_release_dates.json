@@ -576,5 +576,45 @@
     "release_notes": "Experimental vision-enabled DeepSeek V4 Flash model. Benchmark configuration uses high reasoning effort.",
     "display_suffix": "*",
     "display_note": "Incomplete run: 35 of 36 evaluation predictions completed; one request repeatedly timed out at the provider."
+  },
+  "or_openai_gpt_6_1_sol": {
+    "vendor": "OpenAI",
+    "release_date": "2026-09-29",
+    "release_source": "https://developers.openai.com/api/docs/changelog",
+    "release_notes": "Benchmark configuration uses high reasoning effort."
+  },
+  "or_claude_opus_5_5": {
+    "vendor": "Anthropic",
+    "release_date": "2026-09-22",
+    "release_source": "https://www.anthropic.com/claude-opus-5-5",
+    "release_notes": "Benchmark configuration uses high reasoning effort.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_claude_sonnet_5_5": {
+    "vendor": "Anthropic",
+    "release_date": "2026-09-28",
+    "release_source": "https://www.anthropic.com/claude-sonnet-5-5",
+    "release_notes": "Benchmark configuration uses high reasoning effort.",
+    "display_suffix": "*",
+    "display_note": "Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit."
+  },
+  "or_grok_4_7": {
+    "vendor": "SpaceXAI",
+    "release_date": "2026-09-21",
+    "release_source": "https://x.ai/news/grok-4-7",
+    "release_notes": "Benchmark configuration uses high reasoning effort."
+  },
+  "or_mistral_large_4": {
+    "vendor": "Mistral",
+    "release_date": "2026-10-06",
+    "release_source": "https://mistral.ai/news/mistral-large-4/",
+    "release_notes": "Public API preview; benchmark configuration uses high reasoning effort."
+  },
+  "or_deepseek_v4_1_flash": {
+    "vendor": "DeepSeek",
+    "release_date": "2026-09-10",
+    "release_source": "https://api-docs.deepseek.com/updates/",
+    "release_notes": "Benchmark configuration uses high reasoning effort."
   }
 }

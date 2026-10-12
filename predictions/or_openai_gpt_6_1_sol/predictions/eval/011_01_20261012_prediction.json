@@ -1,0 +1,99 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "that,",
+      "corrected_text": "that",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fancy,",
+      "corrected_text": "fancy",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you!",
+      "corrected_text": "you,",
+      "line_number": 17,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore",
+      "corrected_text": "shore,",
+      "line_number": 25,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 33,
+      "page": "372"
+    }
+  ],
+  "annotator": "GPT-6.1 Sol (OR)",
+  "annotation_date": "2026-10-12T10:54:49.777828",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_1_sol",
+    "model": "openai/gpt-6.1-sol",
+    "response_id": "gen-1791820460-U1BhTlVVhtgQCkidbmue",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 34.756,
+    "usage": {
+      "input_tokens": 22410,
+      "output_tokens": 1238,
+      "total_tokens": 23648,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 22407,
+      "reasoning_tokens": 942,
+      "answer_tokens": 296,
+      "provider_cost_usd": 0.0684035,
+      "raw": {
+        "completion_tokens": 1238,
+        "prompt_tokens": 22410,
+        "total_tokens": 23648,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 942,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 22407,
+          "video_tokens": 0
+        },
+        "cost": 0.0684035,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0684035,
+          "upstream_inference_prompt_cost": 0.0560235,
+          "upstream_inference_completions_cost": 0.01238
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "model_name": "or_claude_opus_5_5",
+  "date": "2026-10-12T11:04:11.655793",
+  "annotator": "Claude Opus 5.5 (OR)",
+  "annotation_date": "2026-10-12T10:54:45.254245",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change from \"No sir\" to \"No, sir\", inserting a comma after \"No\". The core punctuation correction is captured identically.\nTherefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "cold stones!\"",
+      "corrected_text": "cold stones?\"",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted type is \"punctuation,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth\u2019s core change is replacing the exclamation mark with a question mark in \"cold stones!\" \u2192 \"cold stones?\". The prediction makes the same essential change (\"cold stones!\\\"\" \u2192 \"cold stones?\\\"\") while including an additional trailing quotation mark as extra context. This does not alter the intended correction; it still captures the same punctuation substitution (! \u2192 ?).\n\nTherefore, both the edit type and the core textual change match the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "\"why did",
+      "corrected_text": "\"Why did",
+      "observed_line_number": 28,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "why did he dine",
+      "corrected_text": "Why did he dine",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

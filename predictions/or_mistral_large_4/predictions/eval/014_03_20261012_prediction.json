@@ -1,0 +1,78 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "bed-room",
+      "corrected_text": "bedroom",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly",
+      "corrected_text": "quickly,",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "me",
+      "corrected_text": "mad",
+      "line_number": 21,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Mistral Large 4 Preview",
+  "annotation_date": "2026-10-12T11:25:53.789052",
+  "verified": false,
+  "inference": {
+    "model_id": "or_mistral_large_4",
+    "model": "mistralai/mistral-large-4-0",
+    "response_id": "gen-1791821998-Z8q05SWu0cnpAgX7S0IB",
+    "provider": "Mistral",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 358.842,
+    "usage": {
+      "input_tokens": 8206,
+      "output_tokens": 9615,
+      "total_tokens": 17821,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 5612,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 8910,
+      "answer_tokens": 705,
+      "provider_cost_usd": 0.02225211,
+      "raw": {
+        "completion_tokens": 9615,
+        "prompt_tokens": 8206,
+        "total_tokens": 17821,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 8910,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 5612,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.02225211,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.02225211,
+          "upstream_inference_prompt_cost": 0.00215676,
+          "upstream_inference_completions_cost": 0.02009535
+        }
+      }
+    }
+  }
+}

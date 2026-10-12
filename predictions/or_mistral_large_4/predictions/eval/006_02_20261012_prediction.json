@@ -1,0 +1,129 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high road",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "judgment,\u2014all",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "judgment\u2014all",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "about and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "associ",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "associ-",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "well,",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "well;",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, when",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "said when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said,",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Mistral Large 4 Preview",
+  "annotation_date": "2026-10-12T11:08:36.693584",
+  "verified": false,
+  "inference": {
+    "model_id": "or_mistral_large_4",
+    "model": "mistralai/mistral-large-4-0",
+    "response_id": "gen-1791821172-pya05MnGVgocB8tR9BAQ",
+    "provider": "Mistral",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 150.369,
+    "usage": {
+      "input_tokens": 8151,
+      "output_tokens": 10196,
+      "total_tokens": 18347,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 9007,
+      "answer_tokens": 1189,
+      "provider_cost_usd": 0.02685232,
+      "raw": {
+        "completion_tokens": 10196,
+        "prompt_tokens": 8151,
+        "total_tokens": 18347,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 9007,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.02685232,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.02685232,
+          "upstream_inference_prompt_cost": 0.00554268,
+          "upstream_inference_completions_cost": 0.02130964
+        }
+      }
+    }
+  }
+}

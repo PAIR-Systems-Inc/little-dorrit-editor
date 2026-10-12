@@ -1,0 +1,120 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "For",
+      "corrected_text": "For,",
+      "line_number": 2,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "documents)",
+      "corrected_text": "documents),",
+      "line_number": 5,
+      "page": "452"
+    },
+    {
+      "type": "italicize",
+      "original_text": "Casby's",
+      "corrected_text": "Casby's",
+      "line_number": 10,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sight",
+      "corrected_text": "sight,",
+      "line_number": 19,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "this",
+      "corrected_text": "this,",
+      "line_number": 19,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "worse",
+      "corrected_text": "worse,",
+      "line_number": 21,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me,",
+      "corrected_text": "me;",
+      "line_number": 21,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fled",
+      "corrected_text": "fled,",
+      "line_number": 27,
+      "page": "452"
+    },
+    {
+      "type": "insertion",
+      "original_text": "spirits",
+      "corrected_text": "spirits of",
+      "line_number": 38,
+      "page": "452"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash",
+  "annotation_date": "2026-10-12T11:03:07.930933",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "response_id": "gen-1791820937-n2GoVFZ5MoMajKf9XD4G",
+    "provider": "Together",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 58.378,
+    "usage": {
+      "input_tokens": 4529,
+      "output_tokens": 10350,
+      "total_tokens": 14879,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4480,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 9917,
+      "answer_tokens": 433,
+      "provider_cost_usd": 0.01246158,
+      "raw": {
+        "completion_tokens": 10350,
+        "prompt_tokens": 4529,
+        "total_tokens": 14879,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 9917,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4480,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.01246158,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.01246158,
+          "upstream_inference_prompt_cost": 4.158e-05,
+          "upstream_inference_completions_cost": 0.01242
+        }
+      }
+    }
+  }
+}

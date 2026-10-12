@@ -1,0 +1,50 @@
+{
+  "model_name": "or_deepseek_v4_1_flash",
+  "date": "2026-10-12T11:05:24.892269",
+  "annotator": "DeepSeek V4.1 Flash",
+  "annotation_date": "2026-10-12T10:54:51.934487",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces \"said Clennam\" with \"asked Clennam\". The prediction replaces \"said\" with \"asked\". Although the prediction omits the surrounding context (\"Clennam\"), it captures the core intended change\u2014changing the verb from \"said\" to \"asked\"\u2014without altering the meaning of the correction. Therefore the essential edit is correctly captured."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "If",
+      "corrected_text": "cap",
+      "observed_line_number": 36,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 1,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

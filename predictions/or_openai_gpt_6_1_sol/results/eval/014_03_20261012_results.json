@@ -1,0 +1,78 @@
+{
+  "model_name": "or_openai_gpt_6_1_sol",
+  "date": "2026-10-12T11:10:15.550315",
+  "annotator": "GPT-6.1 Sol (OR)",
+  "annotation_date": "2026-10-12T11:03:24.937349",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "For",
+      "corrected_text": "For,",
+      "observed_line_number": 2,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"punctuation\" and the predicted edit type is also \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"For Mr. Pancks\" to \"For, Mr. Pancks\", which is specifically the insertion of a comma after the word \"For\". The prediction changes \"For\" to \"For,\", which captures the same core punctuation change (adding a comma immediately after \"For\"). Although the prediction includes less surrounding context (omits \"Mr. Pancks\"), it still correctly represents the essential intended edit.\n\nTherefore, both criteria are satisfied."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "quickly",
+      "corrected_text": "quickly,",
+      "observed_line_number": 11,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change inserts a comma after \"quickly\" in the phrase \"quickly that\" \u2192 \"quickly, that.\" The predicted edit \"quickly\" \u2192 \"quickly,\" captures the same essential punctuation insertion at the same location; it simply omits the following word \"that\" as additional context. Since the core change (adding a comma after \"quickly\") is correctly represented, the text content matches the ground truth's intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "me",
+      "corrected_text": "me a",
+      "observed_line_number": 21,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as an \"insertion,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth indicates inserting \"a\" after \"me\" (changing \"me,\" to \"me a,\"). The prediction likewise inserts \"a\" after \"me\" (\"me\" \u2192 \"me a\"). Although the ground truth includes surrounding punctuation (a comma) and the prediction omits it, the core intended change\u2014adding the word \"a\" after \"me\"\u2014is correctly captured, and the comma difference is best interpreted as missing context rather than a different intended edit."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "bed-room",
+      "corrected_text": "bedroom",
+      "observed_line_number": 1,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "replacement",
+      "original_text": "bed-room",
+      "corrected_text": "bed room",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

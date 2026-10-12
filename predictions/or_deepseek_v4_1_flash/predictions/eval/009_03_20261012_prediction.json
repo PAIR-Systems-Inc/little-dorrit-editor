@@ -1,0 +1,78 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "heart (as",
+      "corrected_text": "heart indeed (as",
+      "line_number": 27,
+      "page": "page_369"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "line_number": 31,
+      "page": "page_369"
+    },
+    {
+      "type": "insertion",
+      "original_text": "\"That's well!",
+      "corrected_text": "I hoped so \"That's well!",
+      "line_number": 34,
+      "page": "page_369"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash",
+  "annotation_date": "2026-10-12T11:01:36.208805",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "response_id": "gen-1791820875-YRBEWPeIHT4Jb4fuLi0x",
+    "provider": "Together",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 29.789,
+    "usage": {
+      "input_tokens": 4575,
+      "output_tokens": 3374,
+      "total_tokens": 7949,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4480,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3205,
+      "answer_tokens": 169,
+      "provider_cost_usd": 0.00410418,
+      "raw": {
+        "completion_tokens": 3374,
+        "prompt_tokens": 4575,
+        "total_tokens": 7949,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3205,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4480,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00410418,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00410418,
+          "upstream_inference_prompt_cost": 5.538e-05,
+          "upstream_inference_completions_cost": 0.0040488
+        }
+      }
+    }
+  }
+}

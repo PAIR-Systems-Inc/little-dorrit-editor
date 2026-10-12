@@ -1,0 +1,120 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam,",
+      "corrected_text": "Clennam;",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "dryest snorts",
+      "corrected_text": "dryest of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "thatboiling",
+      "corrected_text": "that boiling",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty,",
+      "corrected_text": "twenty;",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now",
+      "corrected_text": "now,",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you",
+      "corrected_text": "you,",
+      "line_number": 37,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Sonnet 5.5 (OR)",
+  "annotation_date": "2026-10-12T10:55:43.944054",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_sonnet_5_5",
+    "model": "anthropic/claude-sonnet-5.5",
+    "response_id": "gen-1791820527-WvnZ3JapZi40EXXFvRha",
+    "provider": "Claude Platform on AWS",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 18.726,
+    "usage": {
+      "input_tokens": 16479,
+      "output_tokens": 2016,
+      "total_tokens": 18495,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1433,
+      "answer_tokens": 583,
+      "provider_cost_usd": 0.053118,
+      "raw": {
+        "completion_tokens": 2016,
+        "prompt_tokens": 16479,
+        "total_tokens": 18495,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1433,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.053118,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.053118,
+          "upstream_inference_prompt_cost": 0.032958,
+          "upstream_inference_completions_cost": 0.02016
+        }
+      }
+    }
+  }
+}

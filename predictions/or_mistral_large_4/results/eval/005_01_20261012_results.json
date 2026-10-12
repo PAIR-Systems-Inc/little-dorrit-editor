@@ -1,0 +1,36 @@
+{
+  "model_name": "or_mistral_large_4",
+  "date": "2026-10-12T11:26:44.978132",
+  "annotator": "Mistral Large 4 Preview",
+  "annotation_date": "2026-10-12T10:56:29.893408",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify the edit type as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial \"if\" in the phrase \"if he\" \u2192 \"If he\". The prediction applies the same core change, \"if\" \u2192 \"If\", just with less surrounding context. Since the essential intended correction is capitalizing \"if\", the prediction captures the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are of type \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the verb phrase from \"said Clennam\" to \"asked Clennam\"\u2014the essential correction is replacing \"said\" with \"asked\" while leaving the surrounding context (including \"Clennam\") unchanged. The prediction captures this core change by replacing \"said\" with \"asked\". Although it includes less context (it does not explicitly include \"Clennam\"), it correctly reflects the intended substitution, which is sufficient under the criteria."
+    }
+  ]
+}
