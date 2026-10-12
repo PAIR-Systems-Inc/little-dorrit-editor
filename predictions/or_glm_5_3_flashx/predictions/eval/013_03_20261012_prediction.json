@@ -1,0 +1,120 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam,",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Clennam;",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "dryest snorts",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "twenty;",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "twenty",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "benevolence bubbling out of him",
+      "line_number": 30,
+      "notes": "Handwritten note 'Italicize' with arrow pointing to this phrase",
+      "original_text": "benevolence bubbling out of him",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now,",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "now",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you, now,",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "you now",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T15:13:14.876069",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791835972-J7NWz2DmlpPjOzi9UHha",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 26.603,
+    "usage": {
+      "input_tokens": 24305,
+      "output_tokens": 1716,
+      "total_tokens": 26021,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 24256,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1254,
+      "answer_tokens": 462,
+      "provider_cost_usd": 0.00434617,
+      "raw": {
+        "completion_tokens": 1716,
+        "prompt_tokens": 24305,
+        "total_tokens": 26021,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1254,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 24256,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00434617,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00434617,
+          "upstream_inference_prompt_cost": 0.00220117,
+          "upstream_inference_completions_cost": 0.002145
+        }
+      }
+    }
+  }
+}

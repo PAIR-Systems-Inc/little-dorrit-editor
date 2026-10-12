@@ -1,0 +1,147 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart.",
+      "line_number": 8,
+      "notes": null,
+      "original_text": "heart",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "eyes.",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "eyes",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "took the",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "tookthe",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": ".",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "generous Mr.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "looking confidently, indeed, up into his face,",
+      "line_number": 45,
+      "notes": null,
+      "original_text": "looking confidently up into his face",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestness, she",
+      "line_number": 49,
+      "notes": null,
+      "original_text": "earnestness) she",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "length, said",
+      "line_number": 54,
+      "notes": null,
+      "original_text": "length said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\u201cOh! I have very much to ask of you,\u201d",
+      "line_number": 58,
+      "notes": null,
+      "original_text": "\u201cOh! I have very much to ask of you.\u201d",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 59,
+      "notes": null,
+      "original_text": "I hope",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "so. I",
+      "line_number": 59,
+      "notes": null,
+      "original_text": "so; I",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T14:52:45.052721",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791834724-OTmiznSAlLsI2CZK4xsu",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 43.892,
+    "usage": {
+      "input_tokens": 8570,
+      "output_tokens": 650,
+      "total_tokens": 9220,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4096,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 650,
+      "provider_cost_usd": 0.0064338,
+      "raw": {
+        "completion_tokens": 650,
+        "prompt_tokens": 8570,
+        "total_tokens": 9220,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0064338,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0064338,
+          "upstream_inference_prompt_cost": 0.0046788,
+          "upstream_inference_completions_cost": 0.001755
+        }
+      }
+    }
+  }
+}

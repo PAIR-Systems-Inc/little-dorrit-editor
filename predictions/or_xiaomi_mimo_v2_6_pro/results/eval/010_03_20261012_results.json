@@ -1,0 +1,78 @@
+{
+  "model_name": "or_xiaomi_mimo_v2_6_pro",
+  "date": "2026-10-12T15:13:22.861884",
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T15:10:56.354282",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers and",
+      "corrected_text": "hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit have type \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: Ground truth changes \"hers and\" to \"hers, and\" by inserting a comma after \"hers\". The predicted edit makes the identical change (\"hers and\" \u2192 \"hers, and\"). The added notes provide extra context but do not alter the core correction. Therefore, the essential edit is captured correctly."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "hers matters",
+      "corrected_text": "hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: Both specify the same core correction: inserting a comma after \"hers\" in the phrase \"hers matters\", yielding \"hers, matters\". The prediction's note adds extra context (\"before 'matters little'\") but does not alter the essential change. Therefore, the text content matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "moment with",
+      "corrected_text": "moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: Both specify the same core change: inserting a comma after \"moment\" in the phrase \"moment with,\" yielding \"moment, with.\" The prediction\u2019s note adds extra contextual description but does not alter the essential edit. Therefore, the text content matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "beautiful that",
+      "corrected_text": "beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: Ground truth changes \"beautiful that\" to \"beautiful, that\" by inserting a comma after \"beautiful.\" The predicted edit specifies the same original and corrected text, capturing the identical core punctuation insertion. The added note provides extra context but does not alter the essential change.\n\nTherefore, the prediction correctly captures the ground truth edit."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth type is \"capitalization\" and the predicted type is also \"capitalization\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"they\" to \"They\". The prediction specifies the same core change (\"they\" \u2192 \"They\") and adds explanatory context in the notes without altering the essential correction. Therefore, the text content matches the ground truth intention."
+    }
+  ]
+}

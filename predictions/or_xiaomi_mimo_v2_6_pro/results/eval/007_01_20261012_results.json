@@ -1,0 +1,22 @@
+{
+  "model_name": "or_xiaomi_mimo_v2_6_pro",
+  "date": "2026-10-12T14:56:45.838802",
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T14:54:07.370101",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same core change: adding a period to \"Sun and Shadow\" to make it \"Sun and Shadow.\". There is no discrepancy in original or corrected text, so the predicted edit fully captures the ground truth intention."
+    }
+  ]
+}

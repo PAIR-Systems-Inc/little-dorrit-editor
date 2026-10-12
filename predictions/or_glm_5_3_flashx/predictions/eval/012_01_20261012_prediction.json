@@ -1,0 +1,165 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter xxix.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter xxix",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dreaming.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Dreaming",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "the City",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "the city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "reluctant to return",
+      "line_number": 5,
+      "notes": "Insertion of 'to' with deletion of 'of'",
+      "original_text": "reluctant return of",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with them;",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "with them,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence, at",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "existence at",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it; to suppose",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "it, to suppose",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "motionless when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still; to be",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "stand-still, to be",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "our view, by",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "our view by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence; is",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "existence, is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege lord",
+      "line_number": 25,
+      "notes": "Mark between 'liege' and 'lord' appears to indicate a space",
+      "original_text": "liegelord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T14:55:45.832166",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791834921-4MQYHI4bXkYX15oJwB1U",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 33.988,
+    "usage": {
+      "input_tokens": 24555,
+      "output_tokens": 1757,
+      "total_tokens": 26312,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 16576,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 968,
+      "answer_tokens": 789,
+      "provider_cost_usd": 0.00664032,
+      "raw": {
+        "completion_tokens": 1757,
+        "prompt_tokens": 24555,
+        "total_tokens": 26312,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 968,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 16576,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00664032,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00664032,
+          "upstream_inference_prompt_cost": 0.00444407,
+          "upstream_inference_completions_cost": 0.00219625
+        }
+      }
+    }
+  }
+}

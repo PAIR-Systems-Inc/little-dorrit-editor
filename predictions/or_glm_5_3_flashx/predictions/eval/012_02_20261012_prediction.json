@@ -1,0 +1,129 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "City",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "return to of",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "return of",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "busy existence, at",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "busy existence at",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it, to",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "it; to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "motionless when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still, to",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "stand-still; to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "contracted existence, is",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "contracted existence; is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "liege lord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T15:03:50.168797",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791835407-DMZW2JKtEkDQLdtyuaZj",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 26.201,
+    "usage": {
+      "input_tokens": 24555,
+      "output_tokens": 1948,
+      "total_tokens": 26503,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 24512,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1434,
+      "answer_tokens": 514,
+      "provider_cost_usd": 0.00465699,
+      "raw": {
+        "completion_tokens": 1948,
+        "prompt_tokens": 24555,
+        "total_tokens": 26503,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1434,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 24512,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00465699,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00465699,
+          "upstream_inference_prompt_cost": 0.00222199,
+          "upstream_inference_completions_cost": 0.002435
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "If he",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "if he",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked Clennam",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "said Clennam",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T15:08:18.095347",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791835685-l6GMO9KxaiWEYJvwoEaP",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 16.149,
+    "usage": {
+      "input_tokens": 24185,
+      "output_tokens": 649,
+      "total_tokens": 24834,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 24128,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 513,
+      "answer_tokens": 136,
+      "provider_cost_usd": 0.00300386,
+      "raw": {
+        "completion_tokens": 649,
+        "prompt_tokens": 24185,
+        "total_tokens": 24834,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 513,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 24128,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00300386,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00300386,
+          "upstream_inference_prompt_cost": 0.00219261,
+          "upstream_inference_completions_cost": 0.00081125
+        }
+      }
+    }
+  }
+}

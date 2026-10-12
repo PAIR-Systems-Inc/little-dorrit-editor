@@ -1,0 +1,129 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "City",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "each recurring with its accompanying monotony, always the same reluctant return to the same sequences of machinery",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "each recurring with its accompanying monotony, always the same reluctant return of the same sequences of machinery",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "them,",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "them;",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence,",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "existence",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless,",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "motionless",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view,",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "view",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence;",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "existence:",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "lord",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "liege lord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Haiku 5.5 (OR)",
+  "annotation_date": "2026-10-12T15:12:50.253193",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_haiku_5_5",
+    "model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1791835964-0BOI30qeG0Kty71vUIfx",
+    "provider": "Claude Platform on AWS",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 10.22,
+    "usage": {
+      "input_tokens": 16450,
+      "output_tokens": 704,
+      "total_tokens": 17154,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 704,
+      "provider_cost_usd": 0.001997,
+      "raw": {
+        "completion_tokens": 704,
+        "prompt_tokens": 16450,
+        "total_tokens": 17154,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.001997,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.001997,
+          "upstream_inference_prompt_cost": 0.001645,
+          "upstream_inference_completions_cost": 0.000352
+        }
+      }
+    }
+  }
+}

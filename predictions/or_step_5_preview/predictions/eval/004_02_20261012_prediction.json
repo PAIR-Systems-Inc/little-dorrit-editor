@@ -1,0 +1,84 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "\"No, sir, I have got Maggy with me.\"",
+      "line_number": 12,
+      "notes": "A caret/insertion mark appears near the opening quotation mark, suggesting a quotation mark was added.",
+      "original_text": "No, sir, I have got Maggy with me.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dine? Why",
+      "line_number": 28,
+      "notes": "The handwritten note '\u2192CAP' with an arrow points to the word 'Why', indicating it should be capitalized; the printed text had lowercase 'why'. Separately, the quotation mark is a handwritten annotation.",
+      "original_text": "dine to? why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cold stones? She",
+      "line_number": 29,
+      "notes": "The handwritten note '\u2192QUESTION' points to the end of the quotation, indicating the period should be a question mark.",
+      "original_text": "cold stones. She",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T14:59:19.567342",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791835119-YfY1Jse5nCgHOoLTUlRM",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 44.036,
+    "usage": {
+      "input_tokens": 8072,
+      "output_tokens": 301,
+      "total_tokens": 8373,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4096,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 301,
+      "provider_cost_usd": 0.0049935,
+      "raw": {
+        "completion_tokens": 301,
+        "prompt_tokens": 8072,
+        "total_tokens": 8373,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0049935,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0049935,
+          "upstream_inference_prompt_cost": 0.0041808,
+          "upstream_inference_completions_cost": 0.0008127
+        }
+      }
+    }
+  }
+}

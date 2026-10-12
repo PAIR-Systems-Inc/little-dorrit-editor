@@ -1,0 +1,111 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "notes": "Handwritten circumflex accent added above the 'o' in 'Saone'",
+      "original_text": "Saone",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "notes": "Handwritten note 'hyphen' with hyphen drawn between 'poplar' and 'trees'",
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 7,
+      "notes": "Handwritten circumflex accent added above the 'o' in 'Saone'",
+      "original_text": "Saone",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "One man, slowly",
+      "line_number": 9,
+      "notes": "Handwritten comma inserted after 'man'",
+      "original_text": "One man slowly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "notes": "Handwritten comma inserted after 'Chalons'",
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "notes": "Handwritten suffix 'ed' inserted above 'sodden'",
+      "original_text": "sodden",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T15:10:34.233154",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791835740-rrYVl3Q3LtMHslzriGmO",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 97.582,
+    "usage": {
+      "input_tokens": 13727,
+      "output_tokens": 2885,
+      "total_tokens": 16612,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13696,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2412,
+      "answer_tokens": 473,
+      "provider_cost_usd": 0.0025727406,
+      "raw": {
+        "completion_tokens": 2885,
+        "prompt_tokens": 13727,
+        "total_tokens": 16612,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2412,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13696,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0025727406,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0025727406,
+          "upstream_inference_prompt_cost": 6.27906e-05,
+          "upstream_inference_completions_cost": 0.00250995
+        }
+      }
+    }
+  }
+}

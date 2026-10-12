@@ -1,0 +1,129 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high-road",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "materials costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and came",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "about and came",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "association, did not",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "association did not",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestly, telling",
+      "line_number": 21,
+      "notes": null,
+      "original_text": "earnestly telling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, when she",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "said when she",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, (comma)",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "said,",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in amazement.",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "Clennam in amazement.",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:02:46.725157",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791835174-dBQPfagHuiam54SluA7f",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 192.47,
+    "usage": {
+      "input_tokens": 5601,
+      "output_tokens": 11024,
+      "total_tokens": 16625,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 10417,
+      "answer_tokens": 607,
+      "provider_cost_usd": 0.00602143,
+      "raw": {
+        "completion_tokens": 11024,
+        "prompt_tokens": 5601,
+        "total_tokens": 16625,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 10417,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00602143,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00602143,
+          "upstream_inference_prompt_cost": 0.00084015,
+          "upstream_inference_completions_cost": 0.00518128
+        }
+      }
+    }
+  }
+}

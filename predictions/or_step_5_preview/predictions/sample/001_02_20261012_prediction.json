@@ -1,0 +1,147 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "bells, and",
+      "line_number": 2,
+      "notes": "The handwritten circled mark after \"bells\" indicates a comma should be inserted.",
+      "original_text": "bells and",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wine-bottles.",
+      "line_number": 11,
+      "notes": "The handwritten note in the margin replaces \"wine bottles\" with \"wine-bottles\". The period after the phrase appears to already exist in printed text.",
+      "original_text": "wine bottles",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "got, through",
+      "line_number": 14,
+      "notes": "The handwritten comma/circled mark between \"got\" and \"through\" indicates a comma should be inserted.",
+      "original_text": "got through",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bars, fashioned",
+      "line_number": 14,
+      "notes": "The handwritten circled mark between \"bars\" and \"fashioned\" indicates a comma should be inserted.",
+      "original_text": "bars fashioned",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "notes": "The handwritten circled mark between \"grating\" and \"where\" indicates a comma should be inserted.",
+      "original_text": "grating where",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "notes": "The handwritten circled mark between \"outside\" and \"and\" indicates a semicolon should be inserted.",
+      "original_text": "outside and",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "notes": "The handwritten circled mark between \"intact\" and \"in\" indicates a comma should be inserted.",
+      "original_text": "intact in",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "notes": "The handwritten mark before the word indicates capitalization of \"indian\" to \"Indian\".",
+      "original_text": "indian ocean",
+      "page": "001.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "was waiting to be fed; looking",
+      "line_number": 36,
+      "notes": "The handwritten circled/semicolon mark between \"fed\" and \"looking\" indicates a semicolon should be inserted.",
+      "original_text": "was waiting to be fed looking",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "notes": "The handwritten circled mark between \"bars\" and \"that\" indicates a comma should be inserted.",
+      "original_text": "bars that",
+      "page": "001.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T14:57:47.866893",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791835028-Rt07pgydmLcqbSUCVYa4",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 43.334,
+    "usage": {
+      "input_tokens": 8072,
+      "output_tokens": 833,
+      "total_tokens": 8905,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4096,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 833,
+      "provider_cost_usd": 0.0064299,
+      "raw": {
+        "completion_tokens": 833,
+        "prompt_tokens": 8072,
+        "total_tokens": 8905,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0064299,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0064299,
+          "upstream_inference_prompt_cost": 0.0041808,
+          "upstream_inference_completions_cost": 0.0022491
+        }
+      }
+    }
+  }
+}

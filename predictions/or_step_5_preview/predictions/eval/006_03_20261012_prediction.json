@@ -1,0 +1,120 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": "Hyphen inserted (or confirmed) between 'high' and 'road'. There is red cursive 'high-road' at margin near line 1.",
+      "original_text": "high road",
+      "page": "003.jpg",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "materials.",
+      "line_number": 4,
+      "notes": "Comma after 'materials' struck through / replaced with period.",
+      "original_text": "materials,",
+      "page": "003.jpg",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and",
+      "line_number": 16,
+      "notes": "Comma inserted after 'about'.",
+      "original_text": "about and",
+      "page": "003.jpg",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "association did",
+      "line_number": 18,
+      "notes": "Crossed out letter 'x' appears in 'associationx did not mend the matter' \u2014 deleting 'x'.",
+      "original_text": "associationx did",
+      "page": "003.jpg",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "behalf, and",
+      "line_number": 23,
+      "notes": "The text reads 'behalf, for she was quite well; but he had not seen her, for what, in their intercourse, was a long time.' There is a caret mark after 'behalf, for' apparently inserting 'and'. Looking carefully: 'behalf, for she was quite well; but he had not seen her' with a 'but' and a mark. There is a caret after 'but'. The corrected text may be 'but'. Actually the caret is at 'but he had not seen her'. The original has 'but' printed; the caret could indicate insertion. Hmm.",
+      "original_text": "behalf, for",
+      "page": "003.jpg",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said; (comma)",
+      "line_number": 35,
+      "notes": "Red hand-written note '(comma)' indicating a comma should be inserted where there is a caret after 'said' (or a punctuation correction). The printed text is 'said, (comma)'? Let me look: 'On his opening the door, Mr. Meagles stopped, faced round, and said; (comma)'. The red '(comma)' is written next to 'said' \u2014 instructing to change semicolon to comma? Actually the printed text shows 'and said; (comma)'? The visible text: 'and said; (comma)' hmm.",
+      "original_text": "said;",
+      "page": "003.jpg",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 37,
+      "notes": "Comma inserted after 'Clennam'.",
+      "original_text": "Clennam in",
+      "page": "003.jpg",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T15:09:09.711622",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791835708-s8TpRQS5NO3CmWPuFBKA",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 46.541,
+    "usage": {
+      "input_tokens": 8072,
+      "output_tokens": 764,
+      "total_tokens": 8836,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4096,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 764,
+      "provider_cost_usd": 0.0062436,
+      "raw": {
+        "completion_tokens": 764,
+        "prompt_tokens": 8072,
+        "total_tokens": 8836,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0062436,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0062436,
+          "upstream_inference_prompt_cost": 0.0041808,
+          "upstream_inference_completions_cost": 0.0020628
+        }
+      }
+    }
+  }
+}

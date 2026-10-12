@@ -1,0 +1,64 @@
+{
+  "model_name": "or_qwen3_8_omni_flash",
+  "date": "2026-10-12T15:13:15.835548",
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:10:48.184615",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "capitalization",
+      "original_text": "why did he dine to-day",
+      "corrected_text": "Why did he dine to-day",
+      "observed_line_number": 27,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is capitalizing the initial word \"why\" \u2192 \"Why\" in the phrase \"why did he dine.\" The prediction also changes \"why\" \u2192 \"Why\" at the start of the same phrase, merely including additional trailing context (\"to-day\"). Since the core intended change (initial capitalization) is correctly captured, the text content matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "cold stones!\"",
+      "corrected_text": "cold stones?\"",
+      "observed_line_number": 28,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth changes the terminal punctuation from an exclamation point to a question mark in \"cold stones!\" \u2192 \"cold stones?\". The prediction makes the same core change (\"cold stones!\\\"\" \u2192 \"cold stones?\\\"\") while including an additional closing quotation mark as surrounding context. Since the essential correction (! to ?) is accurately captured, the text content matches the ground truth's intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "No sir, i have got Maggy with me.",
+      "corrected_text": "No sir, I have got Maggy with me.",
+      "observed_line_number": 10,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

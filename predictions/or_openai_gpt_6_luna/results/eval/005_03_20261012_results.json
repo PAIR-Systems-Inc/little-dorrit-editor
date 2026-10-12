@@ -1,0 +1,36 @@
+{
+  "model_name": "or_openai_gpt_6_luna",
+  "date": "2026-10-12T15:10:27.209817",
+  "annotator": "GPT-6 Luna (OR)",
+  "annotation_date": "2026-10-12T15:08:08.341176",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"if he\" \u2192 \"If he,\" i.e., capitalizes the initial word \"if\" to \"If\". The predicted edit changes \"if\" \u2192 \"If\". Although it omits the following word (\"he\"), it captures the essential intended change: capitalizing \"if\" at the start of the phrase. Including less surrounding context is acceptable as long as the core change is preserved."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces \"said\" with \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the core substitution \"said\" \u2192 \"asked\"; omitting the surrounding context (\"Clennam\") does not change the essential intended edit. Therefore, the text content matches the ground truth\u2019s intention."
+    }
+  ]
+}

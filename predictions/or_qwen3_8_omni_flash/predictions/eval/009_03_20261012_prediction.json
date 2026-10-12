@@ -1,0 +1,111 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart, so",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "heart so",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "his own",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "his own",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 24,
+      "notes": null,
+      "original_text": "generous Mr.",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "confidentially indeed up into his face",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "confidentially up into his face",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Gowan,\u201d at length, said",
+      "line_number": 35,
+      "notes": null,
+      "original_text": "Gowan,\u201d at length said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "That\u2019s well! I hoped so; I am not disappointed.\u201d",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "That\u2019s well! I hope so; I am not disappointed.\u201d",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:11:49.197276",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791835753-BZiSTgned7xmolF6KfbS",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 157.832,
+    "usage": {
+      "input_tokens": 5599,
+      "output_tokens": 8126,
+      "total_tokens": 13725,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 7643,
+      "answer_tokens": 483,
+      "provider_cost_usd": 0.00465907,
+      "raw": {
+        "completion_tokens": 8126,
+        "prompt_tokens": 5599,
+        "total_tokens": 13725,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 7643,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00465907,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00465907,
+          "upstream_inference_prompt_cost": 0.00083985,
+          "upstream_inference_completions_cost": 0.00381922
+        }
+      }
+    }
+  }
+}

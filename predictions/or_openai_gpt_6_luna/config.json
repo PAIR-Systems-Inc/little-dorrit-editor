@@ -1,0 +1,15 @@
+{
+  "model_id": "or_openai_gpt_6_luna",
+  "display_name": "GPT-6 Luna (OR)",
+  "shots": 2,
+  "temperature": null,
+  "reasoning_effort": "high",
+  "reasoning_enabled": true,
+  "date": "2026-10-12",
+  "repeats": 3,
+  "judge_model": "or_openai_gpt_5_2",
+  "evaluation_pages": 12,
+  "sample_pages": 2,
+  "benchmark_max_concurrent_requests": 72,
+  "notes": "Two-shot benchmark, three repeats; high reasoning effort."
+}

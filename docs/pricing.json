@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-12T16:40:02.839449+00:00",
+  "fetched_at": "2026-10-12T20:33:40.973140+00:00",
   "currency": "USD",
   "basis": "Standard uncached text token rates. OpenRouter quotes use the listed starting rate. Actual routing, context tiers, images, caching, and reasoning usage can change the bill.",
   "catalog_source": "https://openrouter.ai/api/v1/models",
@@ -26,6 +26,32 @@
         "input_cache_read": "0.00000025",
         "input_cache_write": "0.0000125",
         "input_cache_write_1h": "0.00002"
+      }
+    },
+    "or_claude_haiku_5_5": {
+      "api_model": "anthropic/claude-haiku-5.5",
+      "route": "OpenRouter",
+      "input_per_million": 0.09999999999999999,
+      "output_per_million": 0.5,
+      "source": "https://openrouter.ai/anthropic/claude-haiku-5.5",
+      "verified_at": "2026-10-12",
+      "provider_pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "input_cache_write_1h": "0.0000002",
+        "overrides": [
+          {
+            "min_prompt_tokens": 100000,
+            "prompt": "0.0000005",
+            "completion": "0.0000025",
+            "input_cache_read": "0.00000005",
+            "input_cache_write": "0.000000625",
+            "input_cache_write_1h": "0.000001"
+          }
+        ]
       }
     },
     "or_claude_opus_5": {
@@ -221,6 +247,19 @@
         "input_cache_read": "0.000000055"
       }
     },
+    "or_glm_5_3_flashx": {
+      "api_model": "z-ai/glm-5.3-flashx",
+      "route": "OpenRouter",
+      "input_per_million": 0.37,
+      "output_per_million": 1.25,
+      "source": "https://openrouter.ai/z-ai/glm-5.3-flashx",
+      "verified_at": "2026-10-12",
+      "provider_pricing": {
+        "prompt": "0.00000037",
+        "completion": "0.00000125",
+        "input_cache_read": "0.00000009"
+      }
+    },
     "or_gpt_4o_2024_11_20": {
       "api_model": "openai/gpt-4o-2024-11-20",
       "route": "OpenRouter",
@@ -335,6 +374,30 @@
             "completion": "0.000075",
             "input_cache_read": "0.000002",
             "input_cache_write": "0.000025"
+          }
+        ]
+      }
+    },
+    "or_openai_gpt_6_luna": {
+      "api_model": "openai/gpt-6-luna",
+      "route": "OpenRouter",
+      "input_per_million": 0.09999999999999999,
+      "output_per_million": 0.5,
+      "source": "https://openrouter.ai/openai/gpt-6-luna",
+      "verified_at": "2026-10-12",
+      "provider_pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.0000002",
+            "completion": "0.00000075",
+            "input_cache_read": "0.00000002",
+            "input_cache_write": "0.00000025"
           }
         ]
       }
@@ -503,14 +566,14 @@
     "or_gemma_4_27b": {
       "api_model": "google/gemma-4-26b-a4b-it",
       "route": "OpenRouter",
-      "input_per_million": 0.09,
-      "output_per_million": 0.3,
+      "input_per_million": 0.0765,
+      "output_per_million": 0.255,
       "source": "https://openrouter.ai/google/gemma-4-26b-a4b-it",
       "verified_at": "2026-10-12",
       "provider_pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       }
     },
     "or_gemma_4_31b": {
@@ -669,6 +732,19 @@
         "completion": "0.00000059"
       }
     },
+    "or_xiaomi_mimo_v2_6_pro": {
+      "api_model": "xiaomi/mimo-v2.6-pro",
+      "route": "OpenRouter",
+      "input_per_million": 0.435,
+      "output_per_million": 0.87,
+      "source": "https://openrouter.ai/xiaomi/mimo-v2.6-pro",
+      "verified_at": "2026-10-12",
+      "provider_pricing": {
+        "prompt": "0.000000435",
+        "completion": "0.00000087",
+        "input_cache_read": "0.0000000036"
+      }
+    },
     "or_minimax_m3": {
       "api_model": "minimax/minimax-m3",
       "route": "OpenRouter",
@@ -773,6 +849,20 @@
         "input_cache_read": "0.00000015"
       }
     },
+    "or_meta_muse_wonder": {
+      "api_model": "meta/muse-wonder",
+      "route": "OpenRouter",
+      "input_per_million": 4.0,
+      "output_per_million": 20.0,
+      "source": "https://openrouter.ai/meta/muse-wonder",
+      "verified_at": "2026-10-12",
+      "provider_pricing": {
+        "prompt": "0.000004",
+        "completion": "0.00002",
+        "web_search": "0.0025",
+        "input_cache_read": "0.0000002"
+      }
+    },
     "or_qwen2_5_vl_72b_instruct": {
       "api_model": "qwen/qwen2.5-vl-72b-instruct",
       "route": "OpenRouter",
@@ -822,6 +912,19 @@
         ]
       }
     },
+    "or_qwen3_8_omni_flash": {
+      "api_model": "qwen/qwen3.8-omni-flash",
+      "route": "OpenRouter",
+      "input_per_million": 0.15,
+      "output_per_million": 0.47,
+      "source": "https://openrouter.ai/qwen/qwen3.8-omni-flash",
+      "verified_at": "2026-10-12",
+      "provider_pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.00000047",
+        "input_cache_read": "0.000000016"
+      }
+    },
     "or_step_3_7_flash": {
       "api_model": "stepfun/step-3.7-flash",
       "route": "OpenRouter",
@@ -833,6 +936,19 @@
         "prompt": "0.0000002",
         "completion": "0.00000115",
         "input_cache_read": "0.00000004"
+      }
+    },
+    "or_step_5_preview": {
+      "api_model": "stepfun/step-5-preview",
+      "route": "OpenRouter",
+      "input_per_million": 1.0,
+      "output_per_million": 2.7,
+      "source": "https://openrouter.ai/stepfun/step-5-preview",
+      "verified_at": "2026-10-12",
+      "provider_pricing": {
+        "prompt": "0.000001",
+        "completion": "0.0000027",
+        "input_cache_read": "0.00000005"
       }
     }
   }

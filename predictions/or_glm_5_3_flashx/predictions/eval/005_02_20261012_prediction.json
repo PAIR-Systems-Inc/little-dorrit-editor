@@ -1,0 +1,75 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Cap",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "If",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 39,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T14:59:25.004904",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791835151-5WqgFLuP6WctvnJHcMNe",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 19.932,
+    "usage": {
+      "input_tokens": 24185,
+      "output_tokens": 931,
+      "total_tokens": 25116,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 16576,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 804,
+      "answer_tokens": 127,
+      "provider_cost_usd": 0.00547092,
+      "raw": {
+        "completion_tokens": 931,
+        "prompt_tokens": 24185,
+        "total_tokens": 25116,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 804,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 16576,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00547092,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00547092,
+          "upstream_inference_prompt_cost": 0.00430717,
+          "upstream_inference_completions_cost": 0.00116375
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "or_step_5_preview",
+  "date": "2026-10-12T14:54:53.519014",
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T14:52:29.116690",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 1,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit have type \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both edits change \"Sun and Shadow\" to \"Sun and Shadow.\" by adding a period at the end. This captures the same core correction with identical original and corrected text. Line number differences are ignored as instructed."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

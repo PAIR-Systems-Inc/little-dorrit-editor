@@ -1,0 +1,93 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "howling, over",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "howling over",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "yonder, to-day",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "yonder to-day",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sir",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "sir",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "pockets, and",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "pockets and",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:01:16.193321",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791835109-l1ZxtpR4EfTg3QxO5MuL",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 168.782,
+    "usage": {
+      "input_tokens": 5599,
+      "output_tokens": 10451,
+      "total_tokens": 16050,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 10144,
+      "answer_tokens": 307,
+      "provider_cost_usd": 0.00575182,
+      "raw": {
+        "completion_tokens": 10451,
+        "prompt_tokens": 5599,
+        "total_tokens": 16050,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 10144,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00575182,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00575182,
+          "upstream_inference_prompt_cost": 0.00083985,
+          "upstream_inference_completions_cost": 0.00491197
+        }
+      }
+    }
+  }
+}

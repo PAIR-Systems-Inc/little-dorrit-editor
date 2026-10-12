@@ -1,0 +1,99 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "FELLOW TRAVELLERS",
+      "corrected_text": "FELLOW TRAVELLERS.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "to-day Sir",
+      "corrected_text": "to-day, Sir",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "his pockets and rattling",
+      "corrected_text": "his pockets, and rattling",
+      "line_number": 17,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T14:59:09.065162",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791835076-bI5jCiP2iGs2zMNzSp3E",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 78.786,
+    "usage": {
+      "input_tokens": 13741,
+      "output_tokens": 2965,
+      "total_tokens": 16706,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13696,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2632,
+      "answer_tokens": 333,
+      "provider_cost_usd": 0.0026484306,
+      "raw": {
+        "completion_tokens": 2965,
+        "prompt_tokens": 13741,
+        "total_tokens": 16706,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2632,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13696,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0026484306,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0026484306,
+          "upstream_inference_prompt_cost": 6.88806e-05,
+          "upstream_inference_completions_cost": 0.00257955
+        }
+      }
+    }
+  }
+}

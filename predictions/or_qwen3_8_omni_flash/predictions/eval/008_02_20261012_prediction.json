@@ -1,0 +1,113 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XI",
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "LET LOOSE",
+      "corrected_text": "LET LOOSE.",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stream, like",
+      "corrected_text": "stream like",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar-trees",
+      "corrected_text": "poplar trees",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Saone it",
+      "corrected_text": "Sa\u00f4ne, it",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons was",
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sodden with",
+      "corrected_text": "soddened with",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:10:46.466311",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791835589-LXIS7iCwCzWwgOeH2DKr",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 258.553,
+    "usage": {
+      "input_tokens": 5616,
+      "output_tokens": 18211,
+      "total_tokens": 23827,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 17727,
+      "answer_tokens": 484,
+      "provider_cost_usd": 0.00940157,
+      "raw": {
+        "completion_tokens": 18211,
+        "prompt_tokens": 5616,
+        "total_tokens": 23827,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 17727,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00940157,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00940157,
+          "upstream_inference_prompt_cost": 0.0008424,
+          "upstream_inference_completions_cost": 0.00855917
+        }
+      }
+    }
+  }
+}

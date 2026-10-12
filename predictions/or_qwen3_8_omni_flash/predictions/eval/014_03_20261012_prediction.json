@@ -1,0 +1,102 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "bedroom",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "For Mr.",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "For Mr",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "morning; and,",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "morning; and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "time; but",
+      "line_number": 12,
+      "notes": null,
+      "original_text": "time but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "making me; not",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "making me not",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:16:33.643256",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791835992-A9LxixTVuUJxyBAIZOz0",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 203.694,
+    "usage": {
+      "input_tokens": 5616,
+      "output_tokens": 12338,
+      "total_tokens": 17954,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 5376,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 11962,
+      "answer_tokens": 376,
+      "provider_cost_usd": 0.005920876,
+      "raw": {
+        "completion_tokens": 12338,
+        "prompt_tokens": 5616,
+        "total_tokens": 17954,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 11962,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 5376,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.005920876,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.005920876,
+          "upstream_inference_prompt_cost": 0.000122016,
+          "upstream_inference_completions_cost": 0.00579886
+        }
+      }
+    }
+  }
+}

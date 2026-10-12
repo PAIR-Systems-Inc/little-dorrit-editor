@@ -1,0 +1,84 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "No, sir",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "No sir",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 28,
+      "notes": "Margin note '\u2192 cap' pointing to the start of the quoted question",
+      "original_text": "why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cold stones?",
+      "line_number": 29,
+      "notes": "Margin note '\u2192 question mark' indicating the exclamation mark should be a question mark",
+      "original_text": "cold stones!",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T14:52:02.054113",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791834707-SHsT6mfiwGWDH8Uvg3e3",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 18.99,
+    "usage": {
+      "input_tokens": 24305,
+      "output_tokens": 660,
+      "total_tokens": 24965,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 16576,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 438,
+      "answer_tokens": 222,
+      "provider_cost_usd": 0.00517657,
+      "raw": {
+        "completion_tokens": 660,
+        "prompt_tokens": 24305,
+        "total_tokens": 24965,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 438,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 16576,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00517657,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00517657,
+          "upstream_inference_prompt_cost": 0.00435157,
+          "upstream_inference_completions_cost": 0.000825
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "For Mr.",
+      "corrected_text": "For, Mr.",
+      "line_number": 2,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 11,
+      "page": "452"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "me; not",
+      "corrected_text": "me, not",
+      "line_number": 21,
+      "page": "452"
+    }
+  ],
+  "annotator": "Claude Haiku 5.5 (OR)",
+  "annotation_date": "2026-10-12T14:57:33.853587",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_haiku_5_5",
+    "model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1791835039-T5vvuTntniXOynQ7dnDG",
+    "provider": "Claude Platform on AWS",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 18.887,
+    "usage": {
+      "input_tokens": 16450,
+      "output_tokens": 2035,
+      "total_tokens": 18485,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1823,
+      "answer_tokens": 212,
+      "provider_cost_usd": 0.0026625,
+      "raw": {
+        "completion_tokens": 2035,
+        "prompt_tokens": 16450,
+        "total_tokens": 18485,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1823,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0026625,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0026625,
+          "upstream_inference_prompt_cost": 0.001645,
+          "upstream_inference_completions_cost": 0.0010175
+        }
+      }
+    }
+  }
+}

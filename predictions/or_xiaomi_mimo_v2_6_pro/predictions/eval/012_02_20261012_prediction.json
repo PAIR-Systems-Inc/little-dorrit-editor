@@ -1,0 +1,127 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter xxix",
+      "corrected_text": "Chapter xxix.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "MRS. FLINTWINCH GOES ON DREAMING",
+      "corrected_text": "MRS. FLINTWINCH GOES ON DREAMING.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "in the city preserved",
+      "corrected_text": "in the City preserved",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "return of the same sequences",
+      "corrected_text": "return to the same sequences",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them, images",
+      "corrected_text": "them; images",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "busy existence at",
+      "corrected_text": "busy existence, at",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stricken motionless when",
+      "corrected_text": "stricken motionless, when",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "beyond our view by",
+      "corrected_text": "beyond our view, by",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "contracted existence is",
+      "corrected_text": "contracted existence, is",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "her liege lord",
+      "corrected_text": "her liege, lord",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T15:11:10.348230",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791835409-Lp43uEVRuZy4gHELVErb",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 458.384,
+    "usage": {
+      "input_tokens": 13699,
+      "output_tokens": 14938,
+      "total_tokens": 28637,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13696,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 14367,
+      "answer_tokens": 571,
+      "provider_cost_usd": 0.0130466706,
+      "raw": {
+        "completion_tokens": 14938,
+        "prompt_tokens": 13699,
+        "total_tokens": 28637,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 14367,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13696,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0130466706,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0130466706,
+          "upstream_inference_prompt_cost": 5.06106e-05,
+          "upstream_inference_completions_cost": 0.01299606
+        }
+      }
+    }
+  }
+}

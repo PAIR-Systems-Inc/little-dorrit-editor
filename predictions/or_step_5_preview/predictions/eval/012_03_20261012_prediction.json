@@ -1,0 +1,138 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "city;",
+      "line_number": 1,
+      "notes": "Handwritten semicolon inserted after \u201ccity\u201d (caret mark visible above the line).",
+      "original_text": "city",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to recurring",
+      "line_number": 2,
+      "notes": "Handwritten \u201cto\u201d inserted/pointed to before \u201crecurring\u201d with an arrow/caret.",
+      "original_text": "recurring",
+      "page": "373",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "reluctant return",
+      "line_number": 3,
+      "notes": "Handwritten strikethrough through \u201cl\u201d at end of \u201creluctant\u201d, deleting it.",
+      "original_text": "reluctant",
+      "page": "373",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "seen;",
+      "line_number": 13,
+      "notes": "Handwritten semicolon inserted after \u201cseen\u201d.",
+      "original_text": "seen",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence;",
+      "line_number": 18,
+      "notes": "Handwritten semicolon inserted after \u201cexistence\u201d.",
+      "original_text": "existence",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "brought to it, to suppose",
+      "line_number": 15,
+      "notes": "Handwritten comma after \u201cit\u201d.",
+      "original_text": "brought to it to suppose",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still;",
+      "line_number": 16,
+      "notes": "Handwritten semicolon after \u201cstand-still\u201d.",
+      "original_text": "stand-still",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view, by",
+      "line_number": 17,
+      "notes": "Handwritten comma inserted after \u201cview\u201d.",
+      "original_text": "view by",
+      "page": "373",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Lord",
+      "line_number": 26,
+      "notes": "Handwritten \u201cC (cap)\u201d inserted above, capitalizing \u201clord\u201d to \u201cLord\u201d.",
+      "original_text": "lord",
+      "page": "373",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T15:13:06.961725",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791835943-T0qc4KDoLAdnOq4Duisn",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 47.404,
+    "usage": {
+      "input_tokens": 8072,
+      "output_tokens": 673,
+      "total_tokens": 8745,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4096,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 673,
+      "provider_cost_usd": 0.0059979,
+      "raw": {
+        "completion_tokens": 673,
+        "prompt_tokens": 8072,
+        "total_tokens": 8745,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0059979,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0059979,
+          "upstream_inference_prompt_cost": 0.0041808,
+          "upstream_inference_completions_cost": 0.0018171
+        }
+      }
+    }
+  }
+}

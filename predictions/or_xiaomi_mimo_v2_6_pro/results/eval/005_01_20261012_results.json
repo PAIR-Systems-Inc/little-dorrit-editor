@@ -1,0 +1,36 @@
+{
+  "model_name": "or_xiaomi_mimo_v2_6_pro",
+  "date": "2026-10-12T14:54:52.645091",
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T14:52:26.947446",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth changes \"if he\" to \"If he,\" i.e., it capitalizes the initial \"if\" at the start of the phrase. The prediction changes \"if\" to \"If,\" which captures the same core correction (capitalizing the initial word). Although it includes less surrounding context (omits \"he\"), it still reflects the essential intended change."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"said Clennam\" to \"asked Clennam\", where the essential correction is the word substitution \"said\" \u2192 \"asked\". The prediction captures this core change by replacing \"said\" with \"asked\". Although it omits the surrounding context word (\"Clennam\") in the original/corrected text fields, the fundamental intended edit (changing the verb from \"said\" to \"asked\") is correctly represented."
+    }
+  ]
+}

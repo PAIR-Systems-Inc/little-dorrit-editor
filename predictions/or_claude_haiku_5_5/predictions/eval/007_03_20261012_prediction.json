@@ -1,0 +1,56 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "Claude Haiku 5.5 (OR)",
+  "annotation_date": "2026-10-12T15:09:12.763164",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_haiku_5_5",
+    "model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1791835741-0TE3hQcpDvwVseblY9y0",
+    "provider": "Claude Platform on AWS",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 15.37,
+    "usage": {
+      "input_tokens": 16449,
+      "output_tokens": 1057,
+      "total_tokens": 17506,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 953,
+      "answer_tokens": 104,
+      "provider_cost_usd": 0.0021734,
+      "raw": {
+        "completion_tokens": 1057,
+        "prompt_tokens": 16449,
+        "total_tokens": 17506,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 953,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0021734,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0021734,
+          "upstream_inference_prompt_cost": 0.0016449,
+          "upstream_inference_completions_cost": 0.0005285
+        }
+      }
+    }
+  }
+}

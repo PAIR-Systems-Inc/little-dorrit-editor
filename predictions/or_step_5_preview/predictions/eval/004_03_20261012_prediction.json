@@ -1,0 +1,102 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Don't sleep",
+      "line_number": 8,
+      "notes": "Apostrophe added to Don't (written as 'Dont' in printed OCR, but visually appears as Don't). Looking at the line, the red markup is at the beginning of the line before the quote. The image shows a red mark (like a small check or caret) at the left margin before this line. This appears to be a proofreading mark to start a new paragraph/indent, or to call attention to the line. Given the content, this is likely a paragraph mark. Actually, the mark appears to be a red slanted mark at the left, which in proofreading indicates a new paragraph indent. But it's hard to determine. Let me reconsider - there are red margin marks at lines 8 and 15.",
+      "original_text": "Dont sleep",
+      "page": "003.jpg",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dine to-day",
+      "line_number": 27,
+      "notes": "Red ink editorial note: 'CAP' written above with arrow pointing to 'why'",
+      "original_text": "dine to day",
+      "page": "003.jpg",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 27,
+      "notes": "Arrow points to 'why' with 'CAP' written above in red ink, indicating capital H",
+      "original_text": "why",
+      "page": "003.jpg",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stones.",
+      "line_number": 29,
+      "notes": "Red punctuation mark after 'cold stones' - comma changed to question mark or added. Original has closing quote with no visible period; handwritten red mark indicates question mark. Actually the line reads 'the mercy of the cold stones\" She' - the handwritten red mark appears to be a comma or punctuation insertion.",
+      "original_text": "stones",
+      "page": "003.jpg",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "mask.",
+      "line_number": 30,
+      "notes": "Red handwritten note in margin: 'QUESTION mask' with period added",
+      "original_text": "mask",
+      "page": "003.jpg",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T15:07:33.701227",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791835613-HDNFRZD4fXguXMMne1QT",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 45.574,
+    "usage": {
+      "input_tokens": 8072,
+      "output_tokens": 566,
+      "total_tokens": 8638,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4096,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 566,
+      "provider_cost_usd": 0.005709,
+      "raw": {
+        "completion_tokens": 566,
+        "prompt_tokens": 8072,
+        "total_tokens": 8638,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.005709,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.005709,
+          "upstream_inference_prompt_cost": 0.0041808,
+          "upstream_inference_completions_cost": 0.0015282
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "church bells, and",
+      "line_number": 2,
+      "notes": "Handwritten comma inserted after 'bells'.",
+      "original_text": "church bells and",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wine-bottles",
+      "line_number": 11,
+      "notes": "Handwritten hyphen inserted between 'wine' and 'bottles', with 'wine-bottles' also written in the right margin as clarification.",
+      "original_text": "wine bottles",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "got, through",
+      "line_number": 14,
+      "notes": "Circled comma inserted after 'got'.",
+      "original_text": "got through",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "iron bars, fashioned",
+      "line_number": 14,
+      "notes": "Circled comma inserted after 'bars'.",
+      "original_text": "iron bars fashioned",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "notes": "Circled comma inserted after 'grating'.",
+      "original_text": "grating where",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "notes": "Circled semicolon inserted after 'outside'.",
+      "original_text": "outside and",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "notes": "Circled comma inserted after 'intact'.",
+      "original_text": "intact in",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "notes": "Circled mark around the 'o' of 'ocean' indicates capitalization.",
+      "original_text": "Indian ocean",
+      "page": "001.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "be fed; looking",
+      "line_number": 36,
+      "notes": "Circled semicolon inserted after 'fed'.",
+      "original_text": "be fed looking",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "notes": "Circled comma inserted after 'bars'.",
+      "original_text": "bars that",
+      "page": "001.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T14:52:36.378133",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791834701-mq5CanVPT9WYbv35pChU",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 58.89,
+    "usage": {
+      "input_tokens": 13727,
+      "output_tokens": 2425,
+      "total_tokens": 16152,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13696,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1650,
+      "answer_tokens": 775,
+      "provider_cost_usd": 0.0021725406,
+      "raw": {
+        "completion_tokens": 2425,
+        "prompt_tokens": 13727,
+        "total_tokens": 16152,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1650,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13696,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0021725406,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0021725406,
+          "upstream_inference_prompt_cost": 6.27906e-05,
+          "upstream_inference_completions_cost": 0.00210975
+        }
+      }
+    }
+  }
+}

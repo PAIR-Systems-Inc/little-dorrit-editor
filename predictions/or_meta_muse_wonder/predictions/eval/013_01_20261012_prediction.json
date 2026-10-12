@@ -1,0 +1,113 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam;",
+      "corrected_text": "Clennam,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "driest snorts",
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him,",
+      "corrected_text": "benevolence bubbling out of him,",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I",
+      "corrected_text": "now, I",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you now",
+      "corrected_text": "you, now",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now to",
+      "corrected_text": "now, to",
+      "line_number": 37,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Muse Wonder",
+  "annotation_date": "2026-10-12T14:57:51.407137",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_wonder",
+    "model": "meta/muse-wonder",
+    "response_id": "gen-1791834973-Z8zaczlsnVGWPFdFjDsL",
+    "provider": "Meta",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 101.508,
+    "usage": {
+      "input_tokens": 13655,
+      "output_tokens": 8148,
+      "total_tokens": 21803,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 9588,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 7729,
+      "answer_tokens": 419,
+      "provider_cost_usd": 0.1811456,
+      "raw": {
+        "completion_tokens": 8148,
+        "prompt_tokens": 13655,
+        "total_tokens": 21803,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 7729,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 9588,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.1811456,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.1811456,
+          "upstream_inference_prompt_cost": 0.0181856,
+          "upstream_inference_completions_cost": 0.16296
+        }
+      }
+    }
+  }
+}

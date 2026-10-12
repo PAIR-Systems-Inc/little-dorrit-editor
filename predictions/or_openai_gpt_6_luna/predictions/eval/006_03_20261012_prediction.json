@@ -1,0 +1,106 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tossed about and",
+      "corrected_text": "tossed about, and",
+      "line_number": 13,
+      "page": "352"
+    },
+    {
+      "type": "deletion",
+      "original_text": ",",
+      "corrected_text": "",
+      "line_number": 15,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said when",
+      "corrected_text": "said, when",
+      "line_number": 23,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said",
+      "corrected_text": "said,",
+      "line_number": 25,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 29,
+      "page": "352"
+    }
+  ],
+  "annotator": "GPT-6 Luna (OR)",
+  "annotation_date": "2026-10-12T15:09:24.454758",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_luna",
+    "model": "openai/gpt-6-luna",
+    "response_id": "gen-1791835714-2Xcj29NVrEiTOgcuWoHK",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 52.139,
+    "usage": {
+      "input_tokens": 22524,
+      "output_tokens": 4212,
+      "total_tokens": 26736,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 22521,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3854,
+      "answer_tokens": 358,
+      "provider_cost_usd": 0.00233151,
+      "raw": {
+        "completion_tokens": 4212,
+        "prompt_tokens": 22524,
+        "total_tokens": 26736,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3854,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 22521,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00233151,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00233151,
+          "upstream_inference_prompt_cost": 0.00022551,
+          "upstream_inference_completions_cost": 0.002106
+        }
+      }
+    }
+  }
+}

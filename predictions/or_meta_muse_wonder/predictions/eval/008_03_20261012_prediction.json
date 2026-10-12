@@ -1,0 +1,127 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XI",
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Let Loose",
+      "corrected_text": "Let Loose.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "dull autumn",
+      "corrected_text": "dull, autumn",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "trees",
+      "corrected_text": "trees,",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "man slowly",
+      "corrected_text": "man, slowly",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons was",
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden",
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Muse Wonder",
+  "annotation_date": "2026-10-12T15:09:46.239746",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_wonder",
+    "model": "meta/muse-wonder",
+    "response_id": "gen-1791835739-HRKYW6Dq1chuplNP5dIt",
+    "provider": "Meta",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 51.046,
+    "usage": {
+      "input_tokens": 13682,
+      "output_tokens": 4066,
+      "total_tokens": 17748,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13556,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3563,
+      "answer_tokens": 503,
+      "provider_cost_usd": 0.0845352,
+      "raw": {
+        "completion_tokens": 4066,
+        "prompt_tokens": 13682,
+        "total_tokens": 17748,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3563,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13556,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0845352,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0845352,
+          "upstream_inference_prompt_cost": 0.0032152,
+          "upstream_inference_completions_cost": 0.08132
+        }
+      }
+    }
+  }
+}

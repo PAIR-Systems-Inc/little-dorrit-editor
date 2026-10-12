@@ -1,0 +1,111 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "and that whatever",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "and that in our fancy whatever",
+      "page": "372.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "is now.\" \"Thank you,\"",
+      "line_number": 19,
+      "notes": null,
+      "original_text": "is now.\"",
+      "page": "372.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you,\" murmured",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "\"Thank you!\" murmured",
+      "page": "372.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "372.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "372.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "greater things than once were",
+      "line_number": 37,
+      "notes": null,
+      "original_text": "greater things that once were",
+      "page": "372.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T15:11:56.633319",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791835903-lStvCPjMOEj1jj7JgTmf",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 17.9,
+    "usage": {
+      "input_tokens": 24197,
+      "output_tokens": 714,
+      "total_tokens": 24911,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 24192,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 317,
+      "answer_tokens": 397,
+      "provider_cost_usd": 0.00307163,
+      "raw": {
+        "completion_tokens": 714,
+        "prompt_tokens": 24197,
+        "total_tokens": 24911,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 317,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 24192,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00307163,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00307163,
+          "upstream_inference_prompt_cost": 0.00217913,
+          "upstream_inference_completions_cost": 0.0008925
+        }
+      }
+    }
+  }
+}

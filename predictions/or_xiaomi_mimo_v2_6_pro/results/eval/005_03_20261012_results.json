@@ -1,0 +1,36 @@
+{
+  "model_name": "or_xiaomi_mimo_v2_6_pro",
+  "date": "2026-10-12T15:10:45.887751",
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T15:08:20.332670",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "do? if he",
+      "corrected_text": "do? If he",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth changes \"if he\" to \"If he\" (capitalizing the initial 'i'). The prediction changes \"do? if he\" to \"do? If he,\" which includes extra surrounding context but still performs the same essential correction: capitalizing \"if\" to \"If\". Therefore, it captures the core intended change."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "\"Hadn't he better let it go?\" said Clennam.",
+      "corrected_text": "\"Hadn't he better let it go?\" asked Clennam.",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth replacement is \"said Clennam\" \u2192 \"asked Clennam\". The predicted edit performs the same core substitution, merely including additional surrounding context (the quoted sentence and punctuation). The essential intended change (said\u2192asked with \"Clennam\") is correctly captured."
+    }
+  ]
+}

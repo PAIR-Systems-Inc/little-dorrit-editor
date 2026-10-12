@@ -1,0 +1,102 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hyphen",
+      "line_number": 5,
+      "notes": "Located in right margin next to poplar trees on same line",
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees,",
+      "line_number": 5,
+      "notes": "",
+      "original_text": "poplar trees,",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "man slowly",
+      "line_number": 8,
+      "notes": "Star/caret mark before One; handwritten man with strikethrough on One",
+      "original_text": "One man",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 8,
+      "notes": "Comma added after Chalons; handwritten comma visible in margin or inline",
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "carried",
+      "line_number": 12,
+      "notes": "Small 'ed' handwritten above carried",
+      "original_text": "carry",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T15:01:17.525406",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791835239-hrpjKulIEb08fFZP8ot6",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 45.921,
+    "usage": {
+      "input_tokens": 8072,
+      "output_tokens": 318,
+      "total_tokens": 8390,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4096,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 318,
+      "provider_cost_usd": 0.0050394,
+      "raw": {
+        "completion_tokens": 318,
+        "prompt_tokens": 8072,
+        "total_tokens": 8390,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0050394,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0050394,
+          "upstream_inference_prompt_cost": 0.0041808,
+          "upstream_inference_completions_cost": 0.0008586
+        }
+      }
+    }
+  }
+}

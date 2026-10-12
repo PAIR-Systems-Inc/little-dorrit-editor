@@ -1,0 +1,129 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "high road",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "materials, costing",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "materials costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "about and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "tion",
+      "page": "003.png",
+      "type": "deletion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "behalf, yet",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "behalf, yet telling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, (comma)",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "proud character",
+      "line_number": 46,
+      "notes": null,
+      "original_text": "proudcharac ter",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T15:03:24.219642",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791835365-8JeOf1sWEIODnOcx4fUY",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 41.192,
+    "usage": {
+      "input_tokens": 8072,
+      "output_tokens": 499,
+      "total_tokens": 8571,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 6144,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 499,
+      "provider_cost_usd": 0.0035825,
+      "raw": {
+        "completion_tokens": 499,
+        "prompt_tokens": 8072,
+        "total_tokens": 8571,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 6144,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0035825,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0035825,
+          "upstream_inference_prompt_cost": 0.0022352,
+          "upstream_inference_completions_cost": 0.0013473
+        }
+      }
+    }
+  }
+}

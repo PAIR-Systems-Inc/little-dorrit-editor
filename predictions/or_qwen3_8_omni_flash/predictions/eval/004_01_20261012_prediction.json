@@ -1,0 +1,75 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "No sir, I have got Maggy with me.",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "No sir, i have got Maggy with me.",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "why did he dine to-day, and leave this little creature to the mercy of the cold stones?\" She had no belief that it would have been a just reflection; she simply knew, by experience, that such delusions did sometimes present themselves to people. It was a part of her father's misfortunes that they did.",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "\"Why did he dine to-day, and leave this little creature to the mercy of the cold stones!\" She had no belief that it would have been a just reflection; she simply knew, by experience, that such delusions did sometimes present themselves to people. It was a part of her father's misfortunes that they did.",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T14:54:11.886632",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791834704-x7cRZZzLrp9wa4FYQqQO",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 149.238,
+    "usage": {
+      "input_tokens": 5601,
+      "output_tokens": 7568,
+      "total_tokens": 13169,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 7266,
+      "answer_tokens": 302,
+      "provider_cost_usd": 0.00439711,
+      "raw": {
+        "completion_tokens": 7568,
+        "prompt_tokens": 5601,
+        "total_tokens": 13169,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 7266,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00439711,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00439711,
+          "upstream_inference_prompt_cost": 0.00084015,
+          "upstream_inference_completions_cost": 0.00355696
+        }
+      }
+    }
+  }
+}

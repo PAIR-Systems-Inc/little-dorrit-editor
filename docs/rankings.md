@@ -1,6 +1,6 @@
 # Little Dorrit benchmark rankings
 
-86 models. Latest benchmark run: 2026-10-12.
+93 models. Latest benchmark run: 2026-10-12.
 
 Scores pool edit-level TP, FP, and FN across evaluated pages and runs. Precision = TP / (TP + FP); recall = TP / (TP + FN); F1 is their harmonic mean. Higher is better. Zero-denominator scores are zero. F1 confidence intervals are calculated in the interactive site; small differences may not be meaningful.
 
@@ -20,80 +20,87 @@ Pricing snapshot: 2026-10-12 (UTC). Prices are USD per million tokens for the ex
 | 10 | Claude Sonnet 5.5* · OpenRouter · 2-shot | 0.6125 | 0.6051 | 0.6202 | $2.00 | $10.00 | 2026-10-12 | 2026-09-28 |
 | 11 | GPT-5.5 Pro · OpenRouter · 2-shot | 0.6078 | 0.5990 | 0.6169 | $30.00 | $180.00 | 2026-04-26 | 2026-04-24 |
 | 12 | Muse Spark 1.3 · OpenRouter · 2-shot | 0.6078 | 0.5990 | 0.6169 | $1.25 | $4.25 | 2026-09-10 | 2026-09-02 |
-| 13 | Gemini 3.8 Flash* · OpenRouter · 2-shot | 0.5954 | 0.6094 | 0.5821 | $0.75 | $3.75 | 2026-09-06 | 2026-09-02 |
-| 14 | GPT-5.5 · 2-shot | 0.5820 | 0.5777 | 0.5864 | Unknown | Unknown | 2026-04-26 | 2026-04-23 |
-| 15 | GPT-5.6 Sol · 2-shot | 0.5811 | 0.5660 | 0.5970 | Unknown | Unknown | 2026-07-23 | 2026-07-09 |
-| 16 | Kimi K2.6 Nitro · OpenRouter · 2-shot | 0.5714 | 0.6317 | 0.5217 | Unknown | Unknown | 2026-04-26 | 2026-04-20 |
-| 17 | GPT-5.3 Codex · OpenRouter · 2-shot | 0.5699 | 0.6105 | 0.5344 | $1.75 | $14.00 | 2026-03-05 | 2026-02-05 |
-| 18 | Grok 4.7 · OpenRouter · 2-shot | 0.5640 | 0.5901 | 0.5401 | $2.00 | $6.00 | 2026-10-12 | 2026-09-21 |
-| 19 | Grok 4.6 · OpenRouter · 2-shot | 0.5521 | 0.5377 | 0.5672 | $2.00 | $6.00 | 2026-09-06 | 2026-08-12 |
-| 20 | Claude Sonnet 5* · 2-shot | 0.5347 | 0.5475 | 0.5225 | Unknown | Unknown | 2026-07-23 | 2026-06-30 |
-| 21 | GPT-5.6 Terra · 2-shot | 0.5284 | 0.5467 | 0.5113 | Unknown | Unknown | 2026-07-23 | 2026-07-09 |
-| 22 | Gemini 3.5 Flash · OpenRouter · 2-shot | 0.5250 | 0.5277 | 0.5224 | $1.50 | $9.00 | 2026-07-23 | 2026-05-19 |
-| 23 | GPT-5.6 Luna · 2-shot | 0.5076 | 0.5181 | 0.4975 | Unknown | Unknown | 2026-07-23 | 2026-07-09 |
-| 24 | Muse Spark 1.1 · OpenRouter · 2-shot | 0.4875 | 0.4937 | 0.4815 | $1.25 | $4.25 | 2026-07-23 | 2026-07-16 |
-| 25 | Claude Opus 4.7* · 2-shot | 0.4805 | 0.4882 | 0.4730 | Unknown | Unknown | 2026-04-26 | 2026-04-16 |
-| 26 | GPT-5.2 · OpenRouter · 2-shot | 0.4791 | 0.5297 | 0.4374 | $1.75 | $14.00 | 2026-02-22 | 2025-12-11 |
-| 27 | Kimi K2.5 · OpenRouter · 2-shot | 0.4751 | 0.5092 | 0.4453 | $0.50 | $2.50 | 2026-02-22 | 2025-07-11 |
-| 28 | Kimi K2.7 Code · OpenRouter · 2-shot | 0.4611 | 0.5506 | 0.3966 | $0.67 | $3.35 | 2026-07-23 | 2026-06-12 |
-| 29 | Grok 4.5 · OpenRouter · 2-shot | 0.4416 | 0.4450 | 0.4382 | $2.00 | $6.00 | 2026-07-23 | 2026-07-08 |
-| 30 | Claude Opus 4.5* · 2-shot | 0.4141 | 0.4090 | 0.4194 | Unknown | Unknown | 2026-03-08 | Nov 2025 |
-| 31 | GPT-5 · 2-shot | 0.4067 | 0.4838 | 0.3508 | Unknown | Unknown | 2026-02-18 | 2025-08-07 |
-| 32 | Qwen3.6 Plus Nitro · OpenRouter · 2-shot | 0.3797 | 0.4678 | 0.3195 | Unknown | Unknown | 2026-04-26 | 2026-04-02 |
-| 33 | Qwen3.8 Max (0902)* · OpenRouter · 2-shot | 0.3725 | 0.3640 | 0.3814 | Unknown | Unknown | 2026-09-06 | 2026-09-03 |
-| 34 | Mistral Large 4 Preview · OpenRouter · 2-shot | 0.3682 | 0.4297 | 0.3221 | $0.68 | $2.09 | 2026-10-12 | 2026-10-06 |
-| 35 | Muse Glimmer 30B · OpenRouter · 2-shot | 0.3663 | 0.4164 | 0.3269 | $0.30 | $1.20 | 2026-09-10 | 2026-08-09 |
-| 36 | Qwen3.7 Plus · OpenRouter · 2-shot | 0.3575 | 0.3653 | 0.3500 | $0.32 | $1.28 | 2026-07-23 | 2026-05-31 |
-| 37 | Claude Opus 4.6* · 2-shot | 0.3269 | 0.3244 | 0.3294 | Unknown | Unknown | 2026-03-08 | 2026-02-05 |
-| 38 | Qwen3.5 397B A17B · OpenRouter · 2-shot | 0.3081 | 0.3248 | 0.2930 | $0.55 | $3.50 | 2026-02-22 | 2026-02-17 |
-| 39 | Claude Sonnet 4.6* · 2-shot | 0.2882 | 0.3130 | 0.2670 | Unknown | Unknown | 2026-03-08 | 2026-02-17 |
-| 40 | DeepSeek V4.1 Flash · OpenRouter · 2-shot | 0.2621 | 0.2881 | 0.2403 | $0.15 | $0.60 | 2026-10-12 | 2026-09-10 |
-| 41 | Gemini 3.1 Pro Preview · OpenRouter · 2-shot | 0.2493 | 0.2434 | 0.2554 | $2.00 | $12.00 | 2026-02-22 | 2026-02-19 |
-| 42 | Claude Opus 4.1* · 2-shot | 0.2318 | 0.2236 | 0.2407 | Unknown | Unknown | 2026-03-08 | 2025-08-05 |
-| 43 | Claude Opus 4.8* · 2-shot | 0.2150 | 0.2113 | 0.2188 | Unknown | Unknown | 2026-07-23 | 2026-05-28 |
-| 44 | GPT-4o · 2-shot | 0.2123 | 0.2589 | 0.1799 | Unknown | Unknown | 2026-02-22 | 2024-05-13 |
-| 45 | GPT-4o (2024-11-20 OR) · OpenRouter · 2-shot | 0.2085 | 0.2662 | 0.1713 | $2.50 | $10.00 | 2026-02-22 | 2024-11-20 |
-| 46 | Inkling · OpenRouter · 2-shot | 0.1962 | 0.2248 | 0.1741 | $1.00 | $4.05 | 2026-07-23 | 2026-07-17 |
-| 47 | GPT-5.3 Chat · 2-shot | 0.1958 | 0.2121 | 0.1818 | Unknown | Unknown | 2026-03-05 | 2026-03-03 |
-| 48 | GPT-o4 Mini · 2-shot | 0.1895 | 0.2382 | 0.1573 | Unknown | Unknown | 2026-02-22 | 2025-04-16 |
-| 49 | GPT-4.1 · 2-shot | 0.1773 | 0.2243 | 0.1465 | Unknown | Unknown | 2026-02-22 | 2025-04-14 |
-| 50 | ChatGPT-4o · OpenRouter · 2-shot | 0.1726 | 0.2043 | 0.1494 | Unknown | Unknown | 2026-02-22 | 2024-05-13 |
-| 51 | Step 3.7 Flash · OpenRouter · 2-shot | 0.1652 | 0.1587 | 0.1723 | $0.20 | $1.15 | 2026-07-23 | 2026-05-28 |
-| 52 | GPT-4.5 Preview · OpenRouter · 2-shot | 0.1443 | 0.1424 | 0.1462 | Unknown | Unknown | 2026-02-22 | 2025-02-27 |
-| 53 | Gemini 3.1 Flash Lite Preview · OpenRouter · 2-shot | 0.1354 | 0.1515 | 0.1224 | $0.25 | $1.50 | 2026-03-08 | 2026-03-03 |
-| 54 | GPT-4.5 Preview · 2-shot | 0.1225 | 0.1209 | 0.1240 | Unknown | Unknown | 2026-02-22 | 2025-02-27 |
-| 55 | Gemma 4 31B · OpenRouter · 2-shot | 0.1200 | 0.1616 | 0.0955 | $0.09 | $0.34 | 2026-04-04 | 2026-04-02 |
-| 56 | Gemini 3.5 Flash Lite · OpenRouter · 2-shot | 0.1187 | 0.1243 | 0.1136 | $0.30 | $2.50 | 2026-07-23 | 2026-07-21 |
-| 57 | Claude Sonnet 4.5* · 2-shot | 0.0986 | 0.0874 | 0.1130 | Unknown | Unknown | 2026-03-08 | 2025-09-29 |
-| 58 | Mistral Medium 3.5 · OpenRouter · 2-shot | 0.0871 | 0.0733 | 0.1072 | $1.50 | $7.50 | 2026-07-23 | 2026-04-30 |
-| 59 | GLM 4.6V · OpenRouter · 2-shot | 0.0837 | 0.1447 | 0.0588 | $0.30 | $0.90 | 2026-02-22 | 2025-12-08 |
-| 60 | MiniMax M3 · OpenRouter · 2-shot | 0.0734 | 0.0941 | 0.0602 | $0.30 | $1.20 | 2026-07-23 | 2026-05-28 |
-| 61 | DeepSeek V4 Flash Vision Exp* · OpenRouter · 2-shot | 0.0578 | 0.1055 | 0.0398 | $0.22 | $0.65 | 2026-09-06 | 2026-08-21 |
-| 62 | Llama 4 Maverick · OpenRouter · 2-shot | 0.0485 | 0.0525 | 0.0451 | $0.19 | $0.65 | 2026-02-22 | 2025-04-05 |
-| 63 | Claude Haiku 4.5* · 2-shot | 0.0459 | 0.0554 | 0.0392 | Unknown | Unknown | 2026-03-08 | 2025-10-15 |
-| 64 | Mistral Small 3.1 24B · OpenRouter · 2-shot | 0.0443 | 0.0511 | 0.0391 | $0.35 | $0.55 | 2026-02-22 | 2025-03-17 |
-| 65 | GPT-4 Turbo · 2-shot | 0.0437 | 0.0561 | 0.0358 | Unknown | Unknown | 2026-02-22 | 2023-11-06 |
-| 66 | GPT-4o · OpenRouter · 2-shot | 0.0397 | 0.0496 | 0.0331 | $10.00 | $30.00 | 2026-02-22 | 2023-11-06 |
-| 67 | GPT-4.1 Mini · 2-shot | 0.0354 | 0.0380 | 0.0332 | Unknown | Unknown | 2026-02-22 | 2025-04-14 |
-| 68 | Gemma 3 27B · OpenRouter · 2-shot | 0.0341 | 0.0355 | 0.0329 | $0.08 | $0.45 | 2026-02-22 | 2025-03-12 |
-| 69 | Qwen VL Max · OpenRouter · 2-shot | 0.0335 | 0.0434 | 0.0273 | Unknown | Unknown | 2026-02-22 | 2024-01-25 |
-| 70 | GPT-4o Mini · 2-shot | 0.0299 | 0.0314 | 0.0285 | Unknown | Unknown | 2026-02-22 | 2024-07-18 |
-| 71 | Qwen2.5 VL 72B Instruct · OpenRouter · 2-shot | 0.0208 | 0.0271 | 0.0169 | $0.80 | $1.00 | 2026-02-22 | 2025-01-26 |
-| 72 | Google: Gemini 2.0 Flash · OpenRouter · 2-shot | 0.0183 | 0.0236 | 0.0149 | Unknown | Unknown | 2026-02-22 | 2025-02-05 |
-| 73 | Llama 4 Scout · OpenRouter · 2-shot | 0.0169 | 0.0227 | 0.0134 | $0.18 | $0.59 | 2026-02-22 | 2025-04-05 |
-| 74 | Gemma 4 26B A4B IT · OpenRouter · 2-shot | 0.0126 | 0.0157 | 0.0105 | $0.09 | $0.30 | 2026-04-04 | 2026-04-02 |
-| 75 | GPT-4o-mini · OpenRouter · 2-shot | 0.0076 | 0.0085 | 0.0069 | $0.15 | $0.60 | 2026-02-22 | 2024-07-18 |
-| 76 | Mistral Large 3 2512 · OpenRouter · 2-shot | 0.0072 | 0.0065 | 0.0080 | $0.50 | $1.50 | 2026-02-22 | 2025-12-02 |
-| 77 | GPT-4.1 Nano · 2-shot | 0.0051 | 0.0058 | 0.0045 | Unknown | Unknown | 2026-02-22 | 2025-04-14 |
-| 78 | DeepSeek R1 · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | $0.70 | $2.50 | 2026-02-22 | 2025-01-20 |
-| 79 | DeepSeek V3 0324 · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | $0.29 | $1.14 | 2026-02-22 | 2025-03-25 |
-| 80 | Gemini 2.5 Pro Preview 3/25 · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2025-03-25 |
-| 81 | Grok 4 · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2025-07-09 |
-| 82 | Grok 4 Fast · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2025-09-25 |
-| 83 | Grok 4.1 Fast · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2026-01-29 |
-| 84 | Llama 3.2 90B Vision Instruct · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2024-09-25 |
-| 85 | Phi 4 Multimodal Instruct · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | Feb 2025 |
-| 86 | Qwen VL Plus · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2024-01-25 |
+| 13 | Muse Wonder · OpenRouter · 2-shot | 0.6077 | 0.5853 | 0.6318 | $4.00 | $20.00 | 2026-10-12 | 2026-10-12 |
+| 14 | Gemini 3.8 Flash* · OpenRouter · 2-shot | 0.5954 | 0.6094 | 0.5821 | $0.75 | $3.75 | 2026-09-06 | 2026-09-02 |
+| 15 | GPT-5.5 · 2-shot | 0.5820 | 0.5777 | 0.5864 | Unknown | Unknown | 2026-04-26 | 2026-04-23 |
+| 16 | GPT-5.6 Sol · 2-shot | 0.5811 | 0.5660 | 0.5970 | Unknown | Unknown | 2026-07-23 | 2026-07-09 |
+| 17 | Kimi K2.6 Nitro · OpenRouter · 2-shot | 0.5714 | 0.6317 | 0.5217 | Unknown | Unknown | 2026-04-26 | 2026-04-20 |
+| 18 | GPT-5.3 Codex · OpenRouter · 2-shot | 0.5699 | 0.6105 | 0.5344 | $1.75 | $14.00 | 2026-03-05 | 2026-02-05 |
+| 19 | GPT-6 Luna · OpenRouter · 2-shot | 0.5653 | 0.6092 | 0.5274 | $0.10 | $0.50 | 2026-10-12 | 2026-09-22 |
+| 20 | Grok 4.7 · OpenRouter · 2-shot | 0.5640 | 0.5901 | 0.5401 | $2.00 | $6.00 | 2026-10-12 | 2026-09-21 |
+| 21 | Grok 4.6 · OpenRouter · 2-shot | 0.5521 | 0.5377 | 0.5672 | $2.00 | $6.00 | 2026-09-06 | 2026-08-12 |
+| 22 | MiMo V2.6 Pro · OpenRouter · 2-shot | 0.5473 | 0.5632 | 0.5323 | $0.43 | $0.87 | 2026-10-12 | 2026-09-21 |
+| 23 | Claude Sonnet 5* · 2-shot | 0.5347 | 0.5475 | 0.5225 | Unknown | Unknown | 2026-07-23 | 2026-06-30 |
+| 24 | GPT-5.6 Terra · 2-shot | 0.5284 | 0.5467 | 0.5113 | Unknown | Unknown | 2026-07-23 | 2026-07-09 |
+| 25 | Gemini 3.5 Flash · OpenRouter · 2-shot | 0.5250 | 0.5277 | 0.5224 | $1.50 | $9.00 | 2026-07-23 | 2026-05-19 |
+| 26 | GPT-5.6 Luna · 2-shot | 0.5076 | 0.5181 | 0.4975 | Unknown | Unknown | 2026-07-23 | 2026-07-09 |
+| 27 | Muse Spark 1.1 · OpenRouter · 2-shot | 0.4875 | 0.4937 | 0.4815 | $1.25 | $4.25 | 2026-07-23 | 2026-07-16 |
+| 28 | Claude Opus 4.7* · 2-shot | 0.4805 | 0.4882 | 0.4730 | Unknown | Unknown | 2026-04-26 | 2026-04-16 |
+| 29 | GPT-5.2 · OpenRouter · 2-shot | 0.4791 | 0.5297 | 0.4374 | $1.75 | $14.00 | 2026-02-22 | 2025-12-11 |
+| 30 | Kimi K2.5 · OpenRouter · 2-shot | 0.4751 | 0.5092 | 0.4453 | $0.50 | $2.50 | 2026-02-22 | 2025-07-11 |
+| 31 | GLM 5.3 FlashX · OpenRouter · 2-shot | 0.4651 | 0.4736 | 0.4569 | $0.37 | $1.25 | 2026-10-12 | 2026-09-18 |
+| 32 | Kimi K2.7 Code · OpenRouter · 2-shot | 0.4611 | 0.5506 | 0.3966 | $0.67 | $3.35 | 2026-07-23 | 2026-06-12 |
+| 33 | Grok 4.5 · OpenRouter · 2-shot | 0.4416 | 0.4450 | 0.4382 | $2.00 | $6.00 | 2026-07-23 | 2026-07-08 |
+| 34 | Claude Opus 4.5* · 2-shot | 0.4141 | 0.4090 | 0.4194 | Unknown | Unknown | 2026-03-08 | Nov 2025 |
+| 35 | GPT-5 · 2-shot | 0.4067 | 0.4838 | 0.3508 | Unknown | Unknown | 2026-02-18 | 2025-08-07 |
+| 36 | Qwen3.6 Plus Nitro · OpenRouter · 2-shot | 0.3797 | 0.4678 | 0.3195 | Unknown | Unknown | 2026-04-26 | 2026-04-02 |
+| 37 | Qwen3.8 Max (0902)* · OpenRouter · 2-shot | 0.3725 | 0.3640 | 0.3814 | Unknown | Unknown | 2026-09-06 | 2026-09-03 |
+| 38 | Mistral Large 4 Preview · OpenRouter · 2-shot | 0.3682 | 0.4297 | 0.3221 | $0.68 | $2.09 | 2026-10-12 | 2026-10-06 |
+| 39 | Muse Glimmer 30B · OpenRouter · 2-shot | 0.3663 | 0.4164 | 0.3269 | $0.30 | $1.20 | 2026-09-10 | 2026-08-09 |
+| 40 | Qwen3.7 Plus · OpenRouter · 2-shot | 0.3575 | 0.3653 | 0.3500 | $0.32 | $1.28 | 2026-07-23 | 2026-05-31 |
+| 41 | Claude Opus 4.6* · 2-shot | 0.3269 | 0.3244 | 0.3294 | Unknown | Unknown | 2026-03-08 | 2026-02-05 |
+| 42 | Qwen3.5 397B A17B · OpenRouter · 2-shot | 0.3081 | 0.3248 | 0.2930 | $0.55 | $3.50 | 2026-02-22 | 2026-02-17 |
+| 43 | Claude Sonnet 4.6* · 2-shot | 0.2882 | 0.3130 | 0.2670 | Unknown | Unknown | 2026-03-08 | 2026-02-17 |
+| 44 | Claude Haiku 5.5* · OpenRouter · 2-shot | 0.2692 | 0.2712 | 0.2672 | $0.10 | $0.50 | 2026-10-12 | 2026-10-07 |
+| 45 | DeepSeek V4.1 Flash · OpenRouter · 2-shot | 0.2621 | 0.2881 | 0.2403 | $0.15 | $0.60 | 2026-10-12 | 2026-09-10 |
+| 46 | Gemini 3.1 Pro Preview · OpenRouter · 2-shot | 0.2493 | 0.2434 | 0.2554 | $2.00 | $12.00 | 2026-02-22 | 2026-02-19 |
+| 47 | Qwen3.8 Omni Flash · OpenRouter · 2-shot | 0.2459 | 0.2446 | 0.2472 | $0.15 | $0.47 | 2026-10-12 | 2026-09-21 |
+| 48 | Claude Opus 4.1* · 2-shot | 0.2318 | 0.2236 | 0.2407 | Unknown | Unknown | 2026-03-08 | 2025-08-05 |
+| 49 | Claude Opus 4.8* · 2-shot | 0.2150 | 0.2113 | 0.2188 | Unknown | Unknown | 2026-07-23 | 2026-05-28 |
+| 50 | GPT-4o · 2-shot | 0.2123 | 0.2589 | 0.1799 | Unknown | Unknown | 2026-02-22 | 2024-05-13 |
+| 51 | GPT-4o (2024-11-20 OR) · OpenRouter · 2-shot | 0.2085 | 0.2662 | 0.1713 | $2.50 | $10.00 | 2026-02-22 | 2024-11-20 |
+| 52 | Inkling · OpenRouter · 2-shot | 0.1962 | 0.2248 | 0.1741 | $1.00 | $4.05 | 2026-07-23 | 2026-07-17 |
+| 53 | GPT-5.3 Chat · 2-shot | 0.1958 | 0.2121 | 0.1818 | Unknown | Unknown | 2026-03-05 | 2026-03-03 |
+| 54 | GPT-o4 Mini · 2-shot | 0.1895 | 0.2382 | 0.1573 | Unknown | Unknown | 2026-02-22 | 2025-04-16 |
+| 55 | GPT-4.1 · 2-shot | 0.1773 | 0.2243 | 0.1465 | Unknown | Unknown | 2026-02-22 | 2025-04-14 |
+| 56 | ChatGPT-4o · OpenRouter · 2-shot | 0.1726 | 0.2043 | 0.1494 | Unknown | Unknown | 2026-02-22 | 2024-05-13 |
+| 57 | Step 3.7 Flash · OpenRouter · 2-shot | 0.1652 | 0.1587 | 0.1723 | $0.20 | $1.15 | 2026-07-23 | 2026-05-28 |
+| 58 | GPT-4.5 Preview · OpenRouter · 2-shot | 0.1443 | 0.1424 | 0.1462 | Unknown | Unknown | 2026-02-22 | 2025-02-27 |
+| 59 | Gemini 3.1 Flash Lite Preview · OpenRouter · 2-shot | 0.1354 | 0.1515 | 0.1224 | $0.25 | $1.50 | 2026-03-08 | 2026-03-03 |
+| 60 | GPT-4.5 Preview · 2-shot | 0.1225 | 0.1209 | 0.1240 | Unknown | Unknown | 2026-02-22 | 2025-02-27 |
+| 61 | Gemma 4 31B · OpenRouter · 2-shot | 0.1200 | 0.1616 | 0.0955 | $0.09 | $0.34 | 2026-04-04 | 2026-04-02 |
+| 62 | Gemini 3.5 Flash Lite · OpenRouter · 2-shot | 0.1187 | 0.1243 | 0.1136 | $0.30 | $2.50 | 2026-07-23 | 2026-07-21 |
+| 63 | Claude Sonnet 4.5* · 2-shot | 0.0986 | 0.0874 | 0.1130 | Unknown | Unknown | 2026-03-08 | 2025-09-29 |
+| 64 | Step 5 Preview · OpenRouter · 2-shot | 0.0952 | 0.0960 | 0.0945 | $1.00 | $2.70 | 2026-10-12 | 2026-09-20 |
+| 65 | Mistral Medium 3.5 · OpenRouter · 2-shot | 0.0871 | 0.0733 | 0.1072 | $1.50 | $7.50 | 2026-07-23 | 2026-04-30 |
+| 66 | GLM 4.6V · OpenRouter · 2-shot | 0.0837 | 0.1447 | 0.0588 | $0.30 | $0.90 | 2026-02-22 | 2025-12-08 |
+| 67 | MiniMax M3 · OpenRouter · 2-shot | 0.0734 | 0.0941 | 0.0602 | $0.30 | $1.20 | 2026-07-23 | 2026-05-28 |
+| 68 | DeepSeek V4 Flash Vision Exp* · OpenRouter · 2-shot | 0.0578 | 0.1055 | 0.0398 | $0.22 | $0.65 | 2026-09-06 | 2026-08-21 |
+| 69 | Llama 4 Maverick · OpenRouter · 2-shot | 0.0485 | 0.0525 | 0.0451 | $0.19 | $0.65 | 2026-02-22 | 2025-04-05 |
+| 70 | Claude Haiku 4.5* · 2-shot | 0.0459 | 0.0554 | 0.0392 | Unknown | Unknown | 2026-03-08 | 2025-10-15 |
+| 71 | Mistral Small 3.1 24B · OpenRouter · 2-shot | 0.0443 | 0.0511 | 0.0391 | $0.35 | $0.55 | 2026-02-22 | 2025-03-17 |
+| 72 | GPT-4 Turbo · 2-shot | 0.0437 | 0.0561 | 0.0358 | Unknown | Unknown | 2026-02-22 | 2023-11-06 |
+| 73 | GPT-4o · OpenRouter · 2-shot | 0.0397 | 0.0496 | 0.0331 | $10.00 | $30.00 | 2026-02-22 | 2023-11-06 |
+| 74 | GPT-4.1 Mini · 2-shot | 0.0354 | 0.0380 | 0.0332 | Unknown | Unknown | 2026-02-22 | 2025-04-14 |
+| 75 | Gemma 3 27B · OpenRouter · 2-shot | 0.0341 | 0.0355 | 0.0329 | $0.08 | $0.45 | 2026-02-22 | 2025-03-12 |
+| 76 | Qwen VL Max · OpenRouter · 2-shot | 0.0335 | 0.0434 | 0.0273 | Unknown | Unknown | 2026-02-22 | 2024-01-25 |
+| 77 | GPT-4o Mini · 2-shot | 0.0299 | 0.0314 | 0.0285 | Unknown | Unknown | 2026-02-22 | 2024-07-18 |
+| 78 | Qwen2.5 VL 72B Instruct · OpenRouter · 2-shot | 0.0208 | 0.0271 | 0.0169 | $0.80 | $1.00 | 2026-02-22 | 2025-01-26 |
+| 79 | Google: Gemini 2.0 Flash · OpenRouter · 2-shot | 0.0183 | 0.0236 | 0.0149 | Unknown | Unknown | 2026-02-22 | 2025-02-05 |
+| 80 | Llama 4 Scout · OpenRouter · 2-shot | 0.0169 | 0.0227 | 0.0134 | $0.18 | $0.59 | 2026-02-22 | 2025-04-05 |
+| 81 | Gemma 4 26B A4B IT · OpenRouter · 2-shot | 0.0126 | 0.0157 | 0.0105 | $0.08 | $0.26 | 2026-04-04 | 2026-04-02 |
+| 82 | GPT-4o-mini · OpenRouter · 2-shot | 0.0076 | 0.0085 | 0.0069 | $0.15 | $0.60 | 2026-02-22 | 2024-07-18 |
+| 83 | Mistral Large 3 2512 · OpenRouter · 2-shot | 0.0072 | 0.0065 | 0.0080 | $0.50 | $1.50 | 2026-02-22 | 2025-12-02 |
+| 84 | GPT-4.1 Nano · 2-shot | 0.0051 | 0.0058 | 0.0045 | Unknown | Unknown | 2026-02-22 | 2025-04-14 |
+| 85 | DeepSeek R1 · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | $0.70 | $2.50 | 2026-02-22 | 2025-01-20 |
+| 86 | DeepSeek V3 0324 · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | $0.29 | $1.14 | 2026-02-22 | 2025-03-25 |
+| 87 | Gemini 2.5 Pro Preview 3/25 · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2025-03-25 |
+| 88 | Grok 4 · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2025-07-09 |
+| 89 | Grok 4 Fast · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2025-09-25 |
+| 90 | Grok 4.1 Fast · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2026-01-29 |
+| 91 | Llama 3.2 90B Vision Instruct · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2024-09-25 |
+| 92 | Phi 4 Multimodal Instruct · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | Feb 2025 |
+| 93 | Qwen VL Plus · OpenRouter · 2-shot | 0.0000 | 0.0000 | 0.0000 | Unknown | Unknown | 2026-02-22 | 2024-01-25 |
 
 ## Caveats
 
@@ -105,12 +112,15 @@ Pricing snapshot: 2026-10-12 (UTC). Prices are USD per million tokens for the ex
 - Claude Fable 5* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
 - Claude Sonnet 5.5* · OpenRouter · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
 - Gemini 3.8 Flash* · OpenRouter · 2-shot: Images are resized/recompressed when needed to stay below the provider's request payload limit.
+- MiMo V2.6 Pro · OpenRouter · 2-shot: Native reasoning enabled; reasoning effort is controlled by the provider.
 - Claude Sonnet 5* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
 - Claude Opus 4.7* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
 - Claude Opus 4.5* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
 - Qwen3.8 Max (0902)* · OpenRouter · 2-shot: Images are resized/recompressed when needed to stay below the provider's request payload limit.
 - Claude Opus 4.6* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
 - Claude Sonnet 4.6* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
+- Claude Haiku 5.5* · OpenRouter · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
+- Qwen3.8 Omni Flash · OpenRouter · 2-shot: Native reasoning enabled; reasoning effort is controlled by the provider.
 - Claude Opus 4.1* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.
 - Claude Opus 4.8* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit. Opus 4.8's score is depressed by unreliable line counting: it identifies most edits correctly (166 of ~200 match ground truth by text) but reports noisy line numbers that drift progressively down the page and vary between runs, so the judge rejects the matches.
 - Claude Sonnet 4.5* · 2-shot: Claude results use resized/recompressed images when needed to stay below Anthropic's 5 MiB per-image limit.

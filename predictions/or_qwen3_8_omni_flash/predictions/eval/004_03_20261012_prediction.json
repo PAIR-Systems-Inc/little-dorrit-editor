@@ -1,0 +1,84 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "No sir, I have got Maggy with me.",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "No sir, i have got Maggy with me.",
+      "page": "184.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Why did he dine to-day",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "why did he dine to-day",
+      "page": "184.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "cold stones?\"",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "cold stones!\"",
+      "page": "184.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:10:48.184615",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791835638-qF495csycsxziFbEH2rY",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 211.19,
+    "usage": {
+      "input_tokens": 5601,
+      "output_tokens": 14003,
+      "total_tokens": 19604,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 13747,
+      "answer_tokens": 256,
+      "provider_cost_usd": 0.00742156,
+      "raw": {
+        "completion_tokens": 14003,
+        "prompt_tokens": 5601,
+        "total_tokens": 19604,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 13747,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00742156,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00742156,
+          "upstream_inference_prompt_cost": 0.00084015,
+          "upstream_inference_completions_cost": 0.00658141
+        }
+      }
+    }
+  }
+}

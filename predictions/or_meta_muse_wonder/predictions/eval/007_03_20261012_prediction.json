@@ -1,0 +1,71 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "line_number": 0,
+      "page": "3"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW",
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 0,
+      "page": "3"
+    }
+  ],
+  "annotator": "Muse Wonder",
+  "annotation_date": "2026-10-12T15:08:58.331005",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_wonder",
+    "model": "meta/muse-wonder",
+    "response_id": "gen-1791835719-8RfqPoLr7LKkw51eTvPk",
+    "provider": "Meta",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 23.586,
+    "usage": {
+      "input_tokens": 13655,
+      "output_tokens": 1251,
+      "total_tokens": 14906,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 9588,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1135,
+      "answer_tokens": 116,
+      "provider_cost_usd": 0.0432056,
+      "raw": {
+        "completion_tokens": 1251,
+        "prompt_tokens": 13655,
+        "total_tokens": 14906,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1135,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 9588,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0432056,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0432056,
+          "upstream_inference_prompt_cost": 0.0181856,
+          "upstream_inference_completions_cost": 0.02502
+        }
+      }
+    }
+  }
+}

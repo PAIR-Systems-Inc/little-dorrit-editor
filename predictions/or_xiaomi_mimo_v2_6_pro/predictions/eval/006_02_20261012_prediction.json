@@ -1,0 +1,113 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "high road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about and",
+      "corrected_text": "about, and",
+      "line_number": 13,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tion did",
+      "corrected_text": "tion, did",
+      "line_number": 15,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "always said when",
+      "corrected_text": "always said, when",
+      "line_number": 23,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "faced round, and said",
+      "corrected_text": "faced round, and said,",
+      "line_number": 25,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "cried Clennam in",
+      "corrected_text": "cried Clennam, in",
+      "line_number": 29,
+      "page": "352"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T15:01:05.170555",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791835174-QoYKuTbSfrtb68Sk1Yyy",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 96.148,
+    "usage": {
+      "input_tokens": 13700,
+      "output_tokens": 2864,
+      "total_tokens": 16564,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13696,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2432,
+      "answer_tokens": 432,
+      "provider_cost_usd": 0.0025427256,
+      "raw": {
+        "completion_tokens": 2864,
+        "prompt_tokens": 13700,
+        "total_tokens": 16564,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2432,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13696,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0025427256,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0025427256,
+          "upstream_inference_prompt_cost": 5.10456e-05,
+          "upstream_inference_completions_cost": 0.00249168
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "I",
+      "line_number": 48,
+      "notes": null,
+      "original_text": "i",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 51,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:09:17.044527",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791835665-7uGBxAS6hwRUE3nJGh0k",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 93.435,
+    "usage": {
+      "input_tokens": 5599,
+      "output_tokens": 1817,
+      "total_tokens": 7416,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1662,
+      "answer_tokens": 155,
+      "provider_cost_usd": 0.00169384,
+      "raw": {
+        "completion_tokens": 1817,
+        "prompt_tokens": 5599,
+        "total_tokens": 7416,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1662,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00169384,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00169384,
+          "upstream_inference_prompt_cost": 0.00083985,
+          "upstream_inference_completions_cost": 0.00085399
+        }
+      }
+    }
+  }
+}

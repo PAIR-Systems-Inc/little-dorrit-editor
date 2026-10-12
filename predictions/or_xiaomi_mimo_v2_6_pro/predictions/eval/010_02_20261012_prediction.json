@@ -1,0 +1,99 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "from hers and",
+      "corrected_text": "from hers, and",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on hers, matters",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "for a moment with",
+      "corrected_text": "for a moment, with",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "so beautiful that",
+      "corrected_text": "so beautiful, that",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "abandoned the idea.",
+      "corrected_text": "abandoned the idea.",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "line_number": 32,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T15:04:03.031028",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791835337-JmUDtHELJBVmI1V2Y9Bz",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 111.509,
+    "usage": {
+      "input_tokens": 13655,
+      "output_tokens": 3617,
+      "total_tokens": 17272,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13568,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3288,
+      "answer_tokens": 329,
+      "provider_cost_usd": 0.0032334798,
+      "raw": {
+        "completion_tokens": 3617,
+        "prompt_tokens": 13655,
+        "total_tokens": 17272,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3288,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13568,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0032334798,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0032334798,
+          "upstream_inference_prompt_cost": 8.66898e-05,
+          "upstream_inference_completions_cost": 0.00314679
+        }
+      }
+    }
+  }
+}

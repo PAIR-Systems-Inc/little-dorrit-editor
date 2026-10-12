@@ -1,0 +1,120 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "highroad",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tossed about and came",
+      "corrected_text": "tossed about, and came",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "associ-tion did not",
+      "corrected_text": "associ-tion, did not",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "well, but",
+      "corrected_text": "well; but",
+      "line_number": 19,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "always said when",
+      "corrected_text": "always said, when",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and said",
+      "corrected_text": "and said,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in amazement",
+      "corrected_text": "Clennam, in amazement",
+      "line_number": 29,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T15:08:54.869511",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791835677-32sB8WT2cRgTOMw2d4IS",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 60.347,
+    "usage": {
+      "input_tokens": 13700,
+      "output_tokens": 2068,
+      "total_tokens": 15768,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13696,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1570,
+      "answer_tokens": 498,
+      "provider_cost_usd": 0.0018502056,
+      "raw": {
+        "completion_tokens": 2068,
+        "prompt_tokens": 13700,
+        "total_tokens": 15768,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1570,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13696,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0018502056,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0018502056,
+          "upstream_inference_prompt_cost": 5.10456e-05,
+          "upstream_inference_completions_cost": 0.00179916
+        }
+      }
+    }
+  }
+}

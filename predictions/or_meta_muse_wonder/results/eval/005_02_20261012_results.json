@@ -1,0 +1,36 @@
+{
+  "model_name": "or_meta_muse_wonder",
+  "date": "2026-10-12T15:01:36.431949",
+  "annotator": "Muse Wonder",
+  "annotation_date": "2026-10-12T14:59:20.346129",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is capitalizing the initial word in the phrase \"if he\" \u2192 \"If he\". The predicted edit captures the same essential correction by changing \"if\" \u2192 \"If\". Although it includes less surrounding context (it omits \"he\"), it still represents the core intended edit: capitalizing \"if\" at the start of the phrase/sentence."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are \"replacement\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces the word \"said\" with \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures the same core lexical change (\"said\" \u2192 \"asked\"). Although it omits the surrounding context (\"Clennam\"), it still represents the essential intended correction, which is the replacement of \"said\" with \"asked\"."
+    }
+  ]
+}

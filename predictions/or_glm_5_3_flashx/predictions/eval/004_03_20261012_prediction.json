@@ -1,0 +1,84 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "No, sir",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "No sir",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Why",
+      "line_number": 25,
+      "notes": "Margin note '\u2192 cap' indicating capitalization",
+      "original_text": "why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stones?",
+      "line_number": 26,
+      "notes": "Margin note '\u2192 question mark'",
+      "original_text": "stones!",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T15:07:35.016682",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791835641-bzTVYePB4jmns3DoF5m0",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 17.946,
+    "usage": {
+      "input_tokens": 24305,
+      "output_tokens": 676,
+      "total_tokens": 24981,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 24256,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 472,
+      "answer_tokens": 204,
+      "provider_cost_usd": 0.00304617,
+      "raw": {
+        "completion_tokens": 676,
+        "prompt_tokens": 24305,
+        "total_tokens": 24981,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 472,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 24256,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00304617,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00304617,
+          "upstream_inference_prompt_cost": 0.00220117,
+          "upstream_inference_completions_cost": 0.000845
+        }
+      }
+    }
+  }
+}

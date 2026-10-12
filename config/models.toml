@@ -882,3 +882,72 @@ reasoning_effort = "high"
 request_timeout_seconds = 180
 openrouter_provider = { sort = "latency" }
 openrouter_reasoning = { exclude = true }
+
+################################################################################
+# October 2026 refresh, second batch: three repeats, two-shot prompts.
+# MiMo and Qwen Omni expose native reasoning without a selectable effort level.
+################################################################################
+
+["or_meta_muse_wonder"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "meta/muse-wonder"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Muse Wonder"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_step_5_preview"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "stepfun/step-5-preview"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Step 5 Preview"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_xiaomi_mimo_v2_6_pro"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "xiaomi/mimo-v2.6-pro"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "MiMo V2.6 Pro"
+request_timeout_seconds = 180
+openrouter_reasoning = { enabled = true, exclude = true }
+
+["or_claude_haiku_5_5"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-haiku-5.5"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Haiku 5.5 (OR)"
+reasoning_effort = "high"
+supports_temperature = false
+image_max_bytes = 3930112
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_openai_gpt_6_luna"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "openai/gpt-6-luna"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "GPT-6 Luna (OR)"
+reasoning_effort = "high"
+supports_temperature = false
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }
+
+["or_qwen3_8_omni_flash"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "qwen/qwen3.8-omni-flash"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Qwen3.8 Omni Flash"
+request_timeout_seconds = 180
+openrouter_reasoning = { enabled = true, exclude = true }
+
+["or_glm_5_3_flashx"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "z-ai/glm-5.3-flashx"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "GLM 5.3 FlashX"
+reasoning_effort = "high"
+request_timeout_seconds = 180
+openrouter_reasoning = { exclude = true }

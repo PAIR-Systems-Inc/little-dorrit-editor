@@ -1,0 +1,127 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "church bells",
+      "corrected_text": "church bells,",
+      "line_number": 2,
+      "page": "001"
+    },
+    {
+      "type": "replacement",
+      "original_text": "wine-bottles",
+      "corrected_text": "Wine-bottles",
+      "line_number": 11,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "goes through",
+      "corrected_text": "goes, through",
+      "line_number": 14,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "iron bars fashioned",
+      "corrected_text": "iron bars, fashioned",
+      "line_number": 14,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating where",
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "intact in",
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "page": "001"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Indian ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fed looking",
+      "corrected_text": "fed; looking",
+      "line_number": 36,
+      "page": "001"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "page": "001"
+    }
+  ],
+  "annotator": "Claude Haiku 5.5 (OR)",
+  "annotation_date": "2026-10-12T14:57:49.907767",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_haiku_5_5",
+    "model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1791835047-NiosFbupp2CffKMfYkge",
+    "provider": "Claude Platform on AWS",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 26.701,
+    "usage": {
+      "input_tokens": 16479,
+      "output_tokens": 3935,
+      "total_tokens": 20414,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3271,
+      "answer_tokens": 664,
+      "provider_cost_usd": 0.0036154,
+      "raw": {
+        "completion_tokens": 3935,
+        "prompt_tokens": 16479,
+        "total_tokens": 20414,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3271,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0036154,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0036154,
+          "upstream_inference_prompt_cost": 0.0016479,
+          "upstream_inference_completions_cost": 0.0019675
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, \"not",
+      "line_number": 2,
+      "notes": "A red pencil comma appears after Clennam before the opening quote, replacing the period (the period itself seems struck or replaced). Recorded as one punctuation edit for the comma.",
+      "original_text": "Clennam. \"not",
+      "page": "004.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts.",
+      "line_number": 8,
+      "notes": "A red insertion mark after dryest and a red line under snorts; the word of is inserted, and a period replaces the printed line-break/following word. Recorded as insertion plus punctuation as separate edits.",
+      "original_text": "dryest snorts",
+      "page": "004.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "snorts.",
+      "line_number": 8,
+      "notes": "Red period placed after snorts.",
+      "original_text": "snorts",
+      "page": "004.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "have been",
+      "line_number": 10,
+      "notes": "Red line under been; handwritten been inserted above the line.",
+      "original_text": "been",
+      "page": "004.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boiling-over",
+      "line_number": 13,
+      "notes": "Red hyphen inserted after boiling.",
+      "original_text": "boiling-over",
+      "page": "004.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "at twenty,",
+      "line_number": 17,
+      "notes": "Red comma inserted after twenty.",
+      "original_text": "at twenty",
+      "page": "004.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bubbling out of him",
+      "line_number": 33,
+      "notes": "Red underline under out of him with left margin note Italicize; convert to italics (underlining is the printed markup for italics).",
+      "original_text": "out of him",
+      "page": "004.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "out of him, than",
+      "line_number": 33,
+      "notes": "A red comma is inserted after him.",
+      "original_text": "out of him than",
+      "page": "004.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "now, I",
+      "line_number": 38,
+      "notes": "Red comma inserted after now.",
+      "original_text": "now I",
+      "page": "004.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hands. I authorise",
+      "line_number": 42,
+      "notes": "A red period is written above the printed comma after hands.",
+      "original_text": "hands, I authorise",
+      "page": "004.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorize",
+      "line_number": 42,
+      "notes": "The printed authorize is underlined in red and replaced in the left margin by authorise.",
+      "original_text": "authorize",
+      "page": "004.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you now",
+      "line_number": 43,
+      "notes": "Red insert mark/caret before now inserts now after you.",
+      "original_text": "you",
+      "page": "004.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "you now, to",
+      "line_number": 43,
+      "notes": "A red comma is inserted after now.",
+      "original_text": "you now to",
+      "page": "004.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Step 5 Preview",
+  "annotation_date": "2026-10-12T15:04:25.761509",
+  "verified": false,
+  "inference": {
+    "model_id": "or_step_5_preview",
+    "model": "stepfun/step-5-preview",
+    "response_id": "gen-1791835423-jeWL3SdsWtM5LYD9AGT2",
+    "provider": "StepFun",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 46.986,
+    "usage": {
+      "input_tokens": 8072,
+      "output_tokens": 1005,
+      "total_tokens": 9077,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4096,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 1005,
+      "provider_cost_usd": 0.0068943,
+      "raw": {
+        "completion_tokens": 1005,
+        "prompt_tokens": 8072,
+        "total_tokens": 9077,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0068943,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0068943,
+          "upstream_inference_prompt_cost": 0.0041808,
+          "upstream_inference_completions_cost": 0.0027135
+        }
+      }
+    }
+  }
+}

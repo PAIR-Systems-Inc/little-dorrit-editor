@@ -1,0 +1,92 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white,but",
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 30,
+      "page": "002.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "gardens",
+      "corrected_text": "-gardens",
+      "line_number": 34,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "so away",
+      "corrected_text": "So away",
+      "line_number": 36,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "Qwen3.8 Omni Flash",
+  "annotation_date": "2026-10-12T15:00:34.455838",
+  "verified": false,
+  "inference": {
+    "model_id": "or_qwen3_8_omni_flash",
+    "model": "qwen/qwen3.8-omni-flash",
+    "response_id": "gen-1791835070-Fa2HOeDfxEYGhugvgXHz",
+    "provider": "Alibaba",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 170.619,
+    "usage": {
+      "input_tokens": 5640,
+      "output_tokens": 8976,
+      "total_tokens": 14616,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 5376,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 8674,
+      "answer_tokens": 302,
+      "provider_cost_usd": 0.004344336,
+      "raw": {
+        "completion_tokens": 8976,
+        "prompt_tokens": 5640,
+        "total_tokens": 14616,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 8674,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 5376,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.004344336,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.004344336,
+          "upstream_inference_prompt_cost": 0.000125616,
+          "upstream_inference_completions_cost": 0.00421872
+        }
+      }
+    }
+  }
+}

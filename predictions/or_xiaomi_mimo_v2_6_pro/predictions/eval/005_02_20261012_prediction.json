@@ -1,0 +1,75 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "If",
+      "line_number": 36,
+      "notes": "Handwritten 'cap' annotation above 'If' with a mark on the initial letter, indicating the word should be capitalized at the start of the new sentence after the question mark.",
+      "original_text": "if",
+      "page": "209.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "asked",
+      "line_number": 39,
+      "notes": "The word 'said' is struck through with a handwritten correction 'asked' written below the line.",
+      "original_text": "said",
+      "page": "209.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T14:59:27.490233",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791835124-jZpkEhES0xK5aQeI8A83",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 47.036,
+    "usage": {
+      "input_tokens": 13667,
+      "output_tokens": 1599,
+      "total_tokens": 15266,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13568,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1411,
+      "answer_tokens": 188,
+      "provider_cost_usd": 0.0014830398,
+      "raw": {
+        "completion_tokens": 1599,
+        "prompt_tokens": 13667,
+        "total_tokens": 15266,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1411,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13568,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0014830398,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0014830398,
+          "upstream_inference_prompt_cost": 9.19098e-05,
+          "upstream_inference_completions_cost": 0.00139113
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-10-12",
+  "next_batch": [
+    {
+      "model_name": "Muse Wonder Full",
+      "vendor": "Meta",
+      "priority": "high",
+      "requested_at": "2026-10-12",
+      "status": "awaiting_benchmark_compatible_access",
+      "api_model_id": null,
+      "availability_checked_at": "2026-10-12",
+      "availability_note": "Meta lists Muse Wonder Full for Muse Code subscribers. A public API route for Full has not been verified; OpenRouter currently lists only Muse Wonder.",
+      "source": "https://dev.meta.ai/docs/overview",
+      "next_action": "Verify supported programmatic image-input access for Muse Wonder Full before configuring the next batch."
+    }
+  ]
+}

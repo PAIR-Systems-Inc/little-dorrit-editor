@@ -1,0 +1,102 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "howling, over",
+      "line_number": 1,
+      "notes": "Handwritten comma inserted after 'howling'",
+      "original_text": "howling over",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "yonder, to-day",
+      "line_number": 1,
+      "notes": "Handwritten comma inserted after 'yonder'",
+      "original_text": "yonder to-day",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to-day, sir",
+      "line_number": 1,
+      "notes": "Comma inserted before the vocative 'sir'",
+      "original_text": "to-day sir",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sir",
+      "line_number": 1,
+      "notes": "Handwritten 'S' written above 'sir' to capitalize",
+      "original_text": "sir",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "notes": "Handwritten comma inserted after 'pockets'",
+      "original_text": "pockets and",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiMo V2.6 Pro",
+  "annotation_date": "2026-10-12T15:14:57.832473",
+  "verified": false,
+  "inference": {
+    "model_id": "or_xiaomi_mimo_v2_6_pro",
+    "model": "xiaomi/mimo-v2.6-pro",
+    "response_id": "gen-1791835577-I1ozLIg4RMxPAfGMyWF9",
+    "provider": "Novita",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 515.106,
+    "usage": {
+      "input_tokens": 13741,
+      "output_tokens": 16245,
+      "total_tokens": 29986,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13696,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 15866,
+      "answer_tokens": 379,
+      "provider_cost_usd": 0.0142020306,
+      "raw": {
+        "completion_tokens": 16245,
+        "prompt_tokens": 13741,
+        "total_tokens": 29986,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 15866,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13696,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0142020306,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0142020306,
+          "upstream_inference_prompt_cost": 6.88806e-05,
+          "upstream_inference_completions_cost": 0.01413315
+        }
+      }
+    }
+  }
+}

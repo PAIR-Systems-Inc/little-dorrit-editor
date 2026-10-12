@@ -1,0 +1,127 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "bells",
+      "corrected_text": "bells,",
+      "line_number": 2,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wine bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 11,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "got",
+      "corrected_text": "got,",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars",
+      "corrected_text": "bars,",
+      "line_number": 14,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating",
+      "corrected_text": "grating,",
+      "line_number": 17,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside",
+      "corrected_text": "outside;",
+      "line_number": 29,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "intact",
+      "corrected_text": "intact,",
+      "line_number": 30,
+      "page": "5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "ocean",
+      "corrected_text": "Ocean",
+      "line_number": 31,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fed",
+      "corrected_text": "fed;",
+      "line_number": 36,
+      "page": "5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars",
+      "corrected_text": "bars,",
+      "line_number": 36,
+      "page": "5"
+    }
+  ],
+  "annotator": "Muse Wonder",
+  "annotation_date": "2026-10-12T14:57:50.390516",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_wonder",
+    "model": "meta/muse-wonder",
+    "response_id": "gen-1791835036-IkAxOUDHm0isyqIKapMe",
+    "provider": "Meta",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 37.93,
+    "usage": {
+      "input_tokens": 13682,
+      "output_tokens": 3024,
+      "total_tokens": 16706,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13556,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2549,
+      "answer_tokens": 475,
+      "provider_cost_usd": 0.0636952,
+      "raw": {
+        "completion_tokens": 3024,
+        "prompt_tokens": 13682,
+        "total_tokens": 16706,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2549,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13556,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0636952,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0636952,
+          "upstream_inference_prompt_cost": 0.0032152,
+          "upstream_inference_completions_cost": 0.06048
+        }
+      }
+    }
+  }
+}

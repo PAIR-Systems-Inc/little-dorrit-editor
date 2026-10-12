@@ -1,0 +1,113 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "XXIX",
+      "corrected_text": "XXIX.",
+      "line_number": 0,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dreaming",
+      "corrected_text": "Dreaming.",
+      "line_number": 0,
+      "page": "373"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "373"
+    },
+    {
+      "type": "replacement",
+      "original_text": "of",
+      "corrected_text": "to",
+      "line_number": 5,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": ",",
+      "corrected_text": "",
+      "line_number": 15,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": ",",
+      "corrected_text": "",
+      "line_number": 16,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": ";",
+      "corrected_text": ",",
+      "line_number": 18,
+      "page": "373"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "page": "373"
+    }
+  ],
+  "annotator": "GPT-6 Luna (OR)",
+  "annotation_date": "2026-10-12T14:56:16.685822",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_luna",
+    "model": "openai/gpt-6-luna",
+    "response_id": "gen-1791834903-t994GdzCwBjAsFbKse2a",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 78.472,
+    "usage": {
+      "input_tokens": 22980,
+      "output_tokens": 6591,
+      "total_tokens": 29571,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 22977,
+      "reasoning_tokens": 6214,
+      "answer_tokens": 377,
+      "provider_cost_usd": 0.006167925,
+      "raw": {
+        "completion_tokens": 6591,
+        "prompt_tokens": 22980,
+        "total_tokens": 29571,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 6214,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 22977,
+          "video_tokens": 0
+        },
+        "cost": 0.006167925,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.006167925,
+          "upstream_inference_prompt_cost": 0.002872425,
+          "upstream_inference_completions_cost": 0.0032955
+        }
+      }
+    }
+  }
+}

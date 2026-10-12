@@ -1,0 +1,120 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "and that, in",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "and that in",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "fancy, whatever",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "fancy whatever",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "is now.\" \"Thank you,\"",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "is now.\"",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "\"Thank you!\"",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "\"Thank you.\"",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "shore, and",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "shore and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "within doors",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "greater things than once were",
+      "line_number": 33,
+      "notes": null,
+      "original_text": "greater things that once were",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "GLM 5.3 FlashX",
+  "annotation_date": "2026-10-12T14:54:47.458366",
+  "verified": false,
+  "inference": {
+    "model_id": "or_glm_5_3_flashx",
+    "model": "z-ai/glm-5.3-flashx",
+    "response_id": "gen-1791834867-9F8dHJU99DCiw45ONnYE",
+    "provider": "Z.AI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 22.744,
+    "usage": {
+      "input_tokens": 24136,
+      "output_tokens": 1216,
+      "total_tokens": 25352,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 763,
+      "answer_tokens": 453,
+      "provider_cost_usd": 0.01045032,
+      "raw": {
+        "completion_tokens": 1216,
+        "prompt_tokens": 24136,
+        "total_tokens": 25352,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 763,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.01045032,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.01045032,
+          "upstream_inference_prompt_cost": 0.00893032,
+          "upstream_inference_completions_cost": 0.00152
+        }
+      }
+    }
+  }
+}

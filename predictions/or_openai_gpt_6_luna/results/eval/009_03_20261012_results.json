@@ -1,0 +1,92 @@
+{
+  "model_name": "or_openai_gpt_6_luna",
+  "date": "2026-10-12T15:12:44.926719",
+  "annotator": "GPT-6 Luna (OR)",
+  "annotation_date": "2026-10-12T15:10:05.135820",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "heart",
+      "corrected_text": "heart,",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to insert a comma after the word \"heart\" in the phrase \"heart so\" \u2192 \"heart, so.\" The predicted edit \"heart\" \u2192 \"heart,\" captures the same core punctuation change (adding a comma immediately after \"heart\"). Although it omits the following word \"so\" from the span, it still reflects the essential intended correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "generous,",
+      "corrected_text": "generous",
+      "observed_line_number": 22,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"generous, Mr.\" to \"generous Mr.\", whose core effect is removing the comma after \"generous\" (i.e., deleting the punctuation between \"generous\" and \"Mr.\"). The predicted edit changes \"generous,\" to \"generous\", which captures that same essential punctuation deletion. Although the prediction omits the following context word \"Mr.\", it still correctly represents the intended core change (removal of the comma after \"generous\")."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "indeed",
+      "observed_line_number": 27,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth edit is an \"insertion,\" and the predicted edit is also an \"insertion,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes \"as she did\" to \"as indeed she did,\" which means the core change is inserting the word \"indeed\" into the phrase. The prediction inserts \"indeed\" (even though it provides no surrounding context in original_text). Since the essential intended modification is the addition of \"indeed,\" the predicted content captures the core change correctly."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "length",
+      "corrected_text": "length,",
+      "observed_line_number": 31,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"punctuation,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after the word \"length\" in the phrase \"length said\" \u2192 \"length, said.\" The predicted edit \"length\" \u2192 \"length,\" captures the same core punctuation insertion at the same location (after \"length\"). Although the prediction includes less surrounding context (it omits \"said\"), it still represents the essential intended correction.\n\nTherefore, the predicted edit correctly captures the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "d",
+      "observed_line_number": 34,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}
