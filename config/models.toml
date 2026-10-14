@@ -951,3 +951,15 @@ logical_name = "GLM 5.3 FlashX"
 reasoning_effort = "high"
 request_timeout_seconds = 180
 openrouter_reasoning = { exclude = true }
+
+["or_gemini_4_argon"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemini-4-argon"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemini 4 Argon"
+reasoning_effort = "high"
+supports_temperature = false
+request_timeout_seconds = 900
+max_tokens = 65536
+image_max_bytes = 3930112
+openrouter_reasoning = { exclude = true }

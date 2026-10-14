@@ -1,0 +1,147 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XI.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XI",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "LET LOOSE.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "LET LOOSE",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "dull, autumn",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "dull autumn",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Saone",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "trees,",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 7,
+      "notes": null,
+      "original_text": "Saone",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "man, slowly",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "man slowly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Chalons, was",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "sodden",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Gemini 4 Argon",
+  "annotation_date": "2026-10-13T23:43:13.461661",
+  "verified": false,
+  "inference": {
+    "model_id": "or_gemini_4_argon",
+    "model": "google/gemini-4-argon",
+    "response_id": "gen-1791952974-Msfg04u0Vo3B1XPCxFJM",
+    "provider": "Google",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 21.369,
+    "usage": {
+      "input_tokens": 5199,
+      "output_tokens": 2413,
+      "total_tokens": 7612,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3150,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1665,
+      "answer_tokens": 748,
+      "provider_cost_usd": 0.028543,
+      "raw": {
+        "completion_tokens": 2413,
+        "prompt_tokens": 5199,
+        "total_tokens": 7612,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1665,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3150,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.028543,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.028543,
+          "upstream_inference_prompt_cost": 0.004413,
+          "upstream_inference_completions_cost": 0.02413
+        }
+      }
+    }
+  }
+}

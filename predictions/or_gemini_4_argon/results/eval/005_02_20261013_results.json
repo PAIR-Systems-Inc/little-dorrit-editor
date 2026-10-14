@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gemini_4_argon",
+  "date": "2026-10-13T23:44:04.751768",
+  "annotator": "Gemini 4 Argon",
+  "annotation_date": "2026-10-13T23:42:56.397054",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is to capitalize the word \"if\" at the start of the phrase \"if he\" (i.e., \"if he\" \u2192 \"If he\"). The predicted edit applies the same capitalization change to the core target word (\"if\" \u2192 \"If\"), just with less surrounding context. Since the essential correction\u2014capitalizing \"if\"\u2014is captured, the text content matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit are of type \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to change the word \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures this core substitution by replacing \"said\" with \"asked\". Although it does not include the following word \"Clennam\" in the original/corrected_text fields, it still represents the same essential change, with the remaining context implicitly unchanged.\n\nTherefore, the predicted edit matches the ground truth\u2019s intended correction."
+    }
+  ]
+}

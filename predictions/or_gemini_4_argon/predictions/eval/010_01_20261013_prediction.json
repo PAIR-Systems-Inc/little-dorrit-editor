@@ -1,0 +1,102 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hers, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "hers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hers, matters",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "hers matters",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "moment, with",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "moment with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beautiful, that",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "beautiful that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "They",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "they",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Gemini 4 Argon",
+  "annotation_date": "2026-10-13T23:42:54.031092",
+  "verified": false,
+  "inference": {
+    "model_id": "or_gemini_4_argon",
+    "model": "google/gemini-4-argon",
+    "response_id": "gen-1791952958-Ddcm9MxtaWozOT4B55bW",
+    "provider": "Google",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 17.299,
+    "usage": {
+      "input_tokens": 5167,
+      "output_tokens": 1916,
+      "total_tokens": 7083,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3109,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1532,
+      "answer_tokens": 384,
+      "provider_cost_usd": 0.0235869,
+      "raw": {
+        "completion_tokens": 1916,
+        "prompt_tokens": 5167,
+        "total_tokens": 7083,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1532,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3109,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0235869,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0235869,
+          "upstream_inference_prompt_cost": 0.0044269,
+          "upstream_inference_completions_cost": 0.01916
+        }
+      }
+    }
+  }
+}

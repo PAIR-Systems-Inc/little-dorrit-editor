@@ -1,0 +1,147 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "church bells,",
+      "line_number": 2,
+      "notes": null,
+      "original_text": "church bells",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "wine-bottles",
+      "line_number": 11,
+      "notes": null,
+      "original_text": "wine bottles",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "got, through",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "got through",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "iron bars, fashioned",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "iron bars fashioned",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "grating where",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "outside and",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "notes": null,
+      "original_text": "intact in",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "indian ocean",
+      "page": "001.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "was waiting to be fed; looking",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "was waiting to be fed looking",
+      "page": "001.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "notes": null,
+      "original_text": "bars that",
+      "page": "001.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 4 Argon",
+  "annotation_date": "2026-10-13T23:43:06.630893",
+  "verified": false,
+  "inference": {
+    "model_id": "or_gemini_4_argon",
+    "model": "google/gemini-4-argon",
+    "response_id": "gen-1791952975-lSuQjheejq1qINtd0Vt3",
+    "provider": "Google",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 15.188,
+    "usage": {
+      "input_tokens": 5199,
+      "output_tokens": 1154,
+      "total_tokens": 6353,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3150,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 386,
+      "answer_tokens": 768,
+      "provider_cost_usd": 0.015953,
+      "raw": {
+        "completion_tokens": 1154,
+        "prompt_tokens": 5199,
+        "total_tokens": 6353,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 386,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3150,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.015953,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.015953,
+          "upstream_inference_prompt_cost": 0.004413,
+          "upstream_inference_completions_cost": 0.01154
+        }
+      }
+    }
+  }
+}

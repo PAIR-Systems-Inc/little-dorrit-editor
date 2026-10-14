@@ -1,0 +1,92 @@
+{
+  "model_name": "or_gemini_4_argon",
+  "date": "2026-10-13T23:44:20.509997",
+  "annotator": "Gemini 4 Argon",
+  "annotation_date": "2026-10-13T23:43:09.688180",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the type matches exactly.\n\nText Content Accuracy: Both specify the same original text (\"heart so\") and the same corrected text (\"heart, so\"), capturing the identical core change\u2014adding a comma after \"heart\". No discrepancy in the essential edit."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "generous, Mr.",
+      "corrected_text": "generous Mr.",
+      "observed_line_number": 22,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"generous, Mr.\") and the same correction (\"generous Mr.\"), capturing the intended removal of the comma after \"generous\". Therefore, the predicted edit matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "observed_line_number": 31,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"punctuation\" edit, so the type matches exactly.\n2) Text Content Accuracy: Both specify the same original text (\"length said\") and the same correction (\"length, said\"), inserting a comma after \"length\". The core change is identical. Therefore, the predicted edit correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "observed_line_number": 34,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit specify the type as \"replacement\", so the edit type matches exactly.\n2) Text Content Accuracy: Both edits replace the exact same original text (\"I hope so\") with the same corrected text (\"I hoped so\"). The core intended change (hope \u2192 hoped) is fully and precisely captured with no discrepancy."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "(as she",
+      "corrected_text": "(as indeed she",
+      "observed_line_number": 27,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "insertion",
+      "original_text": "as she did",
+      "corrected_text": "as indeed she did",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

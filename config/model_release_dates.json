@@ -662,5 +662,13 @@
     "release_date": "2026-09-18",
     "release_source": "https://openrouter.ai/z-ai/glm-5.3-flashx",
     "release_notes": "Benchmark configuration uses high reasoning effort."
+  },
+  "or_gemini_4_argon": {
+    "vendor": "Google",
+    "release_date": "2026-10-13",
+    "release_source": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+    "release_notes": "Broad paid API availability began October 13, following the October 1 restricted announcement. Benchmark uses high reasoning effort and a 65,536-token output cap; sampling parameters are omitted.",
+    "display_suffix": "*",
+    "display_note": "Images are resized/recompressed when needed to stay below the provider's request payload limit."
   }
 }
