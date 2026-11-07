@@ -1,0 +1,92 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "from hers and",
+      "corrected_text": "from hers, and",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on hers, matters",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "a moment with",
+      "corrected_text": "a moment, with",
+      "line_number": 23,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "so beautiful that",
+      "corrected_text": "so beautiful, that",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "line_number": 32,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Kimi K3.1 Pro",
+  "annotation_date": "2026-11-07T06:32:25.854438",
+  "verified": false,
+  "inference": {
+    "model_id": "or_kimi_k3_1_pro",
+    "model": "moonshotai/kimi-k3.1-pro",
+    "response_id": "gen-1794054730-hlB2jVjGGhjV9orqU1L2",
+    "provider": "Modal",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 16.559,
+    "usage": {
+      "input_tokens": 23591,
+      "output_tokens": 1235,
+      "total_tokens": 24826,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 16704,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1079,
+      "answer_tokens": 156,
+      "provider_cost_usd": 0.0294648,
+      "raw": {
+        "completion_tokens": 1235,
+        "prompt_tokens": 23591,
+        "total_tokens": 24826,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1079,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 16704,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0294648,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0294648,
+          "upstream_inference_prompt_cost": 0.0171148,
+          "upstream_inference_completions_cost": 0.01235
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Fellow Travellers",
+      "corrected_text": "Fellow Travellers.",
+      "line_number": 0,
+      "page": "19"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "line_number": 1,
+      "page": "19"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "line_number": 1,
+      "page": "19"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "line_number": 1,
+      "page": "19"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "page": "19"
+    }
+  ],
+  "annotator": "GPT-6.1 Terra (OR)",
+  "annotation_date": "2026-11-07T06:36:53.468671",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_1_terra",
+    "model": "openai/gpt-6.1-terra",
+    "response_id": "gen-1794054999-7nwQcEH9oAzSyRa36KSs",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 13.665,
+    "usage": {
+      "input_tokens": 21705,
+      "output_tokens": 699,
+      "total_tokens": 22404,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 21702,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 433,
+      "answer_tokens": 266,
+      "provider_cost_usd": 0.0045831,
+      "raw": {
+        "completion_tokens": 699,
+        "prompt_tokens": 21705,
+        "total_tokens": 22404,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 433,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 21702,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0045831,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0045831,
+          "upstream_inference_prompt_cost": 0.0010881,
+          "upstream_inference_completions_cost": 0.003495
+        }
+      }
+    }
+  }
+}

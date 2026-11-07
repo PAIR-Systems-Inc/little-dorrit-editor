@@ -1,0 +1,93 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "driest of snorts",
+      "line_number": 6,
+      "notes": "Circled 'dryest snorts' replaced by handwritten marginal insertion",
+      "original_text": "dryest snorts",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "boiling",
+      "line_number": 11,
+      "notes": "Underlined to indicate italics",
+      "original_text": "boiling",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "him",
+      "line_number": 30,
+      "notes": "Circled with 'Italicize' annotation in margin",
+      "original_text": "him",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "notes": "British spelling 'authorise' supplied in margin with arrow",
+      "original_text": "authorize",
+      "page": "003.png",
+      "type": "replacement"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash 1017",
+  "annotation_date": "2026-11-07T06:45:15.280773",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash_1017",
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "response_id": "gen-1794055496-29iDuErxqHnVz34oUkRr",
+    "provider": "Wafer",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 20.395,
+    "usage": {
+      "input_tokens": 4554,
+      "output_tokens": 2932,
+      "total_tokens": 7486,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4480,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2318,
+      "answer_tokens": 614,
+      "provider_cost_usd": 0.001500004,
+      "raw": {
+        "completion_tokens": 2932,
+        "prompt_tokens": 4554,
+        "total_tokens": 7486,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2318,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4480,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.001500004,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.001500004,
+          "upstream_inference_prompt_cost": 3.4004e-05,
+          "upstream_inference_completions_cost": 0.001466
+        }
+      }
+    }
+  }
+}

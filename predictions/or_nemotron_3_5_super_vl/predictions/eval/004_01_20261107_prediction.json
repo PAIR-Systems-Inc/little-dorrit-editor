@@ -1,0 +1,78 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "why did he dine today",
+      "corrected_text": "why did he dine to-",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "!",
+      "corrected_text": "?",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "cold",
+      "corrected_text": "Cold",
+      "line_number": 28,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:31:02.390425",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794054613-P27NKvvEVgZ0hULnlQKf",
+    "provider": "Venice",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 46.911,
+    "usage": {
+      "input_tokens": 11475,
+      "output_tokens": 17214,
+      "total_tokens": 28689,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 8192,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 17038,
+      "answer_tokens": 176,
+      "provider_cost_usd": 0.00959128,
+      "raw": {
+        "completion_tokens": 17214,
+        "prompt_tokens": 11475,
+        "total_tokens": 28689,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 17038,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 8192,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00959128,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00959128,
+          "upstream_inference_prompt_cost": 0.00098428,
+          "upstream_inference_completions_cost": 0.008607
+        }
+      }
+    }
+  }
+}

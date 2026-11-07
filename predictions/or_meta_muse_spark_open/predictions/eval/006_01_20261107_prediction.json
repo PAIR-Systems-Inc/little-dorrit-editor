@@ -1,0 +1,120 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "highroad",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "materials costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "about and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "earnestly telling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, when",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "said when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, \"Clennam",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "said \"Clennam",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Muse Spark Open",
+  "annotation_date": "2026-11-07T06:30:44.723533",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_spark_open",
+    "model": "meta/muse-spark-open",
+    "response_id": "gen-1794054616-XMPZpOP6KPz8mtIUk8F8",
+    "provider": "Nebius",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 28.717,
+    "usage": {
+      "input_tokens": 13819,
+      "output_tokens": 4351,
+      "total_tokens": 18170,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 8192,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3898,
+      "answer_tokens": 453,
+      "provider_cost_usd": 0.0267543,
+      "raw": {
+        "completion_tokens": 4351,
+        "prompt_tokens": 13819,
+        "total_tokens": 18170,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3898,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 8192,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0267543,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0267543,
+          "upstream_inference_prompt_cost": 0.00826255,
+          "upstream_inference_completions_cost": 0.01849175
+        }
+      }
+    }
+  }
+}

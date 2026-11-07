@@ -1,0 +1,113 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "original_text": "high road",
+      "page": "352",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "original_text": "materials costing",
+      "page": "352",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "about, and",
+      "line_number": 13,
+      "original_text": "about and",
+      "page": "352",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "association, did",
+      "line_number": 15,
+      "original_text": "association did",
+      "page": "352",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "original_text": "earnestly telling",
+      "page": "352",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "said, when",
+      "line_number": 23,
+      "original_text": "said when",
+      "page": "352",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "said,",
+      "line_number": 25,
+      "original_text": "said",
+      "page": "352",
+      "type": "punctuation"
+    },
+    {
+      "corrected_text": "Clennam, in",
+      "line_number": 29,
+      "original_text": "Clennam in",
+      "page": "352",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Muse Spark Open",
+  "annotation_date": "2026-11-07T06:39:53.244925",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_spark_open",
+    "model": "meta/muse-spark-open",
+    "response_id": "gen-1794055171-ZrdB7zhVJU2t03dRzfVJ",
+    "provider": "Nebius",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 21.293,
+    "usage": {
+      "input_tokens": 13819,
+      "output_tokens": 3207,
+      "total_tokens": 17026,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13792,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2806,
+      "answer_tokens": 401,
+      "provider_cost_usd": 0.0157323,
+      "raw": {
+        "completion_tokens": 3207,
+        "prompt_tokens": 13819,
+        "total_tokens": 17026,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2806,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13792,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0157323,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0157323,
+          "upstream_inference_prompt_cost": 0.00210255,
+          "upstream_inference_completions_cost": 0.01362975
+        }
+      }
+    }
+  }
+}

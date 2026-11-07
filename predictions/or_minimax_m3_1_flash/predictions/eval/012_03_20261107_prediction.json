@@ -1,0 +1,174 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "city",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "C (cap)",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "each recurring",
+      "line_number": 4,
+      "notes": null,
+      "original_text": "each recurring",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "to",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "with them;",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "with them",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence, at",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "existence,at",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it; to",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "it;to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless, when",
+      "line_number": 17,
+      "notes": null,
+      "original_text": "motionless,when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still; to",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "stand-still;to",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view, by",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "view,by",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence; is",
+      "line_number": 20,
+      "notes": null,
+      "original_text": "existence;is",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "her; but",
+      "line_number": 26,
+      "notes": null,
+      "original_text": "her;but",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege-lord",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "liege-lord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:54:08.593161",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794056041-d0QyPZ0kMhxHjmdCZEOt",
+    "provider": "Parasail",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 9.809,
+    "usage": {
+      "input_tokens": 12747,
+      "output_tokens": 797,
+      "total_tokens": 13544,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 9088,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 797,
+      "provider_cost_usd": 0.00116337,
+      "raw": {
+        "completion_tokens": 797,
+        "prompt_tokens": 12747,
+        "total_tokens": 13544,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 9088,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00116337,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00116337,
+          "upstream_inference_prompt_cost": 0.00068517,
+          "upstream_inference_completions_cost": 0.0004782
+        }
+      }
+    }
+  }
+}

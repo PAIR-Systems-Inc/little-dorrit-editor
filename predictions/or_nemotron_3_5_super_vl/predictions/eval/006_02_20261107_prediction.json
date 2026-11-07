@@ -1,0 +1,120 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "high road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about and",
+      "corrected_text": "about, and",
+      "line_number": 12,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "earnestly telling",
+      "corrected_text": "earnestly, telling",
+      "line_number": 17,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "said when",
+      "corrected_text": "said, when",
+      "line_number": 22,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "and said",
+      "corrected_text": "and said,",
+      "line_number": 24,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 28,
+      "page": "003.png",
+      "confidence": null,
+      "notes": null
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:40:15.136884",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794055177-bPXssbHEveOihkRzN4Hq",
+    "provider": "DeepInfra",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 37.857,
+    "usage": {
+      "input_tokens": 11524,
+      "output_tokens": 13414,
+      "total_tokens": 24938,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4416,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 12931,
+      "answer_tokens": 483,
+      "provider_cost_usd": 0.00786152,
+      "raw": {
+        "completion_tokens": 13414,
+        "prompt_tokens": 11524,
+        "total_tokens": 24938,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 12931,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4416,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00786152,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00786152,
+          "upstream_inference_prompt_cost": 0.00115452,
+          "upstream_inference_completions_cost": 0.006707
+        }
+      }
+    }
+  }
+}

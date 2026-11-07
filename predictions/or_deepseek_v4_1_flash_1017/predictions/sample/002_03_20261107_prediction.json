@@ -1,0 +1,85 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white but",
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia.",
+      "corrected_text": "Vecchia,",
+      "line_number": 36,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash 1017",
+  "annotation_date": "2026-11-07T06:47:51.000509",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash_1017",
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "response_id": "gen-1794055633-8elTBxVSd9N6YxbdodWO",
+    "provider": "Wafer",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 37.398,
+    "usage": {
+      "input_tokens": 4574,
+      "output_tokens": 10184,
+      "total_tokens": 14758,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3456,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 9951,
+      "answer_tokens": 233,
+      "provider_cost_usd": 0.005188252,
+      "raw": {
+        "completion_tokens": 10184,
+        "prompt_tokens": 4574,
+        "total_tokens": 14758,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 9951,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3456,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.005188252,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.005188252,
+          "upstream_inference_prompt_cost": 9.6252e-05,
+          "upstream_inference_completions_cost": 0.005092
+        }
+      }
+    }
+  }
+}

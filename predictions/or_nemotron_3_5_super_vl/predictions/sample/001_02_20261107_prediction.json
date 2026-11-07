@@ -1,0 +1,127 @@
+{
+  "image": "001.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "church bells",
+      "corrected_text": "church bells,",
+      "line_number": 2,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "wine bottles",
+      "corrected_text": "wine-bottles",
+      "line_number": 11,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "got through",
+      "corrected_text": "got, through",
+      "line_number": 14,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "iron bars fashioned",
+      "corrected_text": "iron bars, fashioned",
+      "line_number": 14,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "grating where",
+      "corrected_text": "grating, where",
+      "line_number": 17,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "outside and",
+      "corrected_text": "outside; and",
+      "line_number": 29,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "intact in",
+      "corrected_text": "intact, in",
+      "line_number": 30,
+      "page": "page_5"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "indian ocean",
+      "corrected_text": "Indian Ocean",
+      "line_number": 31,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fed looking",
+      "corrected_text": "fed; looking",
+      "line_number": 36,
+      "page": "page_5"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "bars that",
+      "corrected_text": "bars, that",
+      "line_number": 36,
+      "page": "page_5"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:36:21.056621",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794054945-hZ9AshGmjxeLuaOINqCt",
+    "provider": "DeepInfra",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 33.928,
+    "usage": {
+      "input_tokens": 11524,
+      "output_tokens": 7886,
+      "total_tokens": 19410,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 8832,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 7345,
+      "answer_tokens": 541,
+      "provider_cost_usd": 0.00452344,
+      "raw": {
+        "completion_tokens": 7886,
+        "prompt_tokens": 11524,
+        "total_tokens": 19410,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 7345,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 8832,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00452344,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00452344,
+          "upstream_inference_prompt_cost": 0.00058044,
+          "upstream_inference_completions_cost": 0.003943
+        }
+      }
+    }
+  }
+}

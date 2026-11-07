@@ -1,0 +1,99 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "in our fancy whatever",
+      "corrected_text": "in our fancy, whatever",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "the other was?",
+      "corrected_text": "the other was? Arthur,",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "is now.",
+      "corrected_text": "is now. with two",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "is now. with two",
+      "corrected_text": "is now. with two Thank you!",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "The lights were bright",
+      "corrected_text": "The lights were bright within-doors.",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "greater things",
+      "corrected_text": "greater things in",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:35:00.945545",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794054856-BHHRTTYVC0umb6oQFq6U",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 44.626,
+    "usage": {
+      "input_tokens": 2946,
+      "output_tokens": 9068,
+      "total_tokens": 12014,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 2556,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 8792,
+      "answer_tokens": 276,
+      "provider_cost_usd": 0.00553764,
+      "raw": {
+        "completion_tokens": 9068,
+        "prompt_tokens": 2946,
+        "total_tokens": 12014,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 8792,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 2556,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00553764,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00553764,
+          "upstream_inference_prompt_cost": 9.684e-05,
+          "upstream_inference_completions_cost": 0.0054408
+        }
+      }
+    }
+  }
+}

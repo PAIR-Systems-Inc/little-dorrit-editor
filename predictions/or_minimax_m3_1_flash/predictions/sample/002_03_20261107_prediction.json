@@ -1,0 +1,102 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "between the eyes, by probably",
+      "corrected_text": "between the eyes, by probably",
+      "line_number": 5,
+      "page": "002.png",
+      "confidence": 0.55,
+      "notes": "Comma after 'eyes' appears to be a handwritten insertion (red marginal check mark beside this line indicates attention to it)."
+    },
+    {
+      "type": "punctuation",
+      "original_text": "unusually white; but",
+      "corrected_text": "unusually white; but",
+      "line_number": 11,
+      "page": "002.png",
+      "confidence": 0.5,
+      "notes": "Semicolon between 'white' and 'but' looks hand-inked; red marginal tick mark in the left margin aligns with this line."
+    },
+    {
+      "type": "capitalization",
+      "original_text": "marseilles harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 30,
+      "page": "002.png",
+      "confidence": 0.6,
+      "notes": "Place-name written in a heavier, hand-inked hand with initial capitals; a red arrow in the left margin points to this phrase."
+    },
+    {
+      "type": "insertion",
+      "original_text": "and the hill;",
+      "corrected_text": "and the hill; terrace-gardens,",
+      "line_number": 34,
+      "page": "002.png",
+      "confidence": 0.5,
+      "notes": "Handwritten marginal gloss 'terrace-gardens' (written with a leading dash) is tied by a connecting stroke to this line and is to be inserted in the running text."
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Civita Vecchia. So",
+      "corrected_text": "Civita Vecchia, So",
+      "line_number": 36,
+      "page": "002.png",
+      "confidence": 0.45,
+      "notes": "The mark after 'Vecchia' is a hand-added comma separating the two clauses."
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:47:23.770723",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794055619-NQMfnk5LRnlaJctcWKzk",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 27.226,
+    "usage": {
+      "input_tokens": 3018,
+      "output_tokens": 5448,
+      "total_tokens": 8466,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3017,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 5009,
+      "answer_tokens": 439,
+      "provider_cost_usd": 0.003314205,
+      "raw": {
+        "completion_tokens": 5448,
+        "prompt_tokens": 3018,
+        "total_tokens": 8466,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 5009,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3017,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.003314205,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.003314205,
+          "upstream_inference_prompt_cost": 4.5405e-05,
+          "upstream_inference_completions_cost": 0.0032688
+        }
+      }
+    }
+  }
+}

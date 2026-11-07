@@ -1,0 +1,36 @@
+{
+  "model_name": "or_elorian_glimpse",
+  "date": "2026-11-07T06:51:39.866429",
+  "annotator": "Elorian Glimpse",
+  "annotation_date": "2026-11-07T06:48:54.330379",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted type is \"capitalization,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial \"if\" in the phrase \"if he\" \u2192 \"If he.\" The prediction captures the same core change by converting \"if\" \u2192 \"If\". Although it includes less surrounding context (omits \"he\"), it still accurately represents the essential intended edit: capitalizing the word \"if\" at that location."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the verb phrase from \"said Clennam\" to \"asked Clennam,\" whose core correction is replacing \"said\" with \"asked\" while keeping \"Clennam\" unchanged. The predicted edit replaces \"said\" with \"asked\" without including the following word \"Clennam\" as context. This still captures the essential intended change (said \u2192 asked), and omitting surrounding unchanged context is acceptable under the evaluation rules.\n\nTherefore, the predicted edit correctly captures the ground truth\u2019s intention."
+    }
+  ]
+}

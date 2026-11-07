@@ -1,0 +1,92 @@
+{
+  "model_name": "or_meta_muse_spark_open",
+  "date": "2026-11-07T06:53:39.413375",
+  "annotator": "Muse Spark Open",
+  "annotation_date": "2026-11-07T06:50:49.479724",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "heart so much",
+      "corrected_text": "heart, so much",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"punctuation,\" which exactly matches the ground truth.\n\n2) Text Content Accuracy: The ground truth inserts a comma after \"heart\" in the sequence \"heart so\" \u2192 \"heart, so\". The prediction does the same core change\u2014adding a comma after \"heart\"\u2014but includes extra surrounding context (\"much\"): \"heart so much\" \u2192 \"heart, so much\". This preserves the essential intended correction (comma insertion after \"heart\")."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "(as she did",
+      "corrected_text": "(as indeed she did",
+      "observed_line_number": 27,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"insertion\" and the predicted edit type is also \"insertion\", so the type matches exactly.\n\n2) Text Content Accuracy: The core change in the ground truth is inserting the word \"indeed\" into the phrase \"as she did\" to make it \"as indeed she did\". The prediction captures the same essential insertion (\"as (indeed) she did\"), merely including an extra preceding parenthesis as additional context in both the original and corrected text. Because the substantive change\u2014adding \"indeed\"\u2014is correctly represented, the text content matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "punctuation",
+      "original_text": "at length said",
+      "corrected_text": "at length, said",
+      "observed_line_number": 30,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma between \"length\" and \"said\" (\"length said\" \u2192 \"length, said\"). The prediction applies the same core change in a slightly longer phrase (\"at length said\" \u2192 \"at length, said\"). Including extra surrounding context (\"at\") is acceptable, and the essential punctuation insertion at the correct location is captured.\n\nTherefore, the predicted edit matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 0.9,
+      "fp": 0.04999999999999999,
+      "fn": 0.04999999999999999,
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "observed_line_number": 33,
+      "line_diff": 1,
+      "line_number_penalty": 0.1,
+      "judgement": "Edit Type Accuracy: Both ground truth and predicted edits are of type \"replacement\", so the edit type matches exactly.\n\nText Content Accuracy: Both specify the same original text \"I hope so\" and the same corrected text \"I hoped so\", capturing the identical core change (present tense to past tense). Line number discrepancy is to be ignored, and no other text differences exist.\n\nTherefore, the prediction correctly captures the ground truth edit."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "generous Mr.",
+      "corrected_text": "generous, Mr.",
+      "observed_line_number": 22,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 4,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "generous, Mr.",
+      "corrected_text": "generous Mr.",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "or_elorian_glimpse",
+  "date": "2026-11-07T06:42:40.651716",
+  "annotator": "Elorian Glimpse",
+  "annotation_date": "2026-11-07T06:40:03.855729",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation,\" so the type matches exactly.\n2) Text Content Accuracy: The ground truth change is adding a period to make \"Sun and Shadow\" \u2192 \"Sun and Shadow.\" The predicted edit specifies the same original and corrected text with the added period. The extra note about a marginal query does not alter the core edit. Therefore, the prediction captures the essential change accurately."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

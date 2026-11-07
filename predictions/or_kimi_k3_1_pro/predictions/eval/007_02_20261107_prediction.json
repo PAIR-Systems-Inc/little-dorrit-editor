@@ -1,0 +1,64 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Sun and Shadow",
+      "corrected_text": "Sun and Shadow.",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Kimi K3.1 Pro",
+  "annotation_date": "2026-11-07T06:40:11.902368",
+  "verified": false,
+  "inference": {
+    "model_id": "or_kimi_k3_1_pro",
+    "model": "moonshotai/kimi-k3.1-pro",
+    "response_id": "gen-1794055200-58G3CXMziV4RX2hJVG2x",
+    "provider": "Modal",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 13.811,
+    "usage": {
+      "input_tokens": 24347,
+      "output_tokens": 692,
+      "total_tokens": 25039,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 16704,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 655,
+      "answer_tokens": 37,
+      "provider_cost_usd": 0.0255468,
+      "raw": {
+        "completion_tokens": 692,
+        "prompt_tokens": 24347,
+        "total_tokens": 25039,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 655,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 16704,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0255468,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0255468,
+          "upstream_inference_prompt_cost": 0.0186268,
+          "upstream_inference_completions_cost": 0.00692
+        }
+      }
+    }
+  }
+}

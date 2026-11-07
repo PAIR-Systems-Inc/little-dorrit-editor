@@ -1,0 +1,64 @@
+{
+  "model_name": "or_elorian_glimpse",
+  "date": "2026-11-07T06:50:13.982558",
+  "annotator": "Elorian Glimpse",
+  "annotation_date": "2026-11-07T06:47:39.269898",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n\nText Content Accuracy: Both specify the same original text (\"No sir\") and the same corrected text (\"No, sir\"), capturing the identical core change\u2014adding a comma after \"No\". Therefore, the prediction matches the ground truth\u2019s intended correction."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: The ground truth changes the phrase \"why did he dine\" to \"Why did he dine\", which is specifically capitalizing the initial \"why\" to \"Why\". The predicted edit captures this core change by editing \"why\" \u2192 \"Why\". Although it includes less surrounding context than the ground truth, it correctly represents the essential intended correction."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "stones",
+      "corrected_text": "stones?",
+      "observed_line_number": 29,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 2,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "punctuation",
+      "original_text": "cold stones!",
+      "corrected_text": "cold stones?",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

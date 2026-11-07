@@ -1,0 +1,99 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "that, in",
+      "corrected_text": "that in",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fancy, whatever",
+      "corrected_text": "fancy whatever",
+      "line_number": 10,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you!",
+      "corrected_text": "you,",
+      "line_number": 17,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore and",
+      "corrected_text": "shore, and",
+      "line_number": 25,
+      "page": "372"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "page": "372"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 33,
+      "page": "372"
+    }
+  ],
+  "annotator": "GPT-6.1 Terra (OR)",
+  "annotation_date": "2026-11-07T06:43:16.824500",
+  "verified": false,
+  "inference": {
+    "model_id": "or_openai_gpt_6_1_terra",
+    "model": "openai/gpt-6.1-terra",
+    "response_id": "gen-1794055370-KXeLSXN2mcB5p5frYtbv",
+    "provider": "OpenAI",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 28.062,
+    "usage": {
+      "input_tokens": 22410,
+      "output_tokens": 1937,
+      "total_tokens": 24347,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 22407,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1635,
+      "answer_tokens": 302,
+      "provider_cost_usd": 0.01080835,
+      "raw": {
+        "completion_tokens": 1937,
+        "prompt_tokens": 22410,
+        "total_tokens": 24347,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1635,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 22407,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.01080835,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.01080835,
+          "upstream_inference_prompt_cost": 0.00112335,
+          "upstream_inference_completions_cost": 0.009685
+        }
+      }
+    }
+  }
+}

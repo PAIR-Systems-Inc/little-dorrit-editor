@@ -1,0 +1,71 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "line_number": 36,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 39,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:31:02.710541",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794054615-PZD2jkY27tgwonKobpmd",
+    "provider": "DeepInfra",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 45.428,
+    "usage": {
+      "input_tokens": 11541,
+      "output_tokens": 9021,
+      "total_tokens": 20562,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 8910,
+      "answer_tokens": 111,
+      "provider_cost_usd": 0.00624165,
+      "raw": {
+        "completion_tokens": 9021,
+        "prompt_tokens": 11541,
+        "total_tokens": 20562,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 8910,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00624165,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00624165,
+          "upstream_inference_prompt_cost": 0.00173115,
+          "upstream_inference_completions_cost": 0.0045105
+        }
+      }
+    }
+  }
+}

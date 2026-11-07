@@ -1,0 +1,36 @@
+{
+  "model_name": "or_openai_gpt_6_1_terra",
+  "date": "2026-11-07T06:51:26.455615",
+  "annotator": "GPT-6.1 Terra (OR)",
+  "annotation_date": "2026-11-07T06:48:40.974795",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify the edit type as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the phrase \"if he\" to \"If he\", which is specifically capitalizing the initial \"if\" to \"If\" while leaving \"he\" unchanged. The prediction changes \"if\" to \"If\", capturing the same core capitalization change. Although the prediction includes less surrounding context (omits \"he\"), it correctly represents the essential intended edit."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces \"said\" with \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam.\" The prediction replaces \"said\" \u2192 \"asked\" without including the adjacent context (\"Clennam\"), but it captures the essential intended change (the verb change from \"said\" to \"asked\"). Including less surrounding text is acceptable as long as the core change is correctly represented.\n\nTherefore, the predicted edit matches the ground truth\u2019s intention."
+    }
+  ]
+}

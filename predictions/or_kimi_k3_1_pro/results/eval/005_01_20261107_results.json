@@ -1,0 +1,36 @@
+{
+  "model_name": "or_kimi_k3_1_pro",
+  "date": "2026-11-07T06:32:23.725464",
+  "annotator": "Kimi K3.1 Pro",
+  "annotation_date": "2026-11-07T06:30:30.345691",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are labeled as \"capitalization\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the word \"if\" at the start of the phrase (\"if he\" \u2192 \"If he\"). The prediction captures the same core change by capitalizing \"if\" (\"if\" \u2192 \"If\"). Although the prediction includes less surrounding context (it omits \"he\"), it still reflects the essential intended correction: changing lowercase \"if\" to uppercase \"If\"."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2. Text Content Accuracy: The ground truth replaces \"said Clennam\" with \"asked Clennam\", which fundamentally changes the verb \"said\" to \"asked\" while keeping the surrounding context (\"Clennam\") the same. The prediction replaces \"said\" with \"asked\" without including \"Clennam\" in the span, but it captures the core intended change (said \u2192 asked). Including less surrounding context is acceptable as long as the essential edit is correctly represented.\n\nTherefore, the predicted edit matches the ground truth\u2019s intention."
+    }
+  ]
+}

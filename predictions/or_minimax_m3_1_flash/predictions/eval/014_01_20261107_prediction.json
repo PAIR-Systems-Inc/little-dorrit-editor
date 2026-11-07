@@ -1,0 +1,113 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "excuse a wrapper for upon my word",
+      "corrected_text": "excuse a wrapper, for upon my word",
+      "line_number": 20,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "which is worse but our little friend is making me!",
+      "corrected_text": "which is worse, but our little friend is making me!",
+      "line_number": 21,
+      "page": "452.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Doye",
+      "corrected_text": "Doyle",
+      "line_number": 28,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "infinitely more and though",
+      "corrected_text": "infinitely more, and though",
+      "line_number": 28,
+      "page": "452.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Doye",
+      "corrected_text": "Doyle",
+      "line_number": 35,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam \u2014 Doye and Clennam naturally",
+      "corrected_text": "Clennam \u2014 Doyle and Clennam naturally",
+      "line_number": 35,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at least \"don't mind me that\" and if I did",
+      "corrected_text": "at least, \"don't mind me that,\" and if I did",
+      "line_number": 30,
+      "page": "452.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "considerably on the nature of the view, but I'm running on again",
+      "corrected_text": "considerably on the nature of the view, but I'm running on again,",
+      "line_number": 31,
+      "page": "452.png"
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:35:59.302973",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794054935-ZkP4U2KqiMlMGfGqnLy4",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 24.382,
+    "usage": {
+      "input_tokens": 2970,
+      "output_tokens": 3577,
+      "total_tokens": 6547,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 2556,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3145,
+      "answer_tokens": 432,
+      "provider_cost_usd": 0.00224664,
+      "raw": {
+        "completion_tokens": 3577,
+        "prompt_tokens": 2970,
+        "total_tokens": 6547,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3145,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 2556,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00224664,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00224664,
+          "upstream_inference_prompt_cost": 0.00010044,
+          "upstream_inference_completions_cost": 0.0021462
+        }
+      }
+    }
+  }
+}

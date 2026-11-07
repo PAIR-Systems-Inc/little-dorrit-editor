@@ -1,0 +1,113 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "high-road",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "materials costing",
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "suppose that",
+      "corrected_text": "suppose, that",
+      "line_number": 10,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sea as",
+      "corrected_text": "sea, as",
+      "line_number": 12,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "tion did",
+      "corrected_text": "tion, did",
+      "line_number": 15,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "well; but",
+      "corrected_text": "well, but",
+      "line_number": 19,
+      "page": "352"
+    },
+    {
+      "type": "insertion",
+      "original_text": "said,",
+      "corrected_text": "said, (comma)",
+      "line_number": 25,
+      "page": "352"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Clennam in",
+      "corrected_text": "Clennam, in",
+      "line_number": 29,
+      "page": "352"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash 1017",
+  "annotation_date": "2026-11-07T06:31:00.000419",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash_1017",
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "response_id": "gen-1794054618-gVW95ZWtW56ol4W0WSS6",
+    "provider": "Wafer",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 39.348,
+    "usage": {
+      "input_tokens": 4554,
+      "output_tokens": 6819,
+      "total_tokens": 11373,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3456,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 5859,
+      "answer_tokens": 960,
+      "provider_cost_usd": 0.003504432,
+      "raw": {
+        "completion_tokens": 6819,
+        "prompt_tokens": 4554,
+        "total_tokens": 11373,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 5859,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3456,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.003504432,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.003504432,
+          "upstream_inference_prompt_cost": 9.4932e-05,
+          "upstream_inference_completions_cost": 0.0034095
+        }
+      }
+    }
+  }
+}

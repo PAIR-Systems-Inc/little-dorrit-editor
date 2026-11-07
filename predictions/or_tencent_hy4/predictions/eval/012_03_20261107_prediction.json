@@ -1,0 +1,148 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Chapter XXIX",
+      "corrected_text": "Chapter XXIX.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Dreaming",
+      "corrected_text": "Dreaming.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "return of",
+      "corrected_text": "return to",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them",
+      "corrected_text": "them;",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "seen of",
+      "corrected_text": "seen; of",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "busy existence at",
+      "corrected_text": "busy existence, at",
+      "line_number": 14,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it to",
+      "corrected_text": "it; to",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "stand-still to",
+      "corrected_text": "stand-still; to",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "view by",
+      "corrected_text": "view, by",
+      "line_number": 16,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "contracted existence is",
+      "corrected_text": "contracted existence; is",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "liege lord",
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Tencent Hy4",
+  "annotation_date": "2026-11-07T07:00:26.207776",
+  "verified": false,
+  "inference": {
+    "model_id": "or_tencent_hy4",
+    "model": "tencent/hy4",
+    "response_id": "gen-1794056029-riq41GykDl0UOlzKRKqC",
+    "provider": "Tencent",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 363.724,
+    "usage": {
+      "input_tokens": 13931,
+      "output_tokens": 44828,
+      "total_tokens": 58759,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13824,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 44140,
+      "answer_tokens": 688,
+      "provider_cost_usd": 0.056392337,
+      "raw": {
+        "completion_tokens": 44828,
+        "prompt_tokens": 13931,
+        "total_tokens": 58759,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 44140,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13824,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.056392337,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.056392337,
+          "upstream_inference_prompt_cost": 0.000334923,
+          "upstream_inference_completions_cost": 0.056057414
+        }
+      }
+    }
+  }
+}

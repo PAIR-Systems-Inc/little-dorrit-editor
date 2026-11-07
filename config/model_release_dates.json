@@ -670,5 +670,71 @@
     "release_notes": "Broad paid API availability began October 13, following the October 1 restricted announcement. Benchmark uses high reasoning effort and a 65,536-token output cap; sampling parameters are omitted.",
     "display_suffix": "*",
     "display_note": "Images are resized/recompressed when needed to stay below the provider's request payload limit."
+  },
+  "or_elorian_glimpse": {
+    "vendor": "Elorian",
+    "release_date": "2026-10-16",
+    "release_source": "https://elorian.ai/blog/introducing-glimpse",
+    "release_notes": "Announced October 16; listed on OpenRouter October 17. Benchmark enables native reasoning; the provider does not expose an effort selector.",
+    "display_note": "Native reasoning enabled; effort controlled by provider."
+  },
+  "or_kimi_k3_1_pro": {
+    "vendor": "Moonshot AI",
+    "release_date": "2026-10-23",
+    "release_source": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort."
+  },
+  "or_openai_gpt_6_1_terra": {
+    "vendor": "OpenAI",
+    "release_date": "2026-10-26",
+    "release_source": "https://openrouter.ai/openai/gpt-6.1-terra",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort."
+  },
+  "or_tencent_hy4": {
+    "vendor": "Tencent",
+    "release_date": "2026-11-04",
+    "release_source": "https://openrouter.ai/tencent/hy4",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort."
+  },
+  "or_meta_muse_spark_open": {
+    "vendor": "Meta",
+    "release_date": "2026-10-15",
+    "release_source": "https://openrouter.ai/meta/muse-spark-open",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort."
+  },
+  "or_nemotron_3_5_super_vl": {
+    "vendor": "NVIDIA",
+    "release_date": "2026-10-15",
+    "release_source": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
+    "release_notes": "OpenRouter availability date. Benchmark enables native reasoning; the provider does not expose an effort selector.",
+    "display_note": "Native reasoning enabled; effort controlled by provider."
+  },
+  "or_minimax_m3_1_flash": {
+    "vendor": "MiniMax",
+    "release_date": "2026-10-19",
+    "release_source": "https://openrouter.ai/minimax/minimax-m3.1-flash",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort."
+  },
+  "or_deepseek_v4_1_flash_1017": {
+    "vendor": "DeepSeek",
+    "release_date": "2026-10-17",
+    "release_source": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort."
+  },
+  "or_moondream_3_1": {
+    "vendor": "Moondream",
+    "release_date": "2026-10-15",
+    "release_source": "https://openrouter.ai/moondream/moondream3.1-9b-a2b",
+    "release_notes": "OpenRouter availability date. Benchmark enables native reasoning; the provider does not expose an effort selector.",
+    "display_note": "Native reasoning enabled; effort controlled by provider. Provider output limit: 4,096 tokens; JSON mode unavailable. Images are resized/recompressed when needed to meet provider request-size limits.",
+    "display_suffix": "*"
+  },
+  "or_ternary_bonsai_2_9b": {
+    "vendor": "PrismML",
+    "release_date": "2026-10-16",
+    "release_source": "https://openrouter.ai/prism-ml/ternary-bonsai-2-9b",
+    "release_notes": "OpenRouter availability date. Benchmark enables native reasoning; the provider does not expose an effort selector.",
+    "display_note": "Native reasoning enabled; effort controlled by provider. Images are resized/recompressed when needed to meet provider request-size limits.",
+    "display_suffix": "*"
   }
 }

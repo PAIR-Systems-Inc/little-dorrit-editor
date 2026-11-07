@@ -1,0 +1,56 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:49:56.516566",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794055794-bLBvmz6l3m5r9dJPbRZa",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 4.83,
+    "usage": {
+      "input_tokens": 2946,
+      "output_tokens": 140,
+      "total_tokens": 3086,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 2945,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 136,
+      "answer_tokens": 4,
+      "provider_cost_usd": 0.000128325,
+      "raw": {
+        "completion_tokens": 140,
+        "prompt_tokens": 2946,
+        "total_tokens": 3086,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 136,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 2945,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.000128325,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.000128325,
+          "upstream_inference_prompt_cost": 4.4325e-05,
+          "upstream_inference_completions_cost": 8.4e-05
+        }
+      }
+    }
+  }
+}

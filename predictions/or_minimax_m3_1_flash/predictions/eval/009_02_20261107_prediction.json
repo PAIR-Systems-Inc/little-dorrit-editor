@@ -1,0 +1,92 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "has reason to be very happy.",
+      "corrected_text": "has reason to be very happy.\"",
+      "line_number": 4,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "God bless his wife and him!",
+      "corrected_text": "\"God bless his wife and him!",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "raised",
+      "line_number": 13,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "raised",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "",
+      "corrected_text": "I loved so",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:46:30.545985",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794055478-cSGqSSBREZceSqrREctO",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 104.843,
+    "usage": {
+      "input_tokens": 2994,
+      "output_tokens": 19266,
+      "total_tokens": 22260,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 2993,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 18639,
+      "answer_tokens": 627,
+      "provider_cost_usd": 0.011604645,
+      "raw": {
+        "completion_tokens": 19266,
+        "prompt_tokens": 2994,
+        "total_tokens": 22260,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 18639,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 2993,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.011604645,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.011604645,
+          "upstream_inference_prompt_cost": 4.5045e-05,
+          "upstream_inference_completions_cost": 0.0115596
+        }
+      }
+    }
+  }
+}

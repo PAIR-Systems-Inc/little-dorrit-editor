@@ -1,0 +1,92 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white but",
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "page": "6"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Marseilles harbour",
+      "corrected_text": "Marseilles Harbour",
+      "line_number": 30,
+      "page": "6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "6"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia So",
+      "corrected_text": "Vecchia. So",
+      "line_number": 36,
+      "page": "6"
+    }
+  ],
+  "annotator": "Muse Spark Open",
+  "annotation_date": "2026-11-07T06:46:44.727352",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_spark_open",
+    "model": "meta/muse-spark-open",
+    "response_id": "gen-1794055584-F5LOWCr0mJtZzwOiV3aj",
+    "provider": "Nebius",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 22.227,
+    "usage": {
+      "input_tokens": 13805,
+      "output_tokens": 3453,
+      "total_tokens": 17258,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13776,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3291,
+      "answer_tokens": 162,
+      "provider_cost_usd": 0.0167779,
+      "raw": {
+        "completion_tokens": 3453,
+        "prompt_tokens": 13805,
+        "total_tokens": 17258,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3291,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13776,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0167779,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0167779,
+          "upstream_inference_prompt_cost": 0.00210265,
+          "upstream_inference_completions_cost": 0.01467525
+        }
+      }
+    }
+  }
+}

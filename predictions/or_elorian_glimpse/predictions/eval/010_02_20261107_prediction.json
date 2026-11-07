@@ -1,0 +1,102 @@
+{
+  "image": "010.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "hers, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "hers and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "hers, matters",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "hers matters",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "moment, with",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "moment with",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "beautiful, that",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "beautiful that",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "They are to be married.",
+      "line_number": 32,
+      "notes": null,
+      "original_text": "they are to be married.",
+      "page": "003.png",
+      "type": "capitalization"
+    }
+  ],
+  "annotator": "Elorian Glimpse",
+  "annotation_date": "2026-11-07T06:42:22.263300",
+  "verified": false,
+  "inference": {
+    "model_id": "or_elorian_glimpse",
+    "model": "elorian/glimpse",
+    "response_id": "gen-1794055303-qYWwcEn33sODQcNLL5hN",
+    "provider": "Together",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 37.663,
+    "usage": {
+      "input_tokens": 18419,
+      "output_tokens": 7394,
+      "total_tokens": 25813,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 17600,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 7013,
+      "answer_tokens": 381,
+      "provider_cost_usd": 0.0237294,
+      "raw": {
+        "completion_tokens": 7394,
+        "prompt_tokens": 18419,
+        "total_tokens": 25813,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 7013,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 17600,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0237294,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0237294,
+          "upstream_inference_prompt_cost": 0.0015474,
+          "upstream_inference_completions_cost": 0.022182
+        }
+      }
+    }
+  }
+}

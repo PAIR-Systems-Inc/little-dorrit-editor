@@ -1,0 +1,50 @@
+{
+  "model_name": "or_openai_gpt_6_1_terra",
+  "date": "2026-11-07T06:51:17.904600",
+  "annotator": "GPT-6.1 Terra (OR)",
+  "annotation_date": "2026-11-07T06:48:25.170529",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "No sir",
+      "corrected_text": "No, sir",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation\", so the edit type matches exactly.\n2) Text Content Accuracy: Both specify the same transformation: \"No sir\" \u001a \"No, sir\" (inserting a comma after \"No\"). This captures the core intended punctuation correction with identical original and corrected text."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "why",
+      "corrected_text": "Why",
+      "observed_line_number": 28,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth capitalizes the initial word in the phrase, changing \"why did he dine\" to \"Why did he dine\". The prediction captures the same core change by changing \"why\" to \"Why\". Although it provides less surrounding context than the ground truth, it correctly represents the essential intended correction (capitalizing the initial 'w' in \"why\")."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "stones!",
+      "corrected_text": "stones?",
+      "observed_line_number": 29,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation\", so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth changes the terminal punctuation from an exclamation mark to a question mark in the phrase ending with \"stones\" (\"cold stones!\" \u2192 \"cold stones?\"). The prediction captures the same core change (\"stones!\" \u2192 \"stones?\") with less surrounding context. Since the essential intended edit\u2014changing ! to ? after \"stones\"\u2014is correctly represented, the content matches the ground truth\u2019s intention."
+    }
+  ]
+}

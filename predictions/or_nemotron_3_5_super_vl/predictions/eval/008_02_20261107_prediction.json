@@ -1,0 +1,99 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "wore",
+      "corrected_text": "worn",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:41:46.282746",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794055267-nyAC2dOH8Vvme83XMTpG",
+    "provider": "DeepInfra",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 38.497,
+    "usage": {
+      "input_tokens": 11548,
+      "output_tokens": 12534,
+      "total_tokens": 24082,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 8832,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 12209,
+      "answer_tokens": 325,
+      "provider_cost_usd": 0.00685104,
+      "raw": {
+        "completion_tokens": 12534,
+        "prompt_tokens": 11548,
+        "total_tokens": 24082,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 12209,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 8832,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00685104,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00685104,
+          "upstream_inference_prompt_cost": 0.00058404,
+          "upstream_inference_completions_cost": 0.006267
+        }
+      }
+    }
+  }
+}

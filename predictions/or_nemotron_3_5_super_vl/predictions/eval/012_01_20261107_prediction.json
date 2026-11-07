@@ -1,0 +1,106 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "city",
+      "corrected_text": "City",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "of",
+      "corrected_text": "to",
+      "line_number": 5,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "them;",
+      "corrected_text": "them,",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "it;",
+      "corrected_text": "it,",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "motionless when",
+      "corrected_text": "motionless, when",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "existence;",
+      "corrected_text": "existence,",
+      "line_number": 18,
+      "page": "003.png"
+    },
+    {
+      "type": "deletion",
+      "original_text": "lord",
+      "corrected_text": "",
+      "line_number": 25,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:36:07.439983",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794054889-IUL5Sze8beozNdhVzW7T",
+    "provider": "DeepInfra",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 74.148,
+    "usage": {
+      "input_tokens": 11570,
+      "output_tokens": 15330,
+      "total_tokens": 26900,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4416,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 14960,
+      "answer_tokens": 370,
+      "provider_cost_usd": 0.00882642,
+      "raw": {
+        "completion_tokens": 15330,
+        "prompt_tokens": 11570,
+        "total_tokens": 26900,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 14960,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4416,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00882642,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00882642,
+          "upstream_inference_prompt_cost": 0.00116142,
+          "upstream_inference_completions_cost": 0.007665
+        }
+      }
+    }
+  }
+}

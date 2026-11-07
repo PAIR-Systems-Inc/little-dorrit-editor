@@ -1,0 +1,85 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "deletion",
+      "original_text": "in our fancy",
+      "corrected_text": "",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore",
+      "corrected_text": "shore,",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:35:52.433828",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794054860-dbbmEEIFzDAVLxcEkepP",
+    "provider": "DeepInfra",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 86.569,
+    "usage": {
+      "input_tokens": 11570,
+      "output_tokens": 20451,
+      "total_tokens": 32021,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4416,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 20238,
+      "answer_tokens": 213,
+      "provider_cost_usd": 0.01138692,
+      "raw": {
+        "completion_tokens": 20451,
+        "prompt_tokens": 11570,
+        "total_tokens": 32021,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 20238,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4416,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.01138692,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.01138692,
+          "upstream_inference_prompt_cost": 0.00116142,
+          "upstream_inference_completions_cost": 0.0102255
+        }
+      }
+    }
+  }
+}

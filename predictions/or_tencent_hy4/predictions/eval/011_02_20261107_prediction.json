@@ -1,0 +1,99 @@
+{
+  "image": "011.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "that in",
+      "corrected_text": "that, in",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "fancy whatever",
+      "corrected_text": "fancy, whatever",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "\u201cThank you\u201d",
+      "corrected_text": "\u201cThank you,\u201d",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "shore and",
+      "corrected_text": "shore, and",
+      "line_number": 25,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "within doors",
+      "corrected_text": "within-doors",
+      "line_number": 28,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "that",
+      "corrected_text": "than",
+      "line_number": 33,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Tencent Hy4",
+  "annotation_date": "2026-11-07T06:48:34.187164",
+  "verified": false,
+  "inference": {
+    "model_id": "or_tencent_hy4",
+    "model": "tencent/hy4",
+    "response_id": "gen-1794055403-OxqhHQ0Q4oCArkYgvqQK",
+    "provider": "Tencent",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 288.317,
+    "usage": {
+      "input_tokens": 13935,
+      "output_tokens": 32396,
+      "total_tokens": 46331,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13824,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 32076,
+      "answer_tokens": 320,
+      "provider_cost_usd": 0.040847789,
+      "raw": {
+        "completion_tokens": 32396,
+        "prompt_tokens": 13935,
+        "total_tokens": 46331,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 32076,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13824,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.040847789,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.040847789,
+          "upstream_inference_prompt_cost": 0.000336591,
+          "upstream_inference_completions_cost": 0.040511198
+        }
+      }
+    }
+  }
+}

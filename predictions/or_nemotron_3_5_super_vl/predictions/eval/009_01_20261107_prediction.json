@@ -1,0 +1,85 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "thanked",
+      "corrected_text": "indeed thanked",
+      "line_number": 27,
+      "page": "page_369"
+    },
+    {
+      "type": "italicize",
+      "original_text": "thanked him from her heart (as she did",
+      "corrected_text": "thanked him from her heart (as she did",
+      "line_number": 27,
+      "page": "page_369"
+    },
+    {
+      "type": "deletion",
+      "original_text": "Mr.",
+      "corrected_text": "",
+      "line_number": 22,
+      "page": "page_369"
+    },
+    {
+      "type": "replacement",
+      "original_text": "hope",
+      "corrected_text": "hoped",
+      "line_number": 34,
+      "page": "page_369"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:31:26.253095",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794054664-JcZU8vOc2iDshH856SsQ",
+    "provider": "Venice",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 24.287,
+    "usage": {
+      "input_tokens": 11443,
+      "output_tokens": 11791,
+      "total_tokens": 23234,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 8192,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 11541,
+      "answer_tokens": 250,
+      "provider_cost_usd": 0.00687338,
+      "raw": {
+        "completion_tokens": 11791,
+        "prompt_tokens": 11443,
+        "total_tokens": 23234,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 11541,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 8192,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00687338,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00687338,
+          "upstream_inference_prompt_cost": 0.00097788,
+          "upstream_inference_completions_cost": 0.0058955
+        }
+      }
+    }
+  }
+}

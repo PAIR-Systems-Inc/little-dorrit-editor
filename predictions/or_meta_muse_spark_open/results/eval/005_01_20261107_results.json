@@ -1,0 +1,36 @@
+{
+  "model_name": "or_meta_muse_spark_open",
+  "date": "2026-11-07T06:32:27.476134",
+  "annotator": "Muse Spark Open",
+  "annotation_date": "2026-11-07T06:30:33.473616",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"capitalization\", so the edit type matches exactly.\n2) Text Content Accuracy: The ground truth capitalizes the word \"if\" in the phrase \"if he\" \u2192 \"If he\". The prediction capitalizes \"if\" \u2192 \"If\" without including the following word \"he\". This still captures the core intended change (capitalizing \"if\"). Additional surrounding context is optional, so the prediction\u2019s narrower span is acceptable."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The ground truth replaces the phrase \"said Clennam\" with \"asked Clennam\", whose core correction is changing the verb \"said\" to \"asked\" while leaving \"Clennam\" unchanged. The predicted edit replaces \"said\" with \"asked\" without including the surrounding word \"Clennam\", but it still captures the essential intended change (said \u2192 asked). Because the omitted context would remain unchanged in the text, the prediction reflects the same correction intention."
+    }
+  ]
+}

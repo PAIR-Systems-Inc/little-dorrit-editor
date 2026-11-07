@@ -1,0 +1,85 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "FELLOW TRAVELLERS",
+      "corrected_text": "FELLOW TRAVELLERS.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "yonder, to-day",
+      "corrected_text": "yonder to-day",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Tencent Hy4",
+  "annotation_date": "2026-11-07T06:53:28.366712",
+  "verified": false,
+  "inference": {
+    "model_id": "or_tencent_hy4",
+    "model": "tencent/hy4",
+    "response_id": "gen-1794055635-D9EkjNDIbriuHvyjkjcc",
+    "provider": "Tencent",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 342.968,
+    "usage": {
+      "input_tokens": 13971,
+      "output_tokens": 34882,
+      "total_tokens": 48853,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13888,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 34654,
+      "answer_tokens": 228,
+      "provider_cost_usd": 0.0439462,
+      "raw": {
+        "completion_tokens": 34882,
+        "prompt_tokens": 13971,
+        "total_tokens": 48853,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 34654,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13888,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0439462,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0439462,
+          "upstream_inference_prompt_cost": 0.000326259,
+          "upstream_inference_completions_cost": 0.043619941
+        }
+      }
+    }
+  }
+}

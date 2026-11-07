@@ -1,0 +1,75 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "\"Why",
+      "line_number": 28,
+      "notes": null,
+      "original_text": "\"why",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stones?",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "stones!",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash 1017",
+  "annotation_date": "2026-11-07T06:48:54.301872",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash_1017",
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "response_id": "gen-1794055714-u8Xr06H8nhYUAFvMh2xH",
+    "provider": "Wafer",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 20.704,
+    "usage": {
+      "input_tokens": 4554,
+      "output_tokens": 3115,
+      "total_tokens": 7669,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4480,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2893,
+      "answer_tokens": 222,
+      "provider_cost_usd": 0.001591504,
+      "raw": {
+        "completion_tokens": 3115,
+        "prompt_tokens": 4554,
+        "total_tokens": 7669,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2893,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4480,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.001591504,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.001591504,
+          "upstream_inference_prompt_cost": 3.4004e-05,
+          "upstream_inference_completions_cost": 0.0015575
+        }
+      }
+    }
+  }
+}

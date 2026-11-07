@@ -1,0 +1,78 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "highroad",
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "about.and",
+      "corrected_text": "about, and",
+      "line_number": 12,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Mr. Meagle stopped, faced round, and said",
+      "corrected_text": "Mr. Meagle stopped, faced round, and said (contd.)",
+      "line_number": 24,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:40:38.181737",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794055182-FRZbfCZnnn498s977Mgt",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 53.988,
+    "usage": {
+      "input_tokens": 2946,
+      "output_tokens": 9106,
+      "total_tokens": 12052,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 2945,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 8954,
+      "answer_tokens": 152,
+      "provider_cost_usd": 0.005507925,
+      "raw": {
+        "completion_tokens": 9106,
+        "prompt_tokens": 2946,
+        "total_tokens": 12052,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 8954,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 2945,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.005507925,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.005507925,
+          "upstream_inference_prompt_cost": 4.4325e-05,
+          "upstream_inference_completions_cost": 0.0054636
+        }
+      }
+    }
+  }
+}

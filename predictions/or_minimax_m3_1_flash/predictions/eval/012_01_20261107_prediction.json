@@ -1,0 +1,81 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "the fiery",
+      "corrected_text": "the fiery (caret)",
+      "line_number": 1,
+      "page": "003.png",
+      "notes": "Red caret insertion marker written above the first body line (over 'fiery'), with the inserted matter noted above the line as '(caret)'; an insertion is to be made at that point in the line."
+    },
+    {
+      "type": "insertion",
+      "original_text": "recurring",
+      "corrected_text": "recurring 10",
+      "line_number": 4,
+      "page": "003.png",
+      "notes": "Marginal figure '10' in the left margin with an arrow pointing to the word 'recurring' at the start of the line - a reference/query number to be inserted at that word."
+    },
+    {
+      "type": "punctuation",
+      "original_text": "all.",
+      "corrected_text": "all,",
+      "line_number": 19,
+      "page": "003.png",
+      "notes": "Stray full stop printed after 'almost all' in 'uneasiness of almost all.refuses.'; the editor's marginal dot (aligned with line 14) flags the fault, and the stop should be a comma."
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:38:55.039315",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794055070-nrLePJblb3zmKeejXG3D",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 61.457,
+    "usage": {
+      "input_tokens": 2970,
+      "output_tokens": 9907,
+      "total_tokens": 12877,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 2969,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 9634,
+      "answer_tokens": 273,
+      "provider_cost_usd": 0.005988885,
+      "raw": {
+        "completion_tokens": 9907,
+        "prompt_tokens": 2970,
+        "total_tokens": 12877,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 9634,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 2969,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.005988885,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.005988885,
+          "upstream_inference_prompt_cost": 4.4685e-05,
+          "upstream_inference_completions_cost": 0.0059442
+        }
+      }
+    }
+  }
+}

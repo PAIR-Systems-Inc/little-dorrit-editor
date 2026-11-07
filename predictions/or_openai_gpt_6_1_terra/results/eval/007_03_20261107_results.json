@@ -1,0 +1,36 @@
+{
+  "model_name": "or_openai_gpt_6_1_terra",
+  "date": "2026-11-07T06:52:39.267432",
+  "annotator": "GPT-6.1 Terra (OR)",
+  "annotation_date": "2026-11-07T06:50:01.199437",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Shadow",
+      "corrected_text": "Shadow.",
+      "observed_line_number": 0,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is adding a period to the end of the phrase \"Sun and Shadow\" \u2192 \"Sun and Shadow.\" The prediction applies the same core punctuation change\u2014adding a period at the end of the terminal word \"Shadow\" \u2192 \"Shadow.\" Although the prediction omits preceding context (\"Sun and\"), it still captures the essential intended correction: placing a period after \"Shadow\" at the end of the title/phrase. Therefore, the core edit matches the ground truth\u2019s intention."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "Chapter I",
+      "corrected_text": "Chapter I.",
+      "observed_line_number": 0,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    }
+  ]
+}

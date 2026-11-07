@@ -1,0 +1,113 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "insertion",
+      "original_text": "over yonder to-day,",
+      "corrected_text": "over yonder to-day, sir,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "sir",
+      "corrected_text": "sir,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "with a whimsical",
+      "corrected_text": "with a whimsical good",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "his pockets, and",
+      "corrected_text": "his pockets, and",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "his pockets, rattling",
+      "corrected_text": "his pockets, and rattling",
+      "line_number": 17,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "and marshal about",
+      "corrected_text": "and marshall about",
+      "line_number": 20,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "and marshalling,",
+      "corrected_text": "and marshalling,",
+      "line_number": 21,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Chapter",
+      "corrected_text": "Chapter II",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:30:36.856551",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794054616-i64r2VuK0iR4sRgakJKZ",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 21.673,
+    "usage": {
+      "input_tokens": 2994,
+      "output_tokens": 2880,
+      "total_tokens": 5874,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 2556,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2523,
+      "answer_tokens": 357,
+      "provider_cost_usd": 0.00183204,
+      "raw": {
+        "completion_tokens": 2880,
+        "prompt_tokens": 2994,
+        "total_tokens": 5874,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2523,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 2556,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00183204,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00183204,
+          "upstream_inference_prompt_cost": 0.00010404,
+          "upstream_inference_completions_cost": 0.001728
+        }
+      }
+    }
+  }
+}

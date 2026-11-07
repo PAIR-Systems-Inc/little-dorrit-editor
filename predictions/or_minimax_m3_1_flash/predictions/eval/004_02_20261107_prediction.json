@@ -1,0 +1,93 @@
+{
+  "image": "004.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "C&P",
+      "line_number": 27,
+      "notes": "Handwritten marginal note in the right margin",
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "in Tension",
+      "line_number": 27,
+      "notes": "Handwritten marginal note in the right margin, continuing below the arrow",
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Before I say anything else,",
+      "line_number": 33,
+      "notes": "Phrase marked with a hand-drawn underline (marked for emphasis)",
+      "original_text": "Before I say anything else,",
+      "page": "003.png",
+      "type": "italicize"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I tell you something, sir!",
+      "line_number": 37,
+      "notes": "Handwritten/italicized insertion following 'may' at the end of the preceding line",
+      "original_text": "",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:38:54.256028",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794055102-vqmppKznd6JjswKGOICz",
+    "provider": "Fireworks",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 31.428,
+    "usage": {
+      "input_tokens": 2946,
+      "output_tokens": 5540,
+      "total_tokens": 8486,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 2945,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 5279,
+      "answer_tokens": 261,
+      "provider_cost_usd": 0.003368325,
+      "raw": {
+        "completion_tokens": 5540,
+        "prompt_tokens": 2946,
+        "total_tokens": 8486,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 5279,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 2945,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.003368325,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.003368325,
+          "upstream_inference_prompt_cost": 4.4325e-05,
+          "upstream_inference_completions_cost": 0.003324
+        }
+      }
+    }
+  }
+}

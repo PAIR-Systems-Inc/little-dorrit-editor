@@ -1,0 +1,99 @@
+{
+  "image": "002.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "eyes by",
+      "corrected_text": "eyes, by",
+      "line_number": 5,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "white but",
+      "corrected_text": "white, but",
+      "line_number": 11,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "harbour",
+      "corrected_text": "Harbour",
+      "line_number": 30,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "terrace gardens",
+      "corrected_text": "terrace-gardens",
+      "line_number": 34,
+      "page": "002.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Vecchia",
+      "corrected_text": "Vecchia.",
+      "line_number": 36,
+      "page": "002.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "so",
+      "corrected_text": "So",
+      "line_number": 36,
+      "page": "002.png"
+    }
+  ],
+  "annotator": "Elorian Glimpse",
+  "annotation_date": "2026-11-07T06:36:57.536416",
+  "verified": false,
+  "inference": {
+    "model_id": "or_elorian_glimpse",
+    "model": "elorian/glimpse",
+    "response_id": "gen-1794054959-64eVh4Pb5IghGsUJT4O6",
+    "provider": "Together",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 55.756,
+    "usage": {
+      "input_tokens": 18689,
+      "output_tokens": 13044,
+      "total_tokens": 31733,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 12800,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 12683,
+      "answer_tokens": 361,
+      "provider_cost_usd": 0.0434334,
+      "raw": {
+        "completion_tokens": 13044,
+        "prompt_tokens": 18689,
+        "total_tokens": 31733,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 12683,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 12800,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0434334,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0434334,
+          "upstream_inference_prompt_cost": 0.0043014,
+          "upstream_inference_completions_cost": 0.039132
+        }
+      }
+    }
+  }
+}

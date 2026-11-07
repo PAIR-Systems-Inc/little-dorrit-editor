@@ -1,0 +1,71 @@
+{
+  "image": "005.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "capitalization",
+      "original_text": "If he",
+      "corrected_text": "If he",
+      "line_number": 36,
+      "page": "page_209"
+    },
+    {
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "line_number": 39,
+      "page": "page_209"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash 1017",
+  "annotation_date": "2026-11-07T06:30:42.846516",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash_1017",
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "response_id": "gen-1794054617-bigaz8QKRa6wrQddzlmf",
+    "provider": "Wafer",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 26.755,
+    "usage": {
+      "input_tokens": 4538,
+      "output_tokens": 3816,
+      "total_tokens": 8354,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3456,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3521,
+      "answer_tokens": 295,
+      "provider_cost_usd": 0.002001876,
+      "raw": {
+        "completion_tokens": 3816,
+        "prompt_tokens": 4538,
+        "total_tokens": 8354,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3521,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3456,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.002001876,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.002001876,
+          "upstream_inference_prompt_cost": 9.3876e-05,
+          "upstream_inference_completions_cost": 0.001908
+        }
+      }
+    }
+  }
+}

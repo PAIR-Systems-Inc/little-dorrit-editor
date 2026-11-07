@@ -1,0 +1,64 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "SHADOW",
+      "corrected_text": "SHADOW.",
+      "line_number": 0,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Tencent Hy4",
+  "annotation_date": "2026-11-07T06:44:48.170512",
+  "verified": false,
+  "inference": {
+    "model_id": "or_tencent_hy4",
+    "model": "tencent/hy4",
+    "response_id": "gen-1794055228-K1Mv0Anq1kSAWvLJGAJS",
+    "provider": "Tencent",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 240.897,
+    "usage": {
+      "input_tokens": 13935,
+      "output_tokens": 21743,
+      "total_tokens": 35678,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13824,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 21679,
+      "answer_tokens": 64,
+      "provider_cost_usd": 0.0275262125,
+      "raw": {
+        "completion_tokens": 21743,
+        "prompt_tokens": 13935,
+        "total_tokens": 35678,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 21679,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13824,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0275262125,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0275262125,
+          "upstream_inference_prompt_cost": 0.000336591,
+          "upstream_inference_completions_cost": 0.0271896215
+        }
+      }
+    }
+  }
+}

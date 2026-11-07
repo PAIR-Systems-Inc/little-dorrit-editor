@@ -1,0 +1,64 @@
+{
+  "image": "007.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "SUN AND SHADOW",
+      "corrected_text": "SUN AND SHADOW.",
+      "line_number": 0,
+      "page": "page_1"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:40:24.987853",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794055213-siiyQRDpSG9W28cGYeK7",
+    "provider": "DeepInfra",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 11.807,
+    "usage": {
+      "input_tokens": 11570,
+      "output_tokens": 2762,
+      "total_tokens": 14332,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4416,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 2692,
+      "answer_tokens": 70,
+      "provider_cost_usd": 0.00254242,
+      "raw": {
+        "completion_tokens": 2762,
+        "prompt_tokens": 11570,
+        "total_tokens": 14332,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 2692,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4416,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00254242,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00254242,
+          "upstream_inference_prompt_cost": 0.00116142,
+          "upstream_inference_completions_cost": 0.001381
+        }
+      }
+    }
+  }
+}

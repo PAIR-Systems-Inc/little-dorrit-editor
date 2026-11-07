@@ -1,0 +1,120 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam; \"not",
+      "corrected_text": "Clennam, \"not",
+      "line_number": 1,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "insertion",
+      "original_text": "dryest snorts",
+      "corrected_text": "dryest of snorts",
+      "line_number": 6,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty; sticking",
+      "corrected_text": "twenty, sticking",
+      "line_number": 15,
+      "page": "451"
+    },
+    {
+      "type": "italicize",
+      "original_text": "benevolence bubbling out of him,",
+      "corrected_text": "benevolence bubbling out of him,",
+      "line_number": 30,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I have",
+      "corrected_text": "now, I have",
+      "line_number": 34,
+      "page": "451"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you now",
+      "corrected_text": "you, now",
+      "line_number": 37,
+      "page": "451"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now to",
+      "corrected_text": "now, to",
+      "line_number": 37,
+      "page": "451"
+    }
+  ],
+  "annotator": "Muse Spark Open",
+  "annotation_date": "2026-11-07T06:54:37.526357",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_spark_open",
+    "model": "meta/muse-spark-open",
+    "response_id": "gen-1794056050-QR6FUemkdiZ0Q0CSHIGu",
+    "provider": "Nebius",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 26.193,
+    "usage": {
+      "input_tokens": 13819,
+      "output_tokens": 5077,
+      "total_tokens": 18896,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 13792,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 4613,
+      "answer_tokens": 464,
+      "provider_cost_usd": 0.0236798,
+      "raw": {
+        "completion_tokens": 5077,
+        "prompt_tokens": 13819,
+        "total_tokens": 18896,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 4613,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 13792,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0236798,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0236798,
+          "upstream_inference_prompt_cost": 0.00210255,
+          "upstream_inference_completions_cost": 0.02157725
+        }
+      }
+    }
+  }
+}

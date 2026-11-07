@@ -1,0 +1,102 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "heart, so much",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "heart so much",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "generous, Mr.",
+      "line_number": 22,
+      "notes": null,
+      "original_text": "generous Mr.",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "she indeed thanked him",
+      "line_number": 27,
+      "notes": null,
+      "original_text": "she thanked him",
+      "page": "003.png",
+      "type": "insertion"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "at length, said Clennam",
+      "line_number": 31,
+      "notes": null,
+      "original_text": "at length said Clennam",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "I hoped so",
+      "line_number": 34,
+      "notes": null,
+      "original_text": "I hope so",
+      "page": "003.png",
+      "type": "insertion"
+    }
+  ],
+  "annotator": "Elorian Glimpse",
+  "annotation_date": "2026-11-07T06:31:27.756765",
+  "verified": false,
+  "inference": {
+    "model_id": "or_elorian_glimpse",
+    "model": "elorian/glimpse",
+    "response_id": "gen-1794054622-59HmMJKQHE6NilivG5if",
+    "provider": "Together",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 63.285,
+    "usage": {
+      "input_tokens": 19923,
+      "output_tokens": 11478,
+      "total_tokens": 31401,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 12800,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 11087,
+      "answer_tokens": 391,
+      "provider_cost_usd": 0.0394758,
+      "raw": {
+        "completion_tokens": 11478,
+        "prompt_tokens": 19923,
+        "total_tokens": 31401,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 11087,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 12800,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0394758,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0394758,
+          "upstream_inference_prompt_cost": 0.0050418,
+          "upstream_inference_completions_cost": 0.034434
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "dull autumn night",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "dull autumn night",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne. The",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "Saone. The",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "poplar-trees",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "poplar trees",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Sa\u00f4ne it was wet",
+      "line_number": 6,
+      "notes": null,
+      "original_text": "Saone it was wet",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "One man, slowly moving on towards Chalons, was",
+      "line_number": 9,
+      "notes": null,
+      "original_text": "One man slowly moving on towards Chalons was",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "sodden with wet",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "soddenwith wet",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "MiniMax M3.1 Flash",
+  "annotation_date": "2026-11-07T06:50:25.960861",
+  "verified": false,
+  "inference": {
+    "model_id": "or_minimax_m3_1_flash",
+    "model": "minimax/minimax-m3.1-flash",
+    "response_id": "gen-1794055816-mepyv6SPV6P7gWyi0jQO",
+    "provider": "Parasail",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 10.42,
+    "usage": {
+      "input_tokens": 12603,
+      "output_tokens": 404,
+      "total_tokens": 13007,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 128,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "answer_tokens": 404,
+      "provider_cost_usd": 0.00211557,
+      "raw": {
+        "completion_tokens": 404,
+        "prompt_tokens": 12603,
+        "total_tokens": 13007,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 128,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00211557,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00211557,
+          "upstream_inference_prompt_cost": 0.00187317,
+          "upstream_inference_completions_cost": 0.0002424
+        }
+      }
+    }
+  }
+}

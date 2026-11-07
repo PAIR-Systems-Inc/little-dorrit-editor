@@ -1,0 +1,111 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high road",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "association,",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "association",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestly,",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "earnestly",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said,",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam,",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "Clennam",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "DeepSeek V4.1 Flash 1017",
+  "annotation_date": "2026-11-07T06:49:51.906244",
+  "verified": false,
+  "inference": {
+    "model_id": "or_deepseek_v4_1_flash_1017",
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "response_id": "gen-1794055761-e21f6DyVIzCpxbf8O3ZD",
+    "provider": "Wafer",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 28.98,
+    "usage": {
+      "input_tokens": 4554,
+      "output_tokens": 6917,
+      "total_tokens": 11471,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3456,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 6409,
+      "answer_tokens": 508,
+      "provider_cost_usd": 0.003553432,
+      "raw": {
+        "completion_tokens": 6917,
+        "prompt_tokens": 4554,
+        "total_tokens": 11471,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 6409,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3456,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.003553432,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.003553432,
+          "upstream_inference_prompt_cost": 9.4932e-05,
+          "upstream_inference_completions_cost": 0.0034585
+        }
+      }
+    }
+  }
+}

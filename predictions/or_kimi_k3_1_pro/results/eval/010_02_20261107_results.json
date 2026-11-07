@@ -1,0 +1,78 @@
+{
+  "model_name": "or_kimi_k3_1_pro",
+  "date": "2026-11-07T06:44:37.821230",
+  "annotator": "Kimi K3.1 Pro",
+  "annotation_date": "2026-11-07T06:41:40.608590",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "from hers and",
+      "corrected_text": "from hers, and",
+      "observed_line_number": 13,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"hers\" in the phrase \"hers and\" \u2192 \"hers, and.\" The prediction applies the same core punctuation change (adds a comma after \"hers\") but includes additional preceding context (\"from\"): \"from hers and\" \u2192 \"from hers, and.\" This still captures the essential intended correction.\n\nTherefore, both criteria are satisfied."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "on hers matters",
+      "corrected_text": "on hers, matters",
+      "observed_line_number": 15,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting a comma after \"hers\" in the phrase \"hers matters\" \u2192 \"hers, matters.\" The prediction performs the same core punctuation change (adds a comma after \"hers\") but includes additional surrounding context (\"on\" before the edited phrase): \"on hers matters\" \u2192 \"on hers, matters.\" This preserves the essential edit intent.\n\nTherefore, the predicted edit correctly captures the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "for a moment with",
+      "corrected_text": "for a moment, with",
+      "observed_line_number": 23,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: The predicted edit type is \"punctuation,\" which matches the ground truth exactly.\n\n2. Text Content Accuracy: The ground truth inserts a comma after \"moment\" in the phrase \"moment with\" \u2192 \"moment, with.\" The prediction performs the same core change, adding a comma after \"moment\" in a longer surrounding snippet: \"for a moment with\" \u2192 \"for a moment, with.\" Including extra context does not alter the essential edit, and the intended punctuation correction is correctly captured."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "so beautiful that",
+      "corrected_text": "so beautiful, that",
+      "observed_line_number": 25,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"punctuation,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth inserts a comma between \"beautiful\" and \"that\" (\"beautiful that\" \u2192 \"beautiful, that\"). The predicted edit does the same core change, just with additional preceding context (\"so beautiful that\" \u2192 \"so beautiful, that\"). The essential punctuation insertion at the same location is correctly captured."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "they",
+      "corrected_text": "They",
+      "observed_line_number": 32,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same core change, converting \"they\" to \"They\". There is no discrepancy in original or corrected text, so the essential intended edit is captured correctly."
+    }
+  ]
+}

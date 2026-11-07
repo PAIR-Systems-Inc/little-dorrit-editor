@@ -1,0 +1,71 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "FELLOW TRAVELLERS",
+      "corrected_text": "FELLOW TRAVELLERS.",
+      "line_number": 0,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Nemotron 3.5 Super VL",
+  "annotation_date": "2026-11-07T06:37:48.361278",
+  "verified": false,
+  "inference": {
+    "model_id": "or_nemotron_3_5_super_vl",
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "response_id": "gen-1794055030-Wfee7c10pDFflpoybJdH",
+    "provider": "DeepInfra",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 37.009,
+    "usage": {
+      "input_tokens": 11541,
+      "output_tokens": 10392,
+      "total_tokens": 21933,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 4416,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 10266,
+      "answer_tokens": 126,
+      "provider_cost_usd": 0.00635307,
+      "raw": {
+        "completion_tokens": 10392,
+        "prompt_tokens": 11541,
+        "total_tokens": 21933,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 10266,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 4416,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00635307,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00635307,
+          "upstream_inference_prompt_cost": 0.00115707,
+          "upstream_inference_completions_cost": 0.005196
+        }
+      }
+    }
+  }
+}

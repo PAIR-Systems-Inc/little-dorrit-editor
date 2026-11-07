@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12",
+  "updated_at": "2026-11-07",
   "next_batch": [
     {
       "model_name": "Muse Wonder Full",
@@ -8,10 +8,32 @@
       "requested_at": "2026-10-12",
       "status": "awaiting_benchmark_compatible_access",
       "api_model_id": null,
-      "availability_checked_at": "2026-10-12",
-      "availability_note": "Meta explicitly lists Muse Wonder Full as unavailable on Model API and exclusive to Muse Code Power Usage or Maximum Usage subscriptions. OpenRouter catalog rechecked on 2026-10-12 contains Muse Wonder but no Full variant. Raising standard Wonder reasoning effort to max does not select Full.",
+      "availability_checked_at": "2026-11-07",
+      "availability_note": "Meta explicitly lists Muse Wonder Full as unavailable on Model API and exclusive to Muse Code Power Usage or Maximum Usage subscriptions. OpenRouter catalog rechecked on 2026-11-07 contains Muse Wonder but no Full variant. Raising standard Wonder reasoning effort to max does not select Full.",
       "source": "https://dev.meta.ai/docs/models",
       "next_action": "Obtain access to an authenticated eligible Muse Code installation, then verify image-input automation and benchmark comparability; otherwise wait for supported API access."
+    },
+    {
+      "model_name": "Moondream 3.1",
+      "vendor": "Moondream",
+      "requested_at": "2026-11-07",
+      "status": "benchmark_format_incompatible",
+      "api_model_id": "moondream/moondream3.1-9b-a2b",
+      "availability_checked_at": "2026-11-07",
+      "availability_note": "OpenRouter endpoint is available, but two public two-shot benchmark attempts returned malformed JSON after image compression addressed HTTP 413. The second response exhausted the provider 4096-token completion limit. No private benchmark run or score was published.",
+      "source": "https://openrouter.ai/moondream/moondream3.1-9b-a2b/providers",
+      "next_action": "Recheck output limits, structured-output support, or a compatible serving route before retrying the same benchmark."
+    },
+    {
+      "model_name": "Ternary Bonsai 2 9B",
+      "vendor": "PrismML",
+      "requested_at": "2026-11-07",
+      "status": "benchmark_output_unavailable",
+      "api_model_id": "prism-ml/ternary-bonsai-2-9b",
+      "availability_checked_at": "2026-11-07",
+      "availability_note": "After image compression addressed HTTP 413, two public two-shot attempts each consumed the full 65,536-token output budget on reasoning and returned no answer. The Darkbloom route also returned a shared-pool rate limit before the first response. No private benchmark run or score was published.",
+      "source": "https://openrouter.ai/prism-ml/ternary-bonsai-2-9b/providers",
+      "next_action": "Recheck provider serving behavior or an alternative compatible route before retrying the same benchmark."
     }
   ]
 }

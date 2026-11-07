@@ -1,0 +1,165 @@
+{
+  "image": "012.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "Chapter XXIX.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Chapter XXIX",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Dreaming.",
+      "line_number": 0,
+      "notes": null,
+      "original_text": "Dreaming",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "City",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "city",
+      "page": "003.png",
+      "type": "capitalization"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "return to",
+      "line_number": 5,
+      "notes": null,
+      "original_text": "return of",
+      "page": "003.png",
+      "type": "replacement"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "them;",
+      "line_number": 10,
+      "notes": null,
+      "original_text": "them",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence;",
+      "line_number": 14,
+      "notes": null,
+      "original_text": "existence",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "it;",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "it",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "motionless;",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "motionless",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "stand-still;",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "stand-still",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "view;",
+      "line_number": 16,
+      "notes": null,
+      "original_text": "view",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "existence;",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "existence",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "liege-lord",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "liege lord",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Elorian Glimpse",
+  "annotation_date": "2026-11-07T06:45:01.484782",
+  "verified": false,
+  "inference": {
+    "model_id": "or_elorian_glimpse",
+    "model": "elorian/glimpse",
+    "response_id": "gen-1794055434-7pEnUjCSi9th6e0dyOK1",
+    "provider": "Together",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 66.033,
+    "usage": {
+      "input_tokens": 19453,
+      "output_tokens": 14745,
+      "total_tokens": 34198,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 12800,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 13887,
+      "answer_tokens": 858,
+      "provider_cost_usd": 0.0489948,
+      "raw": {
+        "completion_tokens": 14745,
+        "prompt_tokens": 19453,
+        "total_tokens": 34198,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 13887,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 12800,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0489948,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0489948,
+          "upstream_inference_prompt_cost": 0.0047598,
+          "upstream_inference_completions_cost": 0.044235
+        }
+      }
+    }
+  }
+}

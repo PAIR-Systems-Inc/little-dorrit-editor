@@ -1,0 +1,17 @@
+{
+  "model_id": "or_nemotron_3_5_super_vl",
+  "display_name": "Nemotron 3.5 Super VL",
+  "shots": 2,
+  "temperature": 0.1,
+  "reasoning_effort": null,
+  "max_tokens": 65536,
+  "image_max_bytes": null,
+  "reasoning_enabled": true,
+  "date": "2026-11-07",
+  "repeats": 3,
+  "judge_model": "or_openai_gpt_5_2",
+  "evaluation_pages": 12,
+  "sample_pages": 2,
+  "benchmark_max_concurrent_requests": 72,
+  "notes": "Two-shot benchmark, three repeats; native reasoning enabled, effort controlled by provider."
+}
