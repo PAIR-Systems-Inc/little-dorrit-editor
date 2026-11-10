@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-10T05:25:37.326060+00:00",
+  "fetched_at": "2026-11-10T17:17:20.532665+00:00",
   "currency": "USD",
   "basis": "Standard uncached text token rates. OpenRouter quotes use the listed starting rate. Actual routing, context tiers, images, caching, and reasoning usage can change the bill.",
   "catalog_source": "https://openrouter.ai/api/v1/models",
@@ -147,14 +147,14 @@
     "or_deepseek_v4_1_flash": {
       "api_model": "deepseek/deepseek-v4.1-flash",
       "route": "OpenRouter",
-      "input_per_million": 0.051,
-      "output_per_million": 0.5670000000000001,
+      "input_per_million": 0.3,
+      "output_per_million": 1.2,
       "source": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
       "verified_at": "2026-11-10",
       "provider_pricing": {
-        "prompt": "0.000000051",
-        "completion": "0.000000567",
-        "input_cache_read": "0.000000018"
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000006"
       }
     },
     "or_deepseek_v4_1_flash_1017": {
@@ -530,6 +530,25 @@
         "input_cache_write": "0.0000001875"
       }
     },
+    "or_gemini_4_carbon": {
+      "api_model": "google/gemini-4-carbon",
+      "route": "OpenRouter",
+      "input_per_million": 2.0,
+      "output_per_million": 10.0,
+      "source": "https://openrouter.ai/google/gemini-4-carbon",
+      "verified_at": "2026-11-10",
+      "provider_pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "image": "0.000002",
+        "audio": "0.000002",
+        "input_audio_cache": "0.0000001",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00001",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000001875"
+      }
+    },
     "or_gemma_3_27b_it": {
       "api_model": "google/gemma-3-27b-it",
       "route": "OpenRouter",
@@ -753,14 +772,14 @@
     "or_minimax_m3_1_flash": {
       "api_model": "minimax/minimax-m3.1-flash",
       "route": "OpenRouter",
-      "input_per_million": 0.15,
-      "output_per_million": 0.6,
+      "input_per_million": 0.075,
+      "output_per_million": 0.3,
       "source": "https://openrouter.ai/minimax/minimax-m3.1-flash",
       "verified_at": "2026-11-10",
       "provider_pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000015",
+        "prompt": "0.000000075",
+        "completion": "0.0000003",
+        "input_cache_read": "0.0000000075",
         "overrides": [
           {
             "utc_start": 1500,

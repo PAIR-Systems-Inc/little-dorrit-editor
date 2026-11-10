@@ -743,6 +743,14 @@
     "release_source": "https://dev.meta.ai/docs/muse-ember",
     "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort, a 65,536-token output cap, and the Meta provider via OpenRouter."
   },
+  "or_gemini_4_carbon": {
+    "vendor": "Google",
+    "release_date": "2026-11-10",
+    "release_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort and the Google AI Studio provider via OpenRouter, with its advertised 32,768-token output cap. Sampling parameters are omitted. Reasoning chunks are streamed to keep long requests alive but excluded from the scored answer. Initial Google Vertex attempts encountered gateway timeouts and were excluded from the scored run.",
+    "display_suffix": "*",
+    "display_note": "Images are resized/recompressed when needed to stay below the provider request payload limit. Google AI Studio limits output to 32,768 tokens."
+  },
   "or_claude_fable_5_2": {
     "vendor": "Anthropic",
     "release_date": "2026-11-09",

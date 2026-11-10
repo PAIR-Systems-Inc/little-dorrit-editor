@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gemini_4_carbon",
+  "date": "2026-11-10T10:53:03.928196",
+  "annotator": "Gemini 4 Carbon",
+  "annotation_date": "2026-11-10T10:52:34.552445",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The predicted edit type is \"capitalization,\" which exactly matches the ground truth type.\n\n2) Text Content Accuracy: The ground truth intends to capitalize the word \"if\" at the start of the phrase \"if he\" (\"if he\" \u2192 \"If he\"). The prediction captures the same core change by capitalizing \"if\" to \"If\". Although it omits the following word \"he\" from the original/corrected text span, this is acceptable because it still reflects the essential intended correction (capitalizing \"if\")."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth intends to change the word \"said\" to \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures this core substitution by replacing \"said\" with \"asked\". Although it omits the surrounding context (\"Clennam\"), it still represents the essential intended change. Therefore, the text content matches the ground truth\u2019s intention."
+    }
+  ]
+}

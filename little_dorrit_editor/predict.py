@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional
 
 import openai
+from openai.types.chat import ChatCompletion
 from rich.console import Console
 
 from little_dorrit_editor.config import get_model
@@ -64,6 +65,54 @@ def _normalize_message_content(content: Any) -> Optional[str]:
         return normalized or None
 
     return None
+
+
+class IncompletePredictionStream(ValueError):
+    """A rejected stream can still carry billable usage and a generation ID."""
+
+    def __init__(self, message: str, metadata: Dict[str, Any]) -> None:
+        super().__init__(message)
+        self.metadata = metadata
+
+
+def _collect_stream(
+    client: openai.Client, create_kwargs: Dict[str, Any]
+) -> ChatCompletion:
+    """Collect answer text and final accounting without mixing in reasoning."""
+    content: List[str] = []
+    metadata: Dict[str, Any] = {}
+    finish_reason = None
+    with client.chat.completions.create(
+        **create_kwargs, stream=True, stream_options={"include_usage": True}
+    ) as stream:
+        for chunk in stream:
+            payload = chunk.model_dump(mode="json")
+            if payload.get("error"):
+                raise ValueError(f"Provider streaming error: {payload['error']}")
+            for key in ("id", "model", "created", "provider", "usage"):
+                if payload.get(key) is not None:
+                    metadata[key] = payload[key]
+            # A final usage chunk can have no choices or repeat the stop reason.
+            for choice in payload.get("choices") or []:
+                if choice.get("index", 0) != 0:
+                    continue
+                delta = choice.get("delta") or {}
+                text = delta.get("content")
+                if isinstance(text, str):
+                    content.append(text)
+                if choice.get("finish_reason") is not None:
+                    finish_reason = choice["finish_reason"]
+    if finish_reason != "stop":
+        raise IncompletePredictionStream(
+            f"Incomplete prediction stream: finish_reason={finish_reason!r}", metadata
+        )
+    return ChatCompletion.model_validate({
+        **metadata,
+        "object": "chat.completion",
+        "choices": [{"index": 0, "finish_reason": "stop", "message": {
+            "role": "assistant", "content": "".join(content),
+        }}],
+    })
 
 
 def generate_predictions(
@@ -222,15 +271,23 @@ def generate_predictions(
     for attempt in range(1, max_attempts + 1):
         started = time.monotonic()
         try:
-            response = client.chat.completions.create(**create_kwargs)
+            if getattr(model_config, "stream_response", False):
+                response = _collect_stream(client, create_kwargs)
+            else:
+                response = client.chat.completions.create(**create_kwargs)
             break
         except Exception as exc:
+            failed_metadata = (
+                exc.metadata if isinstance(exc, IncompletePredictionStream) else {}
+            )
             append_usage_attempt(output_path, {
                 "model_id": model_id, "model": model_config.model_name,
                 "attempt": attempt, "status": "api_error",
                 "error_type": type(exc).__name__,
                 "elapsed_seconds": round(time.monotonic() - started, 3),
-                "usage": None,
+                "response_id": failed_metadata.get("id"),
+                "provider": failed_metadata.get("provider"),
+                "usage": normalize_usage(failed_metadata) if failed_metadata else None,
             })
             if attempt == max_attempts or not _should_retry_api_error(exc):
                 raise

@@ -1,0 +1,27 @@
+{
+  "model_id": "or_gemini_4_carbon",
+  "display_name": "Gemini 4 Carbon",
+  "shots": 2,
+  "temperature": null,
+  "reasoning_effort": "high",
+  "max_tokens": 32768,
+  "image_max_bytes": 3930112,
+  "reasoning_enabled": true,
+  "date": "2026-11-10",
+  "repeats": 3,
+  "judge_model": "or_openai_gpt_5_2",
+  "evaluation_pages": 12,
+  "sample_pages": 2,
+  "benchmark_max_concurrent_requests": 17,
+  "openrouter_provider": {
+    "only": [
+      "Google AI Studio"
+    ],
+    "allow_fallbacks": false
+  },
+  "stream_response": true,
+  "notes": "Two-shot benchmark, three repeats at high reasoning effort via Google AI Studio. Streamed reasoning chunks keep long requests alive; only final answer text is scored. All 36 evaluation page runs completed successfully. Failed and truncated attempts were retried and retained in the usage audit.",
+  "openrouter_reasoning": {
+    "exclude": false
+  }
+}

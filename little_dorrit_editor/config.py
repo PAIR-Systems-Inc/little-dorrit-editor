@@ -25,6 +25,7 @@ class ModelConfig:
     service_tier: Optional[str] = None  # Optional provider service tier, e.g. OpenRouter/OpenAI priority
     max_tokens: Optional[int] = None  # Optional output token cap for provider compatibility/cost control
     request_timeout_seconds: Optional[float] = None  # Optional per-attempt API timeout
+    stream_response: bool = False  # Keep long reasoning requests alive with SSE
 
 
 class ConfigManager:
@@ -123,6 +124,7 @@ class ConfigManager:
                 service_tier=service_tier,
                 max_tokens=max_tokens,
                 request_timeout_seconds=request_timeout_seconds,
+                stream_response=model_config.get("stream_response", False),
             )
 
     def get_model(self, model_id: str) -> ModelConfig:

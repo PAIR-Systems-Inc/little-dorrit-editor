@@ -1087,3 +1087,18 @@ image_max_bytes = 3930112
 supports_temperature = false
 openrouter_reasoning = { exclude = true }
 openrouter_provider = { only = ["Anthropic"], allow_fallbacks = false }
+
+["or_gemini_4_carbon"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "google/gemini-4-carbon"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Gemini 4 Carbon"
+reasoning_effort = "high"
+supports_temperature = false
+request_timeout_seconds = 900
+stream_response = true
+max_tokens = 32768
+image_max_bytes = 3930112
+# Keep reasoning deltas on the wire to avoid idle timeouts; only answers are scored.
+openrouter_reasoning = { exclude = false }
+openrouter_provider = { only = ["Google AI Studio"], allow_fallbacks = false }

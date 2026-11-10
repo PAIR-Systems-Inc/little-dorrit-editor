@@ -77,6 +77,7 @@ The system uses the following configuration files:
    - Uses environment variables for API keys (e.g., `${OPENAI_API_KEY}`)
    - Checked into version control
    - Supports OpenRouter routing knobs such as `openrouter_provider = { sort = "latency" }` and `service_tier = "priority"`
+   - Set `stream_response = true` for long prediction requests that need streaming keepalives. Answer text and final usage accounting are collected before parsing; incomplete streams are rejected.
 
 2. **Local configuration**: `config/models.local.toml` and `config/local*.toml`
    - For local development with direct API keys

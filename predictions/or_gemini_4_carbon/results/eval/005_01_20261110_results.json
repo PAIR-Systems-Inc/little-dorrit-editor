@@ -1,0 +1,36 @@
+{
+  "model_name": "or_gemini_4_carbon",
+  "date": "2026-11-10T10:47:39.837933",
+  "annotator": "Gemini 4 Carbon",
+  "annotation_date": "2026-11-10T10:47:12.438025",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit as \"capitalization,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is to capitalize the initial word in the phrase \"if he\" \u2192 \"If he\". The prediction captures the same core change by capitalizing \"if\" \u2192 \"If\". Although it includes less surrounding context (omitting \"he\"), it still represents the essential intended correction: capitalizing the word \"if\" at the start of the phrase/sentence."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"replacement\", so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces \"said Clennam\" with \"asked Clennam\", whose core intended change is replacing the word \"said\" with \"asked\" while keeping the surrounding context (\"Clennam\") unchanged. The predicted edit captures this essential substitution by changing \"said\" \u2192 \"asked\". Although it includes less surrounding context than the ground truth, it still reflects the same core correction and does not conflict with it.\n\nTherefore, the predicted edit correctly captures the intention of the ground truth edit."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "model_name": "or_gemini_4_carbon",
+  "date": "2026-11-10T11:06:49.174937",
+  "annotator": "Gemini 4 Carbon",
+  "annotation_date": "2026-11-10T11:06:14.951634",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "observed_line_number": 10,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as a \"punctuation\" edit, so the type matches exactly. 2) Text Content Accuracy: Both specify the same transformation from \"heart so\" to \"heart, so\", inserting a comma after \"heart\". The core intended punctuation change is captured identically."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "generous, Mr.",
+      "corrected_text": "generous Mr.",
+      "observed_line_number": 22,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both specify the same change: removing the comma after \"generous\" in \"generous, Mr.\" to become \"generous Mr.\". The original_text and corrected_text align perfectly with the ground truth\u2019s intended core change."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "as she",
+      "corrected_text": "as indeed she",
+      "observed_line_number": 27,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction label the change as an \"insertion,\" so the edit type matches exactly.\n\n2) Text Content Accuracy: The ground truth change is inserting the word \"indeed\" into the phrase \"as she did\" to make \"as indeed she did.\" The predicted edit likewise inserts \"indeed\" after \"as\" (\"as she\" \u2192 \"as indeed she\"). Although the prediction omits the trailing word \"did\" from the before/after strings (i.e., it provides a shorter snippet of the surrounding context), it still captures the core intended change: adding \"indeed\" in that location. Therefore the essential correction is accurately represented."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": 3,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "length said",
+      "corrected_text": "length, said",
+      "observed_line_number": 31,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: Both ground truth and prediction label the edit type as \"punctuation\", so the type matches exactly.\n\nText Content Accuracy: Both specify the same core change: inserting a comma after \"length\" in the phrase \"length said\" to make it \"length, said\". The original and corrected text strings are identical between ground truth and prediction, capturing the intended punctuation correction precisely."
+    },
+    {
+      "observed_edit_num": 4,
+      "expected_edit_num": 4,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "observed_line_number": 34,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "Edit Type Accuracy: The ground truth edit type is \"replacement\" and the predicted edit type is also \"replacement\", so the types match exactly.\n\nText Content Accuracy: Both specify replacing \"I hope so\" with \"I hoped so\". The core change (hope \u2192 hoped) is captured identically with no discrepancies.\n\nTherefore, the predicted edit fully matches the ground truth intention."
+    }
+  ]
+}

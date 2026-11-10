@@ -1,0 +1,129 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high road",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "materials costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "about and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "association did",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "association, did",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "earnestly telling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, when",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "said when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "said:",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Gemini 4 Carbon",
+  "annotation_date": "2026-11-10T11:03:30.491537",
+  "verified": false,
+  "inference": {
+    "model_id": "or_gemini_4_carbon",
+    "model": "google/gemini-4-carbon",
+    "response_id": "gen-1794329881-FJGq7KnKR9ZPEI3KMOPQ",
+    "provider": "Google AI Studio",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 331.285,
+    "usage": {
+      "input_tokens": 5199,
+      "output_tokens": 25377,
+      "total_tokens": 30576,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 3150,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 24766,
+      "answer_tokens": 611,
+      "provider_cost_usd": 0.258183,
+      "raw": {
+        "completion_tokens": 25377,
+        "prompt_tokens": 5199,
+        "total_tokens": 30576,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 24766,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 3150,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.258183,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.258183,
+          "upstream_inference_prompt_cost": 0.004413,
+          "upstream_inference_completions_cost": 0.25377
+        }
+      }
+    }
+  }
+}
