@@ -1,0 +1,129 @@
+{
+  "image": "006.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "confidence": null,
+      "corrected_text": "high-road",
+      "line_number": 1,
+      "notes": null,
+      "original_text": "high road",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "materials, costing",
+      "line_number": 3,
+      "notes": null,
+      "original_text": "materials costing",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "about, and",
+      "line_number": 13,
+      "notes": null,
+      "original_text": "about and",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "association did",
+      "line_number": 15,
+      "notes": null,
+      "original_text": "association, did",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "earnestly, telling",
+      "line_number": 18,
+      "notes": null,
+      "original_text": "earnestly telling",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "said, when",
+      "line_number": 23,
+      "notes": null,
+      "original_text": "said when",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "and said,",
+      "line_number": 25,
+      "notes": null,
+      "original_text": "and said",
+      "page": "003.png",
+      "type": "punctuation"
+    },
+    {
+      "confidence": null,
+      "corrected_text": "Clennam, in",
+      "line_number": 29,
+      "notes": null,
+      "original_text": "Clennam in",
+      "page": "003.png",
+      "type": "punctuation"
+    }
+  ],
+  "annotator": "Claude Fable 5.2 (OR)",
+  "annotation_date": "2026-11-09T23:18:57.525722",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_fable_5_2",
+    "model": "anthropic/claude-fable-5.2",
+    "response_id": "gen-1794287922-cSjM7NL9a7041D8jZAmn",
+    "provider": "Anthropic",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 16.458,
+    "usage": {
+      "input_tokens": 16479,
+      "output_tokens": 1708,
+      "total_tokens": 18187,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 1042,
+      "answer_tokens": 666,
+      "provider_cost_usd": 0.200152,
+      "raw": {
+        "completion_tokens": 1708,
+        "prompt_tokens": 16479,
+        "total_tokens": 18187,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1042,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.200152,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.200152,
+          "upstream_inference_prompt_cost": 0.131832,
+          "upstream_inference_completions_cost": 0.06832
+        }
+      }
+    }
+  }
+}

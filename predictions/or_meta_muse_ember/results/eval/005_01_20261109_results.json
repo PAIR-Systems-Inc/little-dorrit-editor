@@ -1,0 +1,36 @@
+{
+  "model_name": "or_meta_muse_ember",
+  "date": "2026-11-09T23:20:05.543422",
+  "annotator": "Muse Ember",
+  "annotation_date": "2026-11-09T23:17:54.151524",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if",
+      "corrected_text": "If",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1. Edit Type Accuracy: The predicted edit type is \"capitalization,\" which matches the ground truth exactly.\n\n2. Text Content Accuracy: The ground truth capitalizes the word \"if\" in the phrase \"if he\" \u2192 \"If he.\" The prediction captures the same core change by converting \"if\" \u2192 \"If.\" Although it omits the following word \"he\" from the original/corrected strings, it still represents the essential intended correction (capitalizing \"if\")."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction are \"replacement\", so the edit type matches.\n\n2) Text Content Accuracy: The ground truth change is effectively replacing the word \"said\" with \"asked\" in the phrase \"said Clennam\" \u2192 \"asked Clennam\". The prediction captures this core substitution (\"said\" \u2192 \"asked\") even though it omits the surrounding context (\"Clennam\"). Since the essential intended change is the same and no conflicting alteration is introduced, the text content matches the ground truth\u2019s intention."
+    }
+  ]
+}

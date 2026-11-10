@@ -1,0 +1,78 @@
+{
+  "model_name": "or_claude_fable_5_2",
+  "date": "2026-11-09T23:20:46.698166",
+  "annotator": "Claude Fable 5.2 (OR)",
+  "annotation_date": "2026-11-09T23:18:38.452110",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "For Mr. Pancks",
+      "corrected_text": "For, Mr. Pancks",
+      "observed_line_number": 2,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edits have type \"punctuation\", so the type matches exactly.\n2) Text Content Accuracy: Both edits change \"For Mr. Pancks\" to \"For, Mr. Pancks\" by inserting a comma after \"For\". The core intended punctuation change is captured identically."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "observed_line_number": 11,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit have the type \"punctuation\", so the type matches exactly. 2) Text Content Accuracy: Both specify the same original text (\"quickly that\") and the same correction (\"quickly, that\"), capturing the identical core change of inserting a comma after \"quickly\". Therefore, the prediction correctly matches the ground truth intention."
+    },
+    {
+      "observed_edit_num": 2,
+      "expected_edit_num": 2,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "insertion",
+      "original_text": "making me, not",
+      "corrected_text": "making me a, not",
+      "observed_line_number": 21,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: The ground truth edit type is \"insertion,\" and the predicted edit type is also \"insertion,\" so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth indicates inserting \"a\" after \"me\" to change \"me,\" into \"me a,\". The prediction applies the same core change within a larger surrounding phrase, changing \"making me, not\" to \"making me a, not\". This correctly captures the essential intended insertion (adding \"a\" after \"me\" before the comma)."
+    },
+    {
+      "observed_edit_num": 3,
+      "expected_edit_num": null,
+      "tp": 0.0,
+      "fp": 1.0,
+      "fn": 0.0,
+      "type": "punctuation",
+      "original_text": "bed room",
+      "corrected_text": "bed-room",
+      "observed_line_number": 1,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False positive: no matching ground truth edit found"
+    },
+    {
+      "observed_edit_num": null,
+      "expected_edit_num": 3,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 1.0,
+      "type": "replacement",
+      "original_text": "bed-room",
+      "corrected_text": "bed room",
+      "observed_line_number": null,
+      "line_diff": null,
+      "line_number_penalty": 0.0,
+      "judgement": "False negative: ground truth edit not found in prediction"
+    }
+  ]
+}

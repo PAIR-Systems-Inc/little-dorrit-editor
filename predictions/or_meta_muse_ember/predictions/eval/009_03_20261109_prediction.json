@@ -1,0 +1,99 @@
+{
+  "image": "009.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "heart so",
+      "corrected_text": "heart, so",
+      "line_number": 10,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "generous Mr.",
+      "corrected_text": "generous, Mr.",
+      "line_number": 22,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "(as she",
+      "corrected_text": "(as indeed she",
+      "line_number": 27,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "at length said",
+      "corrected_text": "at length, said",
+      "line_number": 31,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "Oh! I have very much to ask of you.",
+      "corrected_text": "I hoped so.",
+      "line_number": 33,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "I hope so",
+      "corrected_text": "I hoped so",
+      "line_number": 34,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Muse Ember",
+  "annotation_date": "2026-11-09T23:20:12.726734",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_ember",
+    "model": "meta/muse-ember",
+    "response_id": "gen-1794287995-aQ7GDgvPYg3rlKfBJUsj",
+    "provider": "Meta",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 19.389,
+    "usage": {
+      "input_tokens": 13642,
+      "output_tokens": 8366,
+      "total_tokens": 22008,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 9588,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 8108,
+      "answer_tokens": 258,
+      "provider_cost_usd": 0.004626752,
+      "raw": {
+        "completion_tokens": 8366,
+        "prompt_tokens": 13642,
+        "total_tokens": 22008,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 8108,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 9588,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.004626752,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.004626752,
+          "upstream_inference_prompt_cost": 0.000443752,
+          "upstream_inference_completions_cost": 0.004183
+        }
+      }
+    }
+  }
+}

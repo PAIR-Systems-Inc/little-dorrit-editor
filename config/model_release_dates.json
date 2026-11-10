@@ -736,5 +736,19 @@
     "release_notes": "OpenRouter availability date. Benchmark enables native reasoning; the provider does not expose an effort selector.",
     "display_note": "Native reasoning enabled; effort controlled by provider. Images are resized/recompressed when needed to meet provider request-size limits.",
     "display_suffix": "*"
+  },
+  "or_meta_muse_ember": {
+    "vendor": "Meta",
+    "release_date": "2026-11-09",
+    "release_source": "https://dev.meta.ai/docs/muse-ember",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort, a 65,536-token output cap, and the Meta provider via OpenRouter."
+  },
+  "or_claude_fable_5_2": {
+    "vendor": "Anthropic",
+    "release_date": "2026-11-09",
+    "release_source": "https://openrouter.ai/anthropic/claude-fable-5.2",
+    "release_notes": "OpenRouter availability date. Benchmark uses high reasoning effort, a 65,536-token output cap, and the Anthropic provider via OpenRouter.",
+    "display_suffix": "*",
+    "display_note": "Images are resized/recompressed when needed to stay below the provider request payload limit."
   }
 }

@@ -1,0 +1,36 @@
+{
+  "model_name": "or_claude_fable_5_2",
+  "date": "2026-11-09T23:20:41.701003",
+  "annotator": "Claude Fable 5.2 (OR)",
+  "annotation_date": "2026-11-09T23:18:37.364642",
+  "details": [
+    {
+      "observed_edit_num": 0,
+      "expected_edit_num": 0,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "capitalization",
+      "original_text": "if he",
+      "corrected_text": "If he",
+      "observed_line_number": 36,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and predicted edit have type \"capitalization\", so the type matches exactly.\n2) Text Content Accuracy: Both specify changing \"if he\" to \"If he\", capturing the same core capitalization change (lowercase to uppercase initial 'I'). No mismatch or missing/extra essential change is present."
+    },
+    {
+      "observed_edit_num": 1,
+      "expected_edit_num": 1,
+      "tp": 1.0,
+      "fp": 0.0,
+      "fn": 0.0,
+      "type": "replacement",
+      "original_text": "said",
+      "corrected_text": "asked",
+      "observed_line_number": 39,
+      "line_diff": 0,
+      "line_number_penalty": 0.0,
+      "judgement": "1) Edit Type Accuracy: Both ground truth and prediction specify a \"replacement\" edit type, so the type matches exactly.\n\n2) Text Content Accuracy: The ground truth replaces the phrase \"said Clennam\" with \"asked Clennam\", where the essential correction is changing the word \"said\" to \"asked\" while leaving \"Clennam\" unchanged. The prediction captures this core change by replacing \"said\" with \"asked\". Although it provides less surrounding context (omits \"Clennam\" in the original/corrected text fields), it still accurately reflects the intended substitution."
+    }
+  ]
+}

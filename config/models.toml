@@ -1063,3 +1063,27 @@ logical_name = "Ternary Bonsai 2 9B"
 request_timeout_seconds = 900
 max_tokens = 65536
 openrouter_reasoning = { enabled = true, exclude = true }
+
+["or_meta_muse_ember"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "meta/muse-ember"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Muse Ember"
+reasoning_effort = "high"
+request_timeout_seconds = 900
+max_tokens = 65536
+openrouter_reasoning = { exclude = true }
+openrouter_provider = { only = ["Meta"], allow_fallbacks = false }
+
+["or_claude_fable_5_2"]
+endpoint = "https://openrouter.ai/api/v1"
+model_name = "anthropic/claude-fable-5.2"
+api_key = "${OPEN_ROUTER_API_KEY}"
+logical_name = "Claude Fable 5.2 (OR)"
+reasoning_effort = "high"
+request_timeout_seconds = 900
+max_tokens = 65536
+image_max_bytes = 3930112
+supports_temperature = false
+openrouter_reasoning = { exclude = true }
+openrouter_provider = { only = ["Anthropic"], allow_fallbacks = false }

@@ -1,0 +1,127 @@
+{
+  "image": "013.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "Clennam:",
+      "corrected_text": "Clennam;",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "dryest",
+      "corrected_text": "driest",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "dryest snorts",
+      "corrected_text": "dryest of snorts",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "that boiling-over",
+      "corrected_text": "that-boiling-over",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "twenty sticking",
+      "corrected_text": "twenty; sticking",
+      "line_number": 15,
+      "page": "003.png"
+    },
+    {
+      "type": "italicize",
+      "original_text": "him",
+      "corrected_text": "him",
+      "line_number": 30,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now I",
+      "corrected_text": "now, I",
+      "line_number": 34,
+      "page": "003.png"
+    },
+    {
+      "type": "replacement",
+      "original_text": "authorize",
+      "corrected_text": "authorise",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "you now",
+      "corrected_text": "you, now",
+      "line_number": 37,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "now to",
+      "corrected_text": "now, to",
+      "line_number": 37,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Fable 5.2 (OR)",
+  "annotation_date": "2026-11-09T23:19:18.486779",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_fable_5_2",
+    "model": "anthropic/claude-fable-5.2",
+    "response_id": "gen-1794287915-cDezDGsOjrAONYMfwCFv",
+    "provider": "Anthropic",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 42.459,
+    "usage": {
+      "input_tokens": 16479,
+      "output_tokens": 4315,
+      "total_tokens": 20794,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3656,
+      "answer_tokens": 659,
+      "provider_cost_usd": 0.304432,
+      "raw": {
+        "completion_tokens": 4315,
+        "prompt_tokens": 16479,
+        "total_tokens": 20794,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3656,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.304432,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.304432,
+          "upstream_inference_prompt_cost": 0.131832,
+          "upstream_inference_completions_cost": 0.1726
+        }
+      }
+    }
+  }
+}

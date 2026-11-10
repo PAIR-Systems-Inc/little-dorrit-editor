@@ -1,0 +1,113 @@
+{
+  "image": "008.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "dull",
+      "corrected_text": "dull,",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "poplar trees",
+      "corrected_text": "poplar-trees",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "trees",
+      "corrected_text": "trees,",
+      "line_number": 6,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "Saone",
+      "corrected_text": "Sa\u00f4ne",
+      "line_number": 7,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "man",
+      "corrected_text": "man,",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "Chalons",
+      "corrected_text": "Chalons,",
+      "line_number": 9,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "sodden",
+      "corrected_text": "soddened",
+      "line_number": 14,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Muse Ember",
+  "annotation_date": "2026-11-09T23:18:11.183064",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_ember",
+    "model": "meta/muse-ember",
+    "response_id": "gen-1794287881-P2WbfHF6VsByQlRHOyOF",
+    "provider": "Meta",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 14.475,
+    "usage": {
+      "input_tokens": 13683,
+      "output_tokens": 3707,
+      "total_tokens": 17390,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 9588,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3388,
+      "answer_tokens": 319,
+      "provider_cost_usd": 0.002301352,
+      "raw": {
+        "completion_tokens": 3707,
+        "prompt_tokens": 13683,
+        "total_tokens": 17390,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3388,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 9588,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.002301352,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.002301352,
+          "upstream_inference_prompt_cost": 0.000447852,
+          "upstream_inference_completions_cost": 0.0018535
+        }
+      }
+    }
+  }
+}

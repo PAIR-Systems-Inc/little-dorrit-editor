@@ -1,0 +1,85 @@
+{
+  "image": "014.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "bed room",
+      "corrected_text": "bed-room",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "For Mr. Pancks",
+      "corrected_text": "For, Mr. Pancks",
+      "line_number": 2,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "quickly that",
+      "corrected_text": "quickly, that",
+      "line_number": 11,
+      "page": "003.png"
+    },
+    {
+      "type": "insertion",
+      "original_text": "making me, not",
+      "corrected_text": "making me a, not",
+      "line_number": 21,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Claude Fable 5.2 (OR)",
+  "annotation_date": "2026-11-09T23:18:38.452110",
+  "verified": false,
+  "inference": {
+    "model_id": "or_claude_fable_5_2",
+    "model": "anthropic/claude-fable-5.2",
+    "response_id": "gen-1794287902-9j0XPZjUfUsPrXZQN81b",
+    "provider": "Anthropic",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 16.723,
+    "usage": {
+      "input_tokens": 16450,
+      "output_tokens": 1121,
+      "total_tokens": 17571,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 834,
+      "answer_tokens": 287,
+      "provider_cost_usd": 0.17644,
+      "raw": {
+        "completion_tokens": 1121,
+        "prompt_tokens": 16450,
+        "total_tokens": 17571,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 834,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.17644,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.17644,
+          "upstream_inference_prompt_cost": 0.1316,
+          "upstream_inference_completions_cost": 0.04484
+        }
+      }
+    }
+  }
+}

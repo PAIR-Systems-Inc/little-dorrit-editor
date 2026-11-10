@@ -1,0 +1,85 @@
+{
+  "image": "003.png",
+  "page_number": 1,
+  "source": "Little Dorrit",
+  "edits": [
+    {
+      "type": "punctuation",
+      "original_text": "howling over",
+      "corrected_text": "howling, over",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "yonder to-day",
+      "corrected_text": "yonder, to-day",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "capitalization",
+      "original_text": "Sir",
+      "corrected_text": "sir",
+      "line_number": 1,
+      "page": "003.png"
+    },
+    {
+      "type": "punctuation",
+      "original_text": "pockets and",
+      "corrected_text": "pockets, and",
+      "line_number": 17,
+      "page": "003.png"
+    }
+  ],
+  "annotator": "Muse Ember",
+  "annotation_date": "2026-11-09T23:18:08.416887",
+  "verified": false,
+  "inference": {
+    "model_id": "or_meta_muse_ember",
+    "model": "meta/muse-ember",
+    "response_id": "gen-1794287877-137pW3c9DgtrwBI1WRUz",
+    "provider": "Meta",
+    "endpoint": "https://openrouter.ai/api/v1",
+    "attempt": 1,
+    "status": "success",
+    "elapsed_seconds": 14.822,
+    "usage": {
+      "input_tokens": 13697,
+      "output_tokens": 3836,
+      "total_tokens": 17533,
+      "input_image_tokens": null,
+      "input_audio_tokens": 0,
+      "cached_input_tokens": 9588,
+      "cache_write_input_tokens": 0,
+      "reasoning_tokens": 3621,
+      "answer_tokens": 215,
+      "provider_cost_usd": 0.002367252,
+      "raw": {
+        "completion_tokens": 3836,
+        "prompt_tokens": 13697,
+        "total_tokens": 17533,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 3621,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 9588,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.002367252,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.002367252,
+          "upstream_inference_prompt_cost": 0.000449252,
+          "upstream_inference_completions_cost": 0.001918
+        }
+      }
+    }
+  }
+}
